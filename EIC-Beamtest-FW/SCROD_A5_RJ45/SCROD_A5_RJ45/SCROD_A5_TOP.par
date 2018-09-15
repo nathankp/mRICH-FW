@@ -1,0 +1,349 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+IM-LENOVO2::  Thu Jun 28 07:01:41 2018
+
+par -filter
+C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_
+A5_RJ45/iseconfig/filter.filter -w -intstyle ise -ol std -mt 4
+SCROD_A5_TOP_map.ncd SCROD_A5_TOP.ncd SCROD_A5_TOP.pcf 
+
+
+Constraints file: SCROD_A5_TOP.pcf.
+Loading device for application Rf_Device from file '6slx150t.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "SCROD_A5_TOP" is an NCD, version 3.2, device xc6slx150t, package fgg676, speed -3
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@hepflexlm.phys.hawaii.edu'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to '2100@hepflexlm@phys.hawaii.edu'.
+INFO:Security:56 - Part 'xc6slx150t' is not a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,986 out of 184,304    3%
+    Number used as Flip Flops:               5,984
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      7,837 out of  92,152    8%
+    Number used as logic:                    6,961 out of  92,152    7%
+      Number using O6 output only:           4,453
+      Number using O5 output only:           1,395
+      Number using O5 and O6:                1,113
+      Number used as ROM:                        0
+    Number used as Memory:                     557 out of  21,680    2%
+      Number used as Dual Port RAM:            274
+        Number using O6 output only:           274
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:            8
+        Number using O6 output only:             8
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:           275
+        Number using O6 output only:           254
+        Number using O5 output only:             1
+        Number using O5 and O6:                 20
+    Number used exclusively as route-thrus:    319
+      Number with same-slice register load:    215
+      Number with same-slice carry load:       103
+      Number with other load:                    1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 3,756 out of  23,038   16%
+  Number of MUXCYs used:                     2,908 out of  46,076    6%
+  Number of LUT Flip Flop pairs used:        9,735
+    Number with an unused Flip Flop:         4,424 out of   9,735   45%
+    Number with an unused LUT:               1,898 out of   9,735   19%
+    Number of fully used LUT-FF pairs:       3,413 out of   9,735   35%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 184,304    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        90 out of     396   22%
+    Number of LOCed IOBs:                       82 out of      90   91%
+    IOB Flip Flops:                              2
+    IOB Master Pads:                            11
+    IOB Slave Pads:                             11
+    Number of bonded IPADs:                      4 out of      32   12%
+      Number of LOCed IPADs:                     4 out of       4  100%
+    Number of bonded OPADs:                      2 out of      16   12%
+      Number of LOCed OPADs:                     2 out of       2  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                       165 out of     268   61%
+  Number of RAMB8BWERs:                          4 out of     536    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 2 out of      32    6%
+    Number used as BUFIO2s:                      2
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     1 out of      12    8%
+    Number used as DCMs:                         1
+    Number used as DCM_CLKGENs:                  0
+  Number of ILOGIC2/ISERDES2s:                   0 out of     586    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     586    0%
+  Number of OLOGIC2/OSERDES2s:                   2 out of     586    1%
+    Number used as OLOGIC2s:                     2
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     384    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of     180    0%
+  Number of GTPA1_DUALs:                         1 out of       4   25%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       4    0%
+  Number of PCIE_A1s:                            0 out of       1    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       6    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   Standard 
+Router effort level (-rl):    Standard 
+
+PAR will use up to 4 processors
+WARNING:Par:288 - The signal DC_SC_DATA_N<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_N<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_N<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_N<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_P<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_P<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_P<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_DATA_P<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal MGTLOS_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_N<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_N<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_N<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_N<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_P<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_P<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_P<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal DC_SC_TX_P<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal RJ45_CLK_N_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal RJ45_CLK_P_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_N<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_N<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_N<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_P<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_P<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_P<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ORed_Trig_P<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal MGTTXFAULT_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_N<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_N<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_N<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_N<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_P<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_P<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_P<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal AUX_P<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal MGTMOD0_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/rx_statistics_vector<20> has no load. 
+   PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/rx_statistics_vector<1> has no load.  PAR
+   will not attempt to route this signal.
+WARNING:Par:288 - The signal comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/ip2bus_error has no load.  PAR will not
+   attempt to route this signal.
+Starting Multi-threaded Router
+
+
+Phase  1  : 60620 unrouted;      REAL time: 45 secs 
+
+Phase  2  : 41147 unrouted;      REAL time: 1 mins 28 secs 
+
+Phase  3  : 17016 unrouted;      REAL time: 2 mins 13 secs 
+
+Phase  4  : 17087 unrouted; (Setup:8461, Hold:0, Component Switching Limit:0)     REAL time: 2 mins 26 secs 
+
+Updating file: SCROD_A5_TOP.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:24431, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  6  : 0 unrouted; (Setup:24431, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
+
+Phase  7  : 0 unrouted; (Setup:20946, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 7 secs 
+
+Phase  8  : 0 unrouted; (Setup:20946, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 7 secs 
+
+Phase  9  : 0 unrouted; (Setup:20946, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 7 secs 
+
+Phase 10  : 0 unrouted; (Setup:8176, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 8 secs 
+Total REAL time to Router completion: 5 mins 8 secs 
+Total CPU time to Router completion (all processors): 6 mins 3 secs 
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|   internal_fpga_clk |  BUFGMUX_X2Y3| No   |  398 |  0.350     |  1.434      |
++---------------------+--------------+------+------+------------+-------------+
+|       data_clk_BUFG | BUFGMUX_X3Y13| No   |  168 |  0.623     |  1.715      |
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |  BUFGMUX_X2Y2| No   |  203 |  0.348     |  1.434      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/udp_usr |              |      |      |            |             |
+|                _clk |  BUFGMUX_X2Y1| No   | 1888 |  0.399     |  1.483      |
++---------------------+--------------+------+------+------------+-------------+
+|       ila0_trig0<0> |         Local|      |    8 |  0.000     |  0.331      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.514      |
++---------------------+--------------+------+------+------------+-------------+
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  2.362      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/ETH_MOD |              |      |      |            |             |
+|ULE/udp_1/ip_udp_tx_ |              |      |      |            |             |
+|block_inst/axi_trese |              |      |      |            |             |
+|              tn_inv |         Local|      |   54 |  0.000     |  0.828      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/ETH_MOD |              |      |      |            |             |
+|ULE/udp_1/eth_inst/m |              |      |      |            |             |
+|                  dc |         Local|      |    4 |  0.219     |  2.201      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/ETH_MOD |              |      |      |            |             |
+|ULE/udp_1/eth_inst/c |              |      |      |            |             |
+|                lkin |         Local|      |    1 |  0.000     |  0.001      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/ETH_MOD |              |      |      |            |             |
+|ULE/udp_1/eth_inst/c |              |      |      |            |             |
+|    lkingen_ML_IBUF2 |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|comm_process/ETH_MOD |              |      |      |            |             |
+|ULE/udp_1/eth_inst/c |              |      |      |            |             |
+|    lkingen_ML_IBUF1 |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 8176 (Setup: 8176, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Increase the PAR Effort Level setting to "high"
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_FPGA_CLK = PERIOD TIMEGRP "internal_fp | SETUP       |    -0.710ns|     8.710ns|      38|        8176
+  ga_clk" 8 ns HIGH 50%                     | HOLD        |     0.250ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    10.015ns|     4.985ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.815ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    13.130ns|    16.870ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.393ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.415ns|     1.585ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.417ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_DATA_CLK = PERIOD TIMEGRP "internal_da | MINPERIOD   |    39.606ns|     0.394ns|       0|           0
+  ta_clk" 40 ns HIGH 40%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.026ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.761ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|    10.677ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.877ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 39 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 5 mins 12 secs 
+Total CPU time to PAR completion (all processors): 6 mins 7 secs 
+
+Peak Memory Usage:  538 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 38 errors found.
+
+Number of error messages: 0
+Number of warning messages: 42
+Number of info messages: 0
+
+Writing design to file SCROD_A5_TOP.ncd
+
+
+
+PAR done!

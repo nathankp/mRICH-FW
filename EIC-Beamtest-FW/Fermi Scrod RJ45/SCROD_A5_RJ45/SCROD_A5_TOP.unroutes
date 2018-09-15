@@ -1,0 +1,51 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Aug 03 18:51:11 2018
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 39 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   AUX_N<0>_IBUF
+   AUX_N<1>_IBUF
+   AUX_N<2>_IBUF
+   AUX_N<3>_IBUF
+   AUX_P<0>_IBUF
+   AUX_P<1>_IBUF
+   AUX_P<2>_IBUF
+   AUX_P<3>_IBUF
+   DC_SC_DATA_N<3>_IBUF
+   MGTLOS_IBUF
+   MGTMOD0_IBUF
+   MGTTXFAULT_IBUF
+   ORed_Trig_N<0>_IBUF
+   ORed_Trig_N<1>_IBUF
+   ORed_Trig_N<2>_IBUF
+   ORed_Trig_N<3>_IBUF
+   ORed_Trig_P<0>_IBUF
+   ORed_Trig_P<1>_IBUF
+   ORed_Trig_P<2>_IBUF
+   ORed_Trig_P<3>_IBUF
+   OUTPUT_REGISTER<12><0>
+   OUTPUT_REGISTER<12><1>
+   OUTPUT_REGISTER<12><2>
+   OUTPUT_REGISTER<12><3>
+   OUTPUT_REGISTER<12><4>
+   OUTPUT_REGISTER<12><5>
+   OUTPUT_REGISTER<12><6>
+   OUTPUT_REGISTER<12><7>
+   OUTPUT_REGISTER<12><8>
+   OUTPUT_REGISTER<5><12>
+   OUTPUT_REGISTER<5><13>
+   OUTPUT_REGISTER<5><14>
+   OUTPUT_REGISTER<5><15>
+   RJ45_CLK_N_IBUF
+   RJ45_CLK_P_IBUF
+   RO_TRIG_IN_IBUF
+   comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/ip2bus_error
+   comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/rx_statistics_vector<1>
+   comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/rx_statistics_vector<20>
+
+

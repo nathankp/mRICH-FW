@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="SCROD_A5_TOP" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/DC_READOUT_DEMUX - DataDemuxControl - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/WaveformPedsave - WaveformPedcalcDSP - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_head_inst - eth_head - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/axi_lite_controller - tri_mode_eth_mac_v5_5_axi_lite_sm - rtl</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/core_wrapper - pcs_pma_block - block_level/transceiver_inst - pcs_pma_transceiver_A - structural</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/trimac_fifo_block - tri_mode_eth_mac_v5_5_fifo_block - wrapper/trimac_block - tri_mode_eth_mac_v5_5_block - wrapper/axi4_lite_ipif - tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper - rtl</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/trimac_fifo_block - tri_mode_eth_mac_v5_5_fifo_block - wrapper/user_side_FIFO - tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo - RTL</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_rx_block_inst - ip_udp_rx_block - rtl</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_tx_block_inst - ip_udp_tx_block - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_head_inst - eth_head - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/axi_lite_controller - tri_mode_eth_mac_v5_5_axi_lite_sm - rtl</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/trimac_fifo_block - tri_mode_eth_mac_v5_5_fifo_block - wrapper</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_rx_block_inst - ip_udp_rx_block - rtl</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_tx_block_inst - ip_udp_tx_block - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/dc_fifo_to_bram_driver - DC_Wave_to_BRAM_Driver - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/fifo_to_bram_driver - Wave_to_BRAM_Driver - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/pedram - SRAMscheduler - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/u_eth_top - eth_top - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/wavepedsub - WaveformPedsubDSP - Behavioral</ClosedNode>
+         <ClosedNode>/SRAMscheduler - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SRAMscheduler.vhd</ClosedNode>
+         <ClosedNode>/WaveformPedcalcDSP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|WaveformPedcalcDSP.vhd</ClosedNode>
+         <ClosedNode>/eth_top - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|Ethernet files|eth|eth_top.vhd</ClosedNode>
+         <ClosedNode>/eth_top - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|Ethernet files|eth|eth_top.vhd/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral/trimac_fifo_block - tri_mode_eth_mac_v5_5_fifo_block - wrapper/user_side_FIFO - tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo - RTL/tx_fifo_i - tri_mode_eth_mac_v5_5_tx_client_fifo - RTL</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/SCROD_A5_TOP.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000208000000020000000000000000000000000200000064ffffffff000000810000000300000002000002080000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/SCROD_A5_TOP.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001d0000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e20000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>blk_mem_gen_v7_3.xco</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000c9000000010001000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/BMD_A5_TEST - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|BMD_A5_TEST.vhd</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_head_inst - eth_head - Behavioral</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/eth_inst - eth - Behavioral</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_rx_block_inst - ip_udp_rx_block - rtl</ClosedNode>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd/uut - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral/udp_1 - udp - Behavioral/ip_udp_tx_block_inst - ip_udp_tx_block - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_BMD_TEST - behavior C:|Users|Kevin|Desktop|classes|PHYS475-electronic fpr phy|Final project|Firmware|SCROD_A5_BMD|SCROD_A5_TOP|SCROD_A5_BMD_TEST.vhd</ClosedNode>
+         <ClosedNode>/SCROD_A5_BMD_TEST - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|SCROD_A5_BMD_TEST.vhd/uut - SCROD_A5_TOP - Behavioral/comm_process - SCROD_DC_COMM - Behavioral/eth_top - eth_top - Behavioral</ClosedNode>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral</ClosedNode>
+         <ClosedNode>/dfgdf - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|dfgdf.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>COMM_TB - behavior (C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/testbench/COMM_TB.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e50000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>COMM_TB - behavior (C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/testbench/COMM_TB.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000122000000010000000100000000000000000000000064ffffffff000000810000000000000001000001220000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000ec0000007401000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018b0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/COMM_TB - behavior C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_TOP|testbench|COMM_TB.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - SCROD_DC_COMM</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000113000000020000000000000000000000000200000064ffffffff000000810000000300000002000001130000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>uut - SCROD_DC_COMM</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000151000000010000000100000000000000000000000064ffffffff000000810000000000000001000001510000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

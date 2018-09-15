@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/TB_isim_beh.exe" -prj "C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/TB_beh.prj" "work.TB" 

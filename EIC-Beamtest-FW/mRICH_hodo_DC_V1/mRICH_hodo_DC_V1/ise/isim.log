@@ -1,0 +1,25 @@
+ISim log file
+Running: C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/TB_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim2.wdb.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb/uut/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb/uut/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb/uut/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb/uut/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb/uut/DC_COMM_PARSER/RX_ADDR_CHECK/MAS_DC_RX_FIFO_W1R8/U0/gconvfifo/inst_conv_fifo/).
+at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb/uut/DC_COMM_PARSER/RX_ADDR_CHECK/MAS_DC_RX_FIFO_W8R32/U0/gconvfifo/inst_conv_fifo/).
+at 0 ps: Note: WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information. (/tb/uut/DC_COMM_PARSER/TX_Sender/waveform_fifo/U0/gconvfifo/inst_conv_fifo/).
+ERROR: Index -1 out of bound 3 downto 0. 
+ERROR: In process BMD_TRIG_LOGIC.vhd:144 
+ 
+INFO: Simulator is stopped.
+# run 1ns
+at 1 us, Instance /tx_readoutcontrol/srout_bram/U0/native_mem_module/mem_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 1 us, Instance /tx_readoutcontrol/srout_bram/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 1 us, Instance /tx_readoutcontrol/srout_bram/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.

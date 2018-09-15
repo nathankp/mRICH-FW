@@ -1,0 +1,95 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
+C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc
+_v1/iseconfig/filter.filter -intstyle ise -dd _ngo -sd ../hodo_dc_v1/cores -nt
+timestamp -uc
+C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/
+HODO_DC_UCF.ucf -p xc6slx9-tqg144-2 BMD_DC_TOP_V2_cs.ngc BMD_DC_TOP_V2.ngd
+
+Reading NGO file
+"C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BM
+D_DC_TOP_V2_cs.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source
+/HODO_DC_UCF.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET	"flash_do"      LOC = "p65";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(185)]: NET "flash_do" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET	"flash_do"      LOC = "p65";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(185)]' could not be found and so the Locate constraint
+   will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET	"flash_clk"     LOC = "p70";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(186)]: NET "flash_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET	"flash_clk"     LOC = "p70";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(186)]' could not be found and so the Locate constraint
+   will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET	"flash_di"      LOC = "p64";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(187)]: NET "flash_di" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET	"flash_di"      LOC = "p64";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(187)]' could not be found and so the Locate constraint
+   will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET 	"flash_cs"		 LOC = "p38";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(188)]: NET "flash_cs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET 	"flash_cs"		 LOC = "p38";>
+   [C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/sou
+   rce/HODO_DC_UCF.ucf(188)]' could not be found and so the Locate constraint
+   will be removed.
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'N10' has no driver
+WARNING:NgdBuild:452 - logical net 'N11' has no driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX1_P' has no legal driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     4
+  Number of warnings:   7
+
+Total memory usage is 4484228 kilobytes
+
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "BMD_DC_TOP_V2.bld"...
