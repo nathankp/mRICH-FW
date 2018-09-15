@@ -1,0 +1,9 @@
+run
+-ifn xst.prj
+-ifmt mixed
+-ofn tri_mode_eth_mac_v5_5_example_design
+-top tri_mode_eth_mac_v5_5_example_design
+-sd ../../
+-p spartan6
+-keep_hierarchy no
+

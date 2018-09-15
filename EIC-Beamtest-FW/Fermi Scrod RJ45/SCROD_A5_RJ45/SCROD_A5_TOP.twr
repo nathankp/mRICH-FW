@@ -1,0 +1,230 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -filter
+C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/Fermi Scrod RJ45/SCROD_A5_RJ45/iseconfig/filter.filter
+-intstyle ise -tsi SCROD_A5_TOP.tsi -timegroups -a -s 3 -n 3 -fastpaths -xml
+SCROD_A5_TOP.twx SCROD_A5_TOP.ncd -o SCROD_A5_TOP.twr SCROD_A5_TOP.pcf -ucf
+SCROD_A5_BMD.ucf
+
+Design file:              SCROD_A5_TOP.ncd
+Physical constraint file: SCROD_A5_TOP.pcf
+Device,package,speed:     xc6slx150t,fgg676,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             summary report, limited to 0 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2700 - Timing constraints ignored because advanced analysis with 
+   offsets was specified.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "internal | SETUP       |         N/A|     7.487ns|     N/A|           0
+  _fpga_clk"                                | HOLD        |     0.241ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Default OFFSET IN BEFORE analysis for clo | SETUP       |         N/A|    13.657ns|     N/A|           0
+  ck "internal_fpga_clk"                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Default OFFSET OUT AFTER analysis for clo | MAXDELAY    |         N/A|    26.009ns|     N/A|           0
+  ck "internal_fpga_clk"                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "data_clk | SETUP       |         N/A|    12.259ns|     N/A|           0
+  _BUFG"                                    | HOLD        |     0.378ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Default OFFSET OUT AFTER analysis for clo | MAXDELAY    |         N/A|     7.368ns|     N/A|           0
+  ck "internal_data_clk"                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "icon_con | SETUP       |         N/A|    12.297ns|     N/A|           0
+  trol0<0>"                                 | HOLD        |     0.250ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "U_icon_p | SETUP       |         N/A|     0.936ns|     N/A|           0
+  ro/U0/iUPDATE_OUT"                        | HOLD        |     0.458ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "comm_pro | SETUP       |         N/A|     7.762ns|     N/A|           0
+  cess/udp_usr_clk"                         | HOLD        |     0.187ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Default period analysis for net "comm_pro | SETUP       |         N/A|     4.307ns|     N/A|           0
+  cess/ETH_MODULE/udp_1/eth_inst/mdc"       | HOLD        |     0.397ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock MASTER_CLK_N
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+BOT_TRIG       |    1.521(R)|      SLOW  |    0.207(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<0>|    2.404(R)|      SLOW  |   -0.557(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<1>|    3.280(R)|      SLOW  |   -1.337(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<2>|   13.656(R)|      SLOW  |   -1.163(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<0>|    2.403(R)|      SLOW  |   -0.556(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<1>|    3.279(R)|      SLOW  |   -1.337(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<2>|   13.655(R)|      SLOW  |   -1.163(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<3>|    3.577(R)|      SLOW  |   -1.478(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<0>  |    1.601(R)|      SLOW  |    0.197(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<1>  |    2.606(R)|      SLOW  |   -0.772(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<2>  |    1.909(R)|      SLOW  |   -0.095(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<3>  |    2.729(R)|      SLOW  |   -0.871(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<0>  |    1.600(R)|      SLOW  |    0.198(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<1>  |    2.605(R)|      SLOW  |   -0.771(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<2>  |    1.908(R)|      SLOW  |   -0.094(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<3>  |    2.728(R)|      SLOW  |   -0.870(R)|      SLOW  |internal_fpga_clk |   0.000|
+E_TRIG<0>      |    6.643(R)|      SLOW  |   -1.347(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<1>      |    6.881(R)|      SLOW  |   -1.658(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<2>      |    6.648(R)|      SLOW  |   -1.666(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<3>      |    7.364(R)|      SLOW  |   -2.093(R)|      FAST  |internal_fpga_clk |   0.000|
+TOP_TRIG       |    1.498(R)|      SLOW  |    0.234(R)|      SLOW  |internal_fpga_clk |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock MASTER_CLK_P
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+BOT_TRIG       |    1.522(R)|      SLOW  |    0.206(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<0>|    2.405(R)|      SLOW  |   -0.558(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<1>|    3.281(R)|      SLOW  |   -1.337(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_N<2>|   13.657(R)|      SLOW  |   -1.163(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<0>|    2.404(R)|      SLOW  |   -0.557(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<1>|    3.280(R)|      SLOW  |   -1.337(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<2>|   13.656(R)|      SLOW  |   -1.163(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_DATA_P<3>|    3.578(R)|      SLOW  |   -1.478(R)|      FAST  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<0>  |    1.602(R)|      SLOW  |    0.196(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<1>  |    2.607(R)|      SLOW  |   -0.773(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<2>  |    1.910(R)|      SLOW  |   -0.096(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_N<3>  |    2.730(R)|      SLOW  |   -0.872(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<0>  |    1.601(R)|      SLOW  |    0.197(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<1>  |    2.606(R)|      SLOW  |   -0.772(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<2>  |    1.909(R)|      SLOW  |   -0.095(R)|      SLOW  |internal_fpga_clk |   0.000|
+DC_SC_TX_P<3>  |    2.729(R)|      SLOW  |   -0.871(R)|      SLOW  |internal_fpga_clk |   0.000|
+E_TRIG<0>      |    6.644(R)|      SLOW  |   -1.347(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<1>      |    6.882(R)|      SLOW  |   -1.658(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<2>      |    6.649(R)|      SLOW  |   -1.666(R)|      FAST  |internal_fpga_clk |   0.000|
+E_TRIG<3>      |    7.365(R)|      SLOW  |   -2.093(R)|      FAST  |internal_fpga_clk |   0.000|
+TOP_TRIG       |    1.499(R)|      SLOW  |    0.233(R)|      SLOW  |internal_fpga_clk |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock MASTER_CLK_N to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+BOT_TRIG      |        13.719(R)|      SLOW  |         7.062(R)|      FAST  |internal_fpga_clk |   0.000|
+CDT_TRIG      |        17.004(R)|      SLOW  |         8.180(R)|      FAST  |internal_fpga_clk |   0.000|
+DEBUG_OUT_1   |         9.022(R)|      SLOW  |         4.173(R)|      FAST  |internal_fpga_clk |   0.000|
+              |         9.002(F)|      SLOW  |         4.179(F)|      FAST  |internal_fpga_clk |   0.000|
+DEBUG_OUT_2   |         7.368(R)|      SLOW  |         3.366(R)|      FAST  |internal_data_clk |   0.000|
+              |         7.352(F)|      SLOW  |         3.443(F)|      FAST  |internal_data_clk |   0.000|
+DEBUG_OUT_3   |         9.084(R)|      SLOW  |         4.052(R)|      FAST  |internal_fpga_clk |   0.000|
+RJ45_TRG_N    |        19.283(R)|      SLOW  |         9.373(R)|      FAST  |internal_fpga_clk |   0.000|
+RJ45_TRG_P    |        18.666(R)|      SLOW  |         9.034(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<0> |        13.175(R)|      SLOW  |         6.775(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<1> |        13.600(R)|      SLOW  |         7.164(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<2> |        13.817(R)|      SLOW  |         7.135(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<3> |        13.895(R)|      SLOW  |         7.222(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<1>|         9.947(R)|      SLOW  |         4.790(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<2>|        21.429(R)|      SLOW  |        11.645(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<3>|        26.009(R)|      SLOW  |        14.607(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<1>|         9.905(R)|      SLOW  |         4.774(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<2>|        21.387(R)|      SLOW  |        11.629(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<3>|        25.967(R)|      SLOW  |        14.591(R)|      FAST  |internal_fpga_clk |   0.000|
+TOP_TRIG      |        13.559(R)|      SLOW  |         6.966(R)|      FAST  |internal_fpga_clk |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock MASTER_CLK_P to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+BOT_TRIG      |        13.718(R)|      SLOW  |         7.062(R)|      FAST  |internal_fpga_clk |   0.000|
+CDT_TRIG      |        17.003(R)|      SLOW  |         8.180(R)|      FAST  |internal_fpga_clk |   0.000|
+DEBUG_OUT_1   |         9.021(R)|      SLOW  |         4.173(R)|      FAST  |internal_fpga_clk |   0.000|
+              |         9.001(F)|      SLOW  |         4.179(F)|      FAST  |internal_fpga_clk |   0.000|
+DEBUG_OUT_2   |         7.367(R)|      SLOW  |         3.366(R)|      FAST  |internal_data_clk |   0.000|
+              |         7.351(F)|      SLOW  |         3.443(F)|      FAST  |internal_data_clk |   0.000|
+DEBUG_OUT_3   |         9.083(R)|      SLOW  |         4.052(R)|      FAST  |internal_fpga_clk |   0.000|
+RJ45_TRG_N    |        19.282(R)|      SLOW  |         9.373(R)|      FAST  |internal_fpga_clk |   0.000|
+RJ45_TRG_P    |        18.665(R)|      SLOW  |         9.034(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<0> |        13.174(R)|      SLOW  |         6.775(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<1> |        13.599(R)|      SLOW  |         7.164(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<2> |        13.816(R)|      SLOW  |         7.135(R)|      FAST  |internal_fpga_clk |   0.000|
+SCROD_TRIG<3> |        13.894(R)|      SLOW  |         7.222(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<1>|         9.946(R)|      SLOW  |         4.790(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<2>|        21.428(R)|      SLOW  |        11.645(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_N<3>|        26.008(R)|      SLOW  |        14.607(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<1>|         9.904(R)|      SLOW  |         4.774(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<2>|        21.386(R)|      SLOW  |        11.629(R)|      FAST  |internal_fpga_clk |   0.000|
+SC_DC_CLK_P<3>|        25.966(R)|      SLOW  |        14.591(R)|      FAST  |internal_fpga_clk |   0.000|
+TOP_TRIG      |        13.558(R)|      SLOW  |         6.966(R)|      FAST  |internal_fpga_clk |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock MASTER_CLK_N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_N   |    7.487|    0.016|         |         |
+MASTER_CLK_P   |    7.487|    0.016|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MASTER_CLK_P
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_N   |    7.487|    0.016|         |         |
+MASTER_CLK_P   |    7.487|    0.016|         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 314431 paths, 0 nets, and 39850 connections
+
+Design statistics:
+   Minimum period:  12.297ns   (Maximum frequency:  81.321MHz)
+   Minimum input required time before clock:  13.657ns
+   Maximum output delay after clock:  26.009ns
+
+
+Analysis completed Fri Aug 03 18:51:27 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4943 MB
+
+
+

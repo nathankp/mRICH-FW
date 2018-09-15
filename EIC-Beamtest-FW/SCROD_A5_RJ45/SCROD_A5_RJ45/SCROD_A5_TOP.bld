@@ -1,0 +1,231 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -filter
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd source/Ethernet files/IPcores
+-sd source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement -sd
+ipcore_dir/STATE_FIFO -sd ipcore_dir/blk_mem_gen_v7_3 -sd
+ipcore_dir/CMD_FIFO_w1r8 -sd ipcore_dir/CMD_FIFO_w8r32 -sd
+ipcore_dir/WAVE_FIFO_w32r8 -sd ipcore_dir/CLK_FANOUT -nt timestamp -uc
+SCROD_A5_BMD.ucf -p xc6slx150t-fgg676-3 SCROD_A5_TOP_cs.ngc SCROD_A5_TOP.ngd
+
+Reading NGO file
+"C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD
+_A5_RJ45/SCROD_A5_TOP_cs.ngc" ...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/SCROD_A5_TOP/U_ila_pro_0
+
+-----------------------------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@hepflexlm.phys.hawaii.edu'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'2100@hepflexlm@phys.hawaii.edu'.
+INFO:Security:71 - If a license for part 'xc6slx150t' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+       please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:889 - Pad net 'comm_process/BOT_TRIG' is not connected to an
+   external port in this design.  A new port 'BOT_TRIG' has been added and is
+   connected to this signal.
+
+Annotating constraints to design from ucf file "SCROD_A5_BMD.ucf" ...
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
+   This license does not allow you to generate bitstreams for designs that
+   incorporate this component. You may generate functional simulation netlists,
+   but you may not evaluate this component in hardware.
+   For ordering information, please refer to the product page for this component
+   on: www.xilinx.com
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_gtxtocpu" = FROM
+   "clk_gtx" TO "clk_axi" TIG;> [SCROD_A5_BMD.ucf(207)]: Unable to find an
+   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_cputogtx" = FROM
+   "clk_axi" TO "clk_gtx" TIG;> [SCROD_A5_BMD.ucf(208)]: Unable to find an
+   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr"   =
+   FROM "tx_fifo_rd_to_wr" TO "clk_gtx" 7800 ps DATAPATHONLY;>
+   [SCROD_A5_BMD.ucf(216)]: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd"   =
+   FROM "tx_fifo_wr_to_rd" TO clk_tx_mac 7800 ps DATAPATHONLY;>
+   [SCROD_A5_BMD.ucf(217)]: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'clk_tx_mac'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd"   =
+   FROM "rx_fifo_wr_to_rd" TO "clk_gtx" 7800 ps DATAPATHONLY;>
+   [SCROD_A5_BMD.ucf(234)]: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'clk_gtx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr"   =
+   FROM "rx_fifo_rd_to_wr" TO "clk_rx" 7800 ps DATAPATHONLY;>
+   [SCROD_A5_BMD.ucf(235)]: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'clk_rx'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMEGRP "ffs_except_axi"         = FFS
+   EXCEPT "clock_generator_clkout1" "mdio_logic";> [SCROD_A5_BMD.ucf(238)]:
+   Unable to find an active 'TNM' or 'TimeGrp' constraint named
+   'clock_generator_clkout1'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMEGRP "ffs_except_axi"         = FFS
+   EXCEPT "clock_generator_clkout1" "mdio_logic";> [SCROD_A5_BMD.ucf(238)]:
+   Unable to find an active 'TNM' or 'TimeGrp' constraint named 'mdio_logic'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_config_to_all"      =
+   FROM "clock_generator_clkout1" TO "ffs_except_axi" TIG;>
+   [SCROD_A5_BMD.ucf(239)]: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'clock_generator_clkout1'.
+
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'dc_no_response<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'dc_no_response<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'dc_no_response<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'dc_no_response<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'N3' has no driver
+WARNING:NgdBuild:452 - logical net 'comm_process/mgttxfault' has no driver
+WARNING:NgdBuild:452 - logical net 'comm_process/mgtmod0' has no driver
+WARNING:NgdBuild:452 - logical net 'comm_process/mgtlos' has no driver
+WARNING:NgdBuild:452 - logical net 'comm_process/ETH_MODULE/udp_1/tx_eth_last_1'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/tx_statistics_s' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/rx_statistics_s' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/serial_response' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/s_axi_bresp<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/s_axi_rresp<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/tx_axis_fifo_tready' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/s_axi_awaddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/s_axi_araddr<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_f
+   ifo_status<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_f
+   ifo_status<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_f
+   ifo_status<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_f
+   ifo_status<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_f
+   ifo_overflow' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_f
+   ifo_status<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_f
+   ifo_status<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_f
+   ifo_status<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_f
+   ifo_status<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_a
+   xis_mac_tready' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/Bus2IP_BE<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/Bus2IP_BE<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/Bus2IP_BE<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/Bus2IP_BE<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_l
+   ite_ipif/axi_lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<10>' has
+   no driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_P<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_P<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_P<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_P<0>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_N<3>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_N<2>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_N<1>' has no legal driver
+WARNING:NgdBuild:470 - bidirect pad net 'AUX_N<0>' has no legal driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  53
+
+Total memory usage is 240520 kilobytes
+
+Writing NGD file "SCROD_A5_TOP.ngd" ...
+Total REAL time to NGDBUILD completion: 2 min  29 sec
+Total CPU time to NGDBUILD completion:   35 sec
+
+Writing NGDBUILD log file "SCROD_A5_TOP.bld"...
