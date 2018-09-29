@@ -1,4 +1,5 @@
-###########################################################################
+  
+  ###########################################################################
 #Pin mappings and timing constraints here are based on the SCROD_revA5.   #
 # Streamlined for Bytelane communication to HMB Daughtercards             #
 ###########################################################################
@@ -56,7 +57,7 @@ NET "DC_CLK_N<1>" LOC = AA12; #SC_DC_DATA2N, J2_113_AA12_L33N
 # TX  (to DC)
 ## NET "SC_DC_RX_P<1>" LOC = AC5; #SC_DC_RX2_P, J2_118_AC5_L61P
 ## NET "SC_DC_RX_N<1>" LOC = AD5; #SC_DC_RX2_N, J2_117_AD5_L61N
-NET "TX_DC_P<1>" LOC = AC5; #SC_DC_RX2_P, J2_118_AC5_L61P
+NET "TX_DC_P<1>" LOC = AC5; #SC_DC_RX2_P, J2_118_AC5_L61P 
 NET "TX_DC_N<1>" LOC = AD5; #SC_DC_RX2_N, J2_117_AD5_L61N
 # RX  (from DC)
 ## NET "ORed_Trig_P<1>" LOC = Y15;

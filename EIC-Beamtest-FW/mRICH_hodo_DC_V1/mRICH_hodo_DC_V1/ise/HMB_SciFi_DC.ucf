@@ -27,24 +27,24 @@ TIMESPEC TS_AUX_CLK = PERIOD "aux_clk" 100 ns HIGH 50 %;
 # Clock (previous pin-out listed for board reference) -- DC_CLK on SCROD side
 #NET "DATA_IN_N"	 	 LOC = "P123"; 
 #NET "DATA_IN_P"	 	 LOC = "P124"; 
-NET "SYSCLK_N"	 	 	 LOC = "P123" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
-NET "SYSCLK_P"	 	    LOC = "P124" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
+NET "SYSCLK_P"	 	 	 LOC = "P123" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
+NET "SYSCLK_N"	 	    LOC = "P124" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
 # RX    (TX on SCROD side)
-NET "RX_N"	 			 LOC = "P126" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
-NET "RX_P"	 			 LOC = "P127" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
+NET "RX_P"	 			 LOC = "P126" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
+NET "RX_N"	 			 LOC = "P127" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
 # TX
 #NET "ORed_Trig_N"	 LOC = "P141"; 
 #NET "ORed_Trig_P" 	 LOC = "P142"; 
-NET "TX_N"		       LOC = "P141" | IOSTANDARD = LVDS_25; #RX on SCROD side
-NET "TX_P" 	          LOC = "P142" | IOSTANDARD = LVDS_25; #
+NET "TX_P"		       LOC = "P141" | IOSTANDARD = LVDS_25; #RX on SCROD side
+NET "TX_N" 	          LOC =SYBN "P142" | IOSTANDARD = LVDS_25; #
 
 # SYNC -- used to align timestamps between DCs   (SYNC on SCROD side)
 #NET "MAS_ACK_N"	 	 LOC = "P1"; 
 #NET "MAS_ACK_P"	 	 LOC = "P2"; 
-NET "SYNC_N"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
-NET "SYNC_P"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
+NET "SYNC_P"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
+NET "SYNC_N"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
 ######################################################################################
                          
