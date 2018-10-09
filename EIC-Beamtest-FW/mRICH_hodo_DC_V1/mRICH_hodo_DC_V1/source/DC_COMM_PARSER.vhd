@@ -33,7 +33,7 @@ Port (
 	  ------master to DC signals----------
 	  MAS_DC_DATA_CLK     : IN  STD_LOGIC;
 	  MAS_DC_RX           : IN  STD_LOGIC;
-	  MAS_DC_DATA_IN      : IN  STD_LOGIC;
+ 	  MAS_DC_DATA_IN      : IN  STD_LOGIC; -- vhdl header file
 	  DC_MAS_TX           : OUT STD_LOGIC;
 	  DC_MAS_DATA_OUT  	 : OUT STD_LOGIC;
 	  ------DC to DC signals--------------

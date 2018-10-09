@@ -48,7 +48,7 @@ entity BMD_DC_TOP_V2 is
 			TX_TRIG16          : IN STD_LOGIC;
 			
 			-- DC TO TX DAC UPDATE
-			SHOUT					 : IN  STD_LOGIC;
+			SHOUT					 : IN  STD_LOGIC; --NOT MAPPED
 			SIN					 : OUT STD_LOGIC;
 			PCLK					 : OUT STD_LOGIC;
 			SCLK					 : OUT STD_LOGIC;
@@ -65,7 +65,7 @@ entity BMD_DC_TOP_V2 is
 			RD_ROWSEL_S			 : OUT STD_LOGIC_VECTOR(2 downto 0);
 			WR_ADDRCLR			 : OUT STD_LOGIC;
 			RAMP					 : OUT STD_LOGIC;
-			CLR					 : OUT STD_LOGIC;
+			CLR					 : OUT STD_LOGIC; --where does this go to?
 			DONE					 : IN  STD_LOGIC;
 			
 			-- DC TO TX DIGITIZATION AND SAMPLING SIGNALS
@@ -100,7 +100,7 @@ entity BMD_DC_TOP_V2 is
 			CALIB_EN           : OUT STD_LOGIC;
 			--AUX TEST POINT
 			TX_HW_TRIG         : OUT STD_LOGIC;
-			SCROD_TRIG         : IN STD_LOGIC;
+			SCROD_TRIG         : IN STD_LOGIC
 			
 			-- FLASH SIGNALS(USED TO HOLD BIT FILE FOR SELF PROGRAMMING) - will do this later
 --			FLASH_DO           : IN  STD_LOGIC; --Uncommented by Tommy  
@@ -118,7 +118,7 @@ entity BMD_DC_TOP_V2 is
 
 
 
---			--ADDED SIGNALS FOR mRICH (by William Roh and Tommy Lam)
+			--ADDED SIGNALS FOR mRICH (by William Roh and Tommy Lam)
 				--IN or OUT was determined by choosing the same configuation as shown in IDL_18_014 Sheet 3 of 6
 			MON_Timing			 	: IN STD_LOGIC;
 			DATA_IN_N			 	: IN STD_LOGIC;
@@ -444,7 +444,7 @@ PORT MAP(
 	RB_REG_VALUE	  => rb_value,      --register value for read back
 	RB_REG_NUM       => rb_reg,		  --reagister number for readback
 	TX_BUSY          => tx_busy,       --sending module busy signal
-	TX_UPDATE        => tx_dac_update, --updatae signal for TARGETX DAC module
+	TX_UPDATE        => tx_dac_update, --update signal for TARGETX DAC module
 	DAC_UPDATE       => mppc_dac_update,--update signal for mppc dac module
 	OUTPUT_REGISTERS => ctrl_register,  --control registers for DC
 	-----busy signals from drivers-----

@@ -12,13 +12,13 @@
          <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/DC_COMM_PARSER - DC_COMM_PARSER - Behavioral/TX_Sender - TX_DATA_SENDER - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TARGETX_control - TARGETX_DAC_CONTROL - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd)</SelectedItem>
+         <SelectedItem>BMD_DC_TOP_V2 - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ab000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ab0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TARGETX_control - TARGETX_DAC_CONTROL - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd)</CurrentItem>
+      <CurrentItem>BMD_DC_TOP_V2 - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -50,14 +50,15 @@
    <ItemView guiview="Library" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>work</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>BMD_definitions.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000198000000010001000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>work</CurrentItem>
+      <CurrentItem>BMD_definitions.vhd</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -72,13 +73,13 @@
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000187000000010000000100000000000000000000000064ffffffff000000810000000000000001000001870000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001910000019101000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -88,13 +89,13 @@
          <ClosedNode>CORE Generator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>CORE Generator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>CORE Generator</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -145,13 +146,13 @@
          <ClosedNode>/TX_ReadoutControl - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|TX_ReadoutControl.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MPPC_DAC - mppc_bias_dac_AD5672R - Behavioral (C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_bias_dac_AD5672R.vhd)</SelectedItem>
+         <SelectedItem>uut - TARGETX_DAC_CONTROL - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000263000000020000000000000000000000000200000064ffffffff000000810000000300000002000002630000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MPPC_DAC - mppc_bias_dac_AD5672R - Behavioral (C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_bias_dac_AD5672R.vhd)</CurrentItem>
+      <CurrentItem>uut - TARGETX_DAC_CONTROL - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -164,7 +165,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000204000000010000000100000000000000000000000064ffffffff000000810000000000000001000002040000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -173,13 +174,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002cd000000010000000100000000000000000000000064ffffffff000000810000000000000001000002cd0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
