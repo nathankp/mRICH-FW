@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+:Q
+
 '''
 University of Hawaii at Manoa
 Instrumentation Development Lab (IDLab), WAT214 
