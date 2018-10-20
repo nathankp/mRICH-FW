@@ -23,7 +23,7 @@ PROJECT CONTRIBUTORS:
 *Coming Soon: Implementation Instructions and Debugging Information*
 
 
-*************************************VERSION CONTROL POLICY**********************************************************
+*************************************VERSION CONTROL POLICY
 To access project from nathankp's online repo, please fork into your own github account and clone into your local repo.
 To contribute to the project, submit a pull request. DO NOT PUSH TO THE REMOTE MASTER UNTIL CHANGES HAVE BEEN APPROVED!
 
