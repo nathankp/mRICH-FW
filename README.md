@@ -23,7 +23,7 @@ PROJECT CONTRIBUTORS:
 *Coming Soon: Implementation Instructions and Debugging Information*
 
 
-                     **VERSION CONTROL POLICY**
+                     *VERSION CONTROL POLICY*
 To access project from nathankp's online repo, please fork into your own github account and clone into your local repo.
 To contribute to the project, submit a pull request. DO NOT PUSH TO THE REMOTE MASTER UNTIL CHANGES HAVE BEEN APPROVED!
 
@@ -57,11 +57,11 @@ COMMIT MESSAGES:
     <List activities other than development (i.e. Hardware tests, simulation, hardware design, documentation)>
    ---------------------------------------------
    You can add this template to your ~/.gitconfig use it with all commit messages automatically: 
+	    
    	1. (git bash) vim ~/.gitconfig
 	2. (in vim or other txt editor add the following lines, then exit) 
 	   [commit] 
 	   	template = ~/.gitmessage
-	   
 	3. create the file ~/.gitmessage with vim 
 		(git bash) vim ~/.gitmessage 
 	4. (in vim copy template, replace <Author> with your name, then exit)
