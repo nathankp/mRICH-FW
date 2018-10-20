@@ -57,7 +57,8 @@ COMMIT MESSAGES:
     <List activities other than development (i.e. Hardware tests, simulation, hardware design, documentation)>
    ---------------------------------------------
    You can add this template to your ~/.gitconfig use it with all commit messages automatically:     
-      1. (git bash) vim ~/.gitconfig
+      	    
+	    1. (git bash) vim ~/.gitconfig
 	    2. (in vim or other txt editor add the following lines, then exit) 
 	       [commit] 
 	   	   template = ~/.gitmessage
