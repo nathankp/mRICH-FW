@@ -10,9 +10,9 @@ https://www.phys.hawaii.edu/~idlab/taskAndSchedule/HI_muBeamline/HMB.html
 
 PROJECT STATUS: 
   - Work in progress: 
-  - Fixing ethernet module (needs to be added to repo)
-  - Integrating ByteLine protocol (needs to be added to repo)
-  - PMT board firmware (needs to be added to repo)
+  	- Fixing ethernet module (needs to be added to repo)
+  	- Integrating ByteLine protocol (needs to be added to repo)
+  	- PMT board firmware (needs to be added to repo)
   
 PROJECT CONTRIBUTORS:
 + Gary Varner ~ Varner@phys.hawaii.edu | varner@hawaii.edu | gsvarner@gmail.com
