@@ -21,7 +21,9 @@ Library UNISIM;
 use UNISIM.vcomponents.all;
 use work.all;
 use work.BMD_definitions.all;
-
+use work.UtilityPkg.all;
+library UNISIM;
+use UNISIM.VComponents.all;
 entity SCROD_A5_TOP is
 	Port ( --incoming signals 
 		MASTER_CLK_P     : IN STD_LOGIC;--input clock either 127MHz form osc or remote clock form 
@@ -45,7 +47,7 @@ entity SCROD_A5_TOP is
 		--ethernaet signals--needs to change direction later on depending on use
 --		RJ45_ACK_P		  : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);--ACK for CDT that scrod received trigger
 --		RJ45_ACK_N       : IN  STD_LOGIC;
-		RJ45_TRG_P       : OUT STD_LOGIC;--local trigger to CDT, ie.. moun hit on both plans
+		RJ45_TRG_P       : OUT STD_LOGIC;--local trigger to CDT, ie.. muon hit on both planes
 		RJ45_TRG_N       : OUT STD_LOGIC;
 		RJ45_CLK_P       : IN STD_LOGIC;--remote clock for system 125MHz
 		RJ45_CLK_N       : IN STD_LOGIC;
@@ -59,14 +61,14 @@ entity SCROD_A5_TOP is
 		RAM_OEn			  : OUT STD_LOGIC := '1';                       
 		RAM_WEn			  : OUT STD_LOGIC := '1';
       --RJ45 (Nathan)
-		SC_DC_RX_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		SC_DC_RX_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);	
-		SC_DC_DATA_P     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   
-		SC_DC_DATA_N     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);	
-		RJ45_ACK_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)
-		RJ45_ACK_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)	
-		ORed_Trig_P      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		ORed_Trig_N      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		TX_DC_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		TX_DC_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);	
+		DC_CLK_P    : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   
+		DC_CLK_N    : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);	
+		SYNC_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)
+		SYNC_N  : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)	
+		RX_DC_P      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		RX_DC_N      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_P			 : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_N		     : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		SC_DC_CLK_P      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -153,6 +155,8 @@ signal DC_SC_DATA       : std_logic_vector(3 downto 0);
  
 signal BOT_TRIG_i:std_logic;
 
+signal MasterClk : std_logic;
+
  
 --attribute keep: boolean;
 --attribute keep of TOP_SC_DC_DOUT: signal is true;
@@ -171,7 +175,7 @@ begin
 --    CLK_OUT2 => internal_data_clk);--25MHz
 
 RJ45_ACK_N<="0000";
-RJ45_ACK_P<="1111";
+SYNC_P<="1111";
 
 
 CLK_FANOUT_1TO2 : entity work.CLK_FANOUT
@@ -262,8 +266,8 @@ port map (
 en_sc2dc_OBUFDS_inst : OBUFDS 
 generic map (IOSTANDARD => "LVDS_25")
 port map (
-	O  => SC_DC_RX_P(i),    
-	OB => SC_DC_RX_N(i),  
+	O  => tx_DC_P(i),    
+	OB => TX_DC_N(i),  
 	I  => SC_DC_RX(i)); 
 
 	
@@ -277,57 +281,63 @@ oops_reset       <= OUTPUT_REGISTER(0)(0);--master reset
 top_bot_word     <= OUTPUT_REGISTER(1)(0);--lets SCROD knows if its the 1:top or 0:bot
 asic_enable_bits <= OUTPUT_REGISTER(7)(3 downto 0);
 
-comm_process : entity work.SCROD_DC_COMM
-PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
-			 DATA_CLK        	=> data_clk,         --20MHz clock
-			 PC_SEND         	=> start_pc_send,    --signal to start sending data to pc 
-			 START_READOUT    => start_readout,    --starts reading out dc
-			 DC_NO_GO         => dc_no_response,   --current dc readout timed out send dead beef 
-			 TOP_BOT          => top_bot_word,     --lets pc know if SCROD is top ot bot comes from register 1 bit 0
-			 OOPS_RESET       => oops_reset, 	   --reset all modules to idle comes from register 0 bit 0				   
-			 --incoming/outgoing signals from daughter-cards 
-			SC_DC_RX		=>  SC_DC_RX	     ,
-			SC_DC_DATA  	=>  SC_DC_DATA 	 ,
-			SC_DC_CLK    	=>  SC_DC_CLK  	 ,
-			DC_SC_TX    	=>  DC_SC_TX  	 ,
-			DC_SC_DATA   	=>  DC_SC_DATA 	 ,
-			 
-			 
-			 --internal control register
-			 TX_BUSY         	=> tx_busy,  			--internal busy signal 
-			 CTIME            => open,
-			 OUTPUT_REGISTER 	=> OUTPUT_REGISTER,
-			 --trigger signal 
-			 DC_TRIG          => E_TRIG,           --trigger from all DC
-			 ASIC_EN_BITS     => asic_enable_bits, --comes from output register 3 bits 3-0
-			 SCROD_TRIG       => SCROD_TRIG,       --trigger to all DC from scrod
-			 CDT_TRIG         => cdt_trigger,      --trigger to CDT for readout
-			 TOP_TRIG         => TOP_TRIG,
-			 BOT_TRIG         => BOT_TRIG_i,			 
-			 --data from top and bot plans
-			 DC_FIFO_RD_EN		=> dc_fifo_rd_en,
-			 DC_FIFO_DOUT		=> dc_fifo_dout,
-			 DC_FIFO_EMPTY		=> dc_fifo_empty,
-			 START_CON        => start_con,
-			 DONE_CON         => open,
-			 --data to wave fifo for pc 
-			 WAVE_FIFO_CLK    => wave_clock,
-			 WAVE_FIFO_RST		=> wave_reset,
-			 WAVE_WR_EN			=> wave_write_en,
-			 WAVE_DIN			=> wave_data_in,
-			 --fiber signals		
-			 mgttxfault 		=> MGTTXFAULT,
-			 mgtmod0 			=> MGTMOD0,
-			 mgtlos 				=> MGTLOS,
-			 mgttxdis 			=> MGTTXDIS,
-			 mgtmod2 			=> MGTMOD2,
-			 mgtmod1 			=> MGTMOD1,
-			 mgtrxp 				=> MGTRXP,
-			 mgtrxn 				=> MGTRXN,
-			 mgttxp 				=> MGTTXP,
-			 mgttxn 				=> MGTTXN,
-			 mgtclk1p 			=> MGTCLK1P,
-			 mgtclk1n 			=> MGTCLK1N);
+comm_process : entity work.QBlink
+PORT MAP (
+				sstCLK => MasterClk,
+				rst => oops_reset,
+				rawSerialOut => 
+--
+--comm_process : entity work.SCROD_DC_COMM
+--PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
+--			 DATA_CLK        	=> data_clk,         --20MHz clock
+--			 PC_SEND         	=> start_pc_send,    --signal to start sending data to pc 
+--			 START_READOUT    => start_readout,    --starts reading out dc
+--			 DC_NO_GO         => dc_no_response,   --current dc readout timed out send dead beef 
+--			 TOP_BOT          => top_bot_word,     --lets pc know if SCROD is top ot bot comes from register 1 bit 0
+--			 OOPS_RESET       => oops_reset, 	   --reset all modules to idle comes from register 0 bit 0				   
+--			 --incoming/outgoing signals from daughter-cards 
+--			SC_DC_RX		=>  SC_DC_RX	     ,
+--			SC_DC_DATA  	=>  SC_DC_DATA 	 ,
+--			SC_DC_CLK    	=>  SC_DC_CLK  	 ,
+--			DC_SC_TX    	=>  DC_SC_TX  	 ,
+--			DC_SC_DATA   	=>  DC_SC_DATA 	 ,
+--			 
+--			 
+--			 --internal control register
+--			 TX_BUSY         	=> tx_busy,  			--internal busy signal 
+--			 CTIME            => open,
+--			 OUTPUT_REGISTER 	=> OUTPUT_REGISTER,
+--			 --trigger signal 
+--			 DC_TRIG          => E_TRIG,           --trigger from all DC
+--			 ASIC_EN_BITS     => asic_enable_bits, --comes from output register 3 bits 3-0
+--			 SCROD_TRIG       => SCROD_TRIG,       --trigger to all DC from scrod
+--			 CDT_TRIG         => cdt_trigger,      --trigger to CDT for readout
+--			 TOP_TRIG         => TOP_TRIG,
+--			 BOT_TRIG         => BOT_TRIG_i,			 
+--			 --data from top and bot plans
+--			 DC_FIFO_RD_EN		=> dc_fifo_rd_en,
+--			 DC_FIFO_DOUT		=> dc_fifo_dout,
+--			 DC_FIFO_EMPTY		=> dc_fifo_empty,
+--			 START_CON        => start_con,
+--			 DONE_CON         => open,
+--			 --data to wave fifo for pc 
+--			 WAVE_FIFO_CLK    => wave_clock,
+--			 WAVE_FIFO_RST		=> wave_reset,
+--			 WAVE_WR_EN			=> wave_write_en,
+--			 WAVE_DIN			=> wave_data_in,
+--			 --fiber signals		
+--			 mgttxfault 		=> MGTTXFAULT,
+--			 mgtmod0 			=> MGTMOD0,
+--			 mgtlos 				=> MGTLOS,
+--			 mgttxdis 			=> MGTTXDIS,
+--			 mgtmod2 			=> MGTMOD2,
+--			 mgtmod1 			=> MGTMOD1,
+--			 mgtrxp 				=> MGTRXP,
+--			 mgtrxn 				=> MGTRXN,
+--			 mgttxp 				=> MGTTXP,
+--			 mgttxn 				=> MGTTXN,
+--			 mgtclk1p 			=> MGTCLK1P,
+--			 mgtclk1n 			=> MGTCLK1N);
 
 
 
@@ -348,7 +358,7 @@ CDT_TRIG   <= cdt_trigger;
 --		IOSTANDARD   => "DEFAULT")
 --	port map (
 --		O  => cdt_ack, -- Buffer output
---		I  => RJ45_ACK_P, -- Diff_p buffer input (connect directly to top-level port)
+--		I  => SYNC_P, -- Diff_p buffer input (connect directly to top-level port)
 --		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
 
 ------------------------------------------------------------------------------------------------------------

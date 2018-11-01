@@ -78,7 +78,7 @@ entity SCROD_DC_COMM is
 			 mgtclk1n         : IN STD_LOGIC);
 end SCROD_DC_COMM;
 
-architecture Behavioral of SCROD_DC_COMM is
+  architecture Behavioral of SCROD_DC_COMM is
 --declearing internal signals for scrod and pc state machine
 type eth_tx_st is (idle, 
 						 dc_wait_reset, 
