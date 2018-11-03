@@ -155,7 +155,7 @@ signal DC_SC_DATA       : std_logic_vector(3 downto 0);
  
 signal BOT_TRIG_i:std_logic;
 
-signal MasterClk : std_logic;
+
 
  
 --attribute keep: boolean;
@@ -283,7 +283,7 @@ asic_enable_bits <= OUTPUT_REGISTER(7)(3 downto 0);
 
 comm_process : entity work.QBlink
 PORT MAP (
-				sstCLK => MasterClk,
+				sstCLK => internal_data_clk,
 				rst => oops_reset,
 				rawSerialOut => 
 --
