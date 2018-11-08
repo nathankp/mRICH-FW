@@ -71,13 +71,7 @@ entity SCROD_A5_TOP is
 		RX_DC_N      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_P			 : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_N		     : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		SC_DC_CLK_P      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		SC_DC_CLK_N      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		DC_SC_TX_P       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		DC_SC_TX_N       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		DC_SC_DATA_P     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		DC_SC_DATA_N     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		--general IO pins
+		
 		J1_079_Y6 		  : OUT STD_LOGIC;--needs to change direction later on depending on use
 		J1_078_AA3 		  : OUT STD_LOGIC;
 		J1_077_AA4 		  : OUT STD_LOGIC;
@@ -93,20 +87,12 @@ entity SCROD_A5_TOP is
 		J1_061_AB11_N    : OUT STD_LOGIC;
 		J1_060_AE2_P     : OUT STD_LOGIC;
 		J1_059_AE1_N     : OUT STD_LOGIC;
---		J1_056_AC2_P     : OUT STD_LOGIC;
---		J1_055_AC1_N     : OUT STD_LOGIC;
---		J1_052_AA2_P     : OUT STD_LOGIC;
---		J1_051_AA1_N     : OUT STD_LOGIC;
---		J1_048_W2_P      : IN STD_LOGIC;
---		J1_047_W1_N      : OUT STD_LOGIC;
---		J1_044_U2_P      : IN STD_LOGIC;
---		J1_043_U1_N      : OUT STD_LOGIC;
---		J1_042_R2 	     : OUT STD_LOGIC
+		
 		--Triggers from DCs
 		E_TRIG           : IN  STD_LOGIC_VECTOR(3 downto 0);
 		SCROD_TRIG       : OUT STD_LOGIC_VECTOR(3 downto 0);
 		CDT_TRIG         : OUT STD_LOGIC);
-end SCROD_A5_TOP;
+		end SCROD_A5_TOP;
 
 architecture Behavioral of SCROD_A5_TOP is
 --declearing outgoing internal signals
@@ -192,7 +178,7 @@ CLK_FANOUT_1TO2 : entity work.CLK_FANOUT
 	 
 clk_sync: process(internal_fpga_clk) begin
 if rising_edge(internal_fpga_clk) then
-	data_clk <= internal_data_clk; 
+	data_clk <= internal_data_clk; --NATHAN: Keep data_clk
 end if;
 end process;	 
 	 
@@ -281,12 +267,83 @@ oops_reset       <= OUTPUT_REGISTER(0)(0);--master reset
 top_bot_word     <= OUTPUT_REGISTER(1)(0);--lets SCROD knows if its the 1:top or 0:bot
 asic_enable_bits <= OUTPUT_REGISTER(7)(3 downto 0);
 
-comm_process : entity work.QBlink
-PORT MAP (
-				sstCLK => internal_data_clk,
-				rst => oops_reset,
-				rawSerialOut => 
---
+
+------------------------------------------------------------------------------------------------------------
+-----------------------------communication from SCROD to CDTC-----------------------------------------------
+------------------------------------------------------------------------------------------------------------
+--outputing trigger through RJ-45 to CDT
+RJ45_TRG_P <= cdt_trigger;
+RJ45_TRG_N <= not cdt_trigger;
+CDT_TRIG   <= cdt_trigger;
+
+
+------------------------------------------------------------------------------------------------------------
+-----------------------------loading dc wave data into internal BRAM----------------------------------------
+------------------------------------------------------------------------------------------------------------
+readout_start    		<= OUTPUT_REGISTER(5)(4 downto 0);  --readout signal from pc
+ped_readout_dcnum    <= OUTPUT_REGISTER(5)(15 downto 12);--dc number of ped data saved in sram, use fix win as start window in this mode
+demux_mode           <= OUTPUT_REGISTER(8)(3 downto 0);  --0:send raw data, 1:send pedsub data, 2:send ped data from sram, 3: save ped data to sram
+fix_win              <= OUTPUT_REGISTER(12)(8 downto 0); -- bit 15: '1'=> use fixed start win and (8 downto 0) is the fixed start win
+
+DC_READOUT_DEMUX: entity work.DataDemuxControl 
+	PORT MAP(
+		--GENERAL I/O
+		CLK    		=> internal_fpga_clk, --125MHz clock
+		OOPS   		=> oops_reset, 		 --reset all modules to idle comes from register 0 bit 0
+		DC_RD_BUSY  => dc_rd_demux_busy,  --internal busy signal
+		RD_SRT 		=> readout_start, 	 --comes from output register 7 bit 4-0
+		DC_PED_RD   => ped_readout_dcnum, --comes from output register 7 bit 15-12
+		MODE 			=> demux_mode, 		 --comes from output register 8 bit 3-0
+		FIX_WIN 		=> fix_win,           --comes from output register 12 bit 8-0
+		
+		--I/O TO communication process		
+		TX_BUSY 		=> tx_busy, 
+		SRT_CON     => start_con,
+		SRT_PC_SEND => start_pc_send,
+		START_RD		=> start_readout,
+		NO_GO 		=> dc_no_response,
+
+		WAVE_WR_EN	=> wave_write_en,
+		WAVE_DIN 	=> wave_data_in,
+		WAVE_CLK 	=> wave_clock,
+		WAVE_RST    => wave_reset,
+		DC_FIFO_EMPTY   => dc_fifo_empty,
+		DC_FIFO_RD_EN   => dc_fifo_rd_en,
+		DC_FIFO_DOUT    => dc_fifo_dout);
+
+
+end Behavioral;
+
+----Outdated ports:
+--	SC_DC_CLK_P      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+--		SC_DC_CLK_N      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+--		DC_SC_TX_P       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+--		DC_SC_TX_N       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+--		DC_SC_DATA_P     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+--		DC_SC_DATA_N     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		--general IO pins
+--		J1_056_AC2_P     : OUT STD_LOGIC;
+--		J1_055_AC1_N     : OUT STD_LOGIC;
+--		J1_052_AA2_P     : OUT STD_LOGIC;
+--		J1_051_AA1_N     : OUT STD_LOGIC;
+--		J1_048_W2_P      : IN STD_LOGIC;
+--		J1_047_W1_N      : OUT STD_LOGIC;
+--		J1_044_U2_P      : IN STD_LOGIC;
+--		J1_043_U1_N      : OUT STD_LOGIC;
+--		J1_042_R2 	     : OUT STD_LOGIC
+
+				  		
+--CDT_ACK_OFBUFD : IBUFDS
+--	generic map (
+--		DIFF_TERM    => FALSE, -- Differential Termination
+--		IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
+--		IOSTANDARD   => "DEFAULT")
+--	port map (
+--		O  => cdt_ack, -- Buffer output
+--		I  => SYNC_P, -- Diff_p buffer input (connect directly to top-level port)
+--		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
+
+--Outdated DC-SCROD Communication
 --comm_process : entity work.SCROD_DC_COMM
 --PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
 --			 DATA_CLK        	=> data_clk,         --20MHz clock
@@ -338,64 +395,3 @@ PORT MAP (
 --			 mgttxn 				=> MGTTXN,
 --			 mgtclk1p 			=> MGTCLK1P,
 --			 mgtclk1n 			=> MGTCLK1N);
-
-
-
-
-------------------------------------------------------------------------------------------------------------
------------------------------communication from SCROD to CDTC-----------------------------------------------
-------------------------------------------------------------------------------------------------------------
---outputing trigger through RJ-45 to CDT
-RJ45_TRG_P <= cdt_trigger;
-RJ45_TRG_N <= not cdt_trigger;
-CDT_TRIG   <= cdt_trigger;
-
-				  		
---CDT_ACK_OFBUFD : IBUFDS
---	generic map (
---		DIFF_TERM    => FALSE, -- Differential Termination
---		IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
---		IOSTANDARD   => "DEFAULT")
---	port map (
---		O  => cdt_ack, -- Buffer output
---		I  => SYNC_P, -- Diff_p buffer input (connect directly to top-level port)
---		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
-
-------------------------------------------------------------------------------------------------------------
------------------------------loading dc wave data into internal BRAM----------------------------------------
-------------------------------------------------------------------------------------------------------------
-readout_start    		<= OUTPUT_REGISTER(5)(4 downto 0);  --readout signal from pc
-ped_readout_dcnum    <= OUTPUT_REGISTER(5)(15 downto 12);--dc number of ped data saved in sram, use fix win as start window in this mode
-demux_mode           <= OUTPUT_REGISTER(8)(3 downto 0);  --0:send raw data, 1:send pedsub data, 2:send ped data from sram, 3: save ped data to sram
-fix_win              <= OUTPUT_REGISTER(12)(8 downto 0); -- bit 15: '1'=> use fixed start win and (8 downto 0) is the fixed start win
-
-DC_READOUT_DEMUX: entity work.DataDemuxControl 
-	PORT MAP(
-		--GENERAL I/O
-		CLK    		=> internal_fpga_clk, --125MHz clock
-		OOPS   		=> oops_reset, 		 --reset all modules to idle comes from register 0 bit 0
-		DC_RD_BUSY  => dc_rd_demux_busy,  --internal busy signal
-		RD_SRT 		=> readout_start, 	 --comes from output register 7 bit 4-0
-		DC_PED_RD   => ped_readout_dcnum, --comes from output register 7 bit 15-12
-		MODE 			=> demux_mode, 		 --comes from output register 8 bit 3-0
-		FIX_WIN 		=> fix_win,           --comes from output register 12 bit 8-0
-		
-		--I/O TO communication process		
-		TX_BUSY 		=> tx_busy, 
-		SRT_CON     => start_con,
-		SRT_PC_SEND => start_pc_send,
-		START_RD		=> start_readout,
-		NO_GO 		=> dc_no_response,
-
-		WAVE_WR_EN	=> wave_write_en,
-		WAVE_DIN 	=> wave_data_in,
-		WAVE_CLK 	=> wave_clock,
-		WAVE_RST    => wave_reset,
-		DC_FIFO_EMPTY   => dc_fifo_empty,
-		DC_FIFO_RD_EN   => dc_fifo_rd_en,
-		DC_FIFO_DOUT    => dc_fifo_dout);
-
-
-end Behavioral;
-
-

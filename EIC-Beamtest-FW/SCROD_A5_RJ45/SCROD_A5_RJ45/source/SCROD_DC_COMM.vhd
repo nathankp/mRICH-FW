@@ -268,12 +268,12 @@ end if;
 end process;
 
 dc_rx_data <= 	internal_din(0) when dc_num = x"1" else
-				internal_din(1) when dc_num = x"2" else
-				internal_din(2) when dc_num = x"3" else
-				internal_din(3) when dc_num = x"4" else
-				'0';
+				   internal_din(1) when dc_num = x"2" else
+				   internal_din(2) when dc_num = x"3" else
+				   internal_din(3) when dc_num = x"4" else
+				   '0';
 			
-dc_rx <= 		DC_SC_TX(0) when dc_num = x"1" else
+dc_rx <= 	DC_SC_TX(0) when dc_num = x"1" else
 				DC_SC_TX(1) when dc_num = x"2" else
 				DC_SC_TX(2) when dc_num = x"3" else
 				DC_SC_TX(3) when dc_num = x"4" else
