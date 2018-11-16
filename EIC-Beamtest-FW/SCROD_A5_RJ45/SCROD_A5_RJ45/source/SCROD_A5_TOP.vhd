@@ -266,7 +266,57 @@ end generate;
 oops_reset       <= OUTPUT_REGISTER(0)(0);--master reset
 top_bot_word     <= OUTPUT_REGISTER(1)(0);--lets SCROD knows if its the 1:top or 0:bot
 asic_enable_bits <= OUTPUT_REGISTER(7)(3 downto 0);
-
+comm_process : entity work.SCROD_DC_COMM
+PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
+			 DATA_CLK        	=> data_clk,         --20MHz clock
+			 PC_SEND         	=> start_pc_send,    --signal to start sending data to pc 
+			 START_READOUT    => start_readout,    --starts reading out dc
+			 DC_NO_GO         => dc_no_response,   --current dc readout timed out send dead beef 
+			 TOP_BOT          => top_bot_word,     --lets pc know if SCROD is top ot bot comes from register 1 bit 0
+			 OOPS_RESET       => oops_reset, 	   --reset all modules to idle comes from register 0 bit 0				   
+			 --incoming/outgoing signals from daughter-cards 
+			SC_DC_RX		=>  SC_DC_RX	     ,
+			SC_DC_DATA  	=>  SC_DC_DATA 	 ,
+			SC_DC_CLK    	=>  SC_DC_CLK  	 ,
+			DC_SC_TX    	=>  DC_SC_TX  	 ,
+			DC_SC_DATA   	=>  DC_SC_DATA 	 ,
+			 
+			 
+			 --internal control register
+			 TX_BUSY         	=> tx_busy,  			--internal busy signal 
+			 CTIME            => open,
+			 OUTPUT_REGISTER 	=> OUTPUT_REGISTER,
+			 --trigger signal 
+			 DC_TRIG          => E_TRIG,           --trigger from all DC
+			 ASIC_EN_BITS     => asic_enable_bits, --comes from output register 3 bits 3-0
+			 SCROD_TRIG       => SCROD_TRIG,       --trigger to all DC from scrod
+			 CDT_TRIG         => cdt_trigger,      --trigger to CDT for readout
+			 TOP_TRIG         => TOP_TRIG,
+			 BOT_TRIG         => BOT_TRIG_i,			 
+			 --data from top and bot plans
+			 DC_FIFO_RD_EN		=> dc_fifo_rd_en,
+			 DC_FIFO_DOUT		=> dc_fifo_dout,
+			 DC_FIFO_EMPTY		=> dc_fifo_empty,
+			 START_CON        => start_con,
+			 DONE_CON         => open,
+			 --data to wave fifo for pc 
+			 WAVE_FIFO_CLK    => wave_clock,
+			 WAVE_FIFO_RST		=> wave_reset,
+			 WAVE_WR_EN			=> wave_write_en,
+			 WAVE_DIN			=> wave_data_in,
+			 --fiber signals		
+			 mgttxfault 		=> MGTTXFAULT,
+			 mgtmod0 			=> MGTMOD0,
+			 mgtlos 				=> MGTLOS,
+			 mgttxdis 			=> MGTTXDIS,
+			 mgtmod2 			=> MGTMOD2,
+			 mgtmod1 			=> MGTMOD1,
+			 mgtrxp 				=> MGTRXP,
+			 mgtrxn 				=> MGTRXN,
+			 mgttxp 				=> MGTTXP,
+			 mgttxn 				=> MGTTXN,
+			 mgtclk1p 			=> MGTCLK1P,
+			 mgtclk1n 			=> MGTCLK1N);
 
 ------------------------------------------------------------------------------------------------------------
 -----------------------------communication from SCROD to CDTC-----------------------------------------------
@@ -344,54 +394,3 @@ end Behavioral;
 --		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
 
 --Outdated DC-SCROD Communication
---comm_process : entity work.SCROD_DC_COMM
---PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
---			 DATA_CLK        	=> data_clk,         --20MHz clock
---			 PC_SEND         	=> start_pc_send,    --signal to start sending data to pc 
---			 START_READOUT    => start_readout,    --starts reading out dc
---			 DC_NO_GO         => dc_no_response,   --current dc readout timed out send dead beef 
---			 TOP_BOT          => top_bot_word,     --lets pc know if SCROD is top ot bot comes from register 1 bit 0
---			 OOPS_RESET       => oops_reset, 	   --reset all modules to idle comes from register 0 bit 0				   
---			 --incoming/outgoing signals from daughter-cards 
---			SC_DC_RX		=>  SC_DC_RX	     ,
---			SC_DC_DATA  	=>  SC_DC_DATA 	 ,
---			SC_DC_CLK    	=>  SC_DC_CLK  	 ,
---			DC_SC_TX    	=>  DC_SC_TX  	 ,
---			DC_SC_DATA   	=>  DC_SC_DATA 	 ,
---			 
---			 
---			 --internal control register
---			 TX_BUSY         	=> tx_busy,  			--internal busy signal 
---			 CTIME            => open,
---			 OUTPUT_REGISTER 	=> OUTPUT_REGISTER,
---			 --trigger signal 
---			 DC_TRIG          => E_TRIG,           --trigger from all DC
---			 ASIC_EN_BITS     => asic_enable_bits, --comes from output register 3 bits 3-0
---			 SCROD_TRIG       => SCROD_TRIG,       --trigger to all DC from scrod
---			 CDT_TRIG         => cdt_trigger,      --trigger to CDT for readout
---			 TOP_TRIG         => TOP_TRIG,
---			 BOT_TRIG         => BOT_TRIG_i,			 
---			 --data from top and bot plans
---			 DC_FIFO_RD_EN		=> dc_fifo_rd_en,
---			 DC_FIFO_DOUT		=> dc_fifo_dout,
---			 DC_FIFO_EMPTY		=> dc_fifo_empty,
---			 START_CON        => start_con,
---			 DONE_CON         => open,
---			 --data to wave fifo for pc 
---			 WAVE_FIFO_CLK    => wave_clock,
---			 WAVE_FIFO_RST		=> wave_reset,
---			 WAVE_WR_EN			=> wave_write_en,
---			 WAVE_DIN			=> wave_data_in,
---			 --fiber signals		
---			 mgttxfault 		=> MGTTXFAULT,
---			 mgtmod0 			=> MGTMOD0,
---			 mgtlos 				=> MGTLOS,
---			 mgttxdis 			=> MGTTXDIS,
---			 mgtmod2 			=> MGTMOD2,
---			 mgtmod1 			=> MGTMOD1,
---			 mgtrxp 				=> MGTRXP,
---			 mgtrxn 				=> MGTRXN,
---			 mgttxp 				=> MGTTXP,
---			 mgttxn 				=> MGTTXN,
---			 mgtclk1p 			=> MGTCLK1P,
---			 mgtclk1n 			=> MGTCLK1N);

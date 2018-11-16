@@ -74,6 +74,9 @@
       <branch xil_pn:name="BehavioralSim"/>
     </file>
     <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/CLK_FANOUT/CLK_FANOUT.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/CLK_FANOUT/coregen.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/CMD_FIFO_w1r8/coregen.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/CMD_FIFO_w8r32/coregen.log"/>
     <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/blk_mem_gen_v7_3/blk_mem_gen_v7_3.asy" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/blk_mem_gen_v7_3/blk_mem_gen_v7_3.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/blk_mem_gen_v7_3/blk_mem_gen_v7_3.vho" xil_pn:origination="imported"/>
@@ -87,6 +90,37 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1542159191" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1542159191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542159191" xil_pn:in_ck="7967584239005626048" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1542159191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1542159191" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3685016644076012759" xil_pn:start_ts="1542159191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542159191" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8254928679357884245" xil_pn:start_ts="1542159191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542159194" xil_pn:in_ck="440823251288171381" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1559908592496695350" xil_pn:start_ts="1542159191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
     <transform xil_pn:end_ts="1530206882" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1530206882">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -99,38 +133,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
-      <outfile xil_pn:name="ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32/CMD_FIFO_w8r32.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32/CMD_FIFO_w8r32.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/STATE_FIFO/STATE_FIFO.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/STATE_FIFO/STATE_FIFO.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/WAVE_FIFO_w32r8/WAVE_FIFO.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/WAVE_FIFO_w32r8/WAVE_FIFO.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/blk_mem_gen_v7_3/blk_mem_gen_v7_3.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/blk_mem_gen_v7_3/blk_mem_gen_v7_3.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/eth_head_fifo.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/eth_head_fifo.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/ip_rx_bram.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/ip_rx_bram.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/frame_check.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/frame_gen.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/pcs_pma_s6_gtpwizard_top.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement/data_vio.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement/icon.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement/ila.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement/null_vio.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement/shared_vio.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/tri_mode_eth_mac_v5_5.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/tri_mode_eth_mac_v5_5.vhd"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/tx_fifo.ngc"/>
-      <outfile xil_pn:name="source/Ethernet files/IPcores/tx_fifo.vhd"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1530206885" xil_pn:in_ck="3418972718645630607" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1530206884">
       <status xil_pn:value="SuccessfullyRun"/>

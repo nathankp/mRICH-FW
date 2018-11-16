@@ -1,0 +1,140 @@
+revise SCROD DC_Comm to use QBLink as communication protocol: 
+
+####11/13/2018#########
+Necessary Functionality:
+1. Be able to talk to PC: 
+	Messages:
+	- send waveform data
+	- readback scrod/dc register
+	- send 'dead' if no DC response
+	- recieve trigger from DC
+	- send triggers to DC
+	- send good event trigger to PC
+	- Generate Output Register
+2. Readout Daughtercard Data
+
+Relationship with other Modules: 
+1. DC_READOUT_DEMUX
+   {Description: "Module starts readout command to daughter cards, module will either send raw data,  
+   {pedestal subtracted data, pedestal calculated data, or save pedestal calculated data 
+   {to SRAM depending on mode of operations." ***SRAM saving operation not available yet, lacking FW. 
+
+	- Que's DC_COMM to readout DC: START_RD[4 DOWNTO 0] 
+	- Que's DC_Comm to write to PC
+	- Recieves 32-bit data word from DC_COMM: DC_FIFO_DOUT
+	- Provides DC_COMM's WAVEF  ORM_FIFO DIN and control signals: WAVE_CLK, WAVEWR_EN,WAVE_RST
+	- Reads TX_BUSY: If TargetX CTRL (is this what is meant by "TX module" in DEMUX?) is busy (e.g. being read out)
+	- Reads FIFO empty status 
+		- if FIFO is empty will enable readout 
+		  of 8:32 DC_FIFO on DC_COMM: DC_FIFO_RD_EN
+        - When DC sends no response, tells DC_COMM to send 'dead': NO_GO
+2. ETH_MODULE: Transmits and recieves data to/from PC 
+	- Send to PC: tx_udp_data, tx_udp_valid, tx_udp_ready
+	- Recieve from PC: tx_udp_data, tx_udp_valid, tx_udp_ready(='1'), trx_udp_clock
+
+
+DC_COMM FIFOs: 
+1. DC_MAS_RX_FIFO_W1R8 : entity work.CMD_FIFO_w1r8
+   PORT MAP (
+    rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => DATA_CLK,
+    din    => dc_fifo_din(0 downto 0), 
+    wr_en  => dc_fifo_wr_en,    
+    rd_en  => '1',        
+    dout   => w1r8_fifo_dout,            
+    full   => open,   
+    empty  => w18_fifo_empty);
+
+2. DC_MAS_RX_FIFO_W8R32 : entity work.CMD_FIFO_w8r32
+    PORT MAP (
+    rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => CLK,
+    din    => w1r8_fifo_dout,
+    wr_en  => dc_wr_en(2),
+    rd_en  => DC_FIFO_RD_EN,
+    dout   => DC_FIFO_DOUT,
+    full   => open,
+    empty  => DC_FIFO_EMPTY);
+
+3. DC_REG_FIFO_W1R8 : entity work.CMD_FIFO_w1r8
+   PORT MAP (
+    rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => udp_usr_clk,
+    din    => dc_fifo_din(0 downto 0), 
+    wr_en  => dc_fifo_wr_en,    
+    rd_en  => dc_reg_rd_en,        
+    dout   => dc_reg_dout,            
+    full   => open,   
+    empty  => dc_reg_empty);
+ 
+ 4. REG_READ_BACK_FIFO : entity work.STATE_FIFO
+    PORT MAP (
+     rst    => reg_fifo_rst,
+     wr_clk => udp_usr_clk,
+     rd_clk => udp_usr_clk,
+     din    => reg_fifo_din,
+     wr_en  => reg_fifo_wr_en,
+     rd_en  => reg_fifo_rd_en,
+     dout   => reg_fifo_dout,
+     full   => open,
+     empty  => reg_fifo_empty);
+
+- Sending_data process: PC passes cmd to SCROD or dc 
+	state: load_data: 
+		- checks dc_num: 
+			if x"0" then SCROD CMD
+				OUTPUT REG WRITTEN HERE
+			else
+				loads rx_fifo_data_out(MSB) onto internal_data_out
+				goes to send_data state: serially shifts out data to DC: tx_mask(3 DOWNTO 0) (DC #) AND (internal_data_out & internal_data_out & internal_data_out & internal_data_out)
+					- bitwise AND of DC# and vector of all internal_data_out
+			
+ 
+		Revised load_data:
+			if dc_num = x"0" then
+				cmd_type    <= rx_fifo_data_out(27 downto 24);
+				scrod_reg   <= rx_fifo_data_out(23 downto 16);
+				reg_data    <= rx_fifo_data_out(15 downto 0);
+				scrod_dc_st <= cmd_check;
+			else
+				dc_cmd <= rx_fifo_data_out; --load rx_fifo_data_out onto QBLink input 
+				start_send <= '1'; --QBLink LocalWordInValid ='1'
+			end if;
+
+       state: send_data: 
+       		scrod_dc_sta <= 10;
+			internal_tx <= '1';
+			reg_rb_en <= '0';
+			if readout = '1' then
+				internal_data_out <= rd_out_cmd(bit_count);
+			else
+				internal_data_out <= rx_fifo_data_out(bit_count);
+			end if;
+			if bit_count /= 0 then
+				bit_count    <= bit_count - 1;
+				scrod_dc_st  <= send_data;
+			else
+				scrod_dc_st <= done;
+			end if;
+
+		Revised send_data:
+			-- find out how many clock cycles are required for QBLink transmission
+			if QBLink finished: start_send <='0'
+
+
+###11/15/2018###
+
+*Building block diagram of my understanding of the desired communication system*
+**Building block diagram of existing communication system**
+
+*SCROD Recieving data:
+	- which DC when? 
+	- QBLink will not be outputting recieved word until localWordOutRq is '1'; 
+
+- Testbench QBLink:
+	- rawserialout continuously outputs a sequence even without a localWordIn and localWordInValid ='1'. 
+
+
