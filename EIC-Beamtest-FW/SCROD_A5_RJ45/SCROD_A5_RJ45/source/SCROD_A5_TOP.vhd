@@ -40,8 +40,8 @@ entity SCROD_A5_TOP is
 		MGTRXN           : IN STD_LOGIC;
 		MGTTXP           : OUT STD_LOGIC;
 		MGTTXN           : OUT STD_LOGIC;
-		MGTCLK0P   		  : IN STD_LOGIC; 
-		MGTCLK0N  		  : IN STD_LOGIC; 
+		MGTCLK0P   		  : IN STD_LOGIC;  --OBSOLETE?
+		MGTCLK0N  		  : IN STD_LOGIC; --OBSOLETE?
 		MGTCLK1P         : IN STD_LOGIC;
 		MGTCLK1N         : IN STD_LOGIC;
 		--ethernaet signals--needs to change direction later on depending on use

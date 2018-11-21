@@ -136,5 +136,46 @@ DC_COMM FIFOs:
 
 - Testbench QBLink:
 	- rawserialout continuously outputs a sequence even without a localWordIn and localWordInValid ='1'. 
+        - localWordInvalid and localWordOutValid are enables to Receiving FIFOs of the DC_Comm and DataCollection respectively
 
+###11/20/2018###
+- SCROD Revised BLK Diagram:
+  1. DC_Comm:
+     *Handles all communication with the Daughtercards (writng and reading). Takes in commands from the Commander Interpreter (CI), outputs data     
+     *to the Data Collector (DatCol). 	
+     INPUTS: Data Clock (25 MHz), serial data from DCs [7:0], command from CI [31:0], command to start writing from CI [3:0], reset,
+	        command to start data readout from CI.
+	
+     OUTPUTS: command bit to DCs [7:0], DC_data to DatCol, command to recieve data to DatCol,
+              (status bit) trigger link synced [7:0], (status bit) serial clock locked [7:0], Busy signal to CI and DatCol, No response from DC Flag [7:0] to CI 
 
+	*add timing module to flag busy and dead DCs 
+
+  2. DataCollector:
+     *Stores event data from DC, processes data to get waveform, pedestal subtracted, or pedestal calculated data. Save pedestal calculated data     
+     * to SRAM onboard SCROD. Will readout data one D.C. at time (?)
+     INPUTS: FPGA Clock (125 MHz), command to recieve data from DC_Comm, Command to process data [3:0] (Waveform, pedestal...) from CI, Command to start sending data from CI, 
+             Command to save data to SRAM (Ignore for now), Fix window [8:0],reset
+
+     OUTPUTS: Waveform Data to CI, other data to CI, pedestal calc data to SRAM
+
+  3. Command Interpreter: 
+     *Translates PC commands from Ethernet Interface (EI) to DatCol and DC_Comm
+     INPUTS: command from PC (rx_udp_data[7:0]), rx_udp_valid from EI, tx_udp_ready from EI, Waveform data from DatCol to be written to PC, other data to be written to PC from DatCol, 
+             UDP clock from EI, DC_Comm busy signal, No Response Flag from DC [7:0].  
+     
+     OUTPUTS: DC command to DC_Comm, DC_Comm start writing command [7:0], start data readout to DC_Comm [7:8], Data process command to DatCol [3:0], Send Data to PC command to DatCol, 
+              Save data to SRAM command to DatCol, tx_udp_data to EI, tx_udp_valid to EI, rx_udp_ready to EI.   
+
+  4. Ethernet Interface
+     *intefaces Command Interperter (CMD_INT) to PC
+     INPUTS: ext_user_clk (FPGA Clock?), tx_udp_data from CMD_INT, tx_udp_valid from CMD_INT, rx_udp_ready from CMD_INT, mgttxfault, mgtmod0, mgtlos, mgtrxp , mgtrxn, mgtclk1p, mgtxlk1n. 
+
+     OUTPUTS: tx_udp_ready to CMD_INT, rx_udp_data to CMD_INT, rx_udp_valid to CMD_INT, trx_udp_clock to CMD_INT, mgttxdis, mgtmod2, mgtmod1, mgttxp, mgttxn 
+
+Questions for Gary:
+1. Does ETH Module run on same FPGA clock?
+2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO?
+3. Does Data Collector recieve data from DCs sequentially or in parallel? 
+4. Should there be separate signals for waveform data, pedestal sub, pedestal calc, ect.?
+5. FIFO for read out data in CMD_INT?
