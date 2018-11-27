@@ -12,7 +12,7 @@
 -- Revision			: 1
 -- (Nathan) added RJ45 ports 
 ----------------------------------------------------------------------------------
-library IEEE;
+Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_unsigned.all;
@@ -250,7 +250,7 @@ port map (
 	I  => SC_DC_DATA(i)); 
 
 en_sc2dc_OBUFDS_inst : OBUFDS 
-generic map (IOSTANDARD => "LVDS_25")
+generic map2 (IOSTANDARD => "LVDS_25")
 port map (
 	O  => tx_DC_P(i),    
 	OB => TX_DC_N(i),  
