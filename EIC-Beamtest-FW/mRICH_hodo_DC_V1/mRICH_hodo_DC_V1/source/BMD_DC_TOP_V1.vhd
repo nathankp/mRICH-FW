@@ -25,7 +25,7 @@ use work.BMD_definitions.all;
 entity BMD_DC_TOP_V2 is
 	Port(
 			-- MASTER TO DC SIGNALS
-			MAS_CLK_P          : IN  STD_LOGIC;--125MHz clock form scrod
+			MAS_CLK_P          : IN  STD_LOGIC;--25MHz clock from scrod
 			MAS_CLK_N          : IN  STD_LOGIC;
 			SC_DC_TRIG  	    : INOUT  STD_LOGIC;
 --			MAS_DC_RX   	    : IN  STD_LOGIC;
