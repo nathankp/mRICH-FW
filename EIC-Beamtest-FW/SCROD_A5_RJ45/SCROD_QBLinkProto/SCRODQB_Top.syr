@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "SCRODQB_Top"
 Output Format                      : NGC
-Target Device                      : xa7a100t-2I-csg324
+Target Device                      : xc6slx150t-3-fgg676
 
 ---- Source Options
 Top Module Name                    : SCRODQB_Top
@@ -70,7 +70,7 @@ LUT Combining                      : Auto
 Reduce Control Sets                : Auto
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
-Add Generic Clock Buffer(BUFG)     : 32
+Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
@@ -99,22 +99,72 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\source\UtilityPkg.vhd" into library work
+Parsing package <UtilityPkg>.
+Parsing package body <UtilityPkg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" into library work
+Parsing entity <Encode8b10b>.
+Parsing architecture <rtl> of entity <encode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" into library work
+Parsing entity <Decode8b10b>.
+Parsing architecture <rtl> of entity <decode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\serializationFifo.vhd" into library work
+Parsing entity <serializationFifo>.
+Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd" into library work
+Parsing entity <SyncBit>.
+Parsing architecture <structural> of entity <syncbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" into library work
+Parsing entity <S6SerialInterfaceOut>.
+Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" into library work
+Parsing entity <S6SerialInterfaceIn>.
+Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" into library work
+Parsing entity <ByteLink>.
+Parsing architecture <rtl> of entity <bytelink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\ipcore_dir\QBLtxFIFO.vhd" into library work
+Parsing entity <QBLtxFIFO>.
+Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\CMD_FIFO_w8r32.vhd" into library work
+Parsing entity <CMD_FIFO_w8r32>.
+Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd" into library work
+Parsing entity <clockgen_bytelink>.
+Parsing architecture <xilinx> of entity <clockgen_bytelink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" into library work
+Parsing entity <QBlink>.
+Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
+Parsing entity <CLK_FANOUT>.
+Parsing architecture <xilinx> of entity <clk_fanout>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
-ERROR:HDLCompiler:806 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 41: Syntax error near ")".
-ERROR:HDLCompiler:806 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 48: Syntax error near "begin".
+Parsing architecture <Behavioral> of entity <scrodqb_top>.
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 146: <nxt_state> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 158: <nxt_state> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 160: <nxt_state> is not declared.
+ERROR:HDLCompiler:1731 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 159: found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "="
+ERROR:HDLCompiler:854 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 56: Unit <behavioral> ignored due to previous errors.
 VHDL file C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd ignored due to errors
 --> 
 
-Total memory usage is 4488880 kilobytes
+Total memory usage is 4455940 kilobytes
 
-Number of errors   :    2 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

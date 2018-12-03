@@ -215,9 +215,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99673355"
-     inkscape:cx="427.7785"
-     inkscape:cy="842.40994"
+     inkscape:zoom="0.70479705"
+     inkscape:cx="145.42771"
+     inkscape:cy="907.097"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -676,14 +676,14 @@
          id="flowPara13571" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0038fa;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="33.712193"
-       y="54.643772"
+       x="43.848087"
+       y="55.019176"
        id="text13575"><tspan
          sodipodi:role="line"
          id="tspan13573"
-         x="33.712193"
-         y="54.643772"
-         style="font-size:3.52777791px;fill:#0038fa;fill-opacity:1;stroke-width:0.26458332">START_READOUT[0]</tspan></text>
+         x="43.848087"
+         y="55.019176"
+         style="font-size:3.52777791px;fill:#0038fa;fill-opacity:1;stroke-width:0.26458332">START_RD[0]</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot10576-2-3-1-5-67-37-7"
@@ -697,7 +697,7 @@
            x="384.28571"
            y="352.51968"
            style="font-size:13.33333302px" /></flowRegion><flowPara
-         id="flowPara10582-8-0-9-0-9-78-6">dcRead_valid</flowPara></flowRoot>    <flowRoot
+         id="flowPara10582-8-0-9-0-9-78-6">dc_dataValid</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot10576-2-3-1-5-67-3-7"
        style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -710,7 +710,7 @@
            x="384.28571"
            y="352.51968"
            style="font-size:13.33333302px" /></flowRegion><flowPara
-         id="flowPara10582-8-0-9-0-9-8-8">dcRead_dout [31:0]</flowPara></flowRoot>    <flowRoot
+         id="flowPara10582-8-0-9-0-9-8-8">dc_data [31:0]</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot10576-2-3-1-5-67-37-7-2"
        style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"

@@ -174,8 +174,26 @@ DC_COMM FIFOs:
      OUTPUTS: tx_udp_ready to CMD_INT, rx_udp_data to CMD_INT, rx_udp_valid to CMD_INT, trx_udp_clock to CMD_INT, mgttxdis, mgtmod2, mgtmod1, mgttxp, mgttxn 
 
 Questions for Gary:
-1. Does ETH Module run on same FPGA clock?
-2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO?
+1.*** Does ETH Module run on same FPGA clock?**** (will be rewritten ignore for now).
+2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO?  
 3. Does Data Collector recieve data from DCs sequentially or in parallel? 
 4. Should there be separate signals for waveform data, pedestal sub, pedestal calc, ect.?
-5. FIFO for read out data in CMD_INT?
+5. ***FIFO for read out data in CMD_INT?***will see if it is neccesary, try to have DC and SCROD talk with FW containing minimal code to support QBLink
+
+
+###12/02/2018###
+
+1.In QBLink s6SerialInterfaceIn: has an align input, not shown on BLK diagram
+2. trgLinkSynced not in BLK?
+3. How to properly start QBLink?
+	- to start using QBLink the bytelink submodule must pass the training state:
+		- INSIDE TRAINING STATE:
+			+ txdata8b is set to k_COM_align_C (it is then encoded and sent out hence the serial output sequence you see constantly going.)
+			+ there is an alignment counter alignCnt which must increment for ALIGN_CYCLES_G in order to set trgLinkSynced = '1' and move onto to the next state
+			+ the count is reset back to zero if at least one of 4 conditions arise. One of these being that rxDataByte is neither K_COM_ALIGN_C nor K_COM_ZERO_C.
+				!ISSUE: rxdatabyte is the wrong value! 
+				--> rxdatabyte is the output of the 10b to 8b decoder. Decoder input is inputRxData10b, which is updated by rxData10b (from S6SerialInterfaceIn module) every rising data_clk edge
+				--> FIRST: rxData10b is all 0's since no incoming serial data. rxdatabyte is also 0. 
+				--> after two data_clk CCs rxdatabyte become "01011111" despite rawserialin and rxdtatbyte remaining at 0
+
+
