@@ -184,7 +184,7 @@ Questions for Gary:
 ###12/02/2018###
 
 1.In QBLink s6SerialInterfaceIn: has an align input, not shown on BLK diagram
-2. trgLinkSynced not in BLK?
+2. trgLinkSynced not in BLK? (answered)
 3. How to properly start QBLink?
 	- to start using QBLink the bytelink submodule must pass the training state:
 		- INSIDE TRAINING STATE:
@@ -194,6 +194,28 @@ Questions for Gary:
 				!ISSUE: rxdatabyte is the wrong value! 
 				--> rxdatabyte is the output of the 10b to 8b decoder. Decoder input is inputRxData10b, which is updated by rxData10b (from S6SerialInterfaceIn module) every rising data_clk edge
 				--> FIRST: rxData10b is all 0's since no incoming serial data. rxdatabyte is also 0. 
-				--> after two data_clk CCs rxdatabyte become "01011111" despite rawserialin and rxdtatbyte remaining at 0
+				--> after two data_clk CCs rxdatabyte become "01011111" despite rawserialin and rxdata10b remaining at 0
+			
+###12/04/2018###
+
+ 				--> SOLUTION: HAVE A TRAINING partner: instatiate another QBLink module to communicate with.
+				~QBLink TB is in ~\Desktop\QBLink\QBLink\QBLink_TB.vhd
+Communication test sequence:
+-->SCROD sends testdata to testbench DC 
+--> DC reads back to SCROD, when DClocalwordout = DEADBEEF;
+
+- will write DC module and create testbench with both projects.
+
+1. When do we want DC to read to SCROD? Should there be a special command for the SCROD to internally set localWordOutReq <= '1'? same for rst, localword in? Direct signal from SCROD or internally controlled? 
+2. How do I create an error condition for QBLink? rxCodeErr = '1' or rxDispErr = '1';
+
+meeting update: 
+	- finished writing SCRODQBLink
+	- testbench was not working so I studied QBLink more
+	- learned I had to have a training partner to get past TRAINING_STATE
+	- had a successful testbench
+	- working on preparing HMB_DC 
 
 
+
+ 

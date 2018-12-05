@@ -210,6 +210,7 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.lso"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ngc"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.prj"/>

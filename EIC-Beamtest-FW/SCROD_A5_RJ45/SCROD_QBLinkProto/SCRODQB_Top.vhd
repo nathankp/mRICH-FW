@@ -46,7 +46,6 @@ entity SCRODQB_Top is
 			DC_RD_VALID		 : OUT STD_LOGIC; -- QBLink successfully read DC
 			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
 			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC
-			DC_ACK			 : IN STD_LOGIC; --use SYNC pin 
 		--	SYNC		: OUT STD_LOGIC; -- will use after QBLink comm test.
 			TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
 		   SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
@@ -123,7 +122,7 @@ port map (
 -----------QBLink Module----------------------------------------------
 -------------------------------------------------------------------------
 
-comm_process : entity work.QBLink                                                     
+comm_process : entity QBLink.QBLink                                                     
 PORT MAP( 
 			 sstClk => data_clk,
 			 rst => QB_rst,
@@ -147,7 +146,7 @@ BEGIN
 	END IF;
 END PROCESS;
 	
-COMM_SM : PROCESS(START_SEND, START_RD)
+COMM_SM : PROCESS(START_SEND, START_RD,STATE)
 BEGIN
  CASE state IS
 	WHEN IDLE =>

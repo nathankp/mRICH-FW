@@ -53,25 +53,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/serializationFifo.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/QBlink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/ByteLink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/Decode8b10b.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/Encode8b10b.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/S6SerialInterfaceIn.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/S6SerialInterfaceOut.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/SyncBit.vhd"/>
-      <outfile xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd"/>
-      <outfile xil_pn:name="../SCROD_A5_RJ45/remote_sources/_/BMD_DAUGTHER_CARD_FW/Source files/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="SCRODQB_TB.vhd"/>
-      <outfile xil_pn:name="SCRODQB_Top.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543748477" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2031328482112343559" xil_pn:start_ts="1543748477">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -89,42 +77,35 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/cores/serializationFifo.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/QBlink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/ByteLink.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/Decode8b10b.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/Encode8b10b.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/S6SerialInterfaceIn.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/S6SerialInterfaceOut.vhd"/>
-      <outfile xil_pn:name="../../../../QBLink/source/SyncBit.vhd"/>
-      <outfile xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd"/>
-      <outfile xil_pn:name="../SCROD_A5_RJ45/remote_sources/_/BMD_DAUGTHER_CARD_FW/Source files/BMD_definitions.vhd"/>
-      <outfile xil_pn:name="SCRODQB_TB.vhd"/>
-      <outfile xil_pn:name="SCRODQB_Top.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543748487" xil_pn:in_ck="-6400655017373171422" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5239529552217144814" xil_pn:start_ts="1543748477">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="SCRODQB_TB_beh.prj"/>
-      <outfile xil_pn:name="SCRODQB_TB_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543748487" xil_pn:in_ck="3554348775725452626" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3816180545161858177" xil_pn:start_ts="1543748487">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SCRODQB_TB_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1543744076" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1543744076">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -161,16 +142,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SCRODQB_Top.lso"/>
-      <outfile xil_pn:name="SCRODQB_Top.prj"/>
-      <outfile xil_pn:name="SCRODQB_Top.syr"/>
-      <outfile xil_pn:name="SCRODQB_Top.xst"/>
-      <outfile xil_pn:name="SCRODQB_Top_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
