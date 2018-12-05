@@ -175,7 +175,7 @@ DC_COMM FIFOs:
 
 Questions for Gary:
 1.*** Does ETH Module run on same FPGA clock?**** (will be rewritten ignore for now).
-2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO?  
+2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO? (ignore)
 3. Does Data Collector recieve data from DCs sequentially or in parallel? 
 4. Should there be separate signals for waveform data, pedestal sub, pedestal calc, ect.?
 5. ***FIFO for read out data in CMD_INT?***will see if it is neccesary, try to have DC and SCROD talk with FW containing minimal code to support QBLink
@@ -207,6 +207,12 @@ Communication test sequence:
 - will write DC module and create testbench with both projects.
 
 1. When do we want DC to read to SCROD? Should there be a special command for the SCROD to internally set localWordOutReq <= '1'? same for rst, localword in? Direct signal from SCROD or internally controlled? 
+	- register map, headers to mark actions for SCROD/DC
+	- make register headers "generic?" : make flexible address size
+	- over break make this map
+	- PMT daughtercard
+	_register map: dedicated memory, 
+	
 2. How do I create an error condition for QBLink? rxCodeErr = '1' or rxDispErr = '1';
 
 meeting update: 
