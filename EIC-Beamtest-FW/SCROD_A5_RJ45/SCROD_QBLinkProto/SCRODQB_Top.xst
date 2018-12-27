@@ -1,6 +1,9 @@
-set -tmpdir "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn SCRODQB_Top.prj
+-ofn SCRODQB_Top
+-ofmt NGC
 -p xc6slx150t-3-fgg676
 -top SCRODQB_Top
 -opt_mode Speed
@@ -12,7 +15,7 @@ run -compileonly yes
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+-sd {"ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
@@ -48,4 +51,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn SCRODQB_Top.prj

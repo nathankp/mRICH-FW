@@ -43,8 +43,10 @@ NET "TX_N" 	          LOC =SYBN "P142" | IOSTANDARD = LVDS_25; #
 # SYNC -- used to align timestamps between DCs   (SYNC on SCROD side)
 #NET "MAS_ACK_N"	 	 LOC = "P1"; 
 #NET "MAS_ACK_P"	 	 LOC = "P2"; 
-NET "SYNC_P"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
-NET "SYNC_N"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
+
+###Not implementing Sync yet:
+####NET "SYNC_P"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
+###NET "SYNC_N"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
 ######################################################################################
                          

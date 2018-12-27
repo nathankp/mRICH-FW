@@ -1,3 +1,68 @@
 INFO:sim:172 - Generating IP...
-Cancelled executing Tcl generator.
-Wrote CGP file for project 'DataFIFO'.
+WARNING:sim:100 - The Simulation File Type <Behavioral> is not valid for this
+   core. Overriding with File Type <structural>.
+Customizing IP...
+Qt: Untested Windows version 6.2 detected!
+Release 14.7 - Xilinx CORE Generator IP GUI Launcher P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Finished Customizing.
+Generating IP...
+Configuring files for VIO root...
+Gathering HDL files for VIO root...
+Creating XST project for VIO...
+Creating XST script file for VIO...
+Creating XST instantiation file for VIO...
+Running XST for VIO...
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Design Summary
+Generating VHDL wrapper
+Not generating Verilog wrapper
+Creating ISE instantiation template for VIO...
+Skipping Verilog instantiation template for VIO...
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'VIO'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: VIO.xco
+XMDF file found: VIO_xmdf.tcl
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipcor
+e_dir/tmp/_cg/VIO.asy -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipcor
+e_dir/tmp/_cg/VIO.ngc -view all -origin_type created
+Checking file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipco
+re_dir/tmp/_cg/VIO.ngc" for project device match ...
+File
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipco
+re_dir/tmp/_cg/VIO.ngc" device information matches project device.
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipcor
+e_dir/tmp/_cg/VIO.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/i
+   pcore_dir/tmp/_cg/VIO.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/ipcor
+e_dir/tmp/_cg/VIO.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/VIO"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'VIO'.

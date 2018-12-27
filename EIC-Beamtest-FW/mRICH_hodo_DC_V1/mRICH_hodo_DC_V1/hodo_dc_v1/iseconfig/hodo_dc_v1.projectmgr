@@ -7,18 +7,20 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/DC_COMM_PARSER - DC_COMM_PARSER - Behavioral</ClosedNode>
+         <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/TARGETX_TRIGGER_LOGIC - BMD_TRIG_LOGIC - Behavioral</ClosedNode>
          <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/TARGETX_readout_control - TX_ReadoutControl - Behavioral</ClosedNode>
          <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/DC_COMM_PARSER - DC_COMM_PARSER - Behavioral/RX_ADDR_CHECK - RX_ADDR_CHECKER - Behavioral</ClosedNode>
          <ClosedNode>/BMD_DC_TOP_V2 - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|mRICH_hodo_DC_V1|mRICH_hodo_DC_V1|source|BMD_DC_TOP_V1.vhd/DC_COMM_PARSER - DC_COMM_PARSER - Behavioral/TX_Sender - TX_DATA_SENDER - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xc6slx9-2tqg144</SelectedItem>
+         <SelectedItem>C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\HMB_SciFi_DC.ucf (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/HMB_SciFi_DC.ucf)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000462000000020000000000000000000000000200000064ffffffff000000810000000300000002000004620000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>xc6slx9-2tqg144</CurrentItem>
+      <CurrentItem>C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\HMB_SciFi_DC.ucf (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/HMB_SciFi_DC.ucf)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -30,7 +32,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000306000000010000000100000000000000000000000064ffffffff000000810000000000000001000003060000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
@@ -98,13 +100,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000306000000010000000100000000000000000000000064ffffffff000000810000000000000001000003060000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
       <ClosedNodes>

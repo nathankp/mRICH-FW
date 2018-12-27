@@ -1,0 +1,17 @@
+# Output products list for <VIO>
+VIO.asy
+VIO.cdc
+VIO.constraints\VIO.ucf
+VIO.constraints\VIO.xdc
+VIO.gise
+VIO.ngc
+VIO.sym
+VIO.ucf
+VIO.vhd
+VIO.vho
+VIO.xco
+VIO.xdc
+VIO.xise
+VIO_flist.txt
+VIO_readme.txt
+VIO_xmdf.tcl

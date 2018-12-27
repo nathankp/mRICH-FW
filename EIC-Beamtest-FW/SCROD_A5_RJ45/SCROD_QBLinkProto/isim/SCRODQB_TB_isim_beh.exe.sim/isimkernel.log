@@ -2,27 +2,27 @@ Command line:
    SCRODQB_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58441
+     -socket  61914
 
-Sun Dec 02 01:01:36 2018
+Wed Dec 26 14:56:20 2018
 
 
- Elaboration Time: 0.546875 sec
+ Elaboration Time: 0.40625 sec
 
- Current Memory Usage: 5686.64 Meg
+ Current Memory Usage: 5702.54 Meg
 
- Total Signals          : 2975
- Total Nets             : 7161
- Total Signal Drivers   : 1430
- Total Blocks           : 170
- Total Primitive Blocks : 104
- Total Processes        : 749
- Total Traceable Variables  : 1583
- Total Scalar Nets and Variables : 13944
+ Total Signals          : 5697
+ Total Nets             : 14068
+ Total Signal Drivers   : 2709
+ Total Blocks           : 318
+ Total Primitive Blocks : 189
+ Total Processes        : 1402
+ Total Traceable Variables  : 2994
+ Total Scalar Nets and Variables : 22784
 
- Total Simulation Time: 29.9844 sec
+ Total Simulation Time: 3.35938 sec
 
- Current Memory Usage: 4900.21 Meg
+ Current Memory Usage: 5545.25 Meg
 
-Sun Dec 02 19:59:38 2018
+Wed Dec 26 14:58:23 2018
 

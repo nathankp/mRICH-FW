@@ -21,6 +21,8 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCRO
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../../../QBLink/QBLink/source/QBlink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" into library work
+WARNING:HDLCompiler:1238 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 138: Prefix of expanded name does not denote an enclosing construct
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
@@ -31,7 +33,6 @@ Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package vcomponents
 Compiling package utilitypkg
-Compiling architecture ibufds_v of entity IBUFDS [\IBUFDS("DONT_CARE",false,"FALSE...]
 Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
@@ -45,6 +46,7 @@ Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,5.
 Compiling architecture bufg_v of entity BUFG [bufg_default]
 Compiling architecture xilinx of entity CLK_FANOUT [clk_fanout_default]
 Compiling architecture obufds_v of entity OBUFDS [\OBUFDS("DONT_CARE","LVDS_25","S...]
+Compiling architecture ibufds_v of entity IBUFDS [\IBUFDS("DONT_CARE",false,"FALSE...]
 Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
 Compiling architecture xilinx of entity clockgen_bytelink [clockgen_bytelink_default]
 Compiling architecture fdre_v of entity FDRE [\FDRE('1')\]
@@ -71,10 +73,11 @@ Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator
 Compiling architecture cmd_fifo_w8r32_a of entity CMD_FIFO_w8r32 [cmd_fifo_w8r32_default]
 Compiling architecture behavioral of entity QBlink [qblink_default]
 Compiling architecture behavioral of entity SCRODQB_Top [scrodqb_top_default]
+Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity scrodqb_tb
 Time Resolution for simulation is 1ps.
-Waiting for 22 sub-compilation(s) to finish...
-Compiled 84 VHDL Units
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 88 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe
-Fuse Memory Usage: 71224 KB
-Fuse CPU Usage: 1937 ms
+Fuse Memory Usage: 70324 KB
+Fuse CPU Usage: 1890 ms

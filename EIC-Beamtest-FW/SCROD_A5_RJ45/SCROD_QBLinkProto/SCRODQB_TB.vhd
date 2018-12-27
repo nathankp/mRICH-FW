@@ -45,81 +45,95 @@ ARCHITECTURE behavior OF SCRODQB_TB IS
  
     COMPONENT SCRODQB_Top
     PORT(
-         START_SEND : IN  std_logic;
-         START_RD : IN  std_logic;
-         RESET : IN  std_logic;
-         MASTER_CLK_P : IN  std_logic;
-         MASTER_CLK_N : IN  std_logic;
-         RX_DC_P : IN  std_logic;
-         RX_DC_N : IN  std_logic;
-         CLK_DC_P : OUT  std_logic;
-         CLK_DC_N : OUT  std_logic;
-         DC_RD_VALID : OUT  std_logic;
-         TX_DC_N : OUT  std_logic;
-         TX_DC_P : OUT  std_logic;
-         DC_ACK : IN  std_logic;
-         TRGLINK_SYNC : OUT  std_logic;
-         SERIAL_CLK_LCK : OUT  std_logic
+			MASTER_CLK_P    : IN STD_LOGIC; --input clock either 127MHz form osc or remote clock form, (try supply with VIO or function gen) 
+			MASTER_CLK_N 	 : IN STD_LOGIC; --(try supply with VIO or function gen)
+			RX_DC_P			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
+			RX_DC_N			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
+			DC_STATUS		 : IN STD_LOGIC;
+			CLK_DC_P			 : OUT STD_LOGIC; --25MHz clock to DC (fact check)
+			CLK_DC_N			 : OUT STD_LOGIC;
+			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
+			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC
+			DC_mod			 : OUT STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
+			DC_RESET 		 : OUT STD_LOGIC;
+		--	SYNC		: OUT STD_LOGIC; -- will use after QBLink comm test.
+			TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
+		   SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
         );
     END COMPONENT;
     
+	COMPONENT HMB_DC_QBTOP
+	PORT(
+		  SYSCLK_P : IN  STD_LOGIC;
+        SYSCLK_N : IN  STD_LOGIC;
+        TX_P : IN STD_LOGIC;
+        TX_N : IN  STD_LOGIC;
+		  DC_RESET : IN STD_LOGIC;
+		  RD_WR :	IN STD_LOGIC; -- '1' to cmd dc to readback, '0' to command it to listen
+		  DCstatus	: OUT STD_LOGIC;
+        RX_P : OUT  STD_LOGIC;
+        RX_N : OUT  STD_LOGIC);
+	END COMPONENT;
 
    --Inputs
-   signal START_SEND : std_logic := '0';
-   signal START_RD : std_logic := '0';
-   signal RESET : std_logic := '0';
    signal MASTER_CLK_P : std_logic := '0';
    signal MASTER_CLK_N : std_logic := '0';
    signal RX_DC_P : std_logic := '0';
    signal RX_DC_N : std_logic := '0';
-   signal DC_ACK : std_logic := '0';
-
+	signal dcstat : std_logic := '0';
  	--Outputs
    signal CLK_DC_P : std_logic;
    signal CLK_DC_N : std_logic;
-   signal DC_RD_VALID : std_logic;
+	signal DCmode		 : STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
+	signal DC_RESET 	 : STD_LOGIC;
    signal TX_DC_N : std_logic;
    signal TX_DC_P : std_logic;
    signal TRGLINK_SYNC : std_logic;
    signal SERIAL_CLK_LCK : std_logic;
-	
-	signal TX_DC : std_logic;
-	signal DC_REG :std_logic_vector(31 downto 0) := (others => '0');
-	signal count : integer range 0 to 31; 
-
    -- Clock period definitions
    constant MASTER_CLK_period : time := 7.8740 ns;
 
  
 BEGIN
-RX_DC_IBUF_inst : IBUFDS
-generic map (
-	     DIFF_TERM    => FALSE, -- Differential Termination is already on board
-	     IOSTANDARD => "LVDS_25" --(!)check compatability 
-	     )
-port map (
-	O => TX_DC,
-	I => TX_DC_P,
-	IB => TX_DC_N);
-	
+-----------Will use Daughtercard Module as tranining partner-------
+--RX_DC_IBUF_inst : IBUFDS
+--generic map (
+--	     DIFF_TERM    => FALSE, -- Differential Termination is already on board
+--	     IOSTANDARD => "LVDS_25" --(!)check compatability 
+--	     )
+--port map (
+--	O => TX_DC,
+--	I => TX_DC_P,
+--	IB => TX_DC_N);
+--	
 	-- Instantiate the Unit Under Test (UUT)
    uut: SCRODQB_Top PORT MAP (
-          START_SEND => START_SEND,
-          START_RD => START_RD,
-          RESET => RESET,
+    
           MASTER_CLK_P => MASTER_CLK_P,
           MASTER_CLK_N => MASTER_CLK_N,
           RX_DC_P => RX_DC_P,
           RX_DC_N => RX_DC_N,
           CLK_DC_P => CLK_DC_P,
           CLK_DC_N => CLK_DC_N,
-          DC_RD_VALID => DC_RD_VALID,
+			 DC_STATUS => dcstat,
           TX_DC_N => TX_DC_N,
           TX_DC_P => TX_DC_P,
-          DC_ACK => DC_ACK,
+			 DC_RESET => DC_RESET,
+			 DC_mod => DCmode,
           TRGLINK_SYNC => TRGLINK_SYNC,
           SERIAL_CLK_LCK => SERIAL_CLK_LCK
         );
+	training_DC: HMB_DC_QBTOP PORT MAP (
+			 SYSCLK_P => CLK_DC_P,
+			 SYSCLK_N => CLK_DC_N,
+			 TX_P => TX_DC_P,
+			 TX_N => TX_DC_N,
+			 DC_RESET => DC_RESET,
+			 DCstatus => dcstat,
+			 RD_WR => DCmode,
+			 RX_P => RX_DC_P,
+			 RX_N => RX_DC_N
+			 );
 
    -- Clock process definitions
    MASTER_CLK_P_process :process
@@ -145,15 +159,17 @@ port map (
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      wait for MASTER_CLK_period*10;
-
-      START_SEND <= '1';
-	--	WHILE(count < 32)
-	--	IF(DC_REG = X"DEADBEEF") THEN
-		--	DC_ACK <= ACK <= '1';
-		-- DC
-
-      wait;
+--      wait for MASTER_CLK_period*10;
+--		wait until SERIAL_CLK_LCK = '1';
+--		wait until TRGLINK_SYNC = '1';
+--      START_SEND <= '1';
+--		wait for MASTER_CLK_period*10;
+--		START_SEND <= '0';
+--		wait for MASTER_CLK_period;
+--		START_RD <= '1';
+--		wait for MASTER_CLK_period*10;
+--		START_RD <= '0';
+--      wait;
    end process;
 
 END;

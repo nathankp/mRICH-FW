@@ -100,7 +100,7 @@ entity BMD_DC_TOP_V2 is
 			CALIB_EN           : OUT STD_LOGIC;
 			--AUX TEST POINT
 			TX_HW_TRIG         : OUT STD_LOGIC;
-			SCROD_TRIG         : IN STD_LOGIC
+			SCROD_TRIG         : IN STD_LOGIC;
 			
 			-- FLASH SIGNALS(USED TO HOLD BIT FILE FOR SELF PROGRAMMING) - will do this later
 --			FLASH_DO           : IN  STD_LOGIC; --Uncommented by Tommy  
