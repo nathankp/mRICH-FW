@@ -21,7 +21,7 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCRO
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../../../QBLink/QBLink/source/QBlink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" into library work
-WARNING:HDLCompiler:1238 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 138: Prefix of expanded name does not denote an enclosing construct
+WARNING:HDLCompiler:1238 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 141: Prefix of expanded name does not denote an enclosing construct
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB.vhd" into library work
 Starting static elaboration
@@ -76,8 +76,8 @@ Compiling architecture behavioral of entity SCRODQB_Top [scrodqb_top_default]
 Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity scrodqb_tb
 Time Resolution for simulation is 1ps.
-Waiting for 16 sub-compilation(s) to finish...
+Waiting for 20 sub-compilation(s) to finish...
 Compiled 88 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe
-Fuse Memory Usage: 70324 KB
-Fuse CPU Usage: 1890 ms
+Fuse Memory Usage: 70396 KB
+Fuse CPU Usage: 1702 ms

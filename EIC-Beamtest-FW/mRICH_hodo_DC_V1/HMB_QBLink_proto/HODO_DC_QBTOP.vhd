@@ -110,7 +110,7 @@ BEGIN
 		END IF;
 END PROCESS;
 
-comm_sm: PROCESS(STATE, trgLinkSynced, serialClkLocked, wordout_valid,RD_WR) 
+comm_sm: PROCESS(STATE, trgLinkSynced, serialClkLocked, wordout_valid, wordout, RD_WR) 
 BEGIN
 case STATE IS
 		WHEN SYNC_LINK =>
@@ -139,17 +139,16 @@ case STATE IS
 			wordout_req <= '1';
 			IF(falling_edge(wordout_valid)) THEN 
 				internal_reg  <= wordout;
-				IF(wordout = correctAnsw) THEN 
-					DCstatus <= '1';
-				ELSE
-					DCstatus <= '0';
-				END IF; 
 				nxtState <= IDLE;
 			ELSE
 				internal_reg <= (others => '1'); --flag incomplete write
 				nxtState <= LISTEN;
 			END IF;
-		
+			IF(wordout = correctAnsw) THEN 
+				DCstatus <= '1';
+			ELSE
+				DCstatus <= '0';
+			END IF; 
 		WHEN RD_BACK =>
 			wordin <= internal_reg;
 			wordin_valid <= '1';

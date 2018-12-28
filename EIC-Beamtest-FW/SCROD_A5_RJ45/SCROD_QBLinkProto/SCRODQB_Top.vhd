@@ -77,6 +77,7 @@ TYPE CommStateType IS (IDLE, START_WRITE, START_READ);
 signal CommState : CommStateType := IDLE;
 signal nxtState : CommStateType := IDLE;
 signal CtrlState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";
+signal nxt_CTRLState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";
 begin
 TRGLINK_SYNC <= trgLinkSync;
 SERIAL_CLK_LCK <= serialClkLck;
@@ -91,12 +92,13 @@ CLK_FANOUT_1TO2 : entity work.CLK_FANOUT
     CLK_OUT1 => internal_fpga_clk,--125MHz
     CLK_OUT2 => internal_data_clk --25 MHz
 	 );	 
+	 
 ---!Issue: sync process creates asymmetrical data_clk duty cycle. ! ?Is syncing neccesary? 	 
---clk_sync: process(internal_fpga_clk) begin
---if (rising_edge(internal_fpga_clk)) then
---	data_clk <= internal_data_clk; --sync data clk with fgpa clk
---end if;
---end process;
+	--clk_sync: process(internal_fpga_clk) begin
+	--if (rising_edge(internal_fpga_clk)) then
+	--	data_clk <= internal_data_clk; --sync data clk with fgpa clk
+	--end if;
+	--end process;
 
 -----------------------------------------------------------------
 ----------------I/O Buffers-----------------------------------
@@ -116,11 +118,11 @@ port map (
 	I  => internal_data_clk);
 
 --SYNC_OBUFDS_inst : OBUFDS --sync signal not yet implemented
---generic map (IOSTANDARD => "LVDS_25")
---port map (
---	O => SYNC_N,
---	OB => SYNC_P,
---	I => sync);
+	--generic map (IOSTANDARD => "LVDS_25")
+	--port map (
+	--	O => SYNC_N,
+	--	OB => SYNC_P,
+	--	I => sync);
 
 RX_DC_IBUF_inst : IBUFDS
 generic map (
@@ -131,9 +133,10 @@ port map (
 	O => rx_dc,
 	I => RX_DC_P,
 	IB => RX_DC_N);	
+	
 -----------------------------------------------------------------------------
------------QBLink Module----------------------------------------------
--------------------------------------------------------------------------
+------------------QBLink Module----------------------------------------------
+-----------------------------------------------------------------------------
 
 comm_process : entity QBLink.QBLink                                                     
 PORT MAP( 
@@ -149,30 +152,32 @@ PORT MAP(
 			 trgLinkSynced => trgLinkSync,
 			 serialClkLocked => serialClkLck
 			 );
-COMM_clk : PROCESS(RESET, internal_data_clk)
-BEGIN
-	IF (RESET = '1') THEN 
-		qb_rst <= '1';
-		Commstate <= IDLE;
-	ELSIF (rising_edge(internal_data_clk)) THEN
-		CommState <= nxtState;
-	END IF;
-END PROCESS;
+------ Communication state machine: 12/27 removed async input sensitivities and combined clk and combinational processes -------
+	--COMM_clk : PROCESS(internal_data_clk) 
+	--BEGIN
+	--   IF (rising_edge(internal_data_clk)) THEN
+	--		CommState <= nxtState;
+	--	END IF;
+	--END PROCESS;
 	
-COMM_SM : PROCESS(START_SEND, START_RD, CommState)
+COMM_SM : PROCESS(internal_data_clk, CommState, start_send, start_rd, dc_data) 
 BEGIN
+
+ IF (rising_edge(internal_data_clk)) THEN		
+	CommState <= nxtState;
+ END IF;
  CASE CommState IS
 	WHEN IDLE =>
 		DC_RESET <= '1';
 		dc_cmd_valid <= '0';
 		rd_req <= '0';
 		dc_cmd <= (others => '0');
-		IF (START_SEND = '1') THEN
+		IF (start_send = '1') THEN
 		   DC_RESET <= '0'; 
 			DC_mod <= '0'; --put DC in listening mode
 			nxtState <= START_WRITE;
 			dc_cmd <= x"DEADBEEF";
-		ELSIF (START_RD = '1') THEN
+		ELSIF (start_rd = '1') THEN
 			DC_RESET <= '0';
 			DC_mod <= '1'; --put DC in listening mode
 			nxtState <= START_READ;
@@ -191,26 +196,31 @@ BEGIN
 	END CASE;
 END PROCESS;
 
-CTRL_SM : PROCESS(CtrlState)
+----- SCROD CONTROL STATE MACHINE: (12/27/2018) Replaces async inputs by automatically sequencing through control signaling-----
+CTRL_SM : PROCESS(CtrlState, internal_fpga_clk, trgLinkSync, DC_STATUS, dc_data)
 BEGIN
+ --Trying fast clock to mimic async inputs: 
+   IF (rising_edge(internal_fpga_clk)) THEN
+		CTRLState <= nxt_CTRLState;
+	END IF;
 	CASE CtrlState IS
 		WHEN "00" =>
 			start_send <= '0';
 			start_rd <= '0';
 			IF(trgLinkSync = '1') THEN 
-				CTRLState <= "01";
+				nxt_CTRLState <= "01";
 		   END IF;
 		WHEN "01" =>
 			start_send <= '1';
 			start_rd <= '0';
 			IF(DC_STATUS = '1') THEN
-				CtrlState <= "01";
+				nxt_CTRLState <= "10";
 			END IF;
 		WHEN "10" => 
 			start_send <= '0';
 			start_rd <= '1';
 			IF (dc_data = x"DEADBEEF") THEN
-				CtrlState <= "11";
+				nxt_CtrlState <= "11";
 			END IF;
 		WHEN Others =>
 			start_send <= '0';

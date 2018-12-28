@@ -57,11 +57,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1544582158" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1544582158">
+    <transform xil_pn:end_ts="1545957072" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1545957072">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545872166" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1545872166">
+    <transform xil_pn:end_ts="1545959512" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
@@ -83,19 +83,19 @@
       <outfile xil_pn:name="SCRODQB_TB.vhd"/>
       <outfile xil_pn:name="SCRODQB_Top.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1545870176" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2031328482112343559" xil_pn:start_ts="1545870176">
+    <transform xil_pn:end_ts="1545957704" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2031328482112343559" xil_pn:start_ts="1545957704">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545870176" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6738885788953188471" xil_pn:start_ts="1545870176">
+    <transform xil_pn:end_ts="1545957704" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6738885788953188471" xil_pn:start_ts="1545957704">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545869474" xil_pn:in_ck="-830494735111706107" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7571587073868451660" xil_pn:start_ts="1545869474">
+    <transform xil_pn:end_ts="1545957072" xil_pn:in_ck="-830494735111706107" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7571587073868451660" xil_pn:start_ts="1545957072">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545872166" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1545872166">
+    <transform xil_pn:end_ts="1545959512" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
@@ -117,11 +117,9 @@
       <outfile xil_pn:name="SCRODQB_TB.vhd"/>
       <outfile xil_pn:name="SCRODQB_Top.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1545872173" xil_pn:in_ck="4003211144460378907" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5239529552217144814" xil_pn:start_ts="1545872166">
+    <transform xil_pn:end_ts="1545959519" xil_pn:in_ck="4003211144460378907" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5239529552217144814" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_TB_beh.prj"/>
       <outfile xil_pn:name="SCRODQB_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -129,11 +127,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1545872174" xil_pn:in_ck="-4494886579759259918" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3816180545161858177" xil_pn:start_ts="1545872173">
+    <transform xil_pn:end_ts="1545959519" xil_pn:in_ck="-4494886579759259918" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3816180545161858177" xil_pn:start_ts="1545959519">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -171,7 +167,9 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_Top.lso"/>
       <outfile xil_pn:name="SCRODQB_Top.ngc"/>
       <outfile xil_pn:name="SCRODQB_Top.ngr"/>

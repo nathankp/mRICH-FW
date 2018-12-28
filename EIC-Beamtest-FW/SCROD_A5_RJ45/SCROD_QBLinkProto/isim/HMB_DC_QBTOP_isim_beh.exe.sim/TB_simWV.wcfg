@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="scrodqb_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="utilitypkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/scrodqb_tb/master_clk_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_clk_p</obj_property>
+      <obj_property name="ObjectShortName">master_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/master_clk_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">master_clk_n</obj_property>
+      <obj_property name="ObjectShortName">master_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/rx_dc_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_dc_p</obj_property>
+      <obj_property name="ObjectShortName">rx_dc_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/rx_dc_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_dc_n</obj_property>
+      <obj_property name="ObjectShortName">rx_dc_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/dcstat" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcstat</obj_property>
+      <obj_property name="ObjectShortName">dcstat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/clk_dc_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_dc_p</obj_property>
+      <obj_property name="ObjectShortName">clk_dc_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/clk_dc_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_dc_n</obj_property>
+      <obj_property name="ObjectShortName">clk_dc_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/dcmode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcmode</obj_property>
+      <obj_property name="ObjectShortName">dcmode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/dc_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_reset</obj_property>
+      <obj_property name="ObjectShortName">dc_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/tx_dc_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_dc_n</obj_property>
+      <obj_property name="ObjectShortName">tx_dc_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/tx_dc_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_dc_p</obj_property>
+      <obj_property name="ObjectShortName">tx_dc_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/trglink_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trglink_sync</obj_property>
+      <obj_property name="ObjectShortName">trglink_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/serial_clk_lck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serial_clk_lck</obj_property>
+      <obj_property name="ObjectShortName">serial_clk_lck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/master_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">master_clk_period</obj_property>
+      <obj_property name="ObjectShortName">master_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/uut/ctrlstate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ctrlstate[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ctrlstate[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/uut/nxt_ctrlstate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_ctrlstate[1:0]</obj_property>
+      <obj_property name="ObjectShortName">nxt_ctrlstate[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/training_DC/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/training_DC/nxtstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">nxtstate</obj_property>
+      <obj_property name="ObjectShortName">nxtstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/training_DC/correctansw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">correctansw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">correctansw[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/training_DC/wordout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wordout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wordout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/scrodqb_tb/training_DC/dcstatus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcstatus</obj_property>
+      <obj_property name="ObjectShortName">dcstatus</obj_property>
+   </wvobject>
+</wave_config>
