@@ -1,0 +1,10 @@
+Command line:
+   SCRODQB_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  63991
+
+Thu Dec 27 16:03:02 2018
+
+
+ Elaboration Time: 0.421875 sec

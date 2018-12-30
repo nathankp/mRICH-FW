@@ -46,7 +46,7 @@ entity SCRODQB_Top is
 			CLK_DC_N			 : OUT STD_LOGIC;
 			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
 			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC
-			DC_mod			 : OUT STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
+			DC_MOD			 : OUT STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
 			DC_RESET 		 : OUT STD_LOGIC; 
 		--	SYNC		: OUT STD_LOGIC; -- will use after QBLink comm test.
 			TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
@@ -174,12 +174,12 @@ BEGIN
 		dc_cmd <= (others => '0');
 		IF (start_send = '1') THEN
 		   DC_RESET <= '0'; 
-			DC_mod <= '0'; --put DC in listening mode
+			DC_MOD <= '0'; --put DC in listening mode
 			nxtState <= START_WRITE;
 			dc_cmd <= x"DEADBEEF";
 		ELSIF (start_rd = '1') THEN
 			DC_RESET <= '0';
-			DC_mod <= '1'; --put DC in listening mode
+			DC_MOD <= '1'; --put DC in listening mode
 			nxtState <= START_READ;
 		END IF;
 	WHEN START_WRITE =>

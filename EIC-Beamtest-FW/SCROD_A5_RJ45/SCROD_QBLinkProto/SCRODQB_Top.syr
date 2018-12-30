@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -154,14 +154,14 @@ Parsing architecture <xilinx> of entity <clk_fanout>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
 Parsing architecture <Behavioral> of entity <scrodqb_top>.
-WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 134: Prefix of expanded name does not denote an enclosing construct
+WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 141: Prefix of expanded name does not denote an enclosing construct
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 79: Assignment to dcstat ignored, since the identifier is never used
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 69: Using initial value '0' for qb_rst since it is never assigned
 
 Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
 
@@ -197,7 +197,6 @@ INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" Line 
 Elaborating entity <QBLtxFIFO> (architecture <QBLtxFIFO_a>) from library <work>.
 
 Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 182: dc_data should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -205,26 +204,28 @@ WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ
 
 Synthesizing Unit <SCRODQB_Top>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd".
-WARNING:Xst:647 - Input <DCstatus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 80: Output port <CLK_OUT1> of the instance <CLK_FANOUT_1TO2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 134: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
-    Found 2-bit register for signal <state>.
-    Found 4x5-bit Read Only RAM for signal <_n0277>
-    Found 1-bit 3-to-1 multiplexer for signal <state[1]_X_8_o_Mux_84_o> created at line 160.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 141: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <CtrlState>.
+    Found 2-bit register for signal <CommState>.
+    Found 4x5-bit Read Only RAM for signal <_n0285>
+    Found 4x4-bit Read Only RAM for signal <_n0290>
+    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_8_o_Mux_84_o> created at line 169.
+    Found 1-bit 4-to-1 multiplexer for signal <CtrlState[1]_GND_75_o_Mux_97_o> created at line 206.
 WARNING:Xst:737 - Found 1-bit latch for signal <DC_RESET>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd_valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rd_req>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <DC_mod>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DC_MOD>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nxtState<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <nxtState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <qb_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_CTRLState<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_CTRLState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   1 RAM(s).
-	inferred   2 D-type flip-flop(s).
-	inferred   9 Latch(s).
-	inferred   4 Multiplexer(s).
+	inferred   2 RAM(s).
+	inferred   4 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred   5 Multiplexer(s).
 Unit <SCRODQB_Top> synthesized.
 
 Synthesizing Unit <CLK_FANOUT>.
@@ -378,7 +379,8 @@ Unit <Decode8b10b> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
+ 4x4-bit single-port Read Only RAM                     : 1
  4x5-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
@@ -386,23 +388,24 @@ Macro Statistics
  4-bit adder                                           : 2
  4-bit subtractor                                      : 1
  5-bit subtractor                                      : 1
-# Registers                                            : 32
+# Registers                                            : 33
  1-bit register                                        : 14
  10-bit register                                       : 7
  16-bit register                                       : 1
- 2-bit register                                        : 1
+ 2-bit register                                        : 2
  32-bit register                                       : 1
  4-bit register                                        : 2
  5-bit register                                        : 2
  8-bit register                                        : 4
-# Latches                                              : 9
- 1-bit latch                                           : 9
+# Latches                                              : 10
+ 1-bit latch                                           : 10
 # Comparators                                          : 1
  16-bit comparator greater                             : 1
-# Multiplexers                                         : 24
+# Multiplexers                                         : 25
  1-bit 10-to-1 multiplexer                             : 2
  1-bit 2-to-1 multiplexer                              : 11
  1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 3
@@ -435,14 +438,25 @@ The following registers are absorbed into counter <r_slipCount>: 1 register on s
 Unit <S6SerialInterfaceIn> synthesized (advanced).
 
 Synthesizing (advanced) Unit <SCRODQB_Top>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0277> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3231 - The small RAM <Mram__n0285> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 4-word x 5-bit                      |          |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <state>         |          |
+    |     addrA          | connected to signal <CommState>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram__n0290> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <CtrlState>     |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
@@ -452,7 +466,8 @@ Unit <SCRODQB_Top> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
  4x5-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 5
  32-bit adder                                          : 1
@@ -460,14 +475,15 @@ Macro Statistics
  4-bit subtractor                                      : 2
 # Counters                                             : 1
  16-bit up counter                                     : 1
-# Registers                                            : 172
- Flip-Flops                                            : 172
+# Registers                                            : 174
+ Flip-Flops                                            : 174
 # Comparators                                          : 1
  16-bit comparator greater                             : 1
-# Multiplexers                                         : 23
+# Multiplexers                                         : 24
  1-bit 10-to-1 multiplexer                             : 2
  1-bit 2-to-1 multiplexer                              : 11
  1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 3
@@ -512,31 +528,6 @@ Optimizing FSM <comm_process/U_ByteLink/FSM_1> on signal <r_state[1:2]> with use
 ------------------------
 WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceOut>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceIn>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
-   incompatible with the Spartan6 architecture. The two primary causes of this is
-   either a register or latch described with both an asynchronous set and
-   asynchronous reset, or a register or latch described with an asynchronous
-   set or reset which however has an initialization value of the opposite 
-   polarity (i.e. asynchronous reset with an initialization value of 1).
-    While this circuit can be built, it creates a sub-optimal implementation
-   in terms of area, power and performance. For a more optimal implementation
-   Xilinx highly recommends one of the following:
-
-          1) Remove either the set or reset from all registers and latches
-             if not needed for required functionality
-          2) Modify the code in order to produce a synchronous set
-             and/or reset (both is preferred)
-          3) Ensure all registers have the same initialization value as the
-             described asynchronous set or reset polarity
-          4) Use the -async_to_sync option to transform the asynchronous
-             set/reset to synchronous operation
-             (timing simulation highly recommended when using this option)
-
-  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set or reset and opposite initialization value:
-    qb_rst in unit <SCRODQB_Top>
-
 
 Optimizing unit <SCRODQB_Top> ...
 
@@ -595,8 +586,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 147
- Flip-Flops                                            : 147
+# Registers                                            : 149
+ Flip-Flops                                            : 149
 
 =========================================================================
 
@@ -619,31 +610,30 @@ Top Level Output File Name         : SCRODQB_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 208
+# BELS                             : 209
 #      GND                         : 1
-#      INV                         : 8
+#      INV                         : 7
 #      LUT1                        : 6
-#      LUT2                        : 31
-#      LUT3                        : 19
+#      LUT2                        : 32
+#      LUT3                        : 18
 #      LUT4                        : 23
-#      LUT5                        : 36
+#      LUT5                        : 38
 #      LUT6                        : 50
 #      MUXCY                       : 13
 #      MUXF7                       : 5
 #      VCC                         : 1
 #      XORCY                       : 15
-# FlipFlops/Latches                : 157
-#      FD                          : 37
-#      FDC                         : 2
+# FlipFlops/Latches                : 160
+#      FD                          : 41
 #      FDR                         : 63
 #      FDRE                        : 45
 #      IDDR2                       : 1
-#      LD                          : 8
+#      LD                          : 9
 #      ODDR2                       : 1
-# Clock Buffers                    : 5
-#      BUFG                        : 5
-# IO Buffers                       : 11
-#      IBUF                        : 3
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 9
+#      IBUF                        : 1
 #      IBUFDS                      : 1
 #      IBUFGDS                     : 1
 #      OBUF                        : 4
@@ -662,24 +652,24 @@ Selected Device : 6slx150tfgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             155  out of  184304     0%  
- Number of Slice LUTs:                  173  out of  92152     0%  
-    Number used as Logic:               173  out of  92152     0%  
+ Number of Slice Registers:             158  out of  184304     0%  
+ Number of Slice LUTs:                  174  out of  92152     0%  
+    Number used as Logic:               174  out of  92152     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    237
-   Number with an unused Flip Flop:      82  out of    237    34%  
-   Number with an unused LUT:            64  out of    237    27%  
-   Number of fully used LUT-FF pairs:    91  out of    237    38%  
+ Number of LUT Flip Flop pairs used:    240
+   Number with an unused Flip Flop:      82  out of    240    34%  
+   Number with an unused LUT:            66  out of    240    27%  
+   Number of fully used LUT-FF pairs:    92  out of    240    38%  
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          16
- Number of bonded IOBs:                  15  out of    396     3%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    396     3%  
     IOB Flip Flops/Latches:               2
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
 
 ---------------------------
 Partition Resource Summary:
@@ -699,19 +689,19 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------+--------------------------+-------+
-Clock Signal                                                   | Clock buffer(FF name)    | Load  |
----------------------------------------------------------------+--------------------------+-------+
-state[1]_PWR_65_o_Mux_83_o(state[1]_PWR_65_o_Mux_83_o1:O)      | NONE(*)(DC_mod)          | 1     |
-state[1]_PWR_66_o_Mux_85_o(Mmux_state[1]_PWR_66_o_Mux_85_o11:O)| NONE(*)(nxtState_0)      | 2     |
-MASTER_CLK_P                                                   | DCM_SP:CLKFX             | 84    |
-Mram__n02774(Mram__n027741:O)                                  | NONE(*)(dc_cmd_31)       | 2     |
-Mram__n02772(Mram__n027721:O)                                  | NONE(*)(dc_cmd_valid)    | 1     |
-Mram__n0277(Mram__n027712:O)                                   | NONE(*)(rd_req)          | 1     |
-MASTER_CLK_P                                                   | DCM_SP:CLKFX+DCM_SP:CLKFX| 67    |
-RESET                                                          | IBUF+BUFG                | 1     |
----------------------------------------------------------------+--------------------------+-------+
-(*) These 5 clock signal(s) are generated by combinatorial logic,
+-----------------------------------------------------------------------+--------------------------+-------+
+Clock Signal                                                           | Clock buffer(FF name)    | Load  |
+-----------------------------------------------------------------------+--------------------------+-------+
+CtrlState[1]_GND_75_o_Mux_97_o(Mmux_CtrlState[1]_GND_75_o_Mux_97_o11:O)| NONE(*)(nxt_CTRLState_0) | 2     |
+CommState[1]_PWR_65_o_Mux_83_o(CommState[1]_PWR_65_o_Mux_83_o1:O)      | NONE(*)(DC_MOD)          | 1     |
+MASTER_CLK_P                                                           | DCM_SP:CLKFX+DCM_SP:CLKFX| 69    |
+CommState[1]_PWR_66_o_Mux_85_o(Mmux_CommState[1]_PWR_66_o_Mux_85_o11:O)| NONE(*)(nxtState_1)      | 2     |
+MASTER_CLK_P                                                           | DCM_SP:CLKFX             | 84    |
+Mram__n02854(Mram__n028541:O)                                          | NONE(*)(dc_cmd_31)       | 2     |
+Mram__n02852(Mram__n028521:O)                                          | NONE(*)(dc_cmd_valid)    | 1     |
+Mram__n0285(Mram__n028512:O)                                           | NONE(*)(rd_req)          | 1     |
+-----------------------------------------------------------------------+--------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -724,9 +714,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.862ns (Maximum Frequency: 349.369MHz)
-   Minimum input arrival time before clock: 3.116ns
-   Maximum output required time after clock: 3.762ns
+   Minimum period: 2.882ns (Maximum Frequency: 346.945MHz)
+   Minimum input arrival time before clock: 3.153ns
+   Maximum output required time after clock: 3.791ns
    Maximum combinational path delay: 1.364ns
 
 Timing Details:
@@ -735,71 +725,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'MASTER_CLK_P'
-  Clock period: 2.862ns (frequency: 349.369MHz)
+  Clock period: 2.882ns (frequency: 346.945MHz)
   Total number of paths / destination ports: 1496 / 266
 -------------------------------------------------------------------------
-Delay:               2.862ns (Levels of Logic = 1)
-  Source:            comm_process/U_SerialInterfaceIn/r_state_FSM_FFd2 (FF)
+Delay:               2.882ns (Levels of Logic = 1)
+  Source:            comm_process/U_SerialInterfaceIn/r_bitCount_2 (FF)
   Destination:       comm_process/U_SerialInterfaceIn/r_slipCount_7 (FF)
   Source Clock:      MASTER_CLK_P rising
   Destination Clock: MASTER_CLK_P rising
 
-  Data Path: comm_process/U_SerialInterfaceIn/r_state_FSM_FFd2 to comm_process/U_SerialInterfaceIn/r_slipCount_7
+  Data Path: comm_process/U_SerialInterfaceIn/r_bitCount_2 to comm_process/U_SerialInterfaceIn/r_slipCount_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              7   0.447   1.118  comm_process/U_SerialInterfaceIn/r_state_FSM_FFd2 (comm_process/U_SerialInterfaceIn/r_state_FSM_FFd2)
-     LUT6:I1->O            7   0.203   0.773  comm_process/U_SerialInterfaceIn/_n0118_inv1 (comm_process/U_SerialInterfaceIn/_n0118_inv)
+     FDR:C->Q              7   0.447   1.138  comm_process/U_SerialInterfaceIn/r_bitCount_2 (comm_process/U_SerialInterfaceIn/r_bitCount_2)
+     LUT6:I0->O            7   0.203   0.773  comm_process/U_SerialInterfaceIn/_n0118_inv1 (comm_process/U_SerialInterfaceIn/_n0118_inv)
      FDRE:CE                   0.322          comm_process/U_SerialInterfaceIn/r_slipCount_1
     ----------------------------------------
-    Total                      2.862ns (0.972ns logic, 1.890ns route)
-                                       (34.0% logic, 66.0% route)
+    Total                      2.882ns (0.972ns logic, 1.910ns route)
+                                       (33.7% logic, 66.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'state[1]_PWR_65_o_Mux_83_o'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CommState[1]_PWR_66_o_Mux_85_o'
+  Total number of paths / destination ports: 32 / 1
 -------------------------------------------------------------------------
-Offset:              2.816ns (Levels of Logic = 2)
-  Source:            START_SEND (PAD)
-  Destination:       DC_mod (LATCH)
-  Destination Clock: state[1]_PWR_65_o_Mux_83_o falling
-
-  Data Path: START_SEND to DC_mod
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             7   1.222   0.773  START_SEND_IBUF (START_SEND_IBUF)
-     INV:I->O              1   0.206   0.579  DC_mod_GND_8_o_MUX_150_o1_INV_0 (DC_mod_GND_8_o_MUX_150_o)
-     LD:D                      0.037          DC_mod
-    ----------------------------------------
-    Total                      2.816ns (1.465ns logic, 1.352ns route)
-                                       (52.0% logic, 48.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'state[1]_PWR_66_o_Mux_85_o'
-  Total number of paths / destination ports: 34 / 2
--------------------------------------------------------------------------
-Offset:              3.116ns (Levels of Logic = 3)
-  Source:            comm_process/QBlink_RX_FIFO_W8R32:dout<24> (PAD)
+Offset:              3.153ns (Levels of Logic = 3)
+  Source:            comm_process/QBlink_RX_FIFO_W8R32:dout<9> (PAD)
   Destination:       nxtState_1 (LATCH)
-  Destination Clock: state[1]_PWR_66_o_Mux_85_o falling
+  Destination Clock: CommState[1]_PWR_66_o_Mux_85_o falling
 
-  Data Path: comm_process/QBlink_RX_FIFO_W8R32:dout<24> to nxtState_1
+  Data Path: comm_process/QBlink_RX_FIFO_W8R32:dout<9> to nxtState_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    CMD_FIFO_w8r32:dout<24>    1   0.000   0.944  comm_process/QBlink_RX_FIFO_W8R32 (dc_data<24>)
-     LUT6:I0->O            1   0.203   0.944  Mmux_state[1]_X_8_o_Mux_84_o11 (Mmux_state[1]_X_8_o_Mux_84_o1)
-     LUT6:I0->O            1   0.203   0.580  Mmux_state[1]_X_8_o_Mux_84_o17 (Mmux_state[1]_X_8_o_Mux_84_o16)
-     LUT4:I3->O            1   0.205   0.000  Mmux_state[1]_X_8_o_Mux_84_o18 (state[1]_X_8_o_Mux_84_o)
+    CMD_FIFO_w8r32:dout<9>    1   0.000   0.944  comm_process/QBlink_RX_FIFO_W8R32 (dc_data<9>)
+     LUT6:I0->O            1   0.203   0.944  dc_data[31]_PWR_8_o_equal_5_o<31>1 (dc_data[31]_PWR_8_o_equal_5_o<31>)
+     LUT6:I0->O            2   0.203   0.617  dc_data[31]_PWR_8_o_equal_5_o<31>7 (dc_data[31]_PWR_8_o_equal_5_o)
+     LUT5:I4->O            1   0.205   0.000  Mmux_CommState[1]_X_8_o_Mux_84_o11 (CommState[1]_X_8_o_Mux_84_o)
      LD:D                      0.037          nxtState_1
     ----------------------------------------
-    Total                      3.116ns (0.648ns logic, 2.468ns route)
-                                       (20.8% logic, 79.2% route)
+    Total                      3.153ns (0.648ns logic, 2.505ns route)
+                                       (20.6% logic, 79.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'MASTER_CLK_P'
-  Total number of paths / destination ports: 44 / 43
+  Total number of paths / destination ports: 42 / 41
 -------------------------------------------------------------------------
 Offset:              2.342ns (Levels of Logic = 1)
   Source:            comm_process/U_SerialInterfaceOut/U_SerializationFifo:valid (PAD)
@@ -818,71 +788,32 @@ Offset:              2.342ns (Levels of Logic = 1)
                                        (22.4% logic, 77.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n02774'
-  Total number of paths / destination ports: 3 / 2
--------------------------------------------------------------------------
-Offset:              2.340ns (Levels of Logic = 2)
-  Source:            START_SEND (PAD)
-  Destination:       DC_RESET (LATCH)
-  Destination Clock: Mram__n02774 falling
-
-  Data Path: START_SEND to DC_RESET
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             7   1.222   0.878  START_SEND_IBUF (START_SEND_IBUF)
-     LUT2:I0->O            1   0.203   0.000  Mmux_START_RD_GND_8_o_MUX_146_o11 (START_RD_GND_8_o_MUX_146_o)
-     LD:D                      0.037          DC_RESET
-    ----------------------------------------
-    Total                      2.340ns (1.462ns logic, 0.878ns route)
-                                       (62.5% logic, 37.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'RESET'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              1.909ns (Levels of Logic = 1)
-  Source:            RESET (PAD)
-  Destination:       qb_rst (LATCH)
-  Destination Clock: RESET falling
-
-  Data Path: RESET to qb_rst
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.650  RESET_IBUF (RESET_IBUF)
-     LD:D                      0.037          qb_rst
-    ----------------------------------------
-    Total                      1.909ns (1.259ns logic, 0.650ns route)
-                                       (65.9% logic, 34.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'state[1]_PWR_65_o_Mux_83_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CommState[1]_PWR_65_o_Mux_83_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              3.648ns (Levels of Logic = 1)
-  Source:            DC_mod (LATCH)
-  Destination:       DC_mod (PAD)
-  Source Clock:      state[1]_PWR_65_o_Mux_83_o falling
+  Source:            DC_MOD (LATCH)
+  Destination:       DC_MOD (PAD)
+  Source Clock:      CommState[1]_PWR_65_o_Mux_83_o falling
 
-  Data Path: DC_mod to DC_mod
+  Data Path: DC_MOD to DC_MOD
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  DC_mod (DC_mod_OBUF)
-     OBUF:I->O                 2.571          DC_mod_OBUF (DC_mod)
+     LD:G->Q               1   0.498   0.579  DC_MOD (DC_MOD_OBUF)
+     OBUF:I->O                 2.571          DC_MOD_OBUF (DC_MOD)
     ----------------------------------------
     Total                      3.648ns (3.069ns logic, 0.579ns route)
                                        (84.1% logic, 15.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n02774'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n02854'
   Total number of paths / destination ports: 25 / 25
 -------------------------------------------------------------------------
 Offset:              3.648ns (Levels of Logic = 1)
   Source:            DC_RESET (LATCH)
   Destination:       DC_RESET (PAD)
-  Source Clock:      Mram__n02774 falling
+  Source Clock:      Mram__n02854 falling
 
   Data Path: DC_RESET to DC_RESET
                                 Gate     Net
@@ -898,7 +829,7 @@ Offset:              3.648ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'MASTER_CLK_P'
   Total number of paths / destination ports: 35 / 35
 -------------------------------------------------------------------------
-Offset:              3.762ns (Levels of Logic = 1)
+Offset:              3.791ns (Levels of Logic = 1)
   Source:            comm_process/U_ByteLink/r_aligned (FF)
   Destination:       TRGLINK_SYNC (PAD)
   Source Clock:      MASTER_CLK_P rising 0.2X
@@ -907,20 +838,20 @@ Offset:              3.762ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.447   0.744  comm_process/U_ByteLink/r_aligned (comm_process/U_ByteLink/r_aligned)
+     FDR:C->Q              7   0.447   0.773  comm_process/U_ByteLink/r_aligned (comm_process/U_ByteLink/r_aligned)
      OBUF:I->O                 2.571          TRGLINK_SYNC_OBUF (TRGLINK_SYNC)
     ----------------------------------------
-    Total                      3.762ns (3.018ns logic, 0.744ns route)
-                                       (80.2% logic, 19.8% route)
+    Total                      3.791ns (3.018ns logic, 0.773ns route)
+                                       (79.6% logic, 20.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n0277'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n0285'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              0.498ns (Levels of Logic = 0)
   Source:            rd_req (LATCH)
   Destination:       comm_process/QBlink_RX_FIFO_W8R32:rd_en (PAD)
-  Source Clock:      Mram__n0277 falling
+  Source Clock:      Mram__n0285 falling
 
   Data Path: rd_req to comm_process/QBlink_RX_FIFO_W8R32:rd_en
                                 Gate     Net
@@ -933,13 +864,13 @@ Offset:              0.498ns (Levels of Logic = 0)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n02772'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Mram__n02852'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              0.498ns (Levels of Logic = 0)
   Source:            dc_cmd_valid (LATCH)
   Destination:       comm_process/QBlink_TX_FIFO_W32R8:wr_en (PAD)
-  Source Clock:      Mram__n02772 falling
+  Source Clock:      Mram__n02852 falling
 
   Data Path: dc_cmd_valid to comm_process/QBlink_TX_FIFO_W32R8:wr_en
                                 Gate     Net
@@ -975,17 +906,41 @@ Delay:               1.364ns (Levels of Logic = 1)
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock CommState[1]_PWR_65_o_Mux_83_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.648|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CommState[1]_PWR_66_o_Mux_85_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.861|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CtrlState[1]_GND_75_o_Mux_97_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    2.125|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock MASTER_CLK_P
---------------------------+---------+---------+---------+---------+
-                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------+---------+---------+---------+---------+
-MASTER_CLK_P              |    5.397|         |    1.026|         |
-RESET                     |         |    1.524|         |         |
-state[1]_PWR_66_o_Mux_85_o|         |    1.179|         |         |
---------------------------+---------+---------+---------+---------+
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+CommState[1]_PWR_66_o_Mux_85_o|         |    1.179|         |         |
+CtrlState[1]_GND_75_o_Mux_97_o|         |    1.179|         |         |
+MASTER_CLK_P                  |    5.397|         |    1.026|         |
+------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n0277
+Clock to Setup on destination clock Mram__n0285
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -993,7 +948,7 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 MASTER_CLK_P   |         |         |    1.621|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n02772
+Clock to Setup on destination clock Mram__n02852
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -1001,25 +956,25 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 MASTER_CLK_P   |         |         |    1.621|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock state[1]_PWR_66_o_Mux_85_o
+Clock to Setup on destination clock Mram__n02854
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-MASTER_CLK_P   |         |         |    1.764|         |
+MASTER_CLK_P   |         |         |    1.648|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.46 secs
+Total CPU time to Xst completion: 6.28 secs
  
 --> 
 
 Total memory usage is 4508492 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   63 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
 Number of infos    :   30 (   0 filtered)
 

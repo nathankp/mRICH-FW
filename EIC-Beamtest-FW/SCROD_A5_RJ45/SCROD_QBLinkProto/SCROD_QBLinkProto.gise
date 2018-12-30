@@ -64,6 +64,10 @@
     <transform xil_pn:end_ts="1545959512" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/serializationFifo.vhd"/>
@@ -98,6 +102,11 @@
     <transform xil_pn:end_ts="1545959512" xil_pn:in_ck="-5189393506580308242" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/serializationFifo.vhd"/>
@@ -120,6 +129,12 @@
     <transform xil_pn:end_ts="1545959519" xil_pn:in_ck="4003211144460378907" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5239529552217144814" xil_pn:start_ts="1545959512">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_TB_beh.prj"/>
       <outfile xil_pn:name="SCRODQB_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -127,9 +142,13 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1545959519" xil_pn:in_ck="-4494886579759259918" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3816180545161858177" xil_pn:start_ts="1545959519">
+    <transform xil_pn:end_ts="1545962576" xil_pn:in_ck="-4494886579759259918" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3816180545161858177" xil_pn:start_ts="1545962575">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -162,14 +181,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1545866097" xil_pn:in_ck="-6655795319132341656" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7105055421330215245" xil_pn:start_ts="1545866087">
+    <transform xil_pn:end_ts="1546042677" xil_pn:in_ck="-6655795319132341656" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7105055421330215245" xil_pn:start_ts="1546042667">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SCRODQB_Top.lso"/>
       <outfile xil_pn:name="SCRODQB_Top.ngc"/>
       <outfile xil_pn:name="SCRODQB_Top.ngr"/>
@@ -186,18 +201,19 @@
     <transform xil_pn:end_ts="1545107799" xil_pn:in_ck="-8352191165349492198" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4036388000670760264" xil_pn:start_ts="1545107799">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1545107807" xil_pn:in_ck="-8257459037813164440" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7497441582054749151" xil_pn:start_ts="1545107799">
+    <transform xil_pn:end_ts="1546042881" xil_pn:in_ck="-4140397456353045781" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7497441582054749151" xil_pn:start_ts="1546042677">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="SCRODQB_Top_cs.blc"/>
-      <outfile xil_pn:name="SCRODQB_Top_cs.ngc"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
