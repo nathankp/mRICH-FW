@@ -1,6 +1,9 @@
-set -tmpdir "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn HMB_DC_QBTOP.prj
+-ofn HMB_DC_QBTOP
+-ofmt NGC
 -p xc6slx150t-3-fgg676
 -top HMB_DC_QBTOP
 -opt_mode Speed
@@ -12,6 +15,7 @@ run -compileonly yes
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
+-sd {"../../../../QBLink/QBLink/cores" "../../../../QBLink/QBLink/ipcore_dir"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
@@ -47,4 +51,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn HMB_DC_QBTOP.prj

@@ -1,21 +1,27 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: University of Hawaii HEPG Instrumentation Development Lab
+-- Engineer: Nathan Park
 -- 
 -- Create Date:    13:59:21 12/04/2018 
--- Design Name: 
+-- Design Name:    HMB Hodoscope (BMD_revB) with QBLink (stage 1)
 -- Module Name:    HMB_DC_QBTOP - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
+-- Project Name:   Hawaii Muon Beamline 
+-- Target Devices: Spartan6 lx9 FPGA
+-- Tool versions:  ISE 14.1
+
+-- Description: Barebones HODOSCOPE DC FW implementing QBLink.
+--              Tests QBLink communcation between SCROD and a HODOSCOPE DC: 
+--						 SCROD writes to an internal register on the DC through QBLink. That internal register is readback
+--  					 to the SCROD. If the data recieved by the SCROD matches the intended register value, then the SCROD and DC 
+--                 are communicating properly.
+--              If this test is successful, a fuller version of the HODOCSCOPE will be built upon this FW
 --
--- Dependencies: 
+-- Dependencies: SCROD with QBLink (SCRODQB_Top) 
 --
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Additional Comments: 
---
+-- Last Update on 12/31/2018
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -27,21 +33,21 @@ use IEEE.NUMERIC_STD.ALL;
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 library UNISIM;
-use UNISIM.VComponents.all;
+use UNISIM.VComponents.ALL;
 
 entity HMB_DC_QBTOP is
     Port ( SYSCLK_P : IN  STD_LOGIC;
            SYSCLK_N : IN STD_LOGIC;
            TX_P : IN  STD_LOGIC;
            TX_N : IN  STD_LOGIC;
-			  DC_RESET : IN STD_LOGIC;
-			  RD_WR :	IN STD_LOGIC; -- '1' to cmd dc to readback, '0' to command it to listen
-			  DCstatus : OUT STD_LOGIC;
+			  SYNC_P  : IN STD_LOGIC;
+			  SYNC_N  : IN STD_LOGIC;
            RX_P : OUT  STD_LOGIC;
            RX_N : OUT  STD_LOGIC);
 end HMB_DC_QBTOP;
 
 architecture Behavioral of HMB_DC_QBTOP is
+signal sync 	: STD_LOGIC;
 signal internal_sysclk :  STD_LOGIC;
 signal internal_reg : STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0');
 signal tx : STD_LOGIC;
@@ -54,7 +60,7 @@ signal wordout_req : STD_LOGIC := '0';
 signal reset : STD_LOGIC := '0';
 signal trgLinkSynced : STD_LOGIC := '0';
 signal serialCLKLocked : STD_LOGIC := '0';
-constant correctAnsw : STD_LOGIC_VECTOR(31 DOWNTO 0) := x"DEADBEEF";
+constant correctAnsw : STD_LOGIC_VECTOR(31 DOWNTO 0) := x"DEADBEEF"; --USER: Change this to word you are sending from SCROD
 --state machine
 TYPE  STATETYPE IS (IDLE, SYNC_LINK, LISTEN, RD_BACK);
 signal state : STATETYPE := SYNC_LINK;
@@ -68,23 +74,34 @@ O => RX_P,
 OB => RX_N,
 I => rx);
 
-SYSCLK_IBUFDS : IBUFDS 
-generic map ( 
+SYSCLK_IBUFGDS_inst : IBUFGDS
+generic map (
 					DIFF_TERM => FALSE,
-					IOSTANDARD => "LVDES_25")
+					IOSTANDARD => "LVDS_25")
 port map (
-	O => internal_sysclk,
-	I => SYSCLK_P,
-	IB => SYSCLK_N);
+O => internal_sysclk, -- Clock buffer output
+I => SYSCLK_P, -- Diff_p clock buffer input
+IB => SYSCLK_N -- Diff_n clock buffer input
+);
 	
 TX_IBUFDS : IBUFDS
 generic map ( 
 					DIFF_TERM => FALSE,
-					IOSTANDARD => "LVDES_25")
+					IOSTANDARD => "LVDS_25")
 port map (
 	O => tx,
 	I => TX_P,
 	IB => TX_N);
+	
+SYNC_IBUFDS : IBUFDS
+generic map ( 
+					DIFF_TERM => FALSE,
+					IOSTANDARD => "LVDS_25")
+port map (
+	O => sync,
+	I => SYNC_P,
+	IB => SYNC_N);
+	
 -----------------------------------------------------------------------------
 -----------QBLink Module-----------------------------------------------------
 -----------------------------------------------------------------------------
@@ -102,19 +119,15 @@ PORT MAP(
 			 trgLinkSynced => trgLinkSynced,
 			 serialClkLocked => serialClkLocked
 			 );
-COMM_clk : PROCESS(internal_sysclk,dc_reset)
-BEGIN
-		IF(rising_edge(internal_sysclk)) THEN
-			reset <= '0'; 
-			state <= nxtState;
-		END IF;
-END PROCESS;
 
-comm_sm: PROCESS(STATE, trgLinkSynced, serialClkLocked, wordout_valid, wordout, RD_WR) 
+comm_sm: PROCESS(internal_sysclk, state, trgLinkSynced, serialClkLocked, wordout_valid, wordout) 
 BEGIN
-case STATE IS
+	IF(rising_edge(internal_sysclk)) THEN
+		reset <= '0'; --turn off reset at the beginning of each clock period
+		state <= nxtState;
+	END IF;
+	case STATE IS
 		WHEN SYNC_LINK =>
-			reset <= '0';
 			wordin_valid <= '0';
 			IF (trgLinkSynced = '1' and serialClkLocked = '1') THEN
 				nxtState <= IDLE;
@@ -125,40 +138,34 @@ case STATE IS
 		WHEN IDLE =>
 			wordin <= (others => '0');
 			wordin_valid <= '0';
-			wordout_req <= '0';
-			IF (DC_RESET = '0') THEN
-				IF(RD_WR = '0') THEN
+    		wordout_req <= '0'; -- turn off readout, prevents overwrite of internal register after successfully being written to.
+			IF (sync = '0') THEN
 					nxtState <= LISTEN;
-				ELSE
+			ELSIF (sync = '1') THEN 
 					nxtState <= RD_BACK;
-				END IF;
-			ELSE
+			ELSE 
 				nxtState <= IDLE;
 			END IF;
+
 		WHEN LISTEN =>
 			wordout_req <= '1';
-			IF(falling_edge(wordout_valid)) THEN 
+			IF(wordout = correctAnsw) THEN 
 				internal_reg  <= wordout;
 				nxtState <= IDLE;
 			ELSE
-				internal_reg <= (others => '1'); --flag incomplete write
+				internal_reg <= (others => '0'); --flag incomplete write
 				nxtState <= LISTEN;
 			END IF;
-			IF(wordout = correctAnsw) THEN 
-				DCstatus <= '1';
-			ELSE
-				DCstatus <= '0';
-			END IF; 
+
 		WHEN RD_BACK =>
-			wordin <= internal_reg;
-			wordin_valid <= '1';
-			IF(DC_RESET = '1') THEN --to stop reading back master SCROD will reset DC 
-				nxtState <= SYNC_LINK;
-			--	reset <= '1'; --don't worry abou resetting qblink it's troublesome rn
+			wordin <= internal_reg; -- load dc cmd into QBLink input FIFO
+			wordin_valid <= '1'; --enable FIFO writing
+			IF(sync = '0') THEN --Go back to IDLE when sync flag goes low, otherwise keeping sending back data to SCROD
+				nxtState <= IDLE;
 			ELSE
 				nxtState <= RD_BACK;
 			END IF;
-		END CASE;
+	END CASE;
 END PROCESS;
 end Behavioral;
 

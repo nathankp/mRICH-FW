@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe -prj C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_beh.prj work.SCRODQB_TB 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_beh.prj" "work.SCRODQB_TB" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -76,8 +76,8 @@ Compiling architecture behavioral of entity SCRODQB_Top [scrodqb_top_default]
 Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity scrodqb_tb
 Time Resolution for simulation is 1ps.
-Waiting for 20 sub-compilation(s) to finish...
+Waiting for 23 sub-compilation(s) to finish...
 Compiled 88 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe
-Fuse Memory Usage: 70396 KB
-Fuse CPU Usage: 1702 ms
+Fuse Memory Usage: 70736 KB
+Fuse CPU Usage: 1796 ms

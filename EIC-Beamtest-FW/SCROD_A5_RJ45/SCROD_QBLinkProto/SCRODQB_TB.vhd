@@ -49,17 +49,15 @@ ARCHITECTURE behavior OF SCRODQB_TB IS
 			MASTER_CLK_N 	 : IN STD_LOGIC; --(try supply with VIO or function gen)
 			RX_DC_P			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
 			RX_DC_N			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
-			DC_STATUS		 : IN STD_LOGIC;
-			CLK_DC_P			 : OUT STD_LOGIC; --25MHz clock to DC (fact check)
+			CLK_DC_P			 : OUT STD_LOGIC; --25MHz clock to DC (fact check)--> {confirmed}
 			CLK_DC_N			 : OUT STD_LOGIC;
 			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
-			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC
-			DC_mod			 : OUT STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
-			DC_RESET 		 : OUT STD_LOGIC;
-		--	SYNC		: OUT STD_LOGIC; -- will use after QBLink comm test.
+			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC 
+			SYNC_P			 : OUT STD_LOGIC; -- when '0' DC listens only, '1' DC reads back command
+			SYNC_N			 : OUT STD_LOGIC;
 			TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
 		   SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
-        );
+			);
     END COMPONENT;
     
 	COMPONENT HMB_DC_QBTOP
@@ -68,32 +66,30 @@ ARCHITECTURE behavior OF SCRODQB_TB IS
         SYSCLK_N : IN  STD_LOGIC;
         TX_P : IN STD_LOGIC;
         TX_N : IN  STD_LOGIC;
-		  DC_RESET : IN STD_LOGIC;
-		  RD_WR :	IN STD_LOGIC; -- '1' to cmd dc to readback, '0' to command it to listen
-		  DCstatus	: OUT STD_LOGIC;
+		  SYNC_P  : IN STD_LOGIC; -- will use after QBLink comm test.
+		  SYNC_N	 : IN STD_LOGIC;
         RX_P : OUT  STD_LOGIC;
         RX_N : OUT  STD_LOGIC);
 	END COMPONENT;
 
-   --Inputs
+   --SCROD Inputs
    signal MASTER_CLK_P : std_logic := '0';
    signal MASTER_CLK_N : std_logic := '0';
    signal RX_DC_P : std_logic := '0';
    signal RX_DC_N : std_logic := '0';
-	signal dcstat : std_logic := '0';
- 	--Outputs
+ 	--SCRODOutputs
    signal CLK_DC_P : std_logic;
    signal CLK_DC_N : std_logic;
 	signal DCmode		 : STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
 	signal DC_RESET 	 : STD_LOGIC;
    signal TX_DC_N : std_logic;
    signal TX_DC_P : std_logic;
+	signal syncP   : std_logic;
+	signal syncN   : std_logic;
    signal TRGLINK_SYNC : std_logic;
    signal SERIAL_CLK_LCK : std_logic;
    -- Clock period definitions
-   constant MASTER_CLK_period : time := 7.8740 ns;
-
- 
+   constant MASTER_CLK_period : time := 7.8740 ns; 
 BEGIN
 -----------Will use Daughtercard Module as tranining partner-------
 --RX_DC_IBUF_inst : IBUFDS
@@ -108,18 +104,16 @@ BEGIN
 --	
 	-- Instantiate the Unit Under Test (UUT)
    uut: SCRODQB_Top PORT MAP (
-    
           MASTER_CLK_P => MASTER_CLK_P,
           MASTER_CLK_N => MASTER_CLK_N,
           RX_DC_P => RX_DC_P,
           RX_DC_N => RX_DC_N,
           CLK_DC_P => CLK_DC_P,
           CLK_DC_N => CLK_DC_N,
-			 DC_STATUS => dcstat,
           TX_DC_N => TX_DC_N,
           TX_DC_P => TX_DC_P,
-			 DC_RESET => DC_RESET,
-			 DC_mod => DCmode,
+			 SYNC_P => syncP,
+			 SYNC_N => syncN,
           TRGLINK_SYNC => TRGLINK_SYNC,
           SERIAL_CLK_LCK => SERIAL_CLK_LCK
         );
@@ -128,9 +122,8 @@ BEGIN
 			 SYSCLK_N => CLK_DC_N,
 			 TX_P => TX_DC_P,
 			 TX_N => TX_DC_N,
-			 DC_RESET => DC_RESET,
-			 DCstatus => dcstat,
-			 RD_WR => DCmode,
+			 SYNC_P => syncP,
+			 SYNC_N => syncN,
 			 RX_P => RX_DC_P,
 			 RX_N => RX_DC_N
 			 );

@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: ngcbuild.exe -dd
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/_ngo
--sd ipcore_dir -sd ../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT -p xc6slx150t-fgg676-3
--i
+-sd ../../../../QBLink/QBLink/cores -sd ../../../../QBLink/QBLink/ipcore_dir -sd
+ipcore_dir -sd ../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT -p xc6slx150t-fgg676-3 -i
 C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCROD
 QB_Top.ngc
 C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCROD
@@ -13,6 +13,9 @@ QB_Top_cs.ngc
 Reading NGO file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRO
 DQB_Top.ngc" ...
+Loading design module "../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc"...
+Loading design module "../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc"...
+Loading design module "../../../../QBLink/QBLink/cores/serializationFifo.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -25,7 +28,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4416668 kilobytes
+Total memory usage is 4416684 kilobytes
 
 Writing NGC file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRO

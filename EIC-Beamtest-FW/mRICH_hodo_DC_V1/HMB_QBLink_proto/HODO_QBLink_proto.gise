@@ -22,19 +22,55 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="HODO_QBLink_proto.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="HMB_DC_QBTOP.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="HMB_DC_QBTOP.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="HMB_DC_QBTOP.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HMB_DC_QBTOP.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="HMB_DC_QBTOP.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="HMB_DC_QBTOP.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="HMB_DC_QBTOP.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="HMB_DC_QBTOP.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="HMB_DC_QBTOP.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="HMB_DC_QBTOP.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="HMB_DC_QBTOP.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="HMB_DC_QBTOP.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="HMB_DC_QBTOP.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="HMB_DC_QBTOP.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="HMB_DC_QBTOP.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="HMB_DC_QBTOP.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="HMB_DC_QBTOP.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="HMB_DC_QBTOP.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="HMB_DC_QBTOP.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="HMB_DC_QBTOP.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="HMB_DC_QBTOP_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="HMB_DC_QBTOP_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HMB_DC_QBTOP_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="HMB_DC_QBTOP_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="HMB_DC_QBTOP_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="HMB_DC_QBTOP_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HMB_DC_QBTOP_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HMB_DC_QBTOP_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="HMB_DC_QBTOP_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="HMB_DC_QBTOP_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="HMB_DC_QBTOP_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="HMB_DC_QBTOP_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="HMB_DC_QBTOP_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="HMB_DC_QBTOP_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="hmb_dc_qbtop.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="hmb_dc_qbtop.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="hmb_dc_qbtop.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -67,23 +103,88 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544134216" xil_pn:in_ck="3409699996858374637" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2211634839216323185" xil_pn:start_ts="1544134209">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1546309342" xil_pn:in_ck="3409699996858374637" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2211634839216323185" xil_pn:start_ts="1546309329">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.lso"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.ngc"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.ngr"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.prj"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.stx"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.syr"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.xst"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309763" xil_pn:in_ck="-359069618097521085" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7624815037760347206" xil_pn:start_ts="1546309763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309768" xil_pn:in_ck="-4805318374780571742" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8816869684537032191" xil_pn:start_ts="1546309763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.bld"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.ngd"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309794" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="346394261158932323" xil_pn:start_ts="1546309768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.pcf"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_map.map"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_map.mrp"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_map.ncd"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_map.ngm"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_map.xrpt"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_summary.xml"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309829" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3717135755049403020" xil_pn:start_ts="1546309794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.ncd"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.pad"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.par"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.ptwx"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.unroutes"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.xpi"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_pad.csv"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_pad.txt"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309861" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5017394210571468131" xil_pn:start_ts="1546309833">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="hmb_dc_qbtop.bgn"/>
+      <outfile xil_pn:name="hmb_dc_qbtop.bit"/>
+      <outfile xil_pn:name="hmb_dc_qbtop.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1546309829" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1546309820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.twr"/>
+      <outfile xil_pn:name="HMB_DC_QBTOP.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

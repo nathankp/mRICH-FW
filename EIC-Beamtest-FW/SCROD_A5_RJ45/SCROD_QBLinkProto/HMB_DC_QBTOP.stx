@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -84,8 +84,8 @@ Parsing entity <HMB_DC_QBTOP>.
 Parsing architecture <Behavioral> of entity <hmb_dc_qbtop>.
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.55 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.52 secs
  
 --> 
 

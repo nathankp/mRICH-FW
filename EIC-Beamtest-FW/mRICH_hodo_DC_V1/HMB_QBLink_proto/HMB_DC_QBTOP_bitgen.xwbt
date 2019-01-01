@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HMB_DC_QBTOP.ncd
+OUTFILE=C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HMB_DC_QBTOP.bit
+FAMILY=Spartan6
+PART=xc6slx150t-3fgg676
+WORKINGDIR=C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto
+LICENSE=ISE
+USER_INFO=176018512_208276174_210685983_860
