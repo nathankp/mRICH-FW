@@ -66,7 +66,7 @@ signal start_rd : STD_LOGIC; --internal flag to prepare for readback
 signal reset : STD_LOGIC; -- SCROD reset (not yet implemented)
 signal internal_fpga_clk : STD_LOGIC; --fast clk 
 signal internal_data_clk : STD_LOGIC; -- QBLink timing clock
-signal sync : STD_LOGIC; -- Data capture trigger 
+signal sync : STD_LOGIC := '0'; -- Data capture trigger 
 signal trgLinkSync : STD_LOGIC; --QBLink status flag: trigger link synced between SCROD and DC 
 signal serialClkLck : STD_LOGIC; --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
 --signal data_clk		 : STD_LOGIC; --TB shows internal_data_clk is synced with fpga_clk
