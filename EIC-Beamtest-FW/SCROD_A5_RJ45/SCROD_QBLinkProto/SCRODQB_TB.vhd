@@ -77,11 +77,9 @@ ARCHITECTURE behavior OF SCRODQB_TB IS
    signal MASTER_CLK_N : std_logic := '0';
    signal RX_DC_P : std_logic := '0';
    signal RX_DC_N : std_logic := '0';
- 	--SCRODOutputs
+ 	--SCROD Outputs
    signal CLK_DC_P : std_logic;
    signal CLK_DC_N : std_logic;
-	signal DCmode		 : STD_LOGIC; --dc in listening mode or readback mode (temp for comm test)
-	signal DC_RESET 	 : STD_LOGIC;
    signal TX_DC_N : std_logic;
    signal TX_DC_P : std_logic;
 	signal syncP   : std_logic;
