@@ -1672,10 +1672,3 @@ extern void unisim_a_2627850724_0725860537_init()
 	xsi_register_didat("unisim_a_2627850724_0725860537", "isim/SCRODQB_TB_isim_beh.exe.sim/unisim/a_2627850724_0725860537.didat");
 	xsi_register_executes(pe);
 }
-
-extern void unisim_a_3462770002_0725860537_init()
-{
-	static char *pe[] = {(void *)unisim_a_2627850724_0725860537_p_0,(void *)unisim_a_2627850724_0725860537_p_1,(void *)unisim_a_2627850724_0725860537_p_2,(void *)unisim_a_2627850724_0725860537_p_3,(void *)unisim_a_2627850724_0725860537_p_4};
-	xsi_register_didat("unisim_a_3462770002_0725860537", "isim/SCRODQB_TB_isim_beh.exe.sim/unisim/a_3462770002_0725860537.didat");
-	xsi_register_executes(pe);
-}

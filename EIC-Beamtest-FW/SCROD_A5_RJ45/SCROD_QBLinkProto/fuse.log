@@ -21,7 +21,8 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCRO
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../../../QBLink/QBLink/source/QBlink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" into library work
-WARNING:HDLCompiler:1238 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 141: Prefix of expanded name does not denote an enclosing construct
+WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 136: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:1238 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.vhd" Line 187: Prefix of expanded name does not denote an enclosing construct
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB.vhd" into library work
 Starting static elaboration
@@ -46,6 +47,7 @@ Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,5.
 Compiling architecture bufg_v of entity BUFG [bufg_default]
 Compiling architecture xilinx of entity CLK_FANOUT [clk_fanout_default]
 Compiling architecture obufds_v of entity OBUFDS [\OBUFDS("DONT_CARE","LVDS_25","S...]
+Compiling architecture oddr2_v of entity ODDR2 [\ODDR2("NONE",'0',"SYNC")(1,4,1,...]
 Compiling architecture ibufds_v of entity IBUFDS [\IBUFDS("DONT_CARE",false,"FALSE...]
 Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
 Compiling architecture xilinx of entity clockgen_bytelink [clockgen_bytelink_default]
@@ -76,8 +78,8 @@ Compiling architecture behavioral of entity SCRODQB_Top [scrodqb_top_default]
 Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity scrodqb_tb
 Time Resolution for simulation is 1ps.
-Waiting for 23 sub-compilation(s) to finish...
-Compiled 88 VHDL Units
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 90 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_TB_isim_beh.exe
-Fuse Memory Usage: 70736 KB
-Fuse CPU Usage: 1796 ms
+Fuse Memory Usage: 70288 KB
+Fuse CPU Usage: 1921 ms
