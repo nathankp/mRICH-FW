@@ -126,6 +126,7 @@ BEGIN
 		reset <= '0'; --turn off reset at the beginning of each clock period
 		state <= nxtState;
 	END IF;
+	
 	case STATE IS
 		WHEN SYNC_LINK =>
 			wordin_valid <= '0';

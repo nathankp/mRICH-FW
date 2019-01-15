@@ -12,6 +12,12 @@
 SYSTEM_JITTER = 1000 ps;
 
 # IO constraints 
+NET "internal_fpga_clk" TNM_NET = "internal_fpga_clk";
+TIMESPEC TS_FPGA_CLK = PERIOD "internal_fpga_clk" 8 ns HIGH 50 %;#125MHz
+
+NET "internal_data_clk" TNM_NET = "internal_data_clk";
+TIMESPEC TS_DATA_CLK = PERIOD "internal_data_clk" 40 ns HIGH 50 %;#25MHz
+
 NET "MASTER_CLK_P" TNM_NET = "MASTER_CLK_P";
 TIMESPEC "TS_MASTER_CLK_P" = PERIOD "MASTER_CLK_P" 8 ns HIGH 50 %;#125MHz
 #
@@ -49,10 +55,12 @@ NET "RX_DC_N" LOC = AB19 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";
 NET "SYNC_P" LOC = AA18 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; ##AA18_L20P
 NET "SYNC_N" LOC = AB17 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #MAS_ACK1_N, J2_081_AB17_L20N
 
-NET "TRGLINK_SYNC" LOC = G23;
-NET "SERIAL_CLK_LCK" LOC = G20;
-################TEMP COMMENT ETHERNET NETS and EXTRA DC NETS###########
+NET "TRGLINK_SYNC" LOC = G23; #testpoint
+NET "SERIAL_CLK_LCK" LOC = G20; #testpont
 
+################TEMP COMMENT ETHERNET NETS and EXTRA DC NETS###########
+								###!!!!Ensure UCF Net location matches Cabling Table!!!!###
+								
 ###### Daughtercard 2
 ## CLK
 ### NET "SC_DC_DATA_P<1>" LOC = Y12;  #SC_DC_DATA2P, J2_114_Y12_L33P
