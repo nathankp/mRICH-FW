@@ -16,7 +16,7 @@ NET "internal_fpga_clk" TNM_NET = "internal_fpga_clk";
 TIMESPEC TS_FPGA_CLK = PERIOD "internal_fpga_clk" 8 ns HIGH 50 %;#125MHz
 
 NET "internal_data_clk" TNM_NET = "internal_data_clk";
-TIMESPEC TS_DATA_CLK = PERIOD "internal_data_clk" 40 ns HIGH 50 %;#25MHz
+TIMESPEC TS_DATA_CLK = PERIOD "internal_data_clk" 40 ns HIGH 50 %;#25MHz #was HIGH 40 %
 
 NET "MASTER_CLK_P" TNM_NET = "MASTER_CLK_P";
 TIMESPEC "TS_MASTER_CLK_P" = PERIOD "MASTER_CLK_P" 8 ns HIGH 50 %;#125MHz

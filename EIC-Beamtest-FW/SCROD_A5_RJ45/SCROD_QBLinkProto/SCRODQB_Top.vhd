@@ -9,8 +9,7 @@
 -- Target Devices: Spartan6 
 -- Tool versions:  14.1
 
--- Description:    Barebones SCROD FW implementing QBLink to allow communcation 
---                 communication with DC. 
+-- Description:    Barebones SCROD FW implementing QBLink to allow communcation with DC. 
 --                 Tests QBLink communcation between SCROD and a HODOSCOPE DC: 
 --						    SCROD writes to an internal register on the DC through QBLink. That internal register is readback
 --  					    to the SCROD. If the data recieved by the SCROD matches the intended register value, then the SCROD and DC 
@@ -84,6 +83,7 @@ signal nxtState : CommStateType := IDLE; --communication SM next state
 signal CtrlState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
 signal nxt_CTRLState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
 constant correctData : STD_LOGIC_VECTOR(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
+
 begin
 TRGLINK_SYNC <= trgLinkSync; 
 SERIAL_CLK_LCK <= serialClkLck;
@@ -135,8 +135,8 @@ DC_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
       C0 => internal_data_clk, -- 1-bit clock input
       C1 => not internal_data_clk, -- 1-bit clock input
       CE => '1',  -- 1-bit clock enable input
-      D0 => '0',   -- 1-bit data input (associated with C0)
-      D1 => '1',   -- 1-bit data input (associated with C1)
+      D0 => '1',   -- 1-bit data input (associated with C0)
+      D1 => '0',   -- 1-bit data input (associated with C1)
       R => '0',    -- 1-bit reset input
       S => '0'     -- 1-bit set input
    );
