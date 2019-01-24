@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.46 secs
+Total CPU time to Xst completion: 0.50 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.46 secs
+Total CPU time to Xst completion: 0.50 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "HMB_DC_QBTOP"
 Output Format                      : NGC
-Target Device                      : xc6slx150t-3-fgg676
+Target Device                      : xc6slx9-3-csg225
 
 ---- Source Options
 Top Module Name                    : HMB_DC_QBTOP
@@ -642,7 +642,7 @@ WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_23> has a consta
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block HMB_DC_QBTOP, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block HMB_DC_QBTOP, actual ratio is 10.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
@@ -745,13 +745,13 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx150tfgg676-3 
+Selected Device : 6slx9csg225-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             596  out of  184304     0%  
- Number of Slice LUTs:                  452  out of  92152     0%  
-    Number used as Logic:               452  out of  92152     0%  
+ Number of Slice Registers:             596  out of  11440     5%  
+ Number of Slice LUTs:                  452  out of   5720     7%  
+    Number used as Logic:               452  out of   5720     7%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:    775
@@ -762,10 +762,10 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                           8
- Number of bonded IOBs:                   8  out of    396     2%  
+ Number of bonded IOBs:                   8  out of    160     5%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                4  out of    268     1%  
+ Number of Block RAM/FIFO:                4  out of     32    12%  
     Number using Block RAM only:          4
  Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
 
@@ -917,12 +917,12 @@ SYSCLK_P       |         |         |    1.953|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.61 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.78 secs
  
 --> 
 
-Total memory usage is 4509588 kilobytes
+Total memory usage is 4509592 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  150 (   0 filtered)

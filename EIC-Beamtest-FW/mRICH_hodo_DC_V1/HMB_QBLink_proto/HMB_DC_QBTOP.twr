@@ -9,7 +9,7 @@ C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ise
 
 Design file:              HMB_DC_QBTOP.ncd
 Physical constraint file: HMB_DC_QBTOP.pcf
-Device,package,speed:     xc6slx150t,fgg676,C,-3 (PRODUCTION 1.23 2013-10-13)
+Device,package,speed:     xc6slx9,csg225,C,-3 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -32,17 +32,17 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  2442 paths analyzed, 1372 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  16.725ns.
+ Minimum period is  18.210ns.
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (SLICE_X36Y126.BX), 1 path
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2 (SLICE_X4Y50.CX), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     4.655ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1 (FF)
-  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (FF)
+Slack (setup path):     4.358ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2 (FF)
+  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2 (FF)
   Requirement:          8.000ns
-  Data Path Delay:      5.763ns (Levels of Logic = 0)
-  Clock Path Skew:      2.797ns (2.541 - -0.256)
+  Data Path Delay:      4.746ns (Levels of Logic = 0)
+  Clock Path Skew:      1.483ns (1.510 - 0.027)
   Source Clock:         comm_process/sstX5Clk rising at 32.000ns
   Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
   Clock Uncertainty:    0.379ns
@@ -53,62 +53,29 @@ Slack (setup path):     4.655ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.387ns
     Phase Error (PE):           0.150ns
 
-  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X36Y124.AQ     Tcko                  0.447   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1
-    SLICE_X36Y126.BX     net (fanout=1)        5.230   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/D<1>
-    SLICE_X36Y126.CLK    Tdick                 0.086   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    SLICE_X5Y50.BQ       Tcko                  0.391   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<3>
+                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2
+    SLICE_X4Y50.CX       net (fanout=1)        4.269   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<2>
+    SLICE_X4Y50.CLK      Tdick                 0.086   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<3>
+                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2
     -------------------------------------------------  ---------------------------
-    Total                                      5.763ns (0.533ns logic, 5.230ns route)
-                                                       (9.2% logic, 90.8% route)
+    Total                                      4.746ns (0.477ns logic, 4.269ns route)
+                                                       (10.1% logic, 89.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 (SLICE_X26Y139.DX), 1 path
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1 (SLICE_X4Y50.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     4.710ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3 (FF)
-  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 (FF)
-  Requirement:          8.000ns
-  Data Path Delay:      5.706ns (Levels of Logic = 0)
-  Clock Path Skew:      2.795ns (2.458 - -0.337)
-  Source Clock:         comm_process/sstX5Clk rising at 32.000ns
-  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
-  Clock Uncertainty:    0.379ns
-
-  Clock Uncertainty:          0.379ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.387ns
-    Phase Error (PE):           0.150ns
-
-  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X27Y139.CQ     Tcko                  0.391   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3
-    SLICE_X26Y139.DX     net (fanout=1)        5.229   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<3>
-    SLICE_X26Y139.CLK    Tdick                 0.086   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3
-    -------------------------------------------------  ---------------------------
-    Total                                      5.706ns (0.477ns logic, 5.229ns route)
-                                                       (8.4% logic, 91.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1 (SLICE_X26Y139.BX), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     4.749ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     4.414ns (requirement - (data path - clock path skew + uncertainty))
   Source:               comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_1 (FF)
   Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1 (FF)
   Requirement:          8.000ns
-  Data Path Delay:      5.667ns (Levels of Logic = 0)
-  Clock Path Skew:      2.795ns (2.458 - -0.337)
+  Data Path Delay:      4.690ns (Levels of Logic = 0)
+  Clock Path Skew:      1.483ns (1.510 - 0.027)
   Source Clock:         comm_process/sstX5Clk rising at 32.000ns
   Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
   Clock Uncertainty:    0.379ns
@@ -123,98 +90,131 @@ Slack (setup path):     4.749ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X27Y139.AQ     Tcko                  0.391   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<3>
+    SLICE_X5Y50.AQ       Tcko                  0.391   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<3>
                                                        comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_1
-    SLICE_X26Y139.BX     net (fanout=1)        5.190   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<1>
-    SLICE_X26Y139.CLK    Tdick                 0.086   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<3>
+    SLICE_X4Y50.BX       net (fanout=1)        4.213   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/D<1>
+    SLICE_X4Y50.CLK      Tdick                 0.086   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<3>
                                                        comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1
     -------------------------------------------------  ---------------------------
-    Total                                      5.667ns (0.477ns logic, 5.190ns route)
-                                                       (8.4% logic, 91.6% route)
+    Total                                      4.690ns (0.477ns logic, 4.213ns route)
+                                                       (10.2% logic, 89.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (SLICE_X4Y49.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.533ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1 (FF)
+  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      4.571ns (Levels of Logic = 0)
+  Clock Path Skew:      1.483ns (1.511 - 0.028)
+  Source Clock:         comm_process/sstX5Clk rising at 32.000ns
+  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.379ns
+
+  Clock Uncertainty:          0.379ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.387ns
+    Phase Error (PE):           0.150ns
+
+  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y48.BQ       Tcko                  0.447   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/D<3>
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1
+    SLICE_X4Y49.BX       net (fanout=1)        4.038   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/D<1>
+    SLICE_X4Y49.CLK      Tdick                 0.086   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      4.571ns (0.533ns logic, 4.038ns route)
+                                                       (11.7% logic, 88.3% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_sys_clk = PERIOD TIMEGRP "SYSCLK_P" 40 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB16_X2Y54.ADDRB8), 1 path
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y24.DIADI1), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.287ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6 (FF)
-  Destination:          comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+Slack (hold path):      0.298ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               comm_process/U_ByteLink/r_txData10b_1 (FF)
+  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.291ns (Levels of Logic = 0)
-  Clock Path Skew:      0.004ns (0.076 - 0.072)
+  Data Path Delay:      0.364ns (Levels of Logic = 0)
+  Clock Path Skew:      0.066ns (0.405 - 0.339)
   Source Clock:         internal_sysclk_BUFG rising at 40.000ns
   Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6 to comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+  Minimum Data Path at Fast Process Corner: comm_process/U_ByteLink/r_txData10b_1 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X43Y109.BQ     Tcko                  0.198   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<8>
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6
-    RAMB16_X2Y54.ADDRB8  net (fanout=5)        0.159   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<6>
-    RAMB16_X2Y54.CLKB    Trckc_ADDRB (-Th)     0.066   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    SLICE_X3Y47.BQ       Tcko                  0.198   comm_process/U_ByteLink/r_txData10b<3>
+                                                       comm_process/U_ByteLink/r_txData10b_1
+    RAMB8_X0Y24.DIADI1   net (fanout=1)        0.219   comm_process/U_ByteLink/r_txData10b<1>
+    RAMB8_X0Y24.CLKAWRCLKTrckd_DIA   (-Th)     0.053   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.291ns (0.132ns logic, 0.159ns route)
-                                                       (45.4% logic, 54.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB16_X2Y54.ADDRB9), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.364ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7 (FF)
-  Destination:          comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
-  Requirement:          0.000ns
-  Data Path Delay:      0.368ns (Levels of Logic = 0)
-  Clock Path Skew:      0.004ns (0.076 - 0.072)
-  Source Clock:         internal_sysclk_BUFG rising at 40.000ns
-  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7 to comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X43Y109.CQ     Tcko                  0.198   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<8>
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7
-    RAMB16_X2Y54.ADDRB9  net (fanout=5)        0.236   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
-    RAMB16_X2Y54.CLKB    Trckc_ADDRB (-Th)     0.066   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-    -------------------------------------------------  ---------------------------
-    Total                                      0.368ns (0.132ns logic, 0.236ns route)
-                                                       (35.9% logic, 64.1% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB16_X2Y54.RSTB), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.372ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 (FF)
-  Destination:          comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
-  Requirement:          0.000ns
-  Data Path Delay:      0.374ns (Levels of Logic = 0)
-  Clock Path Skew:      0.002ns (0.076 - 0.074)
-  Source Clock:         internal_sysclk_BUFG rising at 40.000ns
-  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 to comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X42Y110.AQ     Tcko                  0.200   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2>
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0
-    RAMB16_X2Y54.RSTB    net (fanout=4)        0.225   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<0>
-    RAMB16_X2Y54.CLKB    Trckc_RST   (-Th)     0.051   comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-                                                       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram
-    -------------------------------------------------  ---------------------------
-    Total                                      0.374ns (0.149ns logic, 0.225ns route)
+    Total                                      0.364ns (0.145ns logic, 0.219ns route)
                                                        (39.8% logic, 60.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y24.DIADI8), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.298ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               comm_process/U_ByteLink/r_txData10b_3 (FF)
+  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.364ns (Levels of Logic = 0)
+  Clock Path Skew:      0.066ns (0.405 - 0.339)
+  Source Clock:         internal_sysclk_BUFG rising at 40.000ns
+  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: comm_process/U_ByteLink/r_txData10b_3 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X3Y47.DQ       Tcko                  0.198   comm_process/U_ByteLink/r_txData10b<3>
+                                                       comm_process/U_ByteLink/r_txData10b_3
+    RAMB8_X0Y24.DIADI8   net (fanout=1)        0.219   comm_process/U_ByteLink/r_txData10b<3>
+    RAMB8_X0Y24.CLKAWRCLKTrckd_DIA   (-Th)     0.053   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.364ns (0.145ns logic, 0.219ns route)
+                                                       (39.8% logic, 60.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y24.ADDRAWRADDR6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.303ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_1 (FF)
+  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.306ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.120 - 0.117)
+  Source Clock:         internal_sysclk_BUFG rising at 40.000ns
+  Destination Clock:    internal_sysclk_BUFG rising at 40.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_1 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    SLICE_X2Y49.AMUX         Tshcko                0.238   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1<3>
+                                                           comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_1
+    RAMB8_X0Y24.ADDRAWRADDR6 net (fanout=2)        0.134   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<1>
+    RAMB8_X0Y24.CLKAWRCLK    Trckc_ADDRA (-Th)     0.066   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                           comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    -----------------------------------------------------  ---------------------------
+    Total                                          0.306ns (0.172ns logic, 0.134ns route)
+                                                           (56.2% logic, 43.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -225,7 +225,7 @@ Slack: 5.330ns (period - min period limit)
   Min period limit: 2.670ns (374.532MHz) (Tdcmper_CLKFX)
   Physical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKFX
   Logical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKFX
-  Location pin: DCM_X0Y10.CLKFX
+  Location pin: DCM_X0Y2.CLKFX
   Clock network: comm_process/U_ClockGenByteLink/clkfx
 --------------------------------------------------------------------------------
 Slack: 24.000ns (period - (min low pulse limit / (low pulse / period)))
@@ -234,7 +234,7 @@ Slack: 24.000ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 8.000ns (Tdcmpw_CLKIN_25_50)
   Physical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKIN
   Logical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKIN
-  Location pin: DCM_X0Y10.CLKIN
+  Location pin: DCM_X0Y2.CLKIN
   Clock network: comm_process/U_ClockGenByteLink/dcm_sp_inst_ML_NEW_DIVCLK
 --------------------------------------------------------------------------------
 Slack: 24.000ns (period - (min high pulse limit / (high pulse / period)))
@@ -243,7 +243,7 @@ Slack: 24.000ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 8.000ns (Tdcmpw_CLKIN_25_50)
   Physical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKIN
   Logical resource: comm_process/U_ClockGenByteLink/dcm_sp_inst/CLKIN
-  Location pin: DCM_X0Y10.CLKIN
+  Location pin: DCM_X0Y2.CLKIN
   Clock network: comm_process/U_ClockGenByteLink/dcm_sp_inst_ML_NEW_DIVCLK
 --------------------------------------------------------------------------------
 
@@ -254,84 +254,50 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  835 paths analyzed, 488 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.627ns.
+ Minimum period is   4.786ns.
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceIn/risingWord_0 (SLICE_X28Y141.AX), 1 path
+Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (SLICE_X5Y49.SR), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     1.373ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               comm_process/U_SerialInterfaceIn/IDDR2_inst (FF)
-  Destination:          comm_process/U_SerialInterfaceIn/risingWord_0 (FF)
+Slack (setup path):     3.214ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2 (FF)
+  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
   Requirement:          8.000ns
-  Data Path Delay:      5.727ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.671ns (0.789 - 1.460)
-  Source Clock:         comm_process/sstX5Clk rising at 0.000ns
+  Data Path Delay:      2.403ns (Levels of Logic = 0)
+  Clock Path Skew:      -2.004ns (-0.005 - 1.999)
+  Source Clock:         internal_sysclk_BUFG rising at 0.000ns
   Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
-  Clock Uncertainty:    0.229ns
+  Clock Uncertainty:    0.379ns
 
-  Clock Uncertainty:          0.229ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+  Clock Uncertainty:          0.379ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter (TSJ):  0.070ns
     Total Input Jitter (TIJ):   0.000ns
     Discrete Jitter (DJ):       0.387ns
-    Phase Error (PE):           0.000ns
+    Phase Error (PE):           0.150ns
 
-  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceIn/IDDR2_inst to comm_process/U_SerialInterfaceIn/risingWord_0
+  Maximum Data Path at Slow Process Corner: comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    ILOGIC_X2Y173.Q4     Tickq                 1.220   comm_process/U_SerialInterfaceIn/serialDataInFalling
-                                                       comm_process/U_SerialInterfaceIn/IDDR2_inst
-    SLICE_X28Y141.AX     net (fanout=1)        4.371   comm_process/U_SerialInterfaceIn/serialDataInRising
-    SLICE_X28Y141.CLK    Tdick                 0.136   comm_process/U_SerialInterfaceIn/risingWord<3>
-                                                       comm_process/U_SerialInterfaceIn/risingWord_0
+    SLICE_X6Y37.AMUX     Tshcko                0.455   comm_process/U_SstReset/data_sync1
+                                                       comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2
+    SLICE_X5Y49.SR       net (fanout=34)       1.646   comm_process/sstRst
+    SLICE_X5Y49.CLK      Trck                  0.302   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
     -------------------------------------------------  ---------------------------
-    Total                                      5.727ns (1.356ns logic, 4.371ns route)
-                                                       (23.7% logic, 76.3% route)
+    Total                                      2.403ns (0.757ns logic, 1.646ns route)
+                                                       (31.5% logic, 68.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceIn/fallingWord_0 (SLICE_X28Y141.A4), 1 path
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg (SLICE_X9Y45.SR), 1 path
 --------------------------------------------------------------------------------
-Slack (setup path):     1.664ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               comm_process/U_SerialInterfaceIn/IDDR2_inst (FF)
-  Destination:          comm_process/U_SerialInterfaceIn/fallingWord_0 (FF)
-  Requirement:          8.000ns
-  Data Path Delay:      5.436ns (Levels of Logic = 1)
-  Clock Path Skew:      -0.671ns (0.789 - 1.460)
-  Source Clock:         comm_process/sstX5Clk rising at 0.000ns
-  Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
-  Clock Uncertainty:    0.229ns
-
-  Clock Uncertainty:          0.229ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.387ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: comm_process/U_SerialInterfaceIn/IDDR2_inst to comm_process/U_SerialInterfaceIn/fallingWord_0
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    ILOGIC_X2Y173.Q3     Tickq                 0.728   comm_process/U_SerialInterfaceIn/serialDataInFalling
-                                                       comm_process/U_SerialInterfaceIn/IDDR2_inst
-    SLICE_X28Y141.A4     net (fanout=1)        4.495   comm_process/U_SerialInterfaceIn/serialDataInFalling
-    SLICE_X28Y141.CLK    Tas                   0.213   comm_process/U_SerialInterfaceIn/risingWord<3>
-                                                       comm_process/U_SerialInterfaceIn/serialDataInFalling_rt
-                                                       comm_process/U_SerialInterfaceIn/fallingWord_0
-    -------------------------------------------------  ---------------------------
-    Total                                      5.436ns (0.941ns logic, 4.495ns route)
-                                                       (17.3% logic, 82.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg (SLICE_X42Y120.SR), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     2.813ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     3.494ns (requirement - (data path - clock path skew + uncertainty))
   Source:               comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2 (FF)
   Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg (FF)
   Requirement:          8.000ns
-  Data Path Delay:      2.054ns (Levels of Logic = 0)
-  Clock Path Skew:      -2.754ns (0.104 - 2.858)
+  Data Path Delay:      2.050ns (Levels of Logic = 0)
+  Clock Path Skew:      -2.077ns (-0.078 - 1.999)
   Source Clock:         internal_sysclk_BUFG rising at 0.000ns
   Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
   Clock Uncertainty:    0.379ns
@@ -346,14 +312,47 @@ Slack (setup path):     2.813ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X29Y125.AMUX   Tshcko                0.461   comm_process/U_SstReset/data_sync1
+    SLICE_X6Y37.AMUX     Tshcko                0.455   comm_process/U_SstReset/data_sync1
                                                        comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2
-    SLICE_X42Y120.SR     net (fanout=35)       1.356   comm_process/sstRst
-    SLICE_X42Y120.CLK    Trck                  0.237   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg
+    SLICE_X9Y45.SR       net (fanout=34)       1.293   comm_process/sstRst
+    SLICE_X9Y45.CLK      Trck                  0.302   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg
                                                        comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg
     -------------------------------------------------  ---------------------------
-    Total                                      2.054ns (0.698ns logic, 1.356ns route)
-                                                       (34.0% logic, 66.0% route)
+    Total                                      2.050ns (0.757ns logic, 1.293ns route)
+                                                       (36.9% logic, 63.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3 (SLICE_X5Y46.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     3.577ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2 (FF)
+  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      1.977ns (Levels of Logic = 0)
+  Clock Path Skew:      -2.067ns (-0.068 - 1.999)
+  Source Clock:         internal_sysclk_BUFG rising at 0.000ns
+  Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
+  Clock Uncertainty:    0.379ns
+
+  Clock Uncertainty:          0.379ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.387ns
+    Phase Error (PE):           0.150ns
+
+  Maximum Data Path at Slow Process Corner: comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y37.AMUX     Tshcko                0.455   comm_process/U_SstReset/data_sync1
+                                                       comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2
+    SLICE_X5Y46.SR       net (fanout=34)       1.198   comm_process/sstRst
+    SLICE_X5Y46.CLK      Trck                  0.324   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.rst_d3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.977ns (0.779ns logic, 1.198ns route)
+                                                       (39.4% logic, 60.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -361,85 +360,84 @@ Hold Paths: TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD TIMEGRP
         "comm_process_U_ClockGenByteLink_clkfx" TS_sys_clk / 5 HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceIn/fallingWord_4 (SLICE_X29Y136.SR), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.299ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2 (FF)
-  Destination:          comm_process/U_SerialInterfaceIn/fallingWord_4 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.296ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.003ns (0.031 - 0.034)
-  Source Clock:         comm_process/sstX5Clk rising at 8.000ns
-  Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2 to comm_process/U_SerialInterfaceIn/fallingWord_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X29Y138.AQ     Tcko                  0.198   comm_process/sstX5Rst
-                                                       comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2
-    SLICE_X29Y136.SR     net (fanout=16)       0.236   comm_process/sstX5Rst
-    SLICE_X29Y136.CLK    Tcksr       (-Th)     0.138   comm_process/U_SerialInterfaceIn/risingWord<4>
-                                                       comm_process/U_SerialInterfaceIn/fallingWord_4
-    -------------------------------------------------  ---------------------------
-    Total                                      0.296ns (0.060ns logic, 0.236ns route)
-                                                       (20.3% logic, 79.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point comm_process/U_SerialInterfaceIn/risingWord_4 (SLICE_X29Y136.SR), 1 path
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y22.DIBDI9), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      0.306ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2 (FF)
-  Destination:          comm_process/U_SerialInterfaceIn/risingWord_4 (FF)
+  Source:               comm_process/U_SerialInterfaceIn/r_dataWord_9 (FF)
+  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.303ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.003ns (0.031 - 0.034)
+  Data Path Delay:      0.309ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.119 - 0.116)
   Source Clock:         comm_process/sstX5Clk rising at 8.000ns
   Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2 to comm_process/U_SerialInterfaceIn/risingWord_4
+  Minimum Data Path at Fast Process Corner: comm_process/U_SerialInterfaceIn/r_dataWord_9 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X29Y138.AQ     Tcko                  0.198   comm_process/sstX5Rst
-                                                       comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2
-    SLICE_X29Y136.SR     net (fanout=16)       0.236   comm_process/sstX5Rst
-    SLICE_X29Y136.CLK    Tcksr       (-Th)     0.131   comm_process/U_SerialInterfaceIn/risingWord<4>
-                                                       comm_process/U_SerialInterfaceIn/risingWord_4
+    SLICE_X3Y45.DMUX     Tshcko                0.244   comm_process/U_SerialInterfaceIn/r_dataWord<8>
+                                                       comm_process/U_SerialInterfaceIn/r_dataWord_9
+    RAMB8_X0Y22.DIBDI9   net (fanout=1)        0.118   comm_process/U_SerialInterfaceIn/r_dataWord<9>
+    RAMB8_X0Y22.CLKAWRCLKTrckd_DIB   (-Th)     0.053   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.303ns (0.067ns logic, 0.236ns route)
-                                                       (22.1% logic, 77.9% route)
+    Total                                      0.309ns (0.191ns logic, 0.118ns route)
+                                                       (61.8% logic, 38.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (SLICE_X28Y138.C5), 1 path
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y22.DIADI2), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.381ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 (FF)
-  Destination:          comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (FF)
+Slack (hold path):      0.363ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               comm_process/U_SerialInterfaceIn/r_dataWord_2 (FF)
+  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
   Requirement:          0.000ns
-  Data Path Delay:      0.381ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.366ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.119 - 0.116)
   Source Clock:         comm_process/sstX5Clk rising at 8.000ns
   Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+  Minimum Data Path at Fast Process Corner: comm_process/U_SerialInterfaceIn/r_dataWord_2 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X28Y138.CQ     Tcko                  0.200   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2
-    SLICE_X28Y138.C5     net (fanout=1)        0.060   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
-    SLICE_X28Y138.CLK    Tah         (-Th)    -0.121   comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
-                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>_rt
-                                                       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    SLICE_X2Y45.BQ       Tcko                  0.200   comm_process/U_SerialInterfaceIn/r_dataWord<6>
+                                                       comm_process/U_SerialInterfaceIn/r_dataWord_2
+    RAMB8_X0Y22.DIADI2   net (fanout=1)        0.219   comm_process/U_SerialInterfaceIn/r_dataWord<2>
+    RAMB8_X0Y22.CLKAWRCLKTrckd_DIA   (-Th)     0.053   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
     -------------------------------------------------  ---------------------------
-    Total                                      0.381ns (0.321ns logic, 0.060ns route)
-                                                       (84.3% logic, 15.7% route)
+    Total                                      0.366ns (0.147ns logic, 0.219ns route)
+                                                       (40.2% logic, 59.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAMB8_X0Y22.DIADI9), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.363ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               comm_process/U_SerialInterfaceIn/r_dataWord_4 (FF)
+  Destination:          comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.366ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.119 - 0.116)
+  Source Clock:         comm_process/sstX5Clk rising at 8.000ns
+  Destination Clock:    comm_process/sstX5Clk rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: comm_process/U_SerialInterfaceIn/r_dataWord_4 to comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y45.CQ       Tcko                  0.200   comm_process/U_SerialInterfaceIn/r_dataWord<6>
+                                                       comm_process/U_SerialInterfaceIn/r_dataWord_4
+    RAMB8_X0Y22.DIADI9   net (fanout=1)        0.219   comm_process/U_SerialInterfaceIn/r_dataWord<4>
+    RAMB8_X0Y22.CLKAWRCLKTrckd_DIA   (-Th)     0.053   comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                                       comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.366ns (0.147ns logic, 0.219ns route)
+                                                       (40.2% logic, 59.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -451,7 +449,7 @@ Slack: 4.876ns (period - min period limit)
   Min period limit: 3.124ns (320.102MHz) (Trper_CLKB(Fmax))
   Physical resource: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram/CLKBRDCLK
   Logical resource: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram/CLKBRDCLK
-  Location pin: RAMB8_X1Y69.CLKBRDCLK
+  Location pin: RAMB8_X0Y24.CLKBRDCLK
   Clock network: comm_process/sstX5Clk
 --------------------------------------------------------------------------------
 Slack: 4.876ns (period - min period limit)
@@ -459,7 +457,7 @@ Slack: 4.876ns (period - min period limit)
   Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
   Physical resource: comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram/CLKAWRCLK
   Logical resource: comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram/CLKAWRCLK
-  Location pin: RAMB8_X1Y63.CLKAWRCLK
+  Location pin: RAMB8_X0Y22.CLKAWRCLK
   Clock network: comm_process/sstX5Clk
 --------------------------------------------------------------------------------
 Slack: 6.270ns (period - min period limit)
@@ -479,8 +477,8 @@ Derived Constraints for TS_sys_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk                     |     40.000ns|     16.725ns|     33.135ns|            0|            0|         2442|          835|
-| TS_comm_process_U_ClockGenByte|      8.000ns|      6.627ns|          N/A|            0|            0|          835|            0|
+|TS_sys_clk                     |     40.000ns|     18.210ns|     23.930ns|            0|            0|         2442|          835|
+| TS_comm_process_U_ClockGenByte|      8.000ns|      4.786ns|          N/A|            0|            0|          835|            0|
 | Link_clkfx                    |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -496,8 +494,8 @@ Clock to Setup on destination clock SYSCLK_N
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYSCLK_N       |    6.627|         |         |         |
-SYSCLK_P       |    6.627|         |         |         |
+SYSCLK_N       |    6.131|         |         |         |
+SYSCLK_P       |    6.131|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SYSCLK_P
@@ -505,8 +503,8 @@ Clock to Setup on destination clock SYSCLK_P
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYSCLK_N       |    6.627|         |         |         |
-SYSCLK_P       |    6.627|         |         |         |
+SYSCLK_N       |    6.131|         |         |         |
+SYSCLK_P       |    6.131|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -518,20 +516,20 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 3277 paths, 0 nets, and 1967 connections
 
 Design statistics:
-   Minimum period:  16.725ns{1}   (Maximum frequency:  59.791MHz)
+   Minimum period:  18.210ns{1}   (Maximum frequency:  54.915MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Jan 23 17:25:36 2019 
+Analysis completed Thu Jan 24 12:14:12 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4750 MB
+Peak Memory Usage: 4573 MB
 
 
 
