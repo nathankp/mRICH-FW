@@ -12,11 +12,14 @@
 SYSTEM_JITTER = 1000 ps;
 
 # IO constraints 
-NET "internal_fpga_clk" TNM_NET = "internal_fpga_clk";
-TIMESPEC TS_FPGA_CLK = PERIOD "internal_fpga_clk" 8 ns HIGH 50 %;#125MHz
 
-NET "internal_data_clk" TNM_NET = "internal_data_clk";
-TIMESPEC TS_DATA_CLK = PERIOD "internal_data_clk" 40 ns HIGH 50 %;#25MHz #was HIGH 40 %
+##########################Constrained by CLK Fanout####################
+#NET "internal_fpga_clk" TNM_NET = "internal_fpga_clk";
+#TIMESPEC TS_FPGA_CLK = PERIOD "internal_fpga_clk" 8 ns HIGH 50 %;#125MHz
+
+#NET "internal_data_clk" TNM_NET = "internal_data_clk";
+#TIMESPEC TS_DATA_CLK = PERIOD "internal_data_clk" 40 ns HIGH 50 %;#25MHz #was HIGH 40 %
+####################################################################
 
 NET "MASTER_CLK_P" TNM_NET = "MASTER_CLK_P";
 TIMESPEC "TS_MASTER_CLK_P" = PERIOD "MASTER_CLK_P" 8 ns HIGH 50 %;#125MHz
@@ -42,8 +45,8 @@ NET "CLK_DC_N" LOC = AB15 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #SC_DC_D
 # TX  (to DC)
 ## NET "SC_DC_RX_P<0>" LOC = V14; #SC_DC_RX1_P, J2_089_V14_L26P 
 ## NET "SC_DC_RX_N<0>" LOC = V15; #SC_DC_RX1_N, J2_088_V15_L26N
-NET "TX_DC_P" LOC = V14 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #SC_DC_RX1_P, J2_089_V14_L26P 
-NET "TX_DC_N" LOC = V15 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #SC_DC_RX1_N, J2_088_V15_L26N
+NET "TX_DC_P" LOC = V14 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";  
+NET "TX_DC_N" LOC = V15 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
 # RX  (from DC)
 ## NET "ORed_Trig_P<0>" LOC = AA19;
 ## NET "ORed_Trig_N<0>" LOC = AB19;

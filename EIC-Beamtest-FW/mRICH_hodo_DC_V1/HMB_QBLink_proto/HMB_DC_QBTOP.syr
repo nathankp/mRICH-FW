@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -190,10 +190,10 @@ INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" Line 
 Elaborating entity <QBLtxFIFO> (architecture <QBLtxFIFO_a>) from library <work>.
 
 Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 142: sync should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 144: sync should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 161: internal_reg should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 163: sync should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 143: sync should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 145: sync should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 162: internal_reg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 164: sync should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -917,12 +917,12 @@ SYSCLK_P       |         |         |    1.953|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.00 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.61 secs
  
 --> 
 
-Total memory usage is 4509576 kilobytes
+Total memory usage is 4509588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  150 (   0 filtered)

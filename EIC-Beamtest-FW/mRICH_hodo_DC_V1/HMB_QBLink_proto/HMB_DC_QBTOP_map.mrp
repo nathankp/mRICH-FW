@@ -13,7 +13,7 @@ Target Device  : xc6slx150t
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Dec 31 16:29:29 2018
+Mapped Date    : Wed Jan 23 17:24:36 2019
 
 Design Summary
 --------------
@@ -100,9 +100,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.87
 
-Peak Memory Usage:  4848 MB
-Total REAL time to MAP completion:  24 secs 
-Total CPU time to MAP completion:   21 secs 
+Peak Memory Usage:  4846 MB
+Total REAL time to MAP completion:  25 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Table of Contents
 -----------------
@@ -125,19 +125,19 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:MapLib:680 - LOC constraint P123 on SYSCLK_P is invalid: No such site on
+WARNING:MapLib:680 - LOC constraint P124 on SYSCLK_P is invalid: No such site on
    the device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P124 on SYSCLK_N is invalid: No such site on
+WARNING:MapLib:680 - LOC constraint P123 on SYSCLK_N is invalid: No such site on
    the device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P141 on TX_P is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P127 on TX_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P142 on TX_N is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P126 on TX_N is invalid: No such site on the
    device. Ignoring...
 WARNING:MapLib:680 - LOC constraint P2 on SYNC_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P126 on RX_P is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P142 on RX_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P127 on RX_N is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P141 on RX_N is invalid: No such site on the
    device. Ignoring...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net state_FSM_FFd2 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -162,7 +162,7 @@ WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_
 =========================================================================
 
 Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 75: Using initial value '0' for qb_rst since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 74: Using initial value '0' for qb_rst since it is never assigned
 
 Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
 
@@ -918,8 +918,8 @@ MASTER_CLK_P   |         |         |    1.621|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.94 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.08 secs
  
 --> 
 

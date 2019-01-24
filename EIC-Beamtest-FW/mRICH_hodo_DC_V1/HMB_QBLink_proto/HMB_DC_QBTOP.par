@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Mon Dec 31 16:29:55 2018
+PC1::  Wed Jan 23 17:25:03 2019
 
 par -filter
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ise
@@ -111,23 +111,23 @@ Finished initial Timing Analysis.  REAL time: 11 secs
 Starting Router
 
 
-Phase  1  : 2631 unrouted;      REAL time: 11 secs 
+Phase  1  : 2631 unrouted;      REAL time: 12 secs 
 
 Phase  2  : 1936 unrouted;      REAL time: 16 secs 
 
-Phase  3  : 530 unrouted;      REAL time: 17 secs 
+Phase  3  : 530 unrouted;      REAL time: 18 secs 
 
-Phase  4  : 530 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 20 secs 
+Phase  4  : 530 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 21 secs 
 
 Updating file: HMB_DC_QBTOP.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 21 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 22 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 21 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 22 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 21 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 22 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 21 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:17379, Component Switching Limit:0)     REAL time: 22 secs 
 WARNING:Route:522 - Unusually high hold time violation detected among 8 connections.The router will continue and try to fix it 
 	comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].w
 r_stg_inst/D<3>:BQ ->
@@ -163,11 +163,11 @@ comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconv
 stg_inst/D<3>:DX -2021
 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 21 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 secs 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 secs 
 Total REAL time to Router completion: 22 secs 
-Total CPU time to Router completion: 17 secs 
+Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -253,9 +253,9 @@ Generating Pad Report.
 All signals are completely routed.
 
 Total REAL time to PAR completion: 23 secs 
-Total CPU time to PAR completion: 18 secs 
+Total CPU time to PAR completion: 19 secs 
 
-Peak Memory Usage:  4752 MB
+Peak Memory Usage:  4751 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

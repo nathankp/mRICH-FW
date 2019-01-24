@@ -13,22 +13,22 @@ Target Device  : xc6slx150t
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Dec 31 16:29:29 2018
+Mapped Date    : Wed Jan 23 17:24:36 2019
 
 Mapping design into LUTs...
-WARNING:MapLib:680 - LOC constraint P123 on SYSCLK_P is invalid: No such site on
+WARNING:MapLib:680 - LOC constraint P124 on SYSCLK_P is invalid: No such site on
    the device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P124 on SYSCLK_N is invalid: No such site on
+WARNING:MapLib:680 - LOC constraint P123 on SYSCLK_N is invalid: No such site on
    the device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P141 on TX_P is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P127 on TX_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P142 on TX_N is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P126 on TX_N is invalid: No such site on the
    device. Ignoring...
 WARNING:MapLib:680 - LOC constraint P2 on SYNC_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P126 on RX_P is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P142 on RX_P is invalid: No such site on the
    device. Ignoring...
-WARNING:MapLib:680 - LOC constraint P127 on RX_N is invalid: No such site on the
+WARNING:MapLib:680 - LOC constraint P141 on RX_N is invalid: No such site on the
    device. Ignoring...
 Running directed packing...
 Running delay-based LUT packing...
@@ -36,60 +36,60 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 9 secs 
+Total REAL time at the beginning of Placer: 10 secs 
 Total CPU  time at the beginning of Placer: 7 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:acc17b) REAL time: 12 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:acc17b) REAL time: 13 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 8 IOs, 2 are locked and
    6 are not locked. If you would like to print the names of these IOs, please
    set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:acc17b) REAL time: 12 secs 
+Phase 2.7  Design Feasibility Check (Checksum:acc17b) REAL time: 13 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:acc17b) REAL time: 12 secs 
+Phase 3.31  Local Placement Optimization (Checksum:acc17b) REAL time: 13 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 ...
 ...
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:55515e9) REAL time: 17 secs 
+(Checksum:55515e9) REAL time: 18 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:55515e9) REAL time: 17 secs 
+Phase 5.36  Local Placement Optimization (Checksum:55515e9) REAL time: 18 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:55515e9) REAL time: 17 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:55515e9) REAL time: 18 secs 
 
 Phase 7.3  Local Placement Optimization
 ...
 ...
-Phase 7.3  Local Placement Optimization (Checksum:97f87f51) REAL time: 18 secs 
+Phase 7.3  Local Placement Optimization (Checksum:97f87f51) REAL time: 19 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:97f87f51) REAL time: 18 secs 
+Phase 8.5  Local Placement Optimization (Checksum:97f87f51) REAL time: 19 secs 
 
 Phase 9.8  Global Placement
 ...........................
 .....
-Phase 9.8  Global Placement (Checksum:4bc42d12) REAL time: 19 secs 
+Phase 9.8  Global Placement (Checksum:4bc42d12) REAL time: 20 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:4bc42d12) REAL time: 19 secs 
+Phase 10.5  Local Placement Optimization (Checksum:4bc42d12) REAL time: 20 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:bf7957df) REAL time: 22 secs 
+Phase 11.18  Placement Optimization (Checksum:bf7957df) REAL time: 23 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:bf7957df) REAL time: 22 secs 
+Phase 12.5  Local Placement Optimization (Checksum:bf7957df) REAL time: 23 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:cd6cccad) REAL time: 22 secs 
+Phase 13.34  Placement Validation (Checksum:cd6cccad) REAL time: 23 secs 
 
-Total REAL time to Placer completion: 23 secs 
-Total CPU  time to Placer completion: 20 secs 
+Total REAL time to Placer completion: 24 secs 
+Total CPU  time to Placer completion: 21 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net state_FSM_FFd2 is sourced
@@ -190,9 +190,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.87
 
-Peak Memory Usage:  4848 MB
-Total REAL time to MAP completion:  24 secs 
-Total CPU time to MAP completion:   21 secs 
+Peak Memory Usage:  4846 MB
+Total REAL time to MAP completion:  25 secs 
+Total CPU time to MAP completion:   22 secs 
 
 Mapping completed.
 See MAP report file "HMB_DC_QBTOP_map.mrp" for details.

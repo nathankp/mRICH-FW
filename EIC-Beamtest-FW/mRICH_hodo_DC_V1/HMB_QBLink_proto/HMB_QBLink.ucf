@@ -24,15 +24,15 @@ TIMESPEC "TS_sys_clk" = PERIOD "SYSCLK_P" 40 ns HIGH 50 %;
 NET "SYSCLK_P"	 	 	 LOC = "P124" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
 NET "SYSCLK_N"	 	    LOC = "P123" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
-# RX    (TX on SCROD side)
-NET "RX_P"	 			 LOC = "P127" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
-NET "RX_N"	 			 LOC = "P126" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
+# TX    
+NET "TX_P"	 			 LOC = "P127" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # Flipped P and N
+NET "TX_N"	 			 LOC = "P126" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 
-# TX
+# RX
 #NET "ORed_Trig_N"	 LOC = "P141"; 
 #NET "ORed_Trig_P" 	 LOC = "P142"; 
-NET "TX_P"		       LOC = "P142" | IOSTANDARD = LVDS_25; #RX on SCROD side
-NET "TX_N" 	          LOC = "P141" | IOSTANDARD = LVDS_25; #
+NET "RX_P"		       LOC = "P142" | IOSTANDARD = LVDS_25;# | DIFF_TERM = "FALSE"; #RX on SCROD side
+NET "RX_N" 	          LOC = "P141" | IOSTANDARD = LVDS_25; #| DIFF_TERM = "FALSE"; #
 
 NET "SYNC_P"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #Past mistake: SYNC_P was on pin P1, must be P_2
 NET "SYNC_N"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #Past mistake: SYNC_N was on pin P1, must be P_1

@@ -207,12 +207,6 @@ Communication test sequence:
 - will write DC module and create testbench with both projects.
 
 1. When do we want DC to read to SCROD? Should there be a special command for the SCROD to internally set localWordOutReq <= '1'? same for rst, localword in? Direct signal from SCROD or internally controlled? 
-	- register map, headers to mark actions for SCROD/DC
-	- make register headers "generic?" : make flexible address size
-	- over break make this map
-	- PMT daughtercard
-	_register map: dedicated memory, 
-	
 2. How do I create an error condition for QBLink? rxCodeErr = '1' or rxDispErr = '1';
 
 meeting update: 

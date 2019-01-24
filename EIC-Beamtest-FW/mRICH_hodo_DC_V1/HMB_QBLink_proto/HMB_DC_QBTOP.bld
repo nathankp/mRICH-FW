@@ -47,7 +47,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 4435916 kilobytes
+Total memory usage is 4435976 kilobytes
 
 Writing NGD file "HMB_DC_QBTOP.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec
