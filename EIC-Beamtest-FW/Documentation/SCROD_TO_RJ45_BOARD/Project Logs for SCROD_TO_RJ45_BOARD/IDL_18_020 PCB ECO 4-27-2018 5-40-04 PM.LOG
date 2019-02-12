@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=5V Pin=C3-2
+Removed Pin From Net: NetName=5V Pin=C4-2
+Removed Pin From Net: NetName=5V Pin=C7-2
+Removed Pin From Net: NetName=5V Pin=C9-2
+Removed Pin From Net: NetName=5V Pin=PWR1-3
+Removed Pin From Net: NetName=5V Pin=PWR3-3
+Removed Pin From Net: NetName=5V Pin=PWR4-3
+Added Pin To Net: NetName=RawFor_2.5V Pin=C4-2
+Added Pin To Net: NetName=RawFor_2.5V Pin=C7-2
+Added Pin To Net: NetName=RawFor_2.5V Pin=C9-2
+Added Pin To Net: NetName=RawFor_2.5V Pin=PWR1-3
+Added Pin To Net: NetName=RawFor_2.5V Pin=PWR3-3
+Added Pin To Net: NetName=RawFor_2.5V Pin=PWR4-3

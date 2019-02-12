@@ -1,0 +1,11 @@
+Added Component: Designator=GND(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=GND-1

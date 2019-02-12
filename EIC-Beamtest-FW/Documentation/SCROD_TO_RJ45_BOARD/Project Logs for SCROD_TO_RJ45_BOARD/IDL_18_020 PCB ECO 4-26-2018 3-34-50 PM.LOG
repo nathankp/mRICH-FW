@@ -1,0 +1,20 @@
+Removed Member From Class: ClassName=RF Member=MAS_ACK1_N
+Removed Member From Class: ClassName=RF Member=ORed_Trig2_N
+Removed Member From Class: ClassName=RF Member=ORed_Trig4_N
+Removed Member From Class: ClassName=RF Member=SC_DC_DATA1_N
+Removed Member From Class: ClassName=RF Member=SC_DC_DATA2_P
+Removed Member From Class: ClassName=RF Member=SC_DC_DATA4_P
+Removed Member From Class: ClassName=RF Member=SC_DC_RX4_N
+Removed Member From Class: ClassName=RF Member=SC_DC_RX4_P
+Added Pin To Net: NetName=SC_DC_CLK4_P Pin=CN3-86
+Added Pin To Net: NetName=SC_DC_CLK4_N Pin=CN3-88
+Added Pin To Net: NetName=AUX4_N Pin=CN3-89
+Added Pin To Net: NetName=AUX4_P Pin=CN3-90
+Added Member To Class: ClassName=RF Member=Wire AUX3_N
+Added Member To Class: ClassName=RF Member=Wire AUX3_P
+Added Member To Class: ClassName=RF Member=Wire DC_SC_DATA1_N
+Added Member To Class: ClassName=RF Member=Wire DC_SC_DATA3_N
+Added Member To Class: ClassName=RF Member=Wire DC_SC_TX3_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK1_P
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK3_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK3_P

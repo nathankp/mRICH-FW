@@ -1,0 +1,14 @@
+Added Pin To Net: NetName=ORed_Trig1_P Pin=CN2-77
+Added Pin To Net: NetName=ORed_Trig1_N Pin=CN2-78
+Added Pin To Net: NetName=MAS_ACK1_P Pin=CN2-80
+Added Pin To Net: NetName=MAS_ACK1_N Pin=CN2-81
+Added Pin To Net: NetName=SC_DC_DATA1_P Pin=CN2-85
+Added Pin To Net: NetName=SC_DC_DATA1_N Pin=CN2-86
+Added Pin To Net: NetName=SC_DC_RX1_N Pin=CN2-88
+Added Pin To Net: NetName=SC_DC_RX1_P Pin=CN2-89
+Added Pin To Net: NetName=DC_SC_DATA1_N Pin=CN2-93
+Added Pin To Net: NetName=DC_SC_DATA1_P Pin=CN2-94
+Added Pin To Net: NetName=DC_SC_TX1_N Pin=CN2-101
+Added Pin To Net: NetName=DC_SC_TX1_P Pin=CN2-102
+Added Pin To Net: NetName=SC_DC_CLK1_N Pin=CN4-82
+Added Pin To Net: NetName=SC_DC_CLK1_P Pin=CN4-83

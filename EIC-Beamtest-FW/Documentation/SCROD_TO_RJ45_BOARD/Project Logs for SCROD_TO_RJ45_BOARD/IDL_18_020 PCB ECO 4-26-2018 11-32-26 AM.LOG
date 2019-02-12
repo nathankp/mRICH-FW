@@ -1,0 +1,401 @@
+Removed Pin From Net: NetName=GND Pin=CN2-63
+Removed Pin From Net: NetName=GND Pin=CN2-71
+Removed Pin From Net: NetName=GND Pin=CN2-79
+Removed Pin From Net: NetName=GND Pin=J1-A1
+Removed Pin From Net: NetName=GND Pin=J1-A4
+Removed Pin From Net: NetName=GND Pin=J1-A5
+Removed Pin From Net: NetName=GND Pin=J1-A8
+Removed Pin From Net: NetName=GND Pin=J1-A12
+Removed Pin From Net: NetName=GND Pin=J1-A13
+Removed Pin From Net: NetName=SC-DC_CLK_BOT_P Pin=J1-A14
+Removed Pin From Net: NetName=SC-DC_CLK_BOT_N Pin=J1-A15
+Removed Pin From Net: NetName=GND Pin=J1-A16
+Removed Pin From Net: NetName=GND Pin=J1-A17
+Removed Pin From Net: NetName=DATA_CLK_BOT Pin=J1-A18
+Removed Pin From Net: NetName=DC-SC_DO_VALID_BOT Pin=J1-A19
+Removed Pin From Net: NetName=GND Pin=J1-A20
+Removed Pin From Net: NetName=GND Pin=J1-A21
+Removed Pin From Net: NetName=DC-SC_DATA_BOT Pin=J1-A22
+Removed Pin From Net: NetName=SC-DC_DATA_BOT Pin=J1-A23
+Removed Pin From Net: NetName=GND Pin=J1-A24
+Removed Pin From Net: NetName=GND Pin=J1-A25
+Removed Pin From Net: NetName=SC-DC_DI_VALID_BOT Pin=J1-A26
+Removed Pin From Net: NetName=TMS_BOT Pin=J1-A27
+Removed Pin From Net: NetName=GND Pin=J1-A28
+Removed Pin From Net: NetName=GND Pin=J1-A29
+Removed Pin From Net: NetName=TCK_BOT Pin=J1-A30
+Removed Pin From Net: NetName=TDO_BOT Pin=J1-A31
+Removed Pin From Net: NetName=GND Pin=J1-A32
+Removed Pin From Net: NetName=GND Pin=J1-A33
+Removed Pin From Net: NetName=TDI_BOT Pin=J1-A34
+Removed Pin From Net: NetName=GND Pin=J1-A36
+Removed Pin From Net: NetName=GND Pin=J1-A37
+Removed Pin From Net: NetName=GND Pin=J1-B2
+Removed Pin From Net: NetName=GND Pin=J1-B3
+Removed Pin From Net: NetName=GND Pin=J1-B6
+Removed Pin From Net: NetName=GND Pin=J1-B7
+Removed Pin From Net: NetName=SC-DC_CLK_TOP_P Pin=J1-B8
+Removed Pin From Net: NetName=SC-DC_CLK_TOP_N Pin=J1-B9
+Removed Pin From Net: NetName=GND Pin=J1-B10
+Removed Pin From Net: NetName=GND Pin=J1-B11
+Removed Pin From Net: NetName=DATA_CLK_TOP Pin=J1-B12
+Removed Pin From Net: NetName=DC-SC_DO_VALID_TOP Pin=J1-B13
+Removed Pin From Net: NetName=GND Pin=J1-B14
+Removed Pin From Net: NetName=GND Pin=J1-B15
+Removed Pin From Net: NetName=DC-SC_DATA_TOP Pin=J1-B16
+Removed Pin From Net: NetName=SC-DC_DATA_TOP Pin=J1-B17
+Removed Pin From Net: NetName=GND Pin=J1-B18
+Removed Pin From Net: NetName=GND Pin=J1-B19
+Removed Pin From Net: NetName=SC-DC_DI_VALID_TOP Pin=J1-B20
+Removed Pin From Net: NetName=TMS_TOP Pin=J1-B21
+Removed Pin From Net: NetName=GND Pin=J1-B22
+Removed Pin From Net: NetName=GND Pin=J1-B23
+Removed Pin From Net: NetName=TCK_TOP Pin=J1-B24
+Removed Pin From Net: NetName=TDO_TOP Pin=J1-B25
+Removed Pin From Net: NetName=GND Pin=J1-B26
+Removed Pin From Net: NetName=GND Pin=J1-B27
+Removed Pin From Net: NetName=TDI_TOP Pin=J1-B28
+Removed Pin From Net: NetName=GND Pin=J1-B30
+Removed Pin From Net: NetName=GND Pin=J1-B31
+Removed Pin From Net: NetName=GND Pin=J1-B34
+Removed Pin From Net: NetName=GND Pin=J1-B35
+Removed Pin From Net: NetName=GND Pin=J1-B38
+Removed Pin From Net: NetName=GND Pin=J1-B39
+Removed Pin From Net: NetName=GND Pin=J1-C1
+Removed Pin From Net: NetName=GND Pin=J1-C4
+Removed Pin From Net: NetName=GND Pin=J1-C5
+Removed Pin From Net: NetName=GND Pin=J1-C8
+Removed Pin From Net: NetName=GND Pin=J1-C9
+Removed Pin From Net: NetName=GND Pin=J1-C12
+Removed Pin From Net: NetName=GND Pin=J1-C13
+Removed Pin From Net: NetName=GND Pin=J1-C16
+Removed Pin From Net: NetName=GND Pin=J1-C17
+Removed Pin From Net: NetName=GND Pin=J1-C20
+Removed Pin From Net: NetName=GND Pin=J1-C21
+Removed Pin From Net: NetName=GND Pin=J1-C24
+Removed Pin From Net: NetName=GND Pin=J1-C25
+Removed Pin From Net: NetName=GND Pin=J1-C28
+Removed Pin From Net: NetName=GND Pin=J1-C29
+Removed Pin From Net: NetName=GND Pin=J1-C32
+Removed Pin From Net: NetName=GND Pin=J1-C33
+Removed Pin From Net: NetName=GND Pin=J1-C36
+Removed Pin From Net: NetName=GND Pin=J1-C38
+Removed Pin From Net: NetName=GND Pin=J1-C40
+Removed Pin From Net: NetName=GND Pin=J1-D2
+Removed Pin From Net: NetName=GND Pin=J1-D3
+Removed Pin From Net: NetName=GND Pin=J1-D6
+Removed Pin From Net: NetName=GND Pin=J1-D7
+Removed Pin From Net: NetName=GND Pin=J1-D10
+Removed Pin From Net: NetName=GND Pin=J1-D13
+Removed Pin From Net: NetName=GND Pin=J1-D16
+Removed Pin From Net: NetName=GND Pin=J1-D19
+Removed Pin From Net: NetName=GND Pin=J1-D22
+Removed Pin From Net: NetName=GND Pin=J1-D25
+Removed Pin From Net: NetName=GND Pin=J1-D28
+Removed Pin From Net: NetName=GND Pin=J1-D35
+Removed Pin From Net: NetName=GND Pin=J1-D37
+Removed Pin From Net: NetName=GND Pin=J1-D39
+Removed Pin From Net: NetName=GND Pin=J1-E1
+Removed Pin From Net: NetName=GND Pin=J1-E4
+Removed Pin From Net: NetName=GND Pin=J1-E5
+Removed Pin From Net: NetName=GND Pin=J1-E8
+Removed Pin From Net: NetName=GND Pin=J1-E11
+Removed Pin From Net: NetName=GND Pin=J1-E14
+Removed Pin From Net: NetName=GND Pin=J1-E17
+Removed Pin From Net: NetName=GND Pin=J1-E20
+Removed Pin From Net: NetName=GND Pin=J1-E23
+Removed Pin From Net: NetName=GND Pin=J1-E26
+Removed Pin From Net: NetName=GND Pin=J1-E29
+Removed Pin From Net: NetName=GND Pin=J1-E32
+Removed Pin From Net: NetName=GND Pin=J1-E38
+Removed Pin From Net: NetName=GND Pin=J1-E40
+Removed Pin From Net: NetName=GND Pin=J1-F2
+Removed Pin From Net: NetName=GND Pin=J1-F3
+Removed Pin From Net: NetName=GND Pin=J1-F6
+Removed Pin From Net: NetName=GND Pin=J1-F9
+Removed Pin From Net: NetName=GND Pin=J1-F12
+Removed Pin From Net: NetName=GND Pin=J1-F15
+Removed Pin From Net: NetName=GND Pin=J1-F18
+Removed Pin From Net: NetName=GND Pin=J1-F21
+Removed Pin From Net: NetName=GND Pin=J1-F24
+Removed Pin From Net: NetName=GND Pin=J1-F27
+Removed Pin From Net: NetName=GND Pin=J1-F30
+Removed Pin From Net: NetName=GND Pin=J1-F33
+Removed Pin From Net: NetName=GND Pin=J1-F36
+Removed Pin From Net: NetName=GND Pin=J1-F39
+Removed Pin From Net: NetName=GND Pin=J1-G1
+Removed Pin From Net: NetName=GND Pin=J1-G4
+Removed Pin From Net: NetName=GND Pin=J1-G5
+Removed Pin From Net: NetName=GND Pin=J1-G8
+Removed Pin From Net: NetName=GND Pin=J1-G11
+Removed Pin From Net: NetName=GND Pin=J1-G14
+Removed Pin From Net: NetName=GND Pin=J1-G17
+Removed Pin From Net: NetName=GND Pin=J1-G20
+Removed Pin From Net: NetName=GND Pin=J1-G23
+Removed Pin From Net: NetName=GND Pin=J1-G26
+Removed Pin From Net: NetName=GND Pin=J1-G29
+Removed Pin From Net: NetName=GND Pin=J1-G32
+Removed Pin From Net: NetName=GND Pin=J1-G35
+Removed Pin From Net: NetName=GND Pin=J1-G38
+Removed Pin From Net: NetName=GND Pin=J1-G40
+Removed Pin From Net: NetName=J1_042_R2 Pin=J1-H2
+Removed Pin From Net: NetName=GND Pin=J1-H3
+Removed Pin From Net: NetName=SPARE_CLK_P Pin=J1-H4
+Removed Pin From Net: NetName=SPARE_CLK_N Pin=J1-H5
+Removed Pin From Net: NetName=GND Pin=J1-H6
+Removed Pin From Net: NetName=J1_044_U2_P Pin=J1-H7
+Removed Pin From Net: NetName=J1_043_U1_N Pin=J1-H8
+Removed Pin From Net: NetName=GND Pin=J1-H9
+Removed Pin From Net: NetName=J1_048_W2_P Pin=J1-H10
+Removed Pin From Net: NetName=J1_047_W1_N Pin=J1-H11
+Removed Pin From Net: NetName=GND Pin=J1-H12
+Removed Pin From Net: NetName=J1_052_AA2_P Pin=J1-H13
+Removed Pin From Net: NetName=J1_051_AA1_N Pin=J1-H14
+Removed Pin From Net: NetName=GND Pin=J1-H15
+Removed Pin From Net: NetName=J1_056_AC2_P Pin=J1-H16
+Removed Pin From Net: NetName=J1_055_AC1_N Pin=J1-H17
+Removed Pin From Net: NetName=GND Pin=J1-H18
+Removed Pin From Net: NetName=J1_060_AE2_P Pin=J1-H19
+Removed Pin From Net: NetName=J1_059_AE1_N Pin=J1-H20
+Removed Pin From Net: NetName=GND Pin=J1-H21
+Removed Pin From Net: NetName=J1_062_AB10_P Pin=J1-H22
+Removed Pin From Net: NetName=J1_061_AB11_N Pin=J1-H23
+Removed Pin From Net: NetName=GND Pin=J1-H24
+Removed Pin From Net: NetName=J1_066_W8_P Pin=J1-H25
+Removed Pin From Net: NetName=J1_067_W7_N Pin=J1-H26
+Removed Pin From Net: NetName=GND Pin=J1-H27
+Removed Pin From Net: NetName=GND Pin=J1-H30
+Removed Pin From Net: NetName=GND Pin=J1-H33
+Removed Pin From Net: NetName=GND Pin=J1-H36
+Removed Pin From Net: NetName=GND Pin=J1-H39
+Removed Pin From Net: NetName=GND Pin=J1-I1
+Removed Pin From Net: NetName=GND Pin=J1-I4
+Removed Pin From Net: NetName=GND Pin=J1-I5
+Removed Pin From Net: NetName=GND Pin=J1-I8
+Removed Pin From Net: NetName=GND Pin=J1-I11
+Removed Pin From Net: NetName=GND Pin=J1-I14
+Removed Pin From Net: NetName=GND Pin=J1-I17
+Removed Pin From Net: NetName=GND Pin=J1-I20
+Removed Pin From Net: NetName=GND Pin=J1-I23
+Removed Pin From Net: NetName=GND Pin=J1-I26
+Removed Pin From Net: NetName=GND Pin=J1-I29
+Removed Pin From Net: NetName=GND Pin=J1-I32
+Removed Pin From Net: NetName=GND Pin=J1-I35
+Removed Pin From Net: NetName=GND Pin=J1-I38
+Removed Pin From Net: NetName=GND Pin=J1-J2
+Removed Pin From Net: NetName=GND Pin=J1-J3
+Removed Pin From Net: NetName=GND Pin=J1-J6
+Removed Pin From Net: NetName=GND Pin=J1-J9
+Removed Pin From Net: NetName=5V Pin=J1-J11
+Removed Pin From Net: NetName=GND Pin=J1-J12
+Removed Pin From Net: NetName=5V Pin=J1-J13
+Removed Pin From Net: NetName=5V Pin=J1-J14
+Removed Pin From Net: NetName=GND Pin=J1-J15
+Removed Pin From Net: NetName=5V Pin=J1-J16
+Removed Pin From Net: NetName=5V Pin=J1-J17
+Removed Pin From Net: NetName=GND Pin=J1-J18
+Removed Pin From Net: NetName=5V Pin=J1-J19
+Removed Pin From Net: NetName=5V Pin=J1-J20
+Removed Pin From Net: NetName=GND Pin=J1-J21
+Removed Pin From Net: NetName=5V Pin=J1-J22
+Removed Pin From Net: NetName=5V Pin=J1-J23
+Removed Pin From Net: NetName=GND Pin=J1-J24
+Removed Pin From Net: NetName=5V Pin=J1-J25
+Removed Pin From Net: NetName=5V Pin=J1-J26
+Removed Pin From Net: NetName=GND Pin=J1-J27
+Removed Pin From Net: NetName=5V Pin=J1-J28
+Removed Pin From Net: NetName=5V Pin=J1-J29
+Removed Pin From Net: NetName=GND Pin=J1-J30
+Removed Pin From Net: NetName=5V Pin=J1-J31
+Removed Pin From Net: NetName=5V Pin=J1-J32
+Removed Pin From Net: NetName=GND Pin=J1-J33
+Removed Pin From Net: NetName=5V Pin=J1-J34
+Removed Pin From Net: NetName=5V Pin=J1-J35
+Removed Pin From Net: NetName=GND Pin=J1-J36
+Removed Pin From Net: NetName=5V Pin=J1-J37
+Removed Pin From Net: NetName=5V Pin=J1-J38
+Removed Pin From Net: NetName=GND Pin=J1-J39
+Removed Pin From Net: NetName=5V Pin=J1-J40
+Change Component Comment : Designator=BB1 Old Comment= New Comment=="Manufacturer No"
+Change Component Comment : Designator=BB2 Old Comment= New Comment=="Manufacturer No"
+Change Component Comment : Designator=BB3 Old Comment= New Comment=="Manufacturer No"
+Change Component Comment : Designator=BB4 Old Comment= New Comment=="Manufacturer No"
+Change Component Comment : Designator=BB5 Old Comment= New Comment=="Manufacturer No"
+Change component parameters: Designator = "BB1"; Footprint = "Breadboard_3x5_100mil_pitch"; UniqueID = "\RDJNQAPF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters: Designator = "BB2"; Footprint = "Breadboard_3x5_100mil_pitch"; UniqueID = "\VCHAFVDE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters: Designator = "BB3"; Footprint = "Breadboard_3x5_100mil_pitch"; UniqueID = "\YRMTFAXQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters: Designator = "BB4"; Footprint = "Breadboard_3x5_100mil_pitch"; UniqueID = "\VVGRKFWX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters: Designator = "BB5"; Footprint = "Breadboard_3x5_100mil_pitch"; UniqueID = "\YHRVWJGO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2"; Footprint = "Molex 2POS"; UniqueID = "\OOCSMFGW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "cost"; Value = "$0.67"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex Inc."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer part #"; Value = "0009652048"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package size"; Value = "CONN HEADER 2POS 4.2MM VERT TIN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM3800-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C1"; Footprint = "CTC-D7343-43"; UniqueID = "\WHSRPHMI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Kemet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "T521X337M016ATE050"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Tant SMD D 7343-43"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "399-10365-6-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2"; Footprint = "CTC-D7343-43"; UniqueID = "\PVAJVVAT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "EEF-UE0J221LR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Tant SMD D 7343-43"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "PCE4263CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage rating"; Value = "6.3V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3"; Footprint = "CC1206N1R"; UniqueID = "\BINANAEM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4"; Footprint = "CC1206N1R"; UniqueID = "\MQEUBGXP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CN1"; Footprint = "FX8C-120P-SV6(91)"; UniqueID = "\YNBHYLWX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Comment2"; Value = "120pin Header 10.45mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Hirose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "FX8C-120P-SV6(91)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "120pin SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "5.69"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier No"; Value = "H11527-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CN2"; Footprint = "FX8C-120P-SV6(91)"; UniqueID = "\QEWHNQYT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Comment2"; Value = "120pin Header 10.45mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Hirose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "FX8C-120P-SV6(91)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "120pin SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "5.69"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier No"; Value = "H11527-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CN3"; Footprint = "FX8C-120P-SV6(91)"; UniqueID = "\LRBSGTUN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Comment2"; Value = "120pin Header 10.45mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Hirose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "FX8C-120P-SV6(91)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "120pin SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "5.69"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier No"; Value = "H11527-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CN4"; Footprint = "FX8C-120P-SV6(91)"; UniqueID = "\DENXEGHI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Comment2"; Value = "120pin Header 10.45mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Hirose"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "FX8C-120P-SV6(91)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "120pin SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "5.69"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier No"; Value = "H11527-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Component: Designator=J?(2X4 RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "615016137621"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "RJ45, Ethernet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-2744-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Added Class: Name=RF

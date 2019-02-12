@@ -1,0 +1,97 @@
+Removed Pin From Net: NetName=SC_DC_RX4_P Pin=CN1-79
+Removed Pin From Net: NetName=SC_DC_RX4_N Pin=CN1-81
+Removed Pin From Net: NetName=DC_SC_DATA1_P Pin=J1-A3
+Removed Pin From Net: NetName=DC_SC_DATA1_N Pin=J1-A6
+Removed Pin From Net: NetName=DC_SC_TX1_P Pin=J1-A7
+Removed Pin From Net: NetName=DC_SC_TX1_N Pin=J1-A8
+Removed Pin From Net: NetName=ORed_Trig1_N Pin=J1-B3
+Removed Pin From Net: NetName=ORed_Trig1_P Pin=J1-B6
+Removed Pin From Net: NetName=ORed_Trig2_P Pin=J1-D3
+Removed Pin From Net: NetName=ORed_Trig2_N Pin=J1-D6
+Removed Pin From Net: NetName=MAS_ACK2_P Pin=J1-D7
+Removed Pin From Net: NetName=MAS_ACK2_N Pin=J1-D8
+Removed Pin From Net: NetName=DC_SC_DATA3_P Pin=J1-E3
+Removed Pin From Net: NetName=DC_SC_DATA3_N Pin=J1-E6
+Removed Pin From Net: NetName=DC_SC_TX3_P Pin=J1-E7
+Removed Pin From Net: NetName=DC_SC_TX3_N Pin=J1-E8
+Removed Pin From Net: NetName=AUX4_P Pin=J1-G1
+Removed Pin From Net: NetName=AUX4_N Pin=J1-G2
+Removed Pin From Net: NetName=DC_SC_DATA4_P Pin=J1-G3
+Removed Pin From Net: NetName=SC_DC_CLK4_N Pin=J1-G4
+Removed Pin From Net: NetName=SC_DC_CLK4_P Pin=J1-G5
+Removed Pin From Net: NetName=DC_SC_DATA4_N Pin=J1-G6
+Removed Pin From Net: NetName=DC_SC_TX4_P Pin=J1-G7
+Removed Pin From Net: NetName=DC_SC_TX4_N Pin=J1-G8
+Removed Pin From Net: NetName=SC_DC_RX4_P Pin=J1-H1
+Removed Pin From Net: NetName=SC_DC_RX4_N Pin=J1-H2
+Removed Pin From Net: NetName=ORed_Trig4_P Pin=J1-H3
+Removed Pin From Net: NetName=ORed_Trig4_N Pin=J1-H6
+Added Pin To Net: NetName=SC_DC_RX4_P Pin=CN2-3
+Added Pin To Net: NetName=SC_DC_RX4_N Pin=CN2-4
+Added Pin To Net: NetName=GND Pin=CN2-63
+Added Pin To Net: NetName=AUX4_P Pin=J1-A1
+Added Pin To Net: NetName=AUX4_N Pin=J1-A2
+Added Pin To Net: NetName=DC_SC_DATA4_P Pin=J1-A3
+Added Pin To Net: NetName=SC_DC_CLK4_N Pin=J1-A4
+Added Pin To Net: NetName=SC_DC_CLK4_P Pin=J1-A5
+Added Pin To Net: NetName=DC_SC_DATA4_N Pin=J1-A6
+Added Pin To Net: NetName=DC_SC_TX4_P Pin=J1-A7
+Added Pin To Net: NetName=DC_SC_TX4_N Pin=J1-A8
+Added Pin To Net: NetName=DC_SC_DATA3_P Pin=J1-B3
+Added Pin To Net: NetName=DC_SC_DATA3_N Pin=J1-B6
+Added Pin To Net: NetName=DC_SC_TX3_P Pin=J1-B7
+Added Pin To Net: NetName=DC_SC_TX3_N Pin=J1-B8
+Added Pin To Net: NetName=DC_SC_DATA1_P Pin=J1-D3
+Added Pin To Net: NetName=DC_SC_DATA1_N Pin=J1-D6
+Added Pin To Net: NetName=DC_SC_TX1_P Pin=J1-D7
+Added Pin To Net: NetName=DC_SC_TX1_N Pin=J1-D8
+Added Pin To Net: NetName=SC_DC_RX4_P Pin=J1-E1
+Added Pin To Net: NetName=SC_DC_RX4_N Pin=J1-E2
+Added Pin To Net: NetName=ORed_Trig4_P Pin=J1-E3
+Added Pin To Net: NetName=ORed_Trig4_N Pin=J1-E6
+Added Pin To Net: NetName=ORed_Trig2_P Pin=J1-G3
+Added Pin To Net: NetName=ORed_Trig2_N Pin=J1-G6
+Added Pin To Net: NetName=MAS_ACK2_P Pin=J1-G7
+Added Pin To Net: NetName=MAS_ACK2_N Pin=J1-G8
+Added Pin To Net: NetName=ORed_Trig1_N Pin=J1-H3
+Added Pin To Net: NetName=ORed_Trig1_P Pin=J1-H6
+Change Net Name : Old Net Name=MAS_ACK4_N New Net Name=MAS_ACK1_N
+Change Net Name : Old Net Name=MAS_ACK4_P New Net Name=MAS_ACK1_P
+Change Net Name : Old Net Name=SC_DC_CLK3_N New Net Name=SC_DC_DATA4_N
+Change Net Name : Old Net Name=SC_DC_CLK3_P New Net Name=SC_DC_DATA4_P
+Change Net Name : Old Net Name=SC_DC_DATA1_N New Net Name=SC_DC_CLK3_N
+Change Net Name : Old Net Name=SC_DC_DATA1_P New Net Name=SC_DC_CLK3_P
+Change Net Name : Old Net Name=SC_DC_DATA2_N New Net Name=SC_DC_CLK1_N
+Change Net Name : Old Net Name=SC_DC_DATA2_P New Net Name=SC_DC_CLK1_P
+Change Net Name : Old Net Name=SC_DC_DATA4_N New Net Name=SC_DC_DATA1_N
+Change Net Name : Old Net Name=SC_DC_DATA4_P New Net Name=SC_DC_DATA1_P
+Change Net Name : Old Net Name=SC_DC_RX1_N New Net Name=AUX3_N
+Change Net Name : Old Net Name=SC_DC_RX1_P New Net Name=AUX3_P
+Change Net Name : Old Net Name=SC_DC_RX2_N New Net Name=AUX1_N
+Change Net Name : Old Net Name=SC_DC_RX2_P New Net Name=AUX1_P
+Added Pin To Net: NetName=MAS_ACK4_N Pin=J1-E8
+Added Net: Name=MAS_ACK4_N
+Added Pin To Net: NetName=MAS_ACK4_P Pin=J1-E7
+Added Net: Name=MAS_ACK4_P
+Added Pin To Net: NetName=SC_DC_DATA2_N Pin=J1-G4
+Added Net: Name=SC_DC_DATA2_N
+Added Pin To Net: NetName=SC_DC_DATA2_P Pin=J1-G5
+Added Net: Name=SC_DC_DATA2_P
+Added Pin To Net: NetName=SC_DC_RX1_N Pin=J1-H2
+Added Net: Name=SC_DC_RX1_N
+Added Pin To Net: NetName=SC_DC_RX1_P Pin=J1-H1
+Added Net: Name=SC_DC_RX1_P
+Added Pin To Net: NetName=SC_DC_RX2_N Pin=J1-G2
+Added Net: Name=SC_DC_RX2_N
+Added Pin To Net: NetName=SC_DC_RX2_P Pin=J1-G1
+Added Net: Name=SC_DC_RX2_P
+Added Differential Pair: Name=AUX1
+Added Differential Pair: Name=AUX3
+Added Differential Pair: Name=MAS_ACK1
+Added Differential Pair: Name=SC_DC_CLK1
+Added Member To Class: ClassName=RF Member=Wire AUX3_N
+Added Member To Class: ClassName=RF Member=Wire AUX3_P
+Added Member To Class: ClassName=RF Member=Wire MAS_ACK1_N
+Added Member To Class: ClassName=RF Member=Wire MAS_ACK1_P
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK1_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK1_P

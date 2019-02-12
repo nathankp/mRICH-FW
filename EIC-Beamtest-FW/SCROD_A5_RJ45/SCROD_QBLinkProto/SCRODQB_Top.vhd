@@ -51,10 +51,11 @@ entity SCRODQB_Top is
 			CLK_DC_N			 : OUT STD_LOGIC;
 			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
 			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC 
+			CLK_OK			 : OUT STD_LOGIc;
 			SYNC_P			 : OUT STD_LOGIC; -- when '0' DC listens only, '1' DC reads back command
-			SYNC_N			 : OUT STD_LOGIC;
-			TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
-		   SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
+			SYNC_N			 : OUT STD_LOGIC
+			--TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
+		   --SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
 	);
 end SCRODQB_Top;
 
@@ -82,11 +83,12 @@ signal CommState : CommStateType := IDLE; --communcation statemachine(SM) curren
 signal nxtState : CommStateType := IDLE; --communication SM next state
 signal CtrlState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
 signal nxt_CTRLState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
+signal clkOk	: STD_LOGIC := '0';
 constant correctData : STD_LOGIC_VECTOR(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 
 begin
-TRGLINK_SYNC <= trgLinkSync; 
-SERIAL_CLK_LCK <= serialClkLck;
+--TRGLINK_SYNC <= trgLinkSync; 
+--SERIAL_CLK_LCK <= serialClkLck;
 
 CLK_FANOUT_1TO2 : entity work.CLK_FANOUT --generates fpga fast clcok and slow data clock (single-ended clocks)
   port map
@@ -121,7 +123,7 @@ port map (
 	O => SYNC_P,
 	OB => SYNC_N,
 	I => sync);
-	
+--	
  -------------------------Method 2 of differential clock output generation--------
  ---According to a Xilinx instructor the ODDR2 output can safely drive clock nets. 
  -- The ODDR2 output can be fed to a OBUFDS to drive differential clock nets. 
@@ -148,27 +150,6 @@ DC_CLK_OBUFDS : OBUFDS --dc_clk buffered with OBUFDS to drive output DC diff pai
 		OB => CLK_DC_N,
 		I => dc_clk);
 
----------------------------Method 1 of differential clock output generation--------
---DC_CLK_P_BUF: BUFG
---port map (
---O => CLK_DC_P, -- 1-bit Clock buffer output
---I => dc_clk_p -- 1-bit Clock buffer input
---);
---
---DC_CLK_N_BUF: BUFG
---port map (
---O => CLK_DC_N, -- 1-bit Clock buffer output
---I => dc_clk_n -- 1-bit Clock buffer input
---);
---
---DC_CLK_OBUFDS_inst: OBUFDS -- daughtercard clock: internal_data_clk converterd to differential output
---generic map (IOSTANDARD => "LVDS_25")
---port map (
---	O => dc_clk_p,
---	OB => dc_clk_n,
---	I  => internal_data_clk);
-
-
 
 RX_DC_IBUF_inst : IBUFDS --differential to single-ended conversion of serial input data
 generic map (
@@ -179,10 +160,12 @@ port map (
 	O => rx_dc,
 	I => RX_DC_P,
 	IB => RX_DC_N);	
+
+	
 	
 -----------------------------------------------------------------------------
 ------------------QBLink Module----------------------------------------------
------------------------------------------------------------------------------
+--------------------------------- --------------------------------------------
 
 comm_process : entity QBLink.QBLink                                                     
 PORT MAP( 
@@ -205,7 +188,14 @@ PORT MAP(
 	--		CommState <= nxtState;
 	--	END IF;
 	--END PROCESS;
-	
+CLK_OK <= clkOk;
+clk_monitor : PROCESS(internal_data_clk)
+BEGIN
+		IF(rising_edge(internal_data_clk)) THEN
+			clkOK <= not clkOk;
+		END IF;
+END PROCESS;
+			
 COMM_SM : PROCESS(internal_data_clk, CommState, start_send, start_rd, dc_data) --Communication statemachine that controls QBLink 
 BEGIN
  --Sequential Process
@@ -219,11 +209,11 @@ BEGIN
 		rd_req <= '0'; --disable readout 
 		dc_cmd <= (others => '0'); --reset DC command to all 0
 		IF (start_send = '1') THEN 
-			sync <= '0'; -- put DC in listening mode (DC recieves data, does not readback)
+			--sync <= '0'; -- put DC in listening mode (DC recieves data, does not readback)
 			dc_cmd <= correctData; --load register value into QBLink
 			nxtState <= START_WRITE; 
 		ELSIF (start_rd = '1') THEN
-			sync <= '1'; --trigger DC to readback register: Once DC register is written to, DC will start readingback
+			--sync <= '1'; --trigger DC to readback register: Once DC register is written to, DC will start readingback
 			nxtState <= START_READ;
 		END IF;
 	WHEN START_WRITE =>

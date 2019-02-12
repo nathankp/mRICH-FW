@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=RF Member=AUX3_N
+Removed Member From Class: ClassName=RF Member=AUX3_P
+Change Net Name : Old Net Name=AUX3_N New Net Name=AUX31_N
+Change Net Name : Old Net Name=AUX3_P New Net Name=AUX31_P
+Added Differential Pair: Name=AUX31
+Added Member To Class: ClassName=RF Member=Wire AUX31_N
+Added Member To Class: ClassName=RF Member=Wire AUX31_P

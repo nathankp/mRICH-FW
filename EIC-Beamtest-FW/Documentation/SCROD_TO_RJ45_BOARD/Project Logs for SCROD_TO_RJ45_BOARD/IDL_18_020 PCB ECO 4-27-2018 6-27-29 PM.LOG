@@ -1,0 +1,56 @@
+Change Component Designator: OldDesignator=1 NewDesignator=Raw5V
+Added Component: Designator=1V2(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Component: Designator=2V5(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Component: Designator=3V3(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Component: Designator=5V(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Component: Designator=Raw2V5(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=1V2 Pin=1V2-1
+Added Pin To Net: NetName=2V5 Pin=2V5-1
+Added Pin To Net: NetName=3V3 Pin=3V3-1
+Added Pin To Net: NetName=5V Pin=5V-1
+Added Pin To Net: NetName=RawFor_2.5V Pin=Raw2V5-1

@@ -1,0 +1,368 @@
+Removed Pin From Net: NetName=AUX4_P Pin=J1-A1
+Removed Pin From Net: NetName=AUX4_N Pin=J1-A2
+Removed Pin From Net: NetName=DC_SC_DATA4_P Pin=J1-A3
+Removed Pin From Net: NetName=SC_DC_CLK4_N Pin=J1-A4
+Removed Pin From Net: NetName=SC_DC_CLK4_P Pin=J1-A5
+Removed Pin From Net: NetName=DC_SC_DATA4_N Pin=J1-A6
+Removed Pin From Net: NetName=DC_SC_TX4_P Pin=J1-A7
+Removed Pin From Net: NetName=DC_SC_TX4_N Pin=J1-A8
+Removed Pin From Net: NetName=AUX3_P Pin=J1-B1
+Removed Pin From Net: NetName=AUX3_N Pin=J1-B2
+Removed Pin From Net: NetName=DC_SC_DATA3_P Pin=J1-B3
+Removed Pin From Net: NetName=SC_DC_CLK3_N Pin=J1-B4
+Removed Pin From Net: NetName=SC_DC_CLK3_P Pin=J1-B5
+Removed Pin From Net: NetName=DC_SC_DATA3_N Pin=J1-B6
+Removed Pin From Net: NetName=DC_SC_TX3_P Pin=J1-B7
+Removed Pin From Net: NetName=DC_SC_TX3_N Pin=J1-B8
+Removed Pin From Net: NetName=AUX1_P Pin=J1-D1
+Removed Pin From Net: NetName=AUX1_N Pin=J1-D2
+Removed Pin From Net: NetName=DC_SC_DATA1_P Pin=J1-D3
+Removed Pin From Net: NetName=SC_DC_CLK1_N Pin=J1-D4
+Removed Pin From Net: NetName=SC_DC_CLK1_P Pin=J1-D5
+Removed Pin From Net: NetName=DC_SC_DATA1_N Pin=J1-D6
+Removed Pin From Net: NetName=DC_SC_TX1_P Pin=J1-D7
+Removed Pin From Net: NetName=DC_SC_TX1_N Pin=J1-D8
+Removed Pin From Net: NetName=SC_DC_RX4_P Pin=J1-E1
+Removed Pin From Net: NetName=SC_DC_RX4_N Pin=J1-E2
+Removed Pin From Net: NetName=ORed_Trig4_P Pin=J1-E3
+Removed Pin From Net: NetName=SC_DC_DATA4_N Pin=J1-E4
+Removed Pin From Net: NetName=SC_DC_DATA4_P Pin=J1-E5
+Removed Pin From Net: NetName=ORed_Trig4_N Pin=J1-E6
+Removed Pin From Net: NetName=MAS_ACK4_P Pin=J1-E7
+Removed Pin From Net: NetName=MAS_ACK4_N Pin=J1-E8
+Removed Pin From Net: NetName=SC_DC_RX2_P Pin=J1-G1
+Removed Pin From Net: NetName=SC_DC_RX2_N Pin=J1-G2
+Removed Pin From Net: NetName=ORed_Trig2_P Pin=J1-G3
+Removed Pin From Net: NetName=SC_DC_DATA2_N Pin=J1-G4
+Removed Pin From Net: NetName=SC_DC_DATA2_P Pin=J1-G5
+Removed Pin From Net: NetName=ORed_Trig2_N Pin=J1-G6
+Removed Pin From Net: NetName=MAS_ACK2_P Pin=J1-G7
+Removed Pin From Net: NetName=MAS_ACK2_N Pin=J1-G8
+Removed Pin From Net: NetName=SC_DC_RX1_P Pin=J1-H1
+Removed Pin From Net: NetName=SC_DC_RX1_N Pin=J1-H2
+Removed Pin From Net: NetName=ORed_Trig1_N Pin=J1-H3
+Removed Pin From Net: NetName=SC_DC_DATA1_N Pin=J1-H4
+Removed Pin From Net: NetName=SC_DC_DATA1_P Pin=J1-H5
+Removed Pin From Net: NetName=ORed_Trig1_P Pin=J1-H6
+Removed Pin From Net: NetName=MAS_ACK1_P Pin=J1-H7
+Removed Pin From Net: NetName=MAS_ACK1_N Pin=J1-H8
+Added Component: Designator=J3(VIRT RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "0855085001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "8p8c virt"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4590-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, virtcal"; VariantName = "[No Variations]"
+Added Component: Designator=J4(VIRT RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "0855085001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "8p8c virt"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4590-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, virtcal"; VariantName = "[No Variations]"
+Added Component: Designator=J5(VIRT RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "0855085001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "8p8c virt"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4590-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, virtcal"; VariantName = "[No Variations]"
+Added Component: Designator=J6(VIRT RJ45)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "0855085001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "8p8c virt"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4590-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Through Hole, virtcal"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R15(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R16(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R21(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R22(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R23(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R24(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R25(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R26(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R27(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=R28(RC0402N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ERJ-2RKF1000X"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Res Chip 0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P100LCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AUX1_P Pin=J1-A1
+Added Pin To Net: NetName=AUX1_N Pin=J1-A2
+Added Pin To Net: NetName=DC_SC_DATA1_P Pin=J1-A3
+Added Pin To Net: NetName=SC_DC_CLK1_N Pin=J1-A4
+Added Pin To Net: NetName=SC_DC_CLK1_P Pin=J1-A5
+Added Pin To Net: NetName=DC_SC_DATA1_N Pin=J1-A6
+Added Pin To Net: NetName=DC_SC_TX1_P Pin=J1-A7
+Added Pin To Net: NetName=DC_SC_TX1_N Pin=J1-A8
+Added Pin To Net: NetName=SC_DC_RX1_P Pin=J1-B1
+Added Pin To Net: NetName=SC_DC_RX1_N Pin=J1-B2
+Added Pin To Net: NetName=ORed_Trig1_N Pin=J1-B3
+Added Pin To Net: NetName=SC_DC_DATA1_N Pin=J1-B4
+Added Pin To Net: NetName=SC_DC_DATA1_P Pin=J1-B5
+Added Pin To Net: NetName=ORed_Trig1_P Pin=J1-B6
+Added Pin To Net: NetName=MAS_ACK1_P Pin=J1-B7
+Added Pin To Net: NetName=MAS_ACK1_N Pin=J1-B8
+Added Pin To Net: NetName=SC_DC_RX2_P Pin=J1-D1
+Added Pin To Net: NetName=SC_DC_RX2_N Pin=J1-D2
+Added Pin To Net: NetName=ORed_Trig2_P Pin=J1-D3
+Added Pin To Net: NetName=SC_DC_DATA2_N Pin=J1-D4
+Added Pin To Net: NetName=SC_DC_DATA2_P Pin=J1-D5
+Added Pin To Net: NetName=ORed_Trig2_N Pin=J1-D6
+Added Pin To Net: NetName=MAS_ACK2_P Pin=J1-D7
+Added Pin To Net: NetName=MAS_ACK2_N Pin=J1-D8
+Added Pin To Net: NetName=AUX3_P Pin=J1-E1
+Added Pin To Net: NetName=AUX3_N Pin=J1-E2
+Added Pin To Net: NetName=DC_SC_DATA3_P Pin=J1-E3
+Added Pin To Net: NetName=SC_DC_CLK3_N Pin=J1-E4
+Added Pin To Net: NetName=SC_DC_CLK3_P Pin=J1-E5
+Added Pin To Net: NetName=DC_SC_DATA3_N Pin=J1-E6
+Added Pin To Net: NetName=DC_SC_TX3_P Pin=J1-E7
+Added Pin To Net: NetName=DC_SC_TX3_N Pin=J1-E8
+Added Pin To Net: NetName=AUX4_P Pin=J1-G1
+Added Pin To Net: NetName=AUX4_N Pin=J1-G2
+Added Pin To Net: NetName=DC_SC_DATA4_P Pin=J1-G3
+Added Pin To Net: NetName=SC_DC_CLK4_N Pin=J1-G4
+Added Pin To Net: NetName=SC_DC_CLK4_P Pin=J1-G5
+Added Pin To Net: NetName=DC_SC_DATA4_N Pin=J1-G6
+Added Pin To Net: NetName=DC_SC_TX4_P Pin=J1-G7
+Added Pin To Net: NetName=DC_SC_TX4_N Pin=J1-G8
+Added Pin To Net: NetName=SC_DC_RX4_P Pin=J1-H1
+Added Pin To Net: NetName=SC_DC_RX4_N Pin=J1-H2
+Added Pin To Net: NetName=ORed_Trig4_P Pin=J1-H3
+Added Pin To Net: NetName=SC_DC_DATA4_N Pin=J1-H4
+Added Pin To Net: NetName=SC_DC_DATA4_P Pin=J1-H5
+Added Pin To Net: NetName=ORed_Trig4_N Pin=J1-H6
+Added Pin To Net: NetName=MAS_ACK4_P Pin=J1-H7
+Added Pin To Net: NetName=MAS_ACK4_N Pin=J1-H8
+Added Pin To Net: NetName=TRIG_AUX1_N Pin=J3-A2
+Added Pin To Net: NetName=TRIG_AUX1_N Pin=R13-1
+Added Net: Name=TRIG_AUX1_N
+Added Pin To Net: NetName=TRIG_AUX1_P Pin=J3-A1
+Added Pin To Net: NetName=TRIG_AUX1_P Pin=R13-2
+Added Net: Name=TRIG_AUX1_P
+Added Pin To Net: NetName=TRIG_AUX2_N Pin=J3-A5
+Added Pin To Net: NetName=TRIG_AUX2_N Pin=R15-1
+Added Net: Name=TRIG_AUX2_N
+Added Pin To Net: NetName=TRIG_AUX2_P Pin=J3-A4
+Added Pin To Net: NetName=TRIG_AUX2_P Pin=R15-2
+Added Net: Name=TRIG_AUX2_P
+Added Pin To Net: NetName=TRIG_AUX3_N Pin=J3-A8
+Added Pin To Net: NetName=TRIG_AUX3_N Pin=R17-1
+Added Net: Name=TRIG_AUX3_N
+Added Pin To Net: NetName=TRIG_AUX3_P Pin=J3-A7
+Added Pin To Net: NetName=TRIG_AUX3_P Pin=R17-2
+Added Net: Name=TRIG_AUX3_P
+Added Pin To Net: NetName=TRIG_AUX4_N Pin=J3-A6
+Added Pin To Net: NetName=TRIG_AUX4_N Pin=R19-1
+Added Net: Name=TRIG_AUX4_N
+Added Pin To Net: NetName=TRIG_AUX4_P Pin=J3-A3
+Added Pin To Net: NetName=TRIG_AUX4_P Pin=R19-2
+Added Net: Name=TRIG_AUX4_P
+Added Pin To Net: NetName=TRIG_AUX5_N Pin=J5-A2
+Added Pin To Net: NetName=TRIG_AUX5_N Pin=R21-1
+Added Net: Name=TRIG_AUX5_N
+Added Pin To Net: NetName=TRIG_AUX5_P Pin=J5-A1
+Added Pin To Net: NetName=TRIG_AUX5_P Pin=R21-2
+Added Net: Name=TRIG_AUX5_P
+Added Pin To Net: NetName=TRIG_AUX6_N Pin=J5-A5
+Added Pin To Net: NetName=TRIG_AUX6_N Pin=R23-1
+Added Net: Name=TRIG_AUX6_N
+Added Pin To Net: NetName=TRIG_AUX6_P Pin=J5-A4
+Added Pin To Net: NetName=TRIG_AUX6_P Pin=R23-2
+Added Net: Name=TRIG_AUX6_P
+Added Pin To Net: NetName=TRIG_AUX7_N Pin=J5-A8
+Added Pin To Net: NetName=TRIG_AUX7_N Pin=R25-1
+Added Net: Name=TRIG_AUX7_N
+Added Pin To Net: NetName=TRIG_AUX7_P Pin=J5-A7
+Added Pin To Net: NetName=TRIG_AUX7_P Pin=R25-2
+Added Net: Name=TRIG_AUX7_P
+Added Pin To Net: NetName=TRIG_AUX8_N Pin=J5-A6
+Added Pin To Net: NetName=TRIG_AUX8_N Pin=R27-1
+Added Net: Name=TRIG_AUX8_N
+Added Pin To Net: NetName=TRIG_AUX8_P Pin=J5-A3
+Added Pin To Net: NetName=TRIG_AUX8_P Pin=R27-2
+Added Net: Name=TRIG_AUX8_P
+Added Pin To Net: NetName=TRIG_AUX9_N Pin=J4-A2
+Added Pin To Net: NetName=TRIG_AUX9_N Pin=R14-1
+Added Net: Name=TRIG_AUX9_N
+Added Pin To Net: NetName=TRIG_AUX9_P Pin=J4-A1
+Added Pin To Net: NetName=TRIG_AUX9_P Pin=R14-2
+Added Net: Name=TRIG_AUX9_P
+Added Pin To Net: NetName=TRIG_AUX10_N Pin=J4-A5
+Added Pin To Net: NetName=TRIG_AUX10_N Pin=R16-1
+Added Net: Name=TRIG_AUX10_N
+Added Pin To Net: NetName=TRIG_AUX10_P Pin=J4-A4
+Added Pin To Net: NetName=TRIG_AUX10_P Pin=R16-2
+Added Net: Name=TRIG_AUX10_P
+Added Pin To Net: NetName=TRIG_AUX11_N Pin=J4-A8
+Added Pin To Net: NetName=TRIG_AUX11_N Pin=R18-1
+Added Net: Name=TRIG_AUX11_N
+Added Pin To Net: NetName=TRIG_AUX11_P Pin=J4-A7
+Added Pin To Net: NetName=TRIG_AUX11_P Pin=R18-2
+Added Net: Name=TRIG_AUX11_P
+Added Pin To Net: NetName=TRIG_AUX12_N Pin=J4-A6
+Added Pin To Net: NetName=TRIG_AUX12_N Pin=R20-1
+Added Net: Name=TRIG_AUX12_N
+Added Pin To Net: NetName=TRIG_AUX12_P Pin=J4-A3
+Added Pin To Net: NetName=TRIG_AUX12_P Pin=R20-2
+Added Net: Name=TRIG_AUX12_P
+Added Pin To Net: NetName=TRIG_AUX13_N Pin=J6-A2
+Added Pin To Net: NetName=TRIG_AUX13_N Pin=R22-1
+Added Net: Name=TRIG_AUX13_N
+Added Pin To Net: NetName=TRIG_AUX13_P Pin=J6-A1
+Added Pin To Net: NetName=TRIG_AUX13_P Pin=R22-2
+Added Net: Name=TRIG_AUX13_P
+Added Pin To Net: NetName=TRIG_AUX14_N Pin=J6-A5
+Added Pin To Net: NetName=TRIG_AUX14_N Pin=R24-1
+Added Net: Name=TRIG_AUX14_N
+Added Pin To Net: NetName=TRIG_AUX14_P Pin=J6-A4
+Added Pin To Net: NetName=TRIG_AUX14_P Pin=R24-2
+Added Net: Name=TRIG_AUX14_P
+Added Pin To Net: NetName=TRIG_AUX15_N Pin=J6-A8
+Added Pin To Net: NetName=TRIG_AUX15_N Pin=R26-1
+Added Net: Name=TRIG_AUX15_N
+Added Pin To Net: NetName=TRIG_AUX15_P Pin=J6-A7
+Added Pin To Net: NetName=TRIG_AUX15_P Pin=R26-2
+Added Net: Name=TRIG_AUX15_P
+Added Pin To Net: NetName=TRIG_AUX16_N Pin=J6-A6
+Added Pin To Net: NetName=TRIG_AUX16_N Pin=R28-1
+Added Net: Name=TRIG_AUX16_N
+Added Pin To Net: NetName=TRIG_AUX16_P Pin=J6-A3
+Added Pin To Net: NetName=TRIG_AUX16_P Pin=R28-2
+Added Net: Name=TRIG_AUX16_P
+Added Differential Pair: Name=TRIG_AUX1
+Added Differential Pair: Name=TRIG_AUX2
+Added Differential Pair: Name=TRIG_AUX3
+Added Differential Pair: Name=TRIG_AUX4
+Added Differential Pair: Name=TRIG_AUX5
+Added Differential Pair: Name=TRIG_AUX6
+Added Differential Pair: Name=TRIG_AUX7
+Added Differential Pair: Name=TRIG_AUX8
+Added Differential Pair: Name=TRIG_AUX9
+Added Differential Pair: Name=TRIG_AUX10
+Added Differential Pair: Name=TRIG_AUX11
+Added Differential Pair: Name=TRIG_AUX12
+Added Differential Pair: Name=TRIG_AUX13
+Added Differential Pair: Name=TRIG_AUX14
+Added Differential Pair: Name=TRIG_AUX15
+Added Differential Pair: Name=TRIG_AUX16

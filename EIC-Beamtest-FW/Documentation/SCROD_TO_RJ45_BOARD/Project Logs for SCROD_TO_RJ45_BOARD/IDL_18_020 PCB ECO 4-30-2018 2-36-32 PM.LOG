@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=3V3 Pin=CN1-111
+Added Pin To Net: NetName=TRIG_AUX14_P Pin=CN1-3
+Added Pin To Net: NetName=TRIG_AUX14_N Pin=CN1-4
+Added Pin To Net: NetName=TRIG_AUX13_P Pin=CN1-7
+Added Pin To Net: NetName=TRIG_AUX13_N Pin=CN1-8
+Added Pin To Net: NetName=TRIG_AUX15_P Pin=CN1-87
+Added Pin To Net: NetName=TRIG_AUX15_N Pin=CN1-89
+Added Pin To Net: NetName=TRIG_AUX16_N Pin=CN1-94
+Added Pin To Net: NetName=TRIG_AUX16_P Pin=CN1-95
+Added Pin To Net: NetName=TRIG_AUX9_N Pin=CN1-97
+Added Pin To Net: NetName=TRIG_AUX9_P Pin=CN1-98
+Added Pin To Net: NetName=TRIG_AUX10_N Pin=CN1-110
+Added Pin To Net: NetName=TRIG_AUX10_P Pin=CN1-111
+Added Pin To Net: NetName=3V3 Pin=CN1-112
+Added Pin To Net: NetName=TRIG_AUX11_N Pin=CN1-114
+Added Pin To Net: NetName=TRIG_AUX11_P Pin=CN1-115
+Added Pin To Net: NetName=TRIG_AUX12_N Pin=CN1-118

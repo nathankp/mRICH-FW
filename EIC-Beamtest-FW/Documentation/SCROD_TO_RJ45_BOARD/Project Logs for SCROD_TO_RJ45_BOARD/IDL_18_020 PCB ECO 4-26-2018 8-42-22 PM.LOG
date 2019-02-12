@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=MAS_ACK1_P Pin=J1-H7
+Added Pin To Net: NetName=MAS_ACK1_N Pin=J1-H8
+Added Differential Pair: Name=MAS_ACK1

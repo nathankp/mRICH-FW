@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=J1_069_AD3 Pin=CN1-69
+Removed Pin From Net: NetName=J1_070_AC4 Pin=CN1-70
+Removed Pin From Net: NetName=J1_071_AC3 Pin=CN1-71
+Removed Pin From Net: NetName=J1_073_AB5 Pin=CN1-73
+Removed Pin From Net: NetName=J1_074_AB4 Pin=CN1-74
+Removed Pin From Net: NetName=J1_075_AB3 Pin=CN1-75
+Removed Pin From Net: NetName=J1_077_AA4 Pin=CN1-77
+Removed Pin From Net: NetName=J1_078_AA3 Pin=CN1-78
+Removed Pin From Net: NetName=J1_079_Y6 Pin=CN1-79
+Removed Pin From Net: NetName=SC_DC_CLK4_P Pin=CN3-86
+Removed Pin From Net: NetName=SC_DC_CLK4_N Pin=CN3-88
+Removed Pin From Net: NetName=AUX4_N Pin=CN3-89
+Removed Pin From Net: NetName=AUX4_P Pin=CN3-90
+Added Pin To Net: NetName=SC_DC_CLK4_N Pin=CN1-61
+Added Pin To Net: NetName=SC_DC_CLK4_P Pin=CN1-62
