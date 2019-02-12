@@ -31,8 +31,8 @@ NET "TX_N"	 			 LOC = "P126" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #
 # RX
 #NET "ORed_Trig_N"	 LOC = "P141"; 
 #NET "ORed_Trig_P" 	 LOC = "P142"; 
-NET "RX_P"		       LOC = "P141" | IOSTANDARD = LVDS_25;# | DIFF_TERM = "FALSE"; #RX on SCROD side
-NET "RX_N" 	          LOC = "P142" | IOSTANDARD = LVDS_25; #| DIFF_TERM = "FALSE"; #
+NET "RX_P"		       LOC = "P142" | IOSTANDARD = LVDS_25;# | DIFF_TERM = "FALSE"; #RX on SCROD side
+NET "RX_N" 	          LOC = "P141" | IOSTANDARD = LVDS_25; #| DIFF_TERM = "FALSE"; #
 
 NET "SYNC_P"	 	    LOC = "P2" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #Past mistake: SYNC_P was on pin P1, must be P_2
 NET "SYNC_N"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #Past mistake: SYNC_N was on pin P1, must be P_1

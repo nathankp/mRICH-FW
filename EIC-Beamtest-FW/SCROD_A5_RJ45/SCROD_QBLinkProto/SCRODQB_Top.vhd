@@ -209,11 +209,11 @@ BEGIN
 		rd_req <= '0'; --disable readout 
 		dc_cmd <= (others => '0'); --reset DC command to all 0
 		IF (start_send = '1') THEN 
-			--sync <= '0'; -- put DC in listening mode (DC recieves data, does not readback)
+			sync <= '0'; -- put DC in listening mode (DC recieves data, does not readback)
 			dc_cmd <= correctData; --load register value into QBLink
 			nxtState <= START_WRITE; 
 		ELSIF (start_rd = '1') THEN
-			--sync <= '1'; --trigger DC to readback register: Once DC register is written to, DC will start readingback
+			sync <= '1'; --trigger DC to readback register: Once DC register is written to, DC will start readingback
 			nxtState <= START_READ;
 		END IF;
 	WHEN START_WRITE =>
