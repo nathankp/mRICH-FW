@@ -13,6 +13,9 @@ PROJECT STATUS:
   	- Fixing ethernet module (needs to be added to repo)
   	- Integrating ByteLine protocol (needs to be added to repo)
   	- PMT board firmware (needs to be added to repo)
+
+*Things to Note:
+1. Sometimes Hodoscope and HMB Scintillating Plane Readout Daughtercard (HMB Scint. DC) are used interchangeably. 
   
 PROJECT CONTRIBUTORS:
 + Gary Varner ~ Varner@phys.hawaii.edu | varner@hawaii.edu | gsvarner@gmail.com
@@ -42,7 +45,7 @@ COMMIT MESSAGES:
  - Full messages: Below is a suggested template for commit messages. Following this template will make 
    it easier to document revisions and retrace steps. 
   
-  {Message Template} 
+  {One Possible Message Template} 
   ----------------------------------------------
    <Insert commit title here>
    <Author>
@@ -52,9 +55,14 @@ COMMIT MESSAGES:
    Issues addressed by changes:
       + <Issue/need>: <explanation>
 
-   Comments:
+   Project Status:
+    <Overall status of Project>
+    <Dependencies waiting on>
     <Describe remaining issues and bugs>
+
+   Activity Log:
     <List activities other than development (i.e. Hardware tests, simulation, hardware design, documentation)>
+    #Really helps back track and understand context of changes.
    ---------------------------------------------
    You can add this template to your ~/.gitconfig use it with all commit messages automatically:     
       	    
