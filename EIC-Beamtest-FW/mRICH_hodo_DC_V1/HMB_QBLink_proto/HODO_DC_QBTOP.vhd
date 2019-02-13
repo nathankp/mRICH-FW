@@ -102,20 +102,6 @@ port map (
 	I => SYNC_P,
 	IB => SYNC_N);
 	
---SYNC_OBUFDS_inst : OBUFDS -- sync is converted to differential ouput
---generic map ( IOSTANDARD => "LVDS_25")
---port map (
---	O => SYNC_P,
---	OB => SYNC_N,
---	I => sync);
-
- --Temporary: training debug
---sync_proccess : PROCESS(internal_sysclk)
---BEGIN
---	IF(rising_edge(internal_sysclk)) THEN
---		sync <= not sync;
---	END IF;
---END PROCESS;
 -----------------------------------------------------------------------------
 -----------QBLink Module-----------------------------------------------------
 -----------------------------------------------------------------------------

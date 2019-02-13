@@ -37,12 +37,7 @@ use work.UtilityPkg.all;
 --use work.BMD_definitions.all;
 
 entity SCRODQB_Top is
-	Port(
-	     --Unavailable VIO Inputs: replaced by internal statemachine
-			--START_SEND		 : IN STD_LOGIC; -- Chipscope VIO
-			--START_RD			 : IN STD_LOGIC; -- Chipscope VIO
-			--RESET				 : IN STD_LOGIC; --VIO
-			
+	Port(			
 			MASTER_CLK_P    : IN STD_LOGIC; --input clock either 127MHz form osc or remote clock form, (try supply with VIO or function gen) 
 			MASTER_CLK_N 	 : IN STD_LOGIC; --(try supply with VIO or function gen)
 			RX_DC_P			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
@@ -51,11 +46,8 @@ entity SCRODQB_Top is
 			CLK_DC_N			 : OUT STD_LOGIC;
 			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
 			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC 
-			CLK_OK			 : OUT STD_LOGIc;
 			SYNC_P			 : OUT STD_LOGIC; -- when '0' DC listens only, '1' DC reads back command
 			SYNC_N			 : OUT STD_LOGIC
-			--TRGLINK_SYNC	 : OUT STD_LOGIC; --Not the same as SYNC
-		   --SERIAL_CLK_LCK  : OUT STD_LOGIC --QBLink Status bit
 	);
 end SCRODQB_Top;
 
@@ -83,7 +75,6 @@ signal CommState : CommStateType := IDLE; --communcation statemachine(SM) curren
 signal nxtState : CommStateType := IDLE; --communication SM next state
 signal CtrlState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
 signal nxt_CTRLState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
-signal clkOk	: STD_LOGIC := '0';
 constant correctData : STD_LOGIC_VECTOR(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 
 begin
@@ -100,13 +91,6 @@ CLK_FANOUT_1TO2 : entity work.CLK_FANOUT --generates fpga fast clcok and slow da
     CLK_OUT2 => internal_data_clk --25 MHz
 	 );	 
 	 
----!Issue: sync process creates asymmetrical data_clk duty cycle. ! ?Is syncing neccesary? {TB shows it is not} 	 
-	--clk_sync: process(internal_fpga_clk) begin
-	--if (rising_edge(internal_fpga_clk)) then
-	--	data_clk <= internal_data_clk; --sync data clk with fgpa clk
-	--end if;
-	--end process;
-
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------
 -----------------------------------------------------------------
@@ -181,20 +165,6 @@ PORT MAP(
 			 trgLinkSynced => trgLinkSync,
 			 serialClkLocked => serialClkLck
 			 );
------- Communication state machine: 12/27 removed async input sensitivities and combined clk and combinational processes -------
-	--COMM_clk : PROCESS(internal_data_clk) 
-	--BEGIN
-	--   IF (rising_edge(internal_data_clk)) THEN
-	--		CommState <= nxtState;
-	--	END IF;
-	--END PROCESS;
-CLK_OK <= clkOk;
-clk_monitor : PROCESS(internal_data_clk)
-BEGIN
-		IF(rising_edge(internal_data_clk)) THEN
-			clkOK <= not clkOk;
-		END IF;
-END PROCESS;
 			
 COMM_SM : PROCESS(internal_data_clk, CommState, start_send, start_rd, dc_data) --Communication statemachine that controls QBLink 
 BEGIN
@@ -261,5 +231,5 @@ BEGIN
 	END CASE;
 END PROCESS;
 
-END Behavioral;
+END Behavioral;  
 

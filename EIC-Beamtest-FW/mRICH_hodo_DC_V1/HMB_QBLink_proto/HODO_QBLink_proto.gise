@@ -105,7 +105,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550008253" xil_pn:in_ck="3409699996858374637" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5184186055933112460" xil_pn:start_ts="1550008241">
+    <transform xil_pn:end_ts="1550020348" xil_pn:in_ck="3409699996858374637" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5184186055933112460" xil_pn:start_ts="1550020336">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -127,7 +127,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550008503" xil_pn:in_ck="-7009932564660781999" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6820204712820056926" xil_pn:start_ts="1550008489">
+    <transform xil_pn:end_ts="1550020362" xil_pn:in_ck="-7009932564660781999" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6820204712820056926" xil_pn:start_ts="1550020348">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -139,11 +139,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1550008518" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1550008503">
+    <transform xil_pn:end_ts="1550020376" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1550020362">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.pcf"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_map.map"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_map.mrp"/>
@@ -154,7 +152,7 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1550008538" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1550008518">
+    <transform xil_pn:end_ts="1550020398" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1550020376">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.ncd"/>
@@ -168,7 +166,7 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1550008554" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1550008538">
+    <transform xil_pn:end_ts="1550020417" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1550020398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -184,6 +182,8 @@
     <transform xil_pn:end_ts="1550008685" xil_pn:in_ck="-6158904725347940369" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1550008684">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1549943209" xil_pn:in_ck="-6158904725347940369" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-2685128058547910513" xil_pn:start_ts="1549943209">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -191,9 +191,10 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1550008538" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1550008533">
+    <transform xil_pn:end_ts="1550020398" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1550020393">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.twr"/>
