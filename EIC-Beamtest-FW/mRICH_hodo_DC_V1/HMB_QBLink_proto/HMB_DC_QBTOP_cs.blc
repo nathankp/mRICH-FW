@@ -1,0 +1,41 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/_ng
+o -sd ../../../../QBLink/QBLink/cores -sd ../../../../QBLink/QBLink/ipcore_dir
+-p xc6slx9-tqg144-3 -i
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HMB
+_DC_QBTOP.ngc
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HMB
+_DC_QBTOP_cs.ngc
+
+Reading NGO file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
+B_DC_QBTOP.ngc" ...
+Loading design module "../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc"...
+Loading design module "../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc"...
+Loading design module "../../../../QBLink/QBLink/cores/serializationFifo.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4416668 kilobytes
+
+Writing NGC file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
+B_DC_QBTOP_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
+B_DC_QBTOP_cs.blc"...

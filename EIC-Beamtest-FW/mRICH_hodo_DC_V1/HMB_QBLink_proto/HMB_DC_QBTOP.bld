@@ -4,15 +4,12 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
 iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../../../../QBLink/QBLink/cores -sd ../../../../QBLink/QBLink/ipcore_dir -nt
-timestamp -uc HMB_QBLink.ucf -p xc6slx9-csg225-3 HMB_DC_QBTOP.ngc
+timestamp -uc HMB_QBLink.ucf -p xc6slx9-tqg144-3 HMB_DC_QBTOP_cs.ngc
 HMB_DC_QBTOP.ngd
 
 Reading NGO file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
-B_DC_QBTOP.ngc" ...
-Loading design module "../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc"...
-Loading design module "../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc"...
-Loading design module "../../../../QBLink/QBLink/cores/serializationFifo.ngc"...
+B_DC_QBTOP_cs.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -47,10 +44,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 4435976 kilobytes
+Total memory usage is 4467560 kilobytes
 
 Writing NGD file "HMB_DC_QBTOP.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "HMB_DC_QBTOP.bld"...

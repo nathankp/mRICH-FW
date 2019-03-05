@@ -1,0 +1,915 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: SCRODQB_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SCRODQB_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SCRODQB_Top"
+Output Format                      : NGC
+Target Device                      : xc6slx150t-3-fgg676
+
+---- Source Options
+Top Module Name                    : SCRODQB_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../../../QBLink/QBLink/cores" "../../../../QBLink/QBLink/ipcore_dir" "ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\source\UtilityPkg.vhd" into library work
+Parsing package <UtilityPkg>.
+Parsing package body <UtilityPkg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" into library work
+Parsing entity <Encode8b10b>.
+Parsing architecture <rtl> of entity <encode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" into library work
+Parsing entity <Decode8b10b>.
+Parsing architecture <rtl> of entity <decode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\serializationFifo.vhd" into library work
+Parsing entity <serializationFifo>.
+Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd" into library work
+Parsing entity <SyncBit>.
+Parsing architecture <structural> of entity <syncbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" into library work
+Parsing entity <S6SerialInterfaceOut>.
+Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" into library work
+Parsing entity <S6SerialInterfaceIn>.
+Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" into library work
+Parsing entity <ByteLink>.
+Parsing architecture <rtl> of entity <bytelink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\ipcore_dir\QBLtxFIFO.vhd" into library work
+Parsing entity <QBLtxFIFO>.
+Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\CMD_FIFO_w8r32.vhd" into library work
+Parsing entity <CMD_FIFO_w8r32>.
+Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd" into library work
+Parsing entity <clockgen_bytelink>.
+Parsing architecture <xilinx> of entity <clockgen_bytelink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" into library work
+Parsing entity <QBlink>.
+Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
+Parsing entity <CLK_FANOUT>.
+Parsing architecture <xilinx> of entity <clk_fanout>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" into library work
+Parsing entity <SCRODQB_Top>.
+Parsing architecture <Behavioral> of entity <scrodqb_top>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 124: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 156: Prefix of expanded name does not denote an enclosing construct
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 68: Using initial value '0' for qb_rst since it is never assigned
+
+Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <QBlink> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clockgen_bytelink> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <SyncBit> (architecture <structural>) with generics from library <work>.
+
+Elaborating entity <S6SerialInterfaceOut> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <serializationFifo> (architecture <serializationFifo_a>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 97. Case statement is complete. others clause is never selected
+
+Elaborating entity <S6SerialInterfaceIn> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 166. Case statement is complete. others clause is never selected
+
+Elaborating entity <ByteLink> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <Encode8b10b> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" Line 132: Assignment to illegalk ignored, since the identifier is never used
+
+Elaborating entity <Decode8b10b> (architecture <rtl>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 107: Assignment to cdei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 111: Assignment to p22enin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 112: Assignment to p22ei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 113: Assignment to p31dnenin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 114: Assignment to p31e ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 149: Assignment to alt7 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 156: Assignment to k28 ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" Line 198. Case statement is complete. others clause is never selected
+
+Elaborating entity <QBLtxFIFO> (architecture <QBLtxFIFO_a>) from library <work>.
+
+Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SCRODQB_Top>.
+    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 86: Output port <CLK_OUT1> of the instance <CLK_FANOUT_1TO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 156: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 156: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <CtrlState>.
+    Found 2-bit register for signal <CommState>.
+    Found 4x5-bit Read Only RAM for signal <_n0276>
+    Found 4x4-bit Read Only RAM for signal <_n0281>
+    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_9_o_Mux_81_o> created at line 178.
+    Found 1-bit 4-to-1 multiplexer for signal <CtrlState[1]_GND_78_o_Mux_93_o> created at line 211.
+WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd_valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rd_req>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sync>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxtState<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxtState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_CTRLState<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_CTRLState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   9 Latch(s).
+	inferred   4 Multiplexer(s).
+Unit <SCRODQB_Top> synthesized.
+
+Synthesizing Unit <CLK_FANOUT>.
+    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd".
+    Summary:
+	no macro.
+Unit <CLK_FANOUT> synthesized.
+
+Synthesizing Unit <QBlink>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 150: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 150: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 170: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <QBlink> synthesized.
+
+Synthesizing Unit <clockgen_bytelink>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd".
+    Summary:
+	no macro.
+Unit <clockgen_bytelink> synthesized.
+
+Synthesizing Unit <SyncBit>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd".
+        SYNC_STAGES_G = 2
+        CLK_POL_G = '1'
+        RST_POL_G = '1'
+        INIT_STATE_G = '1'
+    Summary:
+	no macro.
+Unit <SyncBit> synthesized.
+
+Synthesizing Unit <S6SerialInterfaceOut>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" line 57: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+    Found 10-bit register for signal <r_dataWord>.
+    Found 4-bit register for signal <r_bitCount>.
+    Found 1-bit register for signal <r_serialDataOutRising>.
+    Found 1-bit register for signal <r_serialDataOutFalling>.
+    Found 1-bit register for signal <r_state>.
+    Found 5-bit subtractor for signal <n0042[4:0]> created at line 89.
+    Found 4-bit adder for signal <r_bitCount[3]_GND_28_o_add_7_OUT> created at line 95.
+    Found 4-bit subtractor for signal <GND_28_o_GND_28_o_sub_5_OUT<3:0>> created at line 90.
+    Found 1-bit 10-to-1 multiplexer for signal <GND_28_o_X_14_o_Mux_2_o> created at line 89.
+    Found 1-bit 10-to-1 multiplexer for signal <GND_28_o_X_14_o_Mux_5_o> created at line 90.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <S6SerialInterfaceOut> synthesized.
+
+Synthesizing Unit <S6SerialInterfaceIn>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd".
+        BITSLIP_WAIT_G = 200
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <valid> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <fallingWord>.
+    Found 10-bit register for signal <dataWord>.
+    Found 10-bit register for signal <dataWordFlipped>.
+    Found 2-bit register for signal <r_state>.
+    Found 10-bit register for signal <r_dataWord>.
+    Found 1-bit register for signal <r_dataWrite>.
+    Found 4-bit register for signal <r_bitCount>.
+    Found 16-bit register for signal <r_slipCount>.
+    Found 1-bit register for signal <r_flip>.
+    Found 5-bit register for signal <risingWord>.
+    Found finite state machine <FSM_0> for signal <r_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | sstX5Clk (rising_edge)                         |
+    | Reset              | sstX5Rst (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | reset_s                                        |
+    | Power Up State     | reset_s                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <r_bitCount[3]_GND_32_o_add_6_OUT> created at line 133.
+    Found 16-bit adder for signal <r_slipCount[15]_GND_32_o_add_10_OUT> created at line 151.
+    Found 16-bit comparator greater for signal <r_slipCount[15]_GND_32_o_LessThan_10_o> created at line 150
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  62 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <S6SerialInterfaceIn> synthesized.
+
+Synthesizing Unit <ByteLink>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd".
+        ALIGN_CYCLES_G = 100
+    Found 8-bit register for signal <inputTxData8b>.
+    Found 1-bit register for signal <inputTxData8bValid>.
+    Found 2-bit register for signal <r_state>.
+    Found 1-bit register for signal <r_aligned>.
+    Found 8-bit register for signal <r_rxData8b>.
+    Found 1-bit register for signal <r_rxData8bValid>.
+    Found 8-bit register for signal <r_txData8b>.
+    Found 1-bit register for signal <r_txDataK>.
+    Found 10-bit register for signal <r_txData10b>.
+    Found 32-bit register for signal <r_alignCnt>.
+    Found 10-bit register for signal <inputRxData10b>.
+    Found finite state machine <FSM_1> for signal <r_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | reset_s                                        |
+    | Power Up State     | reset_s                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <r_alignCnt[31]_GND_35_o_add_4_OUT> created at line 174.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  80 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ByteLink> synthesized.
+
+Synthesizing Unit <Encode8b10b>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd".
+    Found 1-bit register for signal <dispOut>.
+    Found 10-bit register for signal <dataOut>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Encode8b10b> synthesized.
+
+Synthesizing Unit <Decode8b10b>.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd".
+    Found 1-bit register for signal <dataKOut>.
+    Found 1-bit register for signal <dispOut>.
+    Found 1-bit register for signal <codeErr>.
+    Found 1-bit register for signal <dispErr>.
+    Found 8-bit register for signal <dataOut>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <Decode8b10b> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+ 4x5-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 33
+ 1-bit register                                        : 14
+ 10-bit register                                       : 7
+ 16-bit register                                       : 1
+ 2-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 8-bit register                                        : 4
+# Latches                                              : 9
+ 1-bit latch                                           : 9
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 24
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 10
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 20
+ 1-bit xor2                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc>.
+Reading core <../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc>.
+Reading core <../../../../QBLink/QBLink/cores/serializationFifo.ngc>.
+Loading core <QBLtxFIFO> for timing and area information for instance <QBlink_TX_FIFO_W32R8>.
+Loading core <CMD_FIFO_w8r32> for timing and area information for instance <QBlink_RX_FIFO_W8R32>.
+Loading core <serializationFifo> for timing and area information for instance <U_SerializationFifo>.
+Loading core <serializationFifo> for timing and area information for instance <U_SerializationFifo>.
+INFO:Xst:2261 - The FF/Latch <dataWord_0> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_1> 
+INFO:Xst:2261 - The FF/Latch <dataWord_2> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_3> 
+INFO:Xst:2261 - The FF/Latch <dataWord_4> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_5> 
+INFO:Xst:2261 - The FF/Latch <dataWord_6> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_7> 
+INFO:Xst:2261 - The FF/Latch <dataWord_1> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_0> 
+INFO:Xst:2261 - The FF/Latch <dataWord_8> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_9> 
+INFO:Xst:2261 - The FF/Latch <dataWord_3> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_2> 
+INFO:Xst:2261 - The FF/Latch <dataWord_5> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_4> 
+INFO:Xst:2261 - The FF/Latch <dataWord_7> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_6> 
+INFO:Xst:2261 - The FF/Latch <dataWord_9> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_8> 
+WARNING:Xst:1710 - FF/Latch <dc_cmd_29> (without init value) has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <S6SerialInterfaceIn>.
+The following registers are absorbed into counter <r_slipCount>: 1 register on signal <r_slipCount>.
+Unit <S6SerialInterfaceIn> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SCRODQB_Top>.
+INFO:Xst:3231 - The small RAM <Mram__n0276> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 5-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <CommState>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram__n0281> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <CtrlState>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SCRODQB_Top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 4x5-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 2
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 174
+ Flip-Flops                                            : 174
+# Comparators                                          : 1
+ 16-bit comparator greater                             : 1
+# Multiplexers                                         : 23
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 10
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
+# Xors                                                 : 20
+ 1-bit xor2                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dc_cmd_29> (without init value) has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dataWord_0> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_1> 
+INFO:Xst:2261 - The FF/Latch <dataWord_2> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_3> 
+INFO:Xst:2261 - The FF/Latch <dataWord_4> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_5> 
+INFO:Xst:2261 - The FF/Latch <dataWord_6> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_7> 
+INFO:Xst:2261 - The FF/Latch <dataWord_1> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_0> 
+INFO:Xst:2261 - The FF/Latch <dataWord_8> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_9> 
+INFO:Xst:2261 - The FF/Latch <dataWord_3> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_2> 
+INFO:Xst:2261 - The FF/Latch <dataWord_5> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_4> 
+INFO:Xst:2261 - The FF/Latch <dataWord_7> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_6> 
+INFO:Xst:2261 - The FF/Latch <dataWord_9> in Unit <S6SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_8> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <comm_process/U_SerialInterfaceIn/FSM_0> on signal <r_state[1:2]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ reset_s     | 00
+ read_word_s | 01
+ bitslip_s   | 11
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <comm_process/U_ByteLink/FSM_1> on signal <r_state[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ reset_s    | 00
+ training_s | 01
+ locked_s   | 10
+------------------------
+WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceOut>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceIn>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SCRODQB_Top> ...
+
+Optimizing unit <QBlink> ...
+
+Optimizing unit <S6SerialInterfaceOut> ...
+
+Optimizing unit <S6SerialInterfaceIn> ...
+
+Optimizing unit <ByteLink> ...
+
+Optimizing unit <Encode8b10b> ...
+
+Optimizing unit <Decode8b10b> ...
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_7> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_8> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_9> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_10> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_11> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_12> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_13> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_14> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_15> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_16> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_17> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_18> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_19> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_20> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_21> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_22> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_15> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_14> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_13> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_12> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_11> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_10> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_9> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_SerialInterfaceIn/r_slipCount_8> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_31> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_30> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_29> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_28> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_27> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_26> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_25> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_24> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <comm_process/U_ByteLink/r_alignCnt_23> has a constant value of 0 in block <SCRODQB_Top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SCRODQB_Top, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/QBlink_TX_FIFO_W32R8> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/QBlink_RX_FIFO_W8R32> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/U_SerialInterfaceIn/U_SerializationFifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <comm_process/U_SerialInterfaceOut/U_SerializationFifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 149
+ Flip-Flops                                            : 149
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SCRODQB_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 501
+#      GND                         : 9
+#      INV                         : 22
+#      LUT1                        : 18
+#      LUT2                        : 127
+#      LUT3                        : 57
+#      LUT4                        : 65
+#      LUT5                        : 44
+#      LUT6                        : 80
+#      MUXCY                       : 46
+#      MUXF7                       : 5
+#      VCC                         : 2
+#      XORCY                       : 26
+# FlipFlops/Latches                : 557
+#      FD                          : 55
+#      FDC                         : 205
+#      FDCE                        : 99
+#      FDP                         : 57
+#      FDPE                        : 11
+#      FDR                         : 66
+#      FDRE                        : 53
+#      IDDR2                       : 1
+#      LD                          : 8
+#      ODDR2                       : 2
+# RAMS                             : 5
+#      RAMB16BWER                  : 3
+#      RAMB8BWER                   : 2
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 5
+#      IBUFDS                      : 1
+#      IBUFGDS                     : 1
+#      OBUFDS                      : 3
+# DCMs                             : 2
+#      DCM_SP                      : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx150tfgg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             557  out of  184304     0%  
+ Number of Slice LUTs:                  413  out of  92152     0%  
+    Number used as Logic:               413  out of  92152     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    729
+   Number with an unused Flip Flop:     172  out of    729    23%  
+   Number with an unused LUT:           316  out of    729    43%  
+   Number of fully used LUT-FF pairs:   241  out of    729    33%  
+   Number of unique control sets:        72
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    396     2%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                4  out of    268     1%  
+    Number using Block RAM only:          4
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------+--------------------------+-------+
+Clock Signal                                                           | Clock buffer(FF name)    | Load  |
+-----------------------------------------------------------------------+--------------------------+-------+
+CommState[1]_PWR_67_o_Mux_80_o(CommState[1]_PWR_67_o_Mux_80_o1:O)      | NONE(*)(sync)            | 1     |
+CtrlState[1]_GND_78_o_Mux_93_o(Mmux_CtrlState[1]_GND_78_o_Mux_93_o11:O)| NONE(*)(nxt_CTRLState_1) | 2     |
+CommState[1]_PWR_68_o_Mux_82_o(Mmux_CommState[1]_PWR_68_o_Mux_82_o11:O)| NONE(*)(nxtState_1)      | 2     |
+MASTER_CLK_P                                                           | DCM_SP:CLKFX             | 421   |
+Mram__n0276(Mram__n027612:O)                                           | NONE(*)(dc_cmd_31)       | 1     |
+Mram__n02761(Mram__n0276111:O)                                         | NONE(*)(rd_req)          | 1     |
+Mram__n02763(Mram__n027631:O)                                          | NONE(*)(dc_cmd_valid)    | 1     |
+MASTER_CLK_P                                                           | DCM_SP:CLKFX+DCM_SP:CLKFX| 138   |
+-----------------------------------------------------------------------+--------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.489ns (Maximum Frequency: 286.644MHz)
+   Minimum input arrival time before clock: 1.801ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MASTER_CLK_P'
+  Clock period: 3.489ns (frequency: 286.644MHz)
+  Total number of paths / destination ports: 3418 / 1304
+-------------------------------------------------------------------------
+Delay:               3.489ns (Levels of Logic = 4)
+  Source:            comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (FF)
+  Destination:       comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (FF)
+  Source Clock:      MASTER_CLK_P rising
+  Destination Clock: MASTER_CLK_P rising
+
+  Data Path: comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i to comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.447   0.616  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (empty)
+     end scope: 'comm_process/U_SerialInterfaceOut/U_SerializationFifo:empty'
+     INV:I->O              4   0.206   1.028  comm_process/U_SerialInterfaceOut/fifoEmpty_INV_4_o1_INV_0 (comm_process/U_SerialInterfaceOut/fifoEmpty_INV_4_o)
+     begin scope: 'comm_process/U_SerialInterfaceOut/U_SerializationFifo:rd_en'
+     LUT5:I0->O            1   0.203   0.684  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/comp0_comp1_OR_6_o3 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/comp0_comp1_OR_6_o3)
+     LUT5:I3->O            2   0.203   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/comp0_comp1_OR_6_o4 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/comp0_comp1_OR_6_o)
+     FDP:D                     0.102          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+    ----------------------------------------
+    Total                      3.489ns (1.161ns logic, 2.328ns route)
+                                       (33.3% logic, 66.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MASTER_CLK_P'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.801ns (Levels of Logic = 1)
+  Source:            RX_DC_P (PAD)
+  Destination:       comm_process/U_SerialInterfaceIn/IDDR2_inst (FF)
+  Destination Clock: MASTER_CLK_P rising
+
+  Data Path: RX_DC_P to comm_process/U_SerialInterfaceIn/IDDR2_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           1   1.222   0.579  RX_DC_IBUF_inst (rx_dc)
+     IDDR2:D                   0.000          comm_process/U_SerialInterfaceIn/IDDR2_inst
+    ----------------------------------------
+    Total                      1.801ns (1.222ns logic, 0.579ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CommState[1]_PWR_67_o_Mux_80_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            sync (LATCH)
+  Destination:       SYNC_P (PAD)
+  Source Clock:      CommState[1]_PWR_67_o_Mux_80_o falling
+
+  Data Path: sync to SYNC_P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  sync (sync)
+     OBUFDS:I->O               2.571          SYNC_OBUFDS_inst (SYNC_P)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CommState[1]_PWR_67_o_Mux_80_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CommState[1]_PWR_68_o_Mux_82_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    9.112|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CtrlState[1]_GND_78_o_Mux_93_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    2.098|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MASTER_CLK_P
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+CommState[1]_PWR_68_o_Mux_82_o|         |    1.179|         |         |
+CtrlState[1]_GND_78_o_Mux_93_o|         |    1.179|         |         |
+MASTER_CLK_P                  |    5.397|         |    1.026|         |
+Mram__n0276                   |         |    1.970|         |         |
+Mram__n02761                  |         |    2.828|         |         |
+Mram__n02763                  |         |    2.934|         |         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n0276
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n02761
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Mram__n02763
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MASTER_CLK_P   |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.49 secs
+ 
+--> 
+
+Total memory usage is 4508496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :   64 (   0 filtered)
+

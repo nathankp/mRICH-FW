@@ -14,7 +14,7 @@ DESCRIPTION:
 Mode 0: sets detector to default values (DAC:0.95V and TH: 1550)
 Mode 1: Does Baseline scan over DAC range set below for selected raw HV or rechecks baseline if scan has already been done
 Mode 2: Does coincidence trigger rate scan for detector
-Mode 3: programs detector with best values form selected coincidence trigger rate
+Mode 3: programs detector with best values from selected coincidence trigger rate
 Mode 4: Plots old data
 
 NOTES: 
@@ -39,9 +39,9 @@ FF000000			# clearing state machine reset
 FF030080			# setting tx dac load period
 FF040140			# setting tx dac latch period
 FF050000			# clearing software trigger
-FF060000			# seting trigger mode to software
+FF060000			# setting trigger mode to software
 FF07000+asicMask	# set asic enable bits for readout
-FF08000F			# seting wait count for scrod acknowledge
+FF08000F			# setting wait count for scrod acknowledge
 FF090000			# setting readout window offset and direction
 FF0A0003			# setting number of windows to readout for each event
 FF0C0000			# disabling fixed window readout(15) and setting window offset to zero(8-0)
@@ -55,7 +55,7 @@ FF000000			# clearing reset
 FF0E0001			# clearing sampling window counter reset
 '''
 
-import sys
+import sys 
 import time
 import os
 import csv
@@ -67,11 +67,11 @@ SCRIPTPATH = os.path.dirname(os.path.abspath(__file__))
 sys.path.append( SCRIPTPATH+'/lib/')
 import linkEth
 
-
-#---------------- USAGE ----------------#
+#NATHAN: need to update ASIC masking to include 8 daughter cards
+#---------------- USAGE ----------------# 
 usageMSG="\nUsage:BMD_dac_calb.py <ASIC mask> <calibration mode> <rawHV> <ideal rate> <extra TH>\n"+\
 "where:\n"+\
-"ASIC mask : Binary mask for enabled asics:\n" +\
+"ASIC mask : Binary mask for enabled asics:\n" +\ 
 "            0=disable   1=dc1 only 2=dc2 only 3=dc 1&2\n"+\
 "            4=dc3 only  5=dc 1&3   6=dc 2&3   7=dc 1-3\n"+\
 "            8=dc4 only  9=dc 1&4   A=dc 2&4   B=dc 1,2&4\n"+\
@@ -118,14 +118,14 @@ port_pc = '28672'
 port_fpga = '24576'
 
 # Make UDP class for receiving/sending UDP Packets
-ctrl = linkEth.UDP(addr_fpga, port_fpga, addr_pc, port_pc, interface)
+ctrl = linkEth.UDP(addr_fpga, port_fpga, addr_pc, port_pc, interface) #Nathan: For PC to SCROD communication 
 ctrl.open()
 
 #-----------------------------------------------------------------------------------------------#
 #------- Declearing a function to readback registers to make code shorter-----------------------#
 #-----------------------------------------------------------------------------------------------#
 def readReg(asic,RegNo):
-	asic = int(asic)
+	asic = int(asic) 
 	#dc_num = hex(asic).split('x')[1] #no need to do this, TL
     dc_num = str(asic)
 	syncwd = "000000010253594e4300000000"
@@ -135,8 +135,8 @@ def readReg(asic,RegNo):
 	else:
 		cmd1 = dc_num+"ABCDABC"+dc_num+hex(int('D000000',16) | RegNo*(2**16)).split('x')[1]
 #	print cmd1
-	ctrl.send(syncwd+cmd1)
-	rcv = ctrl.receive(buffSize)
+	ctrl.send(syncwd+cmd1) #Nathan: Send command from PC to SCROD?
+	rcv = ctrl.receive(buffSize) #Nathan: Recieve SCROD Message?
 #	print rcv
 	trys = 3
 	for i in range(3):
@@ -145,7 +145,7 @@ def readReg(asic,RegNo):
 				print "\nDC#%d Reg#%d=DEADBEEF trys:%d" %(asic,RegNo,i)
 				return 0
 			else:
-				ctrl.send(syncwd+cmd1)
+				ctrl.send(syncwd+cmd1) 
 				rcv = ctrl.receive(buffSize)
 		else:
 			if asic == 0:
@@ -341,7 +341,7 @@ elif CalbMode == 1:
 
 		# setting all DACs to 2.5V and HV to selected value to start scan
 		ctrl.send(syncwd+cmd_dac_max)
-		time.sleep(.5)
+		time.sleep(.5)  
 		ctrl.send(syncwd+cmd_th_zero)
 		time.sleep(.5)
 
