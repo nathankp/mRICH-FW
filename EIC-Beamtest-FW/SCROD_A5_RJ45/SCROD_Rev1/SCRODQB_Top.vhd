@@ -68,13 +68,18 @@ entity SCRODQB_Top is
 end SCRODQB_Top;
 
 architecture Behavioral of SCRODQB_Top is
-signal dc_clk : STD_LOGIC;
+--PC communcation signals---
+signal tx_udp_data : STD_LOGIC_VECTOR(7 downto 0) :=(others => '0');
+signal tx_udp_valid : STD_LOGIC := '0';
+signal tx_udp_ready : STD_LOGIC := '0';
+signal rx_udp_data : STD_LOGIC_VECTOR(7 downto 0);
+signal rx_udp_valid : STD_LOGIC := '0';
+signal udp_usr_clk : STD_LOGIC := '0';
+---QBLink signals----
+signal dc_clk : STD_LOGIC; --outgoing Daughtercard clock
 signal QBstart_wr : STD_LOGIC; --internal flag to start transmission
 signal QBstart_rd : STD_LOGIC; --internal flag to prepare for readback
 signal reset : STD_LOGIC; -- SCROD reset (not yet implemented)
-signal internal_fpga_clk : STD_LOGIC; --fast clk 
-signal internal_data_clk : STD_LOGIC; -- QBLink timing clock
-signal sync : STD_LOGIC := '0'; -- Data capture trigger 
 signal trgLinkSync : STD_LOGIC; --QBLink status flag: trigger link synced between SCROD and DC 
 signal serialClkLck : STD_LOGIC; --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
 signal dc_cmd		 : STD_LOGIC_VECTOR(31 downto 0); --DC register command, input data to QBLink write-operation input FIFO
@@ -91,7 +96,12 @@ signal nxtState : CommStateType := IDLE; --communication SM next state
 signal CtrlState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
 signal nxt_CTRLState : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
 signal OUTPUT_REGISTER : GPR;
+--clocks (non udp) --
+signal internal_fpga_clk : STD_LOGIC; --fast clk 
+signal internal_data_clk : STD_LOGIC; -- QBLink timing clock
+--HW testing signals--
 constant correctData : STD_LOGIC_VECTOR(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
+signal sync : STD_LOGIC := '0'; -- Data capture trigger, real function to be determined
 
 begin
 --TRGLINK_SYNC <= trgLinkSync; 
@@ -162,7 +172,7 @@ port map (
 ------------------Ethernet Module-------------------------------------------
 ----------------------------------------------------------------------------
 ETH_MODULE: entity work.eth_top PORT MAP(
-      ext_user_clk   => clk,
+      ext_user_clk   => internal_fpga_clk,
 		--data to be sent to PC--
 	   tx_udp_data    => tx_udp_data,  
 		tx_udp_valid   => tx_udp_valid, 
@@ -187,9 +197,9 @@ ETH_MODULE: entity work.eth_top PORT MAP(
 		MGTCLK1N 		=> mgtclk1n);
 -----------------------------------------------------------------------------
 ------------------QBLink Module----------------------------------------------
---------------------------------- --------------------------------------------
+--------------------------------- -------------------------------------------
 
-comm_process : entity QBLink.QBLink                                                     
+comm_process : entity work.QBLink                                                     
 PORT MAP( 
 			 sstClk => internal_data_clk,
 			 rst => QB_rst,
@@ -203,8 +213,27 @@ PORT MAP(
 			 trgLinkSynced => trgLinkSync,
 			 serialClkLocked => serialClkLck
 			 );
+----------------------------------------------------------------------------
+----------------PC command Processing center--------------------------------
+----------------------------------------------------------------------------
+cmd_interpreter : entity work.cmd_center
+PORT MAP(
+			RX_UDP_DATA => rx_udp_data,
+			RX_UDP_VALID => rx_udp_valid,
+			UDP_CLK => udp_usr_clk,
+			TX_UDP_READY => tx_udp_ready,
+			DATA_CLK => internal_data_clk,
+			CLK => internal_fpga_clk,
+			TOP_BOT => OUTPUT_REGISTER(1)(0),
+			CONTROL_REG => OUTPUT_REGISTER,
+			COMMAND => dc_cmd,
+			QB_RDOUT => QBstart_rd,
+			QB_SEND => QBstart_wr,
+			TX_UDP_VALID => tx_udp_valid,
+			TX_UDP_DATA => tx_udp_data
+			);
 			
-COMM_SM : PROCESS(internal_data_clk, CommState, QBstart_wr, start_rd, dc_data) --Communication statemachine that controls QBLink 
+COMM_SM : PROCESS(internal_data_clk, CommState, QBstart_wr, QBstart_rd, dc_data) --Communication statemachine that controls QBLink 
 BEGIN
  --Sequential Process
  IF (rising_edge(internal_data_clk)) THEN		
@@ -215,12 +244,10 @@ BEGIN
 	WHEN IDLE =>
 		dc_cmd_valid <= '0'; --disable write to write-op FIFO
 		rd_req <= '0'; --disable readout 
-		dc_cmd <= (others => '0'); --reset DC command to all 0
 		IF (QBstart_wr = '1') THEN 
 			sync <= '0'; -- put DC in listening mode (DC recieves data, does not readback)
-			dc_cmd <= correctData; --load register value into QBLink
 			nxtState <= START_WRITE; 
-		ELSIF (start_rd = '1') THEN
+		ELSIF (QBstart_rd = '1') THEN
 			sync <= '1'; --trigger DC to readback register: Once DC register is written to, DC will start readingback
 			nxtState <= START_READ;
 		END IF;
@@ -238,36 +265,36 @@ BEGIN
 END PROCESS;
 
 ----- SCROD CONTROL STATE MACHINE: (12/27/2018) Replaces async inputs by automatically sequencing through control signaling-----
-CTRL_SM : PROCESS(CtrlState, internal_data_clk, trgLinkSync, dc_data)
-BEGIN 
-   IF (rising_edge(internal_data_clk)) THEN
-		CTRLState <= nxt_CTRLState;
-	END IF;
-	
-	CASE CtrlState IS
-		WHEN "00" => -- SCROD-DC communication on hold during QBLink training
-			QBstart_wr <= '0';
-			start_rd <= '0';
-			IF(trgLinkSync = '1') THEN --after DC trigger link (and clock) are synced are synced with SCROD
-				nxt_CTRLState <= "01"; 
-		   END IF;
-		WHEN "01" =>  -- initiate command send
-			QBstart_wr <= '1'; --SCROD in transmission mode  
-			start_rd <= '0'; --SCROD readback mode off
-		   nxt_CTRLState <= "10";
-		
-		WHEN "10" => 	--initiate readback
-			QBstart_wr <= '0'; --SCROD transmission mode off
-			start_rd <= '1'; --SCROD in readback mode
-			IF (dc_data = correctData) THEN --Until dc_data equals original command, stay in read state.
-				nxt_CtrlState <= "11";
-			END IF;
-		WHEN Others => --permanent IDLE state, requires reset of the board to leave (temperary)
-			QBstart_wr <= '0';
-			start_rd <= '0';
-			--Suggestion: add a reset input later to allow reset of the sequence w/o having to reprogram. 
-	END CASE;
-END PROCESS;
+--CTRL_SM : PROCESS(CtrlState, internal_data_clk, trgLinkSync, dc_data)
+--BEGIN 
+--   IF (rising_edge(internal_data_clk)) THEN
+--		CTRLState <= nxt_CTRLState;
+--	END IF;
+--	
+--	CASE CtrlState IS
+--		WHEN "00" => -- SCROD-DC communication on hold during QBLink training
+--			QBstart_wr <= '0';
+--			QBstart_rd <= '0';
+--			IF(trgLinkSync = '1') THEN --after DC trigger link (and clock) are synced are synced with SCROD
+--				nxt_CTRLState <= "01"; 
+--		   END IF;
+--		WHEN "01" =>  -- initiate command send
+--			QBstart_wr <= '1'; --SCROD in transmission mode  
+--			QBstart_rd <= '0'; --SCROD readback mode off
+--		   nxt_CTRLState <= "10";
+--		
+--		WHEN "10" => 	--initiate readback
+--			QBstart_wr <= '0'; --SCROD transmission mode off
+--			QBstart_rd <= '1'; --SCROD in readback mode
+--			IF (dc_data = correctData) THEN --Until dc_data equals original command, stay in read state.
+--				nxt_CtrlState <= "11";
+--			END IF;
+--		WHEN Others => --permanent IDLE state, requires reset of the board to leave (temperary)
+--			QBstart_wr <= '0';
+--			QBstart_rd <= '0';
+--			--Suggestion: add a reset input later to allow reset of the sequence w/o having to reprogram. 
+--	END CASE;
+--END PROCESS;
 
 END Behavioral;  
 

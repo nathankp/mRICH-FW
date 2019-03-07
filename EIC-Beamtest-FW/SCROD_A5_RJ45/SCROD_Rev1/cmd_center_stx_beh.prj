@@ -1,4 +1,0 @@
-vhdl isim_temp "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w8r32/CMD_FIFO_w8r32.vhd"
-vhdl isim_temp "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.vhd"
-vhdl isim_temp "../../../../QBLink/source/BMD_definitions.vhd"
-vhdl isim_temp "cmd_center.vhd"

@@ -10,6 +10,7 @@
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HMB_DC_QBTOP.vhd/BMD_autoinit_definitions</ClosedNode>
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HMB_DC_QBTOP.vhd/BMD_definitions</ClosedNode>
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HMB_DC_QBTOP.vhd/comm_process - QBlink - Behavioral</ClosedNode>
+         <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HODO_DC_QBTOP.vhd</ClosedNode>
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HODO_DC_QBTOP.vhd/BMD_autoinit_definitions</ClosedNode>
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HODO_DC_QBTOP.vhd/BMD_definitions</ClosedNode>
          <ClosedNode>/HMB_DC_QBTOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|mRICH_hodo_DC_V1|HMB_QBLink_proto|HODO_DC_QBTOP.vhd/comm_process - QBlink - Behavioral/U_ByteLink - ByteLink - rtl</ClosedNode>
@@ -41,7 +42,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000282000000010000000100000000000000000000000064ffffffff000000810000000000000001000002820000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000300000000010000000100000000000000000000000064ffffffff000000810000000000000001000003000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Analyze Design Using ChipScope</CurrentItem>
    </ItemView>
@@ -60,12 +61,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000300000000010001000100000000000000000000000064ffffffff000000810000000000000001000003000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>C:\Users\Kevin\Desktop\QBLink\QBLink\cores\serializationFifo.vhd</CurrentItem>
+      <CurrentItem>C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,13 +76,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000282000000010000000100000000000000000000000064ffffffff000000810000000000000001000002820000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000009b000000ef01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -89,13 +92,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000282000000010000000100000000000000000000000064ffffffff000000810000000000000001000002820000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
       <ClosedNodes>

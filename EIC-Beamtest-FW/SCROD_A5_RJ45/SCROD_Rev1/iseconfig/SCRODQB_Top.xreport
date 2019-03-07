@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-04T16:52:27</DateModified>
+  <DateModified>2019-03-07T12:41:22</DateModified>
   <ModuleName>SCRODQB_Top</ModuleName>
-  <SummaryTimeStamp>2019-02-26T17:14:40</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/iseconfig/SCRODQB_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2019-03-07T12:08:47</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/SCRODQB_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-21T17:50:11</DateInitialized>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>

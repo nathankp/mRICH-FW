@@ -43,12 +43,15 @@ entity cmd_center is
            UDP_CLK : in  STD_LOGIC;
            TX_UDP_READY : in  STD_LOGIC;
 			  DATA_CLK	:	IN STD_LOGIC;
+			  CLK			: IN STD_LOGIC;
 			  TOP_BOT   : IN STD_LOGIC;
+			  CONTROL_REG : OUT GPR;
            COMMAND : out  STD_LOGIC_VECTOR (31 downto 0);
-           QB_RDOUT : out  STD_LOGIC;
-           QB_SEND : out  STD_LOGIC;
+           QB_RDOUT : out  STD_LOGIC; -- in the future, will be std_logic_vector(7 downto 0); for 8 DC
+           QB_SEND : out  STD_LOGIC; -- in the future, will be std_logic_vector(7 downto 0); for 8 DC
            TX_UDP_VALID : out  STD_LOGIC;
-           TX_UPD_DATA : out  STD_LOGIC_VECTOR (7 downto 0));
+           TX_UDP_DATA : out  STD_LOGIC_VECTOR (7 downto 0)
+			  );
 end cmd_center;
 
 architecture Behavioral of cmd_center is
@@ -81,8 +84,8 @@ signal rx_fifo_empty  : std_logic:= '0';
 signal fifo_rd_en   			: std_logic:='0';
 signal fifo_empty   			: std_logic:='1';
 
-signal reg_fifo_din	:	std_logic_vector(31 downto 0):= x"0000"; --register readback FIFO din
-signal reg_fifo_dout : std_logic_vector(31 downto 0) := x"0000"; --register readback dataout
+signal reg_fifo_din	:	std_logic_vector(31 downto 0):= x"00000000"; --register readback FIFO din
+signal reg_fifo_dout : std_logic_vector(7 downto 0) := x"00"; --register readback dataout
 signal reg_fifo_wr_en : std_logic:= '0';
 signal reg_fifo_rd_en : std_logic:= '0';
 signal reg_fifo_rst :std_logic:='0';
@@ -95,10 +98,15 @@ signal dc_reg_dout  			: std_logic_vector(7 downto 0);
 signal dc_reg_empty 			: std_logic;
 signal dc_rx_data 			: std_logic;
 signal dc_rx 					: std_logic;
-
-
+signal dc_fifo_din   		: std_logic_vector(31 downto 0):=(others => '0'); 
+signal w1r8_fifo_dout  		: std_logic_vector(7 downto 0):=(others => '0');
+signal w18_fifo_empty 	 	: std_logic;
 signal top_bot_word : std_logic_vector(31 downto 0);
-
+--DC FIFO signals: Look at later!!!------
+signal DC_FIFO_DOUT : STD_LOGIC_VECTOR(31 downto 0);
+signal DC_FIFO_RD_EN : STD_LOGIC := '0';
+signal DC_FIFO_WR_EN : STD_LOGIC := '0';
+signal DC_FIFO_EMPTY	:	STD_LOGIC; --originally on port list, account for later.
 constant dc_fifo          : std_logic_vector(3 downto 0):=x"1";
 constant reg_fifo   			: std_logic_vector(3 downto 0):=x"2";
 constant waved_fifo   		: std_logic_vector(3 downto 0):=x"3";
@@ -133,7 +141,9 @@ signal CCState : Comm_Parse_state := IDLE; --Command Center's main statemachine 
 signal PCtxSt : eth_tx_st := idle;
 begin
 udp_usr_clk <= UDP_CLK;
-
+--temporarily disable QBLink ---
+QB_SEND <= '0';
+QB_RDOUT <= '0';
 					 
 proc_sync_cmd_hdr: process (udp_usr_clk) begin
 	if rising_edge(udp_usr_clk) then
@@ -182,6 +192,44 @@ REG_READ_BACK_FIFO : entity work.STATE_FIFO
     full   => open,
     empty  => reg_fifo_empty);
 	 
+--fifo for top DC plan
+DC_MAS_RX_FIFO_W1R8 : entity work.CMD_FIFO_w1r8
+  PORT MAP (
+	 rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => DATA_CLK,
+    din    => dc_fifo_din(0 downto 0), 
+    wr_en  => dc_fifo_wr_en,    
+    rd_en  => '1',        
+    dout   => w1r8_fifo_dout,            
+    full   => open,   
+    empty  => w18_fifo_empty);
+	 
+DC_MAS_RX_FIFO_W8R32 : entity work.CMD_FIFO_w8r32
+  PORT MAP (
+    rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => CLK,
+    din    => w1r8_fifo_dout,
+    wr_en  => dc_wr_en(2),
+    rd_en  => DC_FIFO_RD_EN,
+    dout   => DC_FIFO_DOUT,
+    full   => open,
+    empty  => DC_FIFO_EMPTY);
+
+DC_REG_FIFO_W1R8 : entity work.CMD_FIFO_w1r8
+  PORT MAP (
+	 rst    => dc_fifo_reset,
+    wr_clk => DATA_CLK,
+    rd_clk => udp_usr_clk,
+    din    => dc_fifo_din(0 downto 0), 
+    wr_en  => dc_fifo_wr_en,    
+    rd_en  => dc_reg_rd_en,        
+    dout   => dc_reg_dout,            
+    full   => open,   
+    empty  => dc_reg_empty);
+
+	 
 cmd_interpreter : process(DATA_CLK) begin
 if rising_edge(DATA_CLK) then
 	case CCState is
@@ -190,7 +238,6 @@ if rising_edge(DATA_CLK) then
 			reg_rb_en <= '0';
 			CCState <= IDLE;
 			if rx_fifo_empty = '0' then
-				rx_fifo_rd_en <= '1'; 
 				CCState <= CHECK_EMPTY;
 			end if;
 			
@@ -199,12 +246,12 @@ if rising_edge(DATA_CLK) then
 			output_reg(0)(0) <= '0';
 			CCState <= IDLE;
 			if rx_fifo_empty = '0' then
-				rx_fifo_rd_en <='0';
+				rx_fifo_rd_en <='1';
 				CCState <= LOAD_DC_NUM;
 			end if;
 		
 		when LOAD_DC_NUM => 
-			rx_fifo_empty <= '0';
+			rx_fifo_rd_en <= '0';
 			dc_num <= rx_fifo_data_out(31 downto 28);
 			CCState <= LOAD_DC_NUM1;
 			
@@ -213,11 +260,13 @@ if rising_edge(DATA_CLK) then
 			CCState <= LOAD_DATA;
 			
 		when LOAD_DATA =>
-			if dc_num = x"0" then
+			if dc_num = x"0" then 
 				cmd_type	<= rx_fifo_data_out(27 downto 24);
 				scrod_reg <= rx_fifo_data_out(23 downto 16);
 				reg_data <= rx_fifo_data_out(15 downto  0);
 				CCState <= CMD_CHECK;
+			else --temporary: SCROD only Register write and readback test 
+				CCState <= IDLE; -- do nothing and go back to IDLE, cmd_type, reg_data, and reg# will not be updated.
 			end if;
 			
 		when CMD_CHECK => 
@@ -241,7 +290,7 @@ end process;
 
 --sending data to PC---
 	 
-TX_UPD_DATA <= dc_reg_dout    when fifo_sel = dc_fifo   else
+TX_UDP_DATA <= dc_reg_dout    when fifo_sel = dc_fifo   else
 					wave_dout      when fifo_sel = waved_fifo else 
 					reg_fifo_dout  when fifo_sel = reg_fifo   else 
 					x"00"          when fifo_sel = footer     else x"A1";
@@ -279,7 +328,7 @@ if rising_edge(udp_usr_clk) then
 			end if;
 		
 		when fifo_rst =>
-			reg_fifo_rst <= '1';
+			reg_fifo_rst <= '0';
 			PCtxSt <= fifo_rst_wait;
 		
 		when fifo_rst_wait => 

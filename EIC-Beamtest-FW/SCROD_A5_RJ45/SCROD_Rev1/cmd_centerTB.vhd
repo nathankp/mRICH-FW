@@ -63,6 +63,7 @@ ARCHITECTURE behavior OF cmd_centerTB IS
    signal TX_UDP_READY : std_logic := '0';
    signal DATA_CLK : std_logic := '0';
    signal TOP_BOT : std_logic := '0';
+	signal PC_cmd : std_logic_vector(31 downto 0) := x"0F0A29AB";
 
  	--Outputs
    signal COMMAND : std_logic_vector(31 downto 0);
@@ -72,8 +73,8 @@ ARCHITECTURE behavior OF cmd_centerTB IS
    signal TX_UPD_DATA : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
-   constant UDP_CLK_period : time := 10 ns;
-   constant DATA_CLK_period : time := 10 ns;
+   constant UDP_CLK_period : time := 8 ns;
+   constant DATA_CLK_period : time := 50 ns;
  
 BEGIN
  
@@ -117,9 +118,30 @@ BEGIN
       wait for 100 ns;	
 
       wait for UDP_CLK_period*10;
-
-      -- insert stimulus here 
-
+		rx_udp_valid <= '1';
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(31 downto 24);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(23 downto 16);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(15 downto 8);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(7 downto 0);
+		rx_udp_valid <= '0';
+		wait for DATA_CLK_PERIOD*19;
+		wait until rising_edge(UDP_CLK);
+		PC_cmd <= x"0D0A29AB";
+		tx_udp_ready <= '1';
+		rx_udp_valid <= '1';
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(31 downto 24);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(23 downto 16);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(15 downto 8);
+		wait until rising_edge(UDP_CLK);
+		rx_udp_data <= PC_cmd(7 downto 0);
+		wait until rising_edge(UDP_CLK);
       wait;
    end process;
 

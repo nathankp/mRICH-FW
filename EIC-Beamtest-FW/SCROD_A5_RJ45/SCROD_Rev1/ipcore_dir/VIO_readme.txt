@@ -1,5 +1,5 @@
 The following files were generated for 'VIO' in directory
-C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\ipcore_dir\
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\ipcore_dir\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -34,6 +34,7 @@ Generate ISE subproject:
 
    * VIO.gise
    * VIO.xise
+   * _xmsgs/pn_parser.xmsgs
 
 Deliver Readme:
    Readme file for the IP.
