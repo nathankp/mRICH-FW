@@ -40,18 +40,18 @@ end ip_udp_rx_block;
 
 architecture rtl of ip_udp_rx_block is
 
-COMPONENT ip_rx_bram
-  PORT (
-    clka : IN STD_LOGIC;
-    ena : IN STD_LOGIC;
-    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
-  );
-END COMPONENT;
+--COMPONENT ip_rx_bram
+--  PORT (
+--    clka : IN STD_LOGIC;
+--    ena : IN STD_LOGIC;
+--    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+--    dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+--    clkb : IN STD_LOGIC;
+--    addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+--    doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+--  );
+--END COMPONENT;
 
 
 --function checksum(data, len : in std_logic_vector)
@@ -114,7 +114,7 @@ attribute keep of udp_checksum_debug : signal is "true";
 
 begin
 
-u_ip_rx_bram : ip_rx_bram
+u_ip_rx_bram : entity work.ip_rx_bram
   PORT MAP (
     clka => axi_tclk,
     ena => '1',

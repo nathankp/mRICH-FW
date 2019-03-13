@@ -87,23 +87,23 @@ signal rx_temac_last_1 : std_logic;
 
 signal debug : std_logic;
 
-COMPONENT eth_head_fifo
-  PORT (
-    clk : IN STD_LOGIC;
-    rst : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    wr_en : IN STD_LOGIC;
-    rd_en : IN STD_LOGIC;
-    dout : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-    full : OUT STD_LOGIC;
-    empty : OUT STD_LOGIC;
-	 data_count : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
-  );
-END COMPONENT;
+--COMPONENT eth_head_fifo
+--  PORT (
+--    clk : IN STD_LOGIC;
+--    rst : IN STD_LOGIC;
+--    din : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+--    wr_en : IN STD_LOGIC;
+--    rd_en : IN STD_LOGIC;
+--    dout : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+--    full : OUT STD_LOGIC;
+--    empty : OUT STD_LOGIC;
+--	 data_count : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+--  );
+--END COMPONENT;
 
 begin
 
-eth_head_tx_fifo_1 : eth_head_fifo
+eth_head_tx_fifo_1 : entity work.eth_head_fifo
   PORT MAP (
     clk => axi_tclk,
     rst => not axi_tresetn,

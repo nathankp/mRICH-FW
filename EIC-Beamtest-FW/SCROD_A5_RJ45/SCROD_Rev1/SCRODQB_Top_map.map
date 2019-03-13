@@ -1,0 +1,153 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'SCRODQB_Top'
+
+Design Information
+------------------
+Command Line   : map -filter
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/fi
+lter.filter -intstyle ise -p xc6slx150t-fgg676-3 -w -logic_opt off -ol high -t 1
+-xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc
+off -power off -o SCRODQB_Top_map.ncd SCRODQB_Top.ngd SCRODQB_Top.pcf 
+Target Device  : xc6slx150t
+Target Package : fgg676
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Mar 12 13:40:00 2019
+
+Mapping design into LUTs...
+Running directed packing...
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTRXN" (Pad Signal = MGTRXN)
+   	BUF symbol "MGTRXN_IBUF" (Output Signal = MGTRXN_IBUF)
+   Component type involved: IOB
+   Site Location involved: C7
+   Site Type involved: IPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTRXP" (Pad Signal = MGTRXP)
+   	BUF symbol "MGTRXP_IBUF" (Output Signal = MGTRXP_IBUF)
+   Component type involved: IOB
+   Site Location involved: D7
+   Site Type involved: IPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTTXN" (Pad Signal = MGTTXN)
+   	BUF symbol "MGTTXN_OBUF" (Output Signal = MGTTXN)
+   Component type involved: IOB
+   Site Location involved: A6
+   Site Type involved: OPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTTXP" (Pad Signal = MGTTXP)
+   	BUF symbol "MGTTXP_OBUF" (Output Signal = MGTTXP)
+   Component type involved: IOB
+   Site Location involved: B6
+   Site Type involved: OPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTCLK1N" (Pad Signal = MGTCLK1N)
+   	BUF symbol "MGTCLK1N_IBUF" (Output Signal = MGTCLK1N_IBUF)
+   Component type involved: IOB
+   Site Location involved: C11
+   Site Type involved: IPAD
+
+ERROR:Pack:1107 - Pack was unable to combine the symbols listed below into a
+   single IOB component because the site type selected is not compatible. 
+
+   Further explanation:
+   The component type is determined by the types of logic and the properties and
+   configuration of the logic it contains. In this case an IO component of type
+   IOB was chosen because the IO contains symbols and/or properties consistent
+   with input, output, or bi-directional usage and contains no other symbols or
+   properties that require a more specific IO component type. Please double
+   check that the types of logic elements and all of their relevant properties
+   and configuration options are compatible with the physical site type of the
+   constraint.
+
+   Summary:
+   Symbols involved:
+   	PAD symbol "MGTCLK1P" (Pad Signal = MGTCLK1P)
+   	BUF symbol "MGTCLK1P_IBUF" (Output Signal = MGTCLK1P_IBUF)
+   Component type involved: IOB
+   Site Location involved: D11
+   Site Type involved: IPAD
+
+
+Mapping completed.
+See MAP report file "SCRODQB_Top_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   6
+Number of warnings :   0

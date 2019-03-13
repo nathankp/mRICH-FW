@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="tri_mode_eth_mac_v5_5">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-3-7T21:8:30</timestamp>
+    <timestamp>2017-8-24T23:24:43</timestamp>
     <pin polarity="Input" x="0" y="80" name="glbl_rstn" />
     <pin polarity="Input" x="0" y="112" name="rx_axi_rstn" />
     <pin polarity="Input" x="0" y="144" name="tx_axi_rstn" />

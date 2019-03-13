@@ -1,5 +1,4 @@
 # Output products list for <eth_head_fifo>
-_xmsgs\pn_parser.xmsgs
 eth_head_fifo.asy
 eth_head_fifo.gise
 eth_head_fifo.ngc

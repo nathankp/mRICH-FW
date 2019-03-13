@@ -7,14 +7,14 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: tri_mode_eth_mac_v5_5.vhd
--- /___/   /\     Timestamp: Thu Mar 07 11:08:28 2019
+-- /___/   /\     Timestamp: Thu Aug 24 13:24:42 2017
 -- \   \  /  \ 
 --  \___\/\___\
 --             
--- Command	: -w -sim -ofmt vhdl "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.ngc" "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.vhd" 
+-- Command	: -w -sim -ofmt vhdl "C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.ngc" "C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.vhd" 
 -- Device	: 6slx150tfgg676-3
--- Input file	: C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.ngc
--- Output file	: C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.vhd
+-- Input file	: C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.ngc
+-- Output file	: C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/tri_mode_eth_mac_v5_5.vhd
 -- # of Entities	: 1
 -- Design Name	: tri_mode_eth_mac_v5_5
 -- Xilinx	: C:\Xilinx\14.7\ISE_DS\ISE\

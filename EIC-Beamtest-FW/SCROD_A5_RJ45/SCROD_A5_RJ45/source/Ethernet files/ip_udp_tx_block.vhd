@@ -51,19 +51,19 @@ end ip_udp_tx_block;
 
 architecture Behavioral of ip_udp_tx_block is
 
-COMPONENT tx_fifo
-  PORT (
-    clk : IN STD_LOGIC;
-    rst : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    wr_en : IN STD_LOGIC;
-    rd_en : IN STD_LOGIC;
-    dout : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-    full : OUT STD_LOGIC;
-    empty : OUT STD_LOGIC;
-    data_count : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
-  );
-END COMPONENT;
+--COMPONENT tx_fifo
+--  PORT (
+--    clk : IN STD_LOGIC;
+--    rst : IN STD_LOGIC;
+--    din : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+--    wr_en : IN STD_LOGIC;
+--    rd_en : IN STD_LOGIC;
+--    dout : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+--    full : OUT STD_LOGIC;
+--    empty : OUT STD_LOGIC;
+--    data_count : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+--  );
+--END COMPONENT;
 
 -- state machine stuff
 type tx_state_type is (tx_pre_idle, tx_idle, tx_collect_data, tx_ip_checksum, tx_udp_checksum, tx_ip_header, tx_udp_header, tx_output_data, tx_int_pckt, tx_wait, tx_frag_ip_checksum, tx_frag_ip_header, tx_frag_output_data);
@@ -134,7 +134,7 @@ signal debug4 : std_logic;
 begin
 
 
-u_tx_fifo : tx_fifo
+u_tx_fifo : entity work.tx_fifo
   PORT MAP (
     clk => axi_tclk,
     rst => not axi_tresetn,

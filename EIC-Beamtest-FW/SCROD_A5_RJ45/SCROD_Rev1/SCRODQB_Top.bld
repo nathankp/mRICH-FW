@@ -1,0 +1,80 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd
+../SCROD_A5_RJ45/source/Ethernet files/IPcores -sd
+../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd ../SCROD_A5_RJ45/source/Ethernet
+files/IPcores/pcs_pma_s6_gtpwizard/implement -sd
+../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
+../../../../QBLink/QBLink/ipcore_dir -sd ../../../../QBLink/QBLink/cores -sd
+../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT -nt timestamp -uc
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45_tampered/
+HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
+
+Reading NGO file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
+_cs.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45_tampered
+/HMB_SciFi_SCROD.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
+   constraints were not derived. This TNM is used in the following user groups
+   or specifications:
+   <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO "D_CLK" TIG;>
+   <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO "J_CLK" TIG;>
+
+INFO:ConstraintSystem:178 - TNM 'MASTER_CLK_P', used in period specification
+   'TS_MASTER_CLK_P', was traced into DCM_SP instance
+   CLK_FANOUT_1TO2/dcm_sp_inst. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_internal_data_clk = PERIOD "internal_data_clk"
+   TS_MASTER_CLK_P / 0.2 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'MASTER_CLK_P', used in period specification
+   'TS_MASTER_CLK_P', was traced into DCM_SP instance
+   CLK_FANOUT_1TO2/dcm_sp_inst. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_CLK_FANOUT_1TO2_clk0 = PERIOD "CLK_FANOUT_1TO2_clk0"
+   TS_MASTER_CLK_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'internal_data_clk', used in period
+   specification 'TS_internal_data_clk', was traced into DCM_SP instance
+   comm_process/U_ClockGenByteLink/dcm_sp_inst. The following new TNM groups and
+   period specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD
+   "comm_process_U_ClockGenByteLink_clkfx" TS_internal_data_clk / 5 HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (46.882) was
+   detected for the CLKIN_PERIOD attribute on DCM
+   "comm_process/U_ClockGenByteLink/dcm_sp_inst".  This does not match the
+   PERIOD constraint value (40 ns.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   2
+
+Total memory usage is 4467528 kilobytes
+
+Writing NGD file "SCRODQB_Top.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "SCRODQB_Top.bld"...

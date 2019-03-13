@@ -7,14 +7,14 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: pcs_pma.vhd
--- /___/   /\     Timestamp: Thu Mar 07 11:17:41 2019
+-- /___/   /\     Timestamp: Thu Aug 24 13:22:32 2017
 -- \   \  /  \ 
 --  \___\/\___\
 --             
--- Command	: -w -sim -ofmt vhdl "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.ngc" "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.vhd" 
+-- Command	: -w -sim -ofmt vhdl "C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.ngc" "C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.vhd" 
 -- Device	: 6slx150tfgg676-3
--- Input file	: C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.ngc
--- Output file	: C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.vhd
+-- Input file	: C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.ngc
+-- Output file	: C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/source/Ethernet files/IPcores/tmp/_cg/pcs_pma.vhd
 -- # of Entities	: 1
 -- Design Name	: pcs_pma
 -- Xilinx	: C:\Xilinx\14.7\ISE_DS\ISE\

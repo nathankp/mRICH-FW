@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="ip_rx_bram">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-3-7T21:14:15</timestamp>
+    <timestamp>2017-6-16T20:53:19</timestamp>
     <pin polarity="Input" x="0" y="80" name="addra[9:0]" />
     <pin polarity="Input" x="0" y="112" name="dina[7:0]" />
     <pin polarity="Input" x="0" y="144" name="ena" />

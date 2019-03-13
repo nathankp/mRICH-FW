@@ -192,232 +192,232 @@ architecture Behavioral of eth is
   -- Component Declaration for the Tri-Mode EMAC core FIFO Block wrapper
   ------------------------------------------------------------------------------
 
-   component tri_mode_eth_mac_v5_5_fifo_block
-   generic (
-      C_BASE_ADDRESS             : std_logic_vector(31 downto 0) := X"00000000"
-   );
-   port(
-      gtx_clk                    : in  std_logic;
-      -- asynchronous reset
-      glbl_rstn                  : in  std_logic;
-      rx_axi_rstn                : in  std_logic;
-      tx_axi_rstn                : in  std_logic;
-
-      -- Receiver Statistics Interface
-      -----------------------------------------
-      rx_reset                   : out std_logic;
-      rx_statistics_vector       : out std_logic_vector(27 downto 0);
-      rx_statistics_valid        : out std_logic;
-
-      -- Receiver (AXI-S) Interface
-      ------------------------------------------
-      rx_fifo_clock              : in  std_logic;
-      rx_fifo_resetn             : in  std_logic;
-      rx_axis_fifo_tdata         : out std_logic_vector(7 downto 0);
-      rx_axis_fifo_tvalid        : out std_logic;
-      rx_axis_fifo_tready        : in  std_logic;
-      rx_axis_fifo_tlast         : out std_logic;
-
-      -- Transmitter Statistics Interface
-      --------------------------------------------
-      tx_reset                   : out std_logic;
-      tx_ifg_delay               : in  std_logic_vector(7 downto 0);
-      tx_statistics_vector       : out std_logic_vector(31 downto 0);
-      tx_statistics_valid        : out std_logic;
-
-      -- Transmitter (AXI-S) Interface
-      ---------------------------------------------
-      tx_fifo_clock              : in  std_logic;
-      tx_fifo_resetn             : in  std_logic;
-      tx_axis_fifo_tdata         : in  std_logic_vector(7 downto 0);
-      tx_axis_fifo_tvalid        : in  std_logic;
-      tx_axis_fifo_tready        : out std_logic;
-      tx_axis_fifo_tlast         : in  std_logic;
-
-      -- MAC Control Interface
-      --------------------------
-      pause_req                  : in  std_logic;
-      pause_val                  : in  std_logic_vector(15 downto 0);
-
-      -- GMII Interface
-      -------------------
-      gmii_txd                  : out std_logic_vector(7 downto 0);
-      gmii_tx_en                : out std_logic;
-      gmii_tx_er                : out std_logic;
-      gmii_rxd                  : in  std_logic_vector(7 downto 0);
-      gmii_rx_dv                : in  std_logic;
-      gmii_rx_er                : in  std_logic;
-      clk_enable                : in  std_logic;
-      speedis100                : out std_logic;
-      speedis10100              : out std_logic;
-      -- MDIO Interface
-      -------------------
-      mdio_i                    : in  std_logic;
-      mdio_o                    : out std_logic;
-      mdio_t                    : out std_logic;
-      mdc                       : out std_logic;
-
-      -- AXI-Lite Interface
-      -----------------
-      s_axi_aclk                : in  std_logic;
-      s_axi_resetn              : in  std_logic;
-
-      s_axi_awaddr              : in  std_logic_vector(31 downto 0);
-      s_axi_awvalid             : in  std_logic;
-      s_axi_awready             : out std_logic;
-
-      s_axi_wdata               : in  std_logic_vector(31 downto 0);
-      s_axi_wvalid              : in  std_logic;
-      s_axi_wready              : out std_logic;
-
-      s_axi_bresp               : out std_logic_vector(1 downto 0);
-      s_axi_bvalid              : out std_logic;
-      s_axi_bready              : in  std_logic;
-
-      s_axi_araddr              : in  std_logic_vector(31 downto 0);
-      s_axi_arvalid             : in  std_logic;
-      s_axi_arready             : out std_logic;
-
-      s_axi_rdata               : out std_logic_vector(31 downto 0);
-      s_axi_rresp               : out std_logic_vector(1 downto 0);
-      s_axi_rvalid              : out std_logic;
-      s_axi_rready              : in  std_logic
-
-   );
-   end component;
+--   component tri_mode_eth_mac_v5_5_fifo_block
+--   generic (
+--      C_BASE_ADDRESS             : std_logic_vector(31 downto 0) := X"00000000"
+--   );
+--   port(
+--      gtx_clk                    : in  std_logic;
+--      -- asynchronous reset
+--      glbl_rstn                  : in  std_logic;
+--      rx_axi_rstn                : in  std_logic;
+--      tx_axi_rstn                : in  std_logic;
+--
+--      -- Receiver Statistics Interface
+--      -----------------------------------------
+--      rx_reset                   : out std_logic;
+--      rx_statistics_vector       : out std_logic_vector(27 downto 0);
+--      rx_statistics_valid        : out std_logic;
+--
+--      -- Receiver (AXI-S) Interface
+--      ------------------------------------------
+--      rx_fifo_clock              : in  std_logic;
+--      rx_fifo_resetn             : in  std_logic;
+--      rx_axis_fifo_tdata         : out std_logic_vector(7 downto 0);
+--      rx_axis_fifo_tvalid        : out std_logic;
+--      rx_axis_fifo_tready        : in  std_logic;
+--      rx_axis_fifo_tlast         : out std_logic;
+--
+--      -- Transmitter Statistics Interface
+--      --------------------------------------------
+--      tx_reset                   : out std_logic;
+--      tx_ifg_delay               : in  std_logic_vector(7 downto 0);
+--      tx_statistics_vector       : out std_logic_vector(31 downto 0);
+--      tx_statistics_valid        : out std_logic;
+--
+--      -- Transmitter (AXI-S) Interface
+--      ---------------------------------------------
+--      tx_fifo_clock              : in  std_logic;
+--      tx_fifo_resetn             : in  std_logic;
+--      tx_axis_fifo_tdata         : in  std_logic_vector(7 downto 0);
+--      tx_axis_fifo_tvalid        : in  std_logic;
+--      tx_axis_fifo_tready        : out std_logic;
+--      tx_axis_fifo_tlast         : in  std_logic;
+--
+--      -- MAC Control Interface
+--      --------------------------
+--      pause_req                  : in  std_logic;
+--      pause_val                  : in  std_logic_vector(15 downto 0);
+--
+--      -- GMII Interface
+--      -------------------
+--      gmii_txd                  : out std_logic_vector(7 downto 0);
+--      gmii_tx_en                : out std_logic;
+--      gmii_tx_er                : out std_logic;
+--      gmii_rxd                  : in  std_logic_vector(7 downto 0);
+--      gmii_rx_dv                : in  std_logic;
+--      gmii_rx_er                : in  std_logic;
+--      clk_enable                : in  std_logic;
+--      speedis100                : out std_logic;
+--      speedis10100              : out std_logic;
+--      -- MDIO Interface
+--      -------------------
+--      mdio_i                    : in  std_logic;
+--      mdio_o                    : out std_logic;
+--      mdio_t                    : out std_logic;
+--      mdc                       : out std_logic;
+--
+--      -- AXI-Lite Interface
+--      -----------------
+--      s_axi_aclk                : in  std_logic;
+--      s_axi_resetn              : in  std_logic;
+--
+--      s_axi_awaddr              : in  std_logic_vector(31 downto 0);
+--      s_axi_awvalid             : in  std_logic;
+--      s_axi_awready             : out std_logic;
+--
+--      s_axi_wdata               : in  std_logic_vector(31 downto 0);
+--      s_axi_wvalid              : in  std_logic;
+--      s_axi_wready              : out std_logic;
+--
+--      s_axi_bresp               : out std_logic_vector(1 downto 0);
+--      s_axi_bvalid              : out std_logic;
+--      s_axi_bready              : in  std_logic;
+--
+--      s_axi_araddr              : in  std_logic_vector(31 downto 0);
+--      s_axi_arvalid             : in  std_logic;
+--      s_axi_arready             : out std_logic;
+--
+--      s_axi_rdata               : out std_logic_vector(31 downto 0);
+--      s_axi_rresp               : out std_logic_vector(1 downto 0);
+--      s_axi_rvalid              : out std_logic;
+--      s_axi_rready              : in  std_logic
+--
+--   );
+--   end component;
 	
 	  ------------------------------------------------------------------------------
   -- Component Declaration for the Core Block (core wrapper).
   ------------------------------------------------------------------------------
-   component pcs_pma_block
-      generic (
-      -- Set to 1 to Speed up the GTP simulation
-      SIM_GTPRESET_SPEEDUP : integer   := 0
-      );
-      port(
-
-      gtpclkout            : out std_logic;                    -- tranceiver output clock made available to the FPGA fabric.
-
-      --------------------------------------------------------------------------
-      -- Core connected to GTP0
-      --------------------------------------------------------------------------
-
-      gtpreset0            : in  std_logic;                    -- Full System GTP Reset
-
-      -- GMII Interface
-      -----------------
-      gmii_txd0            : in std_logic_vector(7 downto 0);  -- Transmit data from client MAC.
-      gmii_tx_en0          : in std_logic;                     -- Transmit control signal from client MAC.
-      gmii_tx_er0          : in std_logic;                     -- Transmit control signal from client MAC.
-      gmii_rxd0            : out std_logic_vector(7 downto 0); -- Received Data to client MAC.
-      gmii_rx_dv0          : out std_logic;                    -- Received control signal to client MAC.
-      gmii_rx_er0          : out std_logic;                    -- Received control signal to client MAC.
-      gmii_isolate0        : out std_logic;                    -- Tristate control to electrically isolate GMII.
-
-      -- Management: MDIO Interface
-      -----------------------------
-      mdc0                 : in    std_logic;                  -- Management Data Clock
-      mdio0_i              : in    std_logic;                  -- Management Data In
-      mdio0_o              : out   std_logic;                  -- Management Data Out
-      mdio0_t              : out   std_logic;                  -- Management Data Tristate
-      phyad0               : in std_logic_vector(4 downto 0);  -- Port address for MDIO.
-      configuration_vector0: in std_logic_vector(4 downto 0);  -- Alternative to MDIO interface.
-      configuration_valid0 : in std_logic;                     -- Validation signal for Config vector.
-
-      -- General IO's
-      ---------------
-      link_timer_value0    : in std_logic_vector(8 downto 0);  -- Programmable Auto-Negotiation Link Timer Control
-      an_interrupt0        : out std_logic;                    -- Interrupt to processor to signal that Auto-Negotiation has completed
-      an_adv_config_vector0: in std_logic_vector(15 downto 0); -- Alternate interface to program REG4 (AN ADV)
-      an_adv_config_val0   : in std_logic;                     -- Validation signal for AN ADV
-      an_restart_config0   : in std_logic;                     -- Alternate signal to modify AN restart bit in REG0
-      status_vector0       : out std_logic_vector(15 downto 0); -- Core status.
-      reset0               : in std_logic;                     -- Asynchronous reset for entire core.
-      signal_detect0       : in std_logic;                     -- Input from PMD to indicate presence of optical input.
-
-      --------------------------------------------------------------------------
-      -- Tranceiver interfaces
-      --------------------------------------------------------------------------
-      clkin                : in std_logic;                     -- tranceiver 125MHz clock, very high quality.
-      userclk2             : in std_logic;                     -- 125MHz reference clock for all core logic..
-
-      txp0                 : out std_logic;                    -- Differential +ve of serial transmission from PMA to PMD.
-      txn0                 : out std_logic;                    -- Differential -ve of serial transmission from PMA to PMD.
-      rxp0                 : in std_logic;                     -- Differential +ve for serial reception from PMD to PMA.
-      rxn0                 : in std_logic;                     -- Differential -ve for serial reception from PMD to PMA.
-
-      txp1                 : out std_logic;                    -- Differential +ve of serial transmission from PMA to PMD.
-      txn1                 : out std_logic;                    -- Differential -ve of serial transmission from PMA to PMD.
-      rxp1                 : in std_logic;                     -- Differential +ve for serial reception from PMD to PMA.
-      rxn1                 : in std_logic                      -- Differential -ve for serial reception from PMD to PMA.
-      );
-
-   end component;
+--   component pcs_pma_block
+--      generic (
+--      -- Set to 1 to Speed up the GTP simulation
+--      SIM_GTPRESET_SPEEDUP : integer   := 0
+--      );
+--      port(
+--
+--      gtpclkout            : out std_logic;                    -- tranceiver output clock made available to the FPGA fabric.
+--
+--      --------------------------------------------------------------------------
+--      -- Core connected to GTP0
+--      --------------------------------------------------------------------------
+--
+--      gtpreset0            : in  std_logic;                    -- Full System GTP Reset
+--
+--      -- GMII Interface
+--      -----------------
+--      gmii_txd0            : in std_logic_vector(7 downto 0);  -- Transmit data from client MAC.
+--      gmii_tx_en0          : in std_logic;                     -- Transmit control signal from client MAC.
+--      gmii_tx_er0          : in std_logic;                     -- Transmit control signal from client MAC.
+--      gmii_rxd0            : out std_logic_vector(7 downto 0); -- Received Data to client MAC.
+--      gmii_rx_dv0          : out std_logic;                    -- Received control signal to client MAC.
+--      gmii_rx_er0          : out std_logic;                    -- Received control signal to client MAC.
+--      gmii_isolate0        : out std_logic;                    -- Tristate control to electrically isolate GMII.
+--
+--      -- Management: MDIO Interface
+--      -----------------------------
+--      mdc0                 : in    std_logic;                  -- Management Data Clock
+--      mdio0_i              : in    std_logic;                  -- Management Data In
+--      mdio0_o              : out   std_logic;                  -- Management Data Out
+--      mdio0_t              : out   std_logic;                  -- Management Data Tristate
+--      phyad0               : in std_logic_vector(4 downto 0);  -- Port address for MDIO.
+--      configuration_vector0: in std_logic_vector(4 downto 0);  -- Alternative to MDIO interface.
+--      configuration_valid0 : in std_logic;                     -- Validation signal for Config vector.
+--
+--      -- General IO's
+--      ---------------
+--      link_timer_value0    : in std_logic_vector(8 downto 0);  -- Programmable Auto-Negotiation Link Timer Control
+--      an_interrupt0        : out std_logic;                    -- Interrupt to processor to signal that Auto-Negotiation has completed
+--      an_adv_config_vector0: in std_logic_vector(15 downto 0); -- Alternate interface to program REG4 (AN ADV)
+--      an_adv_config_val0   : in std_logic;                     -- Validation signal for AN ADV
+--      an_restart_config0   : in std_logic;                     -- Alternate signal to modify AN restart bit in REG0
+--      status_vector0       : out std_logic_vector(15 downto 0); -- Core status.
+--      reset0               : in std_logic;                     -- Asynchronous reset for entire core.
+--      signal_detect0       : in std_logic;                     -- Input from PMD to indicate presence of optical input.
+--
+--      --------------------------------------------------------------------------
+--      -- Tranceiver interfaces
+--      --------------------------------------------------------------------------
+--      clkin                : in std_logic;                     -- tranceiver 125MHz clock, very high quality.
+--      userclk2             : in std_logic;                     -- 125MHz reference clock for all core logic..
+--
+--      txp0                 : out std_logic;                    -- Differential +ve of serial transmission from PMA to PMD.
+--      txn0                 : out std_logic;                    -- Differential -ve of serial transmission from PMA to PMD.
+--      rxp0                 : in std_logic;                     -- Differential +ve for serial reception from PMD to PMA.
+--      rxn0                 : in std_logic;                     -- Differential -ve for serial reception from PMD to PMA.
+--
+--      txp1                 : out std_logic;                    -- Differential +ve of serial transmission from PMA to PMD.
+--      txn1                 : out std_logic;                    -- Differential -ve of serial transmission from PMA to PMD.
+--      rxp1                 : in std_logic;                     -- Differential +ve for serial reception from PMD to PMA.
+--      rxn1                 : in std_logic                      -- Differential -ve for serial reception from PMD to PMA.
+--      );
+--
+--   end component;
 	
    -----------------------------------------------------------------------------
    -- Component declaration for the reset synchroniser
    -----------------------------------------------------------------------------
-   component pcs_pma_reset_sync
-   port (
-      reset_in             : in  std_logic;                    -- Active high asynchronous reset
-      clk                  : in  std_logic;                    -- clock to be sync'ed to
-      reset_out            : out std_logic                     -- "Synchronised" reset signal
-   );
-   end component;
-	
+--   component pcs_pma_reset_sync
+--   port (
+--      reset_in             : in  std_logic;                    -- Active high asynchronous reset
+--      clk                  : in  std_logic;                    -- clock to be sync'ed to
+--      reset_out            : out std_logic                     -- "Synchronised" reset signal
+--   );
+--   end component;
+--	
 	
 	-----------------------------------------------
 	-- AXI-lite SM stuff that I have no idea about
 	-----------------------------------------------
 	
-   component tri_mode_eth_mac_v5_5_axi_lite_sm
-   generic (
-      MAC_BASE_ADDR             : std_logic_vector(31 downto 0) := X"00000000"
-   );
-   port (
-      s_axi_aclk                : in  std_logic;
-      s_axi_resetn              : in  std_logic;
-
-      mac_speed                 : in  std_logic_vector(1 downto 0);
-      update_speed              : in  std_logic;
-      serial_command            : in  std_logic;
-      serial_response           : out std_logic;
-      phy_loopback              : in  std_logic;
-
-      s_axi_awaddr              : out std_logic_vector(31  downto 0);
-      s_axi_awvalid             : out std_logic;
-      s_axi_awready             : in  std_logic;
-
-      s_axi_wdata               : out std_logic_vector(31 downto 0);
-      s_axi_wvalid              : out std_logic;
-      s_axi_wready              : in  std_logic;
-
-      s_axi_bresp               : in  std_logic_vector(1 downto 0);
-      s_axi_bvalid              : in  std_logic;
-      s_axi_bready              : out std_logic;
-
-      s_axi_araddr              : out std_logic_vector(31 downto 0);
-      s_axi_arvalid             : out std_logic;
-      s_axi_arready             : in  std_logic;
-
-      s_axi_rdata               : in  std_logic_vector(31 downto 0);
-      s_axi_rresp               : in  std_logic_vector(1 downto 0);
-      s_axi_rvalid              : in  std_logic;
-      s_axi_rready              : out std_logic
-   );
-   end component;
+--   component tri_mode_eth_mac_v5_5_axi_lite_sm
+--   generic (
+--      MAC_BASE_ADDR             : std_logic_vector(31 downto 0) := X"00000000"
+--   );
+--   port (
+--      s_axi_aclk                : in  std_logic;
+--      s_axi_resetn              : in  std_logic;
+--
+--      mac_speed                 : in  std_logic_vector(1 downto 0);
+--      update_speed              : in  std_logic;
+--      serial_command            : in  std_logic;
+--      serial_response           : out std_logic;
+--      phy_loopback              : in  std_logic;
+--
+--      s_axi_awaddr              : out std_logic_vector(31  downto 0);
+--      s_axi_awvalid             : out std_logic;
+--      s_axi_awready             : in  std_logic;
+--
+--      s_axi_wdata               : out std_logic_vector(31 downto 0);
+--      s_axi_wvalid              : out std_logic;
+--      s_axi_wready              : in  std_logic;
+--
+--      s_axi_bresp               : in  std_logic_vector(1 downto 0);
+--      s_axi_bvalid              : in  std_logic;
+--      s_axi_bready              : out std_logic;
+--
+--      s_axi_araddr              : out std_logic_vector(31 downto 0);
+--      s_axi_arvalid             : out std_logic;
+--      s_axi_arready             : in  std_logic;
+--
+--      s_axi_rdata               : in  std_logic_vector(31 downto 0);
+--      s_axi_rresp               : in  std_logic_vector(1 downto 0);
+--      s_axi_rvalid              : in  std_logic;
+--      s_axi_rready              : out std_logic
+--   );
+--   end component;
 
   ------------------------------------------------------------------------------
   -- Component declaration for the reset synchroniser
   ------------------------------------------------------------------------------
-  component tri_mode_eth_mac_v5_5_reset_sync
-  port (
-     reset_in                   : in  std_logic;    -- Active high asynchronous reset
-     enable                     : in  std_logic;
-     clk                        : in  std_logic;    -- clock to be sync'ed to
-     reset_out                  : out std_logic     -- "Synchronised" reset signal
-  );
-  end component;
+--  component tri_mode_eth_mac_v5_5_reset_sync
+--  port (
+--     reset_in                   : in  std_logic;    -- Active high asynchronous reset
+--     enable                     : in  std_logic;
+--     clk                        : in  std_logic;    -- clock to be sync'ed to
+--     reset_out                  : out std_logic     -- "Synchronised" reset signal
+--  );
+--  end component;
 	
   
 	
@@ -630,7 +630,7 @@ begin
    ------------------------------------------------------------------------------
    -- Instantiate the TRIMAC core FIFO Block wrapper
    ------------------------------------------------------------------------------
-   trimac_fifo_block : tri_mode_eth_mac_v5_5_fifo_block
+   trimac_fifo_block : entity work.tri_mode_eth_mac_v5_5_fifo_block
     generic map(
         C_BASE_ADDRESS              => MAC_BASE_ADDR
     )
@@ -725,7 +725,7 @@ begin
   -- Instantiate the Core Block (core wrapper).
   ------------------------------------------------------------------------------
 
-  core_wrapper : pcs_pma_block
+  core_wrapper : entity work.pcs_pma_block
     generic map
     (
       -- Simulation attribute: this setting does not affect the hardware
@@ -779,7 +779,7 @@ begin
 		rxn0_1 <= rxn0;
 
    -- tranceiver 0
-   gtpreset_gen0 : pcs_pma_reset_sync
+   gtpreset_gen0 : entity work.pcs_pma_reset_sync
    port map(
       clk       => userclk2_1,
       reset_in  => phy_reset, --reset0,
@@ -787,7 +787,7 @@ begin
    );
 
 	-- AXI-lite SM stuff
-    axi_lite_controller : tri_mode_eth_mac_v5_5_axi_lite_sm
+    axi_lite_controller : entity work.tri_mode_eth_mac_v5_5_axi_lite_sm
     generic map (
        MAC_BASE_ADDR                => MAC_BASE_ADDR
     )
@@ -876,7 +876,7 @@ s_axi_aclk <= userclk2_1;
 
    -----------------
    -- AXI-Lite reset
-   axi_lite_reset_gen : tri_mode_eth_mac_v5_5_reset_sync
+   axi_lite_reset_gen : entity work.tri_mode_eth_mac_v5_5_reset_sync
    port map (
        clk              => s_axi_aclk,
        enable           => '1',
@@ -902,7 +902,7 @@ s_axi_aclk <= userclk2_1;
   
   -----------------
   -- data check reset
-   chk_reset_gen : tri_mode_eth_mac_v5_5_reset_sync
+   chk_reset_gen : entity work.tri_mode_eth_mac_v5_5_reset_sync
    port map (
        clk              => userclk2_1, --gtx_clk_bufg,
        enable           => '1',
@@ -927,7 +927,7 @@ s_axi_aclk <= userclk2_1;
 
   -----------------
   -- gtx_clk reset
-   gtx_reset_gen : tri_mode_eth_mac_v5_5_reset_sync
+   gtx_reset_gen : entity work.tri_mode_eth_mac_v5_5_reset_sync
    port map (
        clk              => userclk2_1, --gtx_clk_bufg,
        enable           => '1',

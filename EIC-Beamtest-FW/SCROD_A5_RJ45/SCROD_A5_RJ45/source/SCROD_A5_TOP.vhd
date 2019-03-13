@@ -12,7 +12,7 @@
 -- Revision			: 1
 -- (Nathan) added RJ45 ports 
 ----------------------------------------------------------------------------------
-Library IEEE;
+library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_unsigned.all;
@@ -21,9 +21,7 @@ Library UNISIM;
 use UNISIM.vcomponents.all;
 use work.all;
 use work.BMD_definitions.all;
-use work.UtilityPkg.all;
-library UNISIM;
-use UNISIM.VComponents.all;
+
 entity SCROD_A5_TOP is
 	Port ( --incoming signals 
 		MASTER_CLK_P     : IN STD_LOGIC;--input clock either 127MHz form osc or remote clock form 
@@ -40,14 +38,14 @@ entity SCROD_A5_TOP is
 		MGTRXN           : IN STD_LOGIC;
 		MGTTXP           : OUT STD_LOGIC;
 		MGTTXN           : OUT STD_LOGIC;
-		MGTCLK0P   		  : IN STD_LOGIC;  --OBSOLETE?
-		MGTCLK0N  		  : IN STD_LOGIC; --OBSOLETE?
+		MGTCLK0P   		  : IN STD_LOGIC; 
+		MGTCLK0N  		  : IN STD_LOGIC; 
 		MGTCLK1P         : IN STD_LOGIC;
 		MGTCLK1N         : IN STD_LOGIC;
 		--ethernaet signals--needs to change direction later on depending on use
 --		RJ45_ACK_P		  : IN  STD_LOGIC_VECTOR(3 DOWNTO 0);--ACK for CDT that scrod received trigger
 --		RJ45_ACK_N       : IN  STD_LOGIC;
-		RJ45_TRG_P       : OUT STD_LOGIC;--local trigger to CDT, ie.. muon hit on both planes
+		RJ45_TRG_P       : OUT STD_LOGIC;--local trigger to CDT, ie.. moun hit on both plans
 		RJ45_TRG_N       : OUT STD_LOGIC;
 		RJ45_CLK_P       : IN STD_LOGIC;--remote clock for system 125MHz
 		RJ45_CLK_N       : IN STD_LOGIC;
@@ -61,17 +59,23 @@ entity SCROD_A5_TOP is
 		RAM_OEn			  : OUT STD_LOGIC := '1';                       
 		RAM_WEn			  : OUT STD_LOGIC := '1';
       --RJ45 (Nathan)
-		TX_DC_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		TX_DC_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);	
-		DC_CLK_P    : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   
-		DC_CLK_N    : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);	
-		SYNC_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)
-		SYNC_N  : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)	
-		RX_DC_P      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		RX_DC_N      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		SC_DC_RX_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		SC_DC_RX_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);	
+		SC_DC_DATA_P     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   
+		SC_DC_DATA_N     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);	
+		RJ45_ACK_P       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)
+		RJ45_ACK_N       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --Ack to Hodoscope DC (according to HODOSCOPE TOP)	
+		ORed_Trig_P      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		ORed_Trig_N      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_P			 : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AUX_N		     : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-		
+		SC_DC_CLK_P      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		SC_DC_CLK_N      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+		DC_SC_TX_P       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		DC_SC_TX_N       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		DC_SC_DATA_P     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		DC_SC_DATA_N     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		--general IO pins
 		J1_079_Y6 		  : OUT STD_LOGIC;--needs to change direction later on depending on use
 		J1_078_AA3 		  : OUT STD_LOGIC;
 		J1_077_AA4 		  : OUT STD_LOGIC;
@@ -87,12 +91,20 @@ entity SCROD_A5_TOP is
 		J1_061_AB11_N    : OUT STD_LOGIC;
 		J1_060_AE2_P     : OUT STD_LOGIC;
 		J1_059_AE1_N     : OUT STD_LOGIC;
-		
+--		J1_056_AC2_P     : OUT STD_LOGIC;
+--		J1_055_AC1_N     : OUT STD_LOGIC;
+--		J1_052_AA2_P     : OUT STD_LOGIC;
+--		J1_051_AA1_N     : OUT STD_LOGIC;
+--		J1_048_W2_P      : IN STD_LOGIC;
+--		J1_047_W1_N      : OUT STD_LOGIC;
+--		J1_044_U2_P      : IN STD_LOGIC;
+--		J1_043_U1_N      : OUT STD_LOGIC;
+--		J1_042_R2 	     : OUT STD_LOGIC
 		--Triggers from DCs
 		E_TRIG           : IN  STD_LOGIC_VECTOR(3 downto 0);
 		SCROD_TRIG       : OUT STD_LOGIC_VECTOR(3 downto 0);
 		CDT_TRIG         : OUT STD_LOGIC);
-		end SCROD_A5_TOP;
+end SCROD_A5_TOP;
 
 architecture Behavioral of SCROD_A5_TOP is
 --declearing outgoing internal signals
@@ -141,8 +153,6 @@ signal DC_SC_DATA       : std_logic_vector(3 downto 0);
  
 signal BOT_TRIG_i:std_logic;
 
-
-
  
 --attribute keep: boolean;
 --attribute keep of TOP_SC_DC_DOUT: signal is true;
@@ -161,7 +171,7 @@ begin
 --    CLK_OUT2 => internal_data_clk);--25MHz
 
 RJ45_ACK_N<="0000";
-SYNC_P<="1111";
+RJ45_ACK_P<="1111";
 
 
 CLK_FANOUT_1TO2 : entity work.CLK_FANOUT
@@ -178,7 +188,7 @@ CLK_FANOUT_1TO2 : entity work.CLK_FANOUT
 	 
 clk_sync: process(internal_fpga_clk) begin
 if rising_edge(internal_fpga_clk) then
-	data_clk <= internal_data_clk; --NATHAN: Keep data_clk
+	data_clk <= internal_data_clk; 
 end if;
 end process;	 
 	 
@@ -252,8 +262,8 @@ port map (
 en_sc2dc_OBUFDS_inst : OBUFDS 
 generic map (IOSTANDARD => "LVDS_25")
 port map (
-	O  => tx_DC_P(i),    
-	OB => TX_DC_N(i),  
+	O  => SC_DC_RX_P(i),    
+	OB => SC_DC_RX_N(i),  
 	I  => SC_DC_RX(i)); 
 
 	
@@ -266,6 +276,7 @@ end generate;
 oops_reset       <= OUTPUT_REGISTER(0)(0);--master reset
 top_bot_word     <= OUTPUT_REGISTER(1)(0);--lets SCROD knows if its the 1:top or 0:bot
 asic_enable_bits <= OUTPUT_REGISTER(7)(3 downto 0);
+
 comm_process : entity work.SCROD_DC_COMM
 PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
 			 DATA_CLK        	=> data_clk,         --20MHz clock
@@ -318,6 +329,9 @@ PORT MAP (CLK             	=> internal_fpga_clk,--125MHz clock
 			 mgtclk1p 			=> MGTCLK1P,
 			 mgtclk1n 			=> MGTCLK1N);
 
+
+
+
 ------------------------------------------------------------------------------------------------------------
 -----------------------------communication from SCROD to CDTC-----------------------------------------------
 ------------------------------------------------------------------------------------------------------------
@@ -326,6 +340,16 @@ RJ45_TRG_P <= cdt_trigger;
 RJ45_TRG_N <= not cdt_trigger;
 CDT_TRIG   <= cdt_trigger;
 
+				  		
+--CDT_ACK_OFBUFD : IBUFDS
+--	generic map (
+--		DIFF_TERM    => FALSE, -- Differential Termination
+--		IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
+--		IOSTANDARD   => "DEFAULT")
+--	port map (
+--		O  => cdt_ack, -- Buffer output
+--		I  => RJ45_ACK_P, -- Diff_p buffer input (connect directly to top-level port)
+--		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
 
 ------------------------------------------------------------------------------------------------------------
 -----------------------------loading dc wave data into internal BRAM----------------------------------------
@@ -364,33 +388,4 @@ DC_READOUT_DEMUX: entity work.DataDemuxControl
 
 end Behavioral;
 
-----Outdated ports:
---	SC_DC_CLK_P      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
---		SC_DC_CLK_N      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
---		DC_SC_TX_P       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
---		DC_SC_TX_N       : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
---		DC_SC_DATA_P     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
---		DC_SC_DATA_N     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-		--general IO pins
---		J1_056_AC2_P     : OUT STD_LOGIC;
---		J1_055_AC1_N     : OUT STD_LOGIC;
---		J1_052_AA2_P     : OUT STD_LOGIC;
---		J1_051_AA1_N     : OUT STD_LOGIC;
---		J1_048_W2_P      : IN STD_LOGIC;
---		J1_047_W1_N      : OUT STD_LOGIC;
---		J1_044_U2_P      : IN STD_LOGIC;
---		J1_043_U1_N      : OUT STD_LOGIC;
---		J1_042_R2 	     : OUT STD_LOGIC
 
-				  		
---CDT_ACK_OFBUFD : IBUFDS
---	generic map (
---		DIFF_TERM    => FALSE, -- Differential Termination
---		IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE) setting for referenced I/O standards
---		IOSTANDARD   => "DEFAULT")
---	port map (
---		O  => cdt_ack, -- Buffer output
---		I  => SYNC_P, -- Diff_p buffer input (connect directly to top-level port)
---		IB => RJ45_ACK_N); -- Diff_n buffer input (connect directly to top-level port)
-
---Outdated DC-SCROD Communication

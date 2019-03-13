@@ -31,11 +31,8 @@ use ieee.std_logic_arith.all;
 Library UNISIM;
 use UNISIM.vcomponents.all;
 use work.all;
-use work.BMD_definitions.all; --need to include BMD_definitions in addition to work
+use work.BMD_definitions.all; --need to include BMD_definitions in addition to work.all
 use work.UtilityPkg.all;
-
--- excluded libraries used in Khanh's original project: 
---use work.BMD_definitions.all;
 
 entity SCRODQB_Top is
 	Port(			
@@ -120,6 +117,7 @@ CLK_FANOUT_1TO2 : entity work.CLK_FANOUT --generates fpga fast clcok and slow da
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------
 -----------------------------------------------------------------
+
 TX_OBUFDS_inst : OBUFDS --instantiation of OBUFDS buffer: tx_dc is converted to differential output
 generic map (IOSTANDARD => "LVDS_25")
 port map (
@@ -168,9 +166,9 @@ port map (
 	I => RX_DC_P,
 	IB => RX_DC_N);	
 
-----------------------------------------------------------------------------	
-------------------Ethernet Module-------------------------------------------
-----------------------------------------------------------------------------
+--------------------------------------------------------------------------	
+----------------Ethernet Module-------------------------------------------
+--------------------------------------------------------------------------
 ETH_MODULE: entity work.eth_top PORT MAP(
       ext_user_clk   => internal_fpga_clk,
 		--data to be sent to PC--
@@ -186,7 +184,7 @@ ETH_MODULE: entity work.eth_top PORT MAP(
 		MGTTXFAULT 		=> MGTTXFAULT,  
 		MGTMOD0 			=> MGTMOD0,
 		MGTLOS 			=> MGTLOS,
-		MGTTXDIS  		=> MGTTXDIS ,
+		MGTTXDIS  		=> MGTTXDIS,
 		MGTMOD2 			=> MGTMOD2,
 		MGTMOD1 			=> MGTMOD1,
 		MGTRXP 			=> MGTRXP,

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -100,7 +100,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../../QBLink/QBLink/cores" "../../QBLink/QBLink/ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+Cores Search Directories           : {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../../../../QBLink/QBLink/ipcore_dir" "../../../../QBLink/QBLink/cores" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
 
 =========================================================================
 
@@ -135,21 +135,6 @@ Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\pcs_pma_s6_gtpwizard_top.vhd" into library work
 Parsing entity <pcs_pma_s6_gtpwizard_top>.
 Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard_top>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
-Parsing entity <CLK_FANOUT>.
-Parsing architecture <xilinx> of entity <clk_fanout>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\cores\clockgen_bytelink.vhd" into library work
-Parsing entity <clockgen_bytelink>.
-Parsing architecture <xilinx> of entity <clockgen_bytelink>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\cores\serializationFifo.vhd" into library work
-Parsing entity <serializationFifo>.
-Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\ipcore_dir\QBLtxFIFO.vhd" into library work
-Parsing entity <QBLtxFIFO>.
-Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\cores\CMD_FIFO_w8r32.vhd" into library work
-Parsing entity <CMD_FIFO_w8r32>.
-Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CMD_FIFO_w1r8\CMD_FIFO_w1r8.vhd" into library work
 Parsing entity <CMD_FIFO_w1r8>.
 Parsing architecture <CMD_FIFO_w1r8_a> of entity <cmd_fifo_w1r8>.
@@ -201,6 +186,9 @@ Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCRO
 Parsing entity <pcs_pma_transceiver_A>.
 Parsing architecture <structural> of entity <pcs_pma_transceiver_a>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma.vhd" into library work
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\UtilityPkg.vhd" into library work
+Parsing package <UtilityPkg>.
+Parsing package body <UtilityPkg>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" into library work
 Parsing entity <tri_mode_eth_mac_v5_5_fifo_block>.
 Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_fifo_block>.
@@ -213,9 +201,15 @@ Parsing architecture <rtl> of entity <pcs_pma_reset_sync>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd" into library work
 Parsing entity <pcs_pma_block>.
 Parsing architecture <block_level> of entity <pcs_pma_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\UtilityPkg.vhd" into library work
-Parsing package <UtilityPkg>.
-Parsing package body <UtilityPkg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" into library work
+Parsing entity <Encode8b10b>.
+Parsing architecture <rtl> of entity <encode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" into library work
+Parsing entity <Decode8b10b>.
+Parsing architecture <rtl> of entity <decode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\serializationFifo.vhd" into library work
+Parsing entity <serializationFifo>.
+Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" into library work
 Parsing entity <ip_udp_tx_block>.
 Parsing architecture <Behavioral> of entity <ip_udp_tx_block>.
@@ -230,54 +224,60 @@ WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_R
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" into library work
 Parsing entity <eth>.
 Parsing architecture <Behavioral> of entity <eth>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Encode8b10b.vhd" into library work
-Parsing entity <Encode8b10b>.
-Parsing architecture <rtl> of entity <encode8b10b>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" into library work
-Parsing entity <Decode8b10b>.
-Parsing architecture <rtl> of entity <decode8b10b>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd" into library work
+Parsing entity <SyncBit>.
+Parsing architecture <structural> of entity <syncbit>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" into library work
+Parsing entity <S6SerialInterfaceOut>.
+Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" into library work
+Parsing entity <S6SerialInterfaceIn>.
+Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" into library work
+Parsing entity <ByteLink>.
+Parsing architecture <rtl> of entity <bytelink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\ipcore_dir\QBLtxFIFO.vhd" into library work
+Parsing entity <QBLtxFIFO>.
+Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\CMD_FIFO_w8r32.vhd" into library work
+Parsing entity <CMD_FIFO_w8r32>.
+Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd" into library work
+Parsing entity <clockgen_bytelink>.
+Parsing architecture <xilinx> of entity <clockgen_bytelink>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" into library work
 Parsing entity <udp>.
 Parsing architecture <Behavioral> of entity <udp>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\SyncBit.vhd" into library work
-Parsing entity <SyncBit>.
-Parsing architecture <structural> of entity <syncbit>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd" into library work
-Parsing entity <S6SerialInterfaceOut>.
-Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" into library work
-Parsing entity <S6SerialInterfaceIn>.
-Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\ByteLink.vhd" into library work
-Parsing entity <ByteLink>.
-Parsing architecture <rtl> of entity <bytelink>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\BMD_definitions.vhd" into library work
-Parsing package <BMD_definitions>.
-Parsing package body <BMD_definitions>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" into library work
+Parsing entity <QBlink>.
+Parsing architecture <Behavioral> of entity <qblink>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" into library work
 Parsing entity <cmd_center>.
 Parsing architecture <Behavioral> of entity <cmd_center>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" into library work
 Parsing entity <eth_top>.
 Parsing architecture <Behavioral> of entity <eth_top>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\QBlink.vhd" into library work
-Parsing entity <QBlink>.
-Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
+Parsing entity <CLK_FANOUT>.
+Parsing architecture <xilinx> of entity <clk_fanout>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
 Parsing architecture <Behavioral> of entity <scrodqb_top>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 145: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 142: Actual for formal port c1 is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 87: Using initial value '0' for qb_rst since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 84: Using initial value '0' for qb_rst since it is never assigned
 
 Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
 
@@ -418,6 +418,8 @@ Elaborating entity <pcs_pma_reset_sync> (architecture <rtl>) with generics from 
 Elaborating entity <tri_mode_eth_mac_v5_5_axi_lite_sm> (architecture <rtl>) with generics from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" Line 493. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" Line 834: Assignment to enable_address_swap ignored, since the identifier is never used
+
+Elaborating entity <tri_mode_eth_mac_v5_5_reset_sync> (architecture <rtl>) with generics from library <work>.
 WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" Line 914: Assignment to chk_resetn ignored, since the identifier is never used
 
 Elaborating entity <ip_udp_tx_block> (architecture <Behavioral>) with generics from library <work>.
@@ -450,25 +452,25 @@ Elaborating entity <SyncBit> (architecture <structural>) with generics from libr
 Elaborating entity <S6SerialInterfaceOut> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <serializationFifo> (architecture <serializationFifo_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd" Line 97. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 97. Case statement is complete. others clause is never selected
 
 Elaborating entity <S6SerialInterfaceIn> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 166. Case statement is complete. others clause is never selected
 
 Elaborating entity <ByteLink> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <Encode8b10b> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Encode8b10b.vhd" Line 132: Assignment to illegalk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" Line 132: Assignment to illegalk ignored, since the identifier is never used
 
 Elaborating entity <Decode8b10b> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 107: Assignment to cdei ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 111: Assignment to p22enin ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 112: Assignment to p22ei ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 113: Assignment to p31dnenin ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 114: Assignment to p31e ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 149: Assignment to alt7 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd" Line 156: Assignment to k28 ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\ByteLink.vhd" Line 198. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 107: Assignment to cdei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 111: Assignment to p22enin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 112: Assignment to p22ei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 113: Assignment to p31dnenin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 114: Assignment to p31e ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 149: Assignment to alt7 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 156: Assignment to k28 ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" Line 198. Case statement is complete. others clause is never selected
 
 Elaborating entity <QBLtxFIFO> (architecture <QBLtxFIFO_a>) from library <work>.
 
@@ -496,31 +498,31 @@ Synthesizing Unit <SCRODQB_Top>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd".
 WARNING:Xst:647 - Input <MGTCLK0P> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MGTCLK0N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 202: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 202: Output port <trgLinkSynced> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 202: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<19>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<18>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<17>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<16>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<15>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<14>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<13>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<12>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<11>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<10>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<9>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<8>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<7>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<6>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<5>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<4>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<3>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<2>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 219: Output port <CONTROL_REG<0>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <trgLinkSynced> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<19>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<18>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<17>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<16>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<15>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<14>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<13>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<12>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<11>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<10>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<9>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<8>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<7>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<6>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<5>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<4>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<3>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<2>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<0>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <CommState>.
     Found 4x4-bit Read Only RAM for signal <_n0042>
-    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_9_o_Mux_15_o> created at line 243.
+    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_9_o_Mux_15_o> created at line 240.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd_valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rd_req>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <sync>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -544,19 +546,19 @@ Synthesizing Unit <eth_top>.
 WARNING:Xst:647 - Input <mgttxfault> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mgtmod0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mgtlos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <status_vector0> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <speedis100> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <speedis10100> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <tx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <rx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <serial_response> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <frame_error> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <frame_errorn> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <activity_flash> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <activity_flashn> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <an_interrupt0> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <txp1> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 190: Output port <txn1> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <status_vector0> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <speedis100> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <speedis10100> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <tx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <rx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <serial_response> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <frame_error> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <frame_errorn> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <activity_flash> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <activity_flashn> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <an_interrupt0> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <txp1> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <txn1> of the instance <udp> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <eth_top> synthesized.
@@ -570,8 +572,8 @@ Synthesizing Unit <udp>.
         mac_addr = "101010101011101111001100110111011110111011111111"
         dst_mac_addr = "101111100001000111100010010111001011000011010101"
 WARNING:Xst:647 - Input <rx_udp_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 114: Output port <tx_axis_fifo_tready> of the instance <eth_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 114: Output port <an_done> of the instance <eth_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 273: Output port <tx_axis_fifo_tready> of the instance <eth_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 273: Output port <an_done> of the instance <eth_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <frame_error> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <frame_errorn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <activity_flash> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -876,7 +878,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_vector_decode>.
 	inferred  47 Multiplexer(s).
 Unit <tri_mode_eth_mac_v5_5_vector_decode> synthesized.
 
-Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync>.
+Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync_1>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd".
         INITIALISE = "11"
     Set property "ASYNC_REG = TRUE" for signal <reset_sync_reg>.
@@ -889,7 +891,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync>.
     Set property "INIT = 1" for signal <reset_sync_reg2>.
     Summary:
 	no macro.
-Unit <tri_mode_eth_mac_v5_5_reset_sync> synthesized.
+Unit <tri_mode_eth_mac_v5_5_reset_sync_1> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd".
@@ -1445,6 +1447,21 @@ WARNING:Xst:647 - Input <s_axi_rresp> is never used. This port will be preserved
 	inferred   3 Finite State Machine(s).
 Unit <tri_mode_eth_mac_v5_5_axi_lite_sm> synthesized.
 
+Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync>.
+    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd".
+        INITIALISE = "11"
+    Set property "ASYNC_REG = TRUE" for signal <reset_sync_reg>.
+    Set property "RLOC = X0Y0" for signal <reset_sync_reg>.
+    Set property "shreg_extract = NO" for signal <reset_sync_reg>.
+    Set property "INIT = 1" for signal <reset_sync_reg>.
+    Set property "ASYNC_REG = TRUE" for signal <reset_sync_reg2>.
+    Set property "RLOC = X0Y0" for signal <reset_sync_reg2>.
+    Set property "shreg_extract = NO" for signal <reset_sync_reg2>.
+    Set property "INIT = 1" for signal <reset_sync_reg2>.
+    Summary:
+	no macro.
+Unit <tri_mode_eth_mac_v5_5_reset_sync> synthesized.
+
 Synthesizing Unit <ip_udp_tx_block>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd".
         ip_addr = "11000000101010000001010000000101"
@@ -1598,113 +1615,113 @@ WARNING:Xst:2935 - Signal 'udp_header<63:32>', unconnected in block 'ip_udp_tx_b
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit adder for signal <pre_idle_count[4]_GND_104_o_add_1_OUT> created at line 1241.
-    Found 17-bit adder for signal <tx_chksm[16]_GND_104_o_add_10_OUT> created at line 228.
-    Found 17-bit adder for signal <tx_chksm[16]_GND_104_o_add_12_OUT> created at line 232.
-    Found 16-bit adder for signal <fifo_data_count[15]_GND_104_o_add_14_OUT> created at line 1241.
-    Found 16-bit adder for signal <fifo_data_count[15]_GND_104_o_add_17_OUT> created at line 1241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_76_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_77_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_78_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_80_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_81_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_82_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_83_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_84_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_104_o_add_85_OUT> created at line 275.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1025_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1026_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1027_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1028_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1029_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1030_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1031_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1032_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1033_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1034_OUT> created at line 299.
-    Found 17-bit adder for signal <chksm_temp_2[16]_GND_104_o_add_1035_OUT> created at line 299.
-    Found 16-bit adder for signal <fifo_data_count[15]_GND_104_o_add_2133_OUT> created at line 1241.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2194_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2195_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2196_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2198_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2199_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2200_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2201_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2202_OUT> created at line 440.
-    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_104_o_add_2203_OUT> created at line 440.
-    Found 16-bit adder for signal <offset_count[15]_GND_104_o_add_3117_OUT> created at line 1241.
-    Found 16-bit adder for signal <ip_id[15]_GND_104_o_add_3120_OUT> created at line 1241.
-    Found 11-bit adder for signal <tx_count[10]_GND_104_o_add_3121_OUT> created at line 1241.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_10_OUT<16:0>> created at line 1308.
-    Found 9-bit subtractor for signal <GND_104_o_GND_104_o_sub_22_OUT<8:0>> created at line 272.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_29_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_31_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_33_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_37_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_39_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_41_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_43_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_45_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_47_OUT<16:0>> created at line 1308.
-    Found 9-bit subtractor for signal <GND_104_o_GND_104_o_sub_968_OUT<8:0>> created at line 296.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_975_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_977_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_979_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_981_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_983_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_985_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_987_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_989_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_991_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_993_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_995_OUT<16:0>> created at line 1308.
-    Found 7-bit subtractor for signal <GND_104_o_GND_104_o_sub_2098_OUT<6:0>> created at line 355.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2147_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2149_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2151_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2155_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2157_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2159_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2161_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2163_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_104_o_GND_104_o_sub_2165_OUT<16:0>> created at line 1308.
-    Found 9-bit subtractor for signal <GND_104_o_GND_104_o_sub_3088_OUT<8:0>> created at line 472.
-    Found 17-bit comparator greater for signal <GND_104_o_tx_chksm[16]_LessThan_8_o> created at line 224
-    Found 16-bit comparator greater for signal <GND_104_o_fifo_data_count[15]_LessThan_17_o> created at line 240
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_25_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_116_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_207_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_389_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_480_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_571_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_662_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_753_o> created at line 272
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp[16]_LessThan_844_o> created at line 272
-    Found 11-bit comparator greater for signal <tx_count[10]_GND_104_o_LessThan_966_o> created at line 293
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_971_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1067_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1163_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1259_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1355_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1451_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1547_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1643_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1739_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1835_o> created at line 296
-    Found 17-bit comparator greater for signal <GND_104_o_chksm_temp_2[16]_LessThan_1931_o> created at line 296
-    Found 11-bit comparator lessequal for signal <tx_count[10]_GND_104_o_LessThan_2097_o> created at line 345
-    Found 16-bit comparator greater for signal <GND_104_o_fifo_data_count[15]_LessThan_2133_o> created at line 409
-    Found 11-bit comparator greater for signal <tx_count[10]_GND_104_o_LessThan_2138_o> created at line 434
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2143_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2234_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2325_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2507_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2598_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2689_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2780_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2871_o> created at line 437
-    Found 17-bit comparator greater for signal <GND_104_o_frag_chksm_temp[16]_LessThan_2962_o> created at line 437
+    Found 5-bit adder for signal <pre_idle_count[4]_GND_106_o_add_1_OUT> created at line 1241.
+    Found 17-bit adder for signal <tx_chksm[16]_GND_106_o_add_10_OUT> created at line 228.
+    Found 17-bit adder for signal <tx_chksm[16]_GND_106_o_add_12_OUT> created at line 232.
+    Found 16-bit adder for signal <fifo_data_count[15]_GND_106_o_add_14_OUT> created at line 1241.
+    Found 16-bit adder for signal <fifo_data_count[15]_GND_106_o_add_17_OUT> created at line 1241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_76_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_77_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_78_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_80_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_81_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_82_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_83_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_84_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_85_OUT> created at line 275.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1025_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1026_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1027_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1028_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1029_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1030_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1031_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1032_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1033_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1034_OUT> created at line 299.
+    Found 17-bit adder for signal <chksm_temp_2[16]_GND_106_o_add_1035_OUT> created at line 299.
+    Found 16-bit adder for signal <fifo_data_count[15]_GND_106_o_add_2133_OUT> created at line 1241.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2194_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2195_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2196_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2198_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2199_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2200_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2201_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2202_OUT> created at line 440.
+    Found 17-bit adder for signal <frag_chksm_temp[16]_GND_106_o_add_2203_OUT> created at line 440.
+    Found 16-bit adder for signal <offset_count[15]_GND_106_o_add_3117_OUT> created at line 1241.
+    Found 16-bit adder for signal <ip_id[15]_GND_106_o_add_3120_OUT> created at line 1241.
+    Found 11-bit adder for signal <tx_count[10]_GND_106_o_add_3121_OUT> created at line 1241.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_10_OUT<16:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_22_OUT<8:0>> created at line 272.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_29_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_31_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_33_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_37_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_39_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_41_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_43_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_45_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_47_OUT<16:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_968_OUT<8:0>> created at line 296.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_975_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_977_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_979_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_981_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_983_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_985_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_987_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_989_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_991_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_993_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_995_OUT<16:0>> created at line 1308.
+    Found 7-bit subtractor for signal <GND_106_o_GND_106_o_sub_2098_OUT<6:0>> created at line 355.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2147_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2149_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2151_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2155_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2157_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2159_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2161_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2163_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_2165_OUT<16:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_3088_OUT<8:0>> created at line 472.
+    Found 17-bit comparator greater for signal <GND_106_o_tx_chksm[16]_LessThan_8_o> created at line 224
+    Found 16-bit comparator greater for signal <GND_106_o_fifo_data_count[15]_LessThan_17_o> created at line 240
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_25_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_116_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_207_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_389_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_480_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_571_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_662_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_753_o> created at line 272
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_844_o> created at line 272
+    Found 11-bit comparator greater for signal <tx_count[10]_GND_106_o_LessThan_966_o> created at line 293
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_971_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1067_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1163_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1259_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1355_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1451_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1547_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1643_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1739_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1835_o> created at line 296
+    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp_2[16]_LessThan_1931_o> created at line 296
+    Found 11-bit comparator lessequal for signal <tx_count[10]_GND_106_o_LessThan_2097_o> created at line 345
+    Found 16-bit comparator greater for signal <GND_106_o_fifo_data_count[15]_LessThan_2133_o> created at line 409
+    Found 11-bit comparator greater for signal <tx_count[10]_GND_106_o_LessThan_2138_o> created at line 434
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2143_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2234_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2325_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2507_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2598_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2689_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2780_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2871_o> created at line 437
+    Found 17-bit comparator greater for signal <GND_106_o_frag_chksm_temp[16]_LessThan_2962_o> created at line 437
     Summary:
 	inferred  72 Adder/Subtractor(s).
 	inferred 414 D-type flip-flop(s).
@@ -1749,87 +1766,87 @@ INFO:Xst:1799 - State not_ready is never reached in FSM <state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_6_OUT> created at line 178.
-    Found 17-bit adder for signal <chksm_data[16]_GND_106_o_add_269_OUT> created at line 214.
-    Found 17-bit adder for signal <chksm_data[16]_GND_106_o_add_275_OUT> created at line 220.
-    Found 16-bit adder for signal <ip_count[15]_GND_106_o_add_278_OUT> created at line 1241.
-    Found 16-bit adder for signal <udp_count[15]_GND_106_o_add_279_OUT> created at line 1241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_341_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_342_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_343_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_344_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_345_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_346_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_347_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_348_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_349_OUT> created at line 241.
-    Found 17-bit adder for signal <chksm_temp[16]_GND_106_o_add_350_OUT> created at line 241.
-    Found 5-bit adder for signal <rx_count[4]_GND_106_o_add_1236_OUT> created at line 1241.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1295_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1296_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1297_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1298_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1299_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1300_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1301_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1302_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1303_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1304_OUT> created at line 267.
-    Found 17-bit adder for signal <chksm_temp2[16]_GND_106_o_add_1305_OUT> created at line 267.
-    Found 16-bit adder for signal <data_count[15]_GND_106_o_add_2332_OUT> created at line 1241.
-    Found 7-bit subtractor for signal <GND_106_o_GND_106_o_sub_192_OUT<6:0>> created at line 193.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_269_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_275_OUT<16:0>> created at line 1308.
-    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_287_OUT<8:0>> created at line 238.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_294_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_296_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_298_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_300_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_302_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_304_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_306_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_308_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_310_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_312_OUT<16:0>> created at line 1308.
-    Found 9-bit subtractor for signal <GND_106_o_GND_106_o_sub_1238_OUT<8:0>> created at line 264.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1245_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1247_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1249_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1251_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1253_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1255_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1257_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1259_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1261_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1263_OUT<16:0>> created at line 1308.
-    Found 17-bit subtractor for signal <GND_106_o_GND_106_o_sub_1265_OUT<16:0>> created at line 1308.
-    Found 16-bit subtractor for signal <GND_106_o_GND_106_o_sub_2331_OUT<15:0>> created at line 1308.
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_data[16]_LessThan_267_o> created at line 211
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_data[16]_LessThan_273_o> created at line 217
-    Found 5-bit comparator greater for signal <rx_count[4]_GND_106_o_LessThan_285_o> created at line 235
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_290_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_381_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_472_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_563_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_654_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_745_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_836_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_927_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_1018_o> created at line 238
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp[16]_LessThan_1109_o> created at line 238
-    Found 5-bit comparator greater for signal <rx_count[4]_GND_106_o_LessThan_1236_o> created at line 262
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1241_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1337_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1433_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1529_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1625_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1721_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1817_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_1913_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_2009_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_2105_o> created at line 264
-    Found 17-bit comparator greater for signal <GND_106_o_chksm_temp2[16]_LessThan_2201_o> created at line 264
-    Found 16-bit comparator equal for signal <GND_106_o_data_count[15]_equal_2332_o> created at line 287
+    Found 9-bit subtractor for signal <GND_108_o_GND_108_o_sub_6_OUT> created at line 178.
+    Found 17-bit adder for signal <chksm_data[16]_GND_108_o_add_269_OUT> created at line 214.
+    Found 17-bit adder for signal <chksm_data[16]_GND_108_o_add_275_OUT> created at line 220.
+    Found 16-bit adder for signal <ip_count[15]_GND_108_o_add_278_OUT> created at line 1241.
+    Found 16-bit adder for signal <udp_count[15]_GND_108_o_add_279_OUT> created at line 1241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_341_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_342_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_343_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_344_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_345_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_346_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_347_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_348_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_349_OUT> created at line 241.
+    Found 17-bit adder for signal <chksm_temp[16]_GND_108_o_add_350_OUT> created at line 241.
+    Found 5-bit adder for signal <rx_count[4]_GND_108_o_add_1236_OUT> created at line 1241.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1295_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1296_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1297_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1298_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1299_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1300_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1301_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1302_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1303_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1304_OUT> created at line 267.
+    Found 17-bit adder for signal <chksm_temp2[16]_GND_108_o_add_1305_OUT> created at line 267.
+    Found 16-bit adder for signal <data_count[15]_GND_108_o_add_2332_OUT> created at line 1241.
+    Found 7-bit subtractor for signal <GND_108_o_GND_108_o_sub_192_OUT<6:0>> created at line 193.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_269_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_275_OUT<16:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_108_o_GND_108_o_sub_287_OUT<8:0>> created at line 238.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_294_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_296_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_298_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_300_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_302_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_304_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_306_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_308_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_310_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_312_OUT<16:0>> created at line 1308.
+    Found 9-bit subtractor for signal <GND_108_o_GND_108_o_sub_1238_OUT<8:0>> created at line 264.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1245_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1247_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1249_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1251_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1253_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1255_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1257_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1259_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1261_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1263_OUT<16:0>> created at line 1308.
+    Found 17-bit subtractor for signal <GND_108_o_GND_108_o_sub_1265_OUT<16:0>> created at line 1308.
+    Found 16-bit subtractor for signal <GND_108_o_GND_108_o_sub_2331_OUT<15:0>> created at line 1308.
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_data[16]_LessThan_267_o> created at line 211
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_data[16]_LessThan_273_o> created at line 217
+    Found 5-bit comparator greater for signal <rx_count[4]_GND_108_o_LessThan_285_o> created at line 235
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_290_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_381_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_472_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_563_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_654_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_745_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_836_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_927_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_1018_o> created at line 238
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp[16]_LessThan_1109_o> created at line 238
+    Found 5-bit comparator greater for signal <rx_count[4]_GND_108_o_LessThan_1236_o> created at line 262
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1241_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1337_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1433_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1529_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1625_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1721_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1817_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_1913_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_2009_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_2105_o> created at line 264
+    Found 17-bit comparator greater for signal <GND_108_o_chksm_temp2[16]_LessThan_2201_o> created at line 264
+    Found 16-bit comparator equal for signal <GND_108_o_data_count[15]_equal_2332_o> created at line 287
     Summary:
 	inferred  55 Adder/Subtractor(s).
 	inferred 506 D-type flip-flop(s).
@@ -1879,15 +1896,15 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit subtractor for signal <GND_108_o_GND_108_o_sub_3_OUT> created at line 148.
-    Found 8-bit subtractor for signal <GND_108_o_GND_108_o_sub_54_OUT> created at line 222.
-    Found 4-bit adder for signal <tx_count[3]_GND_108_o_add_36_OUT> created at line 1241.
-    Found 4-bit adder for signal <rx_count[3]_GND_108_o_add_181_OUT> created at line 1241.
-    Found 8-bit 3-to-1 multiplexer for signal <tx_state[1]_X_43_o_wide_mux_42_OUT> created at line 131.
-    Found 8-bit 3-to-1 multiplexer for signal <rx_state[1]_X_43_o_wide_mux_192_OUT> created at line 196.
-    Found 1-bit 3-to-1 multiplexer for signal <rx_state[1]_X_43_o_Mux_193_o> created at line 196.
-    Found 1-bit 3-to-1 multiplexer for signal <rx_state[1]_X_43_o_Mux_194_o> created at line 196.
-    Found 4-bit comparator greater for signal <PWR_90_o_tx_count[3]_LessThan_35_o> created at line 151
+    Found 8-bit subtractor for signal <GND_110_o_GND_110_o_sub_3_OUT> created at line 148.
+    Found 8-bit subtractor for signal <GND_110_o_GND_110_o_sub_54_OUT> created at line 222.
+    Found 4-bit adder for signal <tx_count[3]_GND_110_o_add_36_OUT> created at line 1241.
+    Found 4-bit adder for signal <rx_count[3]_GND_110_o_add_181_OUT> created at line 1241.
+    Found 8-bit 3-to-1 multiplexer for signal <tx_state[1]_X_44_o_wide_mux_42_OUT> created at line 131.
+    Found 8-bit 3-to-1 multiplexer for signal <rx_state[1]_X_44_o_wide_mux_192_OUT> created at line 196.
+    Found 1-bit 3-to-1 multiplexer for signal <rx_state[1]_X_44_o_Mux_193_o> created at line 196.
+    Found 1-bit 3-to-1 multiplexer for signal <rx_state[1]_X_44_o_Mux_194_o> created at line 196.
+    Found 4-bit comparator greater for signal <PWR_91_o_tx_count[3]_LessThan_35_o> created at line 151
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred 141 D-type flip-flop(s).
@@ -1897,22 +1914,22 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <eth_head> synthesized.
 
 Synthesizing Unit <QBlink>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\QBlink.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\QBlink.vhd" line 151: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\QBlink.vhd" line 151: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\QBlink.vhd" line 171: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 150: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 150: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 170: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <QBlink> synthesized.
 
 Synthesizing Unit <clockgen_bytelink>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\cores\clockgen_bytelink.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd".
     Summary:
 	no macro.
 Unit <clockgen_bytelink> synthesized.
 
 Synthesizing Unit <SyncBit>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\SyncBit.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd".
         SYNC_STAGES_G = 2
         CLK_POL_G = '1'
         RST_POL_G = '1'
@@ -1922,18 +1939,18 @@ Synthesizing Unit <SyncBit>.
 Unit <SyncBit> synthesized.
 
 Synthesizing Unit <S6SerialInterfaceOut>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceOut.vhd" line 57: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd".
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" line 57: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <r_dataWord>.
     Found 4-bit register for signal <r_bitCount>.
     Found 1-bit register for signal <r_serialDataOutRising>.
     Found 1-bit register for signal <r_serialDataOutFalling>.
     Found 1-bit register for signal <r_state>.
     Found 5-bit subtractor for signal <n0042[4:0]> created at line 89.
-    Found 4-bit adder for signal <r_bitCount[3]_GND_119_o_add_7_OUT> created at line 95.
-    Found 4-bit subtractor for signal <GND_119_o_GND_119_o_sub_5_OUT<3:0>> created at line 90.
-    Found 1-bit 10-to-1 multiplexer for signal <GND_119_o_X_48_o_Mux_2_o> created at line 89.
-    Found 1-bit 10-to-1 multiplexer for signal <GND_119_o_X_48_o_Mux_5_o> created at line 90.
+    Found 4-bit adder for signal <r_bitCount[3]_GND_121_o_add_7_OUT> created at line 95.
+    Found 4-bit subtractor for signal <GND_121_o_GND_121_o_sub_5_OUT<3:0>> created at line 90.
+    Found 1-bit 10-to-1 multiplexer for signal <GND_121_o_X_49_o_Mux_2_o> created at line 89.
+    Found 1-bit 10-to-1 multiplexer for signal <GND_121_o_X_49_o_Mux_5_o> created at line 90.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
@@ -1941,10 +1958,10 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source
 Unit <S6SerialInterfaceOut> synthesized.
 
 Synthesizing Unit <S6SerialInterfaceIn>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd".
         BITSLIP_WAIT_G = 200
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <valid> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <valid> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
     Found 5-bit register for signal <fallingWord>.
     Found 10-bit register for signal <dataWord>.
     Found 10-bit register for signal <dataWordFlipped>.
@@ -1969,9 +1986,9 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <r_bitCount[3]_GND_123_o_add_6_OUT> created at line 133.
-    Found 16-bit adder for signal <r_slipCount[15]_GND_123_o_add_10_OUT> created at line 151.
-    Found 16-bit comparator greater for signal <r_slipCount[15]_GND_123_o_LessThan_10_o> created at line 150
+    Found 4-bit adder for signal <r_bitCount[3]_GND_125_o_add_6_OUT> created at line 133.
+    Found 16-bit adder for signal <r_slipCount[15]_GND_125_o_add_10_OUT> created at line 151.
+    Found 16-bit comparator greater for signal <r_slipCount[15]_GND_125_o_LessThan_10_o> created at line 150
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  62 D-type flip-flop(s).
@@ -1981,7 +1998,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source
 Unit <S6SerialInterfaceIn> synthesized.
 
 Synthesizing Unit <ByteLink>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\ByteLink.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd".
         ALIGN_CYCLES_G = 100
     Found 8-bit register for signal <inputTxData8b>.
     Found 1-bit register for signal <inputTxData8bValid>.
@@ -2008,7 +2025,7 @@ Synthesizing Unit <ByteLink>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <r_alignCnt[31]_GND_126_o_add_4_OUT> created at line 174.
+    Found 32-bit adder for signal <r_alignCnt[31]_GND_128_o_add_4_OUT> created at line 174.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  80 D-type flip-flop(s).
@@ -2017,7 +2034,7 @@ Synthesizing Unit <ByteLink>.
 Unit <ByteLink> synthesized.
 
 Synthesizing Unit <Encode8b10b>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Encode8b10b.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd".
     Found 1-bit register for signal <dispOut>.
     Found 10-bit register for signal <dataOut>.
     Summary:
@@ -2026,7 +2043,7 @@ Synthesizing Unit <Encode8b10b>.
 Unit <Encode8b10b> synthesized.
 
 Synthesizing Unit <Decode8b10b>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\QBLink\QBLink\source\Decode8b10b.vhd".
+    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd".
     Found 1-bit register for signal <dataKOut>.
     Found 1-bit register for signal <dispOut>.
     Found 1-bit register for signal <codeErr>.
@@ -2140,11 +2157,11 @@ INFO:Xst:1799 - State reg_fifo_load5 is never reached in FSM <PCtxSt>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <ready_wait[31]_GND_132_o_add_154_OUT> created at line 422.
+    Found 32-bit adder for signal <ready_wait[31]_GND_134_o_add_154_OUT> created at line 422.
 INFO:Xst:3019 - HDL ADVISOR - 512 flip-flops were inferred for signal <output_reg>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 16-bit 20-to-1 multiplexer for signal <scrod_reg[4]_X_56_o_wide_mux_43_OUT> created at line 277.
+    Found 16-bit 20-to-1 multiplexer for signal <scrod_reg[4]_X_57_o_wide_mux_43_OUT> created at line 277.
     Found 1-bit 4-to-1 multiplexer for signal <_n0371> created at line 85.
-    Found 32-bit comparator greater for signal <GND_132_o_ready_wait[31]_LessThan_154_o> created at line 421
+    Found 32-bit comparator greater for signal <GND_134_o_ready_wait[31]_LessThan_154_o> created at line 421
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 506 D-type flip-flop(s).
@@ -2262,18 +2279,16 @@ Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/tx_fifo.ngc>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/tri_mode_eth_mac_v5_5.ngc>.
 INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found. This license does not allow you to generate bitstreams for designs that incorporate this component. You may generate functional simulation netlists, but you may not evaluate this component in hardware.
    For ordering information, please refer to the product page for this component on: www.xilinx.com
-Reading Secure Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST>.
 INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found. This license does not allow you to generate bitstreams for designs that incorporate this component. You may generate functional simulation netlists, but you may not evaluate this component in hardware.
    For ordering information, please refer to the product page for this component on: www.xilinx.com
-Reading Secure Unit <tri_mode_eth_mac_v5_5>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma.ngc>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/eth_head_fifo.ngc>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/ip_rx_bram.ngc>.
-Reading core <../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc>.
-Reading core <../../QBLink/QBLink/cores/CMD_FIFO_w1r8.ngc>.
+Reading core <../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc>.
+Reading core <../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.ngc>.
 Reading core <../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.ngc>.
-Reading core <../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc>.
-Reading core <../../QBLink/QBLink/cores/serializationFifo.ngc>.
+Reading core <../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc>.
+Reading core <../../../../QBLink/QBLink/cores/serializationFifo.ngc>.
 Loading core <tx_fifo> for timing and area information for instance <u_tx_fifo>.
 Loading core <tri_mode_eth_mac_v5_5> for timing and area information for instance <trimac_core>.
 Loading core <pcs_pma> for timing and area information for instance <gig_eth_pcs_pma_core_0>.
@@ -2288,25 +2303,25 @@ Loading core <QBLtxFIFO> for timing and area information for instance <QBlink_TX
 Loading core <CMD_FIFO_w8r32> for timing and area information for instance <QBlink_RX_FIFO_W8R32>.
 Loading core <serializationFifo> for timing and area information for instance <U_SerializationFifo>.
 Loading core <serializationFifo> for timing and area information for instance <U_SerializationFifo>.
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_15> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_31> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_0> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_16> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_14> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_30> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_13> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_29> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_12> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_28> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_11> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_27> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_10> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_26> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_9> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_25> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_8> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_24> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_7> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_23> 
 INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_6> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_22> 
 INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_5> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_21> 
-INFO:Xst:2261 - The FF/Latch <tx_temp_60> in Unit <ip_udp_tx_block_inst> is equivalent to the following 23 FFs/Latches, which will be removed : <tx_temp_61> <tx_temp_62> <tx_temp_77> <tx_temp_78> <tx_temp_96> <tx_temp_100> <tx_temp_112> <tx_temp_122> <tx_temp_124> <tx_temp_131> <tx_temp_133> <tx_temp_135> <tx_temp_142> <tx_temp_143> <tx_temp_144> <tx_temp_146> <tx_temp_154> <tx_temp_156> <tx_temp_163> <tx_temp_165> <tx_temp_167> <tx_temp_174> <tx_temp_175> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_15> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_31> 
 INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_4> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_20> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_14> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_30> 
 INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_3> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_19> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_13> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_29> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_2> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_18> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_12> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_28> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_1> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_17> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_11> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_27> 
+INFO:Xst:2261 - The FF/Latch <tx_temp_60> in Unit <ip_udp_tx_block_inst> is equivalent to the following 23 FFs/Latches, which will be removed : <tx_temp_61> <tx_temp_62> <tx_temp_77> <tx_temp_78> <tx_temp_96> <tx_temp_100> <tx_temp_112> <tx_temp_122> <tx_temp_124> <tx_temp_131> <tx_temp_133> <tx_temp_135> <tx_temp_142> <tx_temp_143> <tx_temp_144> <tx_temp_146> <tx_temp_154> <tx_temp_156> <tx_temp_163> <tx_temp_165> <tx_temp_167> <tx_temp_174> <tx_temp_175> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_0> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_16> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_10> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_26> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_9> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_25> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_48> in Unit <ip_udp_tx_block_inst> is equivalent to the following 87 FFs/Latches, which will be removed : <tx_temp_49> <tx_temp_50> <tx_temp_51> <tx_temp_52> <tx_temp_53> <tx_temp_54> <tx_temp_55> <tx_temp_56> <tx_temp_57> <tx_temp_58> <tx_temp_59> <tx_temp_63> <tx_temp_64> <tx_temp_65> <tx_temp_66> <tx_temp_67> <tx_temp_68> <tx_temp_69> <tx_temp_70> <tx_temp_71> <tx_temp_72> <tx_temp_73> <tx_temp_74> <tx_temp_75> <tx_temp_76> <tx_temp_79> <tx_temp_97> <tx_temp_98> <tx_temp_99> <tx_temp_101> <tx_temp_102> <tx_temp_103> <tx_temp_104> <tx_temp_105> <tx_temp_106> <tx_temp_107> <tx_temp_108> <tx_temp_109> <tx_temp_110> <tx_temp_111> <tx_temp_113> <tx_temp_114> <tx_temp_115> <tx_temp_116> <tx_temp_117> <tx_temp_118> <tx_temp_119> <tx_temp_120> <tx_temp_121> <tx_temp_123> <tx_temp_125> <tx_temp_126> <tx_temp_127> <tx_temp_128> <tx_temp_129> <tx_temp_130> <tx_temp_132> <tx_temp_134> <tx_temp_136> <tx_temp_137> <tx_temp_138> <tx_temp_139> <tx_temp_140> <tx_temp_141> <tx_temp_145>
    <tx_temp_147> <tx_temp_148> <tx_temp_149> <tx_temp_150> <tx_temp_151> <tx_temp_152> <tx_temp_153> <tx_temp_155> <tx_temp_157> <tx_temp_158> <tx_temp_159> <tx_temp_160> <tx_temp_161> <tx_temp_162> <tx_temp_164> <tx_temp_166> <tx_temp_168> <tx_temp_169> <tx_temp_170> <tx_temp_171> <tx_temp_172> <tx_temp_173> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_2> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_18> 
-INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_1> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_17> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_8> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_24> 
+INFO:Xst:2261 - The FF/Latch <udp_pseudo_header_7> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <udp_header_23> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_32> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <tx_temp_80> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_33> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <tx_temp_81> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_34> in Unit <ip_udp_tx_block_inst> is equivalent to the following FF/Latch, which will be removed : <tx_temp_82> 
@@ -2816,22 +2831,22 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <udp_head_temp_109> 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <udp_head_temp_110> has a constant value of 0 in block <ip_udp_rx_block>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <udp_head_temp_111> has a constant value of 0 in block <ip_udp_rx_block>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <fifo_sel_3> has a constant value of 0 in block <cmd_center>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <udp_header_22> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_6> 
+INFO:Xst:2261 - The FF/Latch <udp_header_21> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_5> 
 INFO:Xst:2261 - The FF/Latch <udp_header_31> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_15> 
-INFO:Xst:2261 - The FF/Latch <udp_header_16> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_0> 
+INFO:Xst:2261 - The FF/Latch <udp_header_20> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_4> 
 INFO:Xst:2261 - The FF/Latch <udp_header_30> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_14> 
+INFO:Xst:2261 - The FF/Latch <udp_header_19> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_3> 
 INFO:Xst:2261 - The FF/Latch <udp_header_29> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_13> 
+INFO:Xst:2261 - The FF/Latch <udp_header_18> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_2> 
 INFO:Xst:2261 - The FF/Latch <udp_header_28> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_12> 
+INFO:Xst:2261 - The FF/Latch <udp_header_17> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_1> 
 INFO:Xst:2261 - The FF/Latch <udp_header_27> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_11> 
+INFO:Xst:2261 - The FF/Latch <udp_header_16> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_0> 
 INFO:Xst:2261 - The FF/Latch <udp_header_26> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_10> 
 INFO:Xst:2261 - The FF/Latch <udp_header_25> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_9> 
 INFO:Xst:2261 - The FF/Latch <udp_header_24> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_8> 
 INFO:Xst:2261 - The FF/Latch <udp_header_23> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_7> 
-INFO:Xst:2261 - The FF/Latch <udp_header_22> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_6> 
-INFO:Xst:2261 - The FF/Latch <udp_header_21> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_5> 
-INFO:Xst:2261 - The FF/Latch <udp_header_20> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_4> 
-INFO:Xst:2261 - The FF/Latch <udp_header_19> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_3> 
-INFO:Xst:2261 - The FF/Latch <udp_header_18> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_2> 
-INFO:Xst:2261 - The FF/Latch <udp_header_17> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <udp_pseudo_header_1> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_44> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <tx_temp_92> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_45> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <tx_temp_93> 
 INFO:Xst:2261 - The FF/Latch <tx_temp_46> in Unit <ip_udp_tx_block> is equivalent to the following FF/Latch, which will be removed : <tx_temp_94> 
@@ -3542,6 +3557,12 @@ Found area constraint ratio of 100 (+ 5) on block SCRODQB_Top, actual ratio is 8
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_3> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_3_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_2> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_2_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_1> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_1_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_0> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_0_1> 
+INFO:Xst:2260 - The FF/Latch <G_AXI_SHIM.tx_axi_shim/tx_enable_reg> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <G_AXI_SHIM.tx_axi_shim/tx_enable_reg_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_4> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_4_1> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_AUTO_NEG.AUTO_NEGOTIATION/STATE_FSM_FFd3> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following FF/Latch : <U0/gpcs_pma_inst/HAS_AUTO_NEG.AUTO_NEGOTIATION/STATE_FSM_FFd3_1> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_1> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following FF/Latch : <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_1_1> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following 2 FFs/Latches : <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2_1> <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2_2> 
@@ -3587,6 +3608,18 @@ INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <ETH_MODULE/udp_1/ip_udp_tx_block_inst/u_tx_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_2> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_2_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_4> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_4_1> 
+INFO:Xst:2260 - The FF/Latch <G_AXI_SHIM.tx_axi_shim/tx_enable_reg> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <G_AXI_SHIM.tx_axi_shim/tx_enable_reg_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_0> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_0_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_1> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_1_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_3> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_3_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_2> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_2_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_4> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_4_1> 
+INFO:Xst:2260 - The FF/Latch <G_AXI_SHIM.tx_axi_shim/tx_enable_reg> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <G_AXI_SHIM.tx_axi_shim/tx_enable_reg_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_0> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_0_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_1> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_1_1> 
+INFO:Xst:2260 - The FF/Latch <addr_filter_top/address_filter_inst/counter_3> in Unit <U0/trimac_top/TRI_SPEED.TRIMAC_INST> is equivalent to the following FF/Latch : <addr_filter_top/address_filter_inst/counter_3_1> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_1> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following FF/Latch : <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_1_1> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following 2 FFs/Latches : <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2_1> <U0/gpcs_pma_inst/HAS_MANAGEMENT.MDIO/MDIO_INTERFACE_1/SHIFT_REG_2_2> 
 INFO:Xst:2260 - The FF/Latch <U0/gpcs_pma_inst/HAS_AUTO_NEG.AUTO_NEGOTIATION/STATE_FSM_FFd3> in Unit <ETH_MODULE/udp_1/eth_inst/core_wrapper/gig_eth_pcs_pma_core_0> is equivalent to the following FF/Latch : <U0/gpcs_pma_inst/HAS_AUTO_NEG.AUTO_NEGOTIATION/STATE_FSM_FFd3_1> 
@@ -3633,7 +3666,7 @@ FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_0 has been replicated 2 
 FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_1 has been replicated 2 time(s)
 FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_2 has been replicated 2 time(s)
 FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_3 has been replicated 1 time(s)
-FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_4 has been replicated 2 time(s)
+FlipFlop ETH_MODULE/udp_1/ip_udp_rx_block_inst/rx_count_4 has been replicated 1 time(s)
 FlipFlop ETH_MODULE/udp_1/ip_udp_tx_block_inst/chksm_temp_10 has been replicated 1 time(s)
 FlipFlop ETH_MODULE/udp_1/ip_udp_tx_block_inst/chksm_temp_2_12 has been replicated 1 time(s)
 FlipFlop ETH_MODULE/udp_1/ip_udp_tx_block_inst/chksm_temp_2_13 has been replicated 1 time(s)
@@ -3681,8 +3714,8 @@ Unit <SCRODQB_Top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2172
- Flip-Flops                                            : 2172
+# Registers                                            : 2171
+ Flip-Flops                                            : 2171
 # Shift Registers                                      : 21
  2-bit shift register                                  : 4
  21-bit shift register                                 : 1
@@ -3710,29 +3743,29 @@ Top Level Output File Name         : SCRODQB_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 12456
+# BELS                             : 12453
 #      AND2                        : 12
 #      GND                         : 26
 #      INV                         : 224
 #      LUT1                        : 1462
 #      LUT2                        : 1244
-#      LUT3                        : 785
-#      LUT4                        : 857
-#      LUT5                        : 1058
-#      LUT6                        : 2145
+#      LUT3                        : 786
+#      LUT4                        : 850
+#      LUT5                        : 1054
+#      LUT6                        : 2152
 #      MUXCY                       : 2211
 #      MUXCY_L                     : 60
 #      MUXF5                       : 1
 #      MUXF7                       : 52
 #      VCC                         : 6
 #      XORCY                       : 2313
-# FlipFlops/Latches                : 5871
+# FlipFlops/Latches                : 5870
 #      FD                          : 782
 #      FDC                         : 454
 #      FDC_1                       : 3
 #      FDCE                        : 462
 #      FDCE_1                      : 7
-#      FDE                         : 1563
+#      FDE                         : 1562
 #      FDP                         : 185
 #      FDPE                        : 27
 #      FDR                         : 980
@@ -3772,19 +3805,19 @@ Selected Device : 6slx150tfgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5871  out of  184304     3%  
- Number of Slice LUTs:                 8160  out of  92152     8%  
-    Number used as Logic:              7775  out of  92152     8%  
+ Number of Slice Registers:            5870  out of  184304     3%  
+ Number of Slice LUTs:                 8157  out of  92152     8%  
+    Number used as Logic:              7772  out of  92152     8%  
     Number used as Memory:              385  out of  21680     1%  
        Number used as RAM:              320
        Number used as SRL:               65
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  11852
-   Number with an unused Flip Flop:    5981  out of  11852    50%  
-   Number with an unused LUT:          3692  out of  11852    31%  
-   Number of fully used LUT-FF pairs:  2179  out of  11852    18%  
-   Number of unique control sets:       289
+ Number of LUT Flip Flop pairs used:  10546
+   Number with an unused Flip Flop:    4676  out of  10546    44%  
+   Number with an unused LUT:          2389  out of  10546    22%  
+   Number of fully used LUT-FF pairs:  3481  out of  10546    33%  
+   Number of unique control sets:       401
 
 IO Utilization: 
  Number of IOs:                          24
@@ -3818,7 +3851,7 @@ Clock Signal                                                                    
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+-------+
 CommState_1                                                                                                                                                                                                                                           | NONE(nxtState_1)                                                | 1     |
 MASTER_CLK_P                                                                                                                                                                                                                                          | DCM_SP:CLKFX                                                    | 1042  |
-ETH_MODULE/udp_1/eth_inst/gtpclkout_1                                                                                                                                                                                                                 | BUFIO2+BUFG                                                     | 4910  |
+ETH_MODULE/udp_1/eth_inst/gtpclkout_1                                                                                                                                                                                                                 | BUFIO2+BUFG                                                     | 4909  |
 ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/trimac_core/U0/trimac_top/TRI_SPEED.TRIMAC_INST/MDC_OUT(ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/trimac_core/U0/trimac_top/TRI_SPEED.TRIMAC_INST/MANIFGEN.MANAGEN/PHY/MDC1:O)| NONE(*)(ETH_MODULE/udp_1/eth_inst/present_state_FSM_FFd2)       | 10    |
 MASTER_CLK_P                                                                                                                                                                                                                                          | DCM_SP:CLKFX+DCM_SP:CLKFX                                       | 188   |
 ETH_MODULE/udp_1/eth_inst/s_axi_resetn                                                                                                                                                                                                                | NONE(ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_state_FSM_FFd4_LD)| 1     |
@@ -3848,7 +3881,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ETH_MODULE/udp_1/eth_inst/gtpclkout_1'
   Clock period: 6.572ns (frequency: 152.162MHz)
-  Total number of paths / destination ports: 298313 / 13242
+  Total number of paths / destination ports: 298291 / 13240
 -------------------------------------------------------------------------
 Delay:               6.572ns (Levels of Logic = 5)
   Source:            ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_count_0_1 (FF)
@@ -3861,9 +3894,9 @@ Delay:               6.572ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             1   0.447   0.808  ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_count_0_1 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_count_0_1)
-     LUT3:I0->O            5   0.205   0.715  ETH_MODULE/udp_1/ip_udp_tx_block_inst/GND_104_o_udp_header[4]_Select_2110_o<12>11 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/GND_104_o_udp_header[4]_Select_2110_o<12>1)
-     LUT5:I4->O            2   0.205   0.617  ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_80_o_tx_count[10]_equal_2118_o<10>11 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_80_o_tx_count[10]_equal_2118_o<10>1)
-     LUT5:I4->O            8   0.205   0.907  ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_80_o_tx_count[10]_equal_3119_o<10>1 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_80_o_tx_count[10]_equal_3119_o)
+     LUT3:I0->O            5   0.205   0.715  ETH_MODULE/udp_1/ip_udp_tx_block_inst/GND_106_o_udp_header[4]_Select_2110_o<12>11 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/GND_106_o_udp_header[4]_Select_2110_o<12>1)
+     LUT5:I4->O            2   0.205   0.617  ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_81_o_tx_count[10]_equal_2118_o<10>11 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_81_o_tx_count[10]_equal_2118_o<10>1)
+     LUT5:I4->O            8   0.205   0.907  ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_81_o_tx_count[10]_equal_3119_o<10>1 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/PWR_81_o_tx_count[10]_equal_3119_o)
      LUT6:I4->O            1   0.203   0.580  ETH_MODULE/udp_1/ip_udp_tx_block_inst/_n1487_inv1 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/_n1487_inv1)
      LUT3:I2->O           23   0.205   1.153  ETH_MODULE/udp_1/ip_udp_tx_block_inst/_n1487_inv2 (ETH_MODULE/udp_1/ip_udp_tx_block_inst/_n1487_inv)
      FDCE:CE                   0.322          ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_count_0
@@ -3912,8 +3945,8 @@ Delay:               4.260ns (Levels of Logic = 18)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             2   0.447   0.981  comm_process/U_SerialInterfaceIn/r_slipCount_15 (comm_process/U_SerialInterfaceIn/r_slipCount_15)
-     LUT6:I0->O           18   0.203   1.278  comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_123_o_LessThan_10_o_inv_inv22 (comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_123_o_LessThan_10_o_inv_inv21)
-     LUT3:I0->O            1   0.205   0.579  comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_123_o_LessThan_10_o_inv_inv23 (comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_123_o_LessThan_10_o_inv_inv)
+     LUT6:I0->O           18   0.203   1.278  comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_125_o_LessThan_10_o_inv_inv22 (comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_125_o_LessThan_10_o_inv_inv21)
+     LUT3:I0->O            1   0.205   0.579  comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_125_o_LessThan_10_o_inv_inv23 (comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_125_o_LessThan_10_o_inv_inv)
      MUXCY:CI->O           1   0.019   0.000  comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<0> (comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<1> (comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<1>)
      MUXCY:CI->O           1   0.019   0.000  comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<2> (comm_process/U_SerialInterfaceIn/Mcount_r_slipCount_cy<2>)
@@ -4000,14 +4033,14 @@ MASTER_CLK_P                         |    6.137|         |    1.026|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 57.00 secs
-Total CPU time to Xst completion: 56.65 secs
+Total REAL time to Xst completion: 61.00 secs
+Total CPU time to Xst completion: 61.17 secs
  
 --> 
 
-Total memory usage is 4753012 kilobytes
+Total memory usage is 4752980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  819 (   0 filtered)
-Number of infos    :  363 (   0 filtered)
+Number of infos    :  381 (   0 filtered)
 

@@ -38,7 +38,6 @@ entity DataDemuxControl is
 		MODE 			: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		FIX_WIN 		: IN STD_LOGIC_VECTOR(8 DOWNTO 0);
 		
-		
 		--I/O TO communication process		
 		TX_BUSY 		: IN STD_LOGIC;
 		SRT_CON     : IN STD_LOGIC;
@@ -193,7 +192,7 @@ if rising_edge(CLK) then
 				sram2bram_xfer <= '0';
 				fifo2sram_xfer <= '0';
 				dc_rd_st       <= idle;								
-				if RD_SRT(4) = '1' then --software readout of selected duaghter card  
+				if RD_SRT(4) = '1' then --software readout of selected duaghter card
 					DC_RD_BUSY 	 <= '1';
 					if MODE = x"2" then
 						WAVE_RST     <= '1';

@@ -1,0 +1,70 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 28 07:16:53 2018
+
+drc -z SCROD_A5_TOP.ncd SCROD_A5_TOP.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ila0_trig0<0> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comm_process/ETH_MODULE/udp_1/ip_udp_tx_block_inst/axi_tresetn_inv is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   comm_process/ETH_MODULE/udp_1/eth_inst/mdc is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/bus2ip
+   _data<24>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/bus2ip
+   _data<4>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/bus2ip
+   _data<0>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/ip2bus
+   _error> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/vector
+   _decode_inst/GLOBAL_LOGIC0> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/tx_mac_reset_gen/GL
+   OBAL_LOGIC1> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/rx_mac_reset_gen/GL
+   OBAL_LOGIC1> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/axi_lite_reset_gen/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/chk_reset_gen/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/gtx_reset_gen/GLOBAL_LOGIC1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <comm_process/ETH_MODULE/udp_1/eth_inst/axi_lite_controller/update_speed_sync
+   _inst/GLOBAL_LOGIC0> is incomplete. The signal does not drive any load pins
+   in the design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   CLK_FANOUT_1TO2/dcm_sp_inst, consult the device Data Sheet.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 16 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

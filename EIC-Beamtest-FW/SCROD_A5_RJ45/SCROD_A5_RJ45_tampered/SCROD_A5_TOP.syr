@@ -1,0 +1,277 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: SCROD_A5_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SCROD_A5_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SCROD_A5_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx150t-3-fgg676
+
+---- Source Options
+Top Module Name                    : SCROD_A5_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : YES
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\eth_head_fifo.vhd" into library work
+Parsing entity <eth_head_fifo>.
+Parsing architecture <eth_head_fifo_a> of entity <eth_head_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\ip_rx_bram.vhd" into library work
+Parsing entity <ip_rx_bram>.
+Parsing architecture <ip_rx_bram_a> of entity <ip_rx_bram>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\tx_fifo.vhd" into library work
+Parsing entity <tx_fifo>.
+Parsing architecture <tx_fifo_a> of entity <tx_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" into library work
+Parsing entity <pcs_pma_s6_gtpwizard_tile>.
+Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard_tile>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\frame_gen.vhd" into library work
+Parsing entity <FRAME_GEN>.
+Parsing architecture <RTL> of entity <frame_gen>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\frame_check.vhd" into library work
+Parsing entity <FRAME_CHECK>.
+Parsing architecture <RTL> of entity <frame_check>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd" into library work
+Parsing entity <pcs_pma_s6_gtpwizard>.
+Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\pcs_pma_s6_gtpwizard_top.vhd" into library work
+Parsing entity <pcs_pma_s6_gtpwizard_top>.
+Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard_top>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\STATE_FIFO\STATE_FIFO.vhd" into library work
+Parsing entity <STATE_FIFO>.
+Parsing architecture <STATE_FIFO_a> of entity <state_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\blk_mem_gen_v7_3\blk_mem_gen_v7_3.vhd" into library work
+Parsing entity <blk_mem_gen_v7_3>.
+Parsing architecture <blk_mem_gen_v7_3_a> of entity <blk_mem_gen_v7_3>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CMD_FIFO_w1r8\CMD_FIFO_w1r8.vhd" into library work
+Parsing entity <CMD_FIFO_w1r8>.
+Parsing architecture <CMD_FIFO_w1r8_a> of entity <cmd_fifo_w1r8>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CMD_FIFO_w8r32\CMD_FIFO_w8r32.vhd" into library work
+Parsing entity <CMD_FIFO_w8r32>.
+Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\WAVE_FIFO_w32r8\WAVE_FIFO.vhd" into library work
+Parsing entity <WAVE_FIFO>.
+Parsing architecture <WAVE_FIFO_a> of entity <wave_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_pselect_f.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_pselect_f>.
+Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_pselect_f>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ipif_pkg.vhd" into library work
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_counter_f.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_counter_f>.
+Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_counter_f>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_address_decoder.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_address_decoder>.
+Parsing architecture <IMP> of entity <tri_mode_eth_mac_v5_5_address_decoder>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_slave_attachment>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_slave_attachment>.
+WARNING:HDLCompiler:443 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd" Line 236: Function get_addr_bits does not always return a value.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_sync_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_sync_block>.
+Parsing architecture <structural> of entity <tri_mode_eth_mac_v5_5_sync_block>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_ipif.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_vector_decode>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_vector_decode>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\tri_mode_eth_mac_v5_5.vhd" into library work
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_reset_sync>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_reset_sync>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_block>.
+Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_block>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" into library work
+Parsing entity <pcs_pma_transceiver_A>.
+Parsing architecture <structural> of entity <pcs_pma_transceiver_a>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma.vhd" into library work
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_fifo_block>.
+Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_fifo_block>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_reset_sync.vhd" into library work
+Parsing entity <pcs_pma_reset_sync>.
+Parsing architecture <rtl> of entity <pcs_pma_reset_sync>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd" into library work
+Parsing entity <pcs_pma_block>.
+Parsing architecture <block_level> of entity <pcs_pma_block>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" into library work
+Parsing entity <ip_udp_tx_block>.
+Parsing architecture <Behavioral> of entity <ip_udp_tx_block>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 140: Actual for formal port rst is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_rx_block.vhd" into library work
+Parsing entity <ip_udp_rx_block>.
+Parsing architecture <rtl> of entity <ip_udp_rx_block>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" into library work
+Parsing entity <eth_head>.
+Parsing architecture <Behavioral> of entity <eth_head>.
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" Line 109: Actual for formal port rst is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" into library work
+Parsing entity <eth>.
+Parsing architecture <Behavioral> of entity <eth>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" into library work
+Parsing entity <udp>.
+Parsing architecture <Behavioral> of entity <udp>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" into library work
+Parsing entity <eth_top>.
+Parsing architecture <Behavioral> of entity <eth_top>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\edge_to_pulse_converter.vhd" into library work
+Parsing entity <edge_to_pulse_converter>.
+Parsing architecture <Behavioral> of entity <edge_to_pulse_converter>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\remote_sources\_\BMD_DAUGTHER_CARD_FW\Source files\BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\UtilityPkg.vhd" into library work
+Parsing package <UtilityPkg>.
+Parsing package body <UtilityPkg>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_DC_COMM.vhd" into library work
+Parsing entity <SCROD_DC_COMM>.
+Parsing architecture <Behavioral> of entity <scrod_dc_comm>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\DataDemuxControl.vhd" into library work
+Parsing entity <DataDemuxControl>.
+Parsing architecture <Behavioral> of entity <datademuxcontrol>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
+Parsing entity <CLK_FANOUT>.
+Parsing architecture <xilinx> of entity <clk_fanout>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" into library work
+Parsing entity <SCROD_A5_TOP>.
+Parsing architecture <Behavioral> of entity <scrod_a5_top>.
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 163: <rj45_ack_n> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 194: <sc_dc_clk_p> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 194: Actual of formal out port q cannot be an expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 196: Actual for formal port c1 is neither a static name nor a globally static expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 210: <sc_dc_clk_n> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 210: Actual of formal out port q cannot be an expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 211: Actual for formal port c0 is neither a static name nor a globally static expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 224: <sc_dc_clk_p> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 224: Actual of formal out port o cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 225: <sc_dc_clk_n> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 225: Actual of formal out port ob cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 230: <sc_dc_clk_p> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 230: Actual of formal out port o cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 231: <sc_dc_clk_n> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 231: Actual of formal out port ob cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 236: <sc_dc_clk_p> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 236: Actual of formal out port o cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 237: <sc_dc_clk_n> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 237: Actual of formal out port ob cannot be an expression
+ERROR:HDLCompiler:69 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 248: <sc_dc_data_p> is not declared.
+ERROR:HDLCompiler:192 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\SCROD_A5_TOP.vhd" Line 248: Actual of formal out port o cannot be an expression
+Sorry, too many errors..
+--> 
+
+Total memory usage is 4472012 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

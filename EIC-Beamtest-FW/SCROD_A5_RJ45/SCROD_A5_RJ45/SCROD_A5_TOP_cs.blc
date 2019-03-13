@@ -1,21 +1,21 @@
-Release 14.7 ngcbuild P.20131013 (nt)
+Release 14.7 ngcbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: ngcbuild.exe -dd
-C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_
-A5_RJ45/_ngo -sd source/Ethernet files/IPcores -sd source/Ethernet
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/_ngo -sd
+source/Ethernet files/IPcores -sd source/Ethernet
 files/IPcores/pcs_pma_s6_gtpwizard/implement -sd ipcore_dir/STATE_FIFO -sd
 ipcore_dir/blk_mem_gen_v7_3 -sd ipcore_dir/CMD_FIFO_w1r8 -sd
 ipcore_dir/CMD_FIFO_w8r32 -sd ipcore_dir/WAVE_FIFO_w32r8 -sd
 ipcore_dir/CLK_FANOUT -p xc6slx150t-fgg676-3 -i
-C:\Users\isar\Dropbox\Nalu\Startup\Projects\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
-A5_RJ45\SCROD_A5_TOP.ngc
-C:\Users\isar\Dropbox\Nalu\Startup\Projects\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
-A5_RJ45\SCROD_A5_TOP_cs.ngc
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\SCROD_A5_
+TOP.ngc
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\SCROD_A5_
+TOP_cs.ngc
 
 Reading NGO file
-"C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD
-_A5_RJ45/SCROD_A5_TOP.ngc" ...
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/SCROD_A5
+_TOP.ngc" ...
 Loading design module "ipcore_dir/WAVE_FIFO_w32r8/WAVE_FIFO.ngc"...
 Loading design module "ipcore_dir/CMD_FIFO_w8r32/CMD_FIFO_w8r32.ngc"...
 Loading design module "ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.ngc"...
@@ -39,14 +39,14 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 187060 kilobytes
+Total memory usage is 4465240 kilobytes
 
 Writing NGC file
-"C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD
-_A5_RJ45/SCROD_A5_TOP_cs.ngc" ...
-Total REAL time to NGCBUILD completion:  7 sec
-Total CPU time to NGCBUILD completion:   6 sec
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/SCROD_A5
+_TOP_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   3 sec
 
 Writing NGCBUILD log file
-"C:/Users/isar/Dropbox/Nalu/Startup/Projects/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD
-_A5_RJ45/SCROD_A5_TOP_cs.blc"...
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/SCROD_A5
+_TOP_cs.blc"...
