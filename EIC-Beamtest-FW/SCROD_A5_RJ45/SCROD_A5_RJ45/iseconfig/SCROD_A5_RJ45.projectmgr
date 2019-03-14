@@ -7,6 +7,7 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|HMB|EIC-Beamtest-FW|SCROD_A5_RJ45|SCROD_A5_RJ45|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral/ETH_MODULE - eth_top - Behavioral</ClosedNode>
          <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_RJ45|source|SCROD_A5_TOP.vhd/DC_READOUT_DEMUX - DataDemuxControl - Behavioral</ClosedNode>
          <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|Kevin|Desktop|projects|BMD_RevB|Firmware|SCROD_A5_RJ45|source|SCROD_A5_TOP.vhd/comm_process - SCROD_DC_COMM - Behavioral</ClosedNode>
          <ClosedNode>/SCROD_A5_TOP - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|SCROD_A5_RJ45|SCROD_A5_RJ45|source|SCROD_A5_TOP.vhd/DC_READOUT_DEMUX - DataDemuxControl - Behavioral</ClosedNode>
@@ -14,45 +15,45 @@
          <ClosedNode>/SCROD_DC_COMM - Behavioral C:|Users|isar|Dropbox|Nalu|Startup|Projects|EIC-Beamtest-FW|SCROD_A5_RJ45|SCROD_A5_RJ45|source|SCROD_DC_COMM.vhd/ETH_MODULE - eth_top - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/SCROD_A5_TOP.vhd)</SelectedItem>
+         <SelectedItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/SCROD_A5_TOP.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000377000000020000000000000000000000000200000064ffffffff000000810000000300000002000003770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000437000000020000000000000000000000000200000064ffffffff000000810000000300000002000004370000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/SCROD_A5_TOP.vhd)</CurrentItem>
+      <CurrentItem>SCROD_A5_TOP - Behavioral (C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/SCROD_A5_TOP.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000002c70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>SCROD_A5_BMD.ucf</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000001a90000000100000000000000d70000000100000000000000660000000100000000000000ac0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>SCROD_A5_BMD.ucf</CurrentItem>
+      <CurrentItem>C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\Chipscope\SCROD_A5_FAKE_DATA_TB_2.cdc</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -74,13 +75,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000002c70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -88,13 +89,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000193000000010000000100000000000000000000000064ffffffff000000810000000000000001000001930000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000002c70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
       <ClosedNodes>
@@ -119,7 +120,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000198000000010000000100000000000000000000000064ffffffff000000810000000000000001000001980000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000002c70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
