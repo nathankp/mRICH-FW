@@ -150,6 +150,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="SCROD_A5_TOP.lso"/>
       <outfile xil_pn:name="SCROD_A5_TOP.ngc"/>
       <outfile xil_pn:name="SCROD_A5_TOP.ngr"/>
@@ -158,7 +160,6 @@
       <outfile xil_pn:name="SCROD_A5_TOP.syr"/>
       <outfile xil_pn:name="SCROD_A5_TOP.xst"/>
       <outfile xil_pn:name="SCROD_A5_TOP_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
@@ -171,20 +172,24 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="SCROD_A5_TOP.bld"/>
       <outfile xil_pn:name="SCROD_A5_TOP.ngd"/>
       <outfile xil_pn:name="SCROD_A5_TOP_cs.blc"/>
       <outfile xil_pn:name="SCROD_A5_TOP_cs.ngc"/>
       <outfile xil_pn:name="SCROD_A5_TOP_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
     <transform xil_pn:end_ts="1552435318" xil_pn:in_ck="5331260665498541751" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1711036327861704755" xil_pn:start_ts="1552435302">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="SCROD_A5_TOP.pcf"/>
       <outfile xil_pn:name="SCROD_A5_TOP_map.map"/>
       <outfile xil_pn:name="SCROD_A5_TOP_map.mrp"/>
@@ -192,7 +197,6 @@
       <outfile xil_pn:name="SCROD_A5_TOP_map.xrpt"/>
       <outfile xil_pn:name="SCROD_A5_TOP_summary.xml"/>
       <outfile xil_pn:name="SCROD_A5_TOP_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
     <transform xil_pn:end_ts="1530205651" xil_pn:in_ck="-1530876502505098928" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3699445669326699954" xil_pn:start_ts="1530205300">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -209,7 +213,7 @@
     <transform xil_pn:end_ts="1530206301" xil_pn:in_ck="-5696044531403329371" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5017394210571468131" xil_pn:start_ts="1530206199">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -220,7 +224,7 @@
     </transform>
     <transform xil_pn:end_ts="1530205651" xil_pn:in_ck="5331260665498541619" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-248438014945436816" xil_pn:start_ts="1530205621">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
