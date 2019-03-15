@@ -139,6 +139,10 @@ TYPE eth_tx_st is (idle,
 TYPE Comm_Parse_state is (IDLE, CHECK_EMPTY, LOAD_DATA, LOAD_DC_NUM, LOAD_DC_NUM1, CMD_CHECK, DONE);
 signal CCState : Comm_Parse_state := IDLE; --Command Center's main statemachine state
 signal PCtxSt : eth_tx_st := idle;
+
+attribute keep: boolean;
+attribute keep of reg_fifo_din : signal is true;
+
 begin
 udp_usr_clk <= UDP_CLK;
 --temporarily disable QBLink ---

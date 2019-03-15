@@ -1,63 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt64" product="ISE" version="14.7">
+<document OS="lin64" product="ISE" version="14.7">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Tue Mar 12 14:33:02 2019">
+  <application stringID="Xst" timeStamp="Tue Mar 12 17:13:33 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\MentorGraphics\9.5PADS\SDD_HOME\common\win32\bin;C:\MentorGraphics\9.5PADS\SDD_HOME\common\win32\lib;C:\MentorGraphics\9.5PADS\MGC_HOME.ixn\bin;C:\MentorGraphics\9.5PADS\MGC_HOME.ixn\lib;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Anaconda2;C:\Anaconda2\Scripts;C:\Anaconda2\Library\bin;C:\Program Files\MATLAB\R2017b\runtime\win64;C:\Program Files\MATLAB\R2017b\bin;C:\root_v5.34.36\bin;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\GitExtensions\;C:\Users\Kevin\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Kevin\AppData\Local\Programs\Python\Python35\;C:\Users\Kevin\Anaconda2;C:\Users\Kevin\Anaconda2\Scripts;C:\Users\Kevin\Anaconda2\Library\bin;C:\Users\Kevin\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="PATHEXT"/>
-          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/lib/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/lib:/opt/Xilinx/14.7/ISE_DS/EDK/lib/lin64:/opt/Xilinx/14.7/ISE_DS/common/lib/lin64"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\"/>
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/EDK"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="2100@hepflexlm.phys.hawaii.edu"/>
+          <item stringID="value" value="2100@hepflexlm.phys.hawaii.edu:"/>
         </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE//bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.7/ISE_DS/ISE/sysgen/bin:/opt/Xilinx/14.7/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.7/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.7/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.7/ISE_DS/common/bin/lin64:/home/mrich/bin:/home/mrich/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
         </row>
         <row stringID="row" value="5">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\EDK"/>
+          <item stringID="variable" value="LMC_HOME"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64"/>
         </row>
         <row stringID="row" value="6">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/PlanAhead"/>
         </row>
         <row stringID="row" value="7">
-          <item stringID="variable" value="XIL_IMPACT_SKIPIDCODECHECK"/>
-          <item stringID="value" value="1"/>
-        </row>
-        <row stringID="row" value="8">
-          <item stringID="variable" value="XIL_MAP_LOCWARN"/>
-          <item stringID="value" value="XIL_MAP_LOCWARN"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/14.7/ISE_DS/ISE/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
-        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
+        <item stringID="User_EnvOsname" value="Ubuntu"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 16.04.5 LTS"/>
       </item>
-      <item stringID="User_EnvHost" value="PC1"/>
+      <item stringID="User_EnvHost" value="mrich-OptiPlex-390"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz"/>
-          <item stringID="speed" value="3592 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz"/>
+          <item stringID="speed" value="2461.230 MHz"/>
         </row>
       </table>
     </section>
@@ -76,7 +72,7 @@
       <item DEFAULT="No" label="-rtlview" stringID="XST_RTLVIEW" value="Yes"/>
       <item DEFAULT="AllClockNets" label="-glob_opt" stringID="XST_GLOBOPT" value="AllClockNets"/>
       <item DEFAULT="Yes" label="-read_cores" stringID="XST_READCORES" value="YES"/>
-      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{&quot;../SCROD_A5_RJ45/source/Ethernet files/IPcores&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO&quot; &quot;../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8&quot; &quot;../../../../QBLink/QBLink/ipcore_dir&quot; &quot;../../../../QBLink/QBLink/cores&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT&quot;  }"/>
+      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{&quot;../SCROD_A5_RJ45/source/Ethernet files/IPcores&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO&quot; &quot;../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement&quot; &quot;../../../../QBLink/QBlink/cores&quot; &quot;../../../../QBLink/QBlink/ipcore_dir&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8&quot; &quot;../../../../QBLink/QBLink/cores&quot; &quot;../../../../QBLink/QBLink/ipcore_dir&quot; &quot;../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT&quot;  }"/>
       <item DEFAULT="No" label="-write_timing_constraints" stringID="XST_WRITETIMINGCONSTRAINTS" value="NO"/>
       <item DEFAULT="No" label="-cross_clock_analysis" stringID="XST_CROSSCLOCKANALYSIS" value="NO"/>
       <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
@@ -224,8 +220,8 @@
       </item>
     </section>
     <section stringID="XST_FINAL_REGISTER_REPORT">
-      <item dataType="int" stringID="XST_REGISTERS" value="2171">
-        <item dataType="int" stringID="XST_FLIPFLOPS" value="2171"/>
+      <item dataType="int" stringID="XST_REGISTERS" value="2175">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="2175"/>
       </item>
       <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="21">
         <item dataType="int" stringID="XST_2BIT_SHIFT_REGISTER" value="4"/>
@@ -247,8 +243,8 @@
           <item dataType="int" stringID="XST_GND" value="26"/>
           <item dataType="int" stringID="XST_INV" value="224"/>
           <item dataType="int" stringID="XST_LUT1" value="1462"/>
-          <item dataType="int" stringID="XST_LUT2" value="1244"/>
-          <item dataType="int" stringID="XST_LUT3" value="786"/>
+          <item dataType="int" stringID="XST_LUT2" value="1246"/>
+          <item dataType="int" stringID="XST_LUT3" value="784"/>
           <item dataType="int" stringID="XST_LUT4" value="850"/>
           <item dataType="int" stringID="XST_LUT5" value="1054"/>
           <item dataType="int" stringID="XST_LUT6" value="2152"/>
@@ -258,13 +254,13 @@
           <item dataType="int" stringID="XST_VCC" value="6"/>
           <item dataType="int" stringID="XST_XORCY" value="2313"/>
         </item>
-        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="5870">
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="5874">
           <item dataType="int" stringID="XST_FD" value="782"/>
           <item dataType="int" stringID="XST_FDC" value="454"/>
           <item dataType="int" stringID="XST_FDC1" value="3"/>
           <item dataType="int" stringID="XST_FDCE" value="462"/>
           <item dataType="int" stringID="XST_FDCE1" value="7"/>
-          <item dataType="int" stringID="XST_FDE" value="1562"/>
+          <item dataType="int" stringID="XST_FDE" value="1566"/>
           <item dataType="int" stringID="XST_FDP" value="185"/>
           <item dataType="int" stringID="XST_FDPE" value="27"/>
           <item dataType="int" stringID="XST_FDR" value="980"/>
@@ -295,15 +291,15 @@
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="6slx150tfgg676-3"/>
-      <item AVAILABLE="184304" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="5870"/>
+      <item AVAILABLE="184304" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="5874"/>
       <item AVAILABLE="92152" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="8157"/>
       <item AVAILABLE="92152" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="7772"/>
       <item AVAILABLE="21680" dataType="int" stringID="XST_NUMBER_USED_AS_MEMORY" value="385"/>
       <item dataType="int" stringID="XST_NUMBER_USED_AS_SRL" value="65"/>
-      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="10546"/>
-      <item AVAILABLE="10546" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="4676"/>
-      <item AVAILABLE="10546" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="2389"/>
-      <item AVAILABLE="10546" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="3481"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="10550"/>
+      <item AVAILABLE="10550" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="4676"/>
+      <item AVAILABLE="10550" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="2393"/>
+      <item AVAILABLE="10550" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="3481"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="401"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="24"/>
       <item AVAILABLE="396" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="19"/>
@@ -316,8 +312,8 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="819"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="381"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="817"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="379"/>
     </section>
   </application>
 

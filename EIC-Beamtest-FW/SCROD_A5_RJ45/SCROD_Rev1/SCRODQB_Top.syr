@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Reading design: SCRODQB_Top.prj
+--> 
+Reading design: SCRODQB_Top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -100,7 +103,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../../../../QBLink/QBLink/ipcore_dir" "../../../../QBLink/QBLink/cores" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+Cores Search Directories           : {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../../../../QBLink/QBlink/cores" "../../../../QBLink/QBlink/ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../../../../QBLink/QBLink/cores" "../../../../QBLink/QBLink/ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
 
 =========================================================================
 
@@ -108,176 +111,179 @@ Cores Search Directories           : {"../SCROD_A5_RJ45/source/Ethernet files/IP
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\STATE_FIFO\STATE_FIFO.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.vhd" into library work
 Parsing entity <STATE_FIFO>.
 Parsing architecture <STATE_FIFO_a> of entity <state_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\tx_fifo.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tx_fifo.vhd" into library work
 Parsing entity <tx_fifo>.
 Parsing architecture <tx_fifo_a> of entity <tx_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\ip_rx_bram.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/ip_rx_bram.vhd" into library work
 Parsing entity <ip_rx_bram>.
 Parsing architecture <ip_rx_bram_a> of entity <ip_rx_bram>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\eth_head_fifo.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/eth_head_fifo.vhd" into library work
 Parsing entity <eth_head_fifo>.
 Parsing architecture <eth_head_fifo_a> of entity <eth_head_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" into library work
 Parsing entity <pcs_pma_s6_gtpwizard_tile>.
 Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard_tile>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\frame_gen.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/frame_gen.vhd" into library work
 Parsing entity <FRAME_GEN>.
 Parsing architecture <RTL> of entity <frame_gen>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\frame_check.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/frame_check.vhd" into library work
 Parsing entity <FRAME_CHECK>.
 Parsing architecture <RTL> of entity <frame_check>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd" into library work
 Parsing entity <pcs_pma_s6_gtpwizard>.
 Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard\example_design\pcs_pma_s6_gtpwizard_top.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/example_design/pcs_pma_s6_gtpwizard_top.vhd" into library work
 Parsing entity <pcs_pma_s6_gtpwizard_top>.
 Parsing architecture <RTL> of entity <pcs_pma_s6_gtpwizard_top>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CMD_FIFO_w1r8\CMD_FIFO_w1r8.vhd" into library work
-Parsing entity <CMD_FIFO_w1r8>.
-Parsing architecture <CMD_FIFO_w1r8_a> of entity <cmd_fifo_w1r8>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_pselect_f.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_pselect_f>.
-Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_pselect_f>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ipif_pkg.vhd" into library work
-Parsing package <ipif_pkg>.
-Parsing package body <ipif_pkg>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_counter_f.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_counter_f>.
-Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_counter_f>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_address_decoder.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_address_decoder>.
-Parsing architecture <IMP> of entity <tri_mode_eth_mac_v5_5_address_decoder>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_slave_attachment>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_slave_attachment>.
-WARNING:HDLCompiler:443 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd" Line 236: Function get_addr_bits does not always return a value.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_sync_block.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_sync_block>.
-Parsing architecture <structural> of entity <tri_mode_eth_mac_v5_5_sync_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_ipif.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_vector_decode>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_vector_decode>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
-Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
-Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\tri_mode_eth_mac_v5_5.vhd" into library work
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
-Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_reset_sync>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_reset_sync>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_block>.
-Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" into library work
-Parsing entity <pcs_pma_transceiver_A>.
-Parsing architecture <structural> of entity <pcs_pma_transceiver_a>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma.vhd" into library work
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\UtilityPkg.vhd" into library work
-Parsing package <UtilityPkg>.
-Parsing package body <UtilityPkg>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_fifo_block>.
-Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_fifo_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" into library work
-Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
-Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_reset_sync.vhd" into library work
-Parsing entity <pcs_pma_reset_sync>.
-Parsing architecture <rtl> of entity <pcs_pma_reset_sync>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd" into library work
-Parsing entity <pcs_pma_block>.
-Parsing architecture <block_level> of entity <pcs_pma_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" into library work
-Parsing entity <Encode8b10b>.
-Parsing architecture <rtl> of entity <encode8b10b>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" into library work
-Parsing entity <Decode8b10b>.
-Parsing architecture <rtl> of entity <decode8b10b>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\serializationFifo.vhd" into library work
-Parsing entity <serializationFifo>.
-Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" into library work
-Parsing entity <ip_udp_tx_block>.
-Parsing architecture <Behavioral> of entity <ip_udp_tx_block>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 140: Actual for formal port rst is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_rx_block.vhd" into library work
-Parsing entity <ip_udp_rx_block>.
-Parsing architecture <rtl> of entity <ip_udp_rx_block>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" into library work
-Parsing entity <eth_head>.
-Parsing architecture <Behavioral> of entity <eth_head>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" Line 109: Actual for formal port rst is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" into library work
-Parsing entity <eth>.
-Parsing architecture <Behavioral> of entity <eth>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd" into library work
-Parsing entity <SyncBit>.
-Parsing architecture <structural> of entity <syncbit>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" into library work
-Parsing entity <S6SerialInterfaceOut>.
-Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" into library work
-Parsing entity <S6SerialInterfaceIn>.
-Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" into library work
-Parsing entity <ByteLink>.
-Parsing architecture <rtl> of entity <bytelink>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\BMD_definitions.vhd" into library work
-Parsing package <BMD_definitions>.
-Parsing package body <BMD_definitions>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\ipcore_dir\QBLtxFIFO.vhd" into library work
-Parsing entity <QBLtxFIFO>.
-Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\CMD_FIFO_w8r32.vhd" into library work
-Parsing entity <CMD_FIFO_w8r32>.
-Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd" into library work
-Parsing entity <clockgen_bytelink>.
-Parsing architecture <xilinx> of entity <clockgen_bytelink>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" into library work
-Parsing entity <udp>.
-Parsing architecture <Behavioral> of entity <udp>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" into library work
-Parsing entity <QBlink>.
-Parsing architecture <Behavioral> of entity <qblink>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" into library work
-Parsing entity <cmd_center>.
-Parsing architecture <Behavioral> of entity <cmd_center>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" into library work
-Parsing entity <eth_top>.
-Parsing architecture <Behavioral> of entity <eth_top>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45_tampered/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd" into library work
 Parsing entity <CLK_FANOUT>.
 Parsing architecture <xilinx> of entity <clk_fanout>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/QBLink/QBlink/ipcore_dir/clockgen_bytelink.vhd" into library work
+Parsing entity <clockgen_bytelink>.
+Parsing architecture <xilinx> of entity <clockgen_bytelink>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/QBlink/cores/serializationFifo.vhd" into library work
+Parsing entity <serializationFifo>.
+Parsing architecture <serializationFifo_a> of entity <serializationfifo>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/QBlink/ipcore_dir/QBLtxFIFO.vhd" into library work
+Parsing entity <QBLtxFIFO>.
+Parsing architecture <QBLtxFIFO_a> of entity <qbltxfifo>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/QBlink/cores/CMD_FIFO_w8r32.vhd" into library work
+Parsing entity <CMD_FIFO_w8r32>.
+Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.vhd" into library work
+Parsing entity <CMD_FIFO_w1r8>.
+Parsing architecture <CMD_FIFO_w1r8_a> of entity <cmd_fifo_w1r8>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_pselect_f.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_pselect_f>.
+Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_pselect_f>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_ipif_pkg.vhd" into library work
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_counter_f.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_counter_f>.
+Parsing architecture <imp> of entity <tri_mode_eth_mac_v5_5_counter_f>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_address_decoder.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_address_decoder>.
+Parsing architecture <IMP> of entity <tri_mode_eth_mac_v5_5_address_decoder>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_slave_attachment.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_slave_attachment>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_slave_attachment>.
+WARNING:HDLCompiler:443 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_slave_attachment.vhd" Line 236: Function get_addr_bits does not always return a value.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_sync_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_sync_block>.
+Parsing architecture <structural> of entity <tri_mode_eth_mac_v5_5_sync_block>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi_lite_ipif.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_vector_decode>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_vector_decode>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_tx_client_fifo>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_rx_client_fifo>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/tri_mode_eth_mac_v5_5.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
+Parsing architecture <RTL> of entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_reset_sync.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_reset_sync>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_reset_sync>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_block>.
+Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_block>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" into library work
+Parsing entity <pcs_pma_transceiver_A>.
+Parsing architecture <structural> of entity <pcs_pma_transceiver_a>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/UtilityPkg.vhd" into library work
+Parsing package <UtilityPkg>.
+Parsing package body <UtilityPkg>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_fifo_block>.
+Parsing architecture <wrapper> of entity <tri_mode_eth_mac_v5_5_fifo_block>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" into library work
+Parsing entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
+Parsing architecture <rtl> of entity <tri_mode_eth_mac_v5_5_axi_lite_sm>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_reset_sync.vhd" into library work
+Parsing entity <pcs_pma_reset_sync>.
+Parsing architecture <rtl> of entity <pcs_pma_reset_sync>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_block.vhd" into library work
+Parsing entity <pcs_pma_block>.
+Parsing architecture <block_level> of entity <pcs_pma_block>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/Encode8b10b.vhd" into library work
+Parsing entity <Encode8b10b>.
+Parsing architecture <rtl> of entity <encode8b10b>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" into library work
+Parsing entity <Decode8b10b>.
+Parsing architecture <rtl> of entity <decode8b10b>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" into library work
+Parsing entity <ip_udp_tx_block>.
+Parsing architecture <Behavioral> of entity <ip_udp_tx_block>.
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 140: Actual for formal port rst is neither a static name nor a globally static expression
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_rx_block.vhd" into library work
+Parsing entity <ip_udp_rx_block>.
+Parsing architecture <rtl> of entity <ip_udp_rx_block>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" into library work
+Parsing entity <eth_head>.
+Parsing architecture <Behavioral> of entity <eth_head>.
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" Line 109: Actual for formal port rst is neither a static name nor a globally static expression
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" into library work
+Parsing entity <eth>.
+Parsing architecture <Behavioral> of entity <eth>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/SyncBit.vhd" into library work
+Parsing entity <SyncBit>.
+Parsing architecture <structural> of entity <syncbit>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd" into library work
+Parsing entity <S6SerialInterfaceOut>.
+Parsing architecture <Behavioral> of entity <s6serialinterfaceout>.
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" into library work
+Parsing entity <S6SerialInterfaceIn>.
+Parsing architecture <Behavioral> of entity <s6serialinterfacein>.
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/ByteLink.vhd" into library work
+Parsing entity <ByteLink>.
+Parsing architecture <rtl> of entity <bytelink>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/udp.vhd" into library work
+Parsing entity <udp>.
+Parsing architecture <Behavioral> of entity <udp>.
+Parsing VHDL file "/home/mrich/Desktop/QBLink/source/QBlink.vhd" into library work
+Parsing entity <QBlink>.
+Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" into library work
+Parsing entity <cmd_center>.
+Parsing architecture <Behavioral> of entity <cmd_center>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" into library work
+Parsing entity <eth_top>.
+Parsing architecture <Behavioral> of entity <eth_top>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd" into library work
+Parsing entity <CLK_FANOUT>.
+Parsing architecture <xilinx> of entity <clk_fanout>.
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
 Parsing architecture <Behavioral> of entity <scrodqb_top>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 142: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" Line 143: Actual for formal port c1 is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 84: Using initial value '0' for qb_rst since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" Line 84: Using initial value '0' for qb_rst since it is never assigned
 
 Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
 
@@ -286,12 +292,12 @@ Elaborating entity <eth_top> (architecture <Behavioral>) from library <work>.
 Elaborating entity <udp> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <eth> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" Line 568: Using initial value "00000000" for tx_ifg_delay since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" Line 568: Using initial value "00000000" for tx_ifg_delay since it is never assigned
 
 Elaborating entity <tri_mode_eth_mac_v5_5_fifo_block> (architecture <wrapper>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_block> (architecture <wrapper>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" Line 435: Assignment to glbl_rst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd" Line 435: Assignment to glbl_rst ignored, since the identifier is never used
 
 Elaborating entity <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper> (architecture <rtl>) with generics from library <work>.
 
@@ -300,146 +306,146 @@ Elaborating entity <tri_mode_eth_mac_v5_5_axi_lite_ipif> (architecture <rtl>) wi
 Elaborating entity <tri_mode_eth_mac_v5_5_slave_attachment> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_address_decoder> (architecture <IMP>) with generics from library <work>.
-WARNING:HDLCompiler:746 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_address_decoder.vhd" Line 345: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_address_decoder.vhd" Line 345: Range is empty (null range)
 
 Elaborating entity <tri_mode_eth_mac_v5_5_pselect_f> (architecture <imp>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_counter_f> (architecture <imp>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_vector_decode> (architecture <rtl>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 219: Assignment to tx_byte_valid ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 221: Assignment to tx_excessive_collision ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 222: Assignment to tx_late_collision ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 223: Assignment to tx_excessive_deferral ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 224: Assignment to tx_deferred ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 251: Assignment to rx_byte_valid ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 254: Assignment to rx_out_of_bounds_error ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 310: Assignment to rx_bad_frame_reg ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 599: Assignment to single_attempt ignored, since the identifier is never used
-WARNING:HDLCompiler:89 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" Line 207: <tri_mode_eth_mac_v5_5> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 219: Assignment to tx_byte_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 221: Assignment to tx_excessive_collision ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 222: Assignment to tx_late_collision ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 223: Assignment to tx_excessive_deferral ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 224: Assignment to tx_deferred ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 251: Assignment to rx_byte_valid ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 254: Assignment to rx_out_of_bounds_error ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 310: Assignment to rx_bad_frame_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd" Line 599: Assignment to single_attempt ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd" Line 207: <tri_mode_eth_mac_v5_5> remains a black-box since it has no binding entity.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_reset_sync> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo> (architecture <RTL>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_tx_client_fifo> (architecture <RTL>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" Line 396. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" Line 396. Case statement is complete. others clause is never selected
 
 Elaborating entity <tri_mode_eth_mac_v5_5_sync_block> (architecture <structural>) with generics from library <work>.
 
 Elaborating entity <BRAM_TDP_MACRO> (architecture <bram_V>) with generics from library <unimacro>.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 878: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 890: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 905: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 926: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 234: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 303: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 577: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 374: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 385: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 465: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 476: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 553: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 945: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 628: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 651: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 687: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 709: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1009: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1111: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1238: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 740: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 741: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 762: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 772: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 791: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 801: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 820: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 830: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1430: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1431: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1432: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1433: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1434: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1451: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1452: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1453: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1454: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1455: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1472: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1491: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1510: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1535: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1561: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1571: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1572: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1579: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1589: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1590: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1597: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1613: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1933: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 2263: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:634 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1409: Net <dia_pattern[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1410: Net <dib_pattern[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1411: Net <dipa_pattern[3]> does not have a driver.
-WARNING:HDLCompiler:634 - "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1412: Net <dipb_pattern[3]> does not have a driver.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 878: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 890: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 905: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 926: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 234: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 303: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 577: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 374: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 385: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 465: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 476: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 553: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 945: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 628: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 651: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 687: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 709: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1009: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1111: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1238: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 740: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 741: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 762: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 772: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 791: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 801: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 820: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 830: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1430: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1431: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1432: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1433: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1434: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1451: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1452: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1453: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1454: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1455: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1472: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1491: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1510: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1535: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1561: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1571: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1572: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1579: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1589: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1590: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1597: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1613: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1933: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 2263: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1409: Net <dia_pattern[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1410: Net <dib_pattern[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1411: Net <dipa_pattern[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd" Line 1412: Net <dipb_pattern[3]> does not have a driver.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_rx_client_fifo> (architecture <RTL>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" Line 360. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" Line 618. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" Line 360. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" Line 618. Case statement is complete. others clause is never selected
 
 Elaborating entity <pcs_pma_block> (architecture <block_level>) with generics from library <work>.
-WARNING:HDLCompiler:89 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd" Line 223: <pcs_pma> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_block.vhd" Line 223: <pcs_pma> remains a black-box since it has no binding entity.
 
 Elaborating entity <pcs_pma_transceiver_A> (architecture <structural>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" Line 374: Assignment to rxbufstatus_float0 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" Line 384: Assignment to txbufstatus_float0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" Line 374: Assignment to rxbufstatus_float0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" Line 384: Assignment to txbufstatus_float0 ignored, since the identifier is never used
 
 Elaborating entity <pcs_pma_s6_gtpwizard> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd" Line 320: Assignment to tied_to_ground_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd" Line 322: Assignment to tied_to_vcc_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd" Line 320: Assignment to tied_to_ground_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd" Line 322: Assignment to tied_to_vcc_i ignored, since the identifier is never used
 
 Elaborating entity <pcs_pma_s6_gtpwizard_tile> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 232: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 570: Assignment to rxchariscomma0_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 572: Assignment to rxchariscomma1_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 574: Assignment to rxcharisk0_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 576: Assignment to rxcharisk1_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 580: Assignment to rxdisperr0_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 582: Assignment to rxdisperr1_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 584: Assignment to rxnotintable0_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 586: Assignment to rxnotintable1_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 588: Assignment to rxrundisp0_float_i ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd" Line 590: Assignment to rxrundisp1_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 232: Assignment to tied_to_vcc_vec_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 570: Assignment to rxchariscomma0_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 572: Assignment to rxchariscomma1_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 574: Assignment to rxcharisk0_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 576: Assignment to rxcharisk1_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 580: Assignment to rxdisperr0_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 582: Assignment to rxdisperr1_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 584: Assignment to rxnotintable0_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 586: Assignment to rxnotintable1_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 588: Assignment to rxrundisp0_float_i ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd" Line 590: Assignment to rxrundisp1_float_i ignored, since the identifier is never used
 
 Elaborating entity <pcs_pma_reset_sync> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <tri_mode_eth_mac_v5_5_axi_lite_sm> (architecture <rtl>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" Line 493. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" Line 834: Assignment to enable_address_swap ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi_lite_sm.vhd" Line 493. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" Line 834: Assignment to enable_address_swap ignored, since the identifier is never used
 
 Elaborating entity <tri_mode_eth_mac_v5_5_reset_sync> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" Line 914: Assignment to chk_resetn ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" Line 914: Assignment to chk_resetn ignored, since the identifier is never used
 
 Elaborating entity <ip_udp_tx_block> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 115: Using initial value 800 for frag_wait_time since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 115: Using initial value 800 for frag_wait_time since it is never assigned
 
 Elaborating entity <tx_fifo> (architecture <tx_fifo_a>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 151: Assignment to debug4 ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 88: Net <ip_header[159]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 101: Net <udp_pseudo_header[95]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" Line 108: Net <udp_header[63]> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 151: Assignment to debug4 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 88: Net <ip_header[159]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 101: Net <udp_pseudo_header[95]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" Line 108: Net <udp_header[63]> does not have a driver.
 
 Elaborating entity <ip_udp_rx_block> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_rx_block.vhd" Line 89: Using initial value "11000000101010000001010011111111" for broadcast_ip_addr since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_rx_block.vhd" Line 89: Using initial value "11000000101010000001010011111111" for broadcast_ip_addr since it is never assigned
 
 Elaborating entity <ip_rx_bram> (architecture <ip_rx_bram_a>) from library <work>.
 
 Elaborating entity <eth_head> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" Line 64: Using initial value "0000100000000000" for eth_type since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" Line 65: Using initial value "111111111111111111111111111111111111111111111111" for broadcast_mac_addr since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" Line 68: Using initial value "1011111000010001111000100101110010110000110101011010101010111011110011001101110111101110111111110000100000000000" for tx_eth_header since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" Line 64: Using initial value "0000100000000000" for eth_type since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" Line 65: Using initial value "111111111111111111111111111111111111111111111111" for broadcast_mac_addr since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" Line 68: Using initial value "1011111000010001111000100101110010110000110101011010101010111011110011001101110111101110111111110000100000000000" for tx_eth_header since it is never assigned
 
 Elaborating entity <eth_head_fifo> (architecture <eth_head_fifo_a>) from library <work>.
 
@@ -452,77 +458,77 @@ Elaborating entity <SyncBit> (architecture <structural>) with generics from libr
 Elaborating entity <S6SerialInterfaceOut> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <serializationFifo> (architecture <serializationFifo_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" Line 97. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd" Line 97. Case statement is complete. others clause is never selected
 
 Elaborating entity <S6SerialInterfaceIn> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" Line 166. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" Line 166. Case statement is complete. others clause is never selected
 
 Elaborating entity <ByteLink> (architecture <rtl>) with generics from library <work>.
 
 Elaborating entity <Encode8b10b> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd" Line 132: Assignment to illegalk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Encode8b10b.vhd" Line 132: Assignment to illegalk ignored, since the identifier is never used
 
 Elaborating entity <Decode8b10b> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 107: Assignment to cdei ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 111: Assignment to p22enin ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 112: Assignment to p22ei ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 113: Assignment to p31dnenin ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 114: Assignment to p31e ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 149: Assignment to alt7 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd" Line 156: Assignment to k28 ignored, since the identifier is never used
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd" Line 198. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 107: Assignment to cdei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 111: Assignment to p22enin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 112: Assignment to p22ei ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 113: Assignment to p31dnenin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 114: Assignment to p31e ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 149: Assignment to alt7 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd" Line 156: Assignment to k28 ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/QBLink/source/ByteLink.vhd" Line 198. Case statement is complete. others clause is never selected
 
 Elaborating entity <QBLtxFIFO> (architecture <QBLtxFIFO_a>) from library <work>.
 
 Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from library <work>.
 
 Elaborating entity <cmd_center> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 69: Using initial value '0' for wave_empty since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 94: Using initial value '0' for dc_fifo_reset since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 101: Using initial value "00000000000000000000000000000000" for dc_fifo_din since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 107: Using initial value '0' for dc_fifo_rd_en since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 108: Using initial value '0' for dc_fifo_wr_en since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 69: Using initial value '0' for wave_empty since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 94: Using initial value '0' for dc_fifo_reset since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 101: Using initial value "00000000000000000000000000000000" for dc_fifo_din since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 107: Using initial value '0' for dc_fifo_rd_en since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 108: Using initial value '0' for dc_fifo_wr_en since it is never assigned
 
 Elaborating entity <STATE_FIFO> (architecture <STATE_FIFO_a>) from library <work>.
 
 Elaborating entity <CMD_FIFO_w1r8> (architecture <CMD_FIFO_w1r8_a>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 299: Assignment to wave_rd_en ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 70: Net <wave_dout[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" Line 95: Net <dc_wr_en[2]> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 303: Assignment to wave_rd_en ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 70: Net <wave_dout[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" Line 95: Net <dc_wr_en[2]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <SCRODQB_Top>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd".
 WARNING:Xst:647 - Input <MGTCLK0P> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MGTCLK0N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <trgLinkSynced> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 199: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<19>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<18>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<17>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<16>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<15>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<14>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<13>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<12>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<11>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<10>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<9>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<8>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<7>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<6>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<5>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<4>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<3>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<2>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 216: Output port <CONTROL_REG<0>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 200: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 200: Output port <trgLinkSynced> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 200: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<19>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<18>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<17>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<16>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<15>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<14>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<13>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<12>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<11>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<10>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<9>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<8>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<7>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<6>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<5>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<4>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<3>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<2>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top.vhd" line 217: Output port <CONTROL_REG<0>> of the instance <cmd_interpreter> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <CommState>.
     Found 4x4-bit Read Only RAM for signal <_n0042>
-    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_9_o_Mux_15_o> created at line 240.
+    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_9_o_Mux_15_o> created at line 241.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd_valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rd_req>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <sync>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -536,35 +542,35 @@ WARNING:Xst:737 - Found 1-bit latch for signal <nxtState<0>>. Latches may be gen
 Unit <SCRODQB_Top> synthesized.
 
 Synthesizing Unit <CLK_FANOUT>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\ipcore_dir\CLK_FANOUT\CLK_FANOUT.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45_tampered/ipcore_dir/CLK_FANOUT/CLK_FANOUT.vhd".
     Summary:
 	no macro.
 Unit <CLK_FANOUT> synthesized.
 
 Synthesizing Unit <eth_top>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd".
 WARNING:Xst:647 - Input <mgttxfault> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mgtmod0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <mgtlos> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <status_vector0> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <speedis100> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <speedis10100> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <tx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <rx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <serial_response> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <frame_error> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <frame_errorn> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <activity_flash> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <activity_flashn> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <an_interrupt0> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <txp1> of the instance <udp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_top.vhd" line 192: Output port <txn1> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <status_vector0> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <speedis100> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <speedis10100> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <tx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <rx_statistics_s> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <serial_response> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <frame_error> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <frame_errorn> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <activity_flash> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <activity_flashn> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <an_interrupt0> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <txp1> of the instance <udp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_top.vhd" line 192: Output port <txn1> of the instance <udp> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <eth_top> synthesized.
 
 Synthesizing Unit <udp>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/udp.vhd".
         ip_addr = "11000000101010000001010000000101"
         dst_ip_addr = "11000000101010000001010000000001"
         port_num = "0110000000000000"
@@ -572,8 +578,8 @@ Synthesizing Unit <udp>.
         mac_addr = "101010101011101111001100110111011110111011111111"
         dst_mac_addr = "101111100001000111100010010111001011000011010101"
 WARNING:Xst:647 - Input <rx_udp_ready> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 273: Output port <tx_axis_fifo_tready> of the instance <eth_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\udp.vhd" line 273: Output port <an_done> of the instance <eth_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/udp.vhd" line 273: Output port <tx_axis_fifo_tready> of the instance <eth_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/udp.vhd" line 273: Output port <an_done> of the instance <eth_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <frame_error> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <frame_errorn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <activity_flash> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -583,14 +589,14 @@ WARNING:Xst:653 - Signal <activity_flashn> is used but never assigned. This sour
 Unit <udp> synthesized.
 
 Synthesizing Unit <eth>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd".
 WARNING:Xst:647 - Input <ext_user_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <gen_tx_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" line 633: Output port <mdio_o> of the instance <trimac_fifo_block> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" line 633: Output port <mdio_t> of the instance <trimac_fifo_block> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" line 728: Output port <gmii_isolate0> of the instance <core_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" line 728: Output port <mdio0_o> of the instance <core_wrapper> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth.vhd" line 728: Output port <mdio0_t> of the instance <core_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" line 633: Output port <mdio_o> of the instance <trimac_fifo_block> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" line 633: Output port <mdio_t> of the instance <trimac_fifo_block> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" line 728: Output port <gmii_isolate0> of the instance <core_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" line 728: Output port <mdio0_o> of the instance <core_wrapper> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth.vhd" line 728: Output port <mdio0_t> of the instance <core_wrapper> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <mdio_i_int>.
     Found 2-bit register for signal <present_state>.
     Found 7-bit register for signal <count>.
@@ -650,7 +656,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <eth> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_fifo_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd".
         C_BASE_ADDRESS = "00000000000000000000000000000000"
     Set property "KEEP = TRUE" for signal <rx_axis_mac_tdata>.
     Set property "KEEP = TRUE" for signal <tx_axis_mac_tdata>.
@@ -661,30 +667,30 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_fifo_block>.
     Set property "KEEP = TRUE" for signal <tx_axis_mac_tready>.
     Set property "KEEP = TRUE" for signal <tx_axis_mac_tlast>.
     Set property "KEEP = TRUE" for signal <tx_axis_mac_tuser>.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <tx_fifo_status> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_fifo_status> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <tx_fifo_overflow> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_axis_mac_tready> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_fifo_overflow> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <tx_fifo_status> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_fifo_status> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <tx_fifo_overflow> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_axis_mac_tready> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_fifo_block.vhd" line 500: Output port <rx_fifo_overflow> of the instance <user_side_FIFO> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <tri_mode_eth_mac_v5_5_fifo_block> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd".
         C_BASE_ADDRESS = "00000000000000000000000000000000"
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" line 519: Output port <rx_axis_filter_tuser> of the instance <trimac_core> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_block.vhd" line 519: Output port <mac_irq> of the instance <trimac_core> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd" line 519: Output port <rx_axis_filter_tuser> of the instance <trimac_core> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_block.vhd" line 519: Output port <mac_irq> of the instance <trimac_core> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <tri_mode_eth_mac_v5_5_block> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd".
         C_BASE_ADDRESS = "00000000000000000000000000000000"
         C_ADDR_RANGE_SIZE = "00000000000000000000011111111111"
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" line 222: Output port <Bus2IP_BE> of the instance <axi_lite_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" line 222: Output port <Bus2IP_RNW> of the instance <axi_lite_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" line 222: Output port <Bus2IP_BE> of the instance <axi_lite_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper.vhd" line 222: Output port <Bus2IP_RNW> of the instance <axi_lite_top> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <local_rdack>.
     Found 1-bit register for signal <cs_edge_reg>.
     Found 1-bit register for signal <local_wrack>.
@@ -693,7 +699,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <tri_mode_eth_mac_v5_5_axi4_lite_ipif_wrapper> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_ipif.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi_lite_ipif.vhd".
         C_S_AXI_DATA_WIDTH = 32
         C_S_AXI_ADDR_WIDTH = 32
         C_S_AXI_MIN_SIZE = "00000000000000000000011111111111"
@@ -707,7 +713,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_axi_lite_ipif>.
 Unit <tri_mode_eth_mac_v5_5_axi_lite_ipif> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_slave_attachment>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_slave_attachment.vhd".
         C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000000000000000000000000000000","0000000000000000000000000000000000000000000000000000011111111111","0000000000000000000000000000000000000000000000000000000000000000","0000000000000000000000000000000000000000000000000000011111111111")
         C_ARD_NUM_CE_ARRAY = (1,1)
         C_IPIF_ABUS_WIDTH = 32
@@ -717,7 +723,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_slave_attachment>.
         C_DPHASE_TIMEOUT = 16
         C_FAMILY = "virtex6"
 WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_slave_attachment.vhd" line 627: Output port <Count_Out> of the instance <DATA_PHASE_WDT.I_DPTO_COUNTER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_slave_attachment.vhd" line 627: Output port <Count_Out> of the instance <DATA_PHASE_WDT.I_DPTO_COUNTER> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <s_axi_awready_reg>.
     Found 1-bit register for signal <s_axi_wready_reg>.
     Found 1-bit register for signal <s_axi_bvalid_reg>.
@@ -754,7 +760,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <tri_mode_eth_mac_v5_5_slave_attachment> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_address_decoder>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_address_decoder.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_address_decoder.vhd".
         C_BUS_AWIDTH = 11
         C_S_AXI_MIN_SIZE = "00000000000000000000011111111111"
         C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000000000000000000000000000000000000","0000000000000000000000000000000000000000000000000000011111111111","0000000000000000000000000000000000000000000000000000000000000000","0000000000000000000000000000000000000000000000000000011111111111")
@@ -775,7 +781,7 @@ WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and
 Unit <tri_mode_eth_mac_v5_5_address_decoder> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_pselect_f>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_pselect_f.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_pselect_f.vhd".
         C_AB = 0
         C_AW = 11
         C_BAR = "00000000000"
@@ -786,7 +792,7 @@ WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left 
 Unit <tri_mode_eth_mac_v5_5_pselect_f> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_counter_f>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_counter_f.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_counter_f.vhd".
         C_NUM_BITS = 4
         C_FAMILY = "nofamily"
     Found 5-bit register for signal <icount_out>.
@@ -799,7 +805,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_counter_f>.
 Unit <tri_mode_eth_mac_v5_5_counter_f> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_vector_decode>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_vector_decode.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_vector_decode.vhd".
     Found 28-bit register for signal <rx_statistics_vector_reg>.
     Found 1-bit register for signal <tx_statistics_valid_reg>.
     Found 32-bit register for signal <tx_statistics_vector_reg>.
@@ -879,7 +885,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_vector_decode>.
 Unit <tri_mode_eth_mac_v5_5_vector_decode> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync_1>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_reset_sync.vhd".
         INITIALISE = "11"
     Set property "ASYNC_REG = TRUE" for signal <reset_sync_reg>.
     Set property "RLOC = X0Y0" for signal <reset_sync_reg>.
@@ -894,21 +900,21 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync_1>.
 Unit <tri_mode_eth_mac_v5_5_reset_sync_1> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo.vhd".
         FULL_DUPLEX_ONLY = true
     Summary:
 	no macro.
 Unit <tri_mode_eth_mac_v5_5_ten_100_1g_eth_fifo> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_tx_client_fifo>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_tx_client_fifo.vhd".
         FULL_DUPLEX_ONLY = true
     Set property "ASYNC_REG = TRUE" for signal <wr_rd_addr>.
     Set property "ASYNC_REG = TRUE" for signal <wr_col_window_pipe>.
 WARNING:Xst:647 - Input <tx_collision> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <tx_retransmit> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" line 1625: Output port <DOA> of the instance <ramgen_l> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" line 1654: Output port <DOA> of the instance <ramgen_u> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" line 1625: Output port <DOA> of the instance <ramgen_l> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_tx_client_fifo.vhd" line 1654: Output port <DOA> of the instance <ramgen_u> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <wr_ovflow_dst_rdy>.
     Found 1-bit register for signal <wr_eof_state_reg>.
     Found 4-bit register for signal <rd_state>.
@@ -1003,7 +1009,7 @@ INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal wr_rd_addr[11]_GN
 Unit <tri_mode_eth_mac_v5_5_tx_client_fifo> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_sync_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_sync_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_sync_block.vhd".
         INITIALISE = "00"
     Set property "ASYNC_REG = TRUE" for signal <data_sync1>.
     Set property "RLOC = X0Y0" for signal <data_sync1>.
@@ -1016,7 +1022,7 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_sync_block>.
 Unit <tri_mode_eth_mac_v5_5_sync_block> synthesized.
 
 Synthesizing Unit <BRAM_TDP_MACRO>.
-    Related source file is "N:/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd".
+    Related source file is "/build/xfndry10/P.20131013/rtf/devlib/vhdl/src/unimacro/BRAM_TDP_MACRO.vhd".
         BRAM_SIZE = "18Kb"
         DEVICE = "SPARTAN6"
         DOA_REG = 0
@@ -1187,9 +1193,9 @@ WARNING:Xst:2935 - Signal 'dipb_pattern<3:1>', unconnected in block 'BRAM_TDP_MA
 Unit <BRAM_TDP_MACRO> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_rx_client_fifo>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" line 942: Output port <DOA> of the instance <ramgen_l> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" line 971: Output port <DOA> of the instance <ramgen_u> is unconnected or connected to loadless signal.
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd".
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" line 942: Output port <DOA> of the instance <ramgen_l> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_rx_client_fifo.vhd" line 971: Output port <DOA> of the instance <ramgen_u> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <rd_valid_pipe>.
     Found 1-bit register for signal <rx_axis_fifo_tlast_int>.
     Found 1-bit register for signal <rx_axis_fifo_tvalid>.
@@ -1271,33 +1277,33 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <tri_mode_eth_mac_v5_5_rx_client_fifo> synthesized.
 
 Synthesizing Unit <pcs_pma_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_block.vhd".
         SIM_GTPRESET_SPEEDUP = 1
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_block.vhd" line 382: Output port <resetdone0> of the instance <transceiver_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_block.vhd" line 382: Output port <resetdone0> of the instance <transceiver_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <pcs_pma_block> synthesized.
 
 Synthesizing Unit <pcs_pma_transceiver_A>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd".
         SIM_GTPRESET_SPEEDUP = 1
     Set property "ASYNC_REG = TRUE" for signal <reset0_r>.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCLKCORCNT1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXDATA1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXBUFSTATUS1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_GTPCLKOUT1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXBUFSTATUS1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RESETDONE0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RESETDONE1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCHARISCOMMA1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCHARISK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXDISPERR1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXNOTINTABLE1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRUNDISP1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRECCLK0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRECCLK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXOUTCLK0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXOUTCLK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCLKCORCNT1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXDATA1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXBUFSTATUS1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_GTPCLKOUT1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXBUFSTATUS1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RESETDONE0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RESETDONE1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCHARISCOMMA1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXCHARISK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXDISPERR1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXNOTINTABLE1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRUNDISP1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRECCLK0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_RXRECCLK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXOUTCLK0_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_transceiver_A.vhd" line 357: Output port <TILE0_TXOUTCLK1_OUT> of the instance <GTP_1000X> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <resetdone0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 4-bit register for signal <reset0_r>.
     Found 1-bit register for signal <txchardispmode_reg0>.
@@ -1319,7 +1325,7 @@ WARNING:Xst:653 - Signal <resetdone0> is used but never assigned. This sourceles
 Unit <pcs_pma_transceiver_A> synthesized.
 
 Synthesizing Unit <pcs_pma_s6_gtpwizard>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd".
         WRAPPER_SIM_GTPRESET_SPEEDUP = 1
         WRAPPER_CLK25_DIVIDER_0 = 5
         WRAPPER_CLK25_DIVIDER_1 = 5
@@ -1328,13 +1334,13 @@ Synthesizing Unit <pcs_pma_s6_gtpwizard>.
         WRAPPER_PLL_DIVSEL_REF_0 = 1
         WRAPPER_PLL_DIVSEL_REF_1 = 1
         WRAPPER_SIMULATION = 0
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard.vhd" line 370: Output port <PLLLKDET1_OUT> of the instance <tile0_pcs_pma_s6_gtpwizard_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard.vhd" line 370: Output port <PLLLKDET1_OUT> of the instance <tile0_pcs_pma_s6_gtpwizard_i> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <pcs_pma_s6_gtpwizard> synthesized.
 
 Synthesizing Unit <pcs_pma_s6_gtpwizard_tile>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\IPcores\pcs_pma_s6_gtpwizard_tile.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard_tile.vhd".
         TILE_SIM_GTPRESET_SPEEDUP = 1
         TILE_CLK25_DIVIDER_0 = 5
         TILE_CLK25_DIVIDER_1 = 5
@@ -1349,7 +1355,7 @@ Synthesizing Unit <pcs_pma_s6_gtpwizard_tile>.
 Unit <pcs_pma_s6_gtpwizard_tile> synthesized.
 
 Synthesizing Unit <pcs_pma_reset_sync>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\pcs_pma_reset_sync.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/pcs_pma_reset_sync.vhd".
         INITIALISE = "11"
     Set property "ASYNC_REG = TRUE" for signal <reset_out>.
     Set property "shreg_extract = no" for signal <reset_out>.
@@ -1360,7 +1366,7 @@ Synthesizing Unit <pcs_pma_reset_sync>.
 Unit <pcs_pma_reset_sync> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_axi_lite_sm>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_axi_lite_sm.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_axi_lite_sm.vhd".
         MAC_BASE_ADDR = "00000000000000000000000000000000"
 WARNING:Xst:647 - Input <s_axi_bresp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <s_axi_rresp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1448,7 +1454,7 @@ WARNING:Xst:647 - Input <s_axi_rresp> is never used. This port will be preserved
 Unit <tri_mode_eth_mac_v5_5_axi_lite_sm> synthesized.
 
 Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\tri_mode_eth_mac_v5_5_reset_sync.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_reset_sync.vhd".
         INITIALISE = "11"
     Set property "ASYNC_REG = TRUE" for signal <reset_sync_reg>.
     Set property "RLOC = X0Y0" for signal <reset_sync_reg>.
@@ -1463,13 +1469,13 @@ Synthesizing Unit <tri_mode_eth_mac_v5_5_reset_sync>.
 Unit <tri_mode_eth_mac_v5_5_reset_sync> synthesized.
 
 Synthesizing Unit <ip_udp_tx_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd".
         ip_addr = "11000000101010000001010000000101"
         dst_ip_addr = "11000000101010000001010000000001"
         port_num = "0110000000000000"
         dst_port_num = "0111000000000000"
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" line 137: Output port <full> of the instance <u_tx_fifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_tx_block.vhd" line 137: Output port <empty> of the instance <u_tx_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" line 137: Output port <full> of the instance <u_tx_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_tx_block.vhd" line 137: Output port <empty> of the instance <u_tx_fifo> is unconnected or connected to loadless signal.
 WARNING:Xst:2935 - Signal 'ip_header<159:144>', unconnected in block 'ip_udp_tx_block', is tied to its initial value (0100010100000000).
 WARNING:Xst:2935 - Signal 'ip_header<111:110>', unconnected in block 'ip_udp_tx_block', is tied to its initial value (00).
 WARNING:Xst:2935 - Signal 'ip_header<95:80>', unconnected in block 'ip_udp_tx_block', is tied to its initial value (0010000000010001).
@@ -1731,7 +1737,7 @@ WARNING:Xst:2935 - Signal 'udp_header<63:32>', unconnected in block 'ip_udp_tx_b
 Unit <ip_udp_tx_block> synthesized.
 
 Synthesizing Unit <ip_udp_rx_block>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\ip_udp_rx_block.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/ip_udp_rx_block.vhd".
         ip_addr = "11000000101010000001010000000101"
         port_num = "0110000000000000"
     Set property "KEEP = TRUE" for signal <rx_udp_valid>.
@@ -1856,12 +1862,12 @@ INFO:Xst:1799 - State not_ready is never reached in FSM <state>.
 Unit <ip_udp_rx_block> synthesized.
 
 Synthesizing Unit <eth_head>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd".
         mac_addr = "101010101011101111001100110111011110111011111111"
         dst_mac_addr = "101111100001000111100010010111001011000011010101"
 WARNING:Xst:647 - Input <tx_eth_last> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" line 106: Output port <full> of the instance <eth_head_tx_fifo_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\source\Ethernet files\eth_head.vhd" line 106: Output port <empty> of the instance <eth_head_tx_fifo_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" line 106: Output port <full> of the instance <eth_head_tx_fifo_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/source/Ethernet files/eth_head.vhd" line 106: Output port <empty> of the instance <eth_head_tx_fifo_1> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <tx_temac_last>.
     Found 1-bit register for signal <tx_temac_valid>.
     Found 1-bit register for signal <tx_temac_rd_en>.
@@ -1914,22 +1920,22 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_
 Unit <eth_head> synthesized.
 
 Synthesizing Unit <QBlink>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 150: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 150: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" line 170: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+    Related source file is "/home/mrich/Desktop/QBLink/source/QBlink.vhd".
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/QBlink.vhd" line 150: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/QBlink.vhd" line 150: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/QBlink.vhd" line 170: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <QBlink> synthesized.
 
 Synthesizing Unit <clockgen_bytelink>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/QBlink/ipcore_dir/clockgen_bytelink.vhd".
     Summary:
 	no macro.
 Unit <clockgen_bytelink> synthesized.
 
 Synthesizing Unit <SyncBit>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\SyncBit.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/source/SyncBit.vhd".
         SYNC_STAGES_G = 2
         CLK_POL_G = '1'
         RST_POL_G = '1'
@@ -1939,8 +1945,8 @@ Synthesizing Unit <SyncBit>.
 Unit <SyncBit> synthesized.
 
 Synthesizing Unit <S6SerialInterfaceOut>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" line 57: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+    Related source file is "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd".
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceOut.vhd" line 57: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <r_dataWord>.
     Found 4-bit register for signal <r_bitCount>.
     Found 1-bit register for signal <r_serialDataOutRising>.
@@ -1958,10 +1964,10 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceOut.vhd" 
 Unit <S6SerialInterfaceOut> synthesized.
 
 Synthesizing Unit <S6SerialInterfaceIn>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd".
         BITSLIP_WAIT_G = 200
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" line 190: Output port <valid> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" line 190: Output port <full> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/QBLink/source/S6SerialInterfaceIn.vhd" line 190: Output port <valid> of the instance <U_SerializationFifo> is unconnected or connected to loadless signal.
     Found 5-bit register for signal <fallingWord>.
     Found 10-bit register for signal <dataWord>.
     Found 10-bit register for signal <dataWordFlipped>.
@@ -1998,7 +2004,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\source\S6SerialInterfaceIn.vhd" l
 Unit <S6SerialInterfaceIn> synthesized.
 
 Synthesizing Unit <ByteLink>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\ByteLink.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/source/ByteLink.vhd".
         ALIGN_CYCLES_G = 100
     Found 8-bit register for signal <inputTxData8b>.
     Found 1-bit register for signal <inputTxData8bValid>.
@@ -2034,7 +2040,7 @@ Synthesizing Unit <ByteLink>.
 Unit <ByteLink> synthesized.
 
 Synthesizing Unit <Encode8b10b>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Encode8b10b.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/source/Encode8b10b.vhd".
     Found 1-bit register for signal <dispOut>.
     Found 10-bit register for signal <dataOut>.
     Summary:
@@ -2043,7 +2049,7 @@ Synthesizing Unit <Encode8b10b>.
 Unit <Encode8b10b> synthesized.
 
 Synthesizing Unit <Decode8b10b>.
-    Related source file is "C:\Users\Kevin\Desktop\QBLink\source\Decode8b10b.vhd".
+    Related source file is "/home/mrich/Desktop/QBLink/source/Decode8b10b.vhd".
     Found 1-bit register for signal <dataKOut>.
     Found 1-bit register for signal <dispOut>.
     Found 1-bit register for signal <codeErr>.
@@ -2055,15 +2061,16 @@ Synthesizing Unit <Decode8b10b>.
 Unit <Decode8b10b> synthesized.
 
 Synthesizing Unit <cmd_center>.
-    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 170: Output port <full> of the instance <PC_SCROD_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 183: Output port <full> of the instance <REG_READ_BACK_FIFO> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 196: Output port <full> of the instance <DC_MAS_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 196: Output port <empty> of the instance <DC_MAS_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 208: Output port <dout> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 208: Output port <full> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 208: Output port <empty> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\cmd_center.vhd" line 220: Output port <full> of the instance <DC_REG_FIFO_W1R8> is unconnected or connected to loadless signal.
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd".
+    Set property "KEEP = TRUE" for signal <reg_fifo_din>.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 174: Output port <full> of the instance <PC_SCROD_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 187: Output port <full> of the instance <REG_READ_BACK_FIFO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 200: Output port <full> of the instance <DC_MAS_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 200: Output port <empty> of the instance <DC_MAS_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 212: Output port <dout> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 212: Output port <full> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 212: Output port <empty> of the instance <DC_MAS_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" line 224: Output port <full> of the instance <DC_REG_FIFO_W1R8> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <CONTROL_REG<19>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <CONTROL_REG<18>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <CONTROL_REG<17>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -2157,11 +2164,11 @@ INFO:Xst:1799 - State reg_fifo_load5 is never reached in FSM <PCtxSt>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <ready_wait[31]_GND_134_o_add_154_OUT> created at line 422.
+    Found 32-bit adder for signal <ready_wait[31]_GND_134_o_add_154_OUT> created at line 426.
 INFO:Xst:3019 - HDL ADVISOR - 512 flip-flops were inferred for signal <output_reg>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 16-bit 20-to-1 multiplexer for signal <scrod_reg[4]_X_57_o_wide_mux_43_OUT> created at line 277.
-    Found 1-bit 4-to-1 multiplexer for signal <_n0371> created at line 85.
-    Found 32-bit comparator greater for signal <GND_134_o_ready_wait[31]_LessThan_154_o> created at line 421
+    Found 16-bit 20-to-1 multiplexer for signal <scrod_reg[4]_X_57_o_wide_mux_43_OUT> created at line 281.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0404> created at line 85.
+    Found 32-bit comparator greater for signal <GND_134_o_ready_wait[31]_LessThan_154_o> created at line 425
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 506 D-type flip-flop(s).
@@ -2284,11 +2291,11 @@ INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found. T
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma.ngc>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/eth_head_fifo.ngc>.
 Reading core <../SCROD_A5_RJ45/source/Ethernet files/IPcores/ip_rx_bram.ngc>.
-Reading core <../../../../QBLink/QBLink/cores/CMD_FIFO_w8r32.ngc>.
-Reading core <../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.ngc>.
+Reading core <../../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.ngc>.
+Reading core <../../../../QBLink/QBlink/cores/CMD_FIFO_w1r8.ngc>.
 Reading core <../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.ngc>.
-Reading core <../../../../QBLink/QBLink/ipcore_dir/QBLtxFIFO.ngc>.
-Reading core <../../../../QBLink/QBLink/cores/serializationFifo.ngc>.
+Reading core <../../../../QBLink/QBlink/ipcore_dir/QBLtxFIFO.ngc>.
+Reading core <../../../../QBLink/QBlink/cores/serializationFifo.ngc>.
 Loading core <tx_fifo> for timing and area information for instance <u_tx_fifo>.
 Loading core <tri_mode_eth_mac_v5_5> for timing and area information for instance <trimac_core>.
 Loading core <pcs_pma> for timing and area information for instance <gig_eth_pcs_pma_core_0>.
@@ -3208,14 +3215,11 @@ WARNING:Xst:2677 - Node <udp_count_12> of sequential type is unconnected in bloc
 WARNING:Xst:2677 - Node <udp_count_13> of sequential type is unconnected in block <ip_udp_rx_block>.
 WARNING:Xst:2677 - Node <udp_count_14> of sequential type is unconnected in block <ip_udp_rx_block>.
 WARNING:Xst:2677 - Node <udp_count_15> of sequential type is unconnected in block <ip_udp_rx_block>.
-WARNING:Xst:1293 - FF/Latch <reg_fifo_din_27> has a constant value of 0 in block <cmd_center>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_fifo_din_31> has a constant value of 0 in block <cmd_center>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceOut>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <r_bitCount_0> has a constant value of 0 in block <S6SerialInterfaceIn>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <s_axi_awaddr_18> in Unit <tri_mode_eth_mac_v5_5_axi_lite_sm> is equivalent to the following 13 FFs/Latches, which will be removed : <s_axi_awaddr_19> <s_axi_awaddr_20> <s_axi_awaddr_21> <s_axi_awaddr_22> <s_axi_awaddr_23> <s_axi_awaddr_24> <s_axi_awaddr_25> <s_axi_awaddr_26> <s_axi_awaddr_27> <s_axi_awaddr_28> <s_axi_awaddr_29> <s_axi_awaddr_30> <s_axi_awaddr_31> 
 INFO:Xst:2261 - The FF/Latch <s_axi_araddr_18> in Unit <tri_mode_eth_mac_v5_5_axi_lite_sm> is equivalent to the following 13 FFs/Latches, which will be removed : <s_axi_araddr_19> <s_axi_araddr_20> <s_axi_araddr_21> <s_axi_araddr_22> <s_axi_araddr_23> <s_axi_araddr_24> <s_axi_araddr_25> <s_axi_araddr_26> <s_axi_araddr_27> <s_axi_araddr_28> <s_axi_araddr_29> <s_axi_araddr_30> <s_axi_araddr_31> 
 INFO:Xst:2261 - The FF/Latch <addr_12> in Unit <tri_mode_eth_mac_v5_5_axi_lite_sm> is equivalent to the following 5 FFs/Latches, which will be removed : <addr_13> <addr_14> <addr_15> <addr_16> <addr_17> 
-INFO:Xst:2261 - The FF/Latch <reg_fifo_din_29> in Unit <cmd_center> is equivalent to the following FF/Latch, which will be removed : <reg_fifo_din_30> 
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
    either a register or latch described with both an asynchronous set and
@@ -3546,7 +3550,6 @@ INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_tem
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/mdio_wr_data_25> in Unit <SCRODQB_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/mdio_wr_data_24> <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/mdio_wr_data_11> 
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_143> in Unit <SCRODQB_Top> is equivalent to the following 8 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_142> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_135> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_133> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_131> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_124> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_122> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_114> <ETH_MODULE/udp_1/ip_udp_rx_block_inst/udp_head_temp_112> 
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/ip_udp_tx_block_inst/ip_header_139> in Unit <SCRODQB_Top> is equivalent to the following 4 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/ip_udp_tx_block_inst/ip_header_141> <ETH_MODULE/udp_1/ip_udp_tx_block_inst/ip_header_142> <ETH_MODULE/udp_1/ip_udp_tx_block_inst/ip_header_140> <ETH_MODULE/udp_1/ip_udp_tx_block_inst/ip_header_143> 
-INFO:Xst:2261 - The FF/Latch <cmd_interpreter/reg_fifo_din_28> in Unit <SCRODQB_Top> is equivalent to the following FF/Latch, which will be removed : <cmd_interpreter/reg_fifo_din_24> 
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_10> in Unit <SCRODQB_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_2> <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_0> 
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_17> in Unit <SCRODQB_Top> is equivalent to the following 3 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_7> <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_4> <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_1> 
 INFO:Xst:2261 - The FF/Latch <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_25> in Unit <SCRODQB_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_24> <ETH_MODULE/udp_1/eth_inst/axi_lite_controller/s_axi_wdata_11> 
@@ -3714,8 +3717,8 @@ Unit <SCRODQB_Top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2171
- Flip-Flops                                            : 2171
+# Registers                                            : 2175
+ Flip-Flops                                            : 2175
 # Shift Registers                                      : 21
  2-bit shift register                                  : 4
  21-bit shift register                                 : 1
@@ -3748,8 +3751,8 @@ Primitive and Black Box Usage:
 #      GND                         : 26
 #      INV                         : 224
 #      LUT1                        : 1462
-#      LUT2                        : 1244
-#      LUT3                        : 786
+#      LUT2                        : 1246
+#      LUT3                        : 784
 #      LUT4                        : 850
 #      LUT5                        : 1054
 #      LUT6                        : 2152
@@ -3759,13 +3762,13 @@ Primitive and Black Box Usage:
 #      MUXF7                       : 52
 #      VCC                         : 6
 #      XORCY                       : 2313
-# FlipFlops/Latches                : 5870
+# FlipFlops/Latches                : 5874
 #      FD                          : 782
 #      FDC                         : 454
 #      FDC_1                       : 3
 #      FDCE                        : 462
 #      FDCE_1                      : 7
-#      FDE                         : 1562
+#      FDE                         : 1566
 #      FDP                         : 185
 #      FDPE                        : 27
 #      FDR                         : 980
@@ -3805,7 +3808,7 @@ Selected Device : 6slx150tfgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5870  out of  184304     3%  
+ Number of Slice Registers:            5874  out of  184304     3%  
  Number of Slice LUTs:                 8157  out of  92152     8%  
     Number used as Logic:              7772  out of  92152     8%  
     Number used as Memory:              385  out of  21680     1%  
@@ -3813,10 +3816,10 @@ Slice Logic Utilization:
        Number used as SRL:               65
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  10546
-   Number with an unused Flip Flop:    4676  out of  10546    44%  
-   Number with an unused LUT:          2389  out of  10546    22%  
-   Number of fully used LUT-FF pairs:  3481  out of  10546    33%  
+ Number of LUT Flip Flop pairs used:  10550
+   Number with an unused Flip Flop:    4676  out of  10550    44%  
+   Number with an unused LUT:          2393  out of  10550    22%  
+   Number of fully used LUT-FF pairs:  3481  out of  10550    32%  
    Number of unique control sets:       401
 
 IO Utilization: 
@@ -3851,7 +3854,7 @@ Clock Signal                                                                    
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+-------+
 CommState_1                                                                                                                                                                                                                                           | NONE(nxtState_1)                                                | 1     |
 MASTER_CLK_P                                                                                                                                                                                                                                          | DCM_SP:CLKFX                                                    | 1042  |
-ETH_MODULE/udp_1/eth_inst/gtpclkout_1                                                                                                                                                                                                                 | BUFIO2+BUFG                                                     | 4909  |
+ETH_MODULE/udp_1/eth_inst/gtpclkout_1                                                                                                                                                                                                                 | BUFIO2+BUFG                                                     | 4913  |
 ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/trimac_core/U0/trimac_top/TRI_SPEED.TRIMAC_INST/MDC_OUT(ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/trimac_core/U0/trimac_top/TRI_SPEED.TRIMAC_INST/MANIFGEN.MANAGEN/PHY/MDC1:O)| NONE(*)(ETH_MODULE/udp_1/eth_inst/present_state_FSM_FFd2)       | 10    |
 MASTER_CLK_P                                                                                                                                                                                                                                          | DCM_SP:CLKFX+DCM_SP:CLKFX                                       | 188   |
 ETH_MODULE/udp_1/eth_inst/s_axi_resetn                                                                                                                                                                                                                | NONE(ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_state_FSM_FFd4_LD)| 1     |
@@ -3881,7 +3884,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ETH_MODULE/udp_1/eth_inst/gtpclkout_1'
   Clock period: 6.572ns (frequency: 152.162MHz)
-  Total number of paths / destination ports: 298291 / 13240
+  Total number of paths / destination ports: 298339 / 13248
 -------------------------------------------------------------------------
 Delay:               6.572ns (Levels of Logic = 5)
   Source:            ETH_MODULE/udp_1/ip_udp_tx_block_inst/tx_count_0_1 (FF)
@@ -3932,7 +3935,7 @@ Delay:               4.940ns (Levels of Logic = 4)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'MASTER_CLK_P'
   Clock period: 4.260ns (frequency: 234.742MHz)
-  Total number of paths / destination ports: 13351 / 2750
+  Total number of paths / destination ports: 13349 / 2750
 -------------------------------------------------------------------------
 Delay:               4.260ns (Levels of Logic = 18)
   Source:            comm_process/U_SerialInterfaceIn/r_slipCount_15 (FF)
@@ -4033,14 +4036,15 @@ MASTER_CLK_P                         |    6.137|         |    1.026|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 61.00 secs
-Total CPU time to Xst completion: 61.17 secs
+Total REAL time to Xst completion: 50.00 secs
+Total CPU time to Xst completion: 49.61 secs
  
 --> 
 
-Total memory usage is 4752980 kilobytes
+
+Total memory usage is 571792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  819 (   0 filtered)
-Number of infos    :  381 (   0 filtered)
+Number of warnings :  817 (   0 filtered)
+Number of infos    :  379 (   0 filtered)
 

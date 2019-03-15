@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../../../../QBLink/QBLink/ipcore_dir" "../../../../QBLink/QBLink/cores" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
+-sd {"../SCROD_A5_RJ45/source/Ethernet files/IPcores" "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/source/Ethernet files/IPcores/pcs_pma_s6_gtpwizard/implement" "../../../../QBLink/QBlink/cores" "../../../../QBLink/QBlink/ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "../../../../QBLink/QBLink/cores" "../../../../QBLink/QBLink/ipcore_dir" "../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
