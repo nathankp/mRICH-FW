@@ -1,5 +1,5 @@
 The following files were generated for 'ila_pro_0' in directory
-C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\_ngo\cs_ila_pro_0\
+/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_ila_pro_0/
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

@@ -99,7 +99,8 @@ signal internal_data_clk : STD_LOGIC; -- QBLink timing clock
 --HW testing signals--
 constant correctData : STD_LOGIC_VECTOR(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 signal sync : STD_LOGIC := '0'; -- Data capture trigger, real function to be determined
-
+attribute keep_hierarchy: boolean;
+attribute keep_hierarchy of Behavioral: architecture is TRUE;
 begin
 --TRGLINK_SYNC <= trgLinkSync; 
 --SERIAL_CLK_LCK <= serialClkLck;
