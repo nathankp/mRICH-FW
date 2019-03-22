@@ -1,0 +1,3 @@
+[submodule "SCROD_Ethernet"]
+	path = SCROD_Ethernet
+	url = https://github.com/nathankp/SCROD_Ethernet.git
