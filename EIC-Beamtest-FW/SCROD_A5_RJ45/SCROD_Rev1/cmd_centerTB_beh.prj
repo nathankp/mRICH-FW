@@ -1,0 +1,6 @@
+vhdl work "../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.vhd"
+vhdl work "../../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.vhd"
+vhdl work "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.vhd"
+vhdl work "../../../../QBLink/source/BMD_definitions.vhd"
+vhdl work "cmd_center.vhd"
+vhdl work "cmd_centerTB.vhd"

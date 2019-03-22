@@ -1,0 +1,42 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_centerTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_centerTB_beh.prj" "work.cmd_centerTB" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../../QBLink/source/BMD_definitions.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_center.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_centerTB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vcomponents
+Compiling package bmd_definitions
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_as [\fifo_generator_v9_3_bhv_as(8,"0...]
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(0,0,7,...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(0,0,7,"Blan...]
+Compiling architecture cmd_fifo_w8r32_a of entity CMD_FIFO_w8r32 [cmd_fifo_w8r32_default]
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_as [\fifo_generator_v9_3_bhv_as(32,"...]
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(0,0,4,...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(0,0,4,"Blan...]
+Compiling architecture state_fifo_a of entity STATE_FIFO [state_fifo_default]
+Compiling architecture behavioral of entity fifo_generator_v9_3_bhv_as [\fifo_generator_v9_3_bhv_as(1,"0...]
+WARNING:HDLCompiler:746 - "N:/P.20131013/rtf/vhdl/src/XilinxCoreLib/fifo_generator_v9_3.vhd" Line 632: Range is empty (null range)
+Compiling architecture behavioral of entity fifo_generator_v9_3_conv [\fifo_generator_v9_3_conv(0,0,7,...]
+Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator_v9_3(0,0,7,"Blan...]
+Compiling architecture cmd_fifo_w1r8_a of entity CMD_FIFO_w1r8 [cmd_fifo_w1r8_default]
+Compiling architecture behavioral of entity cmd_center [cmd_center_default]
+Compiling architecture behavior of entity cmd_centertb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 35 VHDL Units
+Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_centerTB_isim_beh.exe
+Fuse Memory Usage: 59456 KB
+Fuse CPU Usage: 1218 ms

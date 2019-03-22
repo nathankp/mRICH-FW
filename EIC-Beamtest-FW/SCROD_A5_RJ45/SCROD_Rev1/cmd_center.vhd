@@ -74,8 +74,8 @@ signal reg_update : std_logic:='0';
 signal reg_fifo_empty : std_logic:='0';
 signal cmd_type		: std_logic_vector(3 downto 0):=(others => '0');
 signal scrod_reg		: std_logic_vector(7 downto 0):=(others => '0');
-signal reg_data 		: std_logic_vector(15 downto 0):=(others => '0');
-signal reg_value	  	: std_logic_vector(15 downto 0):=(others => '0');
+signal reg_dataIn 		: std_logic_vector(15 downto 0):=(others => '0');
+signal reg_dataOut	  	: std_logic_vector(15 downto 0):=(others => '0');
 --FIFO signals-- 
 signal fifo_sel     	 : std_logic_vector(3 downto 0):=x"0";
 signal cmd_fifo_reset : std_logic:= '0';
@@ -148,7 +148,7 @@ udp_usr_clk <= UDP_CLK;
 --temporarily disable QBLink ---
 QB_SEND <= '0';
 QB_RDOUT <= '0';
-					 
+CONTROL_REG <= output_reg;
 proc_sync_cmd_hdr: process (udp_usr_clk) begin
 	if rising_edge(udp_usr_clk) then
 		rx_udp_data_i(6) <= rx_udp_data_i(5);
@@ -267,7 +267,7 @@ if rising_edge(DATA_CLK) then
 			if dc_num = x"0" then 
 				cmd_type	<= rx_fifo_data_out(27 downto 24);
 				scrod_reg <= rx_fifo_data_out(23 downto 16);
-				reg_data <= rx_fifo_data_out(15 downto  0);
+				reg_dataIn <= rx_fifo_data_out(15 downto  0);
 				CCState <= CMD_CHECK;
 			else --temporary: SCROD only Register write and readback test 
 				CCState <= IDLE; -- do nothing and go back to IDLE, cmd_type, reg_data, and reg# will not be updated.
@@ -275,10 +275,10 @@ if rising_edge(DATA_CLK) then
 			
 		when CMD_CHECK => 
 			if cmd_type = x"F" then
-				output_reg(to_integer(unsigned(scrod_reg))) <= reg_data;
+				output_reg(to_integer(unsigned(scrod_reg))) <= reg_dataIn;
 				CCState <= CHECK_EMPTY;
 			elsif cmd_type = x"D" then
-				reg_value <= output_reg(to_integer(unsigned(scrod_reg)));
+				reg_dataOut <= output_reg(to_integer(unsigned(scrod_reg)));
 				reg_rb_en <= '1';
 				CCSTATE <= DONE;
 			end if;
@@ -293,7 +293,6 @@ if rising_edge(DATA_CLK) then
 end process;
 
 --sending data to PC---
-	 
 TX_UDP_DATA <= dc_reg_dout    when fifo_sel = dc_fifo   else
 					wave_dout      when fifo_sel = waved_fifo else 
 					reg_fifo_dout  when fifo_sel = reg_fifo   else 
@@ -366,7 +365,7 @@ if rising_edge(udp_usr_clk) then
 		when reg_fifo_load4 =>
 			if dc_num = x"0" and reg_update = '1' then
 				reg_fifo_wr_en <= '1';
-				reg_fifo_din   <= x"00" & rx_fifo_data_out(23 downto 16) & reg_value; --x"00" & reg num & reg vlaue
+				reg_fifo_din   <= x"00" & rx_fifo_data_out(23 downto 16) & reg_dataOut; --x"00" & reg num & reg vlaue
 				PCtxSt    <= reg_fifo_load6;	
 			elsif dc_num /= x"0" and reg_update = '1' then
 				reg_fifo_wr_en <= '0';--if requested register value is from dc then wait for dc to send value

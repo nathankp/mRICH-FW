@@ -192,8 +192,8 @@ ETH_MODULE: entity work.eth_top PORT MAP(
 		MGTRXN 			=> MGTRXN,
 		MGTTXP 			=> MGTTXP,
 		MGTTXN 			=> MGTTXN,
-		MGTCLK1P 		=> mgtclk1p,
-		MGTCLK1N 		=> mgtclk1n);
+		MGTCLK1P 		=> MGTCLK1P,
+		MGTCLK1N 		=> MGTCLK1N   );
 -----------------------------------------------------------------------------
 ------------------QBLink Module----------------------------------------------
 --------------------------------- -------------------------------------------
