@@ -1,3 +1,6 @@
 [submodule "QBLink4HMB"]
 	path = QBLink
 	url = https://github.com/nathankp/QBLink.git
+[submodule "SCRODRevA5_EthernetFW"]
+	path = firmware-ethernet
+	url = https://github.com/nathankp/firmware-ethernet.git
