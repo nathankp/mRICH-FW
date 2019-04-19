@@ -1,9 +1,0 @@
-vhdl work ../example_design/pcs_pma_sync_block.vhd
-vhdl work ../example_design/pcs_pma_reset_sync.vhd
-vhdl work ../example_design/transceiver/pcs_pma_s6_gtpwizard_tile.vhd
-vhdl work ../example_design/transceiver/pcs_pma_s6_gtpwizard.vhd
-vhdl work ../example_design/transceiver/pcs_pma_transceiver_A.vhd
-vhdl work ../example_design/pcs_pma_tx_elastic_buffer.vhd
-vhdl work ../example_design/pcs_pma_block.vhd
-vhdl work ../example_design/pcs_pma_example_design.vhd
-

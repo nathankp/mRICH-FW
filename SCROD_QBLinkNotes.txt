@@ -176,9 +176,9 @@ DC_COMM FIFOs:
 Questions for Gary:
 1.*** Does ETH Module run on same FPGA clock?**** (will be rewritten ignore for now).
 2. How does 8 bit rx_udp_data get converted to 32-bit dc_cmd? FIFO? (ignore)
-3. Does Data Collector recieve data from DCs sequentially or in parallel? 
+3. Does Data Collector receive data from DCs sequentially or in parallel? 
 4. Should there be separate signals for waveform data, pedestal sub, pedestal calc, ect.?
-5. ***FIFO for read out data in CMD_INT?***will see if it is neccesary, try to have DC and SCROD talk with FW containing minimal code to support QBLink
+5. ***FIFO for read out data in CMD_INT?***will see if it is necessary, try to have DC and SCROD talk with FW containing minimal code to support QBLink
 
 
 ###12/02/2018###

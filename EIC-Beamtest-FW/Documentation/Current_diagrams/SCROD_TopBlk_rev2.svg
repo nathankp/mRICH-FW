@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="SCROD_TopBlk_rev2.svg">
+   sodipodi:docname="SCROD_TopBlk_rev2.svg"
+   inkscape:export-filename="C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\Documentation\Current_diagrams\SCROD_TopBlk_rev2.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <marker
@@ -143,10 +146,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="537.12126"
-     inkscape:cy="607.49188"
+     inkscape:cx="346.38397"
+     inkscape:cy="402.08462"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g12102"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -172,7 +175,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -556,7 +559,7 @@
            x="30"
            y="22.519686"
            style="font-size:18.66666667px;" /></flowRegion><flowPara
-         id="flowPara966"></flowPara></flowRoot>    <flowRoot
+         id="flowPara966" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot968"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -577,14 +580,14 @@
        xml:space="preserve"
        id="flowRoot987"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,76.842602,-18.955503)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,73.368098,-19.222773)"><flowRegion
          id="flowRegion989"><rect
            id="rect991"
            width="270"
            height="40"
            x="10"
            y="732.51971" /></flowRegion><flowPara
-         id="flowPara993">DC DATA </flowPara></flowRoot>    <path
+         id="flowPara993">DC Register data </flowPara></flowRoot>    <path
        inkscape:connector-curvature="0"
        id="path995"
        d="m 85.416136,170.06695 v -2.71272 h 18.300554 v -7.29164 H 85.416136 v -2.625 l -4.343475,3.15734 -4.343494,3.15734 4.343494,3.15733 z"
@@ -674,7 +677,7 @@
            height="30"
            x="325"
            y="722.51971" /></flowRegion><flowPara
-         id="flowPara1318"></flowPara></flowRoot>    <flowRoot
+         id="flowPara1318" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot1324"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -700,27 +703,123 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="m 23.8125,87.979166 5.114429,-0.306983 5.114429,-0.306984 -2.291359,4.582718 -2.291359,4.582717 -2.82307,-4.275733 z"
-       inkscape:transform-center-y="1.2606385"
-       transform="matrix(0.9982026,0.05106687,-0.05991507,0.85078909,41.605028,59.398166)"
-       inkscape:transform-center-x="1.4475343e-006" />
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path1334"
-       d="M 66.145833,134.80443 V 103.85417"
-       style="fill:none;stroke:#000000;stroke-width:0.29622841px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)" />
+       inkscape:transform-center-y="-1.2606425"
+       transform="matrix(-0.9982026,-0.05106687,0.05991507,-0.85078909,88.849135,264.2015)"
+       inkscape:transform-center-x="-4.1110453e-006" />
+    <g
+       id="g12073"
+       transform="translate(-0.52917067,0.52905663)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)"
+         d="M 70.643754,227.15011 H 48.154177"
+         id="path1334"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot1407"
+         style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none"
+         transform="matrix(0.26458333,0,0,0.26458333,-19.176489,122.99503)"><flowRegion
+           style="fill:#000800;fill-opacity:1"
+           id="flowRegion1403"><rect
+             style="fill:#000800;fill-opacity:1"
+             id="rect1401"
+             width="150"
+             height="40"
+             x="270"
+             y="402.51968" /></flowRegion><flowPara
+           id="flowPara1405">25MHz Clock</flowPara></flowRoot>    </g>
     <flowRoot
-       transform="matrix(0,0.26458333,-0.26458333,0,177.82733,36.010458)"
-       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none;"
-       id="flowRoot1407"
-       xml:space="preserve"><flowRegion
-         id="flowRegion1403"
-         style="fill:#000800;fill-opacity:1;"><rect
-           y="402.51968"
-           x="270"
-           height="40"
+       xml:space="preserve"
+       id="flowRoot9720"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion9722"><rect
+           id="rect9724"
+           width="105"
+           height="25"
+           x="70"
+           y="452.51968" /></flowRegion><flowPara
+         id="flowPara9726"></flowPara></flowRoot>    <g
+       id="g9741"
+       transform="matrix(0,-0.96376802,1,0,-66.656962,166.59912)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4344-5"
+         d="m 57.194228,109.13381 v 3.52869 h -24.75952 v 9.48494 h 24.75952 v 3.41458 l 5.87647,-4.10706 5.876503,-4.10704 -5.876503,-4.10706 z"
+         style="fill:#f50000;fill-opacity:0.73333333;stroke:#010001;stroke-width:0.19127721;stroke-opacity:1" />
+      <flowRoot
+         transform="matrix(0.26458333,0,0,0.26458333,2.0045214,1.2027129)"
+         style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowRoot9728"
+         xml:space="preserve"><flowRegion
+           id="flowRegion9730"><rect
+             y="432.51968"
+             x="125"
+             height="25"
+             width="115"
+             id="rect9732" /></flowRegion><flowPara
+           id="flowPara9734">Waveform Data</flowPara></flowRoot>    </g>
+    <rect
+       style="fill:#f9e342;fill-opacity:0.97237567;stroke:#060000;stroke-width:0.37031519;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect11632"
+       width="15.875"
+       height="22.489582"
+       x="-235.08727"
+       y="-48.154171"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot11634"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,10.303206,-21.073988)"><flowRegion
+         id="flowRegion11636"><rect
+           id="rect11638"
+           width="210"
+           height="60"
+           x="60"
+           y="932.51971" /></flowRegion><flowPara
+         id="flowPara11640"
+         style="font-weight:bold">Clock Divider</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)"
+       d="m 65.616666,188.52084 v 22.48958"
+       id="path12075"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot12083"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,-39.596748,282.04527)"><flowRegion
+         style="fill:#000800;fill-opacity:1"
+         id="flowRegion12079"><rect
+           style="fill:#000800;fill-opacity:1"
+           id="rect12077"
            width="150"
-           id="rect1401"
-           style="fill:#000800;fill-opacity:1;" /></flowRegion><flowPara
-         id="flowPara1405">125MHz Clock</flowPara></flowRoot>  </g>
+           height="40"
+           x="270"
+           y="402.51968" /></flowRegion><flowPara
+         id="flowPara12081">25MHz Clock</flowPara></flowRoot>    <g
+       transform="translate(-46.037527,0.52905663)"
+       id="g12102">
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path12092"
+         d="M 70.643754,227.15011 H 48.154177"
+         style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)" />
+      <flowRoot
+         transform="matrix(0.26458333,0,0,0.26458333,-22.918262,122.8614)"
+         style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none"
+         id="flowRoot12100"
+         xml:space="preserve"><flowRegion
+           id="flowRegion12096"
+           style="fill:#000800;fill-opacity:1"><rect
+             y="402.51968"
+             x="270"
+             height="40"
+             width="150"
+             id="rect12094"
+             style="fill:#000800;fill-opacity:1" /></flowRegion><flowPara
+           id="flowPara12098">125MHz Clock</flowPara></flowRoot>    </g>
+  </g>
 </svg>

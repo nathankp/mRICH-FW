@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\isar\Dropbox\Nalu\Startup\Projects\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\SCROD_A5_TOP.ncd
-OUTFILE=C:\Users\isar\Dropbox\Nalu\Startup\Projects\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45\SCROD_A5_TOP.bit
-FAMILY=Spartan6
-PART=xc6slx150t-3fgg676
-WORKINGDIR=C:\Users\isar\Dropbox\Nalu\Startup\Projects\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_A5_RJ45
-LICENSE=ISE
-USER_INFO=176018512_1777514516_210621902_663
