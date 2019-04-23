@@ -191,6 +191,7 @@ BEGIN
 			 serialClkLocked => serialClkLck1
 			 );
 
+
    -- Clock process definitions
    usrClk_process :process
    begin
@@ -227,7 +228,7 @@ BEGIN
 		rxData <= x"646F6974"; --PACKET_TYPE: WORD_COMMAND_C
 		rxDataValid <= '1';
 		wait for usrClk_period;
-		rxData <= x"00DC0001"; --COMMAND_TARGET: SCROD
+		rxData <= x"00DC0001"; --COMMAND_TARGET: DC
 		rxDataValid <= '1';
 		wait for usrClk_period;
 		rxData <= x"00000012"; --Command ID

@@ -127,12 +127,11 @@ signal ethSync      : sl;
 	signal nxtState : CommStateType := IDLE; --communication SM next state
 	signal CtrlState : slv(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
 	signal nxt_CTRLState : slv(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
-
---DCM clocks 
+--DCM clock stuff
 signal clkfx180 : sl;
 signal dcm_locked : sl;
 signal progdone : sl;
-signal dcm_status : slv(1 downto 0);
+signal dcm_status : slv(7 downto 0);
 signal dcm_rst : sl := '0';
 signal internal_fpga_clk : sl; --fast clk 
 signal internal_data_clk : sl; -- QBLink timing clock
@@ -141,32 +140,37 @@ constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register 
 signal sync : sl := '0'; -- Data capture trigger, real function to be determined
 attribute keep_hierarchy: boolean;
 attribute keep_hierarchy of Behavioral: architecture is TRUE;
+
+component clk_Div
+port
+ (-- Clock in ports
+  CLK_IN1           : in     std_logic;
+  -- Clock out ports
+  CLK_OUT1          : out    std_logic;
+  CLK_OUT2          : out    std_logic;
+  -- Status and control signals
+  RESET             : in     std_logic;
+  LOCKED            : out    std_logic
+ );
+end component;
+
 begin
---TRGLINK_SYNC <= trgLinkSync; 
---SERIAL_CLK_LCK <= serialClkLck;
+
 
 --
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------
 -----------------------------------------------------------------
-DataClkGen : DCM_CLKGEN --divides 125 MHz clc from ethernet module by 5 to generate 25 MHz data clk 
-generic map(CLKFXDV_DIVIDE => 5)
-port map(
-CLKFX => internal_fpga_clk,
-CLKFX180 => clkfx180,
-CLKFXDV => internal_data_clk, 
-LOCKED => dcm_locked,
-PROGDONE => progdone,
-STATUS => dcm_status,
-CLKIN => ethClk125,
-FREEZEDCM => '0',
-PROGCLK => '0',
-PROGDATA => '0',
-PROGEN => '0',
-RST => dcm_rst
+
+CLK_DIV_inst : clk_Div
+PORT MAP( 
+CLK_IN1 => ethClk125,
+CLK_OUT1 => internal_fpga_clk,
+CLK_OUT2 => internal_data_clk,
+RESET => dcm_rst,
+LOCKED => dcm_locked
 );
 
-	
 TX_OBUFDS_inst : OBUFDS --instantiation of OBUFDS buffer: tx_dc is converted to differential output
 generic map (IOSTANDARD => "LVDS_25")
 port map (
@@ -323,6 +327,25 @@ port map (
 	TRIG_LINK_SYNC => trigLinkSynced
 	);
 
+  QBRst_process: process(internal_data_clk, trigLinkSynced) 
+  variable counter : integer range 0 to 20 :=0;
+  begin
+	If trigLinkSynced = '0' and counter < 20 then
+	   QBrst <= '0';
+		If rising_edge(internal_data_clk) then
+			counter := counter + 1;
+		end if;
+	elsif trigLinkSynced = '0' and counter = 20 then
+		counter := 0;
+		QBrst <= '1';
+	elsif QBrst = '1' and counter < 20 then
+		counter := counter + 1;
+		QBrst <= '1';
+	else
+		QBrst <= '0';
+		counter := 0;
+	end if;
+	end process;
 
   SCROD_Ctrl_Reg: process(internal_fpga_clk) begin
       if rising_edge(internal_fpga_clk) then

@@ -1,126 +1,65 @@
-Release 14.7 ngdbuild P.20131013 (lin64)
+Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -filter
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
 iseconfig/filter.filter -intstyle ise -dd _ngo -sd
-../SCROD_A5_RJ45/source/Ethernet files/IPcores -sd
-../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd ../SCROD_A5_RJ45/source/Ethernet
-files/IPcores/pcs_pma_s6_gtpwizard/implement -sd ../../../../QBLink/QBlink/cores
--sd ../../../../QBLink/QBlink/ipcore_dir -sd
+../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
-../SCROD_A5_RJ45/ipcore_dir/CLK_FANOUT -nt timestamp -uc HMB_SciFi_SCROD.ucf -p
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
+ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
+../../../QBLink/QBlink/ipcore_dir -nt timestamp -uc HMB_SciFi_SCROD.ucf -p
 xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
 
 Reading NGO file
-"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
 _cs.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "HMB_SciFi_SCROD.ucf" ...
-INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
-   This license does not allow you to generate bitstreams for designs that
-   incorporate this component. You may generate functional simulation netlists,
-   but you may not evaluate this component in hardware.
-   For ordering information, please refer to the product page for this component
-   on: www.xilinx.com
-INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
-   This license does not allow you to generate bitstreams for designs that
-   incorporate this component. You may generate functional simulation netlists,
-   but you may not evaluate this component in hardware.
-   For ordering information, please refer to the product page for this component
-   on: www.xilinx.com
-INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
-   This license does not allow you to generate bitstreams for designs that
-   incorporate this component. You may generate functional simulation netlists,
-   but you may not evaluate this component in hardware.
-   For ordering information, please refer to the product page for this component
-   on: www.xilinx.com
-INFO:coreutil - Design Linking license for component <tri_mode_eth_mac> found.
-   This license does not allow you to generate bitstreams for designs that
-   incorporate this component. You may generate functional simulation netlists,
-   but you may not evaluate this component in hardware.
-   For ordering information, please refer to the product page for this component
-   on: www.xilinx.com
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_gtxtocpu" = FROM
-   "clk_gtx" TO "clk_axi" TIG;> [HMB_SciFi_SCROD.ucf(265)]: Unable to find an
-   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_gtxtocpu" = FROM
-   "clk_gtx" TO "clk_axi" TIG;> [HMB_SciFi_SCROD.ucf(265)]: Unable to find an
-   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_axi'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_cputogtx" = FROM
-   "clk_axi" TO "clk_gtx" TIG;> [HMB_SciFi_SCROD.ucf(266)]: Unable to find an
-   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_axi'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_cputogtx" = FROM
-   "clk_axi" TO "clk_gtx" TIG;> [HMB_SciFi_SCROD.ucf(266)]: Unable to find an
-   active 'TimeGrp' or 'TNM' or 'TPSync' constraint named 'clk_gtx'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr"   =
-   FROM "tx_fifo_rd_to_wr" TO "clk_gtx" 7800 ps DATAPATHONLY;>
-   [HMB_SciFi_SCROD.ucf(274)]: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'clk_gtx'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd"   =
-   FROM "tx_fifo_wr_to_rd" TO clk_tx_mac 7800 ps DATAPATHONLY;>
-   [HMB_SciFi_SCROD.ucf(275)]: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'clk_tx_mac'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd"   =
-   FROM "rx_fifo_wr_to_rd" TO "clk_gtx" 7800 ps DATAPATHONLY;>
-   [HMB_SciFi_SCROD.ucf(292)]: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'clk_gtx'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr"   =
-   FROM "rx_fifo_rd_to_wr" TO "clk_rx" 7800 ps DATAPATHONLY;>
-   [HMB_SciFi_SCROD.ucf(293)]: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'clk_rx'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMEGRP "ffs_except_axi"         = FFS
-   EXCEPT "clock_generator_clkout1" "mdio_logic";> [HMB_SciFi_SCROD.ucf(296)]:
-   Unable to find an active 'TNM' or 'TimeGrp' constraint named
-   'clock_generator_clkout1'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMEGRP "ffs_except_axi"         = FFS
-   EXCEPT "clock_generator_clkout1" "mdio_logic";> [HMB_SciFi_SCROD.ucf(296)]:
-   Unable to find an active 'TNM' or 'TimeGrp' constraint named 'mdio_logic'.
-
-WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_config_to_all"      =
-   FROM "clock_generator_clkout1" TO "ffs_except_axi" TIG;>
-   [HMB_SciFi_SCROD.ucf(297)]: Unable to find an active 'TimeGrp' or 'TNM' or
-   'TPSync' constraint named 'clock_generator_clkout1'.
-
 WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
    constraints were not derived. This TNM is used in the following user groups
    or specifications:
    <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO "D_CLK" TIG;>
    <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO "J_CLK" TIG;>
 
-INFO:ConstraintSystem:178 - TNM 'MASTER_CLK_P', used in period specification
-   'TS_MASTER_CLK_P', was traced into DCM_SP instance dcm_sp_inst. The following
-   new TNM groups and period specifications were generated at the DCM_SP
-   output(s): 
-   CLKFX: <TIMESPEC TS_CLK_FANOUT_1TO2_clkfx = PERIOD "CLK_FANOUT_1TO2_clkfx"
-   TS_MASTER_CLK_P / 0.2 HIGH 50%>
+INFO:ConstraintSystem:178 - TNM 'U_GtpS6/usrClkSource', used in period
+   specification 'TS_usrClkSource', was traced into DCM_SP instance
+   U_USRCLK_DCM. The following new TNM groups and period specifications were
+   generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw = PERIOD
+   "U_S6EthTop_U_GtpS6_txRxUsrClkRaw" TS_usrClkSource HIGH 50%>
 
-INFO:ConstraintSystem:178 - TNM 'MASTER_CLK_P', used in period specification
-   'TS_MASTER_CLK_P', was traced into DCM_SP instance dcm_sp_inst. The following
-   new TNM groups and period specifications were generated at the DCM_SP
-   output(s): 
-   CLK0: <TIMESPEC TS_CLK_FANOUT_1TO2_clk0 = PERIOD "CLK_FANOUT_1TO2_clk0"
-   TS_MASTER_CLK_P HIGH 50%>
+INFO:ConstraintSystem:178 - TNM 'U_GtpS6/usrClkSource', used in period
+   specification 'TS_usrClkSource', was traced into DCM_SP instance
+   U_USRCLK_DCM. The following new TNM groups and period specifications were
+   generated at the DCM_SP output(s): 
+   CLKDV: <TIMESPEC TS_U_S6EthTop_U_GtpS6_txRxUsrClk2Raw = PERIOD
+   "U_S6EthTop_U_GtpS6_txRxUsrClk2Raw" TS_usrClkSource * 2 HIGH 50%>
 
-INFO:ConstraintSystem:178 - TNM 'CLK_FANOUT_1TO2_clkfx', used in period
-   specification 'TS_CLK_FANOUT_1TO2_clkfx', was traced into DCM_SP instance
+INFO:ConstraintSystem:178 - TNM 'U_S6EthTop_U_GtpS6_txRxUsrClkRaw', used in
+   period specification 'TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw', was traced into
+   DCM_SP instance dcm_sp_inst. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_CLK_DIV_inst_clkfx = PERIOD "CLK_DIV_inst_clkfx"
+   TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw / 0.2 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'U_S6EthTop_U_GtpS6_txRxUsrClkRaw', used in
+   period specification 'TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw', was traced into
+   DCM_SP instance dcm_sp_inst. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_CLK_DIV_inst_clk0 = PERIOD "CLK_DIV_inst_clk0"
+   TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CLK_DIV_inst_clkfx', used in period
+   specification 'TS_CLK_DIV_inst_clkfx', was traced into DCM_SP instance
    dcm_sp_inst. The following new TNM groups and period specifications were
    generated at the DCM_SP output(s): 
-   CLKFX: <TIMESPEC TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD
-   "comm_process_U_ClockGenByteLink_clkfx" TS_CLK_FANOUT_1TO2_clkfx / 5 HIGH
-   50%>
+   CLKFX: <TIMESPEC TS_DC_communication_comm_process_U_ClockGenByteLink_clkfx =
+   PERIOD "DC_communication_comm_process_U_ClockGenByteLink_clkfx"
+   TS_CLK_DIV_inst_clkfx / 5 HIGH 50%>
 
 Done...
 
@@ -130,79 +69,217 @@ WARNING:NgdBuild:1212 - User specified non-default attribute value (46.882) was
    use the non-default attribute value.  This could result in incorrect
    uncertainty calculated for DCM output clocks.
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/tx_eth_last_1' has no
-   driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/tx_statistics_s' has no
-   driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/rx_statistics_s' has no
-   driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/serial_response' has no
-   driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/eth_inst/s_axi_bresp<1>'
-   has no driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/eth_inst/s_axi_rresp<1>'
-   has no driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/eth_inst/s_axi_awaddr<11>'
-   has no driver
-WARNING:NgdBuild:452 - logical net 'ETH_MODULE/udp_1/eth_inst/s_axi_araddr<11>'
-   has no driver
+WARNING:NgdBuild:452 - logical net 'U_S6EthTop/userTxDataReady<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<0>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_fifo_status<3>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><7>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_fifo_status<2>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><6>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_fifo_status<1>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><5>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_fifo_status<0>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><4>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/tx_fifo_overflow'
-   has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><3>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_fifo_status<3>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><2>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_fifo_status<2>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><1>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_fifo_status<1>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><0>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_fifo_status<0>
-   ' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><7>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/user_side_FIFO/rx_axis_mac_tread
-   y' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><6>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/Bus2IP_BE<3>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><5>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/Bus2IP_BE<2>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><4>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/Bus2IP_BE<1>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><3>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/Bus2IP_BE<0>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><2>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<3>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><1>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<4>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><0>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<5>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><7>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<9>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><6>' has no driver
 WARNING:NgdBuild:452 - logical net
-   'ETH_MODULE/udp_1/eth_inst/trimac_fifo_block/trimac_block/axi4_lite_ipif/axi_
-   lite_top/I_SLAVE_ATTACHMENT/I_DECODER/Address_In_Erly<10>' has no driver
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/udpTxAck<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/udpTxAck<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxMoreFragments' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -213,12 +290,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  40
+  Number of warnings: 109
 
-Total memory usage is 539936 kilobytes
+Total memory usage is 4516352 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

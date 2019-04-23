@@ -115,7 +115,7 @@ BEGIN
 			 trgLinkSynced => trgLinkSync1,
 			 serialClkLocked => serialClkLck1
 			 );
-
+	
    -- Clock process definitions
    DATA_CLK_process :process
    begin
