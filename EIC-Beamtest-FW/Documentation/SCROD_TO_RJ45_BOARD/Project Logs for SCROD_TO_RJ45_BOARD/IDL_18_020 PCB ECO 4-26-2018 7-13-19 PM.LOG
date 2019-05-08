@@ -1,0 +1,9 @@
+Removed Member From Class: ClassName=RF Member=AUX31_N
+Removed Member From Class: ClassName=RF Member=AUX31_P
+Added Pin To Net: NetName=AUX3_N Pin=CN3-97
+Added Net: Name=AUX3_N
+Added Pin To Net: NetName=AUX3_P Pin=CN3-90
+Added Pin To Net: NetName=AUX3_P Pin=J1-B1
+Added Pin To Net: NetName=AUX3_P Pin=J1-B2
+Added Net: Name=AUX3_P
+Added Member To Class: ClassName=RF Member=Wire AUX3_P

@@ -1,0 +1,52 @@
+Change Net Name : Old Net Name=AUX1_N New Net Name=AUX4_N
+Change Net Name : Old Net Name=AUX1_P New Net Name=AUX4_P
+Change Net Name : Old Net Name=AUX3_N New Net Name=SC_DC_RX4_N
+Change Net Name : Old Net Name=AUX3_P New Net Name=SC_DC_RX4_P
+Change Net Name : Old Net Name=AUX4_N New Net Name=SC_DC_RX2_N
+Change Net Name : Old Net Name=AUX4_P New Net Name=SC_DC_RX2_P
+Change Net Name : Old Net Name=DC_SC_DATA1_N New Net Name=DC_SC_DATA4_N
+Change Net Name : Old Net Name=DC_SC_DATA1_P New Net Name=DC_SC_DATA4_P
+Change Net Name : Old Net Name=DC_SC_DATA3_N New Net Name=ORed_Trig4_N
+Change Net Name : Old Net Name=DC_SC_DATA3_P New Net Name=ORed_Trig4_P
+Change Net Name : Old Net Name=DC_SC_DATA4_N New Net Name=ORed_Trig2_N
+Change Net Name : Old Net Name=DC_SC_DATA4_P New Net Name=ORed_Trig2_P
+Change Net Name : Old Net Name=DC_SC_TX1_N New Net Name=DC_SC_TX4_N
+Change Net Name : Old Net Name=DC_SC_TX1_P New Net Name=DC_SC_TX4_P
+Change Net Name : Old Net Name=DC_SC_TX3_N New Net Name=MAS_ACK4_N
+Change Net Name : Old Net Name=DC_SC_TX3_P New Net Name=MAS_ACK4_P
+Change Net Name : Old Net Name=DC_SC_TX4_N New Net Name=MAS_ACK2_N
+Change Net Name : Old Net Name=DC_SC_TX4_P New Net Name=MAS_ACK2_P
+Change Net Name : Old Net Name=MAS_ACK1_N New Net Name=DC_SC_TX3_N
+Change Net Name : Old Net Name=MAS_ACK1_P New Net Name=DC_SC_TX3_P
+Change Net Name : Old Net Name=MAS_ACK2_N New Net Name=DC_SC_TX1_N
+Change Net Name : Old Net Name=MAS_ACK2_P New Net Name=DC_SC_TX1_P
+Change Net Name : Old Net Name=MAS_ACK4_N New Net Name=MAS_ACK1_N
+Change Net Name : Old Net Name=MAS_ACK4_P New Net Name=MAS_ACK1_P
+Change Net Name : Old Net Name=ORed_Trig1_N New Net Name=DC_SC_DATA3_N
+Change Net Name : Old Net Name=ORed_Trig1_P New Net Name=DC_SC_DATA3_P
+Change Net Name : Old Net Name=ORed_Trig2_N New Net Name=DC_SC_DATA1_N
+Change Net Name : Old Net Name=ORed_Trig2_P New Net Name=DC_SC_DATA1_P
+Change Net Name : Old Net Name=ORed_Trig4_N New Net Name=ORed_Trig1_N
+Change Net Name : Old Net Name=ORed_Trig4_P New Net Name=ORed_Trig1_P
+Change Net Name : Old Net Name=SC_DC_CLK1_N New Net Name=SC_DC_CLK4_N
+Change Net Name : Old Net Name=SC_DC_CLK1_P New Net Name=SC_DC_CLK4_P
+Change Net Name : Old Net Name=SC_DC_CLK3_N New Net Name=SC_DC_DATA4_N
+Change Net Name : Old Net Name=SC_DC_CLK3_P New Net Name=SC_DC_DATA4_P
+Change Net Name : Old Net Name=SC_DC_CLK4_N New Net Name=SC_DC_DATA2_N
+Change Net Name : Old Net Name=SC_DC_CLK4_P New Net Name=SC_DC_DATA2_P
+Change Net Name : Old Net Name=SC_DC_DATA1_N New Net Name=SC_DC_CLK3_N
+Change Net Name : Old Net Name=SC_DC_DATA1_P New Net Name=SC_DC_CLK3_P
+Change Net Name : Old Net Name=SC_DC_DATA2_N New Net Name=SC_DC_CLK1_N
+Change Net Name : Old Net Name=SC_DC_DATA2_P New Net Name=SC_DC_CLK1_P
+Change Net Name : Old Net Name=SC_DC_DATA4_N New Net Name=SC_DC_DATA1_N
+Change Net Name : Old Net Name=SC_DC_DATA4_P New Net Name=SC_DC_DATA1_P
+Change Net Name : Old Net Name=SC_DC_RX1_N New Net Name=AUX3_N
+Change Net Name : Old Net Name=SC_DC_RX1_P New Net Name=AUX3_P
+Change Net Name : Old Net Name=SC_DC_RX2_N New Net Name=AUX1_N
+Change Net Name : Old Net Name=SC_DC_RX2_P New Net Name=AUX1_P
+Change Net Name : Old Net Name=SC_DC_RX4_N New Net Name=SC_DC_RX1_N
+Change Net Name : Old Net Name=SC_DC_RX4_P New Net Name=SC_DC_RX1_P
+Added Pin To Net: NetName=SC_DC_CLK2_P Pin=J1-C5
+Added Net: Name=SC_DC_CLK2_P
+Added Differential Pair: Name=SC_DC_CLK2
+Added Member To Class: ClassName=RF Member=Wire SC_DC_CLK2_P

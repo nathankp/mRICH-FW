@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=AUX1_P Pin=J1-D1
+Added Pin To Net: NetName=AUX1_N Pin=J1-D2
+Added Differential Pair: Name=AUX1
+Added Member To Class: ClassName=RF Member=Wire AUX1_N
+Added Member To Class: ClassName=RF Member=Wire AUX1_P

@@ -1,0 +1,65 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo -sd
+../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
+../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
+ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
+../../../QBLink/QBlink/ipcore_dir -p xc6slx150t-fgg676-3 -i
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.
+ngc
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top_
+cs.ngc
+
+Reading NGO file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
+.ngc" ...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo
+18x16.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/bram
+8x3000.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo
+8x64.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo
+Dist8x16.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/udp6
+4kfifo.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo
+16x64.ngc"...
+Loading design module
+"remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo
+32x512RxAxi.ngc"...
+Loading design module "../../../QBLink/QBlink/cores/serializationFifo.ngc"...
+Loading design module "../../../QBLink/QBlink/ipcore_dir/QBLtxFIFO.ngc"...
+Loading design module "../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4449088 kilobytes
+
+Writing NGC file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
+_cs.ngc" ...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   3 sec
+
+Writing NGCBUILD log file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
+_cs.blc"...

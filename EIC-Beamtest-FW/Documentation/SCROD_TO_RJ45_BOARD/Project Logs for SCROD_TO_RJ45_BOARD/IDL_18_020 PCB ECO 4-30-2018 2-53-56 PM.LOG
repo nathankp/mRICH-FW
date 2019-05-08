@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=TRIG_AUX11_N Pin=CN1-114
+Removed Pin From Net: NetName=TRIG_AUX11_P Pin=CN1-115
+Removed Pin From Net: NetName=TRIG_AUX12_N Pin=CN1-118
+Removed Pin From Net: NetName=TRIG_AUX12_P Pin=CN1-119
+Added Pin To Net: NetName=TRIG_AUX12_N Pin=CN1-114
+Added Pin To Net: NetName=TRIG_AUX12_P Pin=CN1-115
+Added Pin To Net: NetName=TRIG_AUX11_N Pin=CN1-118
+Added Pin To Net: NetName=TRIG_AUX11_P Pin=CN1-119

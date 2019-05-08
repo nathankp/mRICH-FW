@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="DaughterCard_TOPBlk.svg"
+   inkscape:export-filename="C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\Documentation\Current_diagrams\SCROD_TopBlk_rev2.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1338"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1336" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1278"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1015"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5047"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5045" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4895"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4893"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4569"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:collect="always">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path4567" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4358"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4356"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path1418"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5047-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         inkscape:connector-curvature="0"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5045-7" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="182.90207"
+     inkscape:cy="696.49545"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid829" />
+    <sodipodi:guide
+       position="-113.77083,150.8125"
+       orientation="1,0"
+       id="guide3330"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       y="73.552589"
+       x="119.25957"
+       height="42.711311"
+       width="76.199997"
+       id="rect1215"
+       style="fill:#ff9500;fill-opacity:0.89502761;stroke:#010001;stroke-width:0.42447898;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,74.908691,3.2636733)"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot1225"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1219"><rect
+           y="339.66254"
+           x="178.57143"
+           height="111.42857"
+           width="415.71429"
+           id="rect1217" /></flowRegion><flowPara
+         id="flowPara1223"><flowSpan
+   style="font-weight:bold;font-size:21.33333397px"
+   id="flowSpan6314">Command Interpreter</flowSpan> </flowPara></flowRoot>    <path
+       style="fill:#aa89d1;fill-opacity:0.97790062;stroke:#010001;stroke-width:0.29601541;stroke-opacity:1"
+       d="m 163.21355,55.497564 h -5.37139 V 16.541667 H 143.4042 v 38.955897 h -5.19766 l 6.25175,9.24586 6.25175,9.245859 6.25175,-9.245859 z"
+       id="path1264"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1274-0"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.00454294,0.26454433,-0.26454433,-0.00454294,252.49768,-12.842533)"><flowRegion
+         id="flowRegion1276-4"><rect
+           id="rect1278-4"
+           width="220"
+           height="50"
+           x="130"
+           y="372.51968" /></flowRegion><flowPara
+         id="flowPara1280-8"><flowSpan
+   style="font-size:13.33333397px"
+   id="flowSpan1282"><flowSpan
+   id="flowSpan1141"
+   style="font-size:18.66666603px">TargetX Data</flowSpan> </flowSpan> </flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path1365"
+       d="m 190.96188,38.111328 h -4.8875 v 35.407088 h -13.1373 V 38.111328 h -4.72943 l 5.68856,-8.403579 5.68855,-8.403583 5.68856,8.403583 z"
+       style="fill:#f701d8;fill-opacity:0.73480666;stroke:#010001;stroke-width:0.26879251;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1367"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#040803;fill-opacity:0.97237567;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,77.387012,93.092318)"><flowRegion
+         style="fill:#040803;fill-opacity:0.97237567"
+         id="flowRegion1369"><rect
+           style="fill:#040803;fill-opacity:0.97237567"
+           id="rect1371"
+           width="230"
+           height="50"
+           x="90"
+           y="372.51968" /></flowRegion><flowPara
+         id="flowPara1373"
+         style="font-size:18.66666603px;fill:#040803;fill-opacity:0.97237567">TargetX Ctrl</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.33878309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
+       d="m 129.45342,73.130823 -0.13967,-34.91901"
+       id="path1700"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:transform-center-x="1.4475343e-006"
+       transform="matrix(0.9982026,0.05106687,-0.05991507,0.85078909,107.94803,-2.2754307)"
+       inkscape:transform-center-y="1.2606385"
+       d="m 23.8125,87.979166 5.114429,-0.306983 5.114429,-0.306984 -2.291359,4.582718 -2.291359,4.582717 -2.82307,-4.275733 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="-1.6307475"
+       sodipodi:arg1="-2.677945"
+       sodipodi:r2="2.9581316"
+       sodipodi:r1="5.9162631"
+       sodipodi:cy="90.625"
+       sodipodi:cx="29.104166"
+       sodipodi:sides="3"
+       id="path4264"
+       style="fill:#f50000;fill-opacity:0.02209945;stroke:#010001;stroke-width:0.31099999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="star" />
+    <rect
+       style="fill:#ff9500;fill-opacity:0.89411765;stroke:#010001;stroke-width:0.2765449;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4266"
+       width="89.958344"
+       height="21.166666"
+       x="102.8554"
+       y="162.55995" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4276"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,78.523061,-63.191257)"><flowRegion
+         id="flowRegion4278"><rect
+           id="rect4280"
+           width="580"
+           height="70"
+           x="130"
+           y="872.51971" /></flowRegion><flowPara
+         id="flowPara4282"
+         style="font-weight:bold;font-size:18.66666603px">DC Control Registers</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4284"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,76.79722,-54.371363)"><flowRegion
+         id="flowRegion4286"><rect
+           id="rect4288"
+           width="420"
+           height="80"
+           x="130"
+           y="872.51971" /></flowRegion><flowPara
+         id="flowPara4290"><flowSpan
+   style="font-size:18.66666603px"
+   id="flowSpan1196">20 Registers, 32-bits long each</flowSpan> </flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path4316"
+       d="m 167.51814,147.74329 h -3.66887 v -30.65996 h -9.86173 v 30.65996 h -3.55023 l 4.27021,7.27688 4.2702,7.27691 4.27021,-7.27691 z"
+       style="fill:#00e3f7;fill-opacity:0.97790061;stroke:#010001;stroke-width:0.21703871;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4336"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,326.28813,89.355213)"><flowRegion
+         id="flowRegion4338"><rect
+           id="rect4340"
+           width="270"
+           height="50"
+           x="120"
+           y="622.51971" /></flowRegion><flowPara
+         id="flowPara4342"
+         style="font-size:18.66666603px">write data</flowPara></flowRoot>    <path
+       style="fill:#f50000;fill-opacity:0.73333333;stroke:#010001;stroke-width:0.21703871;stroke-opacity:1"
+       d="m 188.68494,131.74302 h -3.66887 v 30.65996 h -9.86173 v -30.65996 h -3.55023 l 4.27021,-7.27688 4.2702,-7.27691 4.27021,7.27691 z"
+       id="path4344"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4346"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,-1.001816,254.67611)"><flowRegion
+         id="flowRegion4348"><rect
+           id="rect4350"
+           width="160"
+           height="35"
+           x="360"
+           y="672.51971" /></flowRegion><flowPara
+         id="flowPara4352"
+         style="font-size:18.66666603px">Read Data</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4358)"
+       d="M 140.8305,162.29537 V 117.05162"
+       id="path4354"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4534"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,318.20352,31.473233)"><flowRegion
+         id="flowRegion4536"><rect
+           id="rect4538"
+           width="80"
+           height="25"
+           x="380"
+           y="687.51971" /></flowRegion><flowPara
+         id="flowPara4540"
+         style="font-size:18.66666603px">Rd/Wr flag</flowPara></flowRoot>    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4565"
+       d="M 130.2471,162.29537 V 117.05162"
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4569)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4877"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,309.8033,45.983953)"><flowRegion
+         id="flowRegion4879"><rect
+           id="rect4881"
+           width="160"
+           height="79.999969"
+           x="280"
+           y="612.51971" /></flowRegion><flowPara
+         id="flowPara4883"
+         style="font-size:18.66666603px">start operation</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4895)"
+       d="m 122.30955,117.56608 v 45.24375"
+       id="path4891"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5029"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,-59.194306,224.50748)"><flowRegion
+         id="flowRegion5031"><rect
+           id="rect5033"
+           width="179.96748"
+           height="64.900803"
+           x="250"
+           y="662.51971" /></flowRegion><flowPara
+         id="flowPara5035"> <flowSpan
+   style="font-size:18.66666603px"
+   id="flowSpan1216">Acknowledge</flowSpan></flowPara></flowRoot>    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5043-2"
+       d="m 109.60968,161.76624 v -33.8667"
+       style="fill:none;stroke:#000000;stroke-width:0.33878309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker5047-9)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5223-1"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,213.6682,72.126023)"><flowRegion
+         id="flowRegion5225-6"><rect
+           id="rect5227-1"
+           width="140"
+           height="30"
+           x="240"
+           y="392.51968" /></flowRegion><flowPara
+         id="flowPara5229-2"
+         style="font-size:18.66666603px">Reset</flowPara></flowRoot>    <rect
+       style="fill:#77ff23;fill-opacity:0.65882353;stroke:#010001;stroke-width:0.36608496;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect932"
+       width="55.291901"
+       height="43.781204"
+       x="65.993065"
+       y="-81.688721"
+       transform="rotate(90)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot934"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,11.605392,-113.22029)"><flowRegion
+         id="flowRegion936"><rect
+           id="rect938"
+           width="204.88185"
+           height="106.82209"
+           x="120"
+           y="702.51971" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.33333397px"
+         id="flowPara1067">SCROD </flowPara><flowPara
+         id="flowPara942"
+         style="font-weight:bold;font-size:21.33333397px" /><flowPara
+         style="font-weight:bold;font-size:21.33333397px"
+         id="flowPara1158">Interface</flowPara><flowPara
+         id="flowPara944"> </flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot950"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,17.620884,-79.058198)"><flowRegion
+         id="flowRegion952"><rect
+           id="rect954"
+           width="225"
+           height="35"
+           x="85"
+           y="677.51971" /></flowRegion><flowPara
+         id="flowPara956"
+         style="font-size:18.66666603px">Quad-Byte Link</flowPara><flowPara
+         id="flowPara958"
+         style="font-size:18.66666603px">       Module</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot960"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:18.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px;"><flowRegion
+         id="flowRegion962"
+         style="font-size:18.66666667px;"><rect
+           id="rect964"
+           width="740"
+           height="80"
+           x="30"
+           y="22.519686"
+           style="font-size:18.66666667px;" /></flowRegion><flowPara
+         id="flowPara966" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot968"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,37.233913,0.85322805)"><flowRegion
+         id="flowRegion970"><rect
+           id="rect972"
+           width="860"
+           height="80"
+           x="50"
+           y="22.519686" /></flowRegion><flowPara
+         id="flowPara974"
+         style="font-weight:bold;font-size:24px">Daughtercard Firmware Structure </flowPara></flowRoot>    <path
+       style="fill:#f70803;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.19920647;stroke-opacity:1"
+       d="m 106.80712,118.77217 v -3.77262 H 81.688717 v -10.14059 h 25.118403 v -3.65063 l 5.96162,4.39096 5.96168,4.39096 -5.96168,4.39095 z"
+       id="path985"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot987"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,77.231524,-86.377028)"><flowRegion
+         id="flowRegion989"><rect
+           id="rect991"
+           width="270"
+           height="40"
+           x="10"
+           y="732.51971" /></flowRegion><flowPara
+         id="flowPara993"><flowSpan
+   style="font-size:18.66666603px"
+   id="flowSpan1162"> DC command</flowSpan> </flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path995"
+       d="M 93.718862,103.10168 V 99.285132 H 119.0625 V 89.026469 H 93.718862 v -3.693136 l -6.01506,4.442091 -6.015085,4.44209 6.015085,4.442068 z"
+       style="fill:#00e3f7;fill-opacity:0.97790061;stroke:#010001;stroke-width:0.20125882;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot997"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion999"><rect
+           id="rect1001"
+           width="105"
+           height="30"
+           x="10"
+           y="687.51971" /></flowRegion><flowPara
+         id="flowPara1003" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1005"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,9.1820916,-46.708714)"><flowRegion
+         id="flowRegion1007"><rect
+           id="rect1009"
+           width="177.04077"
+           height="21.43977"
+           x="285"
+           y="522.51971" /></flowRegion><flowPara
+         id="flowPara1011"
+         style="font-size:18.66666603px">DC Response</flowPara></flowRoot>    <path
+       style="fill:#00e3f7;fill-opacity:0.97790061;stroke:#010001;stroke-width:0.18723856;stroke-opacity:1"
+       d="M 26.458333,100.3889 V 96.850993 H 2.795213 v -9.50968 h 23.66312 v -3.4235 l 5.616239,4.11778 5.616263,4.11776 -5.616263,4.11776 z"
+       id="path1280"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1282"
+       d="m 15.597961,118.90973 v -3.97818 H 37.885399 V 104.23843 H 15.597961 v -3.84953 l -5.289733,4.63022 -5.2897569,4.63019 5.2897569,4.63019 z"
+       style="fill:#f70803;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.1926897;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1284"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.5449174,-81.781931)"><flowRegion
+         id="flowRegion1286"><rect
+           id="rect1288"
+           width="190"
+           height="55"
+           x="50"
+           y="712.51971" /></flowRegion><flowPara
+         id="flowPara1290"
+         style="font-size:16px">DC Serial RX</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.27963268,0,0,0.30212506,-10.203464,-125.54191)"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot1298"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1294"><rect
+           y="712.51971"
+           x="50"
+           height="55"
+           width="190"
+           id="rect1292" /></flowRegion><flowPara
+         id="flowPara1296"
+         style="font-size:14.5644846px">DC Serial TX</flowPara></flowRoot>    <path
+       style="fill:#f74ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.14806883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 90.085692,71.284733 -4.198485,3.45362 -4.19849,3.45361 4.19849,3.4536 4.198485,3.45362 v -2.96752 h 2.557555 15.132603 2.55759 v 2.96752 l 4.19849,-3.45362 4.19849,-3.4536 -4.19849,-3.45361 -4.19849,-3.45362 v 2.87141 h -2.55759 -15.132603 -2.557555 z"
+       id="path1300"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1302"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,62.903303,-39.448603)"><flowRegion
+         id="flowRegion1304"><rect
+           id="rect1306"
+           width="270"
+           height="60"
+           x="100"
+           y="432.51968" /></flowRegion><flowPara
+         id="flowPara1308"
+         style="font-size:18.66666603px">QBLink  </flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path1310"
+       d="m 27.578678,83.934923 v -3.39916 H 6.2280562 v -9.13677 H 27.578678 v -3.28925 l 5.067387,3.95629 5.067409,3.9563 -5.067409,3.95629 z"
+       style="fill:#f74ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.17410831;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1312"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1314"><rect
+           id="rect1316"
+           width="10"
+           height="30"
+           x="325"
+           y="722.51971" /></flowRegion><flowPara
+         id="flowPara1318" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1324"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,3.1074571,-46.705745)"><flowRegion
+         id="flowRegion1326"><rect
+           id="rect1328"
+           width="150"
+           height="30"
+           x="30"
+           y="452.51968" /></flowRegion><flowPara
+         id="flowPara1330"
+         style="font-size:16px">Sync</flowPara></flowRoot>    <path
+       sodipodi:type="star"
+       style="fill:#f50000;fill-opacity:0.02209945;stroke:#010001;stroke-width:0.31099999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1332"
+       sodipodi:sides="3"
+       sodipodi:cx="29.104166"
+       sodipodi:cy="90.625"
+       sodipodi:r1="5.9162631"
+       sodipodi:r2="2.9581316"
+       sodipodi:arg1="-2.677945"
+       sodipodi:arg2="-1.6307475"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 23.8125,87.979166 5.114429,-0.306983 5.114429,-0.306984 -2.291359,4.582718 -2.291359,4.582717 -2.82307,-4.275733 z"
+       inkscape:transform-center-y="-1.2606425"
+       transform="matrix(-0.9982026,-0.05106687,0.05991507,-0.85078909,88.517019,197.23623)"
+       inkscape:transform-center-x="-4.1110453e-006" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot9720"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion9722"><rect
+           id="rect9724"
+           width="105"
+           height="25"
+           x="70"
+           y="452.51968" /></flowRegion><flowPara
+         id="flowPara9726" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)"
+       d="m 65.28455,121.55557 v 22.48958"
+       id="path12075"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot12083"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458188,-8.7538831e-4,8.7538831e-4,0.26458188,-39.622862,27.373943)"><flowRegion
+         style="fill:#000800;fill-opacity:1"
+         id="flowRegion12079"><rect
+           style="fill:#000800;fill-opacity:1"
+           id="rect12077"
+           width="150"
+           height="40"
+           x="270"
+           y="402.51968" /></flowRegion><flowPara
+         id="flowPara12081"
+         style="font-size:18.66666603px">25MHz Clock</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1232"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1234"><rect
+           id="rect1236"
+           width="10"
+           height="50"
+           x="260"
+           y="722.51971" /></flowRegion><flowPara
+         id="flowPara1238" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2288"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-9.9538193,-74.716083)"><flowRegion
+         id="flowRegion2290"><rect
+           id="rect2292"
+           width="220"
+           height="50"
+           x="90"
+           y="812.51971" /></flowRegion><flowPara
+         id="flowPara2294"
+         style="font-size:18.66666603px">Provided by SCROD</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot12083-1"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000800;fill-opacity:1;stroke:none"
+       transform="matrix(8.7538831e-4,0.26458189,-0.26458189,8.7538831e-4,229.64139,-34.893011)"><flowRegion
+         style="fill:#000800;fill-opacity:1"
+         id="flowRegion12079-4"><rect
+           style="fill:#000800;fill-opacity:1"
+           id="rect12077-0"
+           width="150"
+           height="40"
+           x="270"
+           y="402.51968" /></flowRegion><flowPara
+         id="flowPara12081-2"
+         style="font-size:18.66666603px">25MHz Clock</flowPara></flowRoot>  </g>
+</svg>

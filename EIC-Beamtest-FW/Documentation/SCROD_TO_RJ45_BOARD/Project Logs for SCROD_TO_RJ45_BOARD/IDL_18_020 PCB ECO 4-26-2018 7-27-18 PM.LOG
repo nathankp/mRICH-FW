@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=DC_SC_TX2_N Pin=CN2-44
+Added Pin To Net: NetName=DC_SC_TX2_P Pin=CN2-45
+Added Pin To Net: NetName=DC_SC_DATA2_N Pin=CN2-47
+Added Pin To Net: NetName=DC_SC_DATA2_P Pin=CN2-48
+Added Pin To Net: NetName=SC_DC_CLK2_P Pin=CN3-64
+Added Pin To Net: NetName=SC_DC_CLK2_N Pin=CN3-65
+Added Pin To Net: NetName=AUX2_P Pin=CN3-69
+Added Pin To Net: NetName=AUX2_N Pin=CN3-70

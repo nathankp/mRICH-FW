@@ -22,7 +22,7 @@ proc findRtfPath { relativePath } {
 
 source [ findRtfPath "data/projnav/scripts/dpm_cgUtils.tcl" ]
 
-set result [ run_cg_edit "CMD_FIFO_w1r8" xc6slx4-2tqg144 VHDL ]
+set result [ run_cg_edit "CMD_FIFO_w1r8" xc6slx9-2tqg144 VHDL ]
 
 if { $result == 0 } {
    puts "Core Generator edit command completed successfully."

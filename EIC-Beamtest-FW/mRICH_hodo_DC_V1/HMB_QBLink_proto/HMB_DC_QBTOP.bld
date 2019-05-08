@@ -1,0 +1,53 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd
+../../../../QBLink/QBLink/cores -sd ../../../../QBLink/QBLink/ipcore_dir -nt
+timestamp -uc HMB_QBLink.ucf -p xc6slx9-tqg144-3 HMB_DC_QBTOP_cs.ngc
+HMB_DC_QBTOP.ngd
+
+Reading NGO file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
+B_DC_QBTOP_cs.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "HMB_QBLink.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_sys_clk', was traced into DCM_SP instance
+   comm_process/U_ClockGenByteLink/dcm_sp_inst. The following new TNM groups and
+   period specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD
+   "comm_process_U_ClockGenByteLink_clkfx" TS_sys_clk / 5 HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (46.882) was
+   detected for the CLKIN_PERIOD attribute on DCM
+   "comm_process/U_ClockGenByteLink/dcm_sp_inst".  This does not match the
+   PERIOD constraint value (40 ns.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 4467552 kilobytes
+
+Writing NGD file "HMB_DC_QBTOP.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "HMB_DC_QBTOP.bld"...

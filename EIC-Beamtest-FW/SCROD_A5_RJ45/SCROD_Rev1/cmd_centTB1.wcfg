@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmd_centerTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bmd_definitions" />
+            <top_module name="cmd_centertb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vcomponents" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wave_markers>
+      <marker time="252000000" label="" />
+      <marker time="1375100000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/cmd_centertb/udp_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">udp_clk</obj_property>
+      <obj_property name="ObjectShortName">udp_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/data_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_clk</obj_property>
+      <obj_property name="ObjectShortName">data_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/pc_cmd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_cmd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_cmd[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/rx_udp_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_udp_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_udp_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_udp_data_i[6:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_udp_data_i[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/cmd_centertb/uut/rx_udp_data_i[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">rx_udp_data_i[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/rx_udp_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_udp_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_udp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/rx_fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/tx_udp_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_udp_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_udp_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/top_bot" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">top_bot</obj_property>
+      <obj_property name="ObjectShortName">top_bot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/tx_udp_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_udp_valid</obj_property>
+      <obj_property name="ObjectShortName">tx_udp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/tx_upd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_upd_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_upd_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/rx_fifo_data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_fifo_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/dc_num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_num[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/cmd_type" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_type[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_type[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/scrod_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scrod_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scrod_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/reg_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/ccstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">ccstate</obj_property>
+      <obj_property name="ObjectShortName">ccstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/pctxst" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">pctxst</obj_property>
+      <obj_property name="ObjectShortName">pctxst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/fifo_empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/fifo_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_sel[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmd_centertb/uut/reg_rb_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_rb_en</obj_property>
+      <obj_property name="ObjectShortName">reg_rb_en</obj_property>
+   </wvobject>
+</wave_config>

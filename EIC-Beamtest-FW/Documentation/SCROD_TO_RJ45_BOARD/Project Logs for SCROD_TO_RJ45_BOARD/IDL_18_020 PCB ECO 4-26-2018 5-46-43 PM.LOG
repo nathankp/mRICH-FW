@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=SC_DC_RX4_P Pin=CN2-3
+Removed Pin From Net: NetName=SC_DC_RX4_N Pin=CN2-4
+Added Pin To Net: NetName=SC_DC_RX4_P Pin=CN2-4
+Added Pin To Net: NetName=SC_DC_RX4_N Pin=CN2-5
+Added Pin To Net: NetName=SC_DC_DATA4_P Pin=CN2-7
+Added Pin To Net: NetName=SC_DC_DATA4_N Pin=CN2-8
+Added Pin To Net: NetName=MAS_ACK4_P Pin=CN2-12
+Added Pin To Net: NetName=MAS_ACK4_N Pin=CN2-13
+Added Pin To Net: NetName=ORed_Trig4_P Pin=CN2-15
+Added Pin To Net: NetName=ORed_Trig4_N Pin=CN2-16
+Added Differential Pair: Name=MAS_ACK4
+Added Differential Pair: Name=SC_DC_DATA2
+Added Differential Pair: Name=SC_DC_RX1
+Added Differential Pair: Name=SC_DC_RX2
+Added Member To Class: ClassName=RF Member=Wire MAS_ACK4_N
+Added Member To Class: ClassName=RF Member=Wire MAS_ACK4_P
+Added Member To Class: ClassName=RF Member=Wire SC_DC_DATA2_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_DATA2_P
+Added Member To Class: ClassName=RF Member=Wire SC_DC_RX1_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_RX1_P
+Added Member To Class: ClassName=RF Member=Wire SC_DC_RX2_N
+Added Member To Class: ClassName=RF Member=Wire SC_DC_RX2_P

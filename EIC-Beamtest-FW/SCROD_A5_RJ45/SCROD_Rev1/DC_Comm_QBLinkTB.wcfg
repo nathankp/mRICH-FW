@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bmd_definitions" />
+            <top_module name="dc_comm_qblinktb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="utilitypkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/dc_comm_qblinktb/data_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_clk</obj_property>
+      <obj_property name="ObjectShortName">data_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/rx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/dc_cmd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_cmd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_cmd[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/cmd_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_valid</obj_property>
+      <obj_property name="ObjectShortName">cmd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/resp_req" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resp_req</obj_property>
+      <obj_property name="ObjectShortName">resp_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/qb_rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_rst</obj_property>
+      <obj_property name="ObjectShortName">qb_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/dc_response" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_response[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_response[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/resp_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resp_valid</obj_property>
+      <obj_property name="ObjectShortName">resp_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/serial_clk_lck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serial_clk_lck</obj_property>
+      <obj_property name="ObjectShortName">serial_clk_lck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/trig_link_sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trig_link_sync</obj_property>
+      <obj_property name="ObjectShortName">trig_link_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/sendbackwd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sendbackwd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sendbackwd[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/respond" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">respond</obj_property>
+      <obj_property name="ObjectShortName">respond</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/cmd_incoming" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_incoming</obj_property>
+      <obj_property name="ObjectShortName">cmd_incoming</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/imlistening" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imlistening</obj_property>
+      <obj_property name="ObjectShortName">imlistening</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/trglinksync1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trglinksync1</obj_property>
+      <obj_property name="ObjectShortName">trglinksync1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/serialclklck1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serialclklck1</obj_property>
+      <obj_property name="ObjectShortName">serialclklck1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/data_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">data_clk_period</obj_property>
+      <obj_property name="ObjectShortName">data_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dc_comm_qblinktb/QBL_trainer/U_ByteLink/r.state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">.state</obj_property>
+      <obj_property name="ObjectShortName">r.state</obj_property>
+   </wvobject>
+</wave_config>

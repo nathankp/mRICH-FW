@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=ORed_Trig2_N Pin=CN2-105
+Added Pin To Net: NetName=ORed_Trig2_P Pin=CN2-106
+Added Pin To Net: NetName=MAS_ACK2_N Pin=CN2-109
+Added Pin To Net: NetName=MAS_ACK2_P Pin=CN2-110
+Added Pin To Net: NetName=SC_DC_DATA2_N Pin=CN2-113
+Added Pin To Net: NetName=SC_DC_DATA2_P Pin=CN2-114
+Added Pin To Net: NetName=SC_DC_RX2_N Pin=CN2-117
+Added Pin To Net: NetName=SC_DC_RX2_P Pin=CN2-118
