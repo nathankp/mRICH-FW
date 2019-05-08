@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Fri Apr 19 17:03:14 2019
+PC1::  Tue May 07 14:21:29 2019
 
 par -filter
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/fi
@@ -159,29 +159,29 @@ Starting Router
 
 Phase  1  : 33616 unrouted;      REAL time: 18 secs 
 
-Phase  2  : 23923 unrouted;      REAL time: 23 secs 
+Phase  2  : 23923 unrouted;      REAL time: 25 secs 
 
-Phase  3  : 7810 unrouted;      REAL time: 39 secs 
+Phase  3  : 7810 unrouted;      REAL time: 42 secs 
 
-Phase  4  : 7816 unrouted; (Setup:19142, Hold:116282, Component Switching Limit:0)     REAL time: 46 secs 
-
-Updating file: SCRODQB_Top.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:20634, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 3 secs 
-
-Phase  6  : 0 unrouted; (Setup:20408, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 4 secs 
+Phase  4  : 7816 unrouted; (Setup:19142, Hold:116282, Component Switching Limit:0)     REAL time: 48 secs 
 
 Updating file: SCRODQB_Top.ncd with current fully routed design.
 
-Phase  7  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 52 secs 
+Phase  5  : 0 unrouted; (Setup:20634, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 5 secs 
 
-Phase  8  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 52 secs 
+Phase  6  : 0 unrouted; (Setup:20408, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
 
-Phase  9  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 53 secs 
+Updating file: SCRODQB_Top.ncd with current fully routed design.
 
-Phase 10  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
-Total REAL time to Router completion: 1 mins 55 secs 
-Total CPU time to Router completion: 1 mins 53 secs 
+Phase  7  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 56 secs 
+
+Phase  8  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 56 secs 
+
+Phase  9  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 58 secs 
+
+Phase 10  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 59 secs 
+Total REAL time to Router completion: 1 mins 59 secs 
+Total CPU time to Router completion: 1 mins 56 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -355,11 +355,11 @@ Derived Constraints for TS_usrClkSource
 | lk2Raw                        |             |             |             |             |             |             |             |
 | TS_U_S6EthTop_U_GtpS6_txRxUsrC|      8.000ns|      8.508ns|      7.582ns|           59|            0|       271788|         4641|
 | lkRaw                         |             |             |             |             |             |             |             |
-|  TS_CLK_DIV_inst_clk0         |      8.000ns|      7.580ns|          N/A|            0|            0|          274|            0|
 |  TS_CLK_DIV_inst_clkfx        |     40.000ns|     37.910ns|     32.715ns|            0|            0|         3511|          856|
 |   TS_DC_communication_comm_pro|      8.000ns|      6.543ns|          N/A|            0|            0|          856|            0|
 |   cess_U_ClockGenByteLink_clkf|             |             |             |             |             |             |             |
 |   x                           |             |             |             |             |             |             |             |
+|  TS_CLK_DIV_inst_clk0         |      8.000ns|      7.580ns|          N/A|            0|            0|          274|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -376,10 +376,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 14 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 57 secs 
-Total CPU time to PAR completion: 1 mins 55 secs 
+Total REAL time to PAR completion: 2 mins 1 secs 
+Total CPU time to PAR completion: 1 mins 58 secs 
 
-Peak Memory Usage:  4925 MB
+Peak Memory Usage:  4924 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

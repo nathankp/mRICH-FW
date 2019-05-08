@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Apr 19 17:03:09 2019
+// Written by: Map P.20131013 on Tue May 07 14:21:23 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10279,10 +10279,10 @@ TS_U_S6EthTop_U_GtpS6_txRxUsrClk2Raw = PERIOD TIMEGRP
         "U_S6EthTop_U_GtpS6_txRxUsrClk2Raw" TS_usrClkSource * 2 HIGH 50%;
 TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw = PERIOD TIMEGRP
         "U_S6EthTop_U_GtpS6_txRxUsrClkRaw" TS_usrClkSource HIGH 50%;
-TS_CLK_DIV_inst_clk0 = PERIOD TIMEGRP "CLK_DIV_inst_clk0"
-        TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw HIGH 50%;
 TS_CLK_DIV_inst_clkfx = PERIOD TIMEGRP "CLK_DIV_inst_clkfx"
         TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw / 0.2 HIGH 50%;
+TS_CLK_DIV_inst_clk0 = PERIOD TIMEGRP "CLK_DIV_inst_clk0"
+        TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw HIGH 50%;
 TS_DC_communication_comm_process_U_ClockGenByteLink_clkfx = PERIOD TIMEGRP
         "DC_communication_comm_process_U_ClockGenByteLink_clkfx"
         TS_CLK_DIV_inst_clkfx / 5 HIGH 50%;

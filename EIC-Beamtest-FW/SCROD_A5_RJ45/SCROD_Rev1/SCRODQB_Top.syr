@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -4597,12 +4597,12 @@ trigLinkSynced_GND_11_o_AND_564_o               |         |         |    4.767| 
 =========================================================================
 
 
-Total REAL time to Xst completion: 50.00 secs
-Total CPU time to Xst completion: 50.39 secs
+Total REAL time to Xst completion: 54.00 secs
+Total CPU time to Xst completion: 54.10 secs
  
 --> 
 
-Total memory usage is 4612096 kilobytes
+Total memory usage is 4611984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 1259 (   0 filtered)
