@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Apr 19 17:03:09 2019
+// Written by: Map P.20131013 on Thu May 09 20:16:22 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10275,10 +10275,10 @@ PATH TS_D_TO_J_path = FROM TIMEGRP "D_CLK" TO TIMEGRP "J_CLK";
 PATH "TS_D_TO_J_path" TIG;
 TS_DATA_CLK = PERIOD TIMEGRP "CLK_DC_P" 40 ns HIGH 50%;
 TS_usrClkSource = PERIOD TIMEGRP "U_GtpS6/usrClkSource" 8 ns HIGH 50%;
-TS_U_S6EthTop_U_GtpS6_txRxUsrClk2Raw = PERIOD TIMEGRP
-        "U_S6EthTop_U_GtpS6_txRxUsrClk2Raw" TS_usrClkSource * 2 HIGH 50%;
 TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw = PERIOD TIMEGRP
         "U_S6EthTop_U_GtpS6_txRxUsrClkRaw" TS_usrClkSource HIGH 50%;
+TS_U_S6EthTop_U_GtpS6_txRxUsrClk2Raw = PERIOD TIMEGRP
+        "U_S6EthTop_U_GtpS6_txRxUsrClk2Raw" TS_usrClkSource * 2 HIGH 50%;
 TS_CLK_DIV_inst_clk0 = PERIOD TIMEGRP "CLK_DIV_inst_clk0"
         TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw HIGH 50%;
 TS_CLK_DIV_inst_clkfx = PERIOD TIMEGRP "CLK_DIV_inst_clkfx"

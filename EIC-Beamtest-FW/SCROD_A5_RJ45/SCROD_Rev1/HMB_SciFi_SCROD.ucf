@@ -39,13 +39,13 @@ NET "U_S6EthTop/U_GtpS6/usrClkSource" TNM_NET="U_GtpS6/usrClkSource";
 TIMESPEC "TS_usrClkSource"=PERIOD "U_GtpS6/usrClkSource" 8 ns HIGH 50 %;
 ##########################################################################
 ### Gigabit Transceiver (following RPeschke Example Project UCF)
-NET gtTxP     LOC = B6;
-NET gtTxN     LOC = A6;
-NET gtRxP     LOC = D7;
-NET gtRxN     LOC = C7;
-NET gtClkP    LOC = D11;
-NET gtClkN    LOC = C11;
-NET txDisable LOC = E8   | IOSTANDARD = LVCMOS33;
+NET "gtTxP"     LOC = B6;
+NET "gtTxN"     LOC = A6;
+NET "gtRxP"     LOC = D7;
+NET "gtRxN"     LOC = C7;
+NET "gtClkP"    LOC = D11;
+NET "gtClkN"    LOC = C11;
+NET "txDisable" LOC = E8   | IOSTANDARD = LVCMOS33;
 ###not including fabClk in PORT MAP of Top file, fabClk is kept constantly still from inside the Top file. 
 ###########################################################################
 ### Daughtercard Links (include old/alias for reference

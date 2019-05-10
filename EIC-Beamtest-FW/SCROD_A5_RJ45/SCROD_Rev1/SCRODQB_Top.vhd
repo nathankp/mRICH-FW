@@ -283,8 +283,6 @@ U_S6EthTop : entity work.S6EthTop
          txDataValid => userTxDataValids(1),
          txDataLast  => userTxDataLasts(1),
          txDataReady => userTxDataReadys(1),
-         -- This board ID
-         myId        => x"0000",
 			--DC Comm signals
 				--WILL ADD: QB_rst
 			serialClkLck => serialClkLocked,
