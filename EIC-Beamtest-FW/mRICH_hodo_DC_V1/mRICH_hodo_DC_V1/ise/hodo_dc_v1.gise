@@ -211,14 +211,15 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.lso"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ngc"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.prj"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.syr"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.xst"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>

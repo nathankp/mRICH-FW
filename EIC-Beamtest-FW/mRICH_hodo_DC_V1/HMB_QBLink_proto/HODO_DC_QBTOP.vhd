@@ -46,14 +46,21 @@ entity HMB_DC_QBTOP is
            TX_N : IN  sl;
 			  SYNC_P  : IN sl;
 			  SYNC_N  : IN sl;
+			  SSTIN_P : out sl;
+			  SSTIN_N : out sl;
            RX_P : OUT  sl;
            RX_N : OUT  sl);
 end HMB_DC_QBTOP;
 
 architecture Behavioral of HMB_DC_QBTOP is
-signal sync 	: sl;
-signal internal_sysclk :  sl;
-signal internal_reg : slv(31 DOWNTO 0) := (others => '0');
+
+--clock signals
+signal SSTin : sl := '0';
+signal asic_clk : s1 := '0';
+signal sysclk :  sl := '0';
+signal sync 	: sl := '0';
+signal aux_clk : sl := '0';
+--QBLINK signals
 signal tx : sl;
 signal rx : sl := '0';
 signal wordin : slv(31 DOWNTO 0) := (others => '0');
@@ -65,10 +72,12 @@ signal reset : sl := '0';
 signal trgLinkSynced : sl := '0';
 signal serialCLKLocked : sl := '0';
 signal cmd_type : slv(31 downto 0) := x"00000000";
+--Registers
 signal DC_REG : GPR;
 signal regAddr : slv(15 downto 0) := x"0000";
 signal regWrData : slv(15 downto 0) := x"0000";
 signal regRdData : slv(15 downto 0) := x"0000"; 
+signal internal_reg : slv(31 DOWNTO 0) := (others => '0'); --obsolete? 
 
 --command type constants---
 constant read_rg : slv(31 downto 0) := x"72656164"; --write a register command type
@@ -80,6 +89,16 @@ signal state : STATETYPE := SYNC_LINK;
 signal nxtState :STATETYPE := SYNC_LINK;
 begin
 
+CLOCK_FANOUT : entity work.BMD_DC_CLK_GEN
+  port map
+   (-- Clock in ports
+    CLK_IN1_P => SYSCLK_P,--25MHz
+    CLK_IN1_N => SYSCLK_N,
+    -- Clock out ports
+    CLK_OUT1 => sys_clk,--25MHz
+    CLK_OUT2 => asic_clk,--62.5MHz
+    CLK_OUT3 => aux_clk);--10MHz 
+
 RX_OBUFDS_inst : OBUFDS 
 generic map (IOSTANDARD => "LVDS_25")
 port map ( 
@@ -87,15 +106,23 @@ O => RX_P,
 OB => RX_N,
 I => rx);
 
-SYSCLK_IBUFGDS_inst : IBUFGDS
-generic map (
-					DIFF_TERM => FALSE,
-					IOSTANDARD => "LVDS_25")
+--SYSCLK_IBUFGDS_inst : IBUFGDS --taken care of by the Clock div
+--generic map (
+--					DIFF_TERM => FALSE,
+--					IOSTANDARD => "LVDS_25")
+--port map (
+--O => internal_sysclk, -- Clock buffer output
+--I => SYSCLK_P, -- Diff_p clock buffer input
+--IB => SYSCLK_N -- Diff_n clock buffer input
+--);
+
+sst_OBUFDS_inst : OBUFDS --(Nathan)instantiation of OBUFDS buffer
+generic map (IOSTANDARD => "LVDS_25")
+
 port map (
-O => internal_sysclk, -- Clock buffer output
-I => SYSCLK_P, -- Diff_p clock buffer input
-IB => SYSCLK_N -- Diff_n clock buffer input
-);
+	O  => SSTIN_P,    
+	OB => SSTIN_N,  
+	I  => SSTin); 
 	
 TX_IBUFDS : IBUFDS
 generic map ( 
@@ -131,7 +158,30 @@ PORT MAP(
 			 localWordOutReq => wordout_req,
 			 trgLinkSynced => trgLinkSynced,
 			 serialClkLocked => serialClkLocked
-			 );
+			 ); 
+			 
+TARGETX_control: entity work.TARGETX_DAC_CONTROL 
+PORT MAP(
+	--------------INPUTS-----------------------------
+	CLK 				=> asic_clk,
+	OOPS_RESET     => oops_reset,         --reset all modules to idle comes from register 5 bit 12
+	LOAD_PERIOD 	=> tx_dac_load_period, --comes from ctrl register 3
+	LATCH_PERIOD 	=> tx_dac_latch_period,--comes from ctrl register 4
+	UPDATE 			=> tx_dac_update,      --comes from DC_COMM_PARSER
+	REG_DATA 		=> tx_dac_reg_data,    --comes from ctrl register 1 bit 6-0 and 2 bit 11-0
+	--------------OUTPUTS----------------------------
+	busy				=>	tx_dac_busy,    	  --goes to DC_COMM_PARSER
+	SIN 				=> SIN, 					  --hardware signals to targetx
+	SCLK 				=> SCLK,					  --hardware signals to targetx
+	PCLK 				=> PCLK);				  --hardware signals to targetx
+
+24bit_coutner : Timestamper
+  PORT MAP (
+    clk => SSTin,
+    ce => '1',
+    sinit => sync,
+    q => timeStamp
+  );
 
 comm_sm: PROCESS(internal_sysclk, state, trgLinkSynced, serialClkLocked, wordout_valid, wordout) 
 BEGIN

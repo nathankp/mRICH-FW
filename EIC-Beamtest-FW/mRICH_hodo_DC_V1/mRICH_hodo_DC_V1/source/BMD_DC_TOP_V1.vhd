@@ -556,52 +556,52 @@ dig_ramp_len    <= ctrl_register(15);				  --sets ramp length when digitizing
 -- else = 0
 
 
---TARGETX_readout_control: entity work.TX_ReadoutControl
---PORT MAP(
---		--GENERAL I/O
---		CLK 			=> asic_clk,			--62.5MHz clock
---		DCNUM       => DC_ADDRESS,       --comes dip switch
---		OOPS 			=> oops_reset,       --comes from ctrl register 0 bit 0
---		SCROD_SEND 	=> sw_trig,          --comes from ctrl register 5 bit 0
---		TRIG 			=> trigger,          --depends on trigger mode
---		TRIG_MODE 	=> trig_mode,        --comes from ctrl register 6 bits 3 to 0
---		OFFSET_DIR  => offet_direction,  --comes from ctrl register 9 bit 15
---		WIN_OFFSET  => num_win_offet,    --comes from ctrl register 9 bits 8 to 0
---		WIN2READ    => num_win2read,     --comes from ctrl register 10 bits 8 to 0
---		FIX_WIN_EN	=> fixed_win_en,	   --comes from ctrl register 12 bit 15
---		FIXED_WIN   => fix_win_num,      --comes from ctrl register 12 bit 8 to 0
---		PED_CALC_EN => calc_ped_en,      --comes from ctrl register 13 bit 15
---		NAVG 			=> ped_n_averge,     --comes from ctrl register 13 bits 3 to 0
---		RD_BUSY     => readout_busy,     --internal readout busy signal
---		--I/O TO communication process
---		FIFO_CLK    => wave_fifo_clk,
---		FIFO_RST    => wave_fifo_rst,
---		FIFO_WR_EN  => wave_fifo_wr_en,
---		FIFO_DIN    => wave_fifo_din,
---		FIFO_FULL   => wave_fifo_full,
---		SEND_SRT    => send_srt,
---		TX_BUSY 		=> tx_busy,
---		--I/O TO SAMPLING AND DIGITIZATION PROCESS
---		SMP_RESET   => smp_win_cnt_rst, --comes from ctrl register 14 bit 15
---		CFG         => smp_rst_para,    --comes from ctrl register 14 bits 1 to 0
---		RAMP_LEN    => dig_ramp_len,    --comes from ctrl register 15
---		
---		--I/O TO TX
---		SSTIN 			 => internal_sstin,
---		WR_ADDRCLR  	 => WR_ADDRCLR,
---		CLR      		 => CLR,  
---		RD_EN    		 => RD_ENA, 
---		START_RAMP 	    => ramp_srt,
---		DIG_RD_ROWSEL_S => RD_ROWSEL_S,
---		DIG_RD_COLSEL_S => RD_COLSEL_S,
---		SAMPLESEL 		 => SAMPLESEL_S,
---		SR_CLR          => SR_CLEAR,
---		SR_CLK 			 => SR_CLK,
---		SR_SEL 			 => SR_SEL,
---		SMPLSI_ANY 		 => SAMPLESEL_ANY,
---		DONE            => DONE,
---		TRIG_BITS       => trigger_bits,    
---		TX_DOUT  		 => TX_DATA);
+TARGETX_readout_control: entity work.TX_ReadoutControl
+PORT MAP(
+		--GENERAL I/O
+		CLK 			=> asic_clk,			--62.5MHz clock
+		DCNUM       => DC_ADDRESS,       --comes dip switch
+		OOPS 			=> oops_reset,       --comes from ctrl register 0 bit 0
+		SCROD_SEND 	=> sw_trig,          --comes from ctrl register 5 bit 0
+		TRIG 			=> trigger,          --depends on trigger mode
+		TRIG_MODE 	=> trig_mode,        --comes from ctrl register 6 bits 3 to 0
+		OFFSET_DIR  => offet_direction,  --comes from ctrl register 9 bit 15
+		WIN_OFFSET  => num_win_offet,    --comes from ctrl register 9 bits 8 to 0
+		WIN2READ    => num_win2read,     --comes from ctrl register 10 bits 8 to 0
+		FIX_WIN_EN	=> fixed_win_en,	   --comes from ctrl register 12 bit 15
+		FIXED_WIN   => fix_win_num,      --comes from ctrl register 12 bit 8 to 0
+		PED_CALC_EN => calc_ped_en,      --comes from ctrl register 13 bit 15
+		NAVG 			=> ped_n_averge,     --comes from ctrl register 13 bits 3 to 0
+		RD_BUSY     => readout_busy,     --internal readout busy signal
+		--I/O TO communication process
+		FIFO_CLK    => wave_fifo_clk,
+		FIFO_RST    => wave_fifo_rst,
+		FIFO_WR_EN  => wave_fifo_wr_en,
+		FIFO_DIN    => wave_fifo_din,
+		FIFO_FULL   => wave_fifo_full,
+		SEND_SRT    => send_srt,
+		TX_BUSY 		=> tx_busy,
+		--I/O TO SAMPLING AND DIGITIZATION PROCESS
+		SMP_RESET   => smp_win_cnt_rst, --comes from ctrl register 14 bit 15
+		CFG         => smp_rst_para,    --comes from ctrl register 14 bits 1 to 0
+		RAMP_LEN    => dig_ramp_len,    --comes from ctrl register 15
+		
+		--I/O TO TX
+		SSTIN 			 => internal_sstin,
+		WR_ADDRCLR  	 => WR_ADDRCLR,
+		CLR      		 => CLR,  
+		RD_EN    		 => RD_ENA, 
+		START_RAMP 	    => ramp_srt,
+		DIG_RD_ROWSEL_S => RD_ROWSEL_S,
+		DIG_RD_COLSEL_S => RD_COLSEL_S,
+		SAMPLESEL 		 => SAMPLESEL_S,
+		SR_CLR          => SR_CLEAR,
+		SR_CLK 			 => SR_CLK,
+		SR_SEL 			 => SR_SEL,
+		SMPLSI_ANY 		 => SAMPLESEL_ANY,
+		DONE            => DONE,
+		TRIG_BITS       => trigger_bits,    
+		TX_DOUT  		 => TX_DATA);
 
 SAMPLESEL_S<="00000";
 SR_CLEAR<='0';
