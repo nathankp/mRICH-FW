@@ -9,9 +9,10 @@ For more informatation on how to use the scripts see the Resources section of mR
 https://www.phys.hawaii.edu/~idlab/taskAndSchedule/NP/modRICHproto/modularRICHproto.html
 
 PROJECT STATUS: 
+  - QBLink Protocol integrated
+  - New S6 Ethernet Module integrated
   - Work in progress: 
- 	 - Fixing ethernet module (needs to be added to repo)
- 	 - Integrating ByteLine protocol (needs to be added to repo)
+  	 - HODOSCOPE trigger system (under development)
  	 - PMT board firmware (needs to be added to repo)
   
 PROJECT CONTRIBUTORS:
