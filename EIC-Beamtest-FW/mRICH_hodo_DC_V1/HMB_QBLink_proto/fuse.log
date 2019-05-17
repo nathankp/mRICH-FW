@@ -12,8 +12,8 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/H
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/Decode8b10b.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/SyncBit.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceOut.vhd" into library work
-WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 64: Actual for formal port rd_en is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 129: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 65: Actual for formal port rd_en is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 130: Actual for formal port c1 is neither a static name nor a globally static expression
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceIn.vhd" into library work
 WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
 WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/../../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
@@ -85,8 +85,8 @@ Compiling architecture cmd_fifo_w8r32_a of entity CMD_FIFO_w8r32 [cmd_fifo_w8r32
 Compiling architecture behavioral of entity QBlink [qblink_default]
 Compiling architecture behavior of entity triggerpack2tb
 Time Resolution for simulation is 1ps.
-Waiting for 19 sub-compilation(s) to finish...
+Waiting for 29 sub-compilation(s) to finish...
 Compiled 96 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/TriggerPack2TB_isim_beh.exe
-Fuse Memory Usage: 74508 KB
-Fuse CPU Usage: 2327 ms
+Fuse Memory Usage: 74284 KB
+Fuse CPU Usage: 2171 ms

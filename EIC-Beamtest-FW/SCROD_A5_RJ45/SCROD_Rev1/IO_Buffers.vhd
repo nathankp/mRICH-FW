@@ -37,6 +37,7 @@ entity IO_Buffers is
            RX_N : in  STD_LOGIC_VECTOR (num_DC downto 0);
            TX : in  STD_LOGIC_VECTOR (num_DC downto 0);
            --DC_CLK : in  STD_LOGIC; --Universal DC_CLK
+			  GLOB_EVNT : STD_LOGIC_VECTOR(3 downto 0);
            SYNC : in  STD_LOGIC; --Universal sync signal
            TX_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
            TX_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
@@ -44,7 +45,9 @@ entity IO_Buffers is
          --  DC_CLK_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
            RX : out  STD_LOGIC_VECTOR (num_DC downto 0);
            SYNC_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
-           SYNC_N : out  STD_LOGIC_VECTOR (num_DC downto 0));
+           SYNC_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
+			  GLOB_EVNT_P : out STD_LOGIC_VECTOR(3 downto 0);
+			  GLOB_EVNT_N : out STD_LOGIC_VECTOR(3 downto 0));
 end IO_Buffers;
 
 architecture Behavioral of IO_Buffers is
@@ -60,14 +63,8 @@ Gen_buffers : for I in num_DC downto 0 generate
 		O => RX(I),
 		I => RX_P(I),
 		IB => RX_N(I));
-	
---	DC1_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
---	generic map (IOSTANDARD => "LVDS_25")
---	port map (
---		O => DC_CLK_P(I),
---		OB => DC_CLK_N(I),
---		I => DC_CLK); 
---	
+
+			
 	TX_OBUFDS_inst : OBUFDS --output buffer: serial data to DCs
 	generic map (IOSTANDARD => "LVDS_25")
 	port map (
@@ -83,5 +80,13 @@ Gen_buffers : for I in num_DC downto 0 generate
 		I => SYNC);
 end generate Gen_buffers;
 
+Gen_PMT_trig_buf : for L in 3 downto 0 generate
+		PMT_trig_OBUFDS : OBUFDS 
+		generic map (IOSTANDARD => "LVDS_25")
+		port map (
+			O  => GLOB_EVNT_P(L),    
+			OB => GLOB_EVNT_N(L),  
+			I  => GLOB_EVNT(L));
+end generate Gen_PMT_trig_buf;
 end Behavioral;
 

@@ -94,13 +94,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1557964703" xil_pn:in_ck="7212811911739638820" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1557964703">
+    <transform xil_pn:end_ts="1558127131" xil_pn:in_ck="7212811911739638820" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1558127131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
@@ -131,14 +127,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1557958463" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8643013526587685517" xil_pn:start_ts="1557958462">
+    <transform xil_pn:end_ts="1558127136" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.ngc"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.vhd"/>
@@ -156,14 +147,9 @@
       <outfile xil_pn:name="ipcore_dir/srout_bram_blkmem.ngc"/>
       <outfile xil_pn:name="ipcore_dir/srout_bram_blkmem.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1557964704" xil_pn:in_ck="-5139786567320932935" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1557964703">
+    <transform xil_pn:end_ts="1558127136" xil_pn:in_ck="8310821242058794501" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
@@ -177,7 +163,6 @@
       <outfile xil_pn:name="../../../../QBLink/source/SyncBit.vhd"/>
       <outfile xil_pn:name="../../../QBLink/source/BMD_definitions.vhd"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
-      <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.vhd"/>
       <outfile xil_pn:name="HODO_DC_QBTOP.vhd"/>
       <outfile xil_pn:name="TARGETX_DAC_CONTROL.vhd"/>
       <outfile xil_pn:name="TriggerPack.vhd"/>
@@ -187,22 +172,14 @@
       <outfile xil_pn:name="Triggerbits/TrigBitMux.vhd"/>
       <outfile xil_pn:name="Triggerbits/TrigBitMuxTb.vhd"/>
       <outfile xil_pn:name="Triggerbits/ck_package.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.vhd"/>
       <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.vhd"/>
       <outfile xil_pn:name="ipcore_dir/QBLtxFIFO.vhd"/>
       <outfile xil_pn:name="ipcore_dir/Timestamper.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="ipcore_dir/serializationFifo.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/srout_bram_blkmem.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1557964712" xil_pn:in_ck="-5139786567320932935" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1657167091062563582" xil_pn:start_ts="1557964704">
+    <transform xil_pn:end_ts="1558127148" xil_pn:in_ck="-5139786567320932935" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1657167091062563582" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TriggerPack2TB_beh.prj"/>
       <outfile xil_pn:name="TriggerPack2TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -210,12 +187,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1557964712" xil_pn:in_ck="-6715866727688657086" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3072214524236700399" xil_pn:start_ts="1557964712">
+    <transform xil_pn:end_ts="1558127148" xil_pn:in_ck="-6715866727688657086" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3072214524236700399" xil_pn:start_ts="1558127148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TriggerPack2TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -294,6 +268,8 @@
     <transform xil_pn:end_ts="1558046147" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1558046120">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.pcf"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_map.map"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_map.mrp"/>

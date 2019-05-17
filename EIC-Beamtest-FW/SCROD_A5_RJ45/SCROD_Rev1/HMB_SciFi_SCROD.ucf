@@ -45,7 +45,7 @@ NET "gtRxP"     LOC = D7;
 NET "gtRxN"     LOC = C7;
 NET "gtClkP"    LOC = D11;
 NET "gtClkN"    LOC = C11;
-NET "txDisable" LOC = E8   | IOSTANDARD = LVCMOS33;
+NET "txDisable" LOC = E8 | IOSTANDARD = LVCMOS33;
 ###not including fabClk in PORT MAP of Top file, fabClk is kept constantly still from inside the Top file. 
 ###########################################################################
 ### Daughtercard Links (include old/alias for reference
@@ -130,6 +130,19 @@ NET "RX_DC_N<3>" LOC = Ab6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";
 ## SYNC  (to DC)
 NET "SYNC_P<3>" LOC = AD6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
 NET "SYNC_N<3>" LOC = AF6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
+
+#######PMT Triggers
+#NET "GLOBAL_EVENT_P<0>" LOC = C24| IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #Trig Aux 1
+#NET "GLOBAL_EVENT_N<0>" LOC = D24| IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
+#
+#NET "GLOBAL_EVENT_P<1>" LOC = R7 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #Trig Aux 9
+#NET "GLOBAL_EVENT_N<1>" LOC = R6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";
+#
+#NET "GLOBAL_EVENT_P<2>" LOC = J20 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #Trig Aux 5
+#NET "GLOBAL_EVENT_N<2>" LOC = J22 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
+#
+#NET "GLOBAL_EVENT_P<3>" LOC = AA23 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #Trig Aux 13 (schematic has pinout for 150 package, but we are using 150T)
+#NET "GLOBAL_EVENT_N<3>" LOC = AA24 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
 
 #
 ##### Daughtercard 5

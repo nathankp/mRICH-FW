@@ -68,7 +68,8 @@ entity SCRODQB_Top is
 			SYNC_P			 : OUT slv(3 downto 0); -- when '0' DC listens only, '1' DC reads back command
 			SYNC_N			 : OUT slv(3 downto 0);
 			--Trigger to PMT SCRODs (mRICH)
-			GLOBAL_EVENT    : OUT slv(3 downto 0)
+			GLOBAL_EVENT_P    : OUT slv(3 downto 0);
+			GLOBAL_EVENT_N    : OUT slv(3 downto 0)
 	);
 end SCRODQB_Top;
 
@@ -127,6 +128,7 @@ signal ethSync      : sl;
 	signal tx_dc		 : slv(NUM_DCs downto 0); --transmitted serial data bit 
 	signal rx_dc		 : slv(NUM_DCs downto 0); --recieved serial data bit
 	signal evntFlag :sl :='0';
+	signal global_event :slv(3 downto 0);
 		--TYPE CommStateType IS (IDLE, START_WRITE, START_READ); --Communcation statetype
 		--signal CommState : CommStateType := IDLE; --communcation statemachine(SM) current state
 		--signal nxtState : CommStateType := IDLE; --communication SM next state
@@ -164,7 +166,7 @@ begin
 sync <= CtrlRegister(2)(8);
 --watch4Events <= CtrlRegister(2)(1);
 reset <= CtrlRegister(0)(0);
-GLOBAL_EVENT <= (others => evntFlag);
+global_event <= (others => evntFlag);
 QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
 --
 -----------------------------------------------------------------
@@ -252,6 +254,7 @@ DC4_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
 --		OB => DC_CLK_N(I),
 --		I => dc_clk); 
 --end generate Gen_clk_buff;
+
 DC1_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
 generic map (IOSTANDARD => "LVDS_25")
 port map (
@@ -287,12 +290,12 @@ PORT MAP(
 	RX_P => RX_DC_P,
 	RX_N => RX_DC_N,
 	TX => tx_dc,
---	DC_CLK => dc_clk,
+	GLOB_EVNT => global_event,
 	SYNC => sync,
 	TX_P => TX_DC_P,
 	TX_N => TX_DC_N,
---	DC_CLK_P => DC_CLK_P,
---	DC_CLK_N => DC_CLK_N,
+	GLOB_EVNT_P => GLOBAL_EVENT_P,
+	GLOB_EVNT_N => GLOBAL_EVENT_N,
 	RX => rx_dc,
 	SYNC_P => SYNC_P,
 	SYNC_N => SYNC_N

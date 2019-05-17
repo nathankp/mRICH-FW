@@ -38,11 +38,6 @@ WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'userTxDataReadys<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'dc_RespValid<3>' has no driver
-WARNING:NgdBuild:452 - logical net 'dc_RespValid<2>' has no driver
-WARNING:NgdBuild:452 - logical net 'dc_RespValid<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'dc_RespValid<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/userTxDataReady<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<0>' has no driver
@@ -264,12 +259,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 115
+  Number of warnings: 110
 
-Total memory usage is 4531664 kilobytes
+Total memory usage is 4533916 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   9 sec
+Total REAL time to NGDBUILD completion:  13 sec
+Total CPU time to NGDBUILD completion:   11 sec
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...
