@@ -2,10 +2,9 @@ Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
-iseconfig/filter.filter -intstyle ise -dd _ngo -sd
-../../../../QBLink/QBLink/cores -sd ../../../../QBLink/QBLink/ipcore_dir -nt
-timestamp -uc HMB_QBLink.ucf -p xc6slx9-tqg144-3 HMB_DC_QBTOP_cs.ngc
-HMB_DC_QBTOP.ngd
+iseconfig/filter.filter -intstyle ise -dd _ngo -sd ipcore_dir -sd
+../mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc HMB_QBLink.ucf -p
+xc6slx4-tqg144-3 HMB_DC_QBTOP_cs.ngc HMB_DC_QBTOP.ngd
 
 Reading NGO file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
@@ -16,21 +15,50 @@ Done.
 Annotating constraints to design from ucf file "HMB_QBLink.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
+   constraints were not derived. This TNM is used in the following user groups
+   or specifications:
+   <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO "D_CLK" TIG;>
+   <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO "J_CLK" TIG;>
+
 INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
-   'TS_sys_clk', was traced into DCM_SP instance
+   'TS_SSTIN_P', was traced into PLL_ADV instance PLL_ADV. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_CLOCK_FANOUT_clkout1 = PERIOD "CLOCK_FANOUT_clkout1"
+   TS_SSTIN_P / 2.5 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SSTIN_P', was traced into PLL_ADV instance PLL_ADV. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_CLOCK_FANOUT_clkout0 = PERIOD "CLOCK_FANOUT_clkout0"
+   TS_SSTIN_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'CLOCK_FANOUT_clkout0', used in period
+   specification 'TS_CLOCK_FANOUT_clkout0', was traced into DCM_SP instance
    comm_process/U_ClockGenByteLink/dcm_sp_inst. The following new TNM groups and
    period specifications were generated at the DCM_SP output(s): 
    CLKFX: <TIMESPEC TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD
-   "comm_process_U_ClockGenByteLink_clkfx" TS_sys_clk / 5 HIGH 50%>
+   "comm_process_U_ClockGenByteLink_clkfx" TS_CLOCK_FANOUT_clkout0 / 5 HIGH 50%>
 
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TS_sys_clk" = PERIOD
+   "SYSCLK_P" 40 ns HIGH 50 %;> [HMB_QBLink.ucf(12)] is overridden by the
+   constraint <TIMESPEC "TS_SSTIN_P" = PERIOD "SYSCLK_P" 31.25 ns HIGH 50 %;>
+   [HMB_QBLink.ucf(18)]. The overriden constraint usually comes from the input
+   netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
 Done...
 
 WARNING:NgdBuild:1212 - User specified non-default attribute value (46.882) was
    detected for the CLKIN_PERIOD attribute on DCM
    "comm_process/U_ClockGenByteLink/dcm_sp_inst".  This does not match the
-   PERIOD constraint value (40 ns.).  The uncertainty calculation will use the
-   non-default attribute value.  This could result in incorrect uncertainty
+   PERIOD constraint value (31.25 ns.).  The uncertainty calculation will use
+   the non-default attribute value.  This could result in incorrect uncertainty
    calculated for DCM output clocks.
+WARNING:NgdBuild:1440 - User specified non-default attribute value (40) was
+   detected for the CLKIN1_PERIOD attribute on PLL "PLL_ADV".  This does not
+   match the PERIOD constraint value (31.25 ns.).  The uncertainty calculation
+   will use the PERIOD constraint value.  This could result in incorrect
+   uncertainty calculated for PLL output clocks.
 Checking expanded design ...
 
 Partition Implementation Status
@@ -42,9 +70,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   4
 
-Total memory usage is 4467552 kilobytes
+Total memory usage is 4467564 kilobytes
 
 Writing NGD file "HMB_DC_QBTOP.ngd" ...
 Total REAL time to NGDBUILD completion:  7 sec

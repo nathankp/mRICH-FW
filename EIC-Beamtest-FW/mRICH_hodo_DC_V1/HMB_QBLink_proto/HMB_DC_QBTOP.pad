@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Apr 19 15:12:20 2019
+Thu May 16 12:36:07 2019
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -11,7 +11,7 @@ Fri Apr 19 15:12:20 2019
 #
 INPUT FILE:       HMB_DC_QBTOP_map.ncd
 OUTPUT FILE:      HMB_DC_QBTOP.pad
-PART TYPE:        xc6slx9
+PART TYPE:        xc6slx4
 SPEED GRADE:      -3
 PACKAGE:          tqg144
 
@@ -19,16 +19,16 @@ Pinout by Pin Number:
 
 -----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage|Constraint|IO Register|Signal Integrity|
-P1||IOBS|IO_L83N_VREF_3|UNUSED||3|||||||||
-P2||IOBM|IO_L83P_3|UNUSED||3|||||||||
+P1|SYNC_N|IOB|IO_L83N_VREF_3||LVDS_25|3||||||LOCATED|NO||
+P2|SYNC_P|IOB|IO_L83P_3|INPUT|LVDS_25|3||||NONE||LOCATED|NO|NONE|
 P3|||GND||||||||||||
-P4|||VCCO_3|||3|||||any******||||
-P5||IOBS|IO_L52N_3|UNUSED||3|||||||||
-P6||IOBM|IO_L52P_3|UNUSED||3|||||||||
-P7||IOBS|IO_L51N_3|UNUSED||3|||||||||
-P8||IOBM|IO_L51P_3|UNUSED||3|||||||||
-P9||IOBS|IO_L50N_3|UNUSED||3|||||||||
-P10||IOBM|IO_L50P_3|UNUSED||3|||||||||
+P4|||VCCO_3|||3|||||2.50||||
+P5|SCLK|IOB|IO_L52N_3|OUTPUT|LVCMOS25*|3|12|SLOW||||LOCATED|NO|NONE|
+P6|PCLK|IOB|IO_L52P_3|OUTPUT|LVCMOS25*|3|12|SLOW||||LOCATED|NO|NONE|
+P7|SHOUT|IOB|IO_L51N_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
+P8|TX_TRIG<2>|IOB|IO_L51P_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
+P9|TX_TRIG<3>|IOB|IO_L50N_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
+P10|TX_TRIG<4>|IOB|IO_L50P_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
 P11||IOBS|IO_L49N_3|UNUSED||3|||||||||
 P12||IOBM|IO_L49P_3|UNUSED||3|||||||||
 P13|||GND||||||||||||
@@ -36,7 +36,7 @@ P14||IOBS|IO_L44N_GCLK20_3|UNUSED||3|||||||||
 P15||IOBM|IO_L44P_GCLK21_3|UNUSED||3|||||||||
 P16||IOBS|IO_L43N_GCLK22_IRDY2_3|UNUSED||3|||||||||
 P17||IOBM|IO_L43P_GCLK23_3|UNUSED||3|||||||||
-P18|||VCCO_3|||3|||||any******||||
+P18|||VCCO_3|||3|||||2.50||||
 P19|||VCCINT||||||||1.2||||
 P20|||VCCAUX||||||||2.5||||
 P21||IOBS|IO_L42N_GCLK24_3|UNUSED||3|||||||||
@@ -49,10 +49,10 @@ P27||IOBM|IO_L37P_3|UNUSED||3|||||||||
 P28|||VCCINT||||||||1.2||||
 P29||IOBS|IO_L36N_3|UNUSED||3|||||||||
 P30||IOBM|IO_L36P_3|UNUSED||3|||||||||
-P31|||VCCO_3|||3|||||any******||||
+P31|||VCCO_3|||3|||||2.50||||
 P32||IOBS|IO_L2N_3|UNUSED||3|||||||||
-P33||IOBM|IO_L2P_3|UNUSED||3|||||||||
-P34||IOBS|IO_L1N_VREF_3|UNUSED||3|||||||||
+P33|TX_TRIG<1>|IOB|IO_L2P_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
+P34|TX_TRIG<0>|IOB|IO_L1N_VREF_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
 P35||IOBM|IO_L1P_3|UNUSED||3|||||||||
 P36|||VCCAUX||||||||2.5||||
 P37|||PROGRAM_B_2||||||||||||
@@ -155,13 +155,13 @@ P133||IOBS|IO_L34N_GCLK18_0|UNUSED||0|||||||||
 P134||IOBM|IO_L34P_GCLK19_0|UNUSED||0|||||||||
 P135|||VCCO_0|||0|||||2.50||||
 P136|||GND||||||||||||
-P137||IOBS|IO_L4N_0|UNUSED||0|||||||||
-P138||IOBM|IO_L4P_0|UNUSED||0|||||||||
+P137|SSTIN_N|IOBS|IO_L4N_0||LVDS_25|0|||||||NO||
+P138|SSTIN_P|IOBM|IO_L4P_0|OUTPUT|LVDS_25|0||||||UNLOCATED|NO|NONE|
 P139||IOBS|IO_L3N_0|UNUSED||0|||||||||
 P140||IOBM|IO_L3P_0|UNUSED||0|||||||||
 P141|RX_N|IOBS|IO_L2N_0||LVDS_25|0||||||LOCATED|NO||
 P142|RX_P|IOBM|IO_L2P_0|OUTPUT|LVDS_25|0||||||LOCATED|YES|NONE|
-P143||IOBS|IO_L1N_VREF_0|UNUSED||0|||||||||
+P143|SIN|IOB|IO_L1N_VREF_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 P144||IOBM|IO_L1P_HSWAPEN_0|UNUSED||0|||||||||
 
 -----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|

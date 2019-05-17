@@ -1,5 +1,5 @@
 #ChipScope Core Inserter Project File Version 3.0
-#Tue Feb 05 14:37:26 HST 2019
+#Thu May 16 12:34:53 HST 2019
 Project.device.designInputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\mRICH_hodo_DC_V1\\HMB_QBLink_proto\\HMB_DC_QBTOP_cs.ngc
 Project.device.designOutputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\mRICH_hodo_DC_V1\\HMB_QBLink_proto\\HMB_DC_QBTOP_cs.ngc
 Project.device.deviceFamily=18
@@ -15,9 +15,9 @@ Project.icon.enableExtTriggerOut=false
 Project.icon.triggerInPinName=
 Project.icon.triggerOutPinName=
 Project.unit.dimension=1
-Project.unit<0>.clockChannel=internal_sysclk_BUFG
+Project.unit<0>.clockChannel=sysclk
 Project.unit<0>.clockEdge=Rising
-Project.unit<0>.dataChannel<0>=rx
+Project.unit<0>.dataChannel<0>=tx
 Project.unit<0>.dataChannel<1>=comm_process/U_ByteLink/r_txData8b<0>
 Project.unit<0>.dataChannel<2>=comm_process/U_ByteLink/r_txData8b<1>
 Project.unit<0>.dataChannel<3>=comm_process/U_ByteLink/r_txData8b<2>

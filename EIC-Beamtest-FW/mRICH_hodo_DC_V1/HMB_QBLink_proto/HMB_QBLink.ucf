@@ -11,8 +11,11 @@
 NET "SYSCLK_P" TNM_NET = "SYSCLK_P";
 TIMESPEC "TS_sys_clk" = PERIOD "SYSCLK_P" 40 ns HIGH 50 %;
 
-#NET "asic_clk" TNM_NET = "asic_clk";
-#TIMESPEC TS_asic_clk = PERIOD "asic_clk" 16 ns HIGH 50 %;
+NET "asic_clk" TNM_NET = "asic_clk";
+TIMESPEC TS_asic_clk = PERIOD "asic_clk" 16 ns HIGH 50 %;
+
+NET "SSTIN_P" TNM_NET = "SSTIN_P";
+TIMESPEC "TS_SSTIN_P" = PERIOD "SYSCLK_P" 31.25 ns HIGH 50 %;
 
 ########## SCROD to daughter card communications signals ############################
 ###
@@ -61,17 +64,17 @@ NET "SYNC_N"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #P
 ####
 #
 ########## TARGETX programmable register interface ###################################  
-#NET	"SIN"          LOC = "p143";	# data in
-#NET	"SCLK"         LOC = "p5";		# serial shift clock
-#NET	"PCLK"         LOC = "p6";		# parallel load clock
-#NET	"SHOUT"        LOC = "p7";    # shifted data out          
+NET	"SIN"          LOC = "p143";	# data in
+NET	"SCLK"         LOC = "p5";		# serial shift clock
+NET	"PCLK"         LOC = "p6";		# parallel load clock
+NET	"SHOUT"        LOC = "p7";    # shifted data out          
 #																																	 
 ########## TARGETX trigger signals (to fpga) #########################################
-#NET   "TX_TRIG<0>"   LOC = "p34"; #
-#NET   "TX_TRIG<1>"   LOC = "p33"; 
-#NET   "TX_TRIG<2>"   LOC = "p8"; 
-#NET   "TX_TRIG<3>"   LOC = "p9";  
-#NET   "TX_TRIG<4>"   LOC = "p10"; # multi-hit flag
+NET   "TX_TRIG<0>"   LOC = "p34"; #
+NET   "TX_TRIG<1>"   LOC = "p33"; 
+NET   "TX_TRIG<2>"   LOC = "p8"; 
+NET   "TX_TRIG<3>"   LOC = "p9";  
+NET   "TX_TRIG<4>"   LOC = "p10"; # multi-hit flag
 #                      
 #### TARGETX Control signals needed for waveform sampling -- static for mRICH Hodo
 #	   

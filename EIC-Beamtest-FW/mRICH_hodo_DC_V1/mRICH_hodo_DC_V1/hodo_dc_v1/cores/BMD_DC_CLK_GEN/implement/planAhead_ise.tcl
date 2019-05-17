@@ -50,7 +50,7 @@
 set projDir [file dirname [info script]]
 set projName BMD_DC_CLK_GEN
 set topName BMD_DC_CLK_GEN_exdes
-set device xc6slx4tqg144-2
+set device xc6slx9tqg144-3
 
 create_project $projName $projDir/results/$projName -part $device
 

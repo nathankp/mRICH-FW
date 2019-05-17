@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="waveform_fifo_wr32_rd32">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-5-13T1:40:28</timestamp>
+    <timestamp>2019-5-15T21:59:21</timestamp>
     <pin polarity="Input" x="0" y="112" name="rst" />
     <pin polarity="Input" x="0" y="208" name="wr_clk" />
     <pin polarity="Input" x="0" y="240" name="din[31:0]" />

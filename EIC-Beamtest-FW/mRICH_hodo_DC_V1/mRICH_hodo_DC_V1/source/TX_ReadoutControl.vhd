@@ -82,7 +82,7 @@ entity TX_ReadoutControl is
 );
 end TX_ReadoutControl;
 
-farchitecture Behavioral of TX_ReadoutControl is
+architecture Behavioral of TX_ReadoutControl is
 
 --internal signals for readout pocess
 type readout_state is(

@@ -47,7 +47,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 # 
 
-set device xc6slx4tqg144-2
+set device xc6slx9tqg144-3
 set projName BMD_DC_CLK_GEN
 set design BMD_DC_CLK_GEN
 set projDir [file dirname [info script]]

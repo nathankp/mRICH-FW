@@ -1,10 +1,10 @@
 #ChipScope Core Inserter Project File Version 3.0
-#Fri Mar 15 21:11:49 HST 2019
-Project.device.designInputFile=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top_cs.ngc
-Project.device.designOutputFile=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top_cs.ngc
+#Thu May 16 13:06:18 HST 2019
+Project.device.designInputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
+Project.device.designOutputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
 Project.device.deviceFamily=18
 Project.device.enableRPMs=true
-Project.device.outputDirectory=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo
+Project.device.outputDirectory=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\_ngo
 Project.device.useSRL16=true
 Project.filter.dimension=19
 Project.filter<0>=
@@ -43,7 +43,7 @@ Project.unit<0>.enableStorageQualification=true
 Project.unit<0>.enableTimestamps=false
 Project.unit<0>.timestampDepth=0
 Project.unit<0>.timestampWidth=0
-Project.unit<0>.triggerChannel<0><0>=rx_dc
+Project.unit<0>.triggerChannel<0><0>=rx_dc<0>
 Project.unit<0>.triggerConditionCountWidth=0
 Project.unit<0>.triggerMatchCount<0>=1
 Project.unit<0>.triggerMatchCountWidth<0><0>=0

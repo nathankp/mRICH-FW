@@ -4,7 +4,7 @@ run
 -ifn HMB_DC_QBTOP.prj
 -ofn HMB_DC_QBTOP
 -ofmt NGC
--p xc6slx9-3-tqg144
+-p xc6slx4-3-tqg144
 -top HMB_DC_QBTOP
 -opt_mode Speed
 -opt_level 1
@@ -15,7 +15,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../../../../QBLink/QBLink/cores" "../../../../QBLink/QBLink/ipcore_dir"  }
+-sd {"ipcore_dir" "../mRICH_hodo_DC_V1/hodo_dc_v1/cores"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /

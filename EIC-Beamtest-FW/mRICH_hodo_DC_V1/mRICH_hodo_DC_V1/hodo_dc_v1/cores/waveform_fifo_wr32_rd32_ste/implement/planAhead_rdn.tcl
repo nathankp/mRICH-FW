@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc6slx4tqg144-2
+set device xc6slx9tqg144-3
 set projName waveform_fifo_wr32_rd32
 set design waveform_fifo_wr32_rd32
 set projDir [file dirname [info script]]

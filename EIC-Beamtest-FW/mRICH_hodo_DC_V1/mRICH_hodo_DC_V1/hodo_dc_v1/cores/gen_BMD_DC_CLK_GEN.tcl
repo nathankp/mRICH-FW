@@ -22,7 +22,7 @@ proc findRtfPath { relativePath } {
 
 source [ findRtfPath "data/projnav/scripts/dpm_cgUtils.tcl" ]
 
-set result [ run_cg_regen "BMD_DC_CLK_GEN" xc6slx4-2tqg144 VHDL CURRENT ]
+set result [ run_cg_regen "BMD_DC_CLK_GEN" xc6slx9-3tqg144 VHDL CURRENT ]
 
 if { $result == 0 } {
    puts "Core Generator regen command completed successfully."

@@ -68,7 +68,7 @@ cd results
 
 echo 'Running ngdbuild'
 
-ngdbuild -p xc6slx4-tqg144-2 -sd ../../../ waveform_fifo_wr32_rd32_top
+ngdbuild -p xc6slx9-tqg144-3 -sd ../../../ waveform_fifo_wr32_rd32_top
 
 echo 'Running map'
 map waveform_fifo_wr32_rd32_top -o mapped.ncd

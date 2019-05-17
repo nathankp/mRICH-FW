@@ -1,14 +1,83 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Apr 19 15:12:02 2019
+// Written by: Map P.20131013 on Thu May 16 12:35:44 2019
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "SIN" LOCATE = SITE "P143" LEVEL 1;
+COMP "PCLK" LOCATE = SITE "P6" LEVEL 1;
+COMP "SCLK" LOCATE = SITE "P5" LEVEL 1;
 COMP "SYSCLK_N" LOCATE = SITE "P123" LEVEL 1;
 COMP "SYSCLK_P" LOCATE = SITE "P124" LEVEL 1;
 COMP "RX_N" LOCATE = SITE "P141" LEVEL 1;
 COMP "RX_P" LOCATE = SITE "P142" LEVEL 1;
 COMP "TX_N" LOCATE = SITE "P126" LEVEL 1;
 COMP "TX_P" LOCATE = SITE "P127" LEVEL 1;
+COMP "SHOUT" LOCATE = SITE "P7" LEVEL 1;
+COMP "SYNC_N" LOCATE = SITE "P1" LEVEL 1;
+COMP "SYNC_P" LOCATE = SITE "P2" LEVEL 1;
+COMP "TX_TRIG<0>" LOCATE = SITE "P34" LEVEL 1;
+COMP "TX_TRIG<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "TX_TRIG<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "TX_TRIG<3>" LOCATE = SITE "P9" LEVEL 1;
+COMP "TX_TRIG<4>" LOCATE = SITE "P10" LEVEL 1;
+TIMEGRP asic_clk = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL "SSTclk_cntr_0"
+        BEL "SSTclk_cntr_1" BEL "TX_DAC_UPst_FSM_FFd1" BEL
+        "TARGETX_control/INTERNAL_COUNTER_15" BEL
+        "TARGETX_control/INTERNAL_COUNTER_14" BEL
+        "TARGETX_control/INTERNAL_COUNTER_13" BEL
+        "TARGETX_control/INTERNAL_COUNTER_12" BEL
+        "TARGETX_control/INTERNAL_COUNTER_11" BEL
+        "TARGETX_control/INTERNAL_COUNTER_10" BEL
+        "TARGETX_control/INTERNAL_COUNTER_9" BEL
+        "TARGETX_control/INTERNAL_COUNTER_8" BEL
+        "TARGETX_control/INTERNAL_COUNTER_7" BEL
+        "TARGETX_control/INTERNAL_COUNTER_6" BEL
+        "TARGETX_control/INTERNAL_COUNTER_5" BEL
+        "TARGETX_control/INTERNAL_COUNTER_4" BEL
+        "TARGETX_control/INTERNAL_COUNTER_3" BEL
+        "TARGETX_control/INTERNAL_COUNTER_2" BEL
+        "TARGETX_control/INTERNAL_COUNTER_1" BEL
+        "TARGETX_control/INTERNAL_COUNTER_0" BEL
+        "TARGETX_control/STATE_FSM_FFd1" BEL "TARGETX_control/STATE_FSM_FFd2"
+        BEL "TARGETX_control/STATE_FSM_FFd3" BEL
+        "TARGETX_control/STATE_FSM_FFd4" BEL "TARGETX_control/STATE_FSM_FFd5"
+        BEL "TARGETX_control/cnt_31" BEL "TARGETX_control/cnt_4" BEL
+        "TARGETX_control/cnt_3" BEL "TARGETX_control/cnt_2" BEL
+        "TARGETX_control/cnt_1" BEL "TARGETX_control/cnt_0" BEL
+        "TARGETX_control/SIN" BEL "TARGETX_control/PCLK" BEL
+        "TARGETX_control/SCLK" BEL "TARGETX_control/SCLK_i" BEL
+        "TARGETX_control/ENABLE_COUNTER" BEL "TARGETX_control/UPDATE_REG_1"
+        BEL "TARGETX_control/UPDATE_REG_0" BEL "tx_dac_update" BEL
+        "TARGETX_control/SIN_i" BEL "TARGETX_control/PCLK_i";
+TIMEGRP CLOCK_FANOUT_clkout1 = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL
+        "SSTclk_cntr_0" BEL "SSTclk_cntr_1" BEL "TX_DAC_UPst_FSM_FFd1" BEL
+        "CLOCK_FANOUT/clkout2_buf" BEL "TARGETX_control/INTERNAL_COUNTER_15"
+        BEL "TARGETX_control/INTERNAL_COUNTER_14" BEL
+        "TARGETX_control/INTERNAL_COUNTER_13" BEL
+        "TARGETX_control/INTERNAL_COUNTER_12" BEL
+        "TARGETX_control/INTERNAL_COUNTER_11" BEL
+        "TARGETX_control/INTERNAL_COUNTER_10" BEL
+        "TARGETX_control/INTERNAL_COUNTER_9" BEL
+        "TARGETX_control/INTERNAL_COUNTER_8" BEL
+        "TARGETX_control/INTERNAL_COUNTER_7" BEL
+        "TARGETX_control/INTERNAL_COUNTER_6" BEL
+        "TARGETX_control/INTERNAL_COUNTER_5" BEL
+        "TARGETX_control/INTERNAL_COUNTER_4" BEL
+        "TARGETX_control/INTERNAL_COUNTER_3" BEL
+        "TARGETX_control/INTERNAL_COUNTER_2" BEL
+        "TARGETX_control/INTERNAL_COUNTER_1" BEL
+        "TARGETX_control/INTERNAL_COUNTER_0" BEL
+        "TARGETX_control/STATE_FSM_FFd1" BEL "TARGETX_control/STATE_FSM_FFd2"
+        BEL "TARGETX_control/STATE_FSM_FFd3" BEL
+        "TARGETX_control/STATE_FSM_FFd4" BEL "TARGETX_control/STATE_FSM_FFd5"
+        BEL "TARGETX_control/cnt_31" BEL "TARGETX_control/cnt_4" BEL
+        "TARGETX_control/cnt_3" BEL "TARGETX_control/cnt_2" BEL
+        "TARGETX_control/cnt_1" BEL "TARGETX_control/cnt_0" BEL
+        "TARGETX_control/SIN" BEL "TARGETX_control/PCLK" BEL
+        "TARGETX_control/SCLK" BEL "TARGETX_control/SCLK_i" BEL
+        "TARGETX_control/ENABLE_COUNTER" BEL "TARGETX_control/UPDATE_REG_1"
+        BEL "TARGETX_control/UPDATE_REG_0" BEL "tx_dac_update" BEL
+        "TARGETX_control/SIN_i" BEL "TARGETX_control/PCLK_i";
 PIN
         comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
         = BEL
@@ -54,9 +123,24 @@ PIN
         = BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18"
         PINNAME CLKB;
-TIMEGRP D_CLK = BEL "state_0" BEL "state_1" BEL "state_2" BEL
-        "comm_process/U_ByteLink/r_state_FSM_FFd1" BEL
-        "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
+TIMEGRP D_CLK = BEL "Reg_state_1" BEL "Reg_state_2" BEL
+        "TriggerLogic/TriggerData_31" BEL "TriggerLogic/TriggerData_30" BEL
+        "TriggerLogic/TriggerData_29" BEL "TriggerLogic/TriggerData_28" BEL
+        "TriggerLogic/TriggerData_27" BEL "TriggerLogic/TriggerData_26" BEL
+        "TriggerLogic/TriggerData_25" BEL "TriggerLogic/TriggerData_24" BEL
+        "TriggerLogic/TriggerData_23" BEL "TriggerLogic/TriggerData_22" BEL
+        "TriggerLogic/TriggerData_21" BEL "TriggerLogic/TriggerData_20" BEL
+        "TriggerLogic/TriggerData_19" BEL "TriggerLogic/TriggerData_18" BEL
+        "TriggerLogic/TriggerData_17" BEL "TriggerLogic/TriggerData_16" BEL
+        "TriggerLogic/TriggerData_15" BEL "TriggerLogic/TriggerData_14" BEL
+        "TriggerLogic/TriggerData_13" BEL "TriggerLogic/TriggerData_12" BEL
+        "TriggerLogic/TriggerData_11" BEL "TriggerLogic/TriggerData_10" BEL
+        "TriggerLogic/TriggerData_9" BEL "TriggerLogic/TriggerData_8" BEL
+        "TriggerLogic/TriggerData_5" BEL "TriggerLogic/TriggerData_4" BEL
+        "TriggerLogic/TriggerData_3" BEL "TriggerLogic/TriggerData_2" BEL
+        "TriggerLogic/TriggerData_1" BEL "TriggerLogic/TriggerData_0" BEL
+        "TriggerLogic/QBL_WrEn" BEL "comm_process/U_ByteLink/r_state_FSM_FFd1"
+        BEL "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
         "comm_process/U_ByteLink/r_txData10b_9" BEL
         "comm_process/U_ByteLink/r_txData10b_8" BEL
         "comm_process/U_ByteLink/r_txData10b_7" BEL
@@ -67,6 +151,31 @@ TIMEGRP D_CLK = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "comm_process/U_ByteLink/r_txData10b_2" BEL
         "comm_process/U_ByteLink/r_txData10b_1" BEL
         "comm_process/U_ByteLink/r_txData10b_0" BEL
+        "comm_process/U_ByteLink/r_alignCnt_31" BEL
+        "comm_process/U_ByteLink/r_alignCnt_30" BEL
+        "comm_process/U_ByteLink/r_alignCnt_29" BEL
+        "comm_process/U_ByteLink/r_alignCnt_28" BEL
+        "comm_process/U_ByteLink/r_alignCnt_27" BEL
+        "comm_process/U_ByteLink/r_alignCnt_26" BEL
+        "comm_process/U_ByteLink/r_alignCnt_25" BEL
+        "comm_process/U_ByteLink/r_alignCnt_24" BEL
+        "comm_process/U_ByteLink/r_alignCnt_23" BEL
+        "comm_process/U_ByteLink/r_alignCnt_22" BEL
+        "comm_process/U_ByteLink/r_alignCnt_21" BEL
+        "comm_process/U_ByteLink/r_alignCnt_20" BEL
+        "comm_process/U_ByteLink/r_alignCnt_19" BEL
+        "comm_process/U_ByteLink/r_alignCnt_18" BEL
+        "comm_process/U_ByteLink/r_alignCnt_17" BEL
+        "comm_process/U_ByteLink/r_alignCnt_16" BEL
+        "comm_process/U_ByteLink/r_alignCnt_15" BEL
+        "comm_process/U_ByteLink/r_alignCnt_14" BEL
+        "comm_process/U_ByteLink/r_alignCnt_13" BEL
+        "comm_process/U_ByteLink/r_alignCnt_12" BEL
+        "comm_process/U_ByteLink/r_alignCnt_11" BEL
+        "comm_process/U_ByteLink/r_alignCnt_10" BEL
+        "comm_process/U_ByteLink/r_alignCnt_9" BEL
+        "comm_process/U_ByteLink/r_alignCnt_8" BEL
+        "comm_process/U_ByteLink/r_alignCnt_7" BEL
         "comm_process/U_ByteLink/r_alignCnt_6" BEL
         "comm_process/U_ByteLink/r_alignCnt_5" BEL
         "comm_process/U_ByteLink/r_alignCnt_4" BEL
@@ -136,7 +245,8 @@ TIMEGRP D_CLK = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2" BEL
         "comm_process/U_ByteLink/r_txDataK" BEL
         "comm_process/U_ByteLink/r_aligned" BEL
-        "comm_process/U_ByteLink/U_Decode8b10b/dispOut" BEL
+        "comm_process/U_ByteLink/U_Decode8b10b/dispOut" BEL "Reg_state_0_C_0"
+        BEL "Reg_state_0_P_0" BEL
         "comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
         BEL
         "comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
@@ -1050,11 +1160,26 @@ TIMEGRP D_CLK = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18_pins<29>";
-PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
-        PINNAME DIVCLK;
 PIN comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3> = BEL
         "comm_process/U_ClockGenByteLink/dcm_sp_inst" PINNAME CLKIN;
-TIMEGRP SYSCLK_P = BEL "state_0" BEL "state_1" BEL "state_2" BEL
+TIMEGRP CLOCK_FANOUT_clkout0 = BEL "Reg_state_1" BEL "Reg_state_2" BEL
+        "CLOCK_FANOUT/clkout1_buf" BEL "TriggerLogic/TriggerData_31" BEL
+        "TriggerLogic/TriggerData_30" BEL "TriggerLogic/TriggerData_29" BEL
+        "TriggerLogic/TriggerData_28" BEL "TriggerLogic/TriggerData_27" BEL
+        "TriggerLogic/TriggerData_26" BEL "TriggerLogic/TriggerData_25" BEL
+        "TriggerLogic/TriggerData_24" BEL "TriggerLogic/TriggerData_23" BEL
+        "TriggerLogic/TriggerData_22" BEL "TriggerLogic/TriggerData_21" BEL
+        "TriggerLogic/TriggerData_20" BEL "TriggerLogic/TriggerData_19" BEL
+        "TriggerLogic/TriggerData_18" BEL "TriggerLogic/TriggerData_17" BEL
+        "TriggerLogic/TriggerData_16" BEL "TriggerLogic/TriggerData_15" BEL
+        "TriggerLogic/TriggerData_14" BEL "TriggerLogic/TriggerData_13" BEL
+        "TriggerLogic/TriggerData_12" BEL "TriggerLogic/TriggerData_11" BEL
+        "TriggerLogic/TriggerData_10" BEL "TriggerLogic/TriggerData_9" BEL
+        "TriggerLogic/TriggerData_8" BEL "TriggerLogic/TriggerData_5" BEL
+        "TriggerLogic/TriggerData_4" BEL "TriggerLogic/TriggerData_3" BEL
+        "TriggerLogic/TriggerData_2" BEL "TriggerLogic/TriggerData_1" BEL
+        "TriggerLogic/TriggerData_0" BEL "TriggerLogic/QBL_WrEn" PIN
+        "comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3>" BEL
         "comm_process/U_ByteLink/r_state_FSM_FFd1" BEL
         "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
         "comm_process/U_ByteLink/r_txData10b_9" BEL
@@ -1067,6 +1192,31 @@ TIMEGRP SYSCLK_P = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "comm_process/U_ByteLink/r_txData10b_2" BEL
         "comm_process/U_ByteLink/r_txData10b_1" BEL
         "comm_process/U_ByteLink/r_txData10b_0" BEL
+        "comm_process/U_ByteLink/r_alignCnt_31" BEL
+        "comm_process/U_ByteLink/r_alignCnt_30" BEL
+        "comm_process/U_ByteLink/r_alignCnt_29" BEL
+        "comm_process/U_ByteLink/r_alignCnt_28" BEL
+        "comm_process/U_ByteLink/r_alignCnt_27" BEL
+        "comm_process/U_ByteLink/r_alignCnt_26" BEL
+        "comm_process/U_ByteLink/r_alignCnt_25" BEL
+        "comm_process/U_ByteLink/r_alignCnt_24" BEL
+        "comm_process/U_ByteLink/r_alignCnt_23" BEL
+        "comm_process/U_ByteLink/r_alignCnt_22" BEL
+        "comm_process/U_ByteLink/r_alignCnt_21" BEL
+        "comm_process/U_ByteLink/r_alignCnt_20" BEL
+        "comm_process/U_ByteLink/r_alignCnt_19" BEL
+        "comm_process/U_ByteLink/r_alignCnt_18" BEL
+        "comm_process/U_ByteLink/r_alignCnt_17" BEL
+        "comm_process/U_ByteLink/r_alignCnt_16" BEL
+        "comm_process/U_ByteLink/r_alignCnt_15" BEL
+        "comm_process/U_ByteLink/r_alignCnt_14" BEL
+        "comm_process/U_ByteLink/r_alignCnt_13" BEL
+        "comm_process/U_ByteLink/r_alignCnt_12" BEL
+        "comm_process/U_ByteLink/r_alignCnt_11" BEL
+        "comm_process/U_ByteLink/r_alignCnt_10" BEL
+        "comm_process/U_ByteLink/r_alignCnt_9" BEL
+        "comm_process/U_ByteLink/r_alignCnt_8" BEL
+        "comm_process/U_ByteLink/r_alignCnt_7" BEL
         "comm_process/U_ByteLink/r_alignCnt_6" BEL
         "comm_process/U_ByteLink/r_alignCnt_5" BEL
         "comm_process/U_ByteLink/r_alignCnt_4" BEL
@@ -1136,8 +1286,8 @@ TIMEGRP SYSCLK_P = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "comm_process/U_SstReset/G_RisingEdgeClock.cdc_reg2" BEL
         "comm_process/U_ByteLink/r_txDataK" BEL
         "comm_process/U_ByteLink/r_aligned" BEL
-        "comm_process/U_ByteLink/U_Decode8b10b/dispOut" BEL
-        "internal_sysclk_BUFG" BEL
+        "comm_process/U_ByteLink/U_Decode8b10b/dispOut" BEL "Reg_state_0_C_0"
+        BEL "Reg_state_0_P_0" BEL
         "comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
         BEL
         "comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
@@ -2050,9 +2200,7 @@ TIMEGRP SYSCLK_P = BEL "state_0" BEL "state_1" BEL "state_2" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" PIN
-        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18_pins<29>"
-        PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
-        "comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3>";
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18_pins<29>";
 PIN comm_process/U_SerialInterfaceIn/IDDR2_inst_pins<1> = BEL
         "comm_process/U_SerialInterfaceIn/IDDR2_inst" PINNAME CLK0;
 PIN comm_process/U_SerialInterfaceIn/IDDR2_inst_pins<2> = BEL
@@ -2075,6 +2223,9 @@ TIMEGRP comm_process_U_ClockGenByteLink_clkfx = BEL
         "comm_process/U_ClockGenByteLink/clkout1_buf" BEL
         "comm_process/U_SerialInterfaceOut/r_serialDataOutFalling" BEL
         "comm_process/U_SerialInterfaceOut/r_serialDataOutRising" BEL
+        "comm_process/U_SerialInterfaceOut/r_bitCount_3" BEL
+        "comm_process/U_SerialInterfaceOut/r_bitCount_2" BEL
+        "comm_process/U_SerialInterfaceOut/r_bitCount_1" BEL
         "comm_process/U_SerialInterfaceOut/r_dataWord_9" BEL
         "comm_process/U_SerialInterfaceOut/r_dataWord_8" BEL
         "comm_process/U_SerialInterfaceOut/r_dataWord_7" BEL
@@ -2090,6 +2241,7 @@ TIMEGRP comm_process_U_ClockGenByteLink_clkfx = BEL
         "comm_process/U_SerialInterfaceIn/IDDR2_inst_pins<1>" PIN
         "comm_process/U_SerialInterfaceIn/IDDR2_inst_pins<2>" BEL
         "comm_process/U_SerialInterfaceIn/r_state_FSM_FFd2" BEL
+        "comm_process/U_SerialInterfaceIn/r_slipCount_15" BEL
         "comm_process/U_SerialInterfaceIn/r_slipCount_7" BEL
         "comm_process/U_SerialInterfaceIn/r_slipCount_6" BEL
         "comm_process/U_SerialInterfaceIn/r_slipCount_5" BEL
@@ -2137,9 +2289,6 @@ TIMEGRP comm_process_U_ClockGenByteLink_clkfx = BEL
         "comm_process/U_SstX5Reset/G_RisingEdgeClock.cdc_reg2" BEL
         "comm_process/U_SerialInterfaceOut/r_state" BEL
         "comm_process/U_SerialInterfaceIn/r_flip" BEL
-        "comm_process/U_SerialInterfaceOut/r_bitCount_3" BEL
-        "comm_process/U_SerialInterfaceOut/r_bitCount_2" BEL
-        "comm_process/U_SerialInterfaceOut/r_bitCount_1" BEL
         "comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
         BEL
         "comm_process/U_SerialInterfaceIn/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
@@ -2552,6 +2701,13 @@ TIMEGRP J_CLK = BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18_pins<28>";
 TIMEGRP U_CLK = BEL "U_icon_pro/U0/U_ICON/U_iDATA_CMD";
 TIMEGRP D2_CLK = BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC";
+TIMEGRP SSTIN_P = BEL "SSTIN_P";
+PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0> = BEL
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0" PINNAME DIVCLK;
+PIN CLOCK_FANOUT/pll_base_inst/PLL_ADV_pins<2> = BEL
+        "CLOCK_FANOUT/pll_base_inst/PLL_ADV" PINNAME CLKIN1;
+TIMEGRP SYSCLK_P = PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0>" PIN
+        "CLOCK_FANOUT/pll_base_inst/PLL_ADV_pins<2>";
 TIMEGRP "FFS" = FFS(*);
 PATH TS_D2_TO_T2_ila_pro_0_path = FROM TIMEGRP "D2_CLK" TO TIMEGRP "FFS";
 PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
@@ -2568,9 +2724,15 @@ PATH TS_J_TO_D_path = FROM TIMEGRP "J_CLK" TO TIMEGRP "D_CLK";
 PATH "TS_J_TO_D_path" TIG;
 PATH TS_D_TO_J_path = FROM TIMEGRP "D_CLK" TO TIMEGRP "J_CLK";
 PATH "TS_D_TO_J_path" TIG;
-TS_sys_clk = PERIOD TIMEGRP "SYSCLK_P" 40 ns HIGH 50%;
+TS_asic_clk = PERIOD TIMEGRP "asic_clk" 16 ns HIGH 50%;
+TS_SSTIN_P = PERIOD TIMEGRP "SYSCLK_P" 31.25 ns HIGH 50%;
+TS_CLOCK_FANOUT_clkout1 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout1" TS_SSTIN_P /
+        2.5 HIGH 50%;
+TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout0" TS_SSTIN_P
+        HIGH 50%;
 TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD TIMEGRP
-        "comm_process_U_ClockGenByteLink_clkfx" TS_sys_clk / 5 HIGH 50%;
+        "comm_process_U_ClockGenByteLink_clkfx" TS_CLOCK_FANOUT_clkout0 / 5
+        HIGH 50%;
 PIN
         U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS_pins<2>
         = BEL

@@ -51,5 +51,6 @@ vhdl work "remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/firmwa
 vhdl work "remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXCore.vhd"
 vhdl work "remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/S6/rtl/S6EthTop.vhd"
 vhdl work "remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd"
+vhdl work "IO_Buffers.vhd"
 vhdl work "DC_Comm.vhd"
 vhdl work "SCRODQB_Top.vhd"
