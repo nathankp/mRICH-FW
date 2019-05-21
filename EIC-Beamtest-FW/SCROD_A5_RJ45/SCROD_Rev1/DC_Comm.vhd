@@ -9,7 +9,8 @@
 -- Target Devices: Spartan6 xc6slx150
 -- Tool versions: 
 -- Description: Interfaces SCROD with Daughtercards. Has one QBLink module per DC. Does global 
---              trigger logic. Specifically for HODOSCOPE,   
+--              trigger logic. When you instantiate this module, edit num_DC attribute to match 
+--              the number of daughtercards (minus 1).
 --
 -- Dependencies: 
 --
@@ -40,7 +41,7 @@ entity DC_Comm is
            DC_CMD : in  slv (31 downto 0); 
            CMD_VALID : in  slv( num_DC downto 0);
            RESP_REQ : in slv(num_DC downto 0);
-			  DC_RESPONSES : out  Word32Array(num_DC downto 0); --be able to read received words from all DCs
+			  DC_RESPONSE : out  slv(31 downto 0); 
 			 	--to be added: WAVE_WD : out slv(31 downto 0);
 				--             and WaveValid
 				--to be added: TRIG : slv(31 downto 0);
@@ -66,11 +67,25 @@ signal TrigFlag : slv(num_DC downto 0) := (others => '0');
 begin
 TX <= tx_dc;
 rx_dc <= RX;
-DC_RESPONSES <= dc_data; --after register program feature, if statement will read HEADER word: dc_data will either feed DC_RESPONSE or WAVE_WD OR TRIG
 RESP_VALID <= dc_dataValid; 
 rd_req <= RESP_REQ;  
 TRIG_LINK_SYNC <= trgLinkSync;
 SERIAL_CLK_LCK <= serialClkLck;
+DC_respMUX : Process(rd_req)
+begin
+	case rd_req is
+		when "0001" =>
+			DC_RESPONSE <= dc_data(0);
+		when "0010" =>
+			DC_RESPONSE <= dc_data(1);
+		when "0100" =>
+			DC_RESPONSE <= dc_data(2);
+		when "1000" =>
+			DC_RESPONSE <= dc_data(3);
+		when others =>
+			DC_RESPONSE <= (others => '0');
+		end case;
+end process;
 
 Gen_QBLink : FOR I in num_DC downto 0 GENERATE 
 DC_Interface : entity work.QBLink                                                     
@@ -88,6 +103,7 @@ PORT MAP(
 			 serialClkLocked => serialClkLck(I)
 			 );
 end GENERATE Gen_QBLink;
+
 
 TriggerLogic : process(dc_data, TrigFlag)
 begin

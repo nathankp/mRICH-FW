@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/IO_BUFTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/IO_BUFTB_beh.prj" "work.IO_BUFTB" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB_beh.prj" "work.DC_commTB" 

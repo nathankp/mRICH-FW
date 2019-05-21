@@ -36,13 +36,13 @@ entity IO_Buffers is
     Port ( RX_P : in  STD_LOGIC_VECTOR (num_DC downto 0);
            RX_N : in  STD_LOGIC_VECTOR (num_DC downto 0);
            TX : in  STD_LOGIC_VECTOR (num_DC downto 0);
-           --DC_CLK : in  STD_LOGIC; --Universal DC_CLK
+           DATA_CLK : in STD_LOGIC;
 			  GLOB_EVNT : STD_LOGIC_VECTOR(3 downto 0);
            SYNC : in  STD_LOGIC; --Universal sync signal
            TX_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
            TX_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
-        --   DC_CLK_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
-         --  DC_CLK_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
+			  DC_CLK_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
+           DC_CLK_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
            RX : out  STD_LOGIC_VECTOR (num_DC downto 0);
            SYNC_P : out  STD_LOGIC_VECTOR (num_DC downto 0);
            SYNC_N : out  STD_LOGIC_VECTOR (num_DC downto 0);
@@ -51,7 +51,7 @@ entity IO_Buffers is
 end IO_Buffers;
 
 architecture Behavioral of IO_Buffers is
-
+signal dc_clk : STD_LOGIC_VECTOR(num_DC downto 0);
 begin
 Gen_buffers : for I in num_DC downto 0 generate
 	RX_IBUF_inst : IBUFDS -- input buffer: serial data from DCs
@@ -78,8 +78,34 @@ Gen_buffers : for I in num_DC downto 0 generate
 		O => SYNC_P(I),
 		OB => SYNC_N(I),
 		I => SYNC);
+	
+DC_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
+   generic map(
+      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+   port map (
+      Q => dc_clk(I), -- 1-bit output data
+      C0 => internal_data_clk, -- 1-bit clock input
+      C1 => not internal_data_clk, -- 1-bit clock input
+      CE => '1',  -- 1-bit clock enable input
+      D0 => '1',   -- 1-bit data input (associated with C0)
+      D1 => '0',   -- 1-bit data input (associated with C1)
+      R => '0',    -- 1-bit reset input
+      S => '0'     -- 1-bit set input
+   );
+
+
+DC_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
+generic map (IOSTANDARD => "LVDS_25")
+port map (
+		O => DC_CLK_P(I),
+		OB => DC_CLK_N(I),
+		I => dc_clk(I)); 
+	
 end generate Gen_buffers;
 
+--HODOSCOPE Specific (verify)
 Gen_PMT_trig_buf : for L in 3 downto 0 generate
 		PMT_trig_OBUFDS : OBUFDS 
 		generic map (IOSTANDARD => "LVDS_25")

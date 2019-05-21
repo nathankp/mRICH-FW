@@ -59,14 +59,14 @@ entity SCRODQB_Top is
 			--SFP transceiver disable pin
 			txDisable    	 : out sl;
 			--DC communication
-			RX_DC_P			 : IN slv(3 downto 0);  --SERIAL INPUT FROM DC
-			RX_DC_N			 : IN slv(3 downto 0);  --SERIAL INPUT FROM DC
-			DC_CLK_P			 : OUT slv(3 downto 0);  --25MHz clock to DC (fact check)--> {confirmed}
-			DC_CLK_N		    : OUT slv(3 downto 0); 
-			TX_DC_N         : OUT slv(3 downto 0);  --Serial output to DC
-			TX_DC_P			 : OUT slv(3 downto 0);--Serial output to DC 
-			SYNC_P			 : OUT slv(3 downto 0); -- when '0' DC listens only, '1' DC reads back command
-			SYNC_N			 : OUT slv(3 downto 0);
+			RX_DC_P			 : IN slv(NUM_DCs downto 0);  --SERIAL INPUT FROM DC
+			RX_DC_N			 : IN slv(NUM_DCs  downto 0);  --SERIAL INPUT FROM DC
+			DC_CLK_P			 : OUT slv(NUM_DCs downto 0);  --25MHz clock to DC (fact check)--> {confirmed}
+			DC_CLK_N		    : OUT slv(NUM_DCs downto 0); 
+			TX_DC_N         : OUT slv(NUM_DCs downto 0);  --Serial output to DC
+			TX_DC_P			 : OUT slv(NUM_DCs downto 0);--Serial output to DC 
+			SYNC_P			 : OUT slv(NUM_DCs downto 0); -- when '0' DC listens only, '1' DC reads back command
+			SYNC_N			 : OUT slv(NUM_DCs downto 0);
 			--Trigger to PMT SCRODs (mRICH)
 			GLOBAL_EVENT_P    : OUT slv(3 downto 0);
 			GLOBAL_EVENT_N    : OUT slv(3 downto 0)
@@ -123,7 +123,7 @@ signal ethSync      : sl;
 	signal serialClkLocked : slv(NUM_DCs downto 0); --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
 	signal dc_cmd		 : slv(31 downto 0); --DC register command, input data to QBLink write-operation input FIFO
 	signal QBrst	: slv(NUM_DCs downto 0) := (others =>'0'); --QBLink reset 
-	signal dc_cmdResp  : Word32Array(NUM_DCs downto 0) := (others => x"00000000");
+	signal DC_data : slv(NUM_DCs downto 0) := (others => '0');
 	signal dc_RespValid : slv(NUM_DCs downto 0); -- QBLink output: readout valid flag 
 	signal tx_dc		 : slv(NUM_DCs downto 0); --transmitted serial data bit 
 	signal rx_dc		 : slv(NUM_DCs downto 0); --recieved serial data bit
@@ -182,70 +182,70 @@ RESET => dcm_rst,
 LOCKED => dcm_locked
 );
 
-DC1_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
-   generic map(
-      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
-      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
-      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
-   port map (
-      Q => dc_clk1, -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
-      CE => '1',  -- 1-bit clock enable input
-      D0 => '1',   -- 1-bit data input (associated with C0)
-      D1 => '0',   -- 1-bit data input (associated with C1)
-      R => '0',    -- 1-bit reset input
-      S => '0'     -- 1-bit set input
-   );
-
-DC2_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
-   generic map(
-      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
-      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
-      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
-   port map (
-      Q => dc_clk2, -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
-      CE => '1',  -- 1-bit clock enable input
-      D0 => '1',   -- 1-bit data input (associated with C0)
-      D1 => '0',   -- 1-bit data input (associated with C1)
-      R => '0',    -- 1-bit reset input
-      S => '0'     -- 1-bit set input
-   );
-
-DC3_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
-   generic map(
-      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
-      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
-      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
-   port map (
-      Q => dc_clk3, -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
-      CE => '1',  -- 1-bit clock enable input
-      D0 => '1',   -- 1-bit data input (associated with C0)
-      D1 => '0',   -- 1-bit data input (associated with C1)
-      R => '0',    -- 1-bit reset input
-      S => '0'     -- 1-bit set input
-   );
-
-DC4_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
-   generic map(
-      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
-      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
-      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
-   port map (
-      Q => dc_clk4, -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
-      CE => '1',  -- 1-bit clock enable input
-      D0 => '1',   -- 1-bit data input (associated with C0)
-      D1 => '0',   -- 1-bit data input (associated with C1)
-      R => '0',    -- 1-bit reset input
-      S => '0'     -- 1-bit set input
-   );
-	
+--DC1_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
+--   generic map(
+--      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+--      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+--      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+--   port map (
+--      Q => dc_clk1, -- 1-bit output data
+--      C0 => internal_data_clk, -- 1-bit clock input
+--      C1 => not internal_data_clk, -- 1-bit clock input
+--      CE => '1',  -- 1-bit clock enable input
+--      D0 => '1',   -- 1-bit data input (associated with C0)
+--      D1 => '0',   -- 1-bit data input (associated with C1)
+--      R => '0',    -- 1-bit reset input
+--      S => '0'     -- 1-bit set input
+--   );
+--
+--DC2_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
+--   generic map(
+--      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+--      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+--      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+--   port map (
+--      Q => dc_clk2, -- 1-bit output data
+--      C0 => internal_data_clk, -- 1-bit clock input
+--      C1 => not internal_data_clk, -- 1-bit clock input
+--      CE => '1',  -- 1-bit clock enable input
+--      D0 => '1',   -- 1-bit data input (associated with C0)
+--      D1 => '0',   -- 1-bit data input (associated with C1)
+--      R => '0',    -- 1-bit reset input
+--      S => '0'     -- 1-bit set input
+--   );
+--
+--DC3_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
+--   generic map(
+--      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+--      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+--      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+--   port map (
+--      Q => dc_clk3, -- 1-bit output data
+--      C0 => internal_data_clk, -- 1-bit clock input
+--      C1 => not internal_data_clk, -- 1-bit clock input
+--      CE => '1',  -- 1-bit clock enable input
+--      D0 => '1',   -- 1-bit data input (associated with C0)
+--      D1 => '0',   -- 1-bit data input (associated with C1)
+--      R => '0',    -- 1-bit reset input
+--      S => '0'     -- 1-bit set input
+--   );
+--
+--DC4_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
+--   generic map(
+--      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+--      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+--      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+--   port map (
+--      Q => dc_clk4, -- 1-bit output data
+--      C0 => internal_data_clk, -- 1-bit clock input
+--      C1 => not internal_data_clk, -- 1-bit clock input
+--      CE => '1',  -- 1-bit clock enable input
+--      D0 => '1',   -- 1-bit data input (associated with C0)
+--      D1 => '0',   -- 1-bit data input (associated with C1)
+--      R => '0',    -- 1-bit reset input
+--      S => '0'     -- 1-bit set input
+--   );
+--	
 --Gen_clk_buff : for I in NUM_DCs downto 0 generate
 --	DC_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
 --	generic map (IOSTANDARD => "LVDS_25")
@@ -255,33 +255,33 @@ DC4_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
 --		I => dc_clk); 
 --end generate Gen_clk_buff;
 
-DC1_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
-generic map (IOSTANDARD => "LVDS_25")
-port map (
-		O => DC_CLK_P(0),
-		OB => DC_CLK_N(0),
-		I => dc_clk1); 
-
-DC2_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
-generic map (IOSTANDARD => "LVDS_25")
-port map (
-		O => DC_CLK_P(1),
-		OB => DC_CLK_N(1),
-		I => dc_clk2); 
-
-DC3_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
-generic map (IOSTANDARD => "LVDS_25")
-port map (
-		O => DC_CLK_P(2),
-		OB => DC_CLK_N(2),
-		I => dc_clk3); 
-
-DC4_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
-generic map (IOSTANDARD => "LVDS_25")
-port map (
-		O => DC_CLK_P(3),
-		OB => DC_CLK_N(3),
-		I => dc_clk4); 
+--DC1_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
+--generic map (IOSTANDARD => "LVDS_25")
+--port map (
+--		O => DC_CLK_P(0),
+--		OB => DC_CLK_N(0),
+--		I => dc_clk1); 
+--
+--DC2_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
+--generic map (IOSTANDARD => "LVDS_25")
+--port map (
+--		O => DC_CLK_P(1),
+--		OB => DC_CLK_N(1),
+--		I => dc_clk2); 
+--
+--DC3_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
+--generic map (IOSTANDARD => "LVDS_25")
+--port map (
+--		O => DC_CLK_P(2),
+--		OB => DC_CLK_N(2),
+--		I => dc_clk3); 
+--
+--DC4_CLK_OBUFDS : OBUFDS --ODDR2 generated dc_clk buffered OBUFDS to drive output Clocks to DCs.
+--generic map (IOSTANDARD => "LVDS_25")
+--port map (
+--		O => DC_CLK_P(3),
+--		OB => DC_CLK_N(3),
+--		I => dc_clk4); 
 		
 		
 DC_IO_BUFF : entity work.IO_Buffers
@@ -372,7 +372,7 @@ U_S6EthTop : entity work.S6EthTop
 			DC_CMD 		 => dc_cmd,
 			QB_WrEn      => QBstart_wr,
 			QB_RdEn      => QBstart_rd,
-			DC_RESP		 => dc_cmdResp,
+			DC_RESP		 => DC_data,
 			DC_RESP_VALID => dc_RespValid,
 			EVNT_FLAG => evntFlag,
          -- Register interfaces
@@ -413,7 +413,7 @@ port map (
 	DC_CMD => dc_cmd,
 	CMD_VALID => QBstart_wr,
 	RESP_REQ => QBstart_rd,
-	DC_RESPONSES => dc_cmdResp,
+	DC_RESPONSE => DC_data,
 	--to be added: WAVE_WD : out STD_LOGIC_VECTOR(31 downto 0);
 	--             and WaveValid
 	--to be added: TRIG : STD_LOGIC_VECTOR(31 downto 0);

@@ -1,0 +1,10 @@
+Command line:
+   DC_commTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64053
+
+Mon May 20 17:25:29 2019
+
+
+ Elaboration Time: 0.84375 sec
