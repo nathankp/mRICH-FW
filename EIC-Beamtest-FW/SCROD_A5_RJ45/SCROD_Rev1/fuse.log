@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB_isim_beh.exe -prj C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB_beh.prj work.DC_commTB 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_beh.prj" "work.TriggerTB" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -17,13 +17,15 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCRO
 WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 80: Actual for formal port c1 is neither a static name nor a globally static expression
 WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/ByteLink.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/QBlink/ipcore_dir/clockgen_bytelink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/SyncBit.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/QBlink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/BMD_definitions.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm.vhd" into library work
-Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -36,6 +38,7 @@ Compiling package gigabitethpkg
 Compiling package numeric_std
 Compiling package bmd_definitions
 Compiling package vcomponents
+Compiling architecture rtl of entity CommandInterpreter [commandinterpreter_default]
 Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
@@ -70,10 +73,10 @@ Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator
 Compiling architecture cmd_fifo_w8r32_a of entity CMD_FIFO_w8r32 [cmd_fifo_w8r32_default]
 Compiling architecture behavioral of entity QBlink [qblink_default]
 Compiling architecture behaviorial of entity DC_Comm [\DC_Comm(3)\]
-Compiling architecture behavior of entity dc_commtb
+Compiling architecture behavior of entity triggertb
 Time Resolution for simulation is 1ps.
-Waiting for 29 sub-compilation(s) to finish...
-Compiled 75 VHDL Units
-Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_commTB_isim_beh.exe
-Fuse Memory Usage: 70176 KB
-Fuse CPU Usage: 1624 ms
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 77 VHDL Units
+Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe
+Fuse Memory Usage: 71124 KB
+Fuse CPU Usage: 1890 ms

@@ -202,7 +202,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1558044315" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1558044314">
+    <transform xil_pn:end_ts="1558641749" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1558641747">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
@@ -295,8 +295,8 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1558046205" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1558046185">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1558641765" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1558641749">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.ut"/>
@@ -312,6 +312,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
@@ -321,6 +322,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>

@@ -1,0 +1,10 @@
+Command line:
+   TriggerTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55353
+
+Wed May 22 18:26:22 2019
+
+
+ Elaboration Time: 0.640625 sec

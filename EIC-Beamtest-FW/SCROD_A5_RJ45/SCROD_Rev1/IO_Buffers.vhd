@@ -86,8 +86,8 @@ DC_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
       SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
    port map (
       Q => dc_clk(I), -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
+      C0 => DATA_CLK, -- 1-bit clock input
+      C1 => not DATA_CLK, -- 1-bit clock input
       CE => '1',  -- 1-bit clock enable input
       D0 => '1',   -- 1-bit data input (associated with C0)
       D1 => '0',   -- 1-bit data input (associated with C1)

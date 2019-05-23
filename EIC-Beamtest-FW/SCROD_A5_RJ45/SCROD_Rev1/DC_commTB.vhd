@@ -24,6 +24,11 @@
 -- that these types always be used for the top-level I/O of a design in order
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
+
+--This Testbench tests the following functionalities:
+-- 1. SCROD can communicate to one of the DCs (verified)
+-- 2. SCROD can broadbast to all DCs (verified)
+-- 3. SCROD can detect a global event (verified)
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -40,32 +45,11 @@ ENTITY DC_commTB IS
 END DC_commTB;
  
 ARCHITECTURE behavior OF DC_commTB IS 
- 
-    -- Component Declaration for the Unit Under Test (UUT)
- 
-    COMPONENT DC_Comm
-    PORT(
-         DATA_CLK : IN  std_logic;
-         RX : IN  std_logic_vector(3 downto 0);
-         TX : OUT  std_logic_vector(3 downto 0);
-         DC_CMD : IN  std_logic_vector(31 downto 0);
-         CMD_VALID : IN  std_logic_vector(3 downto 0);
-         RESP_REQ : IN  std_logic_vector(3 downto 0);
-         DC_RESPONSE : OUT  std_logic_vector(31 downto 0);
-         RESP_VALID : OUT  std_logic_vector(3 downto 0);
-         QB_RST : IN  std_logic_vector(3 downto 0);
-         TrigLogicRst : IN  std_logic;
-         SERIAL_CLK_LCK : OUT  std_logic_vector(3 downto 0);
-         TRIG_LINK_SYNC : OUT  std_logic_vector(3 downto 0);
-         Event_Trig : OUT  std_logic
-        );
-    END COMPONENT;
-    
 
    --Inputs
    signal DATA_CLK : std_logic := '0';
-   signal RX : std_logic_vector(3 downto 0) := (others => '0');
-   signal DC_CMD : std_logic_vector(31 downto 0) := (others => '0');
+   signal RX : std_logic_vector(3 downto 0);
+   signal DC_CMD : std_logic_vector(31 downto 0);
    signal CMD_VALID : std_logic_vector(3 downto 0) := (others => '0');
    signal RESP_REQ : std_logic_vector(3 downto 0) := (others => '0');
    signal QB_RST : std_logic_vector(3 downto 0) := (others => '0');
@@ -90,10 +74,16 @@ ARCHITECTURE behavior OF DC_commTB IS
 	-- Clock period definitions
    constant DATA_CLK_period : time := 10 ns;
  
+	--test scenario constants
+	constant TS_arb: slv(23 downto 0) := x"003876";
+	constant trigBits_arb : slv(4 downto 0) := "01011";
+	constant TrigEvent : slv(2 downto 0) := "111";
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DC_Comm PORT MAP (
+   uut: entity work.DC_Comm 
+		generic map(num_DC =>3)
+		PORT MAP (
           DATA_CLK => DATA_CLK,
           RX => RX,
           TX => TX,
@@ -109,12 +99,12 @@ BEGIN
           Event_Trig => Event_Trig
         );
 Gen_QBLink : FOR I in 3 downto 0 GENERATE 
-DC_Interface : entity work.QBLink                                                     
+DC_QBLink : entity work.QBLink                                                     
 PORT MAP( 
 			 sstClk => DATA_CLK,
 			 rst => QB_RST(I),
-			 rawSerialOut => TX(I),
-			 rawSerialIn => RX(I),
+			 rawSerialOut => RX(I),
+			 rawSerialIn => TX(I),
 			 localWordIn => DC_DATA, 
 			 localWordInValid => DC_DATA_VALID(I),
 			 localWordOut => SCROD_data(I),
@@ -139,12 +129,33 @@ end GENERATE Gen_QBLink;
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
+		QB_RST <= (others=>'1');
       wait for 100 ns;	
 
       wait for DATA_CLK_period*10;
-
-      -- insert stimulus here 
-
+		QB_RST <= (others=>'0');
+      wait until TRIG_LINK_SYNC = "1111";
+		DC_CMD <= x"DEADBEEF"; --command to DC1 Begin
+		CMD_VALID <= "0001";
+		RESP_REQ <= (others => '0');
+		rd_req <= "0001";
+		wait until SCROD_data(0) = x"DEADBEEF";
+		DC_DATA <= SCROD_data(0);
+		DC_DATA_Valid <= "0001";
+		RESP_REQ <= "0001";
+		wait until DC_RESPONSE = x"DEADBEEF"; -- Broadcast to all DCs Begin
+		DC_CMD <= x"DEADBEEF";
+		CMD_Valid <= "1111";
+		rd_req <= "1111";
+		wait until SCROD_data_valid = "1111"; 
+		wait until SCROD_data(3) = x"deadbeef";
+		DC_DATA <= SCROD_data(3);
+		DC_DATA_Valid <= "1111";
+		RESP_REQ <= "1111";
+		wait until DC_RESPONSE = x"DEADBEEF"; --Trigger global event begin
+		DC_DATA <= TS_arb & TrigEvent & trigBits_arb;
+		DC_DATA_Valid <= "1111";
+		RESP_REQ <= "1111";
       wait;
    end process;
 

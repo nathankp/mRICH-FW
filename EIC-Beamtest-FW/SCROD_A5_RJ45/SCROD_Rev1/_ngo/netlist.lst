@@ -1,2 +1,12 @@
-C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top_cs.ngc 1558072722
+C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.ngc 1558641726
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo18x16.ngc 1554188359
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/bram8x3000.ngc 1554188555
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo8x64.ngc 1554188119
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifoDist8x16.ngc 1554187993
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/udp64kfifo.ngc 1554187879
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo16x64.ngc 1554188479
+remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo32x512RxAxi.ngc 1554188249
+../../../QBLink/QBlink/cores/serializationFifo.ngc 1554786262
+../../../QBLink/QBlink/ipcore_dir/QBLtxFIFO.ngc 1554786262
+../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.ngc 1554786262
 OK

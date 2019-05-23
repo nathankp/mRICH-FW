@@ -127,3 +127,4 @@ map -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBL
 par -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off HMB_DC_QBTOP_map.ncd HMB_DC_QBTOP.ncd HMB_DC_QBTOP.pcf 
 trce -filter C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml HMB_DC_QBTOP.twx HMB_DC_QBTOP.ncd -o HMB_DC_QBTOP.twr HMB_DC_QBTOP.pcf -ucf HMB_QBLink.ucf 
 bitgen -filter "iseconfig/filter.filter" -intstyle ise -f HMB_DC_QBTOP.ut HMB_DC_QBTOP.ncd 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f HMB_DC_QBTOP.ut HMB_DC_QBTOP.ncd 

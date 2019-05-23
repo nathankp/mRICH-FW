@@ -64,6 +64,8 @@ signal dc_data : Word32Array(num_DC downto 0);
 signal trgLinkSync :slv(num_DC downto 0):= (others => '0');
 signal serialClkLck : slv(num_DC downto 0):= (others => '0');
 signal TrigFlag : slv(num_DC downto 0) := (others => '0');
+signal DC_sel : slv(num_DC downto 0) := (others => '0');
+signal evnt_trig : sl := '0';
 begin
 TX <= tx_dc;
 rx_dc <= RX;
@@ -71,9 +73,23 @@ RESP_VALID <= dc_dataValid;
 rd_req <= RESP_REQ;  
 TRIG_LINK_SYNC <= trgLinkSync;
 SERIAL_CLK_LCK <= serialClkLck;
-DC_respMUX : Process(rd_req)
+Event_trig <= evnt_trig;
+DC_respMUX : Process(DC_sel,evnt_trig,dc_data, DATA_CLK)
+	variable count : integer := 0;
 begin
-	case rd_req is
+  IF evnt_trig = '1' THEN
+		DC_sel <= "1111";
+  ELSE
+		DC_sel <= rd_req;
+  END IF;
+  
+  IF rising_edge(DATA_CLK) THEN
+  	count := count +1;
+  ELSIF count > 4 THEN
+		count := 0;
+  END if;
+	
+	case DC_sel is
 		when "0001" =>
 			DC_RESPONSE <= dc_data(0);
 		when "0010" =>
@@ -82,9 +98,24 @@ begin
 			DC_RESPONSE <= dc_data(2);
 		when "1000" =>
 			DC_RESPONSE <= dc_data(3);
+		when "1111" =>
+			case count is
+				when 1 =>
+					DC_RESPONSE <= dc_data(0);
+				when 2 =>
+					DC_RESPONSE <= dc_data(1);
+				when 3 =>
+					DC_RESPONSE <= dc_data(2);
+				when 4 =>
+					DC_RESPONSE <= dc_data(3);
+				when others =>
+					DC_RESPONSE <= (others => '0');
+				end case;
 		when others =>
 			DC_RESPONSE <= (others => '0');
 		end case;
+
+	
 end process;
 
 Gen_QBLink : FOR I in num_DC downto 0 GENERATE 
@@ -116,13 +147,13 @@ begin
 	END LOOP;
 	
 	IF TrigFlag = "1111" THEN -- AND trigger flags (hardcoded for HODOSCOPE)
-		Event_Trig <= '1';
+		evnt_trig <= '1';
 		
 	ELSIF TrigLogicRst = '1' THEN
-		Event_Trig <= '0';
+		evnt_trig <= '0';
 	
 	ELSE
-		Event_Trig <= '0';
+		evnt_trig <= '0';
 	END IF;
 end process;
 
