@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -6556,8 +6556,8 @@ U_S6EthTop/txDisable|    1.436|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 62.00 secs
-Total CPU time to Xst completion: 62.09 secs
+Total REAL time to Xst completion: 61.00 secs
+Total CPU time to Xst completion: 60.35 secs
  
 --> 
 

@@ -128,3 +128,9 @@ par -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBL
 trce -filter C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml HMB_DC_QBTOP.twx HMB_DC_QBTOP.ncd -o HMB_DC_QBTOP.twr HMB_DC_QBTOP.pcf -ucf HMB_QBLink.ucf 
 bitgen -filter "iseconfig/filter.filter" -intstyle ise -f HMB_DC_QBTOP.ut HMB_DC_QBTOP.ncd 
 bitgen -filter "iseconfig/filter.filter" -intstyle ise -f HMB_DC_QBTOP.ut HMB_DC_QBTOP.ncd 
+xst -intstyle ise -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter" -ifn "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HMB_DC_QBTOP.xst" -ofn "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HMB_DC_QBTOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -sd ../mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc HMB_QBLink.ucf -p xc6slx4-tqg144-3 HMB_DC_QBTOP_cs.ngc HMB_DC_QBTOP.ngd  
+map -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter" -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o HMB_DC_QBTOP_map.ncd HMB_DC_QBTOP.ngd HMB_DC_QBTOP.pcf 
+par -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off HMB_DC_QBTOP_map.ncd HMB_DC_QBTOP.ncd HMB_DC_QBTOP.pcf 
+trce -filter C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml HMB_DC_QBTOP.twx HMB_DC_QBTOP.ncd -o HMB_DC_QBTOP.twr HMB_DC_QBTOP.pcf -ucf HMB_QBLink.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f HMB_DC_QBTOP.ut HMB_DC_QBTOP.ncd 

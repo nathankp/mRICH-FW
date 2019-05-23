@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Thu May 16 12:35:49 2019
+PC1::  Thu May 23 10:51:20 2019
 
 par -filter
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ise
@@ -125,19 +125,19 @@ Phase  4  : 1610 unrouted; (Setup:0, Hold:2093, Component Switching Limit:0)    
 
 Updating file: HMB_DC_QBTOP.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 16 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 16 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 16 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 16 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
-Total REAL time to Router completion: 16 secs 
-Total CPU time to Router completion: 12 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+Total REAL time to Router completion: 15 secs 
+Total CPU time to Router completion: 10 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -328,10 +328,10 @@ Derived Constraints for TS_SSTIN_P
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_SSTIN_P                     |     31.250ns|     10.000ns|     24.610ns|            0|            0|            0|         7264|
-| TS_CLOCK_FANOUT_clkout1       |     12.500ns|      7.311ns|          N/A|            0|            0|          999|            0|
 | TS_CLOCK_FANOUT_clkout0       |     31.250ns|     24.610ns|     23.660ns|            0|            0|         5221|         1044|
 |  TS_comm_process_U_ClockGenByt|      6.250ns|      4.732ns|          N/A|            0|            0|         1044|            0|
 |  eLink_clkfx                  |             |             |             |             |             |             |             |
+| TS_CLOCK_FANOUT_clkout1       |     12.500ns|      7.311ns|          N/A|            0|            0|          999|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -348,10 +348,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 17 secs 
-Total CPU time to PAR completion: 12 secs 
+Total REAL time to PAR completion: 16 secs 
+Total CPU time to PAR completion: 11 secs 
 
-Peak Memory Usage:  4560 MB
+Peak Memory Usage:  4561 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

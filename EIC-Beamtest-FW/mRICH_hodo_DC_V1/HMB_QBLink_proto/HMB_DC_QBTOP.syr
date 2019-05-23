@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -1982,12 +1982,12 @@ Reg_state[3]_GND_397_o_Mux_800_o  |         |         |    3.987|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.52 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.31 secs
  
 --> 
 
-Total memory usage is 4510704 kilobytes
+Total memory usage is 4510664 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  507 (   0 filtered)

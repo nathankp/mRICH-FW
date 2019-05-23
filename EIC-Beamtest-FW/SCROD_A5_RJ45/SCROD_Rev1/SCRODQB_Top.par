@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Thu May 23 10:04:03 2019
+PC1::  Thu May 23 12:46:52 2019
 
 par -filter
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/fi
@@ -193,24 +193,24 @@ Phase  1  : 31982 unrouted;      REAL time: 12 secs
 
 Phase  2  : 22420 unrouted;      REAL time: 17 secs 
 
-Phase  3  : 8015 unrouted;      REAL time: 29 secs 
+Phase  3  : 8015 unrouted;      REAL time: 28 secs 
 
 Phase  4  : 8015 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
 
 Updating file: SCRODQB_Top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 41 secs 
-Total REAL time to Router completion: 41 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+Total REAL time to Router completion: 40 secs 
 Total CPU time to Router completion: 36 secs 
 
 Partition Implementation Status
@@ -331,8 +331,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 54 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 43 secs 
-Total CPU time to PAR completion: 38 secs 
+Total REAL time to PAR completion: 42 secs 
+Total CPU time to PAR completion: 37 secs 
 
 Peak Memory Usage:  4816 MB
 
