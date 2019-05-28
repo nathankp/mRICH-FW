@@ -27,7 +27,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="49"/>
     </file>
     <file xil_pn:name="../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="25"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../SCROD_A5_RJ45/source/Ethernet files/tri_mode_eth_mac_v5_5_ipif_pkg.vhd" xil_pn:type="FILE_VHDL">
@@ -93,7 +93,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL">
@@ -173,7 +173,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="51"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CrcPkg.vhd" xil_pn:type="FILE_VHDL">
@@ -209,7 +209,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL">
@@ -265,11 +265,11 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
     </file>
     <file xil_pn:name="../../../QBLink/source/BMD_autoinit_definitions.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="DC_Comm.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="24"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
     </file>
     <file xil_pn:name="cmdInerpreter_TB.vhd" xil_pn:type="FILE_VHDL">
@@ -289,7 +289,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="IO_Buffers.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="23"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
     </file>
     <file xil_pn:name="IO_BUFTB.vhd" xil_pn:type="FILE_VHDL">
@@ -309,10 +309,34 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="241"/>
     </file>
     <file xil_pn:name="TriggerTB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="257"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="257"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="257"/>
+    </file>
+    <file xil_pn:name="TrigBitMux.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../mRICH_hodo_DC_V1/HMB_QBLink_proto/TriggerPack2.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="ipcore_dir/Timestamper.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="ck_package.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="TARGETX_DAC_CONTROL.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -357,6 +381,12 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ipcore_dir/clk_Div.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="ipcore_dir/Timestamper.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>

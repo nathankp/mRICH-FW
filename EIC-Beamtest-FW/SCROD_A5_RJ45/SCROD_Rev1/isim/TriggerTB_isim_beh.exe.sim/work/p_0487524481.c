@@ -172,7 +172,7 @@ LAB1:    return t0;
 LAB3:    *((char **)t22) = t4;
     goto LAB2;
 
-LAB4:    t30 = (t1 + 5260);
+LAB4:    t30 = (t1 + 5764);
     xsi_report(t30, 28U, (unsigned char)3);
     goto LAB5;
 

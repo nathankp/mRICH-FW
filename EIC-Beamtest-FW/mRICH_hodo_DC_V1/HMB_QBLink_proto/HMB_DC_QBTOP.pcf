@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 23 10:51:17 2019
+// Written by: Map P.20131013 on Mon May 27 20:39:41 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -78,6 +78,8 @@ TIMEGRP CLOCK_FANOUT_clkout1 = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL
         "TARGETX_control/ENABLE_COUNTER" BEL "TARGETX_control/UPDATE_REG_1"
         BEL "TARGETX_control/UPDATE_REG_0" BEL "tx_dac_update" BEL
         "TARGETX_control/SIN_i" BEL "TARGETX_control/PCLK_i";
+PIN comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3> = BEL
+        "comm_process/U_ClockGenByteLink/dcm_sp_inst" PINNAME CLKIN;
 PIN
         comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram_pins<28>
         = BEL
@@ -123,7 +125,7 @@ PIN
         = BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18"
         PINNAME CLKB;
-TIMEGRP D_CLK = BEL "Reg_state_1" BEL "Reg_state_2" BEL
+TIMEGRP CLOCK_FANOUT_clkout0 = BEL "CLOCK_FANOUT/clkout1_buf" BEL
         "TriggerLogic/TriggerData_31" BEL "TriggerLogic/TriggerData_30" BEL
         "TriggerLogic/TriggerData_29" BEL "TriggerLogic/TriggerData_28" BEL
         "TriggerLogic/TriggerData_27" BEL "TriggerLogic/TriggerData_26" BEL
@@ -139,8 +141,10 @@ TIMEGRP D_CLK = BEL "Reg_state_1" BEL "Reg_state_2" BEL
         "TriggerLogic/TriggerData_5" BEL "TriggerLogic/TriggerData_4" BEL
         "TriggerLogic/TriggerData_3" BEL "TriggerLogic/TriggerData_2" BEL
         "TriggerLogic/TriggerData_1" BEL "TriggerLogic/TriggerData_0" BEL
-        "TriggerLogic/QBL_WrEn" BEL "comm_process/U_ByteLink/r_state_FSM_FFd1"
-        BEL "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
+        "TriggerLogic/QBL_WrEn" PIN
+        "comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3>" BEL
+        "comm_process/U_ByteLink/r_state_FSM_FFd1" BEL
+        "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
         "comm_process/U_ByteLink/r_txData10b_9" BEL
         "comm_process/U_ByteLink/r_txData10b_8" BEL
         "comm_process/U_ByteLink/r_txData10b_7" BEL
@@ -1160,10 +1164,7 @@ TIMEGRP D_CLK = BEL "Reg_state_1" BEL "Reg_state_2" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[0].u_ramb18/U_RAMB18_pins<29>";
-PIN comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3> = BEL
-        "comm_process/U_ClockGenByteLink/dcm_sp_inst" PINNAME CLKIN;
-TIMEGRP CLOCK_FANOUT_clkout0 = BEL "Reg_state_1" BEL "Reg_state_2" BEL
-        "CLOCK_FANOUT/clkout1_buf" BEL "TriggerLogic/TriggerData_31" BEL
+TIMEGRP D_CLK = BEL "TriggerLogic/TriggerData_31" BEL
         "TriggerLogic/TriggerData_30" BEL "TriggerLogic/TriggerData_29" BEL
         "TriggerLogic/TriggerData_28" BEL "TriggerLogic/TriggerData_27" BEL
         "TriggerLogic/TriggerData_26" BEL "TriggerLogic/TriggerData_25" BEL
@@ -1178,8 +1179,7 @@ TIMEGRP CLOCK_FANOUT_clkout0 = BEL "Reg_state_1" BEL "Reg_state_2" BEL
         "TriggerLogic/TriggerData_8" BEL "TriggerLogic/TriggerData_5" BEL
         "TriggerLogic/TriggerData_4" BEL "TriggerLogic/TriggerData_3" BEL
         "TriggerLogic/TriggerData_2" BEL "TriggerLogic/TriggerData_1" BEL
-        "TriggerLogic/TriggerData_0" BEL "TriggerLogic/QBL_WrEn" PIN
-        "comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3>" BEL
+        "TriggerLogic/TriggerData_0" BEL "TriggerLogic/QBL_WrEn" BEL
         "comm_process/U_ByteLink/r_state_FSM_FFd1" BEL
         "comm_process/U_ByteLink/r_state_FSM_FFd2" BEL
         "comm_process/U_ByteLink/r_txData10b_9" BEL

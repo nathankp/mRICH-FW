@@ -7,8 +7,9 @@ iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
 ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
-../../../QBLink/QBlink/ipcore_dir -nt timestamp -uc HMB_SciFi_SCROD.ucf -p
-xc6slx150t-fgg676-3 SCRODQB_Top.ngc SCRODQB_Top.ngd
+../../../QBLink/QBlink/ipcore_dir -sd
+../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc
+HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top.ngc SCRODQB_Top.ngd
 
 Reading NGO file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
@@ -279,7 +280,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 109
 
-Total memory usage is 4502288 kilobytes
+Total memory usage is 4502252 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
 Total REAL time to NGDBUILD completion:  7 sec

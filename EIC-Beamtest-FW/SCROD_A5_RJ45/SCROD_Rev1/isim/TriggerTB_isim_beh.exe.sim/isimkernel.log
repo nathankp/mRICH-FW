@@ -2,9 +2,27 @@ Command line:
    TriggerTB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  55353
+     -socket  49725
 
-Wed May 22 18:26:22 2019
+Mon May 27 20:24:25 2019
 
 
- Elaboration Time: 0.640625 sec
+ Elaboration Time: 0.671875 sec
+
+ Current Memory Usage: 5772.62 Meg
+
+ Total Signals          : 24422
+ Total Nets             : 68711
+ Total Signal Drivers   : 11849
+ Total Blocks           : 1593
+ Total Primitive Blocks : 1006
+ Total Processes        : 6164
+ Total Traceable Variables  : 12817
+ Total Scalar Nets and Variables : 102087
+
+ Total Simulation Time: 8.875 sec
+
+ Current Memory Usage: 5824.58 Meg
+
+Mon May 27 20:25:01 2019
+

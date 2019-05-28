@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_beh.prj" "work.TriggerTB" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe -prj C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_beh.prj work.TriggerTB 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -7,6 +7,8 @@ Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCRO
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../../QBLink/QBlink/cores/clockgen_bytelink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/QBlink/ipcore_dir/QBLtxFIFO.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_dir/Timestamper.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/UtilityPkg.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/Encode8b10b.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/Decode8b10b.vhd" into library work
@@ -18,13 +20,21 @@ WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_R
 WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 197: Actual for formal port rd_en is neither a static name nor a globally static expression
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/ByteLink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/QBlink/ipcore_dir/clockgen_bytelink.vhd" into library work
+WARNING:HDLCompiler:685 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/QBlink/ipcore_dir/clockgen_bytelink.vhd" Line 74: Overwriting existing primary unit clockgen_bytelink
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/SyncBit.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/QBlink.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/BMD_definitions.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/BMD_autoinit_definitions.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TARGETX_DAC_CONTROL.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ck_package.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../mRICH_hodo_DC_V1/HMB_QBLink_proto/TriggerPack2.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/IO_Buffers.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/IO_Buffers.vhd" Line 90: Actual for formal port c1 is neither a static name nor a globally static expression
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
@@ -38,11 +48,17 @@ Compiling package gigabitethpkg
 Compiling package numeric_std
 Compiling package bmd_definitions
 Compiling package vcomponents
-Compiling architecture rtl of entity CommandInterpreter [commandinterpreter_default]
+Compiling package ck_package
+Compiling package bmd_autoinit_definitions
 Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
 Compiling package vpkg
+Compiling architecture ibufds_v of entity IBUFDS [\IBUFDS("DONT_CARE",false,"FALSE...]
+Compiling architecture obufds_v of entity OBUFDS [\OBUFDS("DONT_CARE","LVDS_25","S...]
+Compiling architecture oddr2_v of entity ODDR2 [\ODDR2("NONE",'0',"SYNC")(1,4,1,...]
+Compiling architecture behavioral of entity IO_Buffers [\IO_Buffers(3)\]
+Compiling architecture rtl of entity CommandInterpreter [commandinterpreter_default]
 Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
 Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
 Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
@@ -73,10 +89,33 @@ Compiling architecture behavioral of entity fifo_generator_v9_3 [\fifo_generator
 Compiling architecture cmd_fifo_w8r32_a of entity CMD_FIFO_w8r32 [cmd_fifo_w8r32_default]
 Compiling architecture behavioral of entity QBlink [qblink_default]
 Compiling architecture behaviorial of entity DC_Comm [\DC_Comm(3)\]
+Compiling package std_logic_signed
+Compiling architecture ibufgds_v of entity IBUFGDS [\IBUFGDS("DONT_CARE",false,"0",t...]
+Compiling architecture pll_adv_v of entity PLL_ADV [\PLL_ADV("OPTIMIZED","CLKFBOUT",...]
+Compiling architecture pll_base_v of entity PLL_BASE [\PLL_BASE("OPTIMIZED",20,0.0,40....]
+Compiling architecture xilinx of entity BMD_DC_CLK_GEN [bmd_dc_clk_gen_default]
+Compiling architecture behavioral of entity TARGETX_DAC_CONTROL [targetx_dac_control_default]
+Compiling package bip_utils_pkg_v2_0
+Compiling package xbip_counter_v2_0_pkg
+Compiling package c_counter_binary_v11_0_pkg
+Compiling package xbip_counter_v2_0_xst_comp
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package c_compare_v11_0_comp
+Compiling package c_mux_bus_v11_0_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(24,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(24,"0","0",1,0,1...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(24,24,24,...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0_legacy [\c_counter_binary_v11_0_legacy("...]
+Compiling architecture behavioral of entity c_counter_binary_v11_0 [\c_counter_binary_v11_0(0,0,"spa...]
+Compiling architecture timestamper_a of entity Timestamper [timestamper_default]
+Compiling architecture behavioral of entity TriggerPack2 [triggerpack2_default]
+Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity triggertb
 Time Resolution for simulation is 1ps.
-Waiting for 14 sub-compilation(s) to finish...
-Compiled 77 VHDL Units
+Waiting for 34 sub-compilation(s) to finish...
+Compiled 123 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe
-Fuse Memory Usage: 71124 KB
-Fuse CPU Usage: 1890 ms
+Fuse Memory Usage: 79256 KB
+Fuse CPU Usage: 2624 ms

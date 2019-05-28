@@ -1,5 +1,72 @@
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
-Cancelled executing Tcl generator.
-Wrote CGP file for project 'clk_Div'.
+Resolving generics for 'serializationFifo'...
+WARNING:sim - A core named 'serializationFifo' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'serializationFifo'...
+Delivering associated files for 'serializationFifo'...
+Delivering EJava files for 'serializationFifo'...
+Generating implementation netlist for 'serializationFifo'...
+INFO:sim - Pre-processing HDL files for 'serializationFifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'serializationFifo'
+Running ngcbuild...
+Writing VHO instantiation template for 'serializationFifo'...
+Writing VHDL behavioral simulation model for 'serializationFifo'...
+WARNING:sim - Overwriting existing file
+   C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/
+   ipcore_dir/tmp/_cg/serializationFifo/doc/fifo_generator_v9_3_vinfo.html with
+   file from view xilinx_documentation
+Delivered 3 files into directory
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo
+Delivered 1 file into directory
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'serializationFifo'...
+Generating metadata file...
+Regenerating ISE project file for 'serializationFifo'...
+Generating ISE project...
+XCO file found: serializationFifo.xco
+XMDF file found: serializationFifo_xmdf.tcl
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo.asy -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo.ngc -view all -origin_type created
+Checking file
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ip
+core_dir/tmp/_cg/serializationFifo.ngc" for project device match ...
+File
+"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ip
+core_dir/tmp/_cg/serializationFifo.ngc" device information matches project
+device.
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo.sym -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto
+   /ipcore_dir/tmp/_cg/serializationFifo.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ipc
+ore_dir/tmp/_cg/serializationFifo.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/serializationFifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'serializationFifo'.

@@ -97,6 +97,10 @@
     <transform xil_pn:end_ts="1558127131" xil_pn:in_ck="7212811911739638820" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1558127131">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
@@ -150,6 +154,11 @@
     <transform xil_pn:end_ts="1558127136" xil_pn:in_ck="8310821242058794501" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/source/UtilityPkg.vhd"/>
       <outfile xil_pn:name="../../../../QBLink/source/BMD_autoinit_definitions.vhd"/>
@@ -180,6 +189,9 @@
     <transform xil_pn:end_ts="1558127148" xil_pn:in_ck="-5139786567320932935" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1657167091062563582" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="TriggerPack2TB_beh.prj"/>
       <outfile xil_pn:name="TriggerPack2TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -190,6 +202,7 @@
     <transform xil_pn:end_ts="1558127148" xil_pn:in_ck="-6715866727688657086" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3072214524236700399" xil_pn:start_ts="1558127148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="TriggerPack2TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -202,7 +215,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1558644621" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1558644620">
+    <transform xil_pn:end_ts="1559025519" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1559025518">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
@@ -231,7 +244,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1558644643" xil_pn:in_ck="-5782508377714193707" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7157024982517060665" xil_pn:start_ts="1558644621">
+    <transform xil_pn:end_ts="1559025539" xil_pn:in_ck="-5782508377714193707" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7157024982517060665" xil_pn:start_ts="1559025519">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -253,7 +266,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1558644659" xil_pn:in_ck="5242432110694695391" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4897868808391741127" xil_pn:start_ts="1558644643">
+    <transform xil_pn:end_ts="1559025560" xil_pn:in_ck="5242432110694695391" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4897868808391741127" xil_pn:start_ts="1559025539">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -265,7 +278,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1558644679" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1558644659">
+    <transform xil_pn:end_ts="1559025584" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1559025560">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.pcf"/>
@@ -278,7 +291,7 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1558644703" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1558644679">
+    <transform xil_pn:end_ts="1559025606" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1559025584">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -293,8 +306,8 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1558644717" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1558644703">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1559025624" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1559025606">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.ut"/>
@@ -310,7 +323,6 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
@@ -320,12 +332,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1558644703" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1558644698">
+    <transform xil_pn:end_ts="1559025605" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1559025600">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.twr"/>

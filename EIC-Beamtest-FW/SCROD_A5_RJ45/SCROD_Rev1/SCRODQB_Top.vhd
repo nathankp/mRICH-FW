@@ -150,11 +150,18 @@ attribute keep_hierarchy of Behavioral: architecture is TRUE;
 
 begin
 
-sync <= CtrlRegister(2)(8);
+
 --watch4Events <= CtrlRegister(2)(1);
 reset <= CtrlRegister(0)(0);
 global_event <= (others => evntFlag);
-QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
+
+DC_reset : process(internal_data_clk) 
+begin 
+	IF rising_edge(internal_data_clk) THEN
+		sync <= CtrlRegister(2)(8);
+		QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
+	END IF;
+end process;
 --
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------
@@ -224,6 +231,7 @@ U_S6EthTop : entity work.S6EthTop
          userRxDataLast  => userRxDataLasts,
          userRxDataReady => userRxDataReadys
       );
+
 -----------------------------------------------------------------
 ----------------Command Parsing ---------------------------------
 -----------------------------------------------------------------		

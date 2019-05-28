@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Thu May 23 10:51:20 2019
+PC1::  Mon May 27 20:39:45 2019
 
 par -filter
 C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/ise
@@ -24,16 +24,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,381 out of   4,800   28%
-    Number used as Flip Flops:                 912
-    Number used as Latches:                    469
+  Number of Slice Registers:                   960 out of   4,800   20%
+    Number used as Flip Flops:                 910
+    Number used as Latches:                     50
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        948 out of   2,400   39%
-    Number used as logic:                      801 out of   2,400   33%
-      Number using O6 output only:             425
-      Number using O5 output only:             123
-      Number using O5 and O6:                  253
+  Number of Slice LUTs:                        774 out of   2,400   32%
+    Number used as logic:                      636 out of   2,400   26%
+      Number using O6 output only:             295
+      Number using O5 output only:             121
+      Number using O5 and O6:                  220
       Number used as ROM:                        0
     Number used as Memory:                      62 out of   1,200    5%
       Number used as Dual Port RAM:              0
@@ -42,18 +42,18 @@ Slice Logic Utilization:
         Number using O6 output only:            56
         Number using O5 output only:             1
         Number using O5 and O6:                  5
-    Number used exclusively as route-thrus:     85
-      Number with same-slice register load:     75
+    Number used exclusively as route-thrus:     76
+      Number with same-slice register load:     66
       Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   500 out of     600   83%
-  Number of MUXCYs used:                       300 out of   1,200   25%
-  Number of LUT Flip Flop pairs used:        1,554
-    Number with an unused Flip Flop:           348 out of   1,554   22%
-    Number with an unused LUT:                 606 out of   1,554   38%
-    Number of fully used LUT-FF pairs:         600 out of   1,554   38%
+  Number of occupied Slices:                   396 out of     600   66%
+  Number of MUXCYs used:                       288 out of   1,200   24%
+  Number of LUT Flip Flop pairs used:        1,113
+    Number with an unused Flip Flop:           313 out of   1,113   28%
+    Number with an unused LUT:                 339 out of   1,113   30%
+    Number of fully used LUT-FF pairs:         461 out of   1,113   41%
     Number of slice register sites lost
       to control set restrictions:               0 out of   4,800    0%
 
@@ -79,8 +79,8 @@ Specific Feature Utilization:
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
     Number used as BUFIO2FBs:                    1
     Number used as BUFIO2FB_2CLKs:               0
-  Number of BUFG/BUFGMUXs:                       8 out of      16   50%
-    Number used as BUFGs:                        8
+  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
+    Number used as BUFGs:                        7
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
     Number used as DCMs:                         1
@@ -115,29 +115,29 @@ WARNING:Par:288 - The signal SHOUT_IBUF has no load.  PAR will not attempt to ro
 Starting Router
 
 
-Phase  1  : 6330 unrouted;      REAL time: 8 secs 
+Phase  1  : 4785 unrouted;      REAL time: 9 secs 
 
-Phase  2  : 4972 unrouted;      REAL time: 9 secs 
+Phase  2  : 3471 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 1610 unrouted;      REAL time: 11 secs 
+Phase  3  : 875 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 1610 unrouted; (Setup:0, Hold:2093, Component Switching Limit:0)     REAL time: 11 secs 
+Phase  4  : 875 unrouted; (Setup:0, Hold:2766, Component Switching Limit:0)     REAL time: 11 secs 
 
 Updating file: HMB_DC_QBTOP.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:2658, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:2658, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:2658, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:1463, Component Switching Limit:0)     REAL time: 15 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:2658, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
-Total REAL time to Router completion: 15 secs 
-Total CPU time to Router completion: 10 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
+Total REAL time to Router completion: 13 secs 
+Total CPU time to Router completion: 8 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -155,105 +155,35 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|              sysclk | BUFGMUX_X2Y12| No   |  202 |  0.121     |  1.189      |
+|              sysclk |  BUFGMUX_X2Y1| No   |  212 |  0.120     |  1.188      |
 +---------------------+--------------+------+------+------------+-------------+
 |comm_process/sstX5Cl |              |      |      |            |             |
-|                   k | BUFGMUX_X2Y10| No   |   48 |  0.593     |  1.665      |
+|                   k | BUFGMUX_X2Y12| No   |   47 |  0.598     |  1.666      |
 +---------------------+--------------+------+------+------------+-------------+
-|            asic_clk |  BUFGMUX_X2Y1| No   |   19 |  0.093     |  1.165      |
+|            asic_clk |  BUFGMUX_X2Y4| No   |   17 |  0.068     |  1.172      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> | BUFGMUX_X3Y14| No   |   56 |  0.112     |  1.179      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_109 |              |      |      |            |             |
-|   _o_Mux_224_o_BUFG |  BUFGMUX_X2Y2| No   |    8 |  0.015     |  1.121      |
+|    icon_control0<0> | BUFGMUX_X2Y10| No   |   60 |  0.118     |  1.185      |
 +---------------------+--------------+------+------+------------+-------------+
 |Reg_state[3]_GND_141 |              |      |      |            |             |
-|   _o_Mux_288_o_BUFG | BUFGMUX_X3Y13| No   |    8 |  0.048     |  1.123      |
+|   _o_Mux_288_o_BUFG | BUFGMUX_X3Y13| No   |    4 |  0.005     |  1.112      |
 +---------------------+--------------+------+------+------------+-------------+
 |TriggerLogic/TrigDat |              |      |      |            |             |
-|               a_6_G |         Local|      |   32 |  1.776     |  2.290      |
+|               a_6_G |         Local|      |   28 |  1.767     |  2.447      |
 +---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_365 |              |      |      |            |             |
-|        _o_Mux_736_o |         Local|      |    4 |  1.073     |  1.947      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_397 |              |      |      |            |             |
-|        _o_Mux_800_o |         Local|      |    4 |  1.612     |  2.073      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_301 |              |      |      |            |             |
-|        _o_Mux_608_o |         Local|      |    4 |  0.794     |  1.742      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_333 |              |      |      |            |             |
-|        _o_Mux_672_o |         Local|      |    4 |  0.933     |  1.924      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_PWR_40_ |              |      |      |            |             |
-|         o_Mux_150_o |         Local|      |    1 |  0.000     |  0.629      |
-+---------------------+--------------+------+------+------------+-------------+
-|        Mram__n14821 |         Local|      |    8 |  1.045     |  1.772      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_493 |              |      |      |            |             |
-|        _o_Mux_992_o |         Local|      |   16 |  2.907     |  3.389      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_317 |              |      |      |            |             |
-|        _o_Mux_640_o |         Local|      |    4 |  1.727     |  2.528      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_413 |              |      |      |            |             |
-|        _o_Mux_832_o |         Local|      |    4 |  0.971     |  1.276      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_349 |              |      |      |            |             |
-|        _o_Mux_704_o |         Local|      |    4 |  1.549     |  2.459      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_381 |              |      |      |            |             |
-|        _o_Mux_768_o |         Local|      |    4 |  1.562     |  1.886      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_461 |              |      |      |            |             |
-|        _o_Mux_928_o |         Local|      |    4 |  1.599     |  2.555      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_429 |              |      |      |            |             |
-|        _o_Mux_864_o |         Local|      |    4 |  0.718     |  1.435      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_205 |              |      |      |            |             |
-|        _o_Mux_416_o |         Local|      |    4 |  1.676     |  2.414      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_221 |              |      |      |            |             |
-|        _o_Mux_448_o |         Local|      |    4 |  1.231     |  2.400      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_477 |              |      |      |            |             |
-|        _o_Mux_960_o |         Local|      |    4 |  1.082     |  1.940      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_445 |              |      |      |            |             |
-|        _o_Mux_896_o |         Local|      |    4 |  0.528     |  1.200      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_253 |              |      |      |            |             |
-|        _o_Mux_512_o |         Local|      |    4 |  0.956     |  1.897      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_285 |              |      |      |            |             |
-|        _o_Mux_576_o |         Local|      |    4 |  1.129     |  2.121      |
-+---------------------+--------------+------+------+------------+-------------+
-|         Mram__n1482 |         Local|      |    1 |  0.000     |  1.038      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_237 |              |      |      |            |             |
-|        _o_Mux_480_o |         Local|      |    4 |  1.160     |  1.807      |
-+---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_269 |              |      |      |            |             |
-|        _o_Mux_544_o |         Local|      |    4 |  1.070     |  1.763      |
-+---------------------+--------------+------+------+------------+-------------+
-|               SSTin |         Local|      |    8 |  0.672     |  0.977      |
+|               SSTin |         Local|      |    8 |  0.696     |  1.006      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  0.877      |
+|               E_OUT |         Local|      |    1 |  0.000     |  0.886      |
++---------------------+--------------+------+------+------------+-------------+
+|         Mram__n1477 |         Local|      |    1 |  0.000     |  0.728      |
 +---------------------+--------------+------+------+------------+-------------+
 |trgLinkSynced_trigFl |              |      |      |            |             |
-|       ag_AND_1547_o |         Local|      |    3 |  0.000     |  1.876      |
+|       ag_AND_1547_o |         Local|      |    3 |  0.000     |  0.679      |
 +---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_189 |              |      |      |            |             |
-|        _o_Mux_384_o |         Local|      |    4 |  1.695     |  2.160      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.833      |
 +---------------------+--------------+------+------+------------+-------------+
-|Reg_state[3]_GND_173 |              |      |      |            |             |
-|        _o_Mux_352_o |         Local|      |    4 |  1.083     |  1.771      |
-+---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.931      |
-+---------------------+--------------+------+------+------------+-------------+
-|        Mram__n14822 |         Local|      |    1 |  0.000     |  0.302      |
+|Reg_state[3]_PWR_40_ |              |      |      |            |             |
+|         o_Mux_150_o |         Local|      |    1 |  0.000     |  0.497      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -275,45 +205,45 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP  | SETUP       |     1.328ns|    24.610ns|       0|           0
-  "CLOCK_FANOUT_clkout0" TS_SSTIN_P         | HOLD        |     0.026ns|            |       0|           0
-   HIGH 50%                                 |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_comm_process_U_ClockGenByteLink_clkfx  | SETUP       |     1.518ns|     4.732ns|       0|           0
-  = PERIOD TIMEGRP         "comm_process_U_ | HOLD        |     0.223ns|            |       0|           0
+  TS_comm_process_U_ClockGenByteLink_clkfx  | SETUP       |     1.635ns|     4.615ns|       0|           0
+  = PERIOD TIMEGRP         "comm_process_U_ | HOLD        |     0.005ns|            |       0|           0
   ClockGenByteLink_clkfx" TS_CLOCK_FANOUT_c |             |            |            |        |            
   lkout0 / 5         HIGH 50%               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_CLOCK_FANOUT_clkout1 = PERIOD TIMEGRP  | SETUP       |     4.131ns|     7.311ns|       0|           0
-  "CLOCK_FANOUT_clkout1" TS_SSTIN_P /       | HOLD        |     0.410ns|            |       0|           0
+  TS_CLOCK_FANOUT_clkout1 = PERIOD TIMEGRP  | SETUP       |     2.526ns|     7.448ns|       0|           0
+  "CLOCK_FANOUT_clkout1" TS_SSTIN_P /       | HOLD        |     0.429ns|            |       0|           0
      2.5 HIGH 50%                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP  | SETUP       |     2.900ns|    16.750ns|       0|           0
+  "CLOCK_FANOUT_clkout0" TS_SSTIN_P         | HOLD        |     0.057ns|            |       0|           0
+   HIGH 50%                                 |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_SSTIN_P = PERIOD TIMEGRP "SYSCLK_P" 31 | MINLOWPULSE |    21.250ns|    10.000ns|       0|           0
   .25 ns HIGH 50%                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.508ns|     2.492ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.482ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.868ns|     3.132ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.131ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.121ns|     0.879ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.442ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.124ns|     0.876ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.439ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_asic_clk = PERIOD TIMEGRP "asic_clk" 1 | MINPERIOD   |    15.595ns|     0.405ns|       0|           0
   6 ns HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    23.926ns|     6.074ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.188ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    23.672ns|     6.328ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.317ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.700ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.141ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.369ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.758ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.388ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     5.513ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.515ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.879ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -327,11 +257,11 @@ Derived Constraints for TS_SSTIN_P
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SSTIN_P                     |     31.250ns|     10.000ns|     24.610ns|            0|            0|            0|         7264|
-| TS_CLOCK_FANOUT_clkout0       |     31.250ns|     24.610ns|     23.660ns|            0|            0|         5221|         1044|
-|  TS_comm_process_U_ClockGenByt|      6.250ns|      4.732ns|          N/A|            0|            0|         1044|            0|
+|TS_SSTIN_P                     |     31.250ns|     10.000ns|     23.075ns|            0|            0|            0|         7062|
+| TS_CLOCK_FANOUT_clkout0       |     31.250ns|     16.750ns|     23.075ns|            0|            0|         5218|         1044|
+|  TS_comm_process_U_ClockGenByt|      6.250ns|      4.615ns|          N/A|            0|            0|         1044|            0|
 |  eLink_clkfx                  |             |             |             |             |             |             |             |
-| TS_CLOCK_FANOUT_clkout1       |     12.500ns|      7.311ns|          N/A|            0|            0|          999|            0|
+| TS_CLOCK_FANOUT_clkout1       |     12.500ns|      7.448ns|          N/A|            0|            0|          800|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -348,10 +278,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 16 secs 
-Total CPU time to PAR completion: 11 secs 
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion: 9 secs 
 
-Peak Memory Usage:  4561 MB
+Peak Memory Usage:  4545 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

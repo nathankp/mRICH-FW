@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -180,14 +180,15 @@ Parsing architecture <Behavioral> of entity <hmb_dc_qbtop>.
 Elaborating entity <HMB_DC_QBTOP> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <BMD_DC_CLK_GEN> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 207: triggerdata should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 208: sendtrigger should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 210: dcresp should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 211: send_dcresp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 197: triggerdata should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 198: sendtrigger should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 200: dcresp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 201: send_dcresp should be on the sensitivity list of the process
 
 Elaborating entity <QBlink> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <clockgen_bytelink> (architecture <xilinx>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd" Line 152: Assignment to notlocked ignored, since the identifier is never used
 
 Elaborating entity <SyncBit> (architecture <structural>) with generics from library <work>.
 
@@ -220,20 +221,20 @@ Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from libra
 
 Elaborating entity <TARGETX_DAC_CONTROL> (architecture <Behavioral>) with generics from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\TARGETX_DAC_CONTROL.vhd" Line 348. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 271. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 259. Case statement is complete. others clause is never selected
 
 Elaborating entity <Timestamper> (architecture <Timestamper_a>) from library <work>.
 
 Elaborating entity <TriggerPack2> (architecture <Behavioral>) from library <work>.
 WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\TriggerPack2.vhd" Line 56: triggerbits should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\TriggerPack2.vhd" Line 57: timestamp should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 299: Assignment to mppc_dac_addr ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 300: Assignment to mppc_dac_value ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 308: reset_sm should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 353: regwrdata should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 356: dc_reg should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 362: regwrdata should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 367: regrddata should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 287: Assignment to mppc_dac_addr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 288: Assignment to mppc_dac_value ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 312: reset_sm should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 357: regwrdata should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 360: dc_reg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 366: regwrdata should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 371: regrddata should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -242,13 +243,12 @@ WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_
 Synthesizing Unit <HMB_DC_QBTOP>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd".
 WARNING:Xst:647 - Input <SHOUT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" line 130: Output port <CLK_OUT3> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" line 231: Output port <busy> of the instance <TARGETX_control> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" line 129: Output port <CLK_OUT3> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" line 219: Output port <busy> of the instance <TARGETX_control> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <SSTin>.
     Found 1-bit register for signal <sync_ts>.
     Found 1-bit register for signal <tx_dac_update>.
     Found 2-bit register for signal <TX_DAC_UPst>.
-    Found 1-bit register for signal <QBreset>.
     Found 2-bit register for signal <SSTclk_cntr>.
     Found 1-bit register for signal <Reg_state<3>>.
     Found 1-bit register for signal <Reg_state<2>>.
@@ -266,23 +266,23 @@ INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 2-bit adder for signal <SSTclk_cntr[1]_GND_11_o_add_0_OUT> created at line 1241.
-    Found 16x4-bit Read Only RAM for signal <_n1482>
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<15>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<14>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<13>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<12>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<11>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<10>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<9>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<8>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<7>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<6>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<5>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<4>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<3>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<2>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<1>> created at line 319.
-    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<0>> created at line 319.
+    Found 16x4-bit Read Only RAM for signal <_n1477>
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<15>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<14>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<13>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<12>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<11>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<10>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<9>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<8>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<7>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<6>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<5>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<4>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<3>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<2>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<1>> created at line 323.
+    Found 1-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_48_OUT<0>> created at line 323.
 WARNING:Xst:737 - Found 1-bit latch for signal <send_DCresp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <Reg_nxtState<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <Reg_nxtState<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -721,11 +721,11 @@ WARNING:Xst:737 - Found 1-bit latch for signal <regRdData<3>>. Latches may be ge
 WARNING:Xst:737 - Found 1-bit latch for signal <regRdData<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <regRdData<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <regRdData<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator equal for signal <cmd_type[31]_wordout[31]_equal_24_o> created at line 346
+    Found 32-bit comparator equal for signal <cmd_type[31]_wordout[31]_equal_24_o> created at line 350
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred  10 D-type flip-flop(s).
+	inferred   9 D-type flip-flop(s).
 	inferred 438 Latch(s).
 	inferred   1 Comparator(s).
 	inferred 104 Multiplexer(s).
@@ -749,6 +749,7 @@ Unit <QBlink> synthesized.
 
 Synthesizing Unit <clockgen_bytelink>.
     Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\cores\clockgen_bytelink.vhd".
+WARNING:Xst:653 - Signal <LOCKED> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <clockgen_bytelink> synthesized.
@@ -977,8 +978,8 @@ Macro Statistics
  4-bit adder                                           : 2
  4-bit subtractor                                      : 1
  5-bit subtractor                                      : 2
-# Registers                                            : 53
- 1-bit register                                        : 31
+# Registers                                            : 52
+ 1-bit register                                        : 30
  10-bit register                                       : 7
  16-bit register                                       : 2
  2-bit register                                        : 2
@@ -1034,13 +1035,12 @@ INFO:Xst:2261 - The FF/Latch <dataWord_3> in Unit <U_SerialInterfaceIn> is equiv
 INFO:Xst:2261 - The FF/Latch <dataWord_5> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_4> 
 INFO:Xst:2261 - The FF/Latch <dataWord_7> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_6> 
 INFO:Xst:2261 - The FF/Latch <dataWord_9> in Unit <U_SerialInterfaceIn> is equivalent to the following FF/Latch, which will be removed : <dataWordFlipped_8> 
-WARNING:Xst:1293 - FF/Latch <QBreset> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Reg_nxtState_3> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_state_3> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <HMB_DC_QBTOP>.
 The following registers are absorbed into counter <SSTclk_cntr>: 1 register on signal <SSTclk_cntr>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1482> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1477> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1077,8 +1077,8 @@ Macro Statistics
  16-bit up counter                                     : 2
  2-bit up counter                                      : 1
  32-bit up counter                                     : 1
-# Registers                                            : 221
- Flip-Flops                                            : 221
+# Registers                                            : 220
+ Flip-Flops                                            : 220
 # Comparators                                          : 6
  16-bit comparator greater                             : 3
  32-bit comparator equal                               : 1
@@ -1102,7 +1102,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1293 - FF/Latch <QBreset> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Reg_nxtState_3> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_state_3> has a constant value of 0 in block <HMB_DC_QBTOP>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <TriggerData_5> in Unit <TriggerPack2> is equivalent to the following 2 FFs/Latches, which will be removed : <TriggerData_6> <TriggerData_7> 
@@ -1299,11 +1298,11 @@ Primitive and Black Box Usage:
 #      GND                         : 10
 #      INV                         : 30
 #      LUT1                        : 80
-#      LUT2                        : 192
-#      LUT3                        : 116
-#      LUT4                        : 133
-#      LUT5                        : 61
-#      LUT6                        : 222
+#      LUT2                        : 195
+#      LUT3                        : 114
+#      LUT4                        : 131
+#      LUT5                        : 60
+#      LUT6                        : 224
 #      MUXCY                       : 180
 #      MUXF7                       : 24
 #      VCC                         : 3
@@ -1350,10 +1349,10 @@ Slice Logic Utilization:
     Number used as Logic:               834  out of   2400    34%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1502
-   Number with an unused Flip Flop:     362  out of   1502    24%  
-   Number with an unused LUT:           668  out of   1502    44%  
-   Number of fully used LUT-FF pairs:   472  out of   1502    31%  
+ Number of LUT Flip Flop pairs used:   1501
+   Number with an unused Flip Flop:     361  out of   1501    24%  
+   Number with an unused LUT:           667  out of   1501    44%  
+   Number of fully used LUT-FF pairs:   473  out of   1501    31%  
    Number of unique control sets:       102
 
 IO Utilization: 
@@ -1414,9 +1413,9 @@ SSTin                                                                      | NON
 Reg_state[3]_GND_493_o_Mux_992_o(Mmux_Reg_state[3]_GND_493_o_Mux_992_o11:O)| NONE(*)(regRdData_14)           | 16    |
 Reg_state[3]_PWR_40_o_Mux_150_o(Mmux_Reg_state[3]_PWR_40_o_Mux_150_o1:O)   | NONE(*)(Reg_nxtState_2)         | 3     |
 CLOCK_FANOUT/pll_base_inst/CLKOUT0                                         | BUFG                            | 475   |
-Mram__n1482(Mram__n148212:O)                                               | NONE(*)(wordout_req)            | 1     |
-Mram__n14821(Mram__n1482111:O)                                             | NONE(*)(DCresp_15)              | 32    |
-Mram__n14822(Mram__n148221:O)                                              | NONE(*)(send_DCresp)            | 1     |
+Mram__n1477(Mram__n147712:O)                                               | NONE(*)(wordout_req)            | 1     |
+Mram__n14771(Mram__n1477111:O)                                             | NONE(*)(DCresp_15)              | 32    |
+Mram__n14772(Mram__n147721:O)                                              | NONE(*)(send_DCresp)            | 1     |
 TriggerLogic/TrigData_6_G(TriggerLogic/TriggerFlag1:O)                     | NONE(*)(TriggerLogic/TrigData_8)| 30    |
 CLOCK_FANOUT/pll_base_inst/CLKOUT0                                         | DCM_SP:CLKFX                    | 139   |
 trgLinkSynced_trigFlag_AND_1547_o(trgLinkSynced_trigFlag_AND_1547_o1:O)    | NONE(*)(Reg_state_0_LDC1)       | 1     |
@@ -1435,7 +1434,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 18.976ns (Maximum Frequency: 52.700MHz)
-   Minimum input arrival time before clock: 7.008ns
+   Minimum input arrival time before clock: 7.020ns
    Maximum output required time after clock: 4.224ns
    Maximum combinational path delay: No path found
 
@@ -1469,7 +1468,7 @@ Delay:               2.803ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLOCK_FANOUT/pll_base_inst/CLKOUT0'
   Clock period: 18.976ns (frequency: 52.700MHz)
-  Total number of paths / destination ports: 5552 / 1417
+  Total number of paths / destination ports: 5549 / 1414
 -------------------------------------------------------------------------
 Delay:               3.795ns (Levels of Logic = 3)
   Source:            comm_process/U_SerialInterfaceIn/r_slipCount_6 (FF)
@@ -1483,7 +1482,7 @@ Delay:               3.795ns (Levels of Logic = 3)
     ----------------------------------------  ------------
      FDRE:C->Q             2   0.447   0.981  comm_process/U_SerialInterfaceIn/r_slipCount_6 (comm_process/U_SerialInterfaceIn/r_slipCount_6)
      LUT6:I0->O           19   0.203   1.072  comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_27_o_LessThan_10_o_inv_inv21 (comm_process/U_SerialInterfaceIn/r_slipCount[15]_GND_27_o_LessThan_10_o_inv_inv)
-     LUT3:I2->O            1   0.205   0.580  comm_process/U_SerialInterfaceIn/r_flip_rstpot_SW0 (N42)
+     LUT3:I2->O            1   0.205   0.580  comm_process/U_SerialInterfaceIn/r_flip_rstpot_SW0 (N40)
      LUT6:I5->O            1   0.205   0.000  comm_process/U_SerialInterfaceIn/r_flip_rstpot (comm_process/U_SerialInterfaceIn/r_flip_rstpot)
      FDR:D                     0.102          comm_process/U_SerialInterfaceIn/r_flip
     ----------------------------------------
@@ -1540,7 +1539,7 @@ Delay:               2.141ns (Levels of Logic = 25)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SSTin'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              1.903ns (Levels of Logic = 1)
+Offset:              1.974ns (Levels of Logic = 1)
   Source:            SYNC_P (PAD)
   Destination:       sync_ts (FF)
   Destination Clock: SSTin rising
@@ -1549,17 +1548,17 @@ Offset:              1.903ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUFDS:I->O           1   1.222   0.579  SYNC_IBUFDS (sync)
+     IBUFDS:I->O           3   1.222   0.650  SYNC_IBUFDS (sync)
      FD:D                      0.102          sync_ts
     ----------------------------------------
-    Total                      1.903ns (1.324ns logic, 0.579ns route)
-                                       (69.6% logic, 30.4% route)
+    Total                      1.974ns (1.324ns logic, 0.650ns route)
+                                       (67.1% logic, 32.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Reg_state[3]_PWR_40_o_Mux_150_o'
   Total number of paths / destination ports: 5 / 1
 -------------------------------------------------------------------------
-Offset:              4.483ns (Levels of Logic = 3)
+Offset:              4.495ns (Levels of Logic = 3)
   Source:            TX_TRIG<4> (PAD)
   Destination:       Reg_nxtState_1 (LATCH)
   Destination Clock: Reg_state[3]_PWR_40_o_Mux_150_o falling
@@ -1568,19 +1567,40 @@ Offset:              4.483ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.028  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
-     LUT5:I0->O           71   0.203   1.791  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
+     IBUF:I->O             5   1.222   1.059  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
+     LUT5:I0->O           68   0.203   1.771  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
      LUT6:I4->O            1   0.203   0.000  Mmux_Reg_state[3]_GND_11_o_Mux_153_o1 (Reg_state[3]_GND_11_o_Mux_153_o)
      LD:D                      0.037          Reg_nxtState_1
     ----------------------------------------
-    Total                      4.483ns (1.665ns logic, 2.818ns route)
-                                       (37.1% logic, 62.9% route)
+    Total                      4.495ns (1.665ns logic, 2.830ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n1477'
+  Total number of paths / destination ports: 5 / 1
+-------------------------------------------------------------------------
+Offset:              4.495ns (Levels of Logic = 3)
+  Source:            TX_TRIG<4> (PAD)
+  Destination:       wordout_req (LATCH)
+  Destination Clock: Mram__n1477 falling
+
+  Data Path: TX_TRIG<4> to wordout_req
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   1.059  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
+     LUT5:I0->O           68   0.203   1.771  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
+     LUT4:I2->O            1   0.203   0.000  Mmux_Reg_state[3]_wordout_req_Mux_221_o11 (Reg_state[3]_wordout_req_Mux_221_o)
+     LD:D                      0.037          wordout_req
+    ----------------------------------------
+    Total                      4.495ns (1.665ns logic, 2.830ns route)
+                                       (37.0% logic, 63.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_FANOUT/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 537 / 108
+  Total number of paths / destination ports: 531 / 108
 -------------------------------------------------------------------------
-Offset:              7.008ns (Levels of Logic = 5)
+Offset:              7.020ns (Levels of Logic = 5)
   Source:            TX_TRIG<4> (PAD)
   Destination:       comm_process/QBlink_TX_FIFO_W32R8/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_9 (FF)
   Destination Clock: CLOCK_FANOUT/pll_base_inst/CLKOUT0 rising
@@ -1589,42 +1609,21 @@ Offset:              7.008ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.028  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
-     LUT5:I0->O           71   0.203   1.915  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
+     IBUF:I->O             5   1.222   1.059  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
+     LUT5:I0->O           68   0.203   1.895  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
      LUT3:I0->O            5   0.205   0.819  Mmux_wordin_valid11 (wordin_valid)
      begin scope: 'comm_process/QBlink_TX_FIFO_W32R8:wr_en'
      LUT2:I0->O           20   0.203   1.092  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en)
      FDPE:CE                   0.322          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1
     ----------------------------------------
-    Total                      7.008ns (2.155ns logic, 4.853ns route)
+    Total                      7.020ns (2.155ns logic, 4.865ns route)
                                        (30.7% logic, 69.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram__n1482'
-  Total number of paths / destination ports: 5 / 1
--------------------------------------------------------------------------
-Offset:              4.483ns (Levels of Logic = 3)
-  Source:            TX_TRIG<4> (PAD)
-  Destination:       wordout_req (LATCH)
-  Destination Clock: Mram__n1482 falling
-
-  Data Path: TX_TRIG<4> to wordout_req
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.028  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
-     LUT5:I0->O           71   0.203   1.791  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
-     LUT4:I2->O            1   0.203   0.000  Mmux_Reg_state[3]_wordout_req_Mux_221_o11 (Reg_state[3]_wordout_req_Mux_221_o)
-     LD:D                      0.037          wordout_req
-    ----------------------------------------
-    Total                      4.483ns (1.665ns logic, 2.818ns route)
-                                       (37.1% logic, 62.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'TriggerLogic/TrigData_6_G'
   Total number of paths / destination ports: 10 / 6
 -------------------------------------------------------------------------
-Offset:              2.490ns (Levels of Logic = 2)
+Offset:              2.521ns (Levels of Logic = 2)
   Source:            TX_TRIG<4> (PAD)
   Destination:       TriggerLogic/TrigData_6 (LATCH)
   Destination Clock: TriggerLogic/TrigData_6_G falling
@@ -1633,18 +1632,18 @@ Offset:              2.490ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.028  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
-     LUT5:I0->O           71   0.203   0.000  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
+     IBUF:I->O             5   1.222   1.059  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
+     LUT5:I0->O           68   0.203   0.000  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
      LD:D                      0.037          TriggerLogic/TrigData_6
     ----------------------------------------
-    Total                      2.490ns (1.462ns logic, 1.028ns route)
-                                       (58.7% logic, 41.3% route)
+    Total                      2.521ns (1.462ns logic, 1.059ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'trgLinkSynced_trigFlag_AND_1547_o'
   Total number of paths / destination ports: 10 / 1
 -------------------------------------------------------------------------
-Offset:              5.581ns (Levels of Logic = 3)
+Offset:              4.451ns (Levels of Logic = 3)
   Source:            TX_TRIG<4> (PAD)
   Destination:       Reg_state_0_LDC1 (LATCH)
   Destination Clock: trgLinkSynced_trigFlag_AND_1547_o falling
@@ -1653,13 +1652,13 @@ Offset:              5.581ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   1.028  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
-     LUT5:I0->O           71   0.203   1.915  TriggerLogic/TriggerFlag1 (TriggerLogic/TrigData_6_G)
-     LUT5:I2->O            1   0.205   0.579  Reg_state_0_LDC (Reg_state_0_LDC)
+     IBUF:I->O             5   1.222   1.059  TX_TRIG_4_IBUF (TX_TRIG_4_IBUF)
+     LUT6:I1->O            3   0.203   0.755  trgLinkSynced_trigFlag_AND_1547_o1 (trgLinkSynced_trigFlag_AND_1547_o)
+     LUT2:I0->O            1   0.203   0.579  Reg_state_0_LDC (Reg_state_0_LDC)
      LDP:PRE                   0.430          Reg_state_0_LDC1
     ----------------------------------------
-    Total                      5.581ns (2.060ns logic, 3.521ns route)
-                                       (36.9% logic, 63.1% route)
+    Total                      4.451ns (2.058ns logic, 2.393ns route)
+                                       (46.2% logic, 53.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_FANOUT/pll_base_inst/CLKOUT1'
@@ -1691,10 +1690,10 @@ Clock to Setup on destination clock CLOCK_FANOUT/pll_base_inst/CLKOUT0
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 CLOCK_FANOUT/pll_base_inst/CLKOUT0|    5.576|         |    1.026|         |
-Mram__n1482                       |         |    2.828|         |         |
-Mram__n14821                      |         |    2.264|         |         |
-Mram__n14822                      |         |    3.821|         |         |
-Reg_state[3]_GND_397_o_Mux_800_o  |         |    2.860|         |         |
+Mram__n1477                       |         |    2.828|         |         |
+Mram__n14771                      |         |    2.264|         |         |
+Mram__n14772                      |         |    3.821|         |         |
+Reg_state[3]_GND_397_o_Mux_800_o  |         |    2.796|         |         |
 Reg_state[3]_PWR_40_o_Mux_150_o   |         |    1.216|         |         |
 TriggerLogic/TrigData_6_G         |         |    1.179|         |         |
 ----------------------------------+---------+---------+---------+---------+
@@ -1712,31 +1711,31 @@ Reg_state[3]_GND_445_o_Mux_896_o  |         |    4.500|         |         |
 Reg_state[3]_GND_461_o_Mux_928_o  |         |    4.483|         |         |
 ----------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n1482
+Clock to Setup on destination clock Mram__n1477
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    4.790|         |
-Reg_state[3]_GND_109_o_Mux_224_o  |         |         |    3.426|         |
+CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    4.851|         |
+Reg_state[3]_GND_109_o_Mux_224_o  |         |         |    3.487|         |
 ----------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n14821
+Clock to Setup on destination clock Mram__n14771
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    2.354|         |
+CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    2.368|         |
 Reg_state[3]_GND_141_o_Mux_288_o  |         |         |    2.851|         |
 Reg_state[3]_GND_493_o_Mux_992_o  |         |         |    1.320|         |
 ----------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n14822
+Clock to Setup on destination clock Mram__n14772
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    2.451|         |
+CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    2.465|         |
 trgLinkSynced_trigFlag_AND_1547_o |         |         |    1.742|         |
 ----------------------------------+---------+---------+---------+---------+
 
@@ -1936,7 +1935,7 @@ Reg_state[3]_GND_333_o_Mux_672_o|         |         |    2.583|         |
 Reg_state[3]_GND_349_o_Mux_704_o|         |         |    2.481|         |
 Reg_state[3]_GND_365_o_Mux_736_o|         |         |    2.566|         |
 Reg_state[3]_GND_381_o_Mux_768_o|         |         |    2.583|         |
-Reg_state[3]_GND_397_o_Mux_800_o|         |         |    2.575|         |
+Reg_state[3]_GND_397_o_Mux_800_o|         |         |    2.511|         |
 Reg_state[3]_GND_413_o_Mux_832_o|         |         |    2.409|         |
 Reg_state[3]_GND_429_o_Mux_864_o|         |         |    2.535|         |
 Reg_state[3]_GND_445_o_Mux_896_o|         |         |    2.518|         |
@@ -1951,7 +1950,7 @@ Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    9.125|         |
 Reg_state[3]_GND_109_o_Mux_224_o  |         |         |    7.806|         |
-trgLinkSynced_trigFlag_AND_1547_o |         |         |    3.733|         |
+trgLinkSynced_trigFlag_AND_1547_o |         |         |    2.972|         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SSTin
@@ -1971,23 +1970,22 @@ SSTin          |         |         |    1.100|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock trgLinkSynced_trigFlag_AND_1547_o
-----------------------------------+---------+---------+---------+---------+
-                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------+---------+---------+---------+---------+
-CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    2.463|         |
-Reg_state[3]_GND_397_o_Mux_800_o  |         |         |    3.987|         |
-----------------------------------+---------+---------+---------+---------+
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+Reg_state[3]_GND_397_o_Mux_800_o|         |         |    3.683|         |
+--------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.31 secs
+Total CPU time to Xst completion: 16.17 secs
  
 --> 
 
-Total memory usage is 4510664 kilobytes
+Total memory usage is 4510636 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  507 (   0 filtered)

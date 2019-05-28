@@ -73,14 +73,13 @@ signal SSTclk_cntr : slv (1 downto 0) := (others=> '0');
 signal timeStamp : slv(23 downto 0) := (others => '0');
 signal sync_ts : sl := '0';
 --QBLINK signals
-signal tx : sl;
-signal rx : sl := '0';
+signal tx : sl := '0';
+signal rx : sl;
 signal wordin : slv(31 DOWNTO 0) := (others => '0');
 signal wordout : slv(31 DOWNTO 0) := (others => '0');
 signal wordin_valid :sl := '0';
 signal wordout_valid : sl := '0';
 signal wordout_req : sl := '0';
-signal QBreset : sl := '0';
 signal trgLinkSynced : sl := '0';
 signal serialCLKLocked : sl := '0';
 signal cmd_type : slv(31 downto 0) := x"00000000";
@@ -161,15 +160,6 @@ O => RX_P,
 OB => RX_N,
 I => rx);
 
---SYSCLK_IBUFGDS_inst : IBUFGDS --taken care of by the Clock div
---generic map (
---					DIFF_TERM => FALSE,
---					IOSTANDARD => "LVDS_25")
---port map (
---O => sysclk, -- Clock buffer output
---I => SYSCLK_P, -- Diff_p clock buffer input
---IB => SYSCLK_N -- Diff_n clock buffer input
---);
 
 sst_OBUFDS_inst : OBUFDS --(Nathan)instantiation of OBUFDS buffer
 generic map (IOSTANDARD => "LVDS_25")
@@ -214,7 +204,7 @@ end process;
 comm_process : entity work.QBLink                                                     
 PORT MAP( 
 			 sstClk => sysclk,
-			 rst => QBreset,
+			 rst => sync,
 			 rawSerialOut => rx,
 			 rawSerialIn => tx,
 			 localWordIn => wordin,
@@ -225,8 +215,6 @@ PORT MAP(
 			 trgLinkSynced => trgLinkSynced,
 			 serialClkLocked => serialClkLocked
 			 ); 
-
-			 
 
 TARGETX_control: entity work.TARGETX_DAC_CONTROL 
 PORT MAP(
@@ -303,6 +291,22 @@ tx_dac_load_period  <= DC_REG(3);
 tx_dac_latch_period <= DC_REG(4);
 reset_sm <= DC_REG(5)(11); --register 5, bit 12 drives reset of state machines
 
+--QBLink_rst : process(reset_sm, sysclk)
+-- variable cnt : integer := 0;
+--  begin
+--   IF(reset_sm = '1') THEN
+--		IF (rising_edge(sysclk)) and (cnt <= 5) THEN
+--			QBreset <= '1';
+--			cnt := cnt + 1;
+--		ELSE
+--			QBreset <= '0';
+--			cnt := 0;
+--		END IF;
+--	ELSE
+--		QBreset <= '0';
+--	END IF;
+--END process;
+
 DCReg: PROCESS(sysclk, Reg_state, trgLinkSynced, serialClkLocked, wordout_valid, wordout, trigflag, cmd_type) 
 BEGIN
    IF trigFlag = '1' or reset_sm = '1' THEN 
@@ -311,7 +315,7 @@ BEGIN
 		Reg_state <= SYNC_LINK;
 	ELSE
 		IF(rising_edge(sysclk)) THEN
-		QBreset <= '0'; --turn off reset at the beginning of each clock period
+--		QBreset <= '0'; --turn off reset at the beginning of each clock period
 		Reg_state <= Reg_nxtState;
 		END IF;
 	END IF;

@@ -39,22 +39,7 @@ ARCHITECTURE behavior OF DC_Comm_QBLinkTB IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT DC_Comm
-    PORT(
-         DATA_CLK : IN  std_logic;
-         RX : IN  std_logic;
-         TX : OUT  std_logic;
-         SYNC : OUT  std_logic;
-         DC_CMD : IN  std_logic_vector(31 downto 0);
-         CMD_VALID : IN  std_logic;
-         RESP_REQ : IN  std_logic;
-         DC_RESPONSE : OUT  std_logic_vector(31 downto 0);
-         RESP_VALID : OUT  std_logic;
-         QB_RST : IN  std_logic;
-         SERIAL_CLK_LCK : OUT  std_logic;
-         TRIG_LINK_SYNC : OUT  std_logic
-        );
-    END COMPONENT;
+
     
 
    --Inputs
@@ -86,7 +71,7 @@ ARCHITECTURE behavior OF DC_Comm_QBLinkTB IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DC_Comm PORT MAP (
+   uut: entity work.DC_Comm PORT MAP (
           DATA_CLK => DATA_CLK,
           RX => RX,
           TX => TX,
