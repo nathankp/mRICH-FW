@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_beh.prj" "work.TriggerTB" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmdInerpreter_TB_isim_beh.exe" -prj "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmdInerpreter_TB_beh.prj" "work.cmdInerpreter_TB" 

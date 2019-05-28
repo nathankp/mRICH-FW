@@ -93,7 +93,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL">
@@ -209,7 +209,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL">
@@ -261,11 +261,11 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="../../../QBLink/source/BMD_definitions.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
     </file>
     <file xil_pn:name="../../../QBLink/source/BMD_autoinit_definitions.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="DC_Comm.vhd" xil_pn:type="FILE_VHDL">
@@ -273,7 +273,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
     </file>
     <file xil_pn:name="cmdInerpreter_TB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="227"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="227"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="227"/>
@@ -309,7 +309,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="241"/>
     </file>
     <file xil_pn:name="TriggerTB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="257"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="257"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="257"/>
@@ -323,11 +323,11 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ipcore_dir/Timestamper.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ck_package.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.xco" xil_pn:type="FILE_COREGEN">
@@ -335,8 +335,16 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="TARGETX_DAC_CONTROL.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="BMD_autoinit_definitions.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="271"/>
+    </file>
+    <file xil_pn:name="BMD_definitions.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="272"/>
     </file>
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -514,6 +522,7 @@
     <property xil_pn:name="Include sdf_annotate task in Verilog File" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Incremental Compilation" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Insert Buffers to Prevent Pulse Swallowing" xil_pn:value="true" xil_pn:valueState="default"/>
+    <property xil_pn:name="Instance Name for Simulation in Hardware" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Instantiation Template Target Language Xps" xil_pn:value="VHDL" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TCK" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TDI" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
@@ -634,8 +643,8 @@
     <property xil_pn:name="Run for Specified Time Translate" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/TriggerTB" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.TriggerTB" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/cmdInerpreter_TB" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.cmdInerpreter_TB" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
@@ -653,13 +662,14 @@
     <property xil_pn:name="Simulator" xil_pn:value="ISim (VHDL/Verilog)" xil_pn:valueState="default"/>
     <property xil_pn:name="Slice Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify 'define Macro Name and Value" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.TriggerTB" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.cmdInerpreter_TB" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-3" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map spartan6" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
+    <property xil_pn:name="Target Board for Hardware Co-Simulation" xil_pn:value="SP601 (JTAG)" xil_pn:valueState="default"/>
     <property xil_pn:name="Target Simulator" xil_pn:value="Please Specify" xil_pn:valueState="default"/>
     <property xil_pn:name="Timing Mode Map" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
     <property xil_pn:name="Timing Mode Par" xil_pn:value="Performance Evaluation" xil_pn:valueState="default"/>
@@ -703,7 +713,7 @@
     <!--                                                                                  -->
     <!-- The following properties are for internal use only. These should not be modified.-->
     <!--                                                                                  -->
-    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|TriggerTB|behavior" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="PROP_BehavioralSimTop" xil_pn:value="Architecture|cmdInerpreter_TB|behavior" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DesignName" xil_pn:value="SCROD_QBLinkProto" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_DevFamilyPMName" xil_pn:value="spartan6" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_FPGAConfiguration" xil_pn:value="FPGAConfiguration" xil_pn:valueState="default"/>

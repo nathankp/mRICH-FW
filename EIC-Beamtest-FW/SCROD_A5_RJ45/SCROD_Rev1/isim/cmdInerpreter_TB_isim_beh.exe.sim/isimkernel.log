@@ -1,0 +1,10 @@
+Command line:
+   cmdInerpreter_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50790
+
+Tue May 28 00:29:16 2019
+
+
+ Elaboration Time: 0.640625 sec

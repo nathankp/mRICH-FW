@@ -25,53 +25,24 @@
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
 --------------------------------------------------------------------------------
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
-use work.BMD_definitions.all;
+Library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use ieee.std_logic_unsigned.all;
+--use ieee.std_logic_arith.all;
 Library UNISIM;
 use UNISIM.vcomponents.all;
+use work.all;
+use work.Eth1000BaseXPkg.all;
+use work.GigabitEthPkg.all;
+use work.BMD_definitions.all; --need to include BMD_definitions in addition to work.all
+use work.UtilityPkg.all;
 
  
 ENTITY cmdInerpreter_TB IS
 END cmdInerpreter_TB;
  
 ARCHITECTURE behavior OF cmdInerpreter_TB IS 
- 
-    -- Component Declaration for the Unit Under Test (UUT)
- 
-    COMPONENT CommandInterpreter
-    PORT(
-         usrClk : IN  std_logic;
-         dataClk : IN  std_logic;
-         usrRst : IN  std_logic;
-         rxData : IN  std_logic_vector(31 downto 0);
-         rxDataValid : IN  std_logic;
-         rxDataLast : IN  std_logic;
-         rxDataReady : OUT  std_logic;
-         txData : OUT  std_logic_vector(31 downto 0);
-         txDataValid : OUT  std_logic;
-         txDataLast : OUT  std_logic;
-         txDataReady : IN  std_logic;
-         myId : IN  std_logic_vector(15 downto 0);
-         serialClkLck : IN  std_logic;
-         trigLinkSync : IN  std_logic;
-         DC_CMD : OUT  std_logic_vector(31 downto 0);
-         QB_WrEn : OUT  std_logic;
-         QB_RdEn : OUT  std_logic;
-         DC_RESP : IN  std_logic_vector(31 downto 0);
-         DC_RESP_VALID : IN  std_logic;
-         regAddr : OUT  std_logic_vector(15 downto 0);
-         regWrData : OUT  std_logic_vector(15 downto 0);
-         regRdData : IN  std_logic_vector(15 downto 0);
-         regReq : OUT  std_logic;
-         regOp : OUT  std_logic;
-         regAck : IN  std_logic
-        );
-    END COMPONENT;
-    
-
    --Inputs
    signal usrClk : std_logic := '0';
    signal dataClk : std_logic := '0';
@@ -81,60 +52,67 @@ ARCHITECTURE behavior OF cmdInerpreter_TB IS
    signal rxDataLast : std_logic := '0';
    signal txDataReady : std_logic := '0';
    signal myId : std_logic_vector(15 downto 0) := (others => '0');
-   signal serialClkLck : std_logic := '0';
-   signal trigLinkSync : std_logic := '0';
+   signal serialClkLck : std_logic_vector(3 downto 0):= (others =>'0');
+   signal trigLinkSync : std_logic_vector(3 downto 0):= (others =>'0');
    signal DC_RESP : std_logic_vector(31 downto 0) := (others => '0');
-   signal DC_RESP_VALID : std_logic := '0';
+   signal DC_RESP_VALID :std_logic_vector(3 downto 0):= (others =>'0');
    signal regRdData : std_logic_vector(15 downto 0) := (others => '0');
    signal regAck : std_logic := '0';
-
+	signal evntFlag : std_logic := '0';
  	--Outputs
    signal rxDataReady : std_logic;
    signal txData : std_logic_vector(31 downto 0);
    signal txDataValid : std_logic;
    signal txDataLast : std_logic;
-   signal DC_CMD : std_logic_vector(31 downto 0);
-   signal QB_WrEn : std_logic;
-   signal QB_RdEn : std_logic;
-   signal regAddr : std_logic_vector(15 downto 0);
-   signal regWrData : std_logic_vector(15 downto 0);
+   signal DC_CMD : std_logic_vector(31 downto 0) := (others => '0');
+   signal QB_WrEn : std_logic_vector(3 downto 0) := (others => '0');
+   signal QB_RdEn : std_logic_vector(3 downto 0):= (others => '0');
+   signal regAddr : std_logic_vector(15 downto 0):=(others => '0');
+   signal regWrData : std_logic_vector(15 downto 0):=(others => '0');
    signal regReq : std_logic;
    signal regOp : std_logic;
 
-	signal CtrlRegister : GPR;
+	signal CtrlRegister : GPR := (others => (others => '0'));
+	signal QB_RST : std_logic_vector(3 downto 0):=(others => '0');
    -- Clock period definitions
    constant usrClk_period : time := 8 ns;
    constant dataClk_period : time := 40 ns;
 	
-	------------QBLINK SIGNALS----------------
+	------------DC_COMM SIGNALS----------------
 	
    --Inputs
-	
-   signal RX : std_logic := '0';
-   signal CMD_VALID : std_logic := '0';
-   signal RESP_REQ : std_logic := '0';
-   signal QB_RST : std_logic := '0';
-
+   signal RX : std_logic_vector(3 downto 0) := (others=>'0');
+	signal TrigLogicRst : std_logic := '0';
  	--Outputs
-   signal TX : std_logic;
+   signal TX : std_logic_vector(3 downto 0) := (others => '0');
    signal SYNC : std_logic;
-   signal DC_RESPONSE : std_logic_vector(31 downto 0);
-   signal RESP_VALID : std_logic;
-   signal SERIAL_CLK_LCK : std_logic;
-   signal TRIG_LINK_SYNC : std_logic;
+
+	-----------IO Buff signals---------------
+	signal global_event : std_logic_vector(3 downto 0) := (others => '0');
+	signal GLOBAL_EVENT_P : std_logic_vector(3 downto 0) := (others => '0');
+	signal GLOBAL_EVENT_N : std_logic_vector(3 downto 0) := (others => '1');
+	signal TX_P : std_logic_vector(3 downto 0) := (others=>'0');
+	signal TX_N : std_logic_vector(3 downto 0) := (others=>'1');
+	signal RX_P : std_logic_vector(3 downto 0) := (others=>'0');
+	signal RX_N : std_logic_vector(3 downto 0) := (others=>'1');
+	signal DC_CLK_P : std_logic_vector(3 downto 0) := (others=>'0');
+	signal DC_CLK_N : std_logic_vector(3 downto 0) := (others=>'1');
+	signal SYNC_P : std_logic_vector(3 downto 0) := (others=>'0');
+	signal SYNC_N : std_logic_vector(3 downto 0) := (others=>'1');
 	
-	--training partner signals
-	signal sendBackWd : std_logic_vector(31 downto 0);
-	signal respond : std_logic := '0';
-	signal cmd_incoming : std_logic;
-	signal ImListening : std_logic := '0';
-	signal trgLinkSync1 : std_logic;
-	signal serialClkLck1 : std_logic;
- 
+	---------------DC signals-----------------------
+	signal TX_TRIG : word5Array(3 downto 0) := (others => "00000");
+	signal SSTIN_P: std_logic_vector(3 downto 0) := (others=>'0');
+	signal SSTIN_N : std_logic_vector(3 downto 0) := (others=>'1');
+	signal SIN : std_logic_vector(3 downto 0) := (others=>'0');
+	signal PCLK : std_logic_vector(3 downto 0) := (others=>'0');
+	signal SCLK : std_logic_vector(3 downto 0) := (others=>'0');
+	signal SHOUT : std_logic_vector(3 downto 0) := (others=>'0');
 BEGIN
- 
 	-- Instantiate the Unit Under Test (UUT)
-   uut: CommandInterpreter PORT MAP (
+
+	
+   uut: entity work.CommandInterpreter PORT MAP (
           usrClk => usrClk,
           dataClk => dataClk,
           usrRst => usrRst,
@@ -146,13 +124,13 @@ BEGIN
           txDataValid => txDataValid,
           txDataLast => txDataLast,
           txDataReady => txDataReady,
-          myId => myId,
           serialClkLck => serialClkLck,
           trigLinkSync => trigLinkSync,
           DC_CMD => DC_CMD,
           QB_WrEn => QB_WrEn,
           QB_RdEn => QB_RdEn,
           DC_RESP => DC_RESP,
+			 EVNT_FLAG => evntFlag,
           DC_RESP_VALID => DC_RESP_VALID,
           regAddr => regAddr,
           regWrData => regWrData,
@@ -161,37 +139,71 @@ BEGIN
           regOp => regOp,
           regAck => regAck
         );
-		   SCROD_QB: entity work.DC_Comm PORT MAP (
+		  
+		SCROD_QB: entity work.DC_Comm PORT MAP ( --need to update signal types
           DATA_CLK => dataClk,
           RX => RX,
           TX => TX,
-          SYNC => SYNC,
           DC_CMD => DC_CMD,
           CMD_VALID => QB_WrEn,
           RESP_REQ => QB_RdEn,
           DC_RESPONSE => DC_RESP,
           RESP_VALID => DC_RESP_VALID,
+          Event_Trig => evntFlag,
           QB_RST => QB_RST,
-          SERIAL_CLK_LCK => SERIAL_CLK_LCK,
-          TRIG_LINK_SYNC => TRIG_LINK_SYNC
+			 TrigLogicRst => TrigLogicRst,
+          SERIAL_CLK_LCK => serialClkLck,
+          TRIG_LINK_SYNC => trigLinkSync
         );
-	--QBLink Training Partner
-	QBL_trainer: entity work.QBLink
-	PORT MAP (
-			 sstClk => dataClk,
-			 rst => QB_RST,
-			 rawSerialOut => RX,
-			 rawSerialIn => TX,
-			 localWordIn => sendBackWd, 
-			 localWordInValid => respond,
-			 localWordOut => sendBackWd,
-			 localWordOutValid => cmd_incoming,
-			 localWordOutReq => ImListening,
-			 trgLinkSynced => trgLinkSync1,
-			 serialClkLocked => serialClkLck1
-			 );
-
-
+		  
+		  	DC_IO_BUFF : entity work.IO_Buffers
+			generic map (num_DC => 3)
+			PORT MAP(
+				RX_P => RX_P,
+				RX_N => RX_N,
+				TX => TX,
+				GLOB_EVNT => global_event,
+				SYNC => SYNC,
+				TX_P => TX_P,
+				TX_N => TX_N,
+				DC_CLK_P => DC_CLK_P,
+				DC_CLK_N => DC_CLK_N,
+				DATA_CLK => dataClk,
+				GLOB_EVNT_P => GLOBAL_EVENT_P,
+				GLOB_EVNT_N => GLOBAL_EVENT_N,
+				RX => RX,
+				SYNC_P => SYNC_P,
+				SYNC_N => SYNC_N
+			);
+		  
+		  DC_gen : For I in 3 downto 0 Generate
+			DC : entity work.HMB_DC_QBTop
+				PORT MAP(
+					SYSCLK_P => DC_CLK_P(I),
+					SYSCLK_N => DC_CLK_N(I),
+					TX_P => TX_P(I),
+					TX_N => TX_N(I),
+					SYNC_P => SYNC_P(I),
+					SYNC_N => SYNC_N(I),
+					RX_P => RX_P(I),
+					RX_N => RX_N(I),
+					TX_TRIG => TX_TRIG(I),
+					SSTin_P => SSTin_P(I),
+					SSTin_N => SSTin_N(I),
+					SHOUT => SHOUT(I),
+					SIN => SIN(I),
+					PCLK => PCLK(I),
+					SCLK => SCLK(I)
+					);
+					
+			end GENERATE DC_gen;	
+--	DC_reset : process(dataClk) --uncomment to test DC_reset via SCROD register programming.
+--begin 
+--	IF rising_edge(dataClk) THEN
+--	SYNC  <= CtrlRegister(2)(8);
+--		QB_RST <= CtrlRegister(2)(3 downto 0);
+--	END IF;
+--end process;
    -- Clock process definitions
    usrClk_process :process
    begin
@@ -213,12 +225,15 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
-		QB_RST <= '1';
-      wait for 100 ns;	
-		wait for dataClk_period*10;
-		QB_RST <= '0';
-		wait until TRIG_LINK_SYNC ='1' and SERIAL_CLK_LCK = '1';
+		wait until rising_edge(dataClk);
+		QB_RST <= (others=>'1'); --not working, this does not effectively reset the QBLink modules, 
+		sync <= '1';
+      wait for dataClk_period*3;
+		sync <= '0';
+		QB_RST <= (others=>'0');
+		wait until trigLinkSync= "1111"; --takes 53.66 us to sync  
+		rxDataValid <= '1';
+		wait until rxDataready = '1';
 	   rxData <= x"00BE11E2"; --HEADER (IDLE STATE)
 		rxDataValid <= '1';
 		wait for usrClk_period; 
@@ -228,7 +243,7 @@ BEGIN
 		rxData <= x"646F6974"; --PACKET_TYPE: WORD_COMMAND_C
 		rxDataValid <= '1';
 		wait for usrClk_period;
-		rxData <= x"00DC0001"; --COMMAND_TARGET: DC
+		rxData <= x"0000A500"; --COMMAND_TARGET: DC
 		rxDataValid <= '1';
 		wait for usrClk_period;
 		rxData <= x"00000012"; --Command ID
@@ -237,21 +252,19 @@ BEGIN
 		rxData <= x"72697465"; --Command Type: WORD_WRITE_C
 		rxDataValid <= '1';
 		wait for usrClk_period;
-		rxData <= x"00010001"; --Command Data: Write 1 to register 1
+		rxData <= x"00000002"; --Command Data: keep register 2 cleared, replace with x"010F0002" to reset DCs
 		rxDataValid <= '1';
 		wait for usrClk_period;
-		rxData <= x"726A7478"; --command 1 Checksum
+		rxData <= x"73787479"; --command 1 Checksum
 		rxDataValid <= '1';
 		txDataReady <= '1';
-		wait for usrClk_period; --goes to write state
-		wait until cmd_incoming = '1';
-		ImListening <= '1';
-		respond <= '1';
-		wait for dataClk_period;
-		rxDataValid <= '1';
-		rxDataLast <= '1';
-		rxData <= x"00000000"; --packet checksum: doesn't check (empty state) so this is an arbitrary value
-		rxDataValid <= '1';
+		wait for usrClk_period*10;
+		rxDatalast <= '1';
+		wait for usrClk_period*6;
+		wait until rising_edge(usrClk);
+		rxDataLast <= '0';
+		txDataReady <= '0';     
+		--next Step: read and write to DCs Registers
       wait;
    end process; 
 	
@@ -273,7 +286,6 @@ BEGIN
          end if;
       end if;
    end process;
-
 END;
 --     wait for usrClk_period*10;
 --      rxData <= x"00BE11E2"; --HEADER (IDLE STATE)
