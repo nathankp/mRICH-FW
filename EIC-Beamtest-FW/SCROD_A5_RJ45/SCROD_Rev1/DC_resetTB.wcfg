@@ -34,7 +34,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="53" />
+   <WVObjectSize size="39" />
    <wvobject fp_name="/cmdinerpreter_tb/usrclk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">usrclk</obj_property>
       <obj_property name="ObjectShortName">usrclk</obj_property>
@@ -85,8 +85,10 @@
       <obj_property name="ObjectShortName">regrddata[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/regack" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">regack</obj_property>
       <obj_property name="ObjectShortName">regack</obj_property>
+      <obj_property name="label">regack</obj_property>
    </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/evntflag" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">evntflag</obj_property>
@@ -150,22 +152,6 @@
       <obj_property name="ElementShortName">qb_rst[3:0]</obj_property>
       <obj_property name="ObjectShortName">qb_rst[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/rx" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rx[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/triglogicrst" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">triglogicrst</obj_property>
-      <obj_property name="ObjectShortName">triglogicrst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/tx" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tx[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sync" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">sync</obj_property>
-      <obj_property name="ObjectShortName">sync</obj_property>
-   </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/global_event" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">global_event[3:0]</obj_property>
       <obj_property name="ObjectShortName">global_event[3:0]</obj_property>
@@ -178,65 +164,25 @@
       <obj_property name="ElementShortName">global_event_n[3:0]</obj_property>
       <obj_property name="ObjectShortName">global_event_n[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/tx_p" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tx_p[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_p[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/triglogicrst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">triglogicrst</obj_property>
+      <obj_property name="ObjectShortName">triglogicrst</obj_property>
    </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/tx_n" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tx_n[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_n[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/rx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/rx_p" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rx_p[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_p[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/tx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/rx_n" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rx_n[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_n[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/dc_clk_p" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dc_clk_p[3:0]</obj_property>
-      <obj_property name="ObjectShortName">dc_clk_p[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/dc_clk_n" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dc_clk_n[3:0]</obj_property>
-      <obj_property name="ObjectShortName">dc_clk_n[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sync_p" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sync_p[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sync_p[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sync_n" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sync_n[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sync_n[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
    </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/tx_trig" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">tx_trig[3:0]</obj_property>
       <obj_property name="ObjectShortName">tx_trig[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sstin_p" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sstin_p[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sstin_p[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sstin_n" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sstin_n[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sstin_n[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sin" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sin[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sin[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/pclk" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pclk[3:0]</obj_property>
-      <obj_property name="ObjectShortName">pclk[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/sclk" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sclk[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sclk[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/cmdinerpreter_tb/shout" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">shout[3:0]</obj_property>
-      <obj_property name="ObjectShortName">shout[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/usrclk_period" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">usrclk_period</obj_property>

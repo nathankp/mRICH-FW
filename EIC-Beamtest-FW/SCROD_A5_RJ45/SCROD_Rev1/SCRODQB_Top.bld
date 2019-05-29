@@ -280,10 +280,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 109
 
-Total memory usage is 4502252 kilobytes
+Total memory usage is 4502372 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
-Total CPU time to NGDBUILD completion:   7 sec
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   9 sec
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

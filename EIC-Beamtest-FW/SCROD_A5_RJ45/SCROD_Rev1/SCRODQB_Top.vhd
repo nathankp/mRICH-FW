@@ -275,8 +275,8 @@ U_S6EthTop : entity work.S6EthTop
          regAck      => regAck
       );
 		
- SCROD_Ctrl_Reg: process(internal_fpga_clk,regReq,userRst,regOp) begin
-      if rising_edge(internal_fpga_clk) then
+ SCROD_Ctrl_Reg: process(ethClk125,regReq,userRst,regOp) begin
+      if rising_edge(ethClk125) then
          if userRst = '1' then
             regAck    <= '0';
             regRdData <= (others => '0');
