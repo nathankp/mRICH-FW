@@ -7,7 +7,9 @@ C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
 ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
-../../../QBLink/QBlink/ipcore_dir -p xc6slx150t-fgg676-3 -i
+../../../QBLink/QBlink/ipcore_dir -sd
+../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -p xc6slx150t-fgg676-3
+-i
 C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.
 ngc
 C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top_
@@ -52,13 +54,13 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4449648 kilobytes
+Total memory usage is 4449096 kilobytes
 
 Writing NGC file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
 _cs.ngc" ...
-Total REAL time to NGCBUILD completion:  3 sec
-Total CPU time to NGCBUILD completion:   3 sec
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
 
 Writing NGCBUILD log file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top

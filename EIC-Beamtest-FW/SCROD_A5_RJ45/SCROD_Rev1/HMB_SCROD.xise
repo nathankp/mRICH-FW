@@ -17,7 +17,7 @@
   <files>
     <file xil_pn:name="SCRODQB_Top.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
     </file>
     <file xil_pn:name="../../../../QBLink/source/BMD trim dac calc .txt" xil_pn:type="FILE_USERDOC"/>
     <file xil_pn:name="SCRODQB_TB.vhd" xil_pn:type="FILE_VHDL">
@@ -270,7 +270,7 @@
     </file>
     <file xil_pn:name="DC_Comm.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="24"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
     </file>
     <file xil_pn:name="cmdInerpreter_TB.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="26"/>
@@ -286,11 +286,11 @@
     </file>
     <file xil_pn:name="ipcore_dir/clk_Div.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
     </file>
     <file xil_pn:name="IO_Buffers.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="23"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
     </file>
     <file xil_pn:name="IO_BUFTB.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -345,6 +345,9 @@
     <file xil_pn:name="BMD_definitions.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
+    </file>
+    <file xil_pn:name="TriggerCS.cdc" xil_pn:type="FILE_CDC">
+      <association xil_pn:name="Implementation" xil_pn:seqID="280"/>
     </file>
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>

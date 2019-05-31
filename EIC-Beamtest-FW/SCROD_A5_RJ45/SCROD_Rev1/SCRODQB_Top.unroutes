@@ -1,17 +1,13 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 28 11:53:35 2019
+Thu May 30 13:32:22 2019
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 54 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 14 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
-   QBstart_wr<0>
-   QBstart_wr<1>
-   QBstart_wr<2>
-   QBstart_wr<3>
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_O
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_O
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_O
@@ -26,41 +22,5 @@ WARNING:ParHelpers:361 - There are 54 loadless signals in this design. This desi
    U_S6EthTop/usrClkValid_dcmClkValid_OR_2_o
    U_S6EthTop/usrClkValid_txBufStatus0[1]_OR_4_o
    U_S6EthTop/usrClkValid_txBufStatus1[1]_OR_6_o
-   dc_cmd<0>
-   dc_cmd<10>
-   dc_cmd<11>
-   dc_cmd<12>
-   dc_cmd<13>
-   dc_cmd<14>
-   dc_cmd<15>
-   dc_cmd<16>
-   dc_cmd<17>
-   dc_cmd<18>
-   dc_cmd<19>
-   dc_cmd<1>
-   dc_cmd<20>
-   dc_cmd<21>
-   dc_cmd<22>
-   dc_cmd<23>
-   dc_cmd<24>
-   dc_cmd<25>
-   dc_cmd<26>
-   dc_cmd<27>
-   dc_cmd<28>
-   dc_cmd<29>
-   dc_cmd<2>
-   dc_cmd<30>
-   dc_cmd<31>
-   dc_cmd<3>
-   dc_cmd<4>
-   dc_cmd<5>
-   dc_cmd<6>
-   dc_cmd<7>
-   dc_cmd<8>
-   dc_cmd<9>
-   rx_dc<0>
-   rx_dc<1>
-   rx_dc<2>
-   rx_dc<3>
 
 

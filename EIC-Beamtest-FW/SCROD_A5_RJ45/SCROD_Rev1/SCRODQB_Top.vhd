@@ -151,8 +151,17 @@ attribute keep_hierarchy of Behavioral: architecture is TRUE;
 begin
 
 
---watch4Events <= CtrlRegister(2)(1);
-reset <= CtrlRegister(0)(0);
+CLOCK_FANOUT : entity work.clk_Div
+  port map
+   (-- Clock in ports
+    CLK_IN1 => ethClk125,
+    -- Clock out ports
+    CLK_OUT1 => internal_fpga_clk,
+    CLK_OUT2 => internal_data_clk,
+    -- Status and control signals
+    RESET  => dcm_rst,
+    LOCKED => dcm_locked);
+	 
 global_event <= (others => evntFlag);
 
 DC_reset : process(internal_data_clk) 
