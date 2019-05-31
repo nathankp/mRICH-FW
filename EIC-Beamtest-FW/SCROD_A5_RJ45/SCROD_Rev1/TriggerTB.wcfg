@@ -3,24 +3,27 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/TriggerTB_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmdInerpreter_TB_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="bip_usecase_utils_pkg_v2_0" />
             <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bmd_autoinit_definitions" />
             <top_module name="bmd_definitions" />
             <top_module name="c_addsub_pkg_v11_0" />
             <top_module name="c_compare_v11_0_comp" />
             <top_module name="c_counter_binary_v11_0_pkg" />
             <top_module name="c_mux_bus_v11_0_comp" />
             <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="ck_package" />
+            <top_module name="cmdinerpreter_tb" />
             <top_module name="eth1000basexpkg" />
             <top_module name="gigabitethpkg" />
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
             <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
             <top_module name="std_logic_unsigned" />
             <top_module name="textio" />
-            <top_module name="triggertb" />
             <top_module name="utilitypkg" />
             <top_module name="vcomponents" />
             <top_module name="vital_primitives" />
@@ -31,337 +34,116 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="52" />
-   <wvobject fp_name="/triggertb/usrclk" type="logic" db_ref_id="1">
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/cmdinerpreter_tb/usrclk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">usrclk</obj_property>
       <obj_property name="ObjectShortName">usrclk</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/dataclk" type="logic" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/dataclk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">dataclk</obj_property>
       <obj_property name="ObjectShortName">dataclk</obj_property>
    </wvobject>
-   <wvobject fp_name="divider135" type="divider">
-      <obj_property name="label">SCROD</obj_property>
+   <wvobject fp_name="divider54" type="divider">
+      <obj_property name="label">scrod</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/usrrst" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">usrrst</obj_property>
-      <obj_property name="ObjectShortName">usrrst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/regack" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">regack</obj_property>
-      <obj_property name="ObjectShortName">regack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/txdata" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">txdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">txdata[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/txdatavalid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">txdatavalid</obj_property>
-      <obj_property name="ObjectShortName">txdatavalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/txdatalast" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">txdatalast</obj_property>
-      <obj_property name="ObjectShortName">txdatalast</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/rxdataready" type="logic" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/rxdataready" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rxdataready</obj_property>
       <obj_property name="ObjectShortName">rxdataready</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/rxdata" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rxdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">rxdata[31:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/txdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">txdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/rxdatavalid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">rxdatavalid</obj_property>
-      <obj_property name="ObjectShortName">rxdatavalid</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/txdatavalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdatavalid</obj_property>
+      <obj_property name="ObjectShortName">txdatavalid</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/rxdatalast" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">rxdatalast</obj_property>
-      <obj_property name="ObjectShortName">rxdatalast</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/txdataready" type="logic" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/txdataready" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">txdataready</obj_property>
       <obj_property name="ObjectShortName">txdataready</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/rx" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rx[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/serialclklck" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">serialclklck[3:0]</obj_property>
+      <obj_property name="ObjectShortName">serialclklck[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/tx" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">tx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tx[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/triglinksync" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triglinksync[3:0]</obj_property>
+      <obj_property name="ObjectShortName">triglinksync[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/qb_wren" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">qb_wren[3:0]</obj_property>
-      <obj_property name="ObjectShortName">qb_wren[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/dc_resp" type="array" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/dc_resp" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">dc_resp[31:0]</obj_property>
       <obj_property name="ObjectShortName">dc_resp[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/dc_resp_valid" type="array" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/dc_resp_valid" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">dc_resp_valid[3:0]</obj_property>
       <obj_property name="ObjectShortName">dc_resp_valid[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/qb_rden" type="array" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/qb_wren" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_wren[3:0]</obj_property>
+      <obj_property name="ObjectShortName">qb_wren[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/qb_rden" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">qb_rden[3:0]</obj_property>
       <obj_property name="ObjectShortName">qb_rden[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/serial_clk_lck" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">serial_clk_lck[3:0]</obj_property>
-      <obj_property name="ObjectShortName">serial_clk_lck[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/qb_rst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_rst[3:0]</obj_property>
+      <obj_property name="ObjectShortName">qb_rst[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/trig_link_sync" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trig_link_sync[3:0]</obj_property>
-      <obj_property name="ObjectShortName">trig_link_sync[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/SCROD_QB/trigflag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">trigflag[3:0]</obj_property>
+      <obj_property name="ObjectShortName">trigflag[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/evnt_flag" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">evnt_flag</obj_property>
-      <obj_property name="ObjectShortName">evnt_flag</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/evntflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">evntflag</obj_property>
+      <obj_property name="ObjectShortName">evntflag</obj_property>
    </wvobject>
-   <wvobject fp_name="divider47" type="divider">
-      <obj_property name="label">Internal:DC_comm</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">128 128 255</obj_property>
-      <obj_property name="TextColor">230 230 230</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/triglogicrst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">triglogicrst</obj_property>
+      <obj_property name="ObjectShortName">triglogicrst</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/uut2/rd_req" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rd_req[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rd_req[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/uut1/t" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">t</obj_property>
-      <obj_property name="ObjectShortName">t</obj_property>
-      <wvobject fp_name="/triggertb/uut1/t.state" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">.state</obj_property>
-         <obj_property name="ObjectShortName">t.state</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.regaddr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.regaddr</obj_property>
-         <obj_property name="ObjectShortName">t.regaddr</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.regwrdata" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.regwrdata</obj_property>
-         <obj_property name="ObjectShortName">t.regwrdata</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.regrddata" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.regrddata</obj_property>
-         <obj_property name="ObjectShortName">t.regrddata</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.regreq" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.regreq</obj_property>
-         <obj_property name="ObjectShortName">t.regreq</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.regop" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.regop</obj_property>
-         <obj_property name="ObjectShortName">t.regop</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.sendresp" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.sendresp</obj_property>
-         <obj_property name="ObjectShortName">t.sendresp</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.rxdataready" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.rxdataready</obj_property>
-         <obj_property name="ObjectShortName">t.rxdataready</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.txdata" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.txdata</obj_property>
-         <obj_property name="ObjectShortName">t.txdata</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.txdatavalid" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.txdatavalid</obj_property>
-         <obj_property name="ObjectShortName">t.txdatavalid</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.txdatalast" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.txdatalast</obj_property>
-         <obj_property name="ObjectShortName">t.txdatalast</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.wordsleft" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.wordsleft</obj_property>
-         <obj_property name="ObjectShortName">t.wordsleft</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.wordoutcnt" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.wordoutcnt</obj_property>
-         <obj_property name="ObjectShortName">t.wordoutcnt</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.checksum" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.checksum</obj_property>
-         <obj_property name="ObjectShortName">t.checksum</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.deviceid" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.deviceid</obj_property>
-         <obj_property name="ObjectShortName">t.deviceid</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.commandtype" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.commandtype</obj_property>
-         <obj_property name="ObjectShortName">t.commandtype</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.command" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.command</obj_property>
-         <obj_property name="ObjectShortName">t.command</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.commandid" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.commandid</obj_property>
-         <obj_property name="ObjectShortName">t.commandid</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.noresponse" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">.noresponse</obj_property>
-         <obj_property name="ObjectShortName">t.noresponse</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.errflags" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.errflags</obj_property>
-         <obj_property name="ObjectShortName">t.errflags</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/uut1/t.timeoutcnt" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">.timeoutcnt</obj_property>
-         <obj_property name="ObjectShortName">t.timeoutcnt</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="divider136" type="divider">
+   <wvobject fp_name="divider55" type="divider">
       <obj_property name="label">DCs</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">128 128 255</obj_property>
       <obj_property name="TextColor">230 230 230</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/sstin" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">sstin</obj_property>
-      <obj_property name="ObjectShortName">sstin</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/qb_rst" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">qb_rst[3:0]</obj_property>
-      <obj_property name="ObjectShortName">qb_rst[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/triglogicrst" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">triglogicrst</obj_property>
-      <obj_property name="ObjectShortName">triglogicrst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/scrod_data_valid" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">scrod_data_valid[3:0]</obj_property>
-      <obj_property name="ObjectShortName">scrod_data_valid[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/wordin" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">wordin[3:0]</obj_property>
-      <obj_property name="ObjectShortName">wordin[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/wordin_valid" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">wordin_valid[3:0]</obj_property>
-      <obj_property name="ObjectShortName">wordin_valid[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/rd_req" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rd_req[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rd_req[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/scrod_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">scrod_data[3:0]</obj_property>
-      <obj_property name="ObjectShortName">scrod_data[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/dcsent" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dcsent[3:0]</obj_property>
-      <obj_property name="ObjectShortName">dcsent[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <wvobject fp_name="/triggertb/dcsent[3]" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">dcsent[3]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/dcsent[2]" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">dcsent[2]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/dcsent[1]" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">dcsent[1]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/triggertb/dcsent[0]" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">dcsent[0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="/triggertb/dcsent_valid" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dcsent_valid[3:0]</obj_property>
-      <obj_property name="ObjectShortName">dcsent_valid[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trglinksync1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trglinksync1[3:0]</obj_property>
-      <obj_property name="ObjectShortName">trglinksync1[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/serialclklck1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">serialclklck1[3:0]</obj_property>
-      <obj_property name="ObjectShortName">serialclklck1[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/tx_trig" type="array" db_ref_id="1">
+   <wvobject fp_name="/cmdinerpreter_tb/tx_trig" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">tx_trig[3:0]</obj_property>
       <obj_property name="ObjectShortName">tx_trig[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/sendtrigger" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sendtrigger[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sendtrigger[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigflag" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigflag[3:0]</obj_property>
-      <obj_property name="ObjectShortName">trigflag[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/triggerdata" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">triggerdata[3:0]</obj_property>
-      <obj_property name="ObjectShortName">triggerdata[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/timestamp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">timestamp[23:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp[23:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/triggertb/timestamp" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">timestamp[3:0]</obj_property>
-      <obj_property name="ObjectShortName">timestamp[3:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/dcresp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dcresp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dcresp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/send_dcresp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">send_dcresp</obj_property>
+      <obj_property name="ObjectShortName">send_dcresp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/trigflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trigflag</obj_property>
+      <obj_property name="ObjectShortName">trigflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/sendtrigger" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sendtrigger</obj_property>
+      <obj_property name="ObjectShortName">sendtrigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/triggerdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triggerdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">triggerdata[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="divider49" type="divider">
-      <obj_property name="label">Constants</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">128 128 255</obj_property>
-      <obj_property name="TextColor">230 230 230</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/usrclk_period" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">usrclk_period</obj_property>
-      <obj_property name="ObjectShortName">usrclk_period</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/dataclk_period" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">dataclk_period</obj_property>
-      <obj_property name="ObjectShortName">dataclk_period</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/ts_arb" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ts_arb[23:0]</obj_property>
-      <obj_property name="ObjectShortName">ts_arb[23:0]</obj_property>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/wordin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wordin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wordin[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigbits_arb1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigbits_arb1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">trigbits_arb1[4:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigbits_arb2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigbits_arb2[4:0]</obj_property>
-      <obj_property name="ObjectShortName">trigbits_arb2[4:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigbits_arb3" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigbits_arb3[4:0]</obj_property>
-      <obj_property name="ObjectShortName">trigbits_arb3[4:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigbits_arb4" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigbits_arb4[4:0]</obj_property>
-      <obj_property name="ObjectShortName">trigbits_arb4[4:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/triggertb/trigevent" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">trigevent[2:0]</obj_property>
-      <obj_property name="ObjectShortName">trigevent[2:0]</obj_property>
    </wvobject>
 </wave_config>

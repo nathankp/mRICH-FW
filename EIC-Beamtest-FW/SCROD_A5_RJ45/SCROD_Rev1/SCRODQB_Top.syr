@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -5152,11 +5152,11 @@ U_S6EthTop/txDisable|    1.436|         |         |         |
 
 
 Total REAL time to Xst completion: 56.00 secs
-Total CPU time to Xst completion: 56.07 secs
+Total CPU time to Xst completion: 56.37 secs
  
 --> 
 
-Total memory usage is 4629828 kilobytes
+Total memory usage is 4629760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 1524 (   0 filtered)

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: HMB_DC_QBTOP.prj
 
@@ -154,12 +154,12 @@ Parsing architecture <xilinx> of entity <clockgen_bytelink>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\QBlink.vhd" into library work
 Parsing entity <QBlink>.
 Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\QBLink\source\BMD_autoinit_definitions.vhd" into library work
 Parsing package <BMD_autoinit_definitions>.
 Parsing package body <BMD_autoinit_definitions>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\QBLink\source\BMD_definitions.vhd" into library work
-Parsing package <BMD_definitions>.
-Parsing package body <BMD_definitions>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\TriggerPack2.vhd" into library work
 Parsing entity <TriggerPack2>.
 Parsing architecture <Behavioral> of entity <triggerpack2>.
@@ -180,10 +180,6 @@ Parsing architecture <Behavioral> of entity <hmb_dc_qbtop>.
 Elaborating entity <HMB_DC_QBTOP> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <BMD_DC_CLK_GEN> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 197: triggerdata should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 198: sendtrigger should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 200: dcresp should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\mRICH_hodo_DC_V1\HMB_QBLink_proto\HODO_DC_QBTOP.vhd" Line 201: send_dcresp should be on the sensitivity list of the process
 
 Elaborating entity <QBlink> (architecture <Behavioral>) from library <work>.
 
@@ -1980,14 +1976,14 @@ Reg_state[3]_GND_397_o_Mux_800_o|         |         |    3.683|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.17 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.79 secs
  
 --> 
 
-Total memory usage is 4510636 kilobytes
+Total memory usage is 4510664 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  507 (   0 filtered)
+Number of warnings :  503 (   0 filtered)
 Number of infos    :   67 (   0 filtered)
 

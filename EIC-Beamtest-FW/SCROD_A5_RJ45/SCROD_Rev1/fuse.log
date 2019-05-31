@@ -114,8 +114,8 @@ Compiling architecture behavioral of entity TriggerPack2 [triggerpack2_default]
 Compiling architecture behavioral of entity HMB_DC_QBTOP [hmb_dc_qbtop_default]
 Compiling architecture behavior of entity cmdinerpreter_tb
 Time Resolution for simulation is 1ps.
-Waiting for 33 sub-compilation(s) to finish...
+Waiting for 31 sub-compilation(s) to finish...
 Compiled 123 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmdInerpreter_TB_isim_beh.exe
-Fuse Memory Usage: 79472 KB
-Fuse CPU Usage: 2530 ms
+Fuse Memory Usage: 79740 KB
+Fuse CPU Usage: 2578 ms

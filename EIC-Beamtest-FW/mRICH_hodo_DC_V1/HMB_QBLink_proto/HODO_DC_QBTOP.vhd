@@ -191,7 +191,7 @@ port map (
 -----------------------------------------------------------------------------
 -----------SCROD Interface-----------------------------------------------------
 -----------------------------------------------------------------------------
-QBMux : process(trigFlag) 
+QBMux : process(trigFlag, triggerData, DCresp, sendTrigger,send_DCresp) 
 begin
 	IF trigFlag = '1' THEN
 		wordin <= TriggerData;

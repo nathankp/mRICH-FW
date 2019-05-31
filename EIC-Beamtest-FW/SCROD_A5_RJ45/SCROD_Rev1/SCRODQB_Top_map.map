@@ -12,7 +12,7 @@ Target Device  : xc6slx150t
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu May 30 15:32:57 2019
+Mapped Date    : Thu May 30 18:38:56 2019
 
 Mapping design into LUTs...
 WARNING:MapLib:680 - LOC constraint AB6 on RX_DC_N<3> is invalid: No such site
@@ -23,11 +23,11 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 19 secs 
+Total REAL time at the beginning of Placer: 20 secs 
 Total CPU  time at the beginning of Placer: 17 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3f0b3b62) REAL time: 23 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:3f0b3b62) REAL time: 24 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 41 IOs, 33 are locked

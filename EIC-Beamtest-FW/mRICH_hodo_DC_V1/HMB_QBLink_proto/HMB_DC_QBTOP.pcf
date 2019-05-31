@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon May 27 20:39:41 2019
+// Written by: Map P.20131013 on Thu May 30 18:43:30 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -2726,10 +2726,10 @@ PATH TS_D_TO_J_path = FROM TIMEGRP "D_CLK" TO TIMEGRP "J_CLK";
 PATH "TS_D_TO_J_path" TIG;
 TS_asic_clk = PERIOD TIMEGRP "asic_clk" 16 ns HIGH 50%;
 TS_SSTIN_P = PERIOD TIMEGRP "SYSCLK_P" 31.25 ns HIGH 50%;
-TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout0" TS_SSTIN_P
-        HIGH 50%;
 TS_CLOCK_FANOUT_clkout1 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout1" TS_SSTIN_P /
         2.5 HIGH 50%;
+TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout0" TS_SSTIN_P
+        HIGH 50%;
 TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD TIMEGRP
         "comm_process_U_ClockGenByteLink_clkfx" TS_CLOCK_FANOUT_clkout0 / 5
         HIGH 50%;
