@@ -1,0 +1,10 @@
+Command line:
+   TriggerPack2TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56641
+
+Fri May 17 11:05:56 2019
+
+
+ Elaboration Time: 0.46875 sec
