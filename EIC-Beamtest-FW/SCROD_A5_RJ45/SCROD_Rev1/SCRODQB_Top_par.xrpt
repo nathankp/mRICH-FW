@@ -74,17 +74,9 @@
         <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="47 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="42 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
-        <item dataType="float" stringID="PAR_TIMING_SCORE" value="16700.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="2 mins 1 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="1 mins 58 secs "/>
-=======
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="47 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="42 secs "/>
-        <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
         <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="49 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="44 secs "/>
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
       </section>
     </task>
     <task stringID="PAR_par">
@@ -4647,11 +4639,7 @@
     </task>
   </application>
 
-<<<<<<< HEAD
-  <application stringID="Par" timeStamp="Tue May 07 14:21:42 2019">
-=======
   <application stringID="Par" timeStamp="Thu May 30 13:31:44 2019">
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>

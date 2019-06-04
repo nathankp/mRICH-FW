@@ -56,166 +56,48 @@
     <file xil_pn:name="HMB_SciFi_SCROD.ucf" xil_pn:type="FILE_UCF">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/EthCore.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/ArpIpArbiter.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/ArpPacketRx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/ArpPacketTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/ArpResponder.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="30"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/EthLayerRx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/EthLayerTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/EthRx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="29"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/EthTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="27"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/IPv4Rx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="26"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/IPv4Tx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="25"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/UdpBufferRx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/UdpBufferTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/UdpTxFragmenter.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo8x64.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/bram8x3000.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifoDist8x16.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
-    </file>
+    <file xil_pn:name="EthCore.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="ArpIpArbiter.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="ArpPacketRx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="ArpPacketTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="ArpResponder.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="EthLayerRx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="EthLayerTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="EthRx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="EthTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="IPv4Rx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="IPv4Tx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="UdpBufferRx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="UdpBufferTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="UdpTxFragmenter.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo8x64.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/bram8x3000.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifoDist8x16.xco" xil_pn:type="FILE_COREGEN"/>
     <file xil_pn:name="ipcore_dir/udp64kfifo.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo16x64.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo32x512RxAxi.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo18x16.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/firmware-general/General/rtl/InitRst.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="47"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/firmware-general/Transceivers/S6/GtpS6.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
-    </file>
-    <file xil_pn:name="GtpS6Tile.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/S6/rtl/S6EthTop.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="50"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXCore.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="48"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/SyncBit.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="51"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CrcPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/TpGenTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseX8To16Mux.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="41"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseX16To8Mux.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXAbilityMatch.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="31"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXAutoNeg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="40"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXMacRx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXMacTx.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="39"/>
-    </file>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo16x64.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo32x512RxAxi.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo18x16.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="InitRst.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="GtpS6.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="S6EthTop.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXCore.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="SyncBit.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="CommandInterpreter.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="CrcPkg.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="TpGenTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseX8To16Mux.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseX16To8Mux.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXAbilityMatch.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXAutoNeg.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXMacRx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXMacTx.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL"/>
     <file xil_pn:name="../../../QBLink/source/QBlink.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
@@ -349,6 +231,142 @@
     <file xil_pn:name="TriggerCS.cdc" xil_pn:type="FILE_CDC">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
+    <file xil_pn:name="Eth1000BaseX8To16Mux.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="180"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="180"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseX16To8Mux.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="181"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="181"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXAbilityMatch.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="182"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="182"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXAutoNeg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="183"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="183"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXCore.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="184"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="184"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXMacRx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="185"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="185"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXMacTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="186"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="186"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="187"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="187"/>
+    </file>
+    <file xil_pn:name="Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="188"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="188"/>
+    </file>
+    <file xil_pn:name="ArpIpArbiter.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="189"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="189"/>
+    </file>
+    <file xil_pn:name="ArpPacketRx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="190"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="190"/>
+    </file>
+    <file xil_pn:name="ArpPacketTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="191"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="191"/>
+    </file>
+    <file xil_pn:name="ArpResponder.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="192"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="192"/>
+    </file>
+    <file xil_pn:name="EthCore.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="193"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="193"/>
+    </file>
+    <file xil_pn:name="EthLayerRx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="194"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="194"/>
+    </file>
+    <file xil_pn:name="EthLayerTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="195"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="195"/>
+    </file>
+    <file xil_pn:name="EthRx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="196"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="196"/>
+    </file>
+    <file xil_pn:name="EthTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="197"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="197"/>
+    </file>
+    <file xil_pn:name="GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="198"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="198"/>
+    </file>
+    <file xil_pn:name="IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="199"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="199"/>
+    </file>
+    <file xil_pn:name="IPv4Rx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="200"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="200"/>
+    </file>
+    <file xil_pn:name="IPv4Tx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="201"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="201"/>
+    </file>
+    <file xil_pn:name="UdpBufferRx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="202"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="202"/>
+    </file>
+    <file xil_pn:name="UdpBufferTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="203"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="203"/>
+    </file>
+    <file xil_pn:name="UdpTxFragmenter.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="204"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="204"/>
+    </file>
+    <file xil_pn:name="S6EthTop.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="205"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="205"/>
+    </file>
+    <file xil_pn:name="GtpS6.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="206"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="206"/>
+    </file>
+    <file xil_pn:name="GtpS6Tile.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="207"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="207"/>
+    </file>
+    <file xil_pn:name="CommandInterpreter.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="208"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="208"/>
+    </file>
+    <file xil_pn:name="CrcPkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="209"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="209"/>
+    </file>
+    <file xil_pn:name="InitRst.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="210"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="210"/>
+    </file>
+    <file xil_pn:name="SyncBit.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="211"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="211"/>
+    </file>
+    <file xil_pn:name="TpGenTx.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="212"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="212"/>
+    </file>
+    <file xil_pn:name="UtilityPkg.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="213"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="213"/>
+    </file>
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
@@ -358,27 +376,15 @@
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo8x64.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/bram8x3000.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifoDist8x16.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo8x64.xise" xil_pn:type="FILE_ISE"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/bram8x3000.xise" xil_pn:type="FILE_ISE"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifoDist8x16.xise" xil_pn:type="FILE_ISE"/>
     <file xil_pn:name="ipcore_dir/udp64kfifo.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo16x64.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo32x512RxAxi.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen/fifo18x16.xise" xil_pn:type="FILE_COREGENISE">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo16x64.xise" xil_pn:type="FILE_ISE"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo32x512RxAxi.xise" xil_pn:type="FILE_ISE"/>
+    <file xil_pn:name="../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo18x16.xise" xil_pn:type="FILE_ISE"/>
     <file xil_pn:name="../../../QBLink/QBlink/cores/serializationFifo.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>

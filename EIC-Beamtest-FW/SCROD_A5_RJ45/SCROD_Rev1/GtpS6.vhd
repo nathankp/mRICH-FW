@@ -147,56 +147,54 @@ architecture rtl of GtpS6 is
    signal usrClkX2Raw      : std_logic;
 
 begin
---   -- Set up input clocking here
---   U_S6_DCM : DCM_SP
---      generic map (
---         CLKDV_DIVIDE       => 2.000,
---         CLKFX_DIVIDE       => 1,
---         CLKFX_MULTIPLY     => 4,
---         CLKIN_DIVIDE_BY_2  => false,
---         CLKIN_PERIOD       => 4.0,
---         CLKOUT_PHASE_SHIFT => "NONE",
---         CLK_FEEDBACK       => "1X",
---         DESKEW_ADJUST      => "SYSTEM_SYNCHRONOUS",
---         PHASE_SHIFT        => 0,
---         STARTUP_WAIT       => false
---      )
---      port map (
---         
-----         CLKIN    => clkIn1,
---         CLKIN    => gtpClkIn,
---         CLKFB    => clkFbIn,
---         -- Output clocks
---         CLK0     => clk0,
---         CLK90    => open,
---         CLK180   => open,
---         CLK270   => open,
---         CLK2X    => open,
---         CLK2X180 => open,
---         CLKFX    => open,
---         CLKFX180 => open,
---         CLKDV    => clkDv,
---         -- Ports for dynamic phase shift
---         PSCLK    => '0',
---         PSEN     => '0',
---         PSINCDEC => '0',
---         PSDONE   => open,
---         -- Control & status
---         LOCKED   => dcmSpLockedInternal,
---         STATUS   => dcmSpStatus,
---         RST      => '0',
---         -- Unused, tie low
---         DSSEN    => '0'
---      );
---   dcmInputClockStopped <= dcmSpStatus(1);
---   dcmSpLocked          <= dcmSpLockedInternal;
---   dcmClkValid          <= dcmSpLockedInternal and (not dcmSpStatus(1));
-   dcmSpLocked <= '1';
-	dcmClkValid <= '1';
+   -- Set up input clocking here
+   U_S6_DCM : DCM_SP
+      generic map (
+         CLKDV_DIVIDE       => 2.000,
+         CLKFX_DIVIDE       => 1,
+         CLKFX_MULTIPLY     => 4,
+         CLKIN_DIVIDE_BY_2  => false,
+         CLKIN_PERIOD       => 4.0,
+         CLKOUT_PHASE_SHIFT => "NONE",
+         CLK_FEEDBACK       => "1X",
+         DESKEW_ADJUST      => "SYSTEM_SYNCHRONOUS",
+         PHASE_SHIFT        => 0,
+         STARTUP_WAIT       => false
+      )
+      port map (
+         
+--         CLKIN    => clkIn1,
+         CLKIN    => gtpClkIn,
+         CLKFB    => clkFbIn,
+         -- Output clocks
+         CLK0     => clk0,
+         CLK90    => open,
+         CLK180   => open,
+         CLK270   => open,
+         CLK2X    => open,
+         CLK2X180 => open,
+         CLKFX    => open,
+         CLKFX180 => open,
+         CLKDV    => clkDv,
+         -- Ports for dynamic phase shift
+         PSCLK    => '0',
+         PSEN     => '0',
+         PSINCDEC => '0',
+         PSDONE   => open,
+         -- Control & status
+         LOCKED   => dcmSpLockedInternal,
+         STATUS   => dcmSpStatus,
+         RST      => '0',
+         -- Unused, tie low
+         DSSEN    => '0'
+      );
+   dcmInputClockStopped <= dcmSpStatus(1);
+   dcmSpLocked          <= dcmSpLockedInternal;
+   dcmClkValid          <= dcmSpLockedInternal and (not dcmSpStatus(1));
 
-----   U_DcmClkIn_BufG  : BUFG port map ( I => gtpClkIn, O => clkIn1  );
---   U_DcmFb_BufG     : BUFG port map ( I => clk0,     O => clkFbIn );
---   U_DcmClkOut_BufG : BUFG port map ( I => clkDv,    O => gClkDcm ); 
+--   U_DcmClkIn_BufG  : BUFG port map ( I => gtpClkIn, O => clkIn1  );
+   U_DcmFb_BufG     : BUFG port map ( I => clk0,     O => clkFbIn );
+   U_DcmClkOut_BufG : BUFG port map ( I => clkDv,    O => gClkDcm ); 
 
    -- Set up USR clocks (see UG386 p.  74 for TX)
    --                   (see UG386 p. 159 for RX)
@@ -234,11 +232,10 @@ begin
          -- Control & status
          LOCKED   => usrClkLockedInternal,
          STATUS   => usrClkStatus,
-         RST      => not(pllLock1Internal),
+         RST      => not(pllLock0Internal),
          -- Unused, tie low
          DSSEN    => '0'
       );
-	pllLock1             <= pllLock1Internal;
    pllLock0             <= pllLock0Internal;
    -- usrInputClockStopped <= usrClkStatus(1);
    usrClkLocked         <= usrClkLockedInternal;
@@ -271,8 +268,8 @@ begin
          TILE_SIM_REFCLK0_SOURCE   => "000",
          TILE_SIM_REFCLK1_SOURCE   => "000",
          --
-         TILE_PLL_SOURCE_0         => "PLL1",
-         TILE_PLL_SOURCE_1         => "PLL1"
+         TILE_PLL_SOURCE_0         => "PLL0",
+         TILE_PLL_SOURCE_1         => "PLL0"
       )
       port map (
          ------------------------ Loopback and Powerdown Ports ----------------------
@@ -280,10 +277,10 @@ begin
          LOOPBACK1_IN         => loopbackIn1,    --  in   std_logic_vector(2 downto 0);
          --------------------------------- PLL Ports --------------------------------
          CLK00_IN             => slZero,         --  in   std_logic;
-         CLK01_IN             => gtpClkIn,       --  in   std_logic;
+         CLK01_IN             => slZero,         --  in   std_logic;
          CLK10_IN             => slZero,         --  in   std_logic;
          CLK11_IN             => slZero,         --  in   std_logic;
-         GCLK00_IN            => slZero,         --  in   std_logic;
+         GCLK00_IN            => gClkDcm,        --  in   std_logic;
          GCLK01_IN            => slZero,         --  in   std_logic;
          GCLK10_IN            => slZero,         --  in   std_logic;
          GCLK11_IN            => slZero,         --  in   std_logic;
