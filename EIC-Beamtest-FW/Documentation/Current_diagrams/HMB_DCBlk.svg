@@ -14,8 +14,11 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg1075"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="HMB_DCBlk.svg">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="HMB_DCBlk.svg"
+   inkscape:export-filename="D:\Xilinx\mRICH-FW\EIC-Beamtest-FW\Documentation\Current_diagrams\HMB_DCBlk.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs1069">
     <marker
@@ -816,16 +819,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="440.93346"
-     inkscape:cy="216.91327"
+     inkscape:zoom="1.1874024"
+     inkscape:cx="80.838922"
+     inkscape:cy="187.35715"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="3840"
+     inkscape:window-height="2104"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -1614,7 +1617,7 @@
            height="27.558954"
            x="-12.348057"
            y="541.03345" /></flowRegion><flowPara
-         id="flowPara5461"></flowPara></flowRoot>    <flowRoot
+         id="flowPara5461" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot5463"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -1670,7 +1673,7 @@
            x="43.436558"
            y="405.81644"
            style="font-size:18.66666667px;" /></flowRegion><flowPara
-         id="flowPara5503"></flowPara></flowRoot>    <flowRoot
+         id="flowPara5503" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot5505"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:13.33333333px;line-height:1.25;letter-spacing:0px;word-spacing:0px;"><flowRegion
@@ -1682,7 +1685,7 @@
            x="7.5761442"
            y="408.84692"
            style="font-size:13.33333333px;" /></flowRegion><flowPara
-         id="flowPara5511"></flowPara></flowRoot>    <flowRoot
+         id="flowPara5511" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot5513"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -2033,7 +2036,7 @@
            x="447.14285"
            y="211.09111"
            style="font-size:16px;" /></flowRegion><flowPara
-         id="flowPara14353"></flowPara></flowRoot>    <flowRoot
+         id="flowPara14353" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot14355"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -2043,7 +2046,7 @@
            height="98.571426"
            x="698.57141"
            y="371.09109" /></flowRegion><flowPara
-         id="flowPara14361"></flowPara></flowRoot>    <flowRoot
+         id="flowPara14361" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot14363"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -2246,5 +2249,17 @@
            height="44.285713"
            x="376.42856"
            y="982.51971" /></flowRegion><flowPara
-         id="flowPara16620">tx_dac_update</flowPara></flowRoot>  </g>
+         id="flowPara16620">tx_dac_update</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1956"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion1958"><rect
+           id="rect1960"
+           width="187.80492"
+           height="44.942223"
+           x="88.428322"
+           y="1060.734" /></flowRegion><flowPara
+         id="flowPara1962">To TargetX</flowPara><flowPara
+         id="flowPara1964" /></flowRoot>  </g>
 </svg>

@@ -14,7 +14,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="SCROD_TopBlk_rev2.svg"
    inkscape:export-filename="C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\Documentation\Current_diagrams\SCROD_TopBlk_rev2.png"
    inkscape:export-xdpi="96"
@@ -160,18 +160,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="344.82768"
-     inkscape:cy="431.57401"
+     inkscape:zoom="1.6792405"
+     inkscape:cx="478.41616"
+     inkscape:cy="584.29473"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-width="3840"
+     inkscape:window-height="2104"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -858,7 +858,7 @@
            height="15"
            x="270"
            y="442.51968" /></flowRegion><flowPara
-         id="flowPara2101"></flowPara></flowRoot>    <flowRoot
+         id="flowPara2101" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot2015-9"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -880,5 +880,16 @@
            height="30"
            x="240"
            y="392.51968" /></flowRegion><flowPara
-         id="flowPara5229-4">userRst</flowPara></flowRoot>  </g>
+         id="flowPara5229-4">userRst</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1138"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,-113.85286,169.96292)"><flowRegion
+         id="flowRegion1140"><rect
+           id="rect1142"
+           width="120"
+           height="35"
+           x="20"
+           y="457.51968" /></flowRegion><flowPara
+         id="flowPara1144">To/ From DCs</flowPara></flowRoot>  </g>
 </svg>
