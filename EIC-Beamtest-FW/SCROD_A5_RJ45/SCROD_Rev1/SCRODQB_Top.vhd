@@ -41,7 +41,8 @@ entity SCRODQB_Top is
 		REG_ADDR_BITS_G : integer := 16;
 		REG_DATA_BITS_G : integer := 16;
 		NUM_IP_G : integer := 2;
-		GATE_DELAY_G : time := 1 ns --gate delay from ExampleProject
+		GATE_DELAY_G : time := 1 ns; --gate delay from ExampleProject
+		NUM_DCs : integer := 3 --(# of DCs) - 1, HODOSCOPE has 4 DCs, HMB has 8 DCs. 
 		);
 	Port(		
 			--Will use 125 MHz clock output from s6 Ethernet module as system clock
@@ -58,14 +59,17 @@ entity SCRODQB_Top is
 			--SFP transceiver disable pin
 			txDisable    	 : out sl;
 			--DC communication
-			RX_DC_P			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
-			RX_DC_N			 : IN STD_LOGIC; --SERIAL INPUT FROM DC
-			CLK_DC_P			 : OUT STD_LOGIC; --25MHz clock to DC (fact check)--> {confirmed}
-			CLK_DC_N			 : OUT STD_LOGIC;
-			TX_DC_N         : OUT STD_LOGIC; --Serial output to DC
-			TX_DC_P			 : OUT STD_LOGIC; --Serial output to DC 
-			SYNC_P			 : OUT STD_LOGIC; -- when '0' DC listens only, '1' DC reads back command
-			SYNC_N			 : OUT STD_LOGIC
+			RX_DC_P			 : IN slv(NUM_DCs downto 0);  --SERIAL INPUT FROM DC
+			RX_DC_N			 : IN slv(NUM_DCs  downto 0);  --SERIAL INPUT FROM DC
+			DC_CLK_P			 : OUT slv(NUM_DCs downto 0);  --25MHz clock to DC (fact check)--> {confirmed}
+			DC_CLK_N		    : OUT slv(NUM_DCs downto 0); 
+			TX_DC_N         : OUT slv(NUM_DCs downto 0);  --Serial output to DC
+			TX_DC_P			 : OUT slv(NUM_DCs downto 0);--Serial output to DC 
+			SYNC_P			 : OUT slv(NUM_DCs downto 0); -- when '0' DC listens only, '1' DC reads back command
+			SYNC_N			 : OUT slv(NUM_DCs downto 0);
+			--Trigger to PMT SCRODs (mRICH)
+			GLOBAL_EVENT_P    : OUT slv(3 downto 0);
+			GLOBAL_EVENT_N    : OUT slv(3 downto 0)
 	);
 end SCRODQB_Top;
 
@@ -108,25 +112,28 @@ signal ethSync      : sl;
 	
 
 ---QBLink signals----
-	signal dc_clk : sl; --outgoing Daughtercard clock
-	signal QBstart_wr : sl; --internal flag to start transmission
-	signal QBstart_rd : sl; --internal flag to prepare for readback
-	signal reset : sl; -- SCROD reset (not yet implemented)
-	signal trigLinkSynced : sl; --QBLink status flag: trigger link synced between SCROD and DC 
-	signal serialClkLocked : sl; --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
+	signal dc_clk1 : sl; --outgoing Daughtercard clock (all boards)
+	signal dc_clk2 : sl;
+	signal dc_clk3 : sl;
+	signal dc_clk4 : sl;
+	signal QBstart_wr : slv(NUM_DCs downto 0); --internal flag to start transmission 
+	signal QBstart_rd : slv(NUM_DCs downto 0); --internal flag to prepare for readback
+	signal reset : sl; -- reset SCROD processes
+	signal trigLinkSynced : slv(NUM_DCs downto 0); --QBLink status flag: trigger link synced between SCROD and DC 
+	signal serialClkLocked : slv(NUM_DCs downto 0); --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
 	signal dc_cmd		 : slv(31 downto 0); --DC register command, input data to QBLink write-operation input FIFO
-	signal dc_cmd_valid : sl; --enable write to write-op input FIFO
-	signal QBrst		 : sl := '0'; --QBLink reset 
-	signal rd_req		 : sl; --QBLink readout-op enable 
-	signal dc_cmdResp  : slv(31 downto 0);
-	signal dc_RespValid : sl; -- QBLink output: readout valid flag 
-	signal tx_dc		 : sl; --transmitted serial data bit 
-	signal rx_dc		 : sl; --recieved serial data bit
-	TYPE CommStateType IS (IDLE, START_WRITE, START_READ); --Communcation statetype
-	signal CommState : CommStateType := IDLE; --communcation statemachine(SM) current state
-	signal nxtState : CommStateType := IDLE; --communication SM next state
-	signal CtrlState : slv(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
-	signal nxt_CTRLState : slv(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
+	signal QBrst	: slv(NUM_DCs downto 0) := (others =>'0'); --QBLink reset 
+	signal DC_data : slv(31 downto 0);
+	signal dc_dataValid : slv(NUM_DCs downto 0); -- QBLink output: readout valid flag 
+	signal tx_dc		 : slv(NUM_DCs downto 0); --transmitted serial data bit 
+	signal rx_dc		 : slv(NUM_DCs downto 0); --recieved serial data bit
+	signal evntFlag :sl :='0';
+	signal global_event :slv(3 downto 0);
+		--TYPE CommStateType IS (IDLE, START_WRITE, START_READ); --Communcation statetype
+		--signal CommState : CommStateType := IDLE; --communcation statemachine(SM) current state
+		--signal nxtState : CommStateType := IDLE; --communication SM next state
+		--signal CtrlState : slv(1 DOWNTO 0) := "00"; -- (temporary) communication control SM current state 
+		--signal nxt_CTRLState : slv(1 DOWNTO 0) := "00"; --(temp) communcation control SM next state
 --DCM clock stuff
 signal clkfx180 : sl;
 signal dcm_locked : sl;
@@ -137,89 +144,61 @@ signal internal_fpga_clk : sl; --fast clk
 signal internal_data_clk : sl; -- QBLink timing clock
 --HW testing signals--
 constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
-signal sync : sl := '0'; -- Data capture trigger, real function to be determined
+signal sync : sl := '0'; -- synchronize timestamp counters on all DCs
 attribute keep_hierarchy: boolean;
 attribute keep_hierarchy of Behavioral: architecture is TRUE;
-
-component clk_Div
-port
- (-- Clock in ports
-  CLK_IN1           : in     std_logic;
-  -- Clock out ports
-  CLK_OUT1          : out    std_logic;
-  CLK_OUT2          : out    std_logic;
-  -- Status and control signals
-  RESET             : in     std_logic;
-  LOCKED            : out    std_logic
- );
-end component;
 
 begin
 
 
+CLOCK_FANOUT : entity work.clk_Div
+  port map
+   (-- Clock in ports
+    CLK_IN1 => ethClk125,
+    -- Clock out ports
+    CLK_OUT1 => internal_fpga_clk,
+    CLK_OUT2 => internal_data_clk,
+    -- Status and control signals
+    RESET  => dcm_rst,
+    LOCKED => dcm_locked);
+	 
+global_event <= (others => evntFlag);
+
+DC_reset : process(internal_data_clk) 
+begin 
+	IF rising_edge(internal_data_clk) THEN
+		sync <= CtrlRegister(2)(8);
+		QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
+	END IF;
+end process;
 --
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------
+-----------------------------------------------------------------		
+		
+DC_IO_BUFF : entity work.IO_Buffers
+generic map (num_DC => NUM_DCs)
+PORT MAP(
+	RX_P => RX_DC_P,
+	RX_N => RX_DC_N,
+	TX => tx_dc,
+	GLOB_EVNT => global_event,
+	SYNC => sync,
+	TX_P => TX_DC_P,
+	TX_N => TX_DC_N,
+	DC_CLK_P => DC_CLK_P,
+	DC_CLK_N => DC_CLK_N,
+ 	DATA_CLK => internal_data_clk,
+	GLOB_EVNT_P => GLOBAL_EVENT_P,
+	GLOB_EVNT_N => GLOBAL_EVENT_N,
+	RX => rx_dc,
+	SYNC_P => SYNC_P,
+	SYNC_N => SYNC_N
+	);
+	
 -----------------------------------------------------------------
-
-CLK_DIV_inst : clk_Div
-PORT MAP( 
-CLK_IN1 => ethClk125,
-CLK_OUT1 => internal_fpga_clk,
-CLK_OUT2 => internal_data_clk,
-RESET => dcm_rst,
-LOCKED => dcm_locked
-);
-
-TX_OBUFDS_inst : OBUFDS --instantiation of OBUFDS buffer: tx_dc is converted to differential output
-generic map (IOSTANDARD => "LVDS_25")
-port map (
-	O  => TX_DC_P,    
-	OB => TX_DC_N,  
-	I  => tx_dc); 
-	
-SYNC_OBUFDS_inst : OBUFDS -- sync is converted to differential ouput
-generic map ( IOSTANDARD => "LVDS_25")
-port map (
-	O => SYNC_P,
-	OB => SYNC_N,
-	I => sync);
-
-DC_CLK_ODDR2 : ODDR2  --use ODDR2 with internal data clk to generate dc_clk
-   generic map(
-      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
-      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
-      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
-   port map (
-      Q => dc_clk, -- 1-bit output data
-      C0 => internal_data_clk, -- 1-bit clock input
-      C1 => not internal_data_clk, -- 1-bit clock input
-      CE => '1',  -- 1-bit clock enable input
-      D0 => '1',   -- 1-bit data input (associated with C0)
-      D1 => '0',   -- 1-bit data input (associated with C1)
-      R => '0',    -- 1-bit reset input
-      S => '0'     -- 1-bit set input
-   );
-	
-DC_CLK_OBUFDS : OBUFDS --dc_clk buffered with OBUFDS to drive output DC diff pair clk. 
-	generic map (IOSTANDARD => "LVDS_25")
-	port map (
-		O => CLK_DC_P,
-		OB => CLK_DC_N,
-		I => dc_clk);
-
-
-RX_DC_IBUF_inst : IBUFDS --differential to single-ended conversion of serial input data
-generic map (
-	     DIFF_TERM    => FALSE, -- Differential Termination is already on board
-	     IOSTANDARD => "LVDS_25" 
-	     )
-port map (
-	O => rx_dc,
-	I => RX_DC_P,
-	IB => RX_DC_N);	
-
-
+----------------Ethernet Link to PC------------------------------
+-----------------------------------------------------------------		
 U_S6EthTop : entity work.S6EthTop
       generic map (
          NUM_IP_G     => 2
@@ -261,7 +240,10 @@ U_S6EthTop : entity work.S6EthTop
          userRxDataLast  => userRxDataLasts,
          userRxDataReady => userRxDataReadys
       );
-		
+
+-----------------------------------------------------------------
+----------------Command Parsing ---------------------------------
+-----------------------------------------------------------------		
 	U_CommandInterpreter : entity work.CommandInterpreter
       generic map (
          REG_ADDR_BITS_G => 16,
@@ -283,8 +265,6 @@ U_S6EthTop : entity work.S6EthTop
          txDataValid => userTxDataValids(1),
          txDataLast  => userTxDataLasts(1),
          txDataReady => userTxDataReadys(1),
-         -- This board ID
-         myId        => x"0000",
 			--DC Comm signals
 				--WILL ADD: QB_rst
 			serialClkLck => serialClkLocked,
@@ -292,8 +272,9 @@ U_S6EthTop : entity work.S6EthTop
 			DC_CMD 		 => dc_cmd,
 			QB_WrEn      => QBstart_wr,
 			QB_RdEn      => QBstart_rd,
-			DC_RESP		 => dc_cmdResp,
-			DC_RESP_VALID => dc_RespValid,
+			DC_RESP		 => DC_data,
+			DC_RESP_VALID => dc_dataValid,
+			EVNT_FLAG => evntFlag,
          -- Register interfaces
          regAddr     => regAddr,
          regWrData   => regWrData,
@@ -302,53 +283,9 @@ U_S6EthTop : entity work.S6EthTop
          regOp       => regOp,
          regAck      => regAck
       );
-
-
------------------------------------------------------------------------------
-------------------QBLink Module----------------------------------------------
---------------------------------- -------------------------------------------
-DC_communication : entity work.DC_Comm
-port map (
-	DATA_CLK => internal_data_clk,
-   RX => rx_dc,
-	TX => tx_dc,
-	SYNC => sync,
-	DC_CMD => dc_cmd,
-	CMD_VALID => QBstart_wr,
-	RESP_REQ => QBstart_rd,
-	DC_RESPONSE => dc_cmdResp,
-	--to be added: WAVE_WD : out STD_LOGIC_VECTOR(31 downto 0);
-	--             and WaveValid
-	--to be added: TRIG : STD_LOGIC_VECTOR(31 downto 0);
-	--            and TrigValid
-	RESP_VALID => dc_RespValid, 
-	QB_RST => QBrst,
-	SERIAL_CLK_LCK => serialClkLocked,
-	TRIG_LINK_SYNC => trigLinkSynced
-	);
-
-  QBRst_process: process(internal_data_clk, trigLinkSynced) 
-  variable counter : integer range 0 to 20 :=0;
-  begin
-	If trigLinkSynced = '0' and counter < 20 then
-	   QBrst <= '0';
-		If rising_edge(internal_data_clk) then
-			counter := counter + 1;
-		end if;
-	elsif trigLinkSynced = '0' and counter = 20 then
-		counter := 0;
-		QBrst <= '1';
-	elsif QBrst = '1' and counter < 20 then
-		counter := counter + 1;
-		QBrst <= '1';
-	else
-		QBrst <= '0';
-		counter := 0;
-	end if;
-	end process;
-
-  SCROD_Ctrl_Reg: process(internal_fpga_clk) begin
-      if rising_edge(internal_fpga_clk) then
+		
+ SCROD_Ctrl_Reg: process(ethClk125,regReq,userRst,regOp) begin
+      if rising_edge(ethClk125) then
          if userRst = '1' then
             regAck    <= '0';
             regRdData <= (others => '0');
@@ -364,7 +301,49 @@ port map (
          end if;
       end if;
    end process;
+
+-----------------------------------------------------------------------------
+------------------DC Interface: featuring QBLink-----------------------------
+--------------------------------- -------------------------------------------
+DC_communication : entity work.DC_Comm
+generic map(num_DC => 3)
+port map (
+	DATA_CLK => internal_data_clk,
+   RX => rx_dc,
+	TX => tx_dc,
+	DC_CMD => dc_cmd,
+	CMD_VALID => QBstart_wr,
+	RESP_REQ => QBstart_rd,
+	DC_RESPONSE => DC_data,
+	RESP_VALID => dc_dataValid, 
+	TrigLogicRst => reset, 
+	QB_RST => QBrst,
+	SERIAL_CLK_LCK => serialClkLocked,
+	TRIG_LINK_SYNC => trigLinkSynced,
+	EVENT_TRIG => evntFlag
+	);
+
 END Behavioral;  
+
+--  QBRst_process: process(internal_data_clk, trigLinkSynced) 
+--  variable counter : integer range 0 to 20 :=0;
+--  begin
+--	If trigLinkSynced = '0' and counter < 20 then
+--	   QBrst <= '0';
+--		If rising_edge(internal_data_clk) then
+--			counter := counter + 1;
+--		end if;
+--	elsif trigLinkSynced = '0' and counter = 20 then
+--		counter := 0;
+--		QBrst <= '1';
+--	elsif QBrst = '1' and counter < 20 then
+--		counter := counter + 1;
+--		QBrst <= '1';
+--	else
+--		QBrst <= '0';
+--		counter := 0;
+--	end if;
+--	end process;
 
 --signal tx_udp_data : slv(7 downto 0) :=(others => '0');
 --signal tx_udp_valid : STD_LOGIC := '0';

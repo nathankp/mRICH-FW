@@ -2,14 +2,14 @@
 <report-views version="2.0" >
  <header>
 <<<<<<< HEAD
-  <DateModified>2019-03-13T17:01:57</DateModified>
+  <DateModified>2019-04-30T14:13:01</DateModified>
 =======
-  <DateModified>2019-03-12T17:06:49</DateModified>
->>>>>>> 1e1c17396186aa63d592bb49f9f9b3dbfa8ff83a
+  <DateModified>2019-05-30T18:12:38</DateModified>
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
   <ModuleName>SCRODQB_Top</ModuleName>
-  <SummaryTimeStamp>2019-03-11T16:33:30</SummaryTimeStamp>
-  <SavedFilePath>/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/SCRODQB_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2019-05-30T15:33:23</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/SCRODQB_Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-21T17:50:11</DateInitialized>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>

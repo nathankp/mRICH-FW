@@ -7,8 +7,9 @@ iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
 ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
-../../../QBLink/QBlink/ipcore_dir -nt timestamp -uc HMB_SciFi_SCROD.ucf -p
-xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
+../../../QBLink/QBlink/ipcore_dir -sd
+../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc
+HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
 
 Reading NGO file
 "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
@@ -19,55 +20,24 @@ Done.
 Annotating constraints to design from ucf file "HMB_SciFi_SCROD.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_DATA_CLK" = PERIOD
+   "DC_CLK_P<0>" 40 ns HIGH 50 %;> [HMB_SciFi_SCROD.ucf(28)]: Unable to find an
+   active 'TNM' or 'TimeGrp' constraint named 'DC_CLK_P<0>'.
+
+WARNING:ConstraintSystem - Constraint <NET "gtClkP" TNM_NET="gtClkP";>
+   [HMB_SciFi_SCROD.ucf(38)] was not distributed to the output pin GTPCLKOUT1<0>
+   of block gtpa1_dual_i because the signal path to this output pin depends upon
+   block attribute settings. Constraint distribution does not support attribute
+   dependent distribution.
+
 WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
    constraints were not derived. This TNM is used in the following user groups
    or specifications:
    <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO "D_CLK" TIG;>
    <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO "J_CLK" TIG;>
 
-INFO:ConstraintSystem:178 - TNM 'U_GtpS6/usrClkSource', used in period
-   specification 'TS_usrClkSource', was traced into DCM_SP instance
-   U_USRCLK_DCM. The following new TNM groups and period specifications were
-   generated at the DCM_SP output(s): 
-   CLK0: <TIMESPEC TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw = PERIOD
-   "U_S6EthTop_U_GtpS6_txRxUsrClkRaw" TS_usrClkSource HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'U_GtpS6/usrClkSource', used in period
-   specification 'TS_usrClkSource', was traced into DCM_SP instance
-   U_USRCLK_DCM. The following new TNM groups and period specifications were
-   generated at the DCM_SP output(s): 
-   CLKDV: <TIMESPEC TS_U_S6EthTop_U_GtpS6_txRxUsrClk2Raw = PERIOD
-   "U_S6EthTop_U_GtpS6_txRxUsrClk2Raw" TS_usrClkSource * 2 HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'U_S6EthTop_U_GtpS6_txRxUsrClkRaw', used in
-   period specification 'TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw', was traced into
-   DCM_SP instance dcm_sp_inst. The following new TNM groups and period
-   specifications were generated at the DCM_SP output(s): 
-   CLKFX: <TIMESPEC TS_CLK_DIV_inst_clkfx = PERIOD "CLK_DIV_inst_clkfx"
-   TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw / 0.2 HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'U_S6EthTop_U_GtpS6_txRxUsrClkRaw', used in
-   period specification 'TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw', was traced into
-   DCM_SP instance dcm_sp_inst. The following new TNM groups and period
-   specifications were generated at the DCM_SP output(s): 
-   CLK0: <TIMESPEC TS_CLK_DIV_inst_clk0 = PERIOD "CLK_DIV_inst_clk0"
-   TS_U_S6EthTop_U_GtpS6_txRxUsrClkRaw HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'CLK_DIV_inst_clkfx', used in period
-   specification 'TS_CLK_DIV_inst_clkfx', was traced into DCM_SP instance
-   dcm_sp_inst. The following new TNM groups and period specifications were
-   generated at the DCM_SP output(s): 
-   CLKFX: <TIMESPEC TS_DC_communication_comm_process_U_ClockGenByteLink_clkfx =
-   PERIOD "DC_communication_comm_process_U_ClockGenByteLink_clkfx"
-   TS_CLK_DIV_inst_clkfx / 5 HIGH 50%>
-
 Done...
 
-WARNING:NgdBuild:1212 - User specified non-default attribute value (46.882) was
-   detected for the CLKIN_PERIOD attribute on DCM "dcm_sp_inst".  This does not
-   match the PERIOD constraint value (40 ns.).  The uncertainty calculation will
-   use the non-default attribute value.  This could result in incorrect
-   uncertainty calculated for DCM output clocks.
 Checking expanded design ...
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/userTxDataReady<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<1>' has no driver
@@ -290,12 +260,19 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 109
+  Number of warnings: 110
 
-Total memory usage is 4516404 kilobytes
+Total memory usage is 4533988 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
 Total REAL time to NGDBUILD completion:  13 sec
 Total CPU time to NGDBUILD completion:   9 sec
+=======
+Total memory usage is 4533988 kilobytes
+
+Writing NGD file "SCRODQB_Top.ngd" ...
+Total REAL time to NGDBUILD completion:  14 sec
+Total CPU time to NGDBUILD completion:   11 sec
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

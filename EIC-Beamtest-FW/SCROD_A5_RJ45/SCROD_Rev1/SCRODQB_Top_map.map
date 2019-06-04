@@ -12,15 +12,18 @@ Target Device  : xc6slx150t
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue May 07 14:18:26 2019
+Mapped Date    : Thu May 30 18:38:56 2019
 
 Mapping design into LUTs...
+WARNING:MapLib:680 - LOC constraint AB6 on RX_DC_N<3> is invalid: No such site
+   on the device. Ignoring...
 Running directed packing...
 Running delay-based LUT packing...
 Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
+<<<<<<< HEAD
 Total REAL time at the beginning of Placer: 24 secs 
 Total CPU  time at the beginning of Placer: 20 secs 
 
@@ -337,3 +340,41 @@ Total CPU time to MAP completion:   2 mins 54 secs
 
 Mapping completed.
 See MAP report file "SCRODQB_Top_map.mrp" for details.
+=======
+Total REAL time at the beginning of Placer: 20 secs 
+Total CPU  time at the beginning of Placer: 17 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:3f0b3b62) REAL time: 24 secs 
+
+Phase 2.7  Design Feasibility Check
+INFO:Place:834 - Only a subset of IOs are locked. Out of 41 IOs, 33 are locked
+   and 8 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <CLOCK_FANOUT/clkout2_buf>, driving the net, <ila0_trig0<8>>, that is driving
+   the following (first 30) non-clock load pins.
+   < PIN: U_ila_pro_0/U0/I_TQ0.G_TW[8].U_TQ.D; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "CLOCK_FANOUT/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 2.7  Design Feasibility Check (Checksum:3f0b3b62) REAL time: 24 secs 
+
+Total REAL time to Placer completion: 24 secs 
+Total CPU  time to Placer completion: 22 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "SCRODQB_Top_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   1
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c

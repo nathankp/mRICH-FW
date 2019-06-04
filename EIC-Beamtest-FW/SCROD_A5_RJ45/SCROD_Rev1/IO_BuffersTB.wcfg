@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/IO_BUFTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="io_buftb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/io_buftb/dc_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_clk</obj_property>
+      <obj_property name="ObjectShortName">dc_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/rx_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/rx_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/rx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/tx_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/tx_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/tx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/sync_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sync_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sync_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/sync_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sync_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sync_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/sync" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sync[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sync[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/dc_clk_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_clk_p[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_clk_p[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/dc_clk_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_clk_n[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_clk_n[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/io_buftb/dc_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_clk_period</obj_property>
+      <obj_property name="ObjectShortName">dc_clk_period</obj_property>
+   </wvobject>
+</wave_config>

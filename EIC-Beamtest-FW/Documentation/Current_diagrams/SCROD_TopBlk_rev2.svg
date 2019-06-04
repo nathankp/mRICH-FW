@@ -22,13 +22,28 @@
   <defs
      id="defs2">
     <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1797"
+       style="overflow:visible"
+       
+      <path
+         id="path1795"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
        inkscape:isstock="true"
        style="overflow:visible"
        id="marker1338"
        refX="0.0"
        refY="0.0"
        orient="auto"
-       inkscape:stockid="Arrow1Lstart">
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:collect="always">
       <path
          transform="scale(0.8) translate(12.5,0)"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
@@ -145,9 +160,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="441.89027"
-     inkscape:cy="861.40064"
+     inkscape:zoom="2.8"
+     inkscape:cx="344.82768"
+     inkscape:cy="431.57401"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -317,7 +332,7 @@
        xml:space="preserve"
        id="flowRoot4256"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0,0.26458333,-0.26458333,0,245.03192,30.718788)"><flowRegion
+       transform="matrix(0,0.26458333,-0.26458333,0,228.11698,33.733295)"><flowRegion
          id="flowRegion4258"><rect
            id="rect4260"
            width="150"
@@ -344,7 +359,7 @@
        style="fill:#f50000;fill-opacity:0.02209945;stroke:#010001;stroke-width:0.31099999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:type="star" />
     <rect
-       style="fill:#ff9500;fill-opacity:0.89411765;stroke:#010001;stroke-width:0.2765449;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffcdf3;fill-opacity:0.89411765;stroke:#010001;stroke-width:0.31099999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4266"
        width="89.958344"
        height="21.166666"
@@ -474,15 +489,23 @@
        xml:space="preserve"
        id="flowRoot5223"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+<<<<<<< HEAD
        transform="matrix(0,0.26458333,-0.26458333,0,231.21462,45.558393)"><flowRegion
+=======
+       transform="matrix(0,0.26458333,-0.26458333,0,217.98678,52.45171)"><flowRegion
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
          id="flowRegion5225"><rect
            id="rect5227"
            width="140"
            height="30"
            x="240"
            y="392.51968" /></flowRegion><flowPara
+<<<<<<< HEAD
          id="flowPara5229"
          style="font-size:18.66666603px">Reset</flowPara></flowRoot>    <path
+=======
+         id="flowPara5229">userRst</flowPara></flowRoot>    <path
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path5043-2"
@@ -490,6 +513,7 @@
        style="fill:none;stroke:#000000;stroke-width:0.33878309px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker5047-9)" />
     <flowRoot
        xml:space="preserve"
+<<<<<<< HEAD
        id="flowRoot5223-1"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0,0.26458333,-0.26458333,0,214.00028,139.09129)"><flowRegion
@@ -502,6 +526,8 @@
          id="flowPara5229-2"
          style="font-size:18.66666603px">Reset</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
+=======
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        id="flowRoot6318"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0,0.26458333,-0.26458333,0,182.37006,22.282067)"><flowRegion
@@ -589,22 +615,33 @@
            x="50"
            y="22.519686" /></flowRegion><flowPara
          id="flowPara974"
+<<<<<<< HEAD
          style="font-weight:bold;font-size:24px">SCROD Firmware Structure </flowPara></flowRoot>    <path
        style="fill:#f70803;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.18773894;stroke-opacity:1"
        d="m 107.1392,185.73744 v -3.35077 H 82.020833 v -9.00669 H 107.1392 v -3.24242 l 5.96162,3.89997 5.96168,3.89997 -5.96168,3.89996 z"
+=======
+         style="font-weight:bold;font-size:16px">SCROD Firmware for Beam Telescope Data Acquisition</flowPara></flowRoot>    <path
+       style="fill:#f70803;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.14044778;stroke-opacity:1"
+       d="m 94.444432,179.52498 v -2.5574 H 76.025747 v -6.87415 h 18.418685 v -2.4747 l 4.371515,2.97656 4.371553,2.97656 -4.371553,2.97655 z"
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        id="path985"
        inkscape:connector-curvature="0" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot987"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+<<<<<<< HEAD
        transform="matrix(0.26458333,0,0,0.26458333,78.621974,-19.411761)"><flowRegion
+=======
+       transform="matrix(0.26458333,0,0,0.26458333,75.484766,-21.868608)"><flowRegion
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
          id="flowRegion989"><rect
            id="rect991"
            width="270"
            height="40"
            x="10"
            y="732.51971" /></flowRegion><flowPara
+<<<<<<< HEAD
          id="flowPara993"><flowSpan
    style="font-size:18.66666603px"
    id="flowSpan1162"> DC Response</flowSpan> </flowPara></flowRoot>    <path
@@ -612,6 +649,13 @@
        id="path995"
        d="m 92.240794,170.06695 v -3.42425 h 21.530126 v -9.20418 H 92.240794 V 154.125 l -5.109969,3.98549 -5.109992,3.98549 5.109992,3.98547 z"
        style="fill:#00e3f7;fill-opacity:0.97790062;stroke:#010001;stroke-width:0.17570789;stroke-opacity:1" />
+=======
+         id="flowPara1063">DC Status  </flowPara></flowRoot>    <path
+       inkscape:connector-curvature="0"
+       id="path995"
+       d="m 85.416136,166.36276 v -2.85594 h 18.300554 v -7.67659 H 85.416136 v -2.76359 l -4.343475,3.32403 -4.343494,3.32403 4.343494,3.32402 z"
+       style="fill:#034ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.14794233;stroke-opacity:1" />
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
     <flowRoot
        xml:space="preserve"
        id="flowRoot997"
@@ -627,6 +671,7 @@
        xml:space="preserve"
        id="flowRoot1005"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+<<<<<<< HEAD
        transform="matrix(0.26458333,0,0,0.26458333,15.335045,21.314887)"><flowRegion
          id="flowRegion1007"><rect
            id="rect1009"
@@ -638,6 +683,19 @@
          style="font-size:18.66666603px">DC Cmd</flowPara></flowRoot>    <path
        style="fill:#00e3f7;fill-opacity:0.97790062;stroke:#010001;stroke-width:0.17659765;stroke-opacity:1"
        d="m 14.058113,165.30442 v -3.09763 h 24.041848 v -8.32625 H 14.058113 v -2.99746 l -5.7061276,3.60534 -5.7061521,3.60533 5.7061521,3.60532 z"
+=======
+       transform="matrix(0.26458333,0,0,0.26458333,13.218377,18.139885)"><flowRegion
+         id="flowRegion1007"><rect
+           id="rect1009"
+           width="100.04079"
+           height="36.43977"
+           x="285"
+           y="522.51971" /></flowRegion><flowPara
+         id="flowPara1011">DC </flowPara><flowPara
+         id="flowPara1067">Command</flowPara></flowRoot>    <path
+       style="fill:#034ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.14418522;stroke-opacity:1"
+       d="m 22.97443,165.30442 v -2.71272 h 18.300533 v -7.29164 H 22.97443 v -2.625 l -4.343475,3.15734 -4.343494,3.15734 4.343494,3.15733 z"
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        id="path1280"
        inkscape:connector-curvature="0" />
     <path
@@ -646,6 +704,7 @@
        d="m 27.579104,184.01982 v -3.43649 H 5.2916667 v -9.23709 H 27.579104 v -3.32536 l 5.28973,3.99974 5.289757,3.99973 -5.289757,3.99972 z"
        style="fill:#f70803;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.17909102;stroke-opacity:1" />
     <flowRoot
+<<<<<<< HEAD
        xml:space="preserve"
        id="flowRoot1284"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -659,6 +718,9 @@
          id="flowPara1290"
          style="font-size:16px">DC Serial In</flowPara></flowRoot>    <flowRoot
        transform="matrix(0.27963268,0,0,0.30212506,-4.0505141,-59.634979)"
+=======
+       transform="matrix(0.26458333,0,0,0.26458333,15.988393,-31.693311)"
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot1298"
        xml:space="preserve"><flowRegion
@@ -668,10 +730,16 @@
            height="55"
            width="190"
            id="rect1292" /></flowRegion><flowPara
+<<<<<<< HEAD
          id="flowPara1296"
          style="font-size:14.5644846px">DC Serial Out</flowPara></flowRoot>    <path
        style="fill:#f74ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.14806883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 90.417808,138.25 -4.198485,3.45362 -4.19849,3.45361 4.19849,3.4536 4.198485,3.45362 v -2.96752 h 2.557555 15.132567 2.55759 v 2.96752 l 4.19849,-3.45362 4.19849,-3.4536 -4.19849,-3.45361 -4.19849,-3.45362 v 2.87141 h -2.55759 -15.132567 -2.557555 z"
+=======
+         id="flowPara1296">tx_dc </flowPara></flowRoot>    <path
+       style="fill:#f74ff7;fill-opacity:0.73480667;stroke:#010001;stroke-width:0.10282773;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 82.233161,143.18135 -3.14887,2.22078 -3.148874,2.22077 3.148874,2.22077 3.14887,2.22078 v -1.9082 h 1.918171 11.349428 1.918171 v 1.9082 l 3.148869,-2.22078 3.14887,-2.22077 -3.14887,-2.22077 -3.148869,-2.22078 v 1.8464 H 95.50076 84.151332 82.233161 Z"
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        id="path1300"
        inkscape:connector-curvature="0" />
     <flowRoot
@@ -685,8 +753,12 @@
            height="60"
            x="100"
            y="432.51968" /></flowRegion><flowPara
+<<<<<<< HEAD
          id="flowPara1308"
          style="font-size:18.66666603px">QBLink  </flowPara></flowRoot>    <path
+=======
+         id="flowPara1308">QBLink Flags </flowPara></flowRoot>    <path
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        inkscape:connector-curvature="0"
        id="path1310"
        d="m 16.749379,150.90019 v -3.39916 h 21.350618 v -9.13677 H 16.749379 v -3.28925 l -5.067387,3.95629 -5.0674087,3.9563 5.0674087,3.95629 z"
@@ -816,10 +888,15 @@
            x="60"
            y="932.51971" /></flowRegion><flowPara
          id="flowPara11640"
+<<<<<<< HEAD
          style="font-weight:bold;font-size:18.66666603px">Clock </flowPara><flowPara
          style="font-weight:bold;font-size:18.66666603px"
          id="flowPara1206">Divider</flowPara></flowRoot>    <path
        style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1338)"
+=======
+         style="font-weight:bold">Clock Divider</flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:0.25251386px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1797)"
+>>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
        d="m 65.616666,188.52084 v 22.48958"
        id="path12075"
        inkscape:connector-curvature="0"
@@ -860,29 +937,71 @@
              width="150"
              id="rect12094"
              style="fill:#000800;fill-opacity:1" /></flowRegion><flowPara
-           id="flowPara12098"
-           style="font-size:18.66666603px">125MHz </flowPara></flowRoot>      <flowRoot
-         xml:space="preserve"
-         id="flowRoot1198"
-         style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,46.037527,-1.58739)"><flowRegion
-           id="flowRegion1200"><rect
-             id="rect1202"
-             width="80"
-             height="30"
-             x="10"
-             y="872.51971" /></flowRegion><flowPara
-           id="flowPara1204"
-           style="font-size:18.66666603px">Clock</flowPara></flowRoot>    </g>
+           id="flowPara12098">125MHz Clock</flowPara></flowRoot>    </g>
     <flowRoot
        xml:space="preserve"
-       id="flowRoot1232"
+       id="flowRoot1712"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion1714"><rect
+           id="rect1716"
+           width="65"
+           height="15"
+           x="65"
+           y="652.51971" /></flowRegion><flowPara
+         id="flowPara1718">rx_dc </flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1999"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,31.671439,24.989701)"><flowRegion
+         id="flowRegion2001"><rect
+           id="rect2003"
+           width="140"
+           height="25"
+           x="75"
+           y="747.51971" /></flowRegion><flowPara
+         id="flowPara2005">data_clk</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2015"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,1.6036172,2.5390605)"><flowRegion
+         id="flowRegion2017"><rect
+           id="rect2019"
+           width="75"
+           height="20"
+           x="10"
+           y="837.51971" /></flowRegion><flowPara
+         id="flowPara2021">ethClk125</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2095"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion1234"><rect
-           id="rect1236"
-           width="10"
-           height="50"
-           x="260"
-           y="722.51971" /></flowRegion><flowPara
-         id="flowPara1238"></flowPara></flowRoot>  </g>
+         id="flowRegion2097"><rect
+           id="rect2099"
+           width="90"
+           height="15"
+           x="270"
+           y="442.51968" /></flowRegion><flowPara
+         id="flowPara2101"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2015-9"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,347.73275,104.18323)"><flowRegion
+         id="flowRegion2017-1"><rect
+           id="rect2019-1"
+           width="75"
+           height="20"
+           x="10"
+           y="837.51971" /></flowRegion><flowPara
+         id="flowPara2021-3">ethClk125</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5223-3"
+       style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0,0.26458333,-0.26458333,0,207.13885,143.73294)"><flowRegion
+         id="flowRegion5225-1"><rect
+           id="rect5227-3"
+           width="140"
+           height="30"
+           x="240"
+           y="392.51968" /></flowRegion><flowPara
+         id="flowPara5229-4">userRst</flowPara></flowRoot>  </g>
 </svg>

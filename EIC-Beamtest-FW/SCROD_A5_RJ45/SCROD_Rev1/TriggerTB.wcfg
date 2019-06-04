@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/cmdInerpreter_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bmd_autoinit_definitions" />
+            <top_module name="bmd_definitions" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_compare_v11_0_comp" />
+            <top_module name="c_counter_binary_v11_0_pkg" />
+            <top_module name="c_mux_bus_v11_0_comp" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="ck_package" />
+            <top_module name="cmdinerpreter_tb" />
+            <top_module name="eth1000basexpkg" />
+            <top_module name="gigabitethpkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="utilitypkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_counter_v2_0_pkg" />
+            <top_module name="xbip_counter_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/cmdinerpreter_tb/usrclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">usrclk</obj_property>
+      <obj_property name="ObjectShortName">usrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/dataclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dataclk</obj_property>
+      <obj_property name="ObjectShortName">dataclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider54" type="divider">
+      <obj_property name="label">scrod</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/rxdataready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdataready</obj_property>
+      <obj_property name="ObjectShortName">rxdataready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/txdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">txdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/txdatavalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdatavalid</obj_property>
+      <obj_property name="ObjectShortName">txdatavalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/txdataready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdataready</obj_property>
+      <obj_property name="ObjectShortName">txdataready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/serialclklck" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">serialclklck[3:0]</obj_property>
+      <obj_property name="ObjectShortName">serialclklck[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/triglinksync" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triglinksync[3:0]</obj_property>
+      <obj_property name="ObjectShortName">triglinksync[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/dc_resp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_resp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_resp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/dc_resp_valid" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dc_resp_valid[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dc_resp_valid[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/qb_wren" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_wren[3:0]</obj_property>
+      <obj_property name="ObjectShortName">qb_wren[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/qb_rden" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_rden[3:0]</obj_property>
+      <obj_property name="ObjectShortName">qb_rden[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/qb_rst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">qb_rst[3:0]</obj_property>
+      <obj_property name="ObjectShortName">qb_rst[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/SCROD_QB/trigflag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">trigflag[3:0]</obj_property>
+      <obj_property name="ObjectShortName">trigflag[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/evntflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">evntflag</obj_property>
+      <obj_property name="ObjectShortName">evntflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/triglogicrst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">triglogicrst</obj_property>
+      <obj_property name="ObjectShortName">triglogicrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider55" type="divider">
+      <obj_property name="label">DCs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/tx_trig" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_trig[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_trig[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/timestamp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">timestamp[23:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/dcresp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dcresp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dcresp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/send_dcresp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">send_dcresp</obj_property>
+      <obj_property name="ObjectShortName">send_dcresp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/trigflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trigflag</obj_property>
+      <obj_property name="ObjectShortName">trigflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/sendtrigger" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sendtrigger</obj_property>
+      <obj_property name="ObjectShortName">sendtrigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/triggerdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triggerdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">triggerdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cmdinerpreter_tb/\dc_gen(0)\/DC/wordin" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wordin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wordin[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
