@@ -1,0 +1,13 @@
+Output: Gerber Files Drill
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [IDL_18_020.PcbDoc]
+   Generated File[IDL_18_020.GD1]
+   Generated File[IDL_18_020.RUL]
+   Generated File[IDL_18_020.EXTREP]
+   Generated File[IDL_18_020.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 7:10:04 PM On 4/30/2018

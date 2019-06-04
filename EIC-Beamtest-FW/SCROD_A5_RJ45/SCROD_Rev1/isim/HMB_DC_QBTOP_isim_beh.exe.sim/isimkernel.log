@@ -1,0 +1,28 @@
+Command line:
+   HMB_DC_QBTOP_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50440
+
+Mon May 27 23:18:10 2019
+
+
+ Elaboration Time: 0.453125 sec
+
+ Current Memory Usage: 5545.03 Meg
+
+ Total Signals          : 3371
+ Total Nets             : 9629
+ Total Signal Drivers   : 1667
+ Total Blocks           : 264
+ Total Primitive Blocks : 181
+ Total Processes        : 877
+ Total Traceable Variables  : 1923
+ Total Scalar Nets and Variables : 24722
+
+ Total Simulation Time: 0.5 sec
+
+ Current Memory Usage: 5544.99 Meg
+
+Mon May 27 23:18:57 2019
+

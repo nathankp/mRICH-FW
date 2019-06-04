@@ -1,0 +1,6 @@
+[submodule "QBLink4HMB"]
+	path = QBLink
+	url = https://github.com/nathankp/QBLink.git
+[submodule "SCROD_ETHERNET_V3"]
+	path = SCROD_ETHERNET_V3
+	url = EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/Ethernet/SCROD_Ethernet_V3

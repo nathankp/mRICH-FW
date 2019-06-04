@@ -65,77 +65,77 @@ end eth_top;
 
 architecture Behavioral of eth_top is
 
-component udp
-generic(
-	ip_addr : std_logic_vector(31 downto 0):= x"c0a81405";
-	dst_ip_addr : std_logic_vector(31 downto 0) := x"c0a81401";
-	port_num : std_logic_vector(15 downto 0):= x"6000";
-	dst_port_num : std_logic_vector(15 downto 0):= x"7000";
-	mac_addr : std_logic_vector(47 downto 0):= x"aabbccddeeff";
------	dst_mac_addr : std_logic_vector(47 downto 0) := x"0023564c1962"--Bronson's PC
-dst_mac_addr : std_logic_vector(47 downto 0):=x"be11e25CB0D5"--Belle II SCROD A5!-- x"0050B67C6C0F" --Isar's VM PC
-	);
-port(
---		board_clkp : in std_logic;
---		board_clkn : in std_logic;
-      ext_user_clk					:in std_logic;
-	   tx_udp_data                : in   std_logic_vector(7 downto 0);
-		tx_udp_valid               : in   std_logic;
-		tx_udp_ready               : out  std_logic;
-	   rx_udp_data                : out   std_logic_vector(7 downto 0);
-		rx_udp_valid               : out   std_logic;
-		rx_udp_ready               : in  std_logic;
-		trx_udp_clock					: out std_logic;
-
-		
-      clk_enable                : in  std_logic;
-      speedis100                : out std_logic;
-      speedis10100              : out std_logic;
-		
-		tx_statistics_s		: out std_logic;
-		rx_statistics_s		: out std_logic;
-		
-		pause_req_s				: in std_logic;
-		
-		mac_speed 				: in std_logic_vector(1 downto 0);
-		update_speed			: in std_logic;
-		config_board			: in std_logic;
-		serial_response		: out std_logic;
-		gen_tx_data				: in std_logic;
-		chk_tx_data				: in std_logic;
-		reset_error				: in std_logic;
-		frame_error				: out std_logic;
-		frame_errorn			: out std_logic;
-		activity_flash			: out std_logic;
-		activity_flashn		: out std_logic;
-	
-      phyad0               : in std_logic_vector(4 downto 0);
-      configuration_vector0: in std_logic_vector(4 downto 0);
-      configuration_valid0 : in std_logic;
-
-      link_timer_value0    : in std_logic_vector(8 downto 0);
-      an_interrupt0        : out std_logic;
-      an_adv_config_vector0: in std_logic_vector(15 downto 0);
-      an_adv_config_val0   : in std_logic;
-      an_restart_config0   : in std_logic; 
-      status_vector0       : out std_logic_vector(15 downto 0);
---      reset0               : in std_logic;
-      signal_detect0       : in std_logic;
-		
-		brefclk_p            : in std_logic;
-		brefclk_n				: in std_logic;
-
-      txp0                 : out std_logic;
-      txn0                 : out std_logic;
-      rxp0                 : in std_logic;
-      rxn0                 : in std_logic;
-
-      txp1                 : out std_logic;
-      txn1                 : out std_logic;
-      rxp1                 : in std_logic;
-      rxn1                 : in std_logic
-);
-end component;
+--component udp
+--generic(
+--	ip_addr : std_logic_vector(31 downto 0):= x"c0a81405";
+--	dst_ip_addr : std_logic_vector(31 downto 0) := x"c0a81401";
+--	port_num : std_logic_vector(15 downto 0):= x"6000";
+--	dst_port_num : std_logic_vector(15 downto 0):= x"7000";
+--	mac_addr : std_logic_vector(47 downto 0):= x"aabbccddeeff";
+-------	dst_mac_addr : std_logic_vector(47 downto 0) := x"0023564c1962"--Bronson's PC
+--dst_mac_addr : std_logic_vector(47 downto 0):=x"be11e25CB0D5"--Belle II SCROD A5!-- x"0050B67C6C0F" --Isar's VM PC
+--	);
+--port(
+----		board_clkp : in std_logic;
+----		board_clkn : in std_logic;
+--      ext_user_clk					:in std_logic;
+--	   tx_udp_data                : in   std_logic_vector(7 downto 0);
+--		tx_udp_valid               : in   std_logic;
+--		tx_udp_ready               : out  std_logic;
+--	   rx_udp_data                : out   std_logic_vector(7 downto 0);
+--		rx_udp_valid               : out   std_logic;
+--		rx_udp_ready               : in  std_logic;
+--		trx_udp_clock					: out std_logic;
+--
+--		
+--      clk_enable                : in  std_logic;
+--      speedis100                : out std_logic;
+--      speedis10100              : out std_logic;
+--		
+--		tx_statistics_s		: out std_logic;
+--		rx_statistics_s		: out std_logic;
+--		
+--		pause_req_s				: in std_logic;
+--		
+--		mac_speed 				: in std_logic_vector(1 downto 0);
+--		update_speed			: in std_logic;
+--		config_board			: in std_logic;
+--		serial_response		: out std_logic;
+--		gen_tx_data				: in std_logic;
+--		chk_tx_data				: in std_logic;
+--		reset_error				: in std_logic;
+--		frame_error				: out std_logic;
+--		frame_errorn			: out std_logic;
+--		activity_flash			: out std_logic;
+--		activity_flashn		: out std_logic;
+--	
+--      phyad0               : in std_logic_vector(4 downto 0);
+--      configuration_vector0: in std_logic_vector(4 downto 0);
+--      configuration_valid0 : in std_logic;
+--
+--      link_timer_value0    : in std_logic_vector(8 downto 0);
+--      an_interrupt0        : out std_logic;
+--      an_adv_config_vector0: in std_logic_vector(15 downto 0);
+--      an_adv_config_val0   : in std_logic;
+--      an_restart_config0   : in std_logic; 
+--      status_vector0       : out std_logic_vector(15 downto 0);
+----      reset0               : in std_logic;
+--      signal_detect0       : in std_logic;
+--		
+--		brefclk_p            : in std_logic;
+--		brefclk_n				: in std_logic;
+--
+--      txp0                 : out std_logic;
+--      txn0                 : out std_logic;
+--      rxp0                 : in std_logic;
+--      rxn0                 : in std_logic;
+--
+--      txp1                 : out std_logic;
+--      txn1                 : out std_logic;
+--      rxp1                 : in std_logic;
+--      rxn1                 : in std_logic
+--);
+--end component;
 
 
 
@@ -189,7 +189,16 @@ mgttxdis <= '0';
 mgtmod1 <= '1';
 mgtmod2 <= '1';
 
-udp_1 : udp
+udp_1 : entity work.udp
+generic map(
+	ip_addr => x"c0a81405",
+	dst_ip_addr => x"c0a81401",
+	port_num => x"6000",
+	dst_port_num => x"7000",
+	mac_addr => x"aabbccddeeff",
+-----	dst_mac_addr : std_logic_vector(47 downto 0) := x"0023564c1962"--Bronson's PC
+dst_mac_addr =>x"be11e25CB0D5"--Belle II SCROD A5!-- x"0050B67C6C0F" --Isar's VM PC
+	)
 port map(
 --	board_clkp => board_clkp_1,
 --	board_clkn => board_clkn_1,

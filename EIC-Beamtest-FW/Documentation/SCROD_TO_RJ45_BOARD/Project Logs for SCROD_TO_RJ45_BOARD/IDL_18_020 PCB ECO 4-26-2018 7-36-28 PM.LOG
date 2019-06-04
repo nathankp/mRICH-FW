@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=DC_SC_TX2_P Pin=J1-C7
+Removed Pin From Net: NetName=DC_SC_TX2_N Pin=J1-C8
+Added Pin To Net: NetName=NetJ1_C7 Pin=J1-C7
+Added Pin To Net: NetName=NetJ1_C7 Pin=R4-2
+Added Net: Name=NetJ1_C7
+Added Pin To Net: NetName=NetJ1_C8 Pin=J1-C8
+Added Pin To Net: NetName=NetJ1_C8 Pin=R4-1
+Added Net: Name=NetJ1_C8
+Added Member To Class: ClassName=RF Member=Wire NetJ1_C7
+Added Member To Class: ClassName=RF Member=Wire NetJ1_C8

@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=TRIG_AUX1_N Pin=CN4-6
+Added Pin To Net: NetName=TRIG_AUX1_P Pin=CN4-8
+Added Pin To Net: NetName=TRIG_AUX2_N Pin=CN4-10
+Added Pin To Net: NetName=TRIG_AUX2_P Pin=CN4-11
+Added Pin To Net: NetName=TRIG_AUX3_P Pin=CN4-14
+Added Pin To Net: NetName=TRIG_AUX3_N Pin=CN4-16
+Added Pin To Net: NetName=TRIG_AUX4_N Pin=CN4-26
+Added Pin To Net: NetName=TRIG_AUX4_P Pin=CN4-27
+Added Pin To Net: NetName=TRIG_AUX5_N Pin=CN4-28
+Added Pin To Net: NetName=TRIG_AUX5_P Pin=CN4-30
+Added Pin To Net: NetName=TRIG_AUX6_N Pin=CN4-36
+Added Pin To Net: NetName=TRIG_AUX6_P Pin=CN4-38
+Added Pin To Net: NetName=TRIG_AUX7_N Pin=CN4-39
+Added Pin To Net: NetName=TRIG_AUX7_P Pin=CN4-40
+Added Pin To Net: NetName=TRIG_AUX8_N Pin=CN4-50
+Added Pin To Net: NetName=TRIG_AUX8_P Pin=CN4-51

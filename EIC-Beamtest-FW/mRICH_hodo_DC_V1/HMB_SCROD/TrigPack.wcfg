@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/TriggerPack2TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="bmd_definitions" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_compare_v11_0_comp" />
+            <top_module name="c_counter_binary_v11_0_pkg" />
+            <top_module name="c_mux_bus_v11_0_comp" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="triggerpack2tb" />
+            <top_module name="utilitypkg" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+            <top_module name="xbip_counter_v2_0_pkg" />
+            <top_module name="xbip_counter_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wave_markers>
+      <marker time="21581000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/triggerpack2tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/sstin_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sstin_period</obj_property>
+      <obj_property name="ObjectShortName">sstin_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/timestamp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">timestamp[23:0]</obj_property>
+      <obj_property name="ObjectShortName">timestamp[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/sstin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sstin</obj_property>
+      <obj_property name="ObjectShortName">sstin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/triggerbits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triggerbits[4:0]</obj_property>
+      <obj_property name="ObjectShortName">triggerbits[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/qbl_wren" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">qbl_wren</obj_property>
+      <obj_property name="ObjectShortName">qbl_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/triggerdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triggerdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">triggerdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/wordout_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wordout_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wordout_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/wordout_valid_s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wordout_valid_s</obj_property>
+      <obj_property name="ObjectShortName">wordout_valid_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/wordout_req_s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wordout_req_s</obj_property>
+      <obj_property name="ObjectShortName">wordout_req_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/eventflag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eventflag</obj_property>
+      <obj_property name="ObjectShortName">eventflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/triggerpack2tb/reset_eventwatch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_eventwatch</obj_property>
+      <obj_property name="ObjectShortName">reset_eventwatch</obj_property>
+   </wvobject>
+</wave_config>

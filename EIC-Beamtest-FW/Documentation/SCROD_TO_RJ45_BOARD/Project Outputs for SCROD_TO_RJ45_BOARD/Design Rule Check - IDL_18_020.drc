@@ -1,0 +1,54 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Kevin\Desktop\projects\SCROD_TO_RJ45_BOARD\IDL_18_020.PcbDoc
+Date     : 4/30/2018
+Time     : 7:00:39 PM
+
+Processing Rule : Clearance Constraint (Gap=25mil) (InAnyDifferentialPair),(InNamedPolygon('GND_Top') or InNamedPolygon('GND_Bot'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=20mil) (Disabled)(Iskeepout),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNet('FMC_2V5')or InNet('FMC_3V3')or InNet('FMC_48V')or InNet('FMC_RAW1')or InNet('FMC_RAW2')or InNet('FMC_RAW3')or InNet('FMC_RAW4')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=25mil) (InNetClass('RF')),(InNamedPolygon('GND_Top') or InNamedPolygon('GND_Bot'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=150mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=1mil) (Max=10mil) (Preferred=2mil) (HasFootprint('ITECH_LOGO'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=12mil) (Conductor Width=15mil) (Air Gap=8mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (ISvIA)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=12mil) (Max=150mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:00

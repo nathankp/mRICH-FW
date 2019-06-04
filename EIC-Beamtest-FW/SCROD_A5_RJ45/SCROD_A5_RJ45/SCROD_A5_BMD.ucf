@@ -83,7 +83,7 @@ NET "MASTER_CLK_N" 		  LOC = U24 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";
 #NET "BOT_SC_DC_DOUT"  LOC = C25;# | SLEW = FAST;# | IOSTANDARD = LVCMOS25;
  
 ##### Soldered onto the board
-NET "RO_TRIG_IN" LOC = K22; #J4_032_K22
+#NET "RO_TRIG_IN" LOC = K22; #J4_032_K22
 
 ### ADDED NETS BY NATHAN: RJ45 NETS (BEGIN) 
 NET "SC_DC_RX_P<0>" LOC = V14; #SC_DC_RX1_P, J2_089_V14_L26P 
@@ -161,7 +161,7 @@ NET "SC_DC_CLK_N<3>" LOC = AB11 | IOSTANDARD = LVDS_25; #J1_061_AB11_L48N, 2.5V
 
 #####################################
 #Banks 0 and 2 can each support any two of the following 2.5V differential standards: LVDS_25 outputs, MINI_LVDS_25 outputs, RSDS_25 outputs, PPDS_25 outputs, or any two of the following 3.3V differential standards: LVDS_33 outputs, MINI_LVDS_33
-outputs, RSDS_33 outputs, PPDS_33 outputs, TMDS_33 outputs. Other I/O bank restrictions could also apply.
+#outputs, RSDS_33 outputs, PPDS_33 outputs, TMDS_33 outputs. Other I/O bank restrictions could also apply.
 #so sc-dc-clk<1> can be sent from a 3.3V to 2.5V
 #####################################
 

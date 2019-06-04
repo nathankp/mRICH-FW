@@ -1,0 +1,177 @@
+Removed Pin From Net: NetName=5V Pin=C1-1
+Removed Pin From Net: NetName=5V Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=5V Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-2
+Change Component Footprint: Designator=C2 Old Footprint=CTC-D7343-43 New Footprint=CC1206N1R
+Change Component Comment : Designator=C2 Old Comment=220uF New Comment=10uF
+Change component parameters: Designator = "C2"; Footprint = "CC1206N1R"; UniqueID = "\TNFCMQCP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=1(SP1.5SQ)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment2"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sort"; Value = "610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "THDW"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CTC-D7343-43)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "EEF-UE0J221LR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Tant SMD D 7343-43"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "PCE4263CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage rating"; Value = "6.3V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CC1206N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(CC1206N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C9(CC1206N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CC1206N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "C3216X7R1C106M160AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Cap Chip 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1601-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage rating"; Value = "16V"; VariantName = "[No Variations]"
+Added Component: Designator=D1(SOD128)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "NXP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "PMEG3050EP,115"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "568-6753-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=FB1(FB2220N1R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "74279224151"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Filter Chip 2220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "732-3423-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "710-74279224151"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "SMDR"; VariantName = "[No Variations]"
+Added Component: Designator=JPWR1(MOLEX_4PIN)
+Add component. Clean all parameters for all variants
+Added Component: Designator=PWR2(TO-263-4 DDPAK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "LM1084ISX-5.0/NOPB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "LM1084ISX-5.0/NOPBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Added Component: Designator=PWR3(SOT223)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Diodes Incorporated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ZLDO1117G12TA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "ZLDO1117G12DICT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Added Component: Designator=PWR4(SOT223)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer No"; Value = "ADP3339AKCZ-2.5-R7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "ADP3339AKCZ-2.5-R7CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tech"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=5V Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=5V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=2V5 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=5V Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=3V3 Pin=CN1-5
+Added Pin To Net: NetName=3V3 Pin=CN1-13
+Added Pin To Net: NetName=3V3 Pin=CN1-21
+Added Pin To Net: NetName=3V3 Pin=CN1-29
+Added Pin To Net: NetName=3V3 Pin=CN1-37
+Added Pin To Net: NetName=3V3 Pin=CN1-88
+Added Pin To Net: NetName=3V3 Pin=CN1-96
+Added Pin To Net: NetName=3V3 Pin=CN1-104
+Added Pin To Net: NetName=3V3 Pin=CN1-111
+Added Pin To Net: NetName=2V5 Pin=CN4-1
+Added Pin To Net: NetName=2V5 Pin=CN4-2
+Added Pin To Net: NetName=2V5 Pin=CN4-3
+Added Pin To Net: NetName=2V5 Pin=CN4-4
+Added Pin To Net: NetName=2V5 Pin=CN4-5
+Added Pin To Net: NetName=2V5 Pin=CN4-13
+Added Pin To Net: NetName=2V5 Pin=CN4-21
+Added Pin To Net: NetName=2V5 Pin=CN4-29
+Added Pin To Net: NetName=2V5 Pin=CN4-37
+Added Pin To Net: NetName=2V5 Pin=CN4-45
+Added Pin To Net: NetName=2V5 Pin=CN4-53
+Added Pin To Net: NetName=2V5 Pin=CN4-64
+Added Pin To Net: NetName=2V5 Pin=CN4-72
+Added Pin To Net: NetName=2V5 Pin=CN4-80
+Added Pin To Net: NetName=2V5 Pin=CN4-88
+Added Pin To Net: NetName=2V5 Pin=CN4-96
+Added Pin To Net: NetName=2V5 Pin=CN4-104
+Added Pin To Net: NetName=2V5 Pin=CN4-112
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=JPWR1-1
+Added Pin To Net: NetName=GND Pin=JPWR1-2
+Added Pin To Net: NetName=GND Pin=PWR2-1
+Added Pin To Net: NetName=5V Pin=PWR2-2
+Added Pin To Net: NetName=5V Pin=PWR2-4
+Added Pin To Net: NetName=GND Pin=PWR3-1
+Added Pin To Net: NetName=2V5 Pin=PWR3-2
+Added Pin To Net: NetName=5V Pin=PWR3-3
+Added Pin To Net: NetName=2V5 Pin=PWR3-4
+Added Pin To Net: NetName=GND Pin=PWR4-1
+Added Pin To Net: NetName=5V Pin=PWR4-3
+Added Pin To Net: NetName=1V2 Pin=C10-2
+Added Pin To Net: NetName=1V2 Pin=PWR4-2
+Added Pin To Net: NetName=1V2 Pin=PWR4-4
+Added Net: Name=1V2
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=C2-2
+Added Pin To Net: NetName=NetC1_1 Pin=FB1-2
+Added Pin To Net: NetName=NetC1_1 Pin=PWR2-3
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=RawFor_2.5V Pin=JPWR1-4
+Added Net: Name=RawFor_2.5V
+Added Pin To Net: NetName=RawFor_5V Pin=1-1
+Added Pin To Net: NetName=RawFor_5V Pin=D1-1
+Added Pin To Net: NetName=RawFor_5V Pin=FB1-1
+Added Pin To Net: NetName=RawFor_5V Pin=JPWR1-3
+Added Net: Name=RawFor_5V

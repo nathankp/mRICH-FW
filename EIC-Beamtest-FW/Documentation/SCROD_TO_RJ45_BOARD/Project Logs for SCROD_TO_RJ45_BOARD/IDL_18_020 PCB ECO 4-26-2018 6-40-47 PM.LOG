@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=SC_DC_RX3_P Pin=CN2-28
+Added Pin To Net: NetName=SC_DC_RX3_N Pin=CN2-29
+Added Pin To Net: NetName=SC_DC_DATA3_P Pin=CN2-31
+Added Pin To Net: NetName=SC_DC_DATA3_N Pin=CN2-32
+Added Pin To Net: NetName=MAS_ACK3_N Pin=CN2-36
+Added Pin To Net: NetName=MAS_ACK3_P Pin=CN2-37
+Added Pin To Net: NetName=ORed_Trig3_P Pin=CN2-39
+Added Pin To Net: NetName=ORed_Trig3_N Pin=CN2-40

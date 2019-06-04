@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=AUX3_N Pin=CN2-55
+Added Pin To Net: NetName=AUX3_N Pin=CN2-53
