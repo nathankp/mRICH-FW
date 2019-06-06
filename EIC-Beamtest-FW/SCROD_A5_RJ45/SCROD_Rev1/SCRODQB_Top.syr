@@ -1137,7 +1137,60 @@ Synthesizing Unit <IpV4Arbiter>.
         NUM_IP_G = 2
     Found 4-bit register for signal <r_channel>.
     Found 1-bit register for signal <r_state>.
+    Found 4-bit adder for signal <r_channel[3]_GND_150_o_add_8_OUT> created at line 136.
+    Found 4-bit comparator greater for signal <r_channel[3]_GND_150_o_LessThan_8_o> created at line 135
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <IpV4Arbiter> synthesized.
 
+Synthesizing Unit <IPv4Tx>.
+    Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\firmware-ethernet\Ethernet\General\rtl\IPv4Tx.vhd".
+    Found 2-bit register for signal <r_byteCount>.
+    Found 32-bit register for signal <r_header0>.
+    Found 32-bit register for signal <r_header1>.
+    Found 32-bit register for signal <r_header2>.
+    Found 32-bit register for signal <r_header3>.
+    Found 32-bit register for signal <r_header4>.
+    Found 32-bit register for signal <r_header0Checksum>.
+    Found 32-bit register for signal <r_header1Checksum>.
+    Found 32-bit register for signal <r_header2Checksum>.
+    Found 32-bit register for signal <r_header3Checksum>.
+    Found 32-bit register for signal <r_header4Checksum>.
+    Found 32-bit register for signal <r_ipCheckSum32>.
+    Found 16-bit register for signal <r_ipCheckSum16>.
+    Found 14-bit register for signal <r_wordsLeft>.
+    Found 32-bit register for signal <r_data32>.
+    Found 8-bit register for signal <r_data8>.
+    Found 1-bit register for signal <r_data8Valid>.
+    Found 1-bit register for signal <r_data8Last>.
+    Found 1-bit register for signal <r_ipDataReady>.
+    Found 4-bit register for signal <r_state>.
+    Found finite state machine <FSM_9> for signal <r_state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 34                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | ethTxClk (rising_edge)                         |
+    | Reset              | ethTxRst (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle_s                                         |
+    | Power Up State     | idle_s                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <n0406[16:0]> created at line 148.
+    Found 17-bit adder for signal <n0409[16:0]> created at line 149.
+    Found 17-bit adder for signal <n0414[16:0]> created at line 151.
+    Found 17-bit adder for signal <n0417[16:0]> created at line 152.
+    Found 32-bit adder for signal <n0421> created at line 160.
+    Found 32-bit adder for signal <r_header0Checksum[31]_r_header2Checksum[31]_add_20_OUT> created at line 160.
+    Found 32-bit adder for signal <n0427> created at line 167.
+    Found 32-bit adder for signal <r_ipCheckSum32[31]_r_header4Checksum[31]_add_22_OUT> created at line 167.
+    Found 16-bit adder for signal <r_ipCheckSum32[15]_r_ipCheckSum32[31]_add_23_OUT> created at line 171.
     Found 6-bit adder for signal <n0382> created at line 56.
     Found 6-bit adder for signal <n0393> created at line 56.
     Found 2-bit subtractor for signal <_n0446> created at line 233.
@@ -5103,15 +5156,7 @@ Total CPU time to Xst completion: 56.37 secs
  
 --> 
 
-Total memory usage is 4611984 kilobytes
-=======
-Total REAL time to Xst completion: 56.00 secs
-Total CPU time to Xst completion: 56.37 secs
- 
---> 
-
 Total memory usage is 4629760 kilobytes
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 1524 (   0 filtered)

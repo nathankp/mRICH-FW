@@ -265,14 +265,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 4533988 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
-Total REAL time to NGDBUILD completion:  13 sec
-Total CPU time to NGDBUILD completion:   9 sec
-=======
-Total memory usage is 4533988 kilobytes
-
-Writing NGD file "SCRODQB_Top.ngd" ...
 Total REAL time to NGDBUILD completion:  14 sec
 Total CPU time to NGDBUILD completion:   11 sec
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

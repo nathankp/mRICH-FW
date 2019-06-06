@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/mrich/Desktop/Triggerbits/Trigger/TrigBitMuxTb_isim_beh.exe" -prj "/home/mrich/Desktop/Triggerbits/Trigger/TrigBitMuxTb_beh.prj" "work.TrigBitMuxTb" 

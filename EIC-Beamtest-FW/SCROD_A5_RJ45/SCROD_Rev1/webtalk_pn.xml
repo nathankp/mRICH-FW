@@ -6,13 +6,7 @@ This means code written to parse this file will need to be revisited each subseq
 <application name="pn" timeStamp="Thu May 30 18:37:29 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="C6BEF743F8B7495D8F7375AE87D1CB00" type="project"/>
-<property name="ProjectIteration" value="6" type="project"/>
-=======
-<application name="pn" timeStamp="Thu May 30 18:37:29 2019">
-<section name="Project Information" visible="false">
-<property name="ProjectID" value="C6BEF743F8B7495D8F7375AE87D1CB00" type="project"/>
 <property name="ProjectIteration" value="12" type="project"/>
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 <property name="ProjectFile" value="C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/HMB_SCROD.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2018-11-21T17:49:27" type="project"/>
 </section>

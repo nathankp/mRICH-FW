@@ -1,0 +1,4 @@
+vhdl work "../../../../QBLink/QBLink/source/UtilityPkg.vhd"
+vhdl work "../../../../QBLink/source/Encode8b10b.vhd"
+vhdl work "../../../../QBLink/source/Decode8b10b.vhd"
+vhdl work "../../../../QBLink/source/ByteLink.vhd"
