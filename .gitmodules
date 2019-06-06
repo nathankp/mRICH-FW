@@ -1,6 +1,3 @@
 [submodule "QBLink4HMB"]
 	path = QBLink
 	url = https://github.com/nathankp/QBLink.git
-[submodule "SCROD_ETHERNET_V3"]
-	path = SCROD_ETHERNET_V3
-	url = https://github.com/nathankp/SCROD_ETHERNET_V3.git
