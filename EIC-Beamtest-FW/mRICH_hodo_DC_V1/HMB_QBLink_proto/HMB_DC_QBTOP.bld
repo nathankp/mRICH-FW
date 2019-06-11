@@ -7,8 +7,22 @@ iseconfig/filter.filter -intstyle ise -dd _ngo -sd ipcore_dir -sd
 xc6slx4-tqg144-3 HMB_DC_QBTOP_cs.ngc HMB_DC_QBTOP.ngd
 
 Reading NGO file
-"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto/HM
-B_DC_QBTOP_cs.ngc" ...
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/HMB_QBLink_proto
+/HMB_DC_QBTOP_cs.ngc" ...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/HMB_DC_QBTOP/U_ila_pro_0
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc6slx4' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your license support version '2019.06' for ChipScopePro
+expires in 24 days after which you will not qualify for Xilinx software updates
+or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
 Gathering constraint information from source properties...
 Done.
 
@@ -32,6 +46,12 @@ INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
    groups and period specifications were generated at the PLL_ADV output(s): 
    CLKOUT0: <TIMESPEC TS_CLOCK_FANOUT_clkout0 = PERIOD "CLOCK_FANOUT_clkout0"
    TS_SSTIN_P HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'SYSCLK_P', used in period specification
+   'TS_SSTIN_P', was traced into PLL_ADV instance PLL_ADV. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_CLOCK_FANOUT_clkout2 = PERIOD "CLOCK_FANOUT_clkout2"
+   TS_SSTIN_P / 0.4 HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'CLOCK_FANOUT_clkout0', used in period
    specification 'TS_CLOCK_FANOUT_clkout0', was traced into DCM_SP instance
@@ -72,7 +92,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   4
 
-Total memory usage is 4466500 kilobytes
+Total memory usage is 4468180 kilobytes
 
 Writing NGD file "HMB_DC_QBTOP.ngd" ...
 Total REAL time to NGDBUILD completion:  7 sec

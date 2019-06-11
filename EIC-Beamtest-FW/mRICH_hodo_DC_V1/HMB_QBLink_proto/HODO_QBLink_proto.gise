@@ -77,7 +77,27 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="hmb_dc_qbtop.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="hmb_dc_qbtop.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="hmb_dc_qbtop.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/QBLtxFIFO.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/QBLtxFIFO.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/QBLtxFIFO.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/Timestamper.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/Timestamper.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/Timestamper.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/core_resources.txt" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/gui_latency.txt" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/serializationFifo.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/serializationFifo.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/serializationFifo.vho" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/srout_bram_blkmem.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/srout_bram_blkmem.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHO" xil_pn:name="ipcore_dir/srout_bram_blkmem.vho" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
@@ -99,6 +119,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../QBLink/QBLink/cores/clockgen_bytelink.vhd"/>
@@ -134,21 +155,20 @@
     <transform xil_pn:end_ts="1558127136" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1558127136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.ngc"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.ngc"/>
       <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w1r8.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.ngc"/>
       <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/QBLtxFIFO.ngc"/>
       <outfile xil_pn:name="ipcore_dir/QBLtxFIFO.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/Timestamper.ngc"/>
       <outfile xil_pn:name="ipcore_dir/Timestamper.vhd"/>
       <outfile xil_pn:name="ipcore_dir/clockgen_bytelink.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/serializationFifo.ngc"/>
       <outfile xil_pn:name="ipcore_dir/serializationFifo.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/srout_bram_blkmem.ngc"/>
       <outfile xil_pn:name="ipcore_dir/srout_bram_blkmem.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1558127136" xil_pn:in_ck="8310821242058794501" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1558127136">
@@ -194,7 +214,7 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TriggerPack2TB_beh.prj"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="TriggerPack2TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -219,11 +239,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559277759" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1559277759">
+    <transform xil_pn:end_ts="1559853048" xil_pn:in_ck="-163342646338376867" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2585564988486987154" xil_pn:start_ts="1559853048">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.ngc"/>
       <outfile xil_pn:name="ipcore_dir/CMD_FIFO_w8r32.vhd"/>
       <outfile xil_pn:name="ipcore_dir/QBLtxFIFO.ngc"/>
       <outfile xil_pn:name="ipcore_dir/QBLtxFIFO.vhd"/>
@@ -248,7 +267,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559277778" xil_pn:in_ck="-5782508377714193707" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7157024982517060665" xil_pn:start_ts="1559277759">
+    <transform xil_pn:end_ts="1559853067" xil_pn:in_ck="-1822169843101264992" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7157024982517060665" xil_pn:start_ts="1559853048">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -266,11 +285,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1558644643" xil_pn:in_ck="2398029821523793134" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7624815037760347206" xil_pn:start_ts="1558644643">
+    <transform xil_pn:end_ts="1559842964" xil_pn:in_ck="2398029821523793134" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7624815037760347206" xil_pn:start_ts="1559842964">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1559277794" xil_pn:in_ck="5242432110694695391" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4897868808391741127" xil_pn:start_ts="1559277778">
+    <transform xil_pn:end_ts="1559853083" xil_pn:in_ck="5944355060652956958" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4897868808391741127" xil_pn:start_ts="1559853067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -282,8 +301,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559277812" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1559277794">
+    <transform xil_pn:end_ts="1559853105" xil_pn:in_ck="1732365953048463212" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1559853083">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.pcf"/>
       <outfile xil_pn:name="HMB_DC_QBTOP_map.map"/>
@@ -295,7 +315,7 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559277833" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1559277812">
+    <transform xil_pn:end_ts="1559853127" xil_pn:in_ck="-587236526809777467" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1559853105">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -310,8 +330,8 @@
       <outfile xil_pn:name="HMB_DC_QBTOP_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1559277849" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1559277833">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1559853144" xil_pn:in_ck="-4299858205265820443" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1559853131">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.ut"/>
@@ -327,6 +347,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
@@ -336,11 +357,12 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1559277833" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1559277828">
+    <transform xil_pn:end_ts="1559853127" xil_pn:in_ck="-1716903505591357464" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1559853121">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="HMB_DC_QBTOP.twr"/>

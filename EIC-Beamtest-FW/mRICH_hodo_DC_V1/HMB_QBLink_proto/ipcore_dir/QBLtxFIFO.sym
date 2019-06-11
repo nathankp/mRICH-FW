@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="QBLtxFIFO">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2018-10-11T1:8:55</timestamp>
+    <timestamp>2019-6-6T18:16:28</timestamp>
     <pin polarity="Input" x="0" y="112" name="rst" />
     <pin polarity="Input" x="0" y="208" name="wr_clk" />
     <pin polarity="Input" x="0" y="240" name="din[31:0]" />

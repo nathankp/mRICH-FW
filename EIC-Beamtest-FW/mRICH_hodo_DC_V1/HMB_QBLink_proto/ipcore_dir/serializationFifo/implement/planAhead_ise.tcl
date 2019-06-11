@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc6slx9tqg144-3
+set device xc6slx4tqg144-3
 set projName serializationFifo
 set design serializationFifo
 set projDir [file dirname [info script]]

@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc6slx9tqg144-3
+set device xc6slx4tqg144-3
 set projName CMD_FIFO_w1r8
 set design CMD_FIFO_w1r8
 set projDir [file dirname [info script]]

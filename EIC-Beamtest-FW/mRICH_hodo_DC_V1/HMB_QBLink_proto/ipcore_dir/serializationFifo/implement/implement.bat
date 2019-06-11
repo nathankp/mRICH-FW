@@ -70,7 +70,7 @@ cd results
 
 echo 'Running ngdbuild'
 
-ngdbuild -p xc6slx9-tqg144-3 -sd ../../../ serializationFifo_exdes
+ngdbuild -p xc6slx4-tqg144-3 -sd ../../../ serializationFifo_exdes
 
 echo 'Running map'
 map serializationFifo_exdes -o mapped.ncd

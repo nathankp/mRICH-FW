@@ -1,7 +1,7 @@
 run
 -ifmt VHDL
 -ent serializationFifo_exdes 
--p xc6slx9-tqg144-3
+-p xc6slx4-tqg144-3
 -ifn xst.prj
 -write_timing_constraints No
 -iobuf YES

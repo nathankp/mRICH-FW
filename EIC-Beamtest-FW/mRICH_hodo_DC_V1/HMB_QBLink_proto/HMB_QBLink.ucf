@@ -43,6 +43,11 @@ NET "SYNC_N"	 	    LOC = "P1" | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; # #P
 #######################################################################################
 #
 
+########## dac interface signals #####################################################
+NET "DAC_SDI" 			LOC = "P46";
+NET "DAC_SCLK" 		LOC = "P47";
+NET "DAC_SYNC" 		LOC = "P48";
+NET "DAC_LDAC" 		LOC = "P50";
                          
 ########### FLASH interface signals ###################################################
 #NET	"flash_do"      LOC = "p65";

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="CMD_FIFO_w1r8">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-5-15T22:1:57</timestamp>
+    <timestamp>2019-6-6T17:52:11</timestamp>
     <pin polarity="Input" x="0" y="112" name="rst" />
     <pin polarity="Input" x="0" y="208" name="wr_clk" />
     <pin polarity="Input" x="0" y="240" name="din[0:0]" />

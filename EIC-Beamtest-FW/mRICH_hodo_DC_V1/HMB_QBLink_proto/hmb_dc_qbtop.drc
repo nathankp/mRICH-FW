@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 30 18:43:56 2019
+Thu Jun 06 10:32:14 2019
 
 drc -z HMB_DC_QBTOP.ncd HMB_DC_QBTOP.pcf
 
@@ -11,18 +11,18 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net TriggerLogic/TrigData_6_G
 WARNING:PhysDesignRules:372 - Gated clock. Clock net SSTin is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net Mram__n1477 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net Mram__n1500 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   trgLinkSynced_trigFlag_AND_1547_o is sourced by a combinatorial pin. This is
+   trgLinkSynced_trigFlag_AND_1550_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   Reg_state[3]_PWR_40_o_Mux_150_o is sourced by a combinatorial pin. This is
+   Reg_state[3]_PWR_42_o_Mux_155_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 30 18:43:30 2019
+// Written by: Map P.20131013 on Thu Jun 06 10:31:42 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,13 +15,18 @@ COMP "TX_P" LOCATE = SITE "P127" LEVEL 1;
 COMP "SHOUT" LOCATE = SITE "P7" LEVEL 1;
 COMP "SYNC_N" LOCATE = SITE "P1" LEVEL 1;
 COMP "SYNC_P" LOCATE = SITE "P2" LEVEL 1;
+COMP "DAC_LDAC" LOCATE = SITE "P50" LEVEL 1;
+COMP "DAC_SCLK" LOCATE = SITE "P47" LEVEL 1;
+COMP "DAC_SYNC" LOCATE = SITE "P48" LEVEL 1;
 COMP "TX_TRIG<0>" LOCATE = SITE "P34" LEVEL 1;
 COMP "TX_TRIG<1>" LOCATE = SITE "P33" LEVEL 1;
 COMP "TX_TRIG<2>" LOCATE = SITE "P8" LEVEL 1;
 COMP "TX_TRIG<3>" LOCATE = SITE "P9" LEVEL 1;
 COMP "TX_TRIG<4>" LOCATE = SITE "P10" LEVEL 1;
-TIMEGRP asic_clk = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL "SSTclk_cntr_0"
-        BEL "SSTclk_cntr_1" BEL "TX_DAC_UPst_FSM_FFd1" BEL
+COMP "DAC_SDI" LOCATE = SITE "P46" LEVEL 1;
+TIMEGRP asic_clk = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL
+        "TX_DAC_UPst_FSM_FFd1" BEL "Trim_DAC_UPst_FSM_FFd2" BEL
+        "Trim_DAC_UPst_FSM_FFd1" BEL "SSTclk_cntr_0" BEL "SSTclk_cntr_1" BEL
         "TARGETX_control/INTERNAL_COUNTER_15" BEL
         "TARGETX_control/INTERNAL_COUNTER_14" BEL
         "TARGETX_control/INTERNAL_COUNTER_13" BEL
@@ -48,9 +53,11 @@ TIMEGRP asic_clk = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL "SSTclk_cntr_0"
         "TARGETX_control/SCLK" BEL "TARGETX_control/SCLK_i" BEL
         "TARGETX_control/ENABLE_COUNTER" BEL "TARGETX_control/UPDATE_REG_1"
         BEL "TARGETX_control/UPDATE_REG_0" BEL "tx_dac_update" BEL
-        "TARGETX_control/SIN_i" BEL "TARGETX_control/PCLK_i";
+        "mppc_dac_update" BEL "TARGETX_control/SIN_i" BEL
+        "TARGETX_control/PCLK_i";
 TIMEGRP CLOCK_FANOUT_clkout1 = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL
-        "SSTclk_cntr_0" BEL "SSTclk_cntr_1" BEL "TX_DAC_UPst_FSM_FFd1" BEL
+        "TX_DAC_UPst_FSM_FFd1" BEL "Trim_DAC_UPst_FSM_FFd2" BEL
+        "Trim_DAC_UPst_FSM_FFd1" BEL "SSTclk_cntr_0" BEL "SSTclk_cntr_1" BEL
         "CLOCK_FANOUT/clkout2_buf" BEL "TARGETX_control/INTERNAL_COUNTER_15"
         BEL "TARGETX_control/INTERNAL_COUNTER_14" BEL
         "TARGETX_control/INTERNAL_COUNTER_13" BEL
@@ -77,7 +84,60 @@ TIMEGRP CLOCK_FANOUT_clkout1 = BEL "SSTin" BEL "TX_DAC_UPst_FSM_FFd2" BEL
         "TARGETX_control/SCLK" BEL "TARGETX_control/SCLK_i" BEL
         "TARGETX_control/ENABLE_COUNTER" BEL "TARGETX_control/UPDATE_REG_1"
         BEL "TARGETX_control/UPDATE_REG_0" BEL "tx_dac_update" BEL
-        "TARGETX_control/SIN_i" BEL "TARGETX_control/PCLK_i";
+        "mppc_dac_update" BEL "TARGETX_control/SIN_i" BEL
+        "TARGETX_control/PCLK_i";
+TIMEGRP CLOCK_FANOUT_clkout2 = BEL "CLOCK_FANOUT/clkout3_buf" BEL
+        "MPPC_DAC/wait_count_31" BEL "MPPC_DAC/wait_count_6" BEL
+        "MPPC_DAC/wait_count_5" BEL "MPPC_DAC/wait_count_4" BEL
+        "MPPC_DAC/wait_count_3" BEL "MPPC_DAC/wait_count_2" BEL
+        "MPPC_DAC/wait_count_1" BEL "MPPC_DAC/wait_count_0" BEL
+        "MPPC_DAC/state_FSM_FFd3" BEL "MPPC_DAC/state_FSM_FFd1" BEL
+        "MPPC_DAC/internal_addr_4" BEL "MPPC_DAC/internal_addr_0" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_31" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_30" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_29" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_28" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_27" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_26" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_25" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_24" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_23" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_22" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_21" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_20" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_19" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_18" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_17" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_16" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_15" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_14" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_13" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_12" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_11" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_10" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_9" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_8" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_7" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_6" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_5" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_4" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_3" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_2" BEL
+        "MPPC_DAC/MPPC_DAC/bit_cnt_1" BEL "MPPC_DAC/MPPC_DAC/bit_cnt_0" BEL
+        "MPPC_DAC/MPPC_DAC/st_FSM_FFd1" BEL "MPPC_DAC/MPPC_DAC/st_FSM_FFd2"
+        BEL "MPPC_DAC/MPPC_DAC/st_FSM_FFd3" BEL "MPPC_DAC/MPPC_DAC/data_47"
+        BEL "MPPC_DAC/MPPC_DAC/data_46" BEL "MPPC_DAC/MPPC_DAC/data_45" BEL
+        "MPPC_DAC/MPPC_DAC/data_44" BEL "MPPC_DAC/MPPC_DAC/data_43" BEL
+        "MPPC_DAC/MPPC_DAC/data_42" BEL "MPPC_DAC/MPPC_DAC/data_41" BEL
+        "MPPC_DAC/MPPC_DAC/data_40" BEL "MPPC_DAC/MPPC_DAC/data_39" BEL
+        "MPPC_DAC/MPPC_DAC/data_38" BEL "MPPC_DAC/MPPC_DAC/data_37" BEL
+        "MPPC_DAC/MPPC_DAC/data_36" BEL "MPPC_DAC/MPPC_DAC/data_35" BEL
+        "MPPC_DAC/MPPC_DAC/data_34" BEL "MPPC_DAC/MPPC_DAC/data_33" BEL
+        "MPPC_DAC/MPPC_DAC/data_32" BEL "MPPC_DAC/MPPC_DAC/data_31" BEL
+        "MPPC_DAC/MPPC_DAC/data_30" BEL "MPPC_DAC/MPPC_DAC/data_29" BEL
+        "MPPC_DAC/MPPC_DAC/data_28" BEL "MPPC_DAC/MPPC_DAC/data_27" BEL
+        "MPPC_DAC/MPPC_DAC/data_26" BEL "MPPC_DAC/MPPC_DAC/data_25" BEL
+        "MPPC_DAC/MPPC_DAC/data_24" BEL "MPPC_DAC/MPPC_DAC/data_23" BEL
+        "MPPC_DAC/MPPC_DAC/data_21" BEL "MPPC_DAC/MPPC_DAC/data_20" BEL
+        "MPPC_DAC/MPPC_DAC/data_19" BEL "MPPC_DAC/MPPC_DAC/data_18" BEL
+        "MPPC_DAC/MPPC_DAC/data_17" BEL "MPPC_DAC/MPPC_DAC/data_16" BEL
+        "MPPC_DAC/MPPC_DAC/data_15" BEL "MPPC_DAC/MPPC_DAC/data_14" BEL
+        "MPPC_DAC/MPPC_DAC/data_13" BEL "MPPC_DAC/MPPC_DAC/data_12" BEL
+        "MPPC_DAC/MPPC_DAC/data_11" BEL "MPPC_DAC/MPPC_DAC/data_10" BEL
+        "MPPC_DAC/MPPC_DAC/data_9" BEL "MPPC_DAC/MPPC_DAC/data_8" BEL
+        "MPPC_DAC/MPPC_DAC/data_7" BEL "MPPC_DAC/MPPC_DAC/data_6" BEL
+        "MPPC_DAC/MPPC_DAC/data_5" BEL "MPPC_DAC/MPPC_DAC/data_4" BEL
+        "MPPC_DAC/MPPC_DAC/data_3" BEL "MPPC_DAC/MPPC_DAC/data_2" BEL
+        "MPPC_DAC/MPPC_DAC/data_1" BEL "MPPC_DAC/MPPC_DAC/data_0" BEL
+        "MPPC_DAC/MPPC_DAC/SCLK" BEL "MPPC_DAC/MPPC_DAC/LDAC" BEL
+        "MPPC_DAC/MPPC_DAC/SYNC" BEL "MPPC_DAC/state_FSM_FFd2" BEL
+        "MPPC_DAC/internal_update" BEL "MPPC_DAC/config_done" BEL
+        "MPPC_DAC/MPPC_DAC/DIN" BEL "MPPC_DAC/MPPC_DAC/busy";
 PIN comm_process/U_ClockGenByteLink/dcm_sp_inst_pins<3> = BEL
         "comm_process/U_ClockGenByteLink/dcm_sp_inst" PINNAME CLKIN;
 PIN
@@ -2730,6 +2790,8 @@ TS_CLOCK_FANOUT_clkout1 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout1" TS_SSTIN_P /
         2.5 HIGH 50%;
 TS_CLOCK_FANOUT_clkout0 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout0" TS_SSTIN_P
         HIGH 50%;
+TS_CLOCK_FANOUT_clkout2 = PERIOD TIMEGRP "CLOCK_FANOUT_clkout2" TS_SSTIN_P /
+        0.4 HIGH 50%;
 TS_comm_process_U_ClockGenByteLink_clkfx = PERIOD TIMEGRP
         "comm_process_U_ClockGenByteLink_clkfx" TS_CLOCK_FANOUT_clkout0 / 5
         HIGH 50%;

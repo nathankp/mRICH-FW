@@ -45,7 +45,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 
 
-set device xc6slx9tqg144-3
+set device xc6slx4tqg144-3
 set projName srout_bram_blkmem
 set design srout_bram_blkmem
 set projDir [file dirname [info script]]

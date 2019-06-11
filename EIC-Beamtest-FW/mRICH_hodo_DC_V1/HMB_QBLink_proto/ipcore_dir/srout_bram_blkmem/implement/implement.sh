@@ -30,7 +30,7 @@ cp ../example_design/srout_bram_blkmem_exdes.ucf results/
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -p xc6slx9-tqg144-3 srout_bram_blkmem_exdes
+ngdbuild -p xc6slx4-tqg144-3 srout_bram_blkmem_exdes
 
 echo 'Running map'
 map srout_bram_blkmem_exdes -o mapped.ncd -pr i

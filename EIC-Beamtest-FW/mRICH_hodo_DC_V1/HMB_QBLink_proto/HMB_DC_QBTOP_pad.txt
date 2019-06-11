@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 30 18:43:46 2019
+Thu Jun 06 10:31:59 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -61,15 +61,15 @@ Pinout by Pin Number:
 |P39       |           |IOBM     |IO_L65P_INIT_B_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P40       |           |IOBS     |IO_L64N_D9_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P41       |           |IOBM     |IO_L64P_D8_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P42       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |any******|          |           |                |
+|P42       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P43       |           |IOBS     |IO_L62N_D6_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P44       |           |IOBM     |IO_L62P_D5_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P45       |           |IOBS     |IO_L49N_D4_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P46       |           |IOBM     |IO_L49P_D3_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P47       |           |IOBS     |IO_L48N_RDWR_B_VREF_2     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P48       |           |IOBM     |IO_L48P_D7_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P46       |DAC_SDI    |IOB      |IO_L49P_D3_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P47       |DAC_SCLK   |IOB      |IO_L48N_RDWR_B_VREF_2     |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P48       |DAC_SYNC   |IOB      |IO_L48P_D7_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P49       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P50       |           |IOBS     |IO_L31N_GCLK30_D15_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P50       |DAC_LDAC   |IOB      |IO_L31N_GCLK30_D15_2      |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P51       |           |IOBM     |IO_L31P_GCLK31_D14_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P52       |           |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P53       |           |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
@@ -82,7 +82,7 @@ Pinout by Pin Number:
 |P60       |           |IOBM     |IO_L13P_M1_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P61       |           |IOBS     |IO_L12N_D2_MISO3_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P62       |           |IOBM     |IO_L12P_D1_MISO2_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P63       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |any******|          |           |                |
+|P63       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P64       |           |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P65       |           |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P66       |           |IOBS     |IO_L2N_CMPMOSI_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |

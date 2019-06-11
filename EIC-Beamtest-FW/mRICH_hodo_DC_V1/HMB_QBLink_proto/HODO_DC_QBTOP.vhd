@@ -57,7 +57,11 @@ entity HMB_DC_QBTOP is
 			  SHOUT	 : IN  sl; --NOT MAPPED
 			  SIN		 : OUT sl;
 			  PCLK	 : OUT sl;
-			  SCLK	 : OUT sl
+			  SCLK	 : OUT sl;
+			  DAC_SCLK           : OUT STD_LOGIC;
+			  DAC_SDI            : OUT STD_LOGIC;
+			  DAC_SYNC           : OUT STD_LOGIC;
+			  DAC_LDAC           : OUT STD_LOGIC
 			);
 END HMB_DC_QBTOP;
 
@@ -110,6 +114,10 @@ signal tx_dac_update       : sl := '0';
 signal tx_dac_busy : sl := '0';
 --signal shout : sl;
 
+--Trim dac signals
+signal mppc_dac_busy : sl := '0';
+signal mppc_dac_update : sl := '0';
+signal Trim_DAC_UPst : slv(1 downto 0) := "00";
 --command type constants---
 constant read_rg : slv(31 downto 0) := x"72656164"; --write a register command type
 constant write_rg : slv(31 downto 0) := x"72697465"; --read a register  
@@ -232,7 +240,7 @@ PORT MAP(
 	PCLK 				=> PCLK);				  --hardware signals to targetx
 
  --DAC Update control--
- Update_DAC : PROCESS(asic_clk, regAddr)
+ Update_TX_DAC : PROCESS(asic_clk, regAddr)
  BEGIN
 	IF rising_edge(asic_clk) THEN
 		CASE TX_DAC_UPst IS 
@@ -258,6 +266,36 @@ PORT MAP(
 			
 			WHEN others =>
 				TX_DAC_UPst <= "00"; 
+		END CASE;
+	END IF;
+ END PROCESS; 
+ 
+ Update_MPPC_DAC : PROCESS(asic_clk, regAddr)
+ BEGIN
+	IF rising_edge(asic_clk) THEN
+		CASE Trim_DAC_UPst IS 
+			WHEN "00" =>
+				IF to_integer(unsigned(regAddr)) = 17 THEN
+					mppc_dac_update <= '1'; 
+					Trim_DAC_UPst <= "01";
+				ELSE
+					mppc_dac_update <= '0';
+				END IF;
+		   
+			WHEN "01" =>
+				mppc_dac_update <= '1'; 
+				Trim_DAC_UPst <= "10";
+			
+
+		   WHEN "10" => 
+				mppc_dac_update <= '0'; 
+				Trim_DAC_UPst <= "11";
+			
+			WHEN "11" =>
+				Trim_DAC_UPst <= "00"; 
+			
+			WHEN others =>
+				Trim_DAC_UPst <= "00"; 
 		END CASE;
 	END IF;
  END PROCESS; 
@@ -291,21 +329,23 @@ tx_dac_load_period  <= DC_REG(3);
 tx_dac_latch_period <= DC_REG(4);
 reset_sm <= DC_REG(5)(11); --register 5, bit 12 drives reset of state machines
 
---QBLink_rst : process(reset_sm, sysclk)
--- variable cnt : integer := 0;
---  begin
---   IF(reset_sm = '1') THEN
---		IF (rising_edge(sysclk)) and (cnt <= 5) THEN
---			QBreset <= '1';
---			cnt := cnt + 1;
---		ELSE
---			QBreset <= '0';
---			cnt := 0;
---		END IF;
---	ELSE
---		QBreset <= '0';
---	END IF;
---END process;
+MPPC_DAC : entity work.mppc_dac_calb
+Port Map(
+	----------CLOCK-----------------
+	CLOCK        => asic_clk,  		 	--62.5MHz 
+	DAC_CLOCK	 => aux_clk,    			--10MHz
+	----------DAC PARAMETERS--------
+	DAC_ADDR     => mppc_dac_addr,   	--comes from ctrl register 16 bit 4 to 0
+	DAC_VALUE    => mppc_dac_value,  	--comes from ctrl register 17 bit 11 to 0
+	DAC_UPDATE   => mppc_dac_update, 	
+	DAC_BUSY		 => mppc_dac_busy,   
+	OOPS_RESET   => reset_sm,         --reset all modules to idle comes from register 5 bit 0	
+	----------HW INTERFACE----------
+	DAC_SCLK	    => DAC_SCLK,  			--hardware signals to DACs
+	DAC_DIN		 => DAC_SDI,				--hardware signals to DACs
+	LDAC         => DAC_LDAC,				--hardware signals to DACs
+	SYNC         => DAC_SYNC);				--hardware signals to DACs
+
 
 DCReg: PROCESS(sysclk, Reg_state, trgLinkSynced, serialClkLocked, wordout_valid, wordout, trigflag, cmd_type) 
 BEGIN
