@@ -56,7 +56,6 @@
    <wvobject fp_name="/cmdinerpreter_tb/txdata" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">txdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">txdata[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/cmdinerpreter_tb/txdatavalid" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">txdatavalid</obj_property>

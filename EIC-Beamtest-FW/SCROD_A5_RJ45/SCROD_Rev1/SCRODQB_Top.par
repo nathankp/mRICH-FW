@@ -155,18 +155,6 @@ Phase  1  : 42663 unrouted;      REAL time: 13 secs
 
 Phase  2  : 31086 unrouted;      REAL time: 19 secs 
 
-Phase  3  : 7810 unrouted;      REAL time: 42 secs 
-
-Phase  4  : 11038 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 36 secs 
-
-Updating file: SCRODQB_Top.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:20634, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 5 secs 
-
-Phase  6  : 0 unrouted; (Setup:20408, Hold:96974, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
-=======
-Phase  2  : 31086 unrouted;      REAL time: 19 secs 
-
 Phase  3  : 11038 unrouted;      REAL time: 33 secs 
 
 Phase  4  : 11038 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 36 secs 
@@ -176,21 +164,9 @@ Updating file: SCRODQB_Top.ncd with current fully routed design.
 Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
 
 Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
 
-<<<<<<< HEAD
-Phase  7  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 56 secs 
-
-Phase  8  : 0 unrouted; (Setup:16700, Hold:94224, Component Switching Limit:0)     REAL time: 1 mins 56 secs 
-
-Phase  9  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 58 secs 
-
-Phase 10  : 0 unrouted; (Setup:16700, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 59 secs 
-Total REAL time to Router completion: 1 mins 59 secs 
-Total CPU time to Router completion: 1 mins 56 secs 
-=======
 Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
@@ -198,7 +174,6 @@ Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 47 secs 
 Total REAL time to Router completion: 47 secs 
 Total CPU time to Router completion: 42 secs 
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Partition Implementation Status
 -------------------------------
@@ -323,13 +298,7 @@ WARNING:Par:283 - There are 14 loadless signals in this design. This design will
 Total REAL time to PAR completion: 49 secs 
 Total CPU time to PAR completion: 44 secs 
 
-Peak Memory Usage:  4924 MB
-=======
-Total REAL time to PAR completion: 49 secs 
-Total CPU time to PAR completion: 44 secs 
-
 Peak Memory Usage:  4849 MB
->>>>>>> fccddab9a372b5e2a6e44e4c2c27b3b9ffd22f2c
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

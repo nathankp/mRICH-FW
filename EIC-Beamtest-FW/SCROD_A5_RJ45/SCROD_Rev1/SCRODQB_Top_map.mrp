@@ -106,8 +106,6 @@ Specific Feature Utilization:
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
   Number of RPM macros:            9
-<<<<<<< HEAD
-Average Fanout of Non-Clock Nets:                3.27
 
 Design Summary
 --------------
