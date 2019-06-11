@@ -358,25 +358,25 @@
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/CMD_FIFO_w1r8.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo8x64.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo8x64.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/bram8x3000.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/bram8x3000.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifoDist8x16.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifoDist8x16.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ipcore_dir/udp64kfifo.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo16x64.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo16x64.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo32x512RxAxi.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo32x512RxAxi.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo18x16.xise" xil_pn:type="FILE_ISE">
+    <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo18x16.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../../../QBLink/QBlink/cores/serializationFifo.xise" xil_pn:type="FILE_COREGENISE">
