@@ -4,54 +4,57 @@ Xilinx Mapping Report File for Design 'SCRODQB_Top'
 Design Information
 ------------------
 Command Line   : map -filter
-C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/fi
-lter.filter -intstyle ise -p xc6slx150t-fgg676-3 -w -logic_opt off -ol high -t 1
--xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc
-off -power off -o SCRODQB_Top_map.ncd SCRODQB_Top.ngd SCRODQB_Top.pcf 
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig
+/filter.filter -intstyle ise -p xc6slx150t-fgg676-3 -w -logic_opt off -ol high
+-t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr
+off -lc off -power off -o SCRODQB_Top_map.ncd SCRODQB_Top.ngd SCRODQB_Top.pcf 
 Target Device  : xc6slx150t
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu May 30 18:38:56 2019
+Mapped Date    : Mon Jun 22 09:01:55 2020
 
-Interim Summary
----------------
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   52
 Slice Logic Utilization:
-  Number of Slice Registers:                 6,601 out of 184,304    3%
-    Number used as Flip Flops:               6,535
-    Number used as Latches:                     50
+  Number of Slice Registers:                 6,888 out of 184,304    3%
+    Number used as Flip Flops:               6,858
+    Number used as Latches:                     14
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               16
-  Number of Slice LUTs:                      5,840 out of  92,152    6%
-    Number used as logic:                    5,673 out of  92,152    6%
-      Number using O6 output only:           3,520
-      Number using O5 output only:             575
-      Number using O5 and O6:                1,578
+  Number of Slice LUTs:                      6,473 out of  92,152    7%
+    Number used as logic:                    5,648 out of  92,152    6%
+      Number using O6 output only:           3,530
+      Number using O5 output only:             580
+      Number using O5 and O6:                1,538
       Number used as ROM:                        0
-    Number used as Memory:                      98 out of  21,680    1%
+    Number used as Memory:                     165 out of  21,680    1%
       Number used as Dual Port RAM:             36
         Number using O6 output only:            12
         Number using O5 output only:             0
         Number using O5 and O6:                 24
       Number used as Single Port RAM:            0
-      Number used as Shift Register:            62
-        Number using O6 output only:            56
+      Number used as Shift Register:           129
+        Number using O6 output only:            95
         Number using O5 output only:             1
-        Number using O5 and O6:                  5
-    Number used exclusively as route-thrus:     69
-      Number with same-slice register load:      0
-      Number with same-slice carry load:        69
+        Number using O5 and O6:                 33
+    Number used exclusively as route-thrus:    660
+      Number with same-slice register load:    595
+      Number with same-slice carry load:        65
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of MUXCYs used:                     1,804 out of  46,076    3%
-  Number of LUT Flip Flop pairs used:        9,664
-    Number with an unused Flip Flop:         3,550 out of   9,664   36%
-    Number with an unused LUT:               3,824 out of   9,664   39%
-    Number of fully used LUT-FF pairs:       2,290 out of   9,664   23%
-    Number of unique control sets:             502
+  Number of occupied Slices:                 3,003 out of  23,038   13%
+  Number of MUXCYs used:                     1,772 out of  46,076    3%
+  Number of LUT Flip Flop pairs used:        8,785
+    Number with an unused Flip Flop:         3,087 out of   8,785   35%
+    Number with an unused LUT:               2,312 out of   8,785   26%
+    Number of fully used LUT-FF pairs:       3,386 out of   8,785   38%
+    Number of unique control sets:             498
     Number of slice register sites lost
-      to control set restrictions:           1,768 out of 184,304    1%
+      to control set restrictions:           1,682 out of 184,304    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -71,8 +74,8 @@ IO Utilization:
       Number of LOCed OPADs:                     2 out of       2  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                        75 out of     268   27%
-  Number of RAMB8BWERs:                         11 out of     536    2%
+  Number of RAMB16BWERs:                        78 out of     268   29%
+  Number of RAMB8BWERs:                         12 out of     536    2%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
     Number used as BUFIO2_2CLKs:                 0
@@ -105,36 +108,215 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-  Number of RPM macros:            9
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                3.18
 
-Design Summary
---------------
-Number of errors   :   2
-Number of warnings :   1
+Peak Memory Usage:  5035 MB
+Total REAL time to MAP completion:  1 mins 57 secs 
+Total CPU time to MAP completion:   1 mins 53 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
 
 Section 1 - Errors
 ------------------
-ERROR:Place:1136 - This design contains a global buffer instance,
-   <CLOCK_FANOUT/clkout2_buf>, driving the net, <ila0_trig0<8>>, that is driving
-   the following (first 30) non-clock load pins.
-   < PIN: U_ila_pro_0/U0/I_TQ0.G_TW[8].U_TQ.D; >
-   This is not a recommended design practice in Spartan-6 due to limitations in
-   the global routing that may cause excessive delay, skew or unroutable
-   situations.  It is recommended to only use a BUFG resource to drive clock
-   loads. If you wish to override this recommendation, you may use the
-   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
-   this message to a WARNING and allow your design to continue.
-   < PIN "CLOCK_FANOUT/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
-
-ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Section 2 - Warnings
 --------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
 WARNING:MapLib:680 - LOC constraint AB6 on RX_DC_N<3> is invalid: No such site
    on the device. Ignoring...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_399_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_397_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_393_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_GND_288_o_Mux_403_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_GND_287_o_Mux_401_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_395_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/anPhyTxData_data<7>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/anPhyTxData_data<2>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_LinkSync/GLOBAL_LOGIC0> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_AutoNeg/U_AbMatch/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthRx/U_MacRx/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthRx/U_ArpPacketRx/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<4
+   ><2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><4>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<3
+   ><1>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<1
+   ><0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderMac<0
+   ><0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<3>
+   <6>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<2>
+   <5>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<2>
+   <3>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<0>
+   <2>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/arpSenderIp<0>
+   <0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpPacketTx/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_ArpIpArbiter/GLOBAL_LOGIC0
+   > is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_EthFrameTx/ethTxEtherType<
+   1>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_EthFrameTx/GLOBAL_LOGIC0>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_ArpResponder/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM3_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM1_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_
+   fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mr
+   am_RAM2_RAMD_O> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_IPv4Tx/ipProtoc
+   ol<0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_IPv4Tx/ipProtoc
+   ol<0>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/g
+   convfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_RstSyncUser/GLOBAL_LOGIC0> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <U_S6EthTop/U_PwrUpRst/U_RstSync/GLOBAL_LOGIC0> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[0].DC_Interface/U_SstX5Reset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[0].DC_Interface/U_SstReset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[1].DC_Interface/U_SstX5Reset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[1].DC_Interface/U_SstReset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[2].DC_Interface/U_SstX5Reset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[2].DC_Interface/U_SstReset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[3].DC_Interface/U_SstX5Reset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <DC_communication/Gen_QBLink[3].DC_Interface/U_SstReset/GLOBAL_LOGIC0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
 
 Section 3 - Informational
 -------------------------
+INFO:Security:56 - Part 'xc6slx150t' is not a WebPack part.
 INFO:LIT:243 - Logical network icon_control0<35> has no load.
 INFO:LIT:395 - The above info message is repeated 237 more times for the
    following (max. 5 shown):
@@ -158,12 +340,32 @@ INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
 INFO:Place:834 - Only a subset of IOs are locked. Out of 41 IOs, 33 are locked
    and 8 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   DC_communication/Gen_QBLink[0].DC_Interface/U_ClockGenByteLink/dcm_sp_inst,
+   consult the device Data Sheet.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   DC_communication/Gen_QBLink[1].DC_Interface/U_ClockGenByteLink/dcm_sp_inst,
+   consult the device Data Sheet.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   DC_communication/Gen_QBLink[2].DC_Interface/U_ClockGenByteLink/dcm_sp_inst,
+   consult the device Data Sheet.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   DC_communication/Gen_QBLink[3].DC_Interface/U_ClockGenByteLink/dcm_sp_inst,
+   consult the device Data Sheet.
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp CLOCK_FANOUT/dcm_sp_inst,
+   consult the device Data Sheet.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 511 block(s) removed
- 369 block(s) optimized away
- 820 signal(s) removed
+ 507 block(s) removed
+ 439 block(s) optimized away
+ 819 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -238,19 +440,6 @@ removed.
 The signal "icon_control0<24>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
 removed.
-The signal "icon_control0<23>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
-removed.
-  The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<3>" is loadless and has been
-removed.
-   Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM)
-removed.
-The signal "icon_control0<22>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
-removed.
-The signal "icon_control0<21>" is loadless and has been removed.
- Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
-removed.
 The signal "icon_control0<18>" is loadless and has been removed.
  Loadless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
 removed.
@@ -274,6 +463,18 @@ The signal "icon_control0<7>" is loadless and has been removed.
 removed.
 The signal
 "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I
+_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U
+_GAND_SRL_SET/SRL_Q_O" is loadless and has been removed.
+The signal
+"U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I
+_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U
+_GAND_SRL_SET/SRL_Q_O" is loadless and has been removed.
+The signal
+"U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I
+_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U
+_GAND_SRL_SET/SRL_Q_O" is loadless and has been removed.
+The signal
+"U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I
 _CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U
 _GAND_SRL_SET/SRL_Q_O" is loadless and has been removed.
 Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
@@ -4678,8 +4879,6 @@ LICE.U_GAND_SRL_SLICE/XST_VCC
 VCC
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_G
 AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
-LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
-   optimized to 0
 GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
@@ -4692,10 +4891,58 @@ GND
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
 U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_GND
 VCC
 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
 I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_VCC
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE/XST_GND
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/
+I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
+U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_VCC
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
 GND 		XST_GND
@@ -4719,7 +4966,6 @@ GND 		DC_communication/Gen_QBLink[0].DC_Interface/XST_GND
 GND 		DC_communication/Gen_QBLink[0].DC_Interface/U_ByteLink/XST_GND
 VCC 		DC_communication/Gen_QBLink[0].DC_Interface/U_ByteLink/XST_VCC
 GND 		DC_communication/Gen_QBLink[0].DC_Interface/U_ClockGenByteLink/XST_GND
-VCC 		DC_communication/Gen_QBLink[0].DC_Interface/U_ClockGenByteLink/XST_VCC
 GND
 		DC_communication/Gen_QBLink[0].DC_Interface/U_SerialInterfaceIn/U_Serializatio
 nFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.g
@@ -4753,7 +4999,6 @@ GND 		DC_communication/Gen_QBLink[1].DC_Interface/XST_GND
 GND 		DC_communication/Gen_QBLink[1].DC_Interface/U_ByteLink/XST_GND
 VCC 		DC_communication/Gen_QBLink[1].DC_Interface/U_ByteLink/XST_VCC
 GND 		DC_communication/Gen_QBLink[1].DC_Interface/U_ClockGenByteLink/XST_GND
-VCC 		DC_communication/Gen_QBLink[1].DC_Interface/U_ClockGenByteLink/XST_VCC
 GND
 		DC_communication/Gen_QBLink[1].DC_Interface/U_SerialInterfaceIn/U_Serializatio
 nFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.g
@@ -4787,7 +5032,6 @@ GND 		DC_communication/Gen_QBLink[2].DC_Interface/XST_GND
 GND 		DC_communication/Gen_QBLink[2].DC_Interface/U_ByteLink/XST_GND
 VCC 		DC_communication/Gen_QBLink[2].DC_Interface/U_ByteLink/XST_VCC
 GND 		DC_communication/Gen_QBLink[2].DC_Interface/U_ClockGenByteLink/XST_GND
-VCC 		DC_communication/Gen_QBLink[2].DC_Interface/U_ClockGenByteLink/XST_VCC
 GND
 		DC_communication/Gen_QBLink[2].DC_Interface/U_SerialInterfaceIn/U_Serializatio
 nFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.g
@@ -4821,7 +5065,6 @@ GND 		DC_communication/Gen_QBLink[3].DC_Interface/XST_GND
 GND 		DC_communication/Gen_QBLink[3].DC_Interface/U_ByteLink/XST_GND
 VCC 		DC_communication/Gen_QBLink[3].DC_Interface/U_ByteLink/XST_VCC
 GND 		DC_communication/Gen_QBLink[3].DC_Interface/U_ClockGenByteLink/XST_GND
-VCC 		DC_communication/Gen_QBLink[3].DC_Interface/U_ClockGenByteLink/XST_VCC
 GND
 		DC_communication/Gen_QBLink[3].DC_Interface/U_SerialInterfaceIn/U_Serializatio
 nFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.g
@@ -5914,10 +6157,129 @@ FD 		U_S6EthTop/U_TxReset1/clockDomainCrossingReg_1
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
 
-Section 12 - Configuration String Details
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DC_CLK_N<0>                        | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| DC_CLK_N<1>                        | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| DC_CLK_N<2>                        | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| DC_CLK_N<3>                        | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| DC_CLK_P<0>                        | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| DC_CLK_P<1>                        | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| DC_CLK_P<2>                        | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| DC_CLK_P<3>                        | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| GLOBAL_EVENT_N<0>                  | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_N<1>                  | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_N<2>                  | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_N<3>                  | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_P<0>                  | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_P<1>                  | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_P<2>                  | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| GLOBAL_EVENT_P<3>                  | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| RX_DC_N<0>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| RX_DC_N<1>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| RX_DC_N<2>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| RX_DC_N<3>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| RX_DC_P<0>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      | IDDR         |          |          |
+| RX_DC_P<1>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      | IDDR         |          |          |
+| RX_DC_P<2>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      | IDDR         |          |          |
+| RX_DC_P<3>                         | IOB              | INPUT     | LVDS_25              | FALSE |          |      | IDDR         |          |          |
+| SYNC_N<0>                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_N<1>                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_N<2>                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_N<3>                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_P<0>                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_P<1>                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_P<2>                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_P<3>                          | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| TX_DC_N<0>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| TX_DC_N<1>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| TX_DC_N<2>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| TX_DC_N<3>                         | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| TX_DC_P<0>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| TX_DC_P<1>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| TX_DC_P<2>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| TX_DC_P<3>                         | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
+| gtClkN                             | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| gtClkP                             | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| gtRxN                              | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| gtRxP                              | IPAD             | INPUT     |                      |       |          |      |              |          |          |
+| gtTxN                              | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
+| gtTxP                              | OPAD             | OUTPUT    |                      |       |          |      |              |          |          |
+| txDisable                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND
+.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
+CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_
+GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_
+CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_
+GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[2].U_M/U_MU/I_MUT_GANDX.U_match/I_
+CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_
+GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_
+CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_
+GAND_SRL_SET/MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
 -----------------------------------------
 Use the "-detail" map option to print out Configuration Strings
 
-Section 13 - Control Set Information
+Section 12 - Control Set Information
 ------------------------------------
 Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

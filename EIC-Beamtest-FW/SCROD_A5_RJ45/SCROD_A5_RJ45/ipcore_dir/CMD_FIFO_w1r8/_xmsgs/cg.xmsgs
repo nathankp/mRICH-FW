@@ -17,13 +17,13 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">BlackBox generator run option &apos;-ifmt&apos; found multiple times. Only the first occurence is considered.</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file C:/Users/Kevin/Desktop/projects/BMD_RevB/Firmware/SCROD_A5_TOP/ipcore_dir/CMD_FIFO_w1r8/tmp/_cg/CMD_FIFO_w1r8/doc/fifo_generator_v9_3_vinfo.html with file from view xilinx_documentation</arg>
+<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8/tmp/_cg/CMD_FIFO_w1r8/doc/fifo_generator_v9_3_vinfo.html with file from view xilinx_documentation</arg>
 </msg>
 
-<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
 </msg>
 
-<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
+<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
 </msg>
 
 </messages>

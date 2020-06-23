@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Copyright (c) 2019 Xilinx, Inc.
+-- Copyright (c) 2020 Xilinx, Inc.
 -- All Rights Reserved
 -------------------------------------------------------------------------------
 --   ____  ____
@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : ila_pro_0.vho
--- /___/   /\     Timestamp  : Thu May 30 15:32:29 Hawaiian Standard Time 2019
+-- /___/   /\     Timestamp  : Mon Jun 22 09:01:24 Hawaiian Standard Time 2020
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -22,7 +22,10 @@ component ila_pro_0
   PORT (
     CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
     CLK : IN STD_LOGIC;
-    TRIG0 : IN STD_LOGIC_VECTOR(8 DOWNTO 0));
+    TRIG0 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    TRIG1 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    TRIG2 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    TRIG3 : IN STD_LOGIC_VECTOR(3 DOWNTO 0));
 
 end component;
 
@@ -35,6 +38,9 @@ your_instance_name : ila_pro_0
   port map (
     CONTROL => CONTROL,
     CLK => CLK,
-    TRIG0 => TRIG0);
+    TRIG0 => TRIG0,
+    TRIG1 => TRIG1,
+    TRIG2 => TRIG2,
+    TRIG3 => TRIG3);
 
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

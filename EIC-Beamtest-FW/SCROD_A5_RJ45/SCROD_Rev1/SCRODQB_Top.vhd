@@ -325,6 +325,8 @@ port map (
 
 END Behavioral;  
 
+----------Obsolete code--------
+
 --  QBRst_process: process(internal_data_clk, trigLinkSynced) 
 --  variable counter : integer range 0 to 20 :=0;
 --  begin

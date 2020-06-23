@@ -132,10 +132,10 @@ NET "SYNC_P<3>" LOC = AD6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE";
 NET "SYNC_N<3>" LOC = AF6 | IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; 
 
 ########## dac interface signals #####################################################
-NET "DAC_SDI" 			LOC = "P46";
-NET "DAC_SCLK" 		LOC = "P47";
-NET "DAC_SYNC" 		LOC = "P48";
-NET "DAC_LDAC" 		LOC = "P50";
+#NET "DAC_SDI" 			LOC = "P46";
+#NET "DAC_SCLK" 		LOC = "P47";
+#NET "DAC_SYNC" 		LOC = "P48";
+#NET "DAC_LDAC" 		LOC = "P50";
 
 #######PMT Triggers
 #NET "GLOBAL_EVENT_P<0>" LOC = C24| IOSTANDARD = LVDS_25 | DIFF_TERM = "FALSE"; #Trig Aux 1

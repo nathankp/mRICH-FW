@@ -1,10 +1,10 @@
 #ChipScope Core Inserter Project File Version 3.0
-#Thu May 30 15:30:13 HST 2019
-Project.device.designInputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
-Project.device.designOutputFile=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
+#Thu Jun 11 18:09:10 HST 2020
+Project.device.designInputFile=C\:\\Users\\Kevin\\Desktop\\HMB-FW\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
+Project.device.designOutputFile=C\:\\Users\\Kevin\\Desktop\\HMB-FW\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\SCRODQB_Top_cs.ngc
 Project.device.deviceFamily=18
 Project.device.enableRPMs=true
-Project.device.outputDirectory=C\:\\Users\\Kevin\\Desktop\\HMB\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\_ngo
+Project.device.outputDirectory=C\:\\Users\\Kevin\\Desktop\\HMB-FW\\EIC-Beamtest-FW\\SCROD_A5_RJ45\\SCROD_Rev1\\_ngo
 Project.device.useSRL16=true
 Project.filter.dimension=3
 Project.filter<0>=
@@ -16,11 +16,20 @@ Project.icon.enableExtTriggerOut=false
 Project.icon.triggerInPinName=
 Project.icon.triggerOutPinName=
 Project.unit.dimension=1
-Project.unit<0>.clockChannel=ethClk125
+Project.unit<0>.clockChannel=
 Project.unit<0>.clockEdge=Rising
+Project.unit<0>.dataChannel<0>=DC_communication dc_data<0><7>
+Project.unit<0>.dataChannel<1>=DC_communication dc_data<0><6>
+Project.unit<0>.dataChannel<2>=DC_communication dc_data<0><5>
+Project.unit<0>.dataChannel<3>=DC_communication dc_data<0><4>
+Project.unit<0>.dataChannel<4>=DC_communication dc_data<0><3>
+Project.unit<0>.dataChannel<5>=DC_communication dc_data<0><2>
+Project.unit<0>.dataChannel<6>=DC_communication dc_data<0><1>
+Project.unit<0>.dataChannel<7>=DC_communication dc_data<0><0>
+Project.unit<0>.dataChannel<8>=DC_communication DATA_CLK
 Project.unit<0>.dataDepth=1024
 Project.unit<0>.dataEqualsTrigger=true
-Project.unit<0>.dataPortWidth=16
+Project.unit<0>.dataPortWidth=9
 Project.unit<0>.enableGaps=false
 Project.unit<0>.enableStorageQualification=true
 Project.unit<0>.enableTimestamps=false

@@ -5,15 +5,29 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
 iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
-remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/ExampleProject/ise/coregen -sd
-ipcore_dir -sd ../../../QBLink/QBlink/cores -sd
-../../../QBLink/QBlink/ipcore_dir -sd
+remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd ipcore_dir -sd
+../../../QBLink/QBlink/cores -sd ../../../QBLink/QBlink/ipcore_dir -sd
+../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd
 ../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc
 HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
 
 Reading NGO file
-"C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top
-_cs.ngc" ...
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_
+Top_cs.ngc" ...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/SCRODQB_Top/U_ila_pro_0
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc6slx150t' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
 Gathering constraint information from source properties...
 Done.
 
@@ -262,7 +276,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 110
 
-Total memory usage is 4533988 kilobytes
+Total memory usage is 4545636 kilobytes
 
 Writing NGD file "SCRODQB_Top.ngd" ...
 Total REAL time to NGDBUILD completion:  14 sec

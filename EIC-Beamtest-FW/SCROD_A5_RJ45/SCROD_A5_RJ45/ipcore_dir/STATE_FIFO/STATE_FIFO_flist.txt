@@ -55,3 +55,4 @@ STATE_FIFO\simulation\timing\wave_mti.do
 STATE_FIFO\simulation\timing\wave_ncsim.sv
 STATE_FIFO_flist.txt
 STATE_FIFO_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

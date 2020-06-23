@@ -1,0 +1,72 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'STATE_FIFO'...
+WARNING:sim - A core named 'STATE_FIFO' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'STATE_FIFO'...
+Delivering associated files for 'STATE_FIFO'...
+Delivering EJava files for 'STATE_FIFO'...
+Generating implementation netlist for 'STATE_FIFO'...
+INFO:sim - Pre-processing HDL files for 'STATE_FIFO'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'STATE_FIFO'
+Running ngcbuild...
+Writing VHO instantiation template for 'STATE_FIFO'...
+Writing VHDL behavioral simulation model for 'STATE_FIFO'...
+WARNING:sim - Overwriting existing file
+   C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipc
+   ore_dir/STATE_FIFO/tmp/_cg/STATE_FIFO/doc/fifo_generator_v9_3_vinfo.html with
+   file from view xilinx_documentation
+Delivered 3 files into directory
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO
+Delivered 1 file into directory
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'STATE_FIFO'...
+Generating metadata file...
+Regenerating ISE project file for 'STATE_FIFO'...
+Generating ISE project...
+XCO file found: STATE_FIFO.xco
+XMDF file found: STATE_FIFO_xmdf.tcl
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.asy -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.ngc -view all -origin_type created
+Checking file
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcor
+e_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.ngc" for project device match ...
+File
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcor
+e_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.ngc" device information matches project
+device.
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.sym -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ip
+   core_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore
+_dir/STATE_FIFO/tmp/_cg/STATE_FIFO.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/STATE_FIFO"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'STATE_FIFO'.
