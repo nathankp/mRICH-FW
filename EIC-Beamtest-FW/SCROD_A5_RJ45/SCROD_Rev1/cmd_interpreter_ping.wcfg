@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/CommandInterpreterPing_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bmd_definitions" />
+            <top_module name="commandinterpreterping_tb" />
+            <top_module name="eth1000basexpkg" />
+            <top_module name="gigabitethpkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="utilitypkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/commandinterpreterping_tb/usrclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">usrclk</obj_property>
+      <obj_property name="ObjectShortName">usrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/dataclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dataclk</obj_property>
+      <obj_property name="ObjectShortName">dataclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/usrrst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">usrrst</obj_property>
+      <obj_property name="ObjectShortName">usrrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/txdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">txdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/rxdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rxdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/rxdatavalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdatavalid</obj_property>
+      <obj_property name="ObjectShortName">rxdatavalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/rxdatalast" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdatalast</obj_property>
+      <obj_property name="ObjectShortName">rxdatalast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/txdataready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdataready</obj_property>
+      <obj_property name="ObjectShortName">txdataready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/serialclklck" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">serialclklck[3:0]</obj_property>
+      <obj_property name="ObjectShortName">serialclklck[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/triglinksync" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">triglinksync[3:0]</obj_property>
+      <obj_property name="ObjectShortName">triglinksync[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/rxdataready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdataready</obj_property>
+      <obj_property name="ObjectShortName">rxdataready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/txdatavalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdatavalid</obj_property>
+      <obj_property name="ObjectShortName">txdatavalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/txdatalast" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txdatalast</obj_property>
+      <obj_property name="ObjectShortName">txdatalast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/cmd_int_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_int_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_int_state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/uut/r.state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">.state</obj_property>
+      <obj_property name="ObjectShortName">r.state</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider53" type="divider">
+      <obj_property name="label">constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/word_header_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_header_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">word_header_c[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/word_command_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_command_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">word_command_c[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/word_ping_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_ping_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">word_ping_c[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/usrclk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">usrclk_period</obj_property>
+      <obj_property name="ObjectShortName">usrclk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/dataclk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">dataclk_period</obj_property>
+      <obj_property name="ObjectShortName">dataclk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/uut/r.checksum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">.checksum</obj_property>
+      <obj_property name="ObjectShortName">r.checksum</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,5 +1,5 @@
 #ChipScope Core Generator Project File Version 3.0
-#Mon Jun 22 09:01:29 Hawaiian Standard Time 2020
+#Mon Jun 29 12:23:13 Hawaiian Standard Time 2020
 SignalExport.bus<0000>.channelList=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 SignalExport.bus<0000>.name=TRIG0
 SignalExport.bus<0000>.offset=0.0
@@ -24,6 +24,12 @@ SignalExport.bus<0003>.offset=0.0
 SignalExport.bus<0003>.precision=0
 SignalExport.bus<0003>.radix=Bin
 SignalExport.bus<0003>.scaleFactor=1.0
+SignalExport.bus<0004>.channelList=72
+SignalExport.bus<0004>.name=TRIG4
+SignalExport.bus<0004>.offset=0.0
+SignalExport.bus<0004>.precision=0
+SignalExport.bus<0004>.radix=Bin
+SignalExport.bus<0004>.scaleFactor=1.0
 SignalExport.clockChannel=CLK
 SignalExport.dataEqualsTrigger=true
 SignalExport.triggerChannel<0000><0000>=TRIG0[0]
@@ -98,18 +104,22 @@ SignalExport.triggerChannel<0003><0000>=TRIG3[0]
 SignalExport.triggerChannel<0003><0001>=TRIG3[1]
 SignalExport.triggerChannel<0003><0002>=TRIG3[2]
 SignalExport.triggerChannel<0003><0003>=TRIG3[3]
+SignalExport.triggerChannel<0004><0000>=TRIG4[0]
 SignalExport.triggerPort<0000>.name=TRIG0
 SignalExport.triggerPort<0001>.name=TRIG1
 SignalExport.triggerPort<0002>.name=TRIG2
 SignalExport.triggerPort<0003>.name=TRIG3
-SignalExport.triggerPortCount=4
+SignalExport.triggerPort<0004>.name=TRIG4
+SignalExport.triggerPortCount=5
 SignalExport.triggerPortIsData<0000>=true
 SignalExport.triggerPortIsData<0001>=true
 SignalExport.triggerPortIsData<0002>=true
 SignalExport.triggerPortIsData<0003>=true
+SignalExport.triggerPortIsData<0004>=true
 SignalExport.triggerPortWidth<0000>=32
 SignalExport.triggerPortWidth<0001>=32
 SignalExport.triggerPortWidth<0002>=4
 SignalExport.triggerPortWidth<0003>=4
+SignalExport.triggerPortWidth<0004>=1
 SignalExport.type=ila
 

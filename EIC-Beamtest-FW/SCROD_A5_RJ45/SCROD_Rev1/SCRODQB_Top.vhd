@@ -100,6 +100,9 @@ signal ethSync      : sl;
    signal userRxDataValids   : slv(NUM_IP_G-1 downto 0);
    signal userRxDataLasts    : slv(NUM_IP_G-1 downto 0);
    signal userRxDataReadys   : slv(NUM_IP_G-1 downto 0);
+	
+-- command Interpreter (temp)
+	signal CommandIntState : slv(4 downto 0) := (others => '0');
 
    -- Register control interfaces
    signal regAddr     : slv(REG_ADDR_BITS_G-1 downto 0);
@@ -281,7 +284,8 @@ U_S6EthTop : entity work.S6EthTop
          regRdData   => regRdData,
          regReq      => regReq,
          regOp       => regOp,
-         regAck      => regAck
+         regAck      => regAck,
+			cmd_int_state => CommandIntState 
       );
 		
  SCROD_Ctrl_Reg: process(ethClk125,regReq,userRst,regOp) begin
