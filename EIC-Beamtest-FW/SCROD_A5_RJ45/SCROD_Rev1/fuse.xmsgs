@@ -5,5 +5,47 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 64: Actual for formal port <arg fmt="%s" index="1">rd_en</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceOut.vhd" Line 129: Actual for formal port <arg fmt="%s" index="1">c1</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 80: Actual for formal port <arg fmt="%s" index="1">c1</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/S6SerialInterfaceIn.vhd" Line 197: Actual for formal port <arg fmt="%s" index="1">rd_en</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 96: Type error near <arg fmt="%s" index="1">qb_rst</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">sl</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 97: Type error near <arg fmt="%s" index="1">rx</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">sl</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1728" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 98: Type error near <arg fmt="%s" index="1">tx</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">sl</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 121: Character <arg fmt="%s" index="1">&apos;1&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 126: Character <arg fmt="%s" index="1">&apos;0&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1731" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 127: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;=&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;=&quot;</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 129: Character <arg fmt="%s" index="1">&apos;1&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 132: Character <arg fmt="%s" index="1">&apos;0&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="303" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 133: Character <arg fmt="%s" index="1">&apos;1&apos;</arg> is not in type <arg fmt="%s" index="2">std_logic_vector</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/DC_Comm_QBLinkTB.vhd" Line 38: Unit &lt;<arg fmt="%s" index="1">behavior</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 

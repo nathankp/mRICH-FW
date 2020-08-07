@@ -103,7 +103,9 @@ signal ethSync      : sl;
 	
 -- command Interpreter (temp)
 	signal CommandIntState : slv(4 downto 0) := (others => '0');
-
+	signal loadQB : sl := '0';
+	signal target_type : sl :='0';
+	signal remainingWords : slv(31 downto 0) := (others => '0');
    -- Register control interfaces
    signal regAddr     : slv(REG_ADDR_BITS_G-1 downto 0);
    signal regWrData   : slv(REG_DATA_BITS_G-1 downto 0);
@@ -147,10 +149,15 @@ signal internal_fpga_clk : sl; --fast clk
 signal internal_data_clk : sl; -- QBLink timing clock
 --HW testing signals--
 constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
-signal sync : sl := '0'; -- synchronize timestamp counters on all DCs
+signal sync : sl := '0'; -- synchronize timestamp counters on all DCs'
+
 attribute keep_hierarchy: boolean;
 attribute keep_hierarchy of Behavioral: architecture is TRUE;
-
+attribute keep : string;
+attribute keep of loadQB : signal is "true";
+attribute keep of CommandIntState : signal is "true";
+attribute keep of target_type : signal is "true";
+attribute keep of remainingWords : signal is "true";
 begin
 
 
@@ -285,6 +292,9 @@ U_S6EthTop : entity work.S6EthTop
          regReq      => regReq,
          regOp       => regOp,
          regAck      => regAck,
+			ldQBLink	   => loadQB,
+			cmd_target_type => target_type,
+			wordsLeft => remainingWords,
 			cmd_int_state => CommandIntState 
       );
 		

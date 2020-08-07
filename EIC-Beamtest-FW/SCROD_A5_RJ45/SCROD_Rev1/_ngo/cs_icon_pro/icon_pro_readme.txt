@@ -1,5 +1,5 @@
 The following files were generated for 'icon_pro' in directory
-/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_icon_pro/
+C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\_ngo\cs_icon_pro\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

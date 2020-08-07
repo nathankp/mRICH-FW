@@ -27,27 +27,27 @@ Generating ISE project...
 XCO file found: icon_pro.xco
 XMDF file found: icon_pro_xmdf.tcl
 Adding
-/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_icon
-_pro/tmp/_cg/icon_pro.ngc -view all -origin_type created
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_i
+con_pro/tmp/_cg/icon_pro.ngc -view all -origin_type created
 Checking file
-"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_ico
-n_pro/tmp/_cg/icon_pro.ngc" for project device match ...
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_
+icon_pro/tmp/_cg/icon_pro.ngc" for project device match ...
 File
-"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_ico
-n_pro/tmp/_cg/icon_pro.ngc" device information matches project device.
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_
+icon_pro/tmp/_cg/icon_pro.ngc" device information matches project device.
 Adding
-/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_icon
-_pro/tmp/_cg/icon_pro.ucf -view all -origin_type created
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_i
+con_pro/tmp/_cg/icon_pro.ucf -view all -origin_type created
 Adding
-/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_icon
-_pro/tmp/_cg/icon_pro.vhd -view all -origin_type created
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_i
+con_pro/tmp/_cg/icon_pro.vhd -view all -origin_type created
 INFO:HDLCompiler:1061 - Parsing VHDL file
-   "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_
-   icon_pro/tmp/_cg/icon_pro.vhd" into library work
+   "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/
+   cs_icon_pro/tmp/_cg/icon_pro.vhd" into library work
 INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
 Adding
-/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_icon
-_pro/tmp/_cg/icon_pro.vho -view all -origin_type imported
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo/cs_i
+con_pro/tmp/_cg/icon_pro.vho -view all -origin_type imported
 INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
    Please set the new top explicitly by running the "project set top" command.
    To re-calculate the new top automatically, set the "Auto Implementation Top"

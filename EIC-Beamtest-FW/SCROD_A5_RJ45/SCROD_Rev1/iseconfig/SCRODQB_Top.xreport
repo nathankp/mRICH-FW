@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-06-26T07:21:06</DateModified>
+  <DateModified>2020-07-31T14:34:06</DateModified>
   <ModuleName>SCRODQB_Top</ModuleName>
-  <SummaryTimeStamp>2019-05-30T15:33:23</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-07-16T15:42:31</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig/SCRODQB_Top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-21T17:50:11</DateInitialized>

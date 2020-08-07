@@ -17,7 +17,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/commandinterpreterping_tb/usrclk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">usrclk</obj_property>
       <obj_property name="ObjectShortName">usrclk</obj_property>
@@ -113,5 +113,9 @@
       <obj_property name="ElementShortName">.checksum</obj_property>
       <obj_property name="ObjectShortName">r.checksum</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/commandinterpreterping_tb/uut/ldqblink" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ldqblink</obj_property>
+      <obj_property name="ObjectShortName">ldqblink</obj_property>
    </wvobject>
 </wave_config>

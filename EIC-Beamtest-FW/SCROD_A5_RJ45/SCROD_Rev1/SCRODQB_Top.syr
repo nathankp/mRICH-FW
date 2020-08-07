@@ -100,7 +100,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen" "ipcore_dir" "../../../QBLink/QBlink/cores" "../../../QBLink/QBlink/ipcore_dir" "../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen" "../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores"  }
+Cores Search Directories           : {"../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO" "../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8" "remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen" "ipcore_dir" "../../../QBLink/QBlink/cores" "../../../QBLink/QBlink/ipcore_dir" "../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores"  }
 
 =========================================================================
 
@@ -258,6 +258,9 @@ Parsing architecture <RTL> of entity <gtps6tile>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\QBLink\source\QBlink.vhd" into library work
 Parsing entity <QBlink>.
 Parsing architecture <Behavioral> of entity <qblink>.
+Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\QBLink\source\BMD_definitions.vhd" into library work
+Parsing package <BMD_definitions>.
+Parsing package body <BMD_definitions>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\firmware-ethernet\ExampleProject\firmware-general\Transceivers\S6\GtpS6.vhd" into library work
 Parsing entity <GtpS6>.
 Parsing architecture <rtl> of entity <gtps6>.
@@ -268,9 +271,6 @@ Parsing architecture <rtl> of entity <initrst>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\firmware-ethernet\Ethernet\1000BASE-X\rtl\Eth1000BaseXCore.vhd" into library work
 Parsing entity <Eth1000BaseXCore>.
 Parsing architecture <Behavioral> of entity <eth1000basexcore>.
-Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\BMD_definitions.vhd" into library work
-Parsing package <BMD_definitions>.
-Parsing package body <BMD_definitions>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\firmware-ethernet\Ethernet\S6\rtl\S6EthTop.vhd" into library work
 Parsing entity <S6EthTop>.
 Parsing architecture <Behavioral> of entity <s6ethtop>.
@@ -292,7 +292,7 @@ Parsing architecture <Behaviorial> of entity <dc_comm>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
 Parsing architecture <Behavioral> of entity <scrodqb_top>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 230: Actual for formal port ipaddrs is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 237: Actual for formal port ipaddrs is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -303,7 +303,7 @@ WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A
 WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 91: Using initial value ("00000000","01000100","01010110","00000000","00000011","00000001") for ethcoremacaddr since it is never assigned
 WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 92: Using initial value ("11000000","10101000","00000001","00010100") for ethcoreipaddr since it is never assigned
 WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 93: Using initial value ("11000000","10101000","00000001","00100001") for ethcoreipaddr1 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 145: Using initial value '0' for dcm_rst since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 147: Using initial value '0' for dcm_rst since it is never assigned
 
 Elaborating entity <clk_Div> (architecture <xilinx>) from library <work>.
 
@@ -425,27 +425,28 @@ Elaborating entity <SyncBit> (architecture <rtl>) with generics from library <wo
 INFO:HDLCompiler:679 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\firmware-ethernet\ExampleProject\firmware-general\General\rtl\InitRst.vhd" Line 98. Case statement is complete. others clause is never selected
 
 Elaborating entity <CommandInterpreter> (architecture <rtl>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 381: loadqb should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 382: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 383: serialclklck should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 391: serialclklck should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 407: loadqb should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 408: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 409: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 410: dc_resp_valid should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 422: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 423: dc_resp_valid should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 457: loadqb should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 458: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 459: dc_resp should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 471: loadqb should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 473: dc_resp should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 506: loadqb should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 522: dc_id should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 530: dc_resp should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 630: dc_cmdrespreq should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 637: qb_loadreg should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 703: dc_resp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 392: loadqb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 393: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 394: serialclklck should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 402: serialclklck should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 419: loadqb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 420: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 421: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 422: dc_resp_valid should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 434: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 435: dc_resp_valid should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 470: loadqb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 471: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 472: dc_resp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 484: loadqb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 486: dc_resp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 519: loadqb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 535: dc_id should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 543: dc_resp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 643: dc_cmdrespreq should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 650: qb_loadreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 205: Assignment to target_type ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\remoteFiles\SCROD_ETHERNET_V3\ExampleProject\firmware-general\General\rtl\CommandInterpreter.vhd" Line 716: dc_resp should be on the sensitivity list of the process
 
 Elaborating entity <DC_Comm> (architecture <Behaviorial>) with generics from library <work>.
 WARNING:HDLCompiler:92 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\DC_Comm.vhd" Line 83: rd_req should be on the sensitivity list of the process
@@ -485,7 +486,7 @@ WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A
 WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 96: Net <userTxDataValids[0]> does not have a driver.
 WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 97: Net <userTxDataLasts[0]> does not have a driver.
 WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 102: Net <userRxDataReadys[0]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 124: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" Line 126: Net <reset> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -498,14 +499,21 @@ Synthesizing Unit <SCRODQB_Top>.
         NUM_IP_G = 2
         NUM_DCs = 3
     Set property "KEEP_HIERARCHY = TRUE".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 157: Output port <CLK_OUT1> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 157: Output port <LOCKED> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 205: Output port <led> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 205: Output port <userRxData<0>> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 205: Output port <ethUsrClk62> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 205: Output port <ethSync> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 205: Output port <ethReady> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 250: Output port <cmd_int_state> of the instance <U_CommandInterpreter> is unconnected or connected to loadless signal.
+    Set property "KEEP = TRUE" for signal <CommandIntState>.
+    Set property "KEEP = TRUE" for signal <remainingWords>.
+    Set property "KEEP = TRUE" for signal <loadQB>.
+    Set property "KEEP = TRUE" for signal <target_type>.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 164: Output port <CLK_OUT1> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 164: Output port <LOCKED> of the instance <CLOCK_FANOUT> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 212: Output port <led> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 212: Output port <userRxData<0>> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 212: Output port <ethUsrClk62> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 212: Output port <ethSync> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 212: Output port <ethReady> of the instance <U_S6EthTop> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 257: Output port <wordsLeft> of the instance <U_CommandInterpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 257: Output port <cmd_int_state> of the instance <U_CommandInterpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 257: Output port <ldQBLink> of the instance <U_CommandInterpreter> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_Top.vhd" line 257: Output port <cmd_target_type> of the instance <U_CommandInterpreter> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <userTxDataChannels<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <userTxDataValids<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <userTxDataLasts<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -536,7 +544,7 @@ WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless sig
     Found 16-bit register for signal <CtrlRegister<0>>.
     Found 1-bit register for signal <sync>.
 INFO:Xst:3019 - HDL ADVISOR - 512 flip-flops were inferred for signal <CtrlRegister>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 16-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_23_OUT> created at line 301.
+    Found 16-bit 20-to-1 multiplexer for signal <regAddr[4]_X_11_o_wide_mux_23_OUT> created at line 311.
     Summary:
 	inferred 342 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
@@ -1647,6 +1655,7 @@ Synthesizing Unit <CommandInterpreter>.
         REG_DATA_BITS_G = 16
         TIMEOUT_G = 125000
         num_DC = 3
+WARNING:Xst:653 - Signal <cmd_target_type> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 5-bit register for signal <r_state>.
     Found 16-bit register for signal <r_regAddr>.
     Found 16-bit register for signal <r_regWrData>.
@@ -1690,26 +1699,26 @@ INFO:Xst:1799 - State sendtrig_s is never reached in FSM <r_state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_54_OUT> created at line 254.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_66_OUT> created at line 275.
-    Found 32-bit adder for signal <r_checksum[31]_rxData[31]_add_109_OUT> created at line 337.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_122_OUT> created at line 358.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_124_OUT> created at line 362.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_128_OUT> created at line 373.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_149_OUT> created at line 395.
-    Found 32-bit adder for signal <r_timeoutCnt[31]_GND_282_o_add_209_OUT> created at line 456.
-    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_237_OUT> created at line 497.
-    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_280_OUT> created at line 538.
-    Found 32-bit adder for signal <r_checksum[31]_GND_282_o_add_300_OUT> created at line 561.
-    Found 32-bit adder for signal <r_checksum[31]_GND_282_o_add_319_OUT> created at line 580.
-    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_323_OUT> created at line 585.
-    Found 8-bit adder for signal <r_wordOutCnt[7]_GND_282_o_add_324_OUT> created at line 586.
-    Found 8-bit adder for signal <t_wordOutCnt[7]_GND_282_o_add_523_OUT> created at line 701.
-    Found 32-bit subtractor for signal <GND_282_o_GND_282_o_sub_122_OUT<31:0>> created at line 354.
-    Found 2-bit subtractor for signal <dc_id[31]_GND_282_o_sub_212_OUT<1:0>> created at line 458.
-    Found 1-bit 4-to-1 multiplexer for signal <dc_id[31]_DC_RESP_VALID[3]_Mux_166_o> created at line 410.
-    Found 32-bit 7-to-1 multiplexer for signal <_n1041> created at line 589.
-    Found 32-bit 7-to-1 multiplexer for signal <_n1093> created at line 567.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_55_OUT> created at line 262.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_67_OUT> created at line 283.
+    Found 32-bit adder for signal <r_checksum[31]_rxData[31]_add_110_OUT> created at line 348.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_123_OUT> created at line 369.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_125_OUT> created at line 373.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_129_OUT> created at line 384.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_150_OUT> created at line 406.
+    Found 32-bit adder for signal <r_timeoutCnt[31]_GND_282_o_add_210_OUT> created at line 468.
+    Found 32-bit adder for signal <r_errFlags[31]_GND_282_o_add_238_OUT> created at line 510.
+    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_281_OUT> created at line 551.
+    Found 32-bit adder for signal <r_checksum[31]_GND_282_o_add_301_OUT> created at line 574.
+    Found 32-bit adder for signal <r_checksum[31]_GND_282_o_add_320_OUT> created at line 593.
+    Found 32-bit adder for signal <r_checksum[31]_r_txData[31]_add_324_OUT> created at line 598.
+    Found 8-bit adder for signal <r_wordOutCnt[7]_GND_282_o_add_325_OUT> created at line 599.
+    Found 8-bit adder for signal <t_wordOutCnt[7]_GND_282_o_add_525_OUT> created at line 714.
+    Found 32-bit subtractor for signal <GND_282_o_GND_282_o_sub_123_OUT<31:0>> created at line 365.
+    Found 2-bit subtractor for signal <dc_id[31]_GND_282_o_sub_213_OUT<1:0>> created at line 471.
+    Found 1-bit 4-to-1 multiplexer for signal <dc_id[31]_DC_RESP_VALID[3]_Mux_167_o> created at line 422.
+    Found 32-bit 7-to-1 multiplexer for signal <_n1093> created at line 580.
+    Found 32-bit 7-to-1 multiplexer for signal <_n1112> created at line 602.
 WARNING:Xst:737 - Found 1-bit latch for signal <DC_cmdRespReq<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <DC_cmdRespReq<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <DC_cmdRespReq<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1724,15 +1733,16 @@ WARNING:Xst:737 - Found 1-bit latch for signal <dc_id<2>>. Latches may be genera
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_id<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_id<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <DC_cmdRespReq<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <GND_282_o_rxData[31]_LessThan_45_o> created at line 235
-    Found 32-bit comparator equal for signal <n0108> created at line 361
-    Found 16-bit comparator equal for signal <DC_RESP[15]_r_regAddr[15]_equal_225_o> created at line 473
-    Found 8-bit comparator greater for signal <n0487> created at line 700
+    Found 32-bit comparator greater for signal <GND_282_o_rxData[31]_LessThan_46_o> created at line 243
+    Found 32-bit comparator equal for signal <n0110> created at line 372
+    Found 16-bit comparator equal for signal <DC_RESP[15]_r_regAddr[15]_equal_226_o> created at line 486
+    Found 32-bit comparator greater for signal <GND_282_o_r_wordsLeft[31]_LessThan_340_o> created at line 616
+    Found 8-bit comparator greater for signal <n0488> created at line 713
     Summary:
 	inferred  17 Adder/Subtractor(s).
 	inferred 457 D-type flip-flop(s).
 	inferred  14 Latch(s).
-	inferred   4 Comparator(s).
+	inferred   5 Comparator(s).
 	inferred 142 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <CommandInterpreter> synthesized.
@@ -1929,7 +1939,7 @@ Macro Statistics
  8-bit register                                        : 161
 # Latches                                              : 14
  1-bit latch                                           : 14
-# Comparators                                          : 36
+# Comparators                                          : 37
  14-bit comparator not equal                           : 1
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 6
@@ -1940,7 +1950,7 @@ Macro Statistics
  3-bit comparator lessequal                            : 3
  3-bit comparator not equal                            : 1
  32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 2
  4-bit comparator greater                              : 2
  8-bit comparator equal                                : 9
  8-bit comparator greater                              : 1
@@ -2425,7 +2435,7 @@ Macro Statistics
  4-bit down loadable accumulator                       : 1
 # Registers                                            : 4635
  Flip-Flops                                            : 4635
-# Comparators                                          : 36
+# Comparators                                          : 37
  14-bit comparator not equal                           : 1
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 6
@@ -2436,7 +2446,7 @@ Macro Statistics
  3-bit comparator lessequal                            : 3
  3-bit comparator not equal                            : 1
  32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 2
  4-bit comparator greater                              : 2
  8-bit comparator equal                                : 9
  8-bit comparator greater                              : 1
@@ -3010,38 +3020,38 @@ INFO:Xst:2261 - The FF/Latch <r_header0_5> in Unit <IPv4Tx> is equivalent to the
 INFO:Xst:2261 - The FF/Latch <r_header0_6> in Unit <IPv4Tx> is equivalent to the following FF/Latch, which will be removed : <r_header0Checksum_6> 
 INFO:Xst:2261 - The FF/Latch <r_header0_7> in Unit <IPv4Tx> is equivalent to the following FF/Latch, which will be removed : <r_header0Checksum_7> 
 INFO:Xst:2261 - The FF/Latch <r_phyTxData_valid> in Unit <Eth1000BaseX8To16Mux> is equivalent to the following FF/Latch, which will be removed : <r_state_FSM_FFd1> 
-INFO:Xst:2261 - The FF/Latch <r_command_11> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_11> 
-INFO:Xst:2261 - The FF/Latch <r_command_24> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_8> 
-INFO:Xst:2261 - The FF/Latch <r_command_3> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_3> 
-INFO:Xst:2261 - The FF/Latch <r_command_22> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_6> 
-INFO:Xst:2261 - The FF/Latch <r_command_1> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_1> 
 INFO:Xst:2261 - The FF/Latch <r_command_20> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_4> 
-INFO:Xst:2261 - The FF/Latch <r_command_18> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_2> 
-INFO:Xst:2261 - The FF/Latch <r_command_16> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_0> 
-INFO:Xst:2261 - The FF/Latch <r_command_29> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_13> 
-INFO:Xst:2261 - The FF/Latch <r_command_8> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_8> 
-INFO:Xst:2261 - The FF/Latch <r_command_14> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_14> 
-INFO:Xst:2261 - The FF/Latch <r_command_27> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_11> 
-INFO:Xst:2261 - The FF/Latch <r_command_6> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_6> 
-INFO:Xst:2261 - The FF/Latch <r_command_12> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_12> 
-INFO:Xst:2261 - The FF/Latch <r_command_25> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_9> 
-INFO:Xst:2261 - The FF/Latch <r_command_4> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_4> 
 INFO:Xst:2261 - The FF/Latch <r_command_10> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_10> 
-INFO:Xst:2261 - The FF/Latch <r_command_23> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_7> 
-INFO:Xst:2261 - The FF/Latch <r_command_2> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_2> 
-INFO:Xst:2261 - The FF/Latch <r_command_21> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_5> 
-INFO:Xst:2261 - The FF/Latch <r_command_0> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_0> 
-INFO:Xst:2261 - The FF/Latch <r_command_19> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_3> 
-INFO:Xst:2261 - The FF/Latch <r_command_17> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_1> 
-INFO:Xst:2261 - The FF/Latch <r_command_30> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_14> 
+INFO:Xst:2261 - The FF/Latch <r_command_18> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_2> 
 INFO:Xst:2261 - The FF/Latch <r_command_9> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_9> 
-INFO:Xst:2261 - The FF/Latch <r_command_15> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_15> 
-INFO:Xst:2261 - The FF/Latch <r_command_28> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_12> 
+INFO:Xst:2261 - The FF/Latch <r_command_16> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_0> 
 INFO:Xst:2261 - The FF/Latch <r_command_7> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_7> 
-INFO:Xst:2261 - The FF/Latch <r_command_31> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_15> 
+INFO:Xst:2261 - The FF/Latch <r_command_5> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_5> 
+INFO:Xst:2261 - The FF/Latch <r_command_3> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_3> 
+INFO:Xst:2261 - The FF/Latch <r_command_30> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_14> 
+INFO:Xst:2261 - The FF/Latch <r_command_25> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_9> 
+INFO:Xst:2261 - The FF/Latch <r_command_15> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_15> 
+INFO:Xst:2261 - The FF/Latch <r_command_1> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_1> 
+INFO:Xst:2261 - The FF/Latch <r_command_28> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_12> 
+INFO:Xst:2261 - The FF/Latch <r_command_23> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_7> 
 INFO:Xst:2261 - The FF/Latch <r_command_13> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_13> 
 INFO:Xst:2261 - The FF/Latch <r_command_26> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_10> 
-INFO:Xst:2261 - The FF/Latch <r_command_5> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_5> 
+INFO:Xst:2261 - The FF/Latch <r_command_21> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_5> 
+INFO:Xst:2261 - The FF/Latch <r_command_11> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_11> 
+INFO:Xst:2261 - The FF/Latch <r_command_31> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_15> 
+INFO:Xst:2261 - The FF/Latch <r_command_19> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_3> 
+INFO:Xst:2261 - The FF/Latch <r_command_17> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_1> 
+INFO:Xst:2261 - The FF/Latch <r_command_8> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_8> 
+INFO:Xst:2261 - The FF/Latch <r_command_6> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_6> 
+INFO:Xst:2261 - The FF/Latch <r_command_4> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_4> 
+INFO:Xst:2261 - The FF/Latch <r_command_2> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_2> 
+INFO:Xst:2261 - The FF/Latch <r_command_29> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_13> 
+INFO:Xst:2261 - The FF/Latch <r_command_24> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_8> 
+INFO:Xst:2261 - The FF/Latch <r_command_14> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_14> 
+INFO:Xst:2261 - The FF/Latch <r_command_0> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_0> 
+INFO:Xst:2261 - The FF/Latch <r_command_27> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_11> 
+INFO:Xst:2261 - The FF/Latch <r_command_22> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regWrData_6> 
+INFO:Xst:2261 - The FF/Latch <r_command_12> in Unit <CommandInterpreter> is equivalent to the following FF/Latch, which will be removed : <r_regAddr_12> 
 
 Optimizing unit <GtpS6Tile> ...
 
@@ -4471,16 +4481,16 @@ Top Level Output File Name         : SCRODQB_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 9833
+# BELS                             : 9840
 #      GND                         : 97
-#      INV                         : 355
+#      INV                         : 356
 #      LUT1                        : 580
-#      LUT2                        : 1337
+#      LUT2                        : 1336
 #      LUT3                        : 973
 #      LUT4                        : 1095
-#      LUT5                        : 743
-#      LUT6                        : 1852
-#      MUXCY                       : 1427
+#      LUT5                        : 749
+#      LUT6                        : 1846
+#      MUXCY                       : 1434
 #      MUXF7                       : 119
 #      VCC                         : 45
 #      XORCY                       : 1210
@@ -4570,12 +4580,12 @@ U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>                                
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>                                                                 | DCM_SP:CLK0+DCM_SP:CLKFX                               | 1741  |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>                                                                 | DCM_SP:CLKDV                                           | 254   |
 U_S6EthTop/txDisable                                                                                             | NONE(U_S6EthTop/U_RxBufReset1/clockDomainCrossingReg_0)| 12    |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o(U_CommandInterpreter/Mmux_r_state[4]_GND_288_o_Mux_404_o1:O) | NONE(*)(U_CommandInterpreter/dc_id_7)                  | 8     |
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o(U_CommandInterpreter/Mmux_r_state[4]_GND_287_o_Mux_402_o11:O)| NONE(*)(U_CommandInterpreter/loadQB)                   | 1     |
-U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_139_o_Mux_396_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_2)          | 1     |
-U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_138_o_Mux_394_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_3)          | 1     |
-U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_140_o_Mux_398_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_1)          | 1     |
-U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_141_o_Mux_400_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_0)          | 1     |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o(U_CommandInterpreter/Mmux_r_state[4]_GND_288_o_Mux_406_o1:O) | NONE(*)(U_CommandInterpreter/dc_id_7)                  | 8     |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o(U_CommandInterpreter/Mmux_r_state[4]_GND_287_o_Mux_404_o11:O)| NONE(*)(U_CommandInterpreter/loadQB)                   | 1     |
+U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_139_o_Mux_398_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_2)          | 1     |
+U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_138_o_Mux_396_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_3)          | 1     |
+U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_140_o_Mux_400_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_1)          | 1     |
+U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o(U_CommandInterpreter/Mmux_r_state[4]_PWR_141_o_Mux_402_o11:O)| NONE(*)(U_CommandInterpreter/DC_cmdRespReq_0)          | 1     |
 -----------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+-------+
 (*) These 6 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -4602,7 +4612,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>'
   Clock period: 13.813ns (frequency: 72.398MHz)
-  Total number of paths / destination ports: 1028860 / 18944
+  Total number of paths / destination ports: 1028858 / 18944
 -------------------------------------------------------------------------
 Delay:               13.813ns (Levels of Logic = 20)
   Source:            DC_communication/Gen_QBLink[1].DC_Interface/QBlink_RX_FIFO_W8R32/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
@@ -4630,14 +4640,14 @@ Delay:               13.813ns (Levels of Logic = 20)
      LUT6:I5->O            4   0.205   0.912  Mmux_DC_RESPONSE233 (DC_RESPONSE<2>)
      end scope: 'DC_communication:DC_RESPONSE<2>'
      begin scope: 'U_CommandInterpreter:DC_RESP<2>'
-     LUT6:I3->O            1   0.205   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_lut<0> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<0> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<1> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<2> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<3> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<4> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<4>)
-     MUXCY:CI->O           7   0.213   0.774  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_225_o_cy<5> (DC_RESP[15]_r_regAddr[15]_equal_225_o)
-     LUT6:I5->O           17   0.205   1.028  _n1652_inv7 (_n1652_inv)
+     LUT6:I3->O            1   0.205   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_lut<0> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<0> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<1> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<2> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<3> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<4> (Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<4>)
+     MUXCY:CI->O           7   0.213   0.774  Mcompar_DC_RESP[15]_r_regAddr[15]_equal_226_o_cy<5> (DC_RESP[15]_r_regAddr[15]_equal_226_o)
+     LUT6:I5->O           17   0.205   1.028  _n1650_inv7 (_n1650_inv)
      LUT3:I2->O            1   0.205   0.000  r_errFlags_3_rstpot (r_errFlags_3_rstpot)
      FDR:D                     0.102          r_errFlags_3
     ----------------------------------------
@@ -4667,88 +4677,88 @@ Delay:               1.436ns (Levels of Logic = 1)
                                        (52.4% logic, 47.6% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o'
+Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o'
   Clock period: 1.602ns (frequency: 624.122MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               1.602ns (Levels of Logic = 1)
   Source:            U_CommandInterpreter/DC_cmdRespReq_2 (LATCH)
   Destination:       U_CommandInterpreter/DC_cmdRespReq_2 (LATCH)
-  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o falling
-  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o falling
+  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o falling
+  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o falling
 
   Data Path: U_CommandInterpreter/DC_cmdRespReq_2 to U_CommandInterpreter/DC_cmdRespReq_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.498   0.864  DC_cmdRespReq_2 (DC_cmdRespReq_2)
-     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_395_o11 (r_state[4]_PWR_136_o_Mux_395_o)
+     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_397_o11 (r_state[4]_PWR_136_o_Mux_397_o)
      LD:D                      0.037          DC_cmdRespReq_2
     ----------------------------------------
     Total                      1.602ns (0.738ns logic, 0.864ns route)
                                        (46.1% logic, 53.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o'
+Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o'
   Clock period: 1.602ns (frequency: 624.122MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               1.602ns (Levels of Logic = 1)
   Source:            U_CommandInterpreter/DC_cmdRespReq_3 (LATCH)
   Destination:       U_CommandInterpreter/DC_cmdRespReq_3 (LATCH)
-  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o falling
-  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o falling
+  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o falling
+  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o falling
 
   Data Path: U_CommandInterpreter/DC_cmdRespReq_3 to U_CommandInterpreter/DC_cmdRespReq_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.498   0.864  DC_cmdRespReq_3 (DC_cmdRespReq_3)
-     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_393_o11 (r_state[4]_PWR_136_o_Mux_393_o)
+     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_395_o11 (r_state[4]_PWR_136_o_Mux_395_o)
      LD:D                      0.037          DC_cmdRespReq_3
     ----------------------------------------
     Total                      1.602ns (0.738ns logic, 0.864ns route)
                                        (46.1% logic, 53.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o'
+Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o'
   Clock period: 1.602ns (frequency: 624.122MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               1.602ns (Levels of Logic = 1)
   Source:            U_CommandInterpreter/DC_cmdRespReq_1 (LATCH)
   Destination:       U_CommandInterpreter/DC_cmdRespReq_1 (LATCH)
-  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o falling
-  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o falling
+  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o falling
+  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o falling
 
   Data Path: U_CommandInterpreter/DC_cmdRespReq_1 to U_CommandInterpreter/DC_cmdRespReq_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.498   0.864  DC_cmdRespReq_1 (DC_cmdRespReq_1)
-     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_397_o11 (r_state[4]_PWR_136_o_Mux_397_o)
+     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_399_o11 (r_state[4]_PWR_136_o_Mux_399_o)
      LD:D                      0.037          DC_cmdRespReq_1
     ----------------------------------------
     Total                      1.602ns (0.738ns logic, 0.864ns route)
                                        (46.1% logic, 53.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o'
+Timing constraint: Default period analysis for Clock 'U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o'
   Clock period: 1.602ns (frequency: 624.122MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               1.602ns (Levels of Logic = 1)
   Source:            U_CommandInterpreter/DC_cmdRespReq_0 (LATCH)
   Destination:       U_CommandInterpreter/DC_cmdRespReq_0 (LATCH)
-  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o falling
-  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o falling
+  Source Clock:      U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o falling
+  Destination Clock: U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o falling
 
   Data Path: U_CommandInterpreter/DC_cmdRespReq_0 to U_CommandInterpreter/DC_cmdRespReq_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               2   0.498   0.864  DC_cmdRespReq_0 (DC_cmdRespReq_0)
-     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_399_o11 (r_state[4]_PWR_136_o_Mux_399_o)
+     LUT5:I1->O            1   0.203   0.000  Mmux_r_state[4]_PWR_136_o_Mux_401_o11 (r_state[4]_PWR_136_o_Mux_401_o)
      LD:D                      0.037          DC_cmdRespReq_0
     ----------------------------------------
     Total                      1.602ns (0.738ns logic, 0.864ns route)
@@ -4810,7 +4820,7 @@ Offset:              8.602ns (Levels of Logic = 6)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o
 ------------------------------------------------+---------+---------+---------+---------+
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4818,7 +4828,7 @@ Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|D
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|         |         |    6.226|         |
 ------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o
 ------------------------------------------------+---------+---------+---------+---------+
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4826,47 +4836,47 @@ Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|D
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>|         |         |    5.635|         |
 ------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o
 ---------------------------------------------------+---------+---------+---------+---------+
                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o|         |         |    3.622|         |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o|         |         |    5.942|         |
-U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o|         |         |    1.602|         |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o|         |         |    3.622|         |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o|         |         |    5.942|         |
+U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o|         |         |    1.602|         |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |         |         |    4.964|         |
 ---------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o
 ---------------------------------------------------+---------+---------+---------+---------+
                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o|         |         |    3.622|         |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o|         |         |    5.942|         |
-U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o|         |         |    1.602|         |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o|         |         |    3.622|         |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o|         |         |    5.942|         |
+U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o|         |         |    1.602|         |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |         |         |    4.964|         |
 ---------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o
 ---------------------------------------------------+---------+---------+---------+---------+
                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o|         |         |    3.622|         |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o|         |         |    5.942|         |
-U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o|         |         |    1.602|         |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o|         |         |    3.622|         |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o|         |         |    5.942|         |
+U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o|         |         |    1.602|         |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |         |         |    4.964|         |
 ---------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o
+Clock to Setup on destination clock U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o
 ---------------------------------------------------+---------+---------+---------+---------+
                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o|         |         |    3.622|         |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o|         |         |    5.942|         |
-U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o|         |         |    1.602|         |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o|         |         |    3.622|         |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o|         |         |    5.942|         |
+U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o|         |         |    1.602|         |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |         |         |    4.964|         |
 ---------------------------------------------------+---------+---------+---------+---------+
 
@@ -4875,12 +4885,12 @@ Clock to Setup on destination clock U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OU
                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------------------------+---------+---------+---------+---------+
-U_CommandInterpreter/r_state[4]_GND_287_o_Mux_402_o|         |    8.982|         |         |
-U_CommandInterpreter/r_state[4]_GND_288_o_Mux_404_o|         |   10.972|         |         |
-U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_394_o|         |    8.998|         |         |
-U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_396_o|         |    8.565|         |         |
-U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_398_o|         |    8.548|         |         |
-U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_400_o|         |    8.650|         |         |
+U_CommandInterpreter/r_state[4]_GND_287_o_Mux_404_o|         |    8.982|         |         |
+U_CommandInterpreter/r_state[4]_GND_288_o_Mux_406_o|         |   10.972|         |         |
+U_CommandInterpreter/r_state[4]_PWR_138_o_Mux_396_o|         |    8.998|         |         |
+U_CommandInterpreter/r_state[4]_PWR_139_o_Mux_398_o|         |    8.565|         |         |
+U_CommandInterpreter/r_state[4]_PWR_140_o_Mux_400_o|         |    8.548|         |         |
+U_CommandInterpreter/r_state[4]_PWR_141_o_Mux_402_o|         |    8.650|         |         |
 U_S6EthTop/U_GtpS6/U_GtpS6Tile/GTPCLKOUT0_OUT<0>   |   13.813|         |    1.026|         |
 ---------------------------------------------------+---------+---------+---------+---------+
 
@@ -4895,14 +4905,14 @@ U_S6EthTop/txDisable|    1.436|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 62.38 secs
+Total REAL time to Xst completion: 61.00 secs
+Total CPU time to Xst completion: 61.73 secs
  
 --> 
 
-Total memory usage is 4616864 kilobytes
+Total memory usage is 4601316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1359 (   0 filtered)
-Number of infos    :  713 (   0 filtered)
+Number of warnings : 1361 (   0 filtered)
+Number of infos    :  716 (   0 filtered)
 

@@ -6,8 +6,8 @@ Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/../../../QBLink/source/UtilityPkg.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" into library work
-Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/BMD_definitions.vhd" into library work
+Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/remoteFiles/SCROD_ETHERNET_V3/ExampleProject/firmware-general/General/rtl/CommandInterpreter.vhd" into library work
 Parsing VHDL file "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/CommandInterpreterPing_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
@@ -23,8 +23,7 @@ Compiling package gigabitethpkg
 Compiling architecture rtl of entity CommandInterpreter [\CommandInterpreter(16,16,125000...]
 Compiling architecture behavior of entity commandinterpreterping_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 12 VHDL Units
 Built simulation executable C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/CommandInterpreterPing_TB_isim_beh.exe
-Fuse Memory Usage: 37892 KB
-Fuse CPU Usage: 749 ms
+Fuse Memory Usage: 37932 KB
+Fuse CPU Usage: 905 ms
