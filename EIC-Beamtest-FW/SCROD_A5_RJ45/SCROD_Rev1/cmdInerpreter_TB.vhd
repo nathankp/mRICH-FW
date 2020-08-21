@@ -232,39 +232,39 @@ BEGIN
 		QB_RST <= (others=>'0');
 		wait until trigLinkSync= "1111"; --takes 53.66 us to sync  
 	---SCROD Register programming simulation
---    rxDataValid <= '1';
+    rxDataValid <= '1';
 
---		wait until rxDataready = '1';
---	   rxData <= x"00BE11E2"; --HEADER (IDLE STATE)
---		rxDataValid <= '1';
---		wait for usrClk_period; 
---		rxData <= x"00000007"; --PACKET SIZE
---		rxDataValid <= '1';
---		wait for usrClk_period;  
---		rxData <= x"646F6974"; --PACKET_TYPE: WORD_COMMAND_C
---		rxDataValid <= '1';
---		wait for usrClk_period;
---		rxData <= x"0000A500"; --COMMAND_TARGET: DC
---		rxDataValid <= '1';
---		wait for usrClk_period;
---		rxData <= x"00000012"; --Command ID
---		rxDataValid <= '1';
---		wait for usrClk_period;
---		rxData <= x"72697465"; --Command Type: WORD_WRITE_C
---		rxDataValid <= '1';
---		wait for usrClk_period;
---		rxData <= x"00000002"; --Command Data: keep register 2 cleared, replace with x"010F0002" to reset DCs
---		rxDataValid <= '1';
---		wait for usrClk_period;
---		rxData <= x"73787479"; --command 1 Checksum
---		rxDataValid <= '1';
---		txDataReady <= '1';
---		wait for usrClk_period*10;
---		rxDatalast <= '1';
---		wait for usrClk_period*6;
---		wait until rising_edge(usrClk);
---		rxDataLast <= '0';
---		txDataReady <= '0';     
+		wait until rxDataready = '1';
+	   rxData <= x"00BE11E2"; --HEADER (IDLE STATE)
+		rxDataValid <= '1';
+		wait for usrClk_period; 
+		rxData <= x"00000007"; --PACKET SIZE
+		rxDataValid <= '1';
+		wait for usrClk_period;  
+		rxData <= x"646F6974"; --PACKET_TYPE: WORD_COMMAND_C
+		rxDataValid <= '1';
+		wait for usrClk_period;
+		rxData <= x"0000A500"; --COMMAND_TARGET: DC
+		rxDataValid <= '1';
+		wait for usrClk_period;
+		rxData <= x"00000012"; --Command ID
+		rxDataValid <= '1';
+		wait for usrClk_period;
+		rxData <= x"72697465"; --Command Type: WORD_WRITE_C
+		rxDataValid <= '1';
+		wait for usrClk_period;
+		rxData <= x"00000002"; --Command Data: keep register 2 cleared, replace with x"010F0002" to reset DCs
+		rxDataValid <= '1';
+		wait for usrClk_period;
+		rxData <= x"73787479"; --command 1 Checksum
+		rxDataValid <= '1';
+		txDataReady <= '1';
+		wait for usrClk_period*10;
+		rxDatalast <= '1';
+		wait for usrClk_period*6;
+		wait until rising_edge(usrClk);
+		rxDataLast <= '0';
+		txDataReady <= '0';     
 
 		--Trigger simulation		
 		TX_TRIG <= (others => "00001");

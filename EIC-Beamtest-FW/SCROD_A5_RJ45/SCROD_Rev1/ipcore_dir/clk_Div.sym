@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="clk_Div">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2020-6-12T2:4:0</timestamp>
+    <timestamp>2020-8-21T1:9:30</timestamp>
     <pin polarity="Input" x="0" y="80" name="clk_in1" />
     <pin polarity="Input" x="0" y="432" name="reset" />
     <pin polarity="Output" x="608" y="80" name="clk_out1" />

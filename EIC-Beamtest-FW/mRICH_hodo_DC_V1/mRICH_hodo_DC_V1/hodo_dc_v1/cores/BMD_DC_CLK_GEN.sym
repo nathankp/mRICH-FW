@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="BMD_DC_CLK_GEN">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2020-6-12T2:5:49</timestamp>
+    <timestamp>2020-8-21T1:11:25</timestamp>
     <pin polarity="Input" x="0" y="112" name="clk_in1_p" />
     <pin polarity="Input" x="0" y="144" name="clk_in1_n" />
     <pin polarity="Output" x="608" y="80" name="clk_out1" />

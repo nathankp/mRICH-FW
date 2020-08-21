@@ -1,0 +1,28 @@
+Command line:
+   QBlink_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63046
+
+Tue Aug 18 09:56:30 2020
+
+
+ Elaboration Time: 0.453125 sec
+
+ Current Memory Usage: 5519.78 Meg
+
+ Total Signals          : 2687
+ Total Nets             : 6919
+ Total Signal Drivers   : 1256
+ Total Blocks           : 149
+ Total Primitive Blocks : 91
+ Total Processes        : 637
+ Total Traceable Variables  : 1521
+ Total Scalar Nets and Variables : 13499
+
+ Total Simulation Time: 0.65625 sec
+
+ Current Memory Usage: 5519.78 Meg
+
+Tue Aug 18 09:57:59 2020
+

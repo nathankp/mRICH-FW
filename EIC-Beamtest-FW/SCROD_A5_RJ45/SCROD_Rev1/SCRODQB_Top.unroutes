@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Aug 07 06:00:47 2020
+Fri Aug 21 08:19:30 2020
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 14 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 9 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_O
@@ -17,10 +17,5 @@ WARNING:ParHelpers:361 - There are 14 loadless signals in this design. This desi
    U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O
    U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O
    U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O
-   U_S6EthTop/rxBufError0
-   U_S6EthTop/rxBufError1
-   U_S6EthTop/usrClkValid_dcmClkValid_OR_2_o
-   U_S6EthTop/usrClkValid_txBufStatus0[1]_OR_4_o
-   U_S6EthTop/usrClkValid_txBufStatus1[1]_OR_6_o
 
 

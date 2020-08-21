@@ -1,0 +1,10 @@
+Command line:
+   DC_Comm_QBLinkTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55893
+
+Fri Aug 21 09:34:37 2020
+
+
+ Elaboration Time: 0.46875 sec

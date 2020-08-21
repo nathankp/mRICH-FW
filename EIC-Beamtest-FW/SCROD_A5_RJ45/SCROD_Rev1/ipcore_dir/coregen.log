@@ -1,0 +1,70 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'Timestamper'...
+WARNING:sim - A core named 'Timestamper' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'Timestamper'...
+Delivering associated files for 'Timestamper'...
+Generating implementation netlist for 'Timestamper'...
+INFO:sim - Pre-processing HDL files for 'Timestamper'...
+Running synthesis for 'Timestamper'
+Running ngcbuild...
+Writing VHO instantiation template for 'Timestamper'...
+Writing VHDL behavioral simulation model for 'Timestamper'...
+Delivered 3 files into directory
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper
+Delivered 1 file into directory
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'Timestamper'...
+Generating metadata file...
+Regenerating ISE project file for 'Timestamper'...
+Generating ISE project...
+XCO file found: Timestamper.xco
+XMDF file found: Timestamper_xmdf.tcl
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper.asy -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper.ngc -view all -origin_type created
+Checking file
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_d
+ir/tmp/_cg/Timestamper.ngc" for project device match ...
+File
+"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_d
+ir/tmp/_cg/Timestamper.ngc" device information matches project device.
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper.sym -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcor
+   e_dir/tmp/_cg/Timestamper.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/Timestamper.vho -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/core_resources.txt -view all -origin_type imported
+Adding
+C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/ipcore_di
+r/tmp/_cg/gui_latency.txt -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/Timestamper"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'Timestamper'.

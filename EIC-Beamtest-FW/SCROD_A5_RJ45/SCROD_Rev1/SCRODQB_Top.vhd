@@ -150,14 +150,19 @@ signal internal_data_clk : sl; -- QBLink timing clock
 --HW testing signals--
 constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 signal sync : sl := '0'; -- synchronize timestamp counters on all DCs'
+type test_state_t is ( idle, send, receive);
+signal test_state : test_state_t := idle;
+signal test_state_num : slv(1 downto 0) := (others => '0');
 
-attribute keep_hierarchy: boolean;
-attribute keep_hierarchy of Behavioral: architecture is TRUE;
-attribute keep : string;
-attribute keep of loadQB : signal is "true";
-attribute keep of CommandIntState : signal is "true";
-attribute keep of target_type : signal is "true";
-attribute keep of remainingWords : signal is "true";
+attribute mark_debug : string;
+--attribute mark_debug of test_state_num : signal is "true";
+--attribute mark_debug of dc_cmd : signal is "true";
+attribute mark_debug of QBstart_wr : signal is "true";
+attribute mark_debug of DC_data : signal is "true";
+attribute mark_debug of dc_dataValid : signal is "true";
+attribute mark_debug of trigLinkSynced : signal is "true";
+attribute mark_debug of serialClkLocked : signal is "true";
+
 begin
 
 
@@ -205,7 +210,8 @@ PORT MAP(
 	SYNC_P => SYNC_P,
 	SYNC_N => SYNC_N
 	);
-	
+
+					
 -----------------------------------------------------------------
 ----------------Ethernet Link to PC------------------------------
 -----------------------------------------------------------------		
@@ -250,10 +256,10 @@ U_S6EthTop : entity work.S6EthTop
          userRxDataLast  => userRxDataLasts,
          userRxDataReady => userRxDataReadys
       );
-
------------------------------------------------------------------
-----------------Command Parsing ---------------------------------
------------------------------------------------------------------		
+--
+-------------------------------------------------------------------
+------------------Command Parsing ---------------------------------
+-------------------------------------------------------------------		
 	U_CommandInterpreter : entity work.CommandInterpreter
       generic map (
          REG_ADDR_BITS_G => 16,
@@ -275,7 +281,7 @@ U_S6EthTop : entity work.S6EthTop
          txDataValid => userTxDataValids(1),
          txDataLast  => userTxDataLasts(1),
          txDataReady => userTxDataReadys(1),
-			--DC Comm signals
+			-- DC Comm signals
 				--WILL ADD: QB_rst
 			serialClkLck => serialClkLocked,
 			trigLinkSync => trigLinkSynced,
@@ -336,7 +342,42 @@ port map (
 	TRIG_LINK_SYNC => trigLinkSynced,
 	EVENT_TRIG => evntFlag
 	);
-
+--test_state_num <= "00" when test_state = idle else
+--						"01" when test_state = send else
+--						"10" when test_state = receive else
+--						"11";
+--test_comm_fsm : process (internal_data_clk) is
+--	begin
+--		if rising_edge(internal_data_clk) then
+--			case test_state is
+--				when idle =>
+--					if trigLinkSynced(0) = '1' then
+--						test_state <= send;
+--					else
+--						test_state <= idle;
+--					end if;
+--				
+--				when send =>
+--					QBstart_wr(0) <= '1';
+--					dc_cmd <= x"DEADBEEF";
+--					test_state <= receive;
+--					
+--				when receive =>
+--					QBstart_wr(0) <= '0';
+--					if dc_dataValid(0) = '1' then
+--						QBstart_rd(0) <= '1';
+--						if DC_data = x"DEADBEEF" then
+--							test_state <= idle;
+--						else
+--							test_state <= receive;
+--						end if;
+--					else
+--						QBstart_rd(0) <= '0';
+--						test_state <= receive;
+--					end if;
+--				end case;
+--			end if;
+--		end process;
 END Behavioral;  
 
 ----------Obsolete code--------

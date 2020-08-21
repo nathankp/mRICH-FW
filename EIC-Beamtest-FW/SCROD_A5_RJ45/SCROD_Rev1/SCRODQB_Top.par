@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Fri Aug 07 05:59:47 2020
+PC1::  Fri Aug 21 08:18:35 2020
 
 par -filter
 C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/iseconfig
@@ -30,39 +30,39 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 7,099 out of 184,304    3%
-    Number used as Flip Flops:               7,069
-    Number used as Latches:                     14
+  Number of Slice Registers:                 6,199 out of 184,304    3%
+    Number used as Flip Flops:               6,182
+    Number used as Latches:                      1
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               16
-  Number of Slice LUTs:                      6,628 out of  92,152    7%
-    Number used as logic:                    5,759 out of  92,152    6%
-      Number using O6 output only:           3,622
-      Number using O5 output only:             585
-      Number using O5 and O6:                1,552
+  Number of Slice LUTs:                      5,037 out of  92,152    5%
+    Number used as logic:                    4,336 out of  92,152    4%
+      Number using O6 output only:           2,483
+      Number using O5 output only:             456
+      Number using O5 and O6:                1,397
       Number used as ROM:                        0
-    Number used as Memory:                     227 out of  21,680    1%
+    Number used as Memory:                     143 out of  21,680    1%
       Number used as Dual Port RAM:             36
         Number using O6 output only:            12
         Number using O5 output only:             0
         Number using O5 and O6:                 24
       Number used as Single Port RAM:            0
-      Number used as Shift Register:           191
-        Number using O6 output only:           140
+      Number used as Shift Register:           107
+        Number using O6 output only:            89
         Number using O5 output only:             2
-        Number using O5 and O6:                 49
-    Number used exclusively as route-thrus:    642
-      Number with same-slice register load:    577
-      Number with same-slice carry load:        65
+        Number using O5 and O6:                 16
+    Number used exclusively as route-thrus:    558
+      Number with same-slice register load:    503
+      Number with same-slice carry load:        55
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,163 out of  23,038   13%
-  Number of MUXCYs used:                     1,832 out of  46,076    3%
-  Number of LUT Flip Flop pairs used:        9,137
-    Number with an unused Flip Flop:         3,225 out of   9,137   35%
-    Number with an unused LUT:               2,509 out of   9,137   27%
-    Number of fully used LUT-FF pairs:       3,403 out of   9,137   37%
+  Number of occupied Slices:                 2,356 out of  23,038   10%
+  Number of MUXCYs used:                     1,428 out of  46,076    3%
+  Number of LUT Flip Flop pairs used:        6,896
+    Number with an unused Flip Flop:         1,800 out of   6,896   26%
+    Number with an unused LUT:               1,859 out of   6,896   26%
+    Number of fully used LUT-FF pairs:       3,237 out of   6,896   46%
     Number of slice register sites lost
       to control set restrictions:               0 out of 184,304    0%
 
@@ -75,16 +75,16 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                        41 out of     396   10%
     Number of LOCed IOBs:                       32 out of      41   78%
-    IOB Flip Flops:                             12
-    IOB Master Pads:                            16
-    IOB Slave Pads:                             16
+    IOB Flip Flops:                             14
+    IOB Master Pads:                            14
+    IOB Slave Pads:                             14
     Number of bonded IPADs:                      4 out of      32   12%
       Number of LOCed IPADs:                     4 out of       4  100%
     Number of bonded OPADs:                      2 out of      16   12%
       Number of LOCed OPADs:                     2 out of       2  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                        80 out of     268   29%
+  Number of RAMB16BWERs:                        74 out of     268   27%
   Number of RAMB8BWERs:                         12 out of     536    2%
   Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
     Number used as BUFIO2s:                      1
@@ -100,8 +100,8 @@ Specific Feature Utilization:
     Number used as ILOGIC2s:                     4
     Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     586    0%
-  Number of OLOGIC2/OSERDES2s:                   8 out of     586    1%
-    Number used as OLOGIC2s:                     8
+  Number of OLOGIC2/OSERDES2s:                  10 out of     586    1%
+    Number used as OLOGIC2s:                    10
     Number used as OSERDES2s:                    0
   Number of BSCANs:                              1 out of       4   25%
   Number of BUFHs:                               0 out of     384    0%
@@ -122,22 +122,17 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 15 secs 
-Finished initial Timing Analysis.  REAL time: 15 secs 
+Starting initial Timing Analysis.  REAL time: 14 secs 
+Finished initial Timing Analysis.  REAL time: 14 secs 
 
-WARNING:Par:288 - The signal U_S6EthTop/rxBufError1 has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal U_S6EthTop/rxBufError0 has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal U_S6EthTop/usrClkValid_dcmClkValid_OR_2_o has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal U_S6EthTop/usrClkValid_txBufStatus1[1]_OR_6_o has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal U_S6EthTop/usrClkValid_txBufStatus0[1]_OR_4_o has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fi
@@ -149,40 +144,40 @@ WARNING:Par:288 - The signal
    U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16/U0/xst_fifo_generator/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fi
    fo.mem/gdm.dm/Mram_RAM1_RAMD_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAM
+   U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 47172 unrouted;      REAL time: 17 secs 
+Phase  1  : 38294 unrouted;      REAL time: 15 secs 
 
-Phase  2  : 34065 unrouted;      REAL time: 23 secs 
+Phase  2  : 26549 unrouted;      REAL time: 21 secs 
 
-Phase  3  : 11575 unrouted;      REAL time: 42 secs 
+Phase  3  : 8746 unrouted;      REAL time: 36 secs 
 
-Phase  4  : 11575 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 46 secs 
+Phase  4  : 8746 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
 Updating file: SCRODQB_Top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
-Total REAL time to Router completion: 57 secs 
-Total CPU time to Router completion: 52 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 52 secs 
+Total REAL time to Router completion: 52 secs 
+Total CPU time to Router completion: 48 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -200,37 +195,31 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|   internal_data_clk | BUFGMUX_X3Y13| No   |  553 |  0.828     |  1.914      |
+|           ethClk125 |  BUFGMUX_X2Y1| No   | 1075 |  0.397     |  1.483      |
 +---------------------+--------------+------+------+------------+-------------+
-|           ethClk125 | BUFGMUX_X3Y16| No   | 1429 |  0.395     |  1.483      |
+|   internal_data_clk | BUFGMUX_X2Y10| No   |  668 |  0.829     |  1.914      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |  BUFGMUX_X2Y3| No   |  102 |  0.320     |  1.406      |
-+---------------------+--------------+------+------+------------+-------------+
-|U_S6EthTop/ethUsrClk |              |      |      |            |             |
-|                  62 | BUFGMUX_X2Y11| No   |   86 |  0.116     |  1.483      |
+|    icon_control0<0> | BUFGMUX_X2Y11| No   |   82 |  0.324     |  1.411      |
 +---------------------+--------------+------+------+------------+-------------+
 |DC_communication/Gen |              |      |      |            |             |
 |_QBLink[0].DC_Interf |              |      |      |            |             |
-|        ace/sstX5Clk |  BUFGMUX_X3Y8| No   |   51 |  0.645     |  1.731      |
+|        ace/sstX5Clk |  BUFGMUX_X2Y9| No   |   51 |  0.451     |  1.669      |
 +---------------------+--------------+------+------+------------+-------------+
 |DC_communication/Gen |              |      |      |            |             |
 |_QBLink[1].DC_Interf |              |      |      |            |             |
-|        ace/sstX5Clk |  BUFGMUX_X2Y9| No   |   51 |  0.741     |  1.917      |
+|        ace/sstX5Clk | BUFGMUX_X3Y15| No   |   52 |  0.823     |  1.916      |
 +---------------------+--------------+------+------+------------+-------------+
 |DC_communication/Gen |              |      |      |            |             |
 |_QBLink[2].DC_Interf |              |      |      |            |             |
-|        ace/sstX5Clk | BUFGMUX_X2Y10| No   |   51 |  0.816     |  1.911      |
+|        ace/sstX5Clk |  BUFGMUX_X3Y8| No   |   51 |  0.815     |  1.906      |
 +---------------------+--------------+------+------+------------+-------------+
 |DC_communication/Gen |              |      |      |            |             |
 |_QBLink[3].DC_Interf |              |      |      |            |             |
-|        ace/sstX5Clk |  BUFGMUX_X2Y1| No   |   51 |  0.642     |  1.919      |
+|        ace/sstX5Clk | BUFGMUX_X3Y16| No   |   50 |  0.653     |  1.923      |
 +---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.643      |
+| U_S6EthTop/ethClk62 | BUFGMUX_X2Y12| No   |   83 |  0.119     |  1.483      |
 +---------------------+--------------+------+------+------------+-------------+
-|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  3.240      |
-+---------------------+--------------+------+------+------------+-------------+
-|    U_S6EthTop/gtClk |         Local|      |    1 |  0.000     |  0.001      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.701      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_S6EthTop/U_IBUFDS_ |              |      |      |            |             |
 |            ML_IBUF2 |         Local|      |    1 |  0.000     |  0.002      |
@@ -238,29 +227,10 @@ Generating Clock Report
 |U_S6EthTop/U_IBUFDS_ |              |      |      |            |             |
 |            ML_IBUF1 |         Local|      |    1 |  0.000     |  0.002      |
 +---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_PWR_139_ |              |      |      |            |             |
-|         o_Mux_398_o |         Local|      |    1 |  0.000     |  0.689      |
+|    U_S6EthTop/gtClk |         Local|      |    1 |  0.000     |  0.001      |
 +---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_PWR_141_ |              |      |      |            |             |
-|         o_Mux_402_o |         Local|      |    1 |  0.000     |  0.899      |
-+---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_GND_287_ |              |      |      |            |             |
-|         o_Mux_404_o |         Local|      |    1 |  0.000     |  0.613      |
-+---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_PWR_140_ |              |      |      |            |             |
-|         o_Mux_400_o |         Local|      |    1 |  0.000     |  0.853      |
-+---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_PWR_138_ |              |      |      |            |             |
-|         o_Mux_396_o |         Local|      |    1 |  0.000     |  0.849      |
-+---------------------+--------------+------+------+------------+-------------+
-|U_CommandInterpreter |              |      |      |            |             |
-|/r_state[4]_GND_288_ |              |      |      |            |             |
-|         o_Mux_406_o |         Local|      |    2 |  0.127     |  0.915      |
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  2.780      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -285,26 +255,26 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_gtClkP = PERIOD TIMEGRP "gtClkP" 8 ns  | MINPERIOD   |     4.875ns|     3.125ns|       0|           0
   HIGH 50%                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |     8.587ns|     6.413ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.340ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |     8.669ns|     6.331ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.117ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.417ns|     1.583ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.415ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.343ns|     1.657ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.469ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    15.917ns|    14.083ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.248ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    17.795ns|    12.205ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.393ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.618ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.444ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.207ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     5.470ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|    11.819ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|    11.575ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     7.148ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     5.927ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -320,19 +290,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 14 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 9 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 
-Total CPU time to PAR completion: 54 secs 
+Total REAL time to PAR completion: 54 secs 
+Total CPU time to PAR completion: 49 secs 
 
-Peak Memory Usage:  4927 MB
+Peak Memory Usage:  4858 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 16
+Number of warning messages: 11
 Number of info messages: 0
 
 Writing design to file SCRODQB_Top.ncd

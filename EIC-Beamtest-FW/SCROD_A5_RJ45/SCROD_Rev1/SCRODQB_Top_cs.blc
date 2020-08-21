@@ -6,7 +6,9 @@ C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/_ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd ipcore_dir -sd
-../../../QBLink/QBlink/cores -sd ../../../QBLink/QBlink/ipcore_dir -sd
+../../../QBLink/QBlink/cores -sd
+../../../../QBLink-08-20-2020/QBLink/QBlink/ipcore_dir -sd
+../../../../QBLink-08-20-2020/QBLink/QBlink/cores -sd
 ../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -p xc6slx150t-fgg676-3
 -i
 C:\Users\Kevin\Desktop\HMB-FW\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_Rev1\SCRODQB_T
@@ -31,9 +33,10 @@ Loading design module
 Loading design module
 "remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen/fifo32x512RxAxi.ngc"..
 .
-Loading design module "../../../QBLink/QBlink/cores/serializationFifo.ngc"...
-Loading design module "../../../QBLink/QBlink/ipcore_dir/QBLtxFIFO.ngc"...
+Loading design module
+"../../../../QBLink-08-20-2020/QBLink/QBlink/ipcore_dir/QBLtxFIFO.ngc"...
 Loading design module "../../../QBLink/QBlink/cores/CMD_FIFO_w8r32.ngc"...
+Loading design module "../../../QBLink/QBlink/cores/serializationFifo.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -46,13 +49,13 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4435084 kilobytes
+Total memory usage is 4436308 kilobytes
 
 Writing NGC file
 "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_
 Top_cs.ngc" ...
 Total REAL time to NGCBUILD completion:  3 sec
-Total CPU time to NGCBUILD completion:   2 sec
+Total CPU time to NGCBUILD completion:   3 sec
 
 Writing NGCBUILD log file
 "C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_

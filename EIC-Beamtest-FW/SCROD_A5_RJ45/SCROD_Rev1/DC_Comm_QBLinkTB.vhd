@@ -44,19 +44,19 @@ ARCHITECTURE behavior OF DC_Comm_QBLinkTB IS
 
    --Inputs
    signal DATA_CLK : std_logic := '0';
-   signal RX : std_logic_vector(0 downto 0) := (others => '0');
+   signal RX : std_logic := '0';
    signal DC_CMD : std_logic_vector(31 downto 0) := (others => '0');
-   signal CMD_VALID : std_logic_vector(0 downto 0) := (others => '0');
-   signal RESP_REQ : std_logic_vector(0 downto 0) := (others => '0');
-   signal QB_RST : std_logic_vector(0 downto 0) := (others => '0');
+   signal CMD_VALID : std_logic := '0';
+   signal RESP_REQ : std_logic := '0';
+   signal QB_RST : std_logic := '0';
 	signal TrigLogicRst : std_logic := '0';
  	--Outputs
-   signal TX : std_logic_vector(0 downto 0) := (others => '0');
+   signal TX : std_logic := '0';
      -- signal SYNC : std_logic;
    signal DC_RESPONSE : std_logic_vector(31 downto 0);
-   signal RESP_VALID : std_logic_vector(0 downto 0) := (others => '0');
-   signal SERIAL_CLK_LCK : std_logic_vector(0 downto 0) := (others => '0');
-   signal TRIG_LINK_SYNC : std_logic_vector(0 downto 0) := (others => '0');
+   signal RESP_VALID : std_logic := '0';
+   signal SERIAL_CLK_LCK : std_logic := '0';
+   signal TRIG_LINK_SYNC : std_logic := '0';
 	signal Event_Trig : std_logic;
 	
 	--training partner signals
@@ -70,27 +70,47 @@ ARCHITECTURE behavior OF DC_Comm_QBLinkTB IS
    constant DATA_CLK_period : time := 40 ns;
  
 BEGIN
+
+--08/18/2020 Simulate 1 DC Communication Channel (1 SCROD QBLink  and 1 DC QBLink)
  
-	-- Instantiate the Unit Under Test (UUT)
-   uut: entity work.DC_Comm 
-	Generic Map( num_DC => 1)
+ -- Array of QBLink Modules (commented out)
+--	-- Instantiate the Unit Under Test (UUT)
+--   uut: entity work.DC_Comm 
+--	Generic Map( num_DC => 2)
+--	PORT MAP (
+--          DATA_CLK => DATA_CLK,
+--          RX => RX,
+--          TX => TX,
+--          DC_CMD => DC_CMD,
+--          CMD_VALID => CMD_VALID,
+--          RESP_REQ => RESP_REQ,
+--          DC_RESPONSE => DC_RESPONSE,
+--          RESP_VALID => RESP_VALID,
+--          QB_RST => QB_RST,
+--			 TrigLogicRst => TrigLogicRst,
+--          SERIAL_CLK_LCK => SERIAL_CLK_LCK,
+--          TRIG_LINK_SYNC => TRIG_LINK_SYNC,
+--			 Event_Trig => Event_Trig
+--        );
+
+--SCROD QBLink
+	QBL_SCROD: entity work.QBLink
 	PORT MAP (
-          DATA_CLK => DATA_CLK,
-          RX => RX,
-          TX => TX,
-          DC_CMD => DC_CMD,
-          CMD_VALID => CMD_VALID,
-          RESP_REQ => RESP_REQ,
-          DC_RESPONSE => DC_RESPONSE,
-          RESP_VALID => RESP_VALID,
-          QB_RST => QB_RST,
-			 TrigLogicRst => TrigLogicRst,
-          SERIAL_CLK_LCK => SERIAL_CLK_LCK,
-          TRIG_LINK_SYNC => TRIG_LINK_SYNC,
-			 Event_Trig => Event_Trig
-        );
-	--QBLink Training Partner
-	QBL_trainer: entity work.QBLink
+			 sstClk => DATA_CLK,
+			 rst => QB_RST,
+          rawSerialIn => RX,
+          rawSerialOut => TX,
+          localWordIn => DC_CMD,
+          localWordInValid => CMD_VALID,
+          localWordOutReq => RESP_REQ,
+          localWordOut => DC_RESPONSE,
+          localWordOutValid => RESP_VALID,
+          serialClkLocked => SERIAL_CLK_LCK,
+          trgLinkSynced => TRIG_LINK_SYNC
+			);
+			
+--	DC QBLink 
+	QBL_DC: entity work.QBLink
 	PORT MAP (
 			 sstClk => DATA_CLK,
 			 rst => QB_RST,

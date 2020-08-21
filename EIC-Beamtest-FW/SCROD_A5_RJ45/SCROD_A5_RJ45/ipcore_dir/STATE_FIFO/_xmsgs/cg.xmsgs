@@ -20,10 +20,10 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/tmp/_cg/STATE_FIFO/doc/fifo_generator_v9_3_vinfo.html with file from view xilinx_documentation</arg>
 </msg>
 
-<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
+<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
 </msg>
 
-<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
+<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
 </msg>
 
 </messages>
